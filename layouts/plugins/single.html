@@ -1,0 +1,99 @@
+{{ define "main" }}
+{{ $p := .Params.plugin }}
+{{ $related := slice }}
+{{ range where site.RegularPages "Section" "plugins" }}
+  {{ if and (eq .Params.plugin.category $p.category) (ne .Params.plugin.id $p.id) }}
+    {{ $related = $related | append . }}
+  {{ end }}
+{{ end }}
+<div class="wrap detail-page">
+  <nav class="breadcrumb" aria-label="面包屑">
+    <a href="{{ "/" | relURL }}">首页</a><span>/</span>
+    <a href="{{ "plugins/" | relURL }}">插件库</a><span>/</span>
+    <a href="{{ "categories/" | relURL }}{{ $p.category }}/">{{ $p.category_label }}</a><span>/</span>
+    <span>{{ $p.name }}</span>
+  </nav>
+
+  <div class="detail-columns">
+    <div class="detail-main">
+      <header class="detail-head">
+        <div class="badge-row">
+          <span class="cat-badge">{{ $p.category_label }}</span>
+          <span class="badge badge-ghost">{{ $p.status_label }}</span>
+          {{ if eq $p.agreement "多篇印证" }}<span class="badge badge-blue">{{ $p.source_count }} 篇印证</span>{{ end }}
+          {{ if eq $p.agreement "口径有出入" }}<span class="badge badge-orange">口径有出入</span>{{ end }}
+          {{ if eq $p.agreement "单篇提及" }}<span class="badge badge-ghost">单篇提及 · 待更多来源</span>{{ end }}
+        </div>
+        <h1>{{ $p.name }}</h1>
+        {{ with $p.aliases }}<p class="aliases aliases-lg">也叫 {{ delimit . " · " }}</p>{{ end }}
+        <div class="lead">{{ .Content }}</div>
+      </header>
+
+      {{ with $p.flag }}
+      <div class="callout callout-warn"><strong>注意：</strong>{{ . }}。详见下方证据链，或去看<a href="{{ "notes/" | relURL }}">口径核对</a>。</div>
+      {{ end }}
+
+      <section class="panel">
+        <h2>速览</h2>
+        <dl class="kv">
+          <div><dt>分类</dt><dd><a href="{{ "categories/" | relURL }}{{ $p.category }}/">{{ $p.category_label }}</a></dd></div>
+          <div><dt>性质</dt><dd>{{ $p.status_label }}{{ if eq $p.status "unknown" }}（原文没写是谁做的）{{ end }}</dd></div>
+          <div><dt>证据</dt><dd>{{ len $p.mentions }} 条引文 / {{ $p.source_count }} 个来源 · 可信度 <strong>{{ $p.confidence }}</strong></dd></div>
+          <div><dt>安装</dt><dd>{{ with $p.install }}<code class="code-block">{{ . }}</code>{{ else }}<span class="muted">原文未给出安装命令{{ if eq $p.agreement "口径有出入" }}；不同写法见下方证据链{{ end }}</span>{{ end }}</dd></div>
+          <div><dt>仓库</dt><dd>{{ with $p.repo }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }} ↗</a>{{ else }}<span class="muted">原文未提供地址</span>{{ end }}</dd></div>
+          <div><dt>标签</dt><dd>{{ range $p.tags }}<a class="tag" href="{{ "tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>{{ else }}<span class="muted">—</span>{{ end }}</dd></div>
+        </dl>
+      </section>
+
+      <section class="panel">
+        <h2>证据链 <small>各篇文章怎么说的，原话摆这儿</small></h2>
+        <p class="panel-note">英文来源的引文为本站译述，点来源标题可看原文。<strong>印证</strong>表示说法一致，<strong>补充</strong>是角度不同不冲突，<strong>有出入</strong>表示互相矛盾。</p>
+        {{ range $p.mentions }}
+        <blockquote class="evidence">
+          <p>{{ .quote }}</p>
+          <footer>
+            <span class="badge {{ if eq .stance "有出入" }}badge-orange{{ else if eq .stance "印证" }}badge-blue{{ else if eq .stance "补充" }}badge-green{{ else }}badge-ghost{{ end }}">{{ .stance }}</span>
+            <a href="{{ .source_url }}" target="_blank" rel="noopener noreferrer">{{ .source_title }} ↗</a>
+            <span class="muted">{{ .source_kind_label }} · {{ .source_publisher }}</span>
+          </footer>
+        </blockquote>
+        {{ end }}
+      </section>
+
+      {{ with $p.notes }}
+      <section class="panel panel-soft">
+        <h2>本站备注</h2>
+        <p>{{ . }}</p>
+      </section>
+      {{ end }}
+
+      <p class="disclaimer">本站为公开文章的索引式整理，<strong>未对以上插件做安装实测</strong>，也不保证它们与当前版本 DSH 兼容。DSH 处于开发者预览版，插件机制可能有破坏性变更；安装第三方插件等于把可信代码放进运行时，请先看权限、安装脚本与外连请求。</p>
+      <div class="ad-note ad-note-wide" aria-label="广告">广告</div>
+    </div>
+
+    <aside class="detail-side">
+      <section class="side-box">
+        <h2>同分类还有</h2>
+        <ul class="side-list">
+          {{ range first 6 $related }}
+          <li><a href="{{ .RelPermalink }}">{{ .Params.plugin.name }}</a><span class="mini-tag">{{ .Params.plugin.agreement }}</span></li>
+          {{ end }}
+          {{ if not $related }}<li class="muted">这个分类暂时只有它一个。</li>{{ end }}
+        </ul>
+      </section>
+      <section class="side-box">
+        <h2>本篇引用了</h2>
+        <ul class="side-list">
+          {{ range $p.mentions }}
+          {{ $s := index hugo.Data.derived.source_map .source }}
+          <li><a href="{{ "sources/" | relURL }}{{ .source }}/">{{ $s.title }}</a><span class="mini-tag">{{ $s.kind_label }}</span></li>
+          {{ end }}
+        </ul>
+      </section>
+      <section class="side-box side-box-plain">
+        <p class="muted">发现说法不对、或者你能补一篇新文章？按<a href="{{ "about/" | relURL }}">整理方法</a>改 <code>data/*.yaml</code> 就行。</p>
+      </section>
+    </aside>
+  </div>
+</div>
+{{ end }}

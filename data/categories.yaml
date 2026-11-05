@@ -1,0 +1,31 @@
+# 分类表：id 用于 URL 与筛选，label 用于展示
+- id: market
+  label: 插件市场与发现
+  desc: 找插件、装插件、管版本
+- id: ui
+  label: 界面与体验
+  desc: 侧边栏、主题、桌面端、交互挂件
+- id: tool
+  label: 工具与能力
+  desc: 搜索、浏览器、视觉、文件引用
+- id: workflow
+  label: 协作与工作流
+  desc: 多智能体、任务编排、代码审阅
+- id: memory
+  label: 记忆与知识
+  desc: 跨会话记忆、项目上下文、知识库
+- id: billing
+  label: 模型与计费
+  desc: 余额、用量、成本可视化
+- id: security
+  label: 安全与治理
+  desc: 安装前扫描、权限策略
+- id: integration
+  label: 集成与迁移
+  desc: 微信、其他 Agent、MCP 桥接
+- id: fun
+  label: 娱乐与彩蛋
+  desc: 皮肤、桌宠、小游戏
+- id: builtin
+  label: 官方内置能力
+  desc: 开箱即用的插件、模式与运行时

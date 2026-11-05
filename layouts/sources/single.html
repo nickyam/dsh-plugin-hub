@@ -1,0 +1,63 @@
+{{ define "main" }}
+{{ $s := .Params.source }}
+<div class="wrap detail-page">
+  <nav class="breadcrumb" aria-label="面包屑">
+    <a href="{{ "/" | relURL }}">首页</a><span>/</span>
+    <a href="{{ "sources/" | relURL }}">来源台账</a><span>/</span>
+    <span>{{ $s.title }}</span>
+  </nav>
+
+  <div class="detail-columns">
+    <div class="detail-main">
+      <header class="detail-head">
+        <div class="badge-row"><span class="badge badge-blue">{{ $s.kind_label }}</span><span class="badge badge-ghost">提到 {{ $s.mentioned_count }} 个插件</span></div>
+        <h1>{{ $s.title }}</h1>
+        <p class="lead">{{ .Content }}</p>
+        <a class="btn btn-primary" href="{{ $s.url }}" target="_blank" rel="noopener noreferrer">打开原文 ↗</a>
+      </header>
+
+      <section class="panel">
+        <h2>来源信息</h2>
+        <dl class="kv">
+          <div><dt>类型</dt><dd>{{ $s.kind_label }}</dd></div>
+          <div><dt>署名 / 发布方</dt><dd>{{ $s.publisher }}</dd></div>
+          <div><dt>日期</dt><dd>{{ with $s.date_note }}{{ . }}{{ else }}未标注{{ end }}</dd></div>
+          <div><dt>原文</dt><dd><a href="{{ $s.url }}" target="_blank" rel="noopener noreferrer" class="break">{{ $s.url }} ↗</a></dd></div>
+          <div><dt>标签</dt><dd>{{ range $s.tags }}<span class="tag">{{ . }}</span>{{ else }}<span class="muted">—</span>{{ end }}</dd></div>
+        </dl>
+      </section>
+
+      <section class="panel">
+        <h2>这篇文章提到的插件 <small>{{ $s.mentioned_count }} 条</small></h2>
+        <p class="panel-note">点进去可以看到这篇文章的原话，以及别的文章是不是也这么说。</p>
+        <div class="source-plugins">
+          {{ range $s.mentioned }}
+          <a class="source-plugin" href="{{ "plugins/" | relURL }}{{ .id }}/">
+            <strong>{{ .name }}</strong>
+            <span class="mini-tag {{ if eq .agreement "多篇印证" }}mini-tag-blue{{ end }}">{{ .agreement }}</span>
+          </a>
+          {{ end }}
+        </div>
+      </section>
+
+      <p class="disclaimer">本站只摘录与插件相关的说法并附原文链接，不转载全文、不复制图片。原文版权归作者所有；若你是作者且不希望被收录，按<a href="{{ "about/" | relURL }}">关于页</a>的方式删掉对应台账即可。</p>
+      <div class="ad-note ad-note-wide" aria-label="广告">广告</div>
+    </div>
+
+    <aside class="detail-side">
+      <section class="side-box">
+        <h2>来源台账</h2>
+        <ul class="side-list">
+          {{ range where site.RegularPages "Section" "sources" }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="mini-tag">{{ .Params.source.kind_label }}</span></li>
+          {{ end }}
+        </ul>
+      </section>
+      <section class="side-box side-box-plain">
+        <h3>录入规矩</h3>
+        <p class="muted">日期、署名、数字，原文没写就留空或标「待补」，不猜。英文来源的引文在插件页里标为「译述」。</p>
+      </section>
+    </aside>
+  </div>
+</div>
+{{ end }}

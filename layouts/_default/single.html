@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="wrap prose-page">
+  <nav class="breadcrumb" aria-label="面包屑"><a href="{{ "/" | relURL }}">首页</a><span>/</span><span>{{ .Title }}</span></nav>
+  <header class="page-head">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </header>
+  <div class="prose">{{ .Content }}</div>
+  <div class="ad-note ad-note-wide" aria-label="广告">广告</div>
+</div>
+{{ end }}

@@ -1,0 +1,110 @@
+{{ define "main" }}
+{{ $stats := hugo.Data.derived.stats }}
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">非官方 · 中文资料库 · 持续整理</p>
+      <h1>把散落各处的 <em>DSH 插件</em><br>说法，收到一处</h1>
+      <p class="hero-sub">公众号文章写了一遍，目录站又写了一遍，官网还是另一套叫法。本站把它们拆成「插件主档 + 来源台账 + 证据链」：同一个插件去重合并，多篇说法一致的标印证，对不上的单独摆出来让你自己判断。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#catalog">浏览 {{ $stats.plugins }} 个插件</a>
+        <a class="btn btn-ghost" href="{{ "notes/" | relURL }}">看 {{ $stats.discrepancies }} 条口径分歧</a>
+      </div>
+      <p class="hero-note">DeepSeek Harness（DSH）是 DeepSeek 开源的 Agent 运行框架，主打「一切皆插件」。本站只做资料整理，不是插件市场，也不是官方目录。</p>
+    </div>
+    <div class="hero-board" aria-hidden="true">
+      <div class="board-head"><span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span><span>evidence-chain.md</span></div>
+      <div class="board-body">
+        <p class="board-line"><span class="board-k">plugin</span> dsh-market</p>
+        <p class="board-line"><span class="board-k">alias</span> 插件市场 / dshmarket</p>
+        <p class="board-line"><span class="board-k">sources</span> 2</p>
+        <div class="board-quote"><span class="q-tag q-blue">印证</span> 公众号：装上它，设置里会多出一个「插件市场」入口…</div>
+        <div class="board-quote"><span class="q-tag q-orange">有出入</span> 第三方：dsh plugin --profile web add dshmarket…</div>
+        <p class="board-line board-foot">→ 合并为 1 条主档，差异进「口径核对」</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><strong>{{ $stats.plugins }}</strong><span>插件条目</span></div>
+      <div class="stat"><strong>{{ $stats.mentions }}</strong><span>条来源引文</span></div>
+      <div class="stat"><strong>{{ $stats.corroborated }}</strong><span>多篇印证</span></div>
+      <div class="stat"><strong>{{ $stats.conflicts }}</strong><span>插件内有分歧</span></div>
+      <div class="stat"><strong>{{ $stats.sources }}</strong><span>篇来源台账</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap" id="catalog">
+  <div class="notice">
+    <span class="notice-icon">!</span>
+    <div><strong>先说清楚：</strong>这是读书笔记式的索引，不是已实测的插件清单。带「单篇提及」的条目只有一处出处，「口径有出入」的条目各篇文章说法不一致；DSH 仍是开发者预览版，兼容性随时会变。安装前请回到官方仓库与插件仓库自行核对。<a href="{{ "about/" | relURL }}">整理方法 →</a></div>
+  </div>
+
+  <div class="toolbar">
+    <div class="searchbox">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="q" type="search" placeholder="搜插件名、别名、功能，例如 微信 / 记忆 / dsh-market" autocomplete="off" aria-label="搜索插件">
+      <kbd>/</kbd>
+    </div>
+    <div class="filters" role="group" aria-label="按分类筛选">
+      <button class="filter is-active" data-filter="all">全部 <span>{{ $stats.plugins }}</span></button>
+      {{ range hugo.Data.derived.categories }}
+      <button class="filter" data-filter="{{ .id }}">{{ .label }} <span>{{ .count }}</span></button>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="columns">
+    <div class="col-main">
+      <div class="result-bar"><span id="result-count">{{ $stats.plugins }} 个插件</span><span class="muted">按证据充分度排序</span></div>
+      <div class="cards" id="cards">
+        {{ range sort (where site.RegularPages "Section" "plugins") "Weight" "desc" }}
+          {{ partial "card.html" . }}
+        {{ end }}
+      </div>
+      <p class="no-result" id="no-result" hidden>没找到匹配的插件。试试别名（例如「全家桶」「子智能体」），或者<a href="{{ "sources/" | relURL }}">看看来源台账</a>。</p>
+    </div>
+
+    <aside class="col-side">
+      <section class="side-box">
+        <h2>卡片上的徽章</h2>
+        <ul class="legend">
+          <li><span class="badge badge-blue">多篇印证</span> 两篇以上说法对得上</li>
+          <li><span class="badge badge-ghost">单篇提及</span> 目前只有一处出处</li>
+          <li><span class="badge badge-orange">口径有出入</span> 各篇说法不一致</li>
+          <li><span class="mini-tag mini-tag-warn">提示</span> 名称 / ID / 兼容性待核</li>
+        </ul>
+      </section>
+      <section class="side-box">
+        <h2>口径核对 <a class="more" href="{{ "notes/" | relURL }}">全部 →</a></h2>
+        <ul class="side-list">
+          {{ range hugo.Data.discrepancies }}
+          <li><a href="{{ "notes/" | relURL }}#{{ .id }}">{{ .title }}</a><span class="mini-tag">{{ .level }}</span></li>
+          {{ end }}
+        </ul>
+      </section>
+      <section class="side-box">
+        <h2>来源台账 <a class="more" href="{{ "sources/" | relURL }}">全部 →</a></h2>
+        <ul class="side-list">
+          {{ range first 5 (where site.RegularPages "Section" "sources") }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="mini-tag">{{ .Params.source.kind_label }}</span></li>
+          {{ end }}
+        </ul>
+        <p class="side-note">目前只有 {{ $stats.wechat }} 篇公众号文章；你把链接发我，我按同样格式继续往台账里加，印证数会自己长起来。</p>
+      </section>
+      <div class="ad-note" aria-label="广告">广告</div>
+    </aside>
+  </div>
+
+  <section class="howto">
+    <h2>往后怎么加一篇公众号文章</h2>
+    <div class="steps">
+      <div class="step"><span>01</span><h3>存来源</h3><p>在 <code>data/sources.yaml</code> 加一条：标题、公众号、原文链接、日期（没有就写「待补」）。</p></div>
+      <div class="step"><span>02</span><h3>挂证据</h3><p>文章提到的插件，在 <code>data/plugins.yaml</code> 已有条目下追加一条 <code>mentions</code> 引文；没见过的才新建条目，别名塞进 <code>aliases</code>。</p></div>
+      <div class="step"><span>03</span><h3>重新生成</h3><p>跑 <code>python3 tools/build_data.py &amp;&amp; hugo --minify</code>，印证数、冲突标记、搜索索引全部自动重算。</p></div>
+    </div>
+    <p class="howto-foot">说法打架时不去「选一个对的」，而是写进 <code>data/discrepancies.yaml</code>，把各方原话并列摆出来。<a href="{{ "about/" | relURL }}">完整整理方法 →</a></p>
+  </section>
+</div>
+{{ end }}

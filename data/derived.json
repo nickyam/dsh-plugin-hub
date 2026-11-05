@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-11-06 00:04",
+  "stats": {
+    "plugins": 48,
+    "sources": 7,
+    "wechat": 1,
+    "mentions": 61,
+    "corroborated": 11,
+    "conflicts": 3,
+    "discrepancies": 6,
+    "categories": 10
+  },
+  "categories": [
+    {
+      "id": "market",
+      "label": "插件市场与发现",
+      "desc": "找插件、装插件、管版本",
+      "count": 2
+    },
+    {
+      "id": "ui",
+      "label": "界面与体验",
+      "desc": "侧边栏、主题、桌面端、交互挂件",
+      "count": 4
+    },
+    {
+      "id": "tool",
+      "label": "工具与能力",
+      "desc": "搜索、浏览器、视觉、文件引用",
+      "count": 7
+    },
+    {
+      "id": "workflow",
+      "label": "协作与工作流",
+      "desc": "多智能体、任务编排、代码审阅",
+      "count": 3
+    },
+    {
+      "id": "memory",
+      "label": "记忆与知识",
+      "desc": "跨会话记忆、项目上下文、知识库",
+      "count": 5
+    },
+    {
+      "id": "billing",
+      "label": "模型与计费",
+      "desc": "余额、用量、成本可视化",
+      "count": 3
+    },
+    {
+      "id": "security",
+      "label": "安全与治理",
+      "desc": "安装前扫描、权限策略",
+      "count": 2
+    },
+    {
+      "id": "integration",
+      "label": "集成与迁移",
+      "desc": "微信、其他 Agent、MCP 桥接",
+      "count": 4
+    },
+    {
+      "id": "fun",
+      "label": "娱乐与彩蛋",
+      "desc": "皮肤、桌宠、小游戏",
+      "count": 9
+    },
+    {
+      "id": "builtin",
+      "label": "官方内置能力",
+      "desc": "开箱即用的插件、模式与运行时",
+      "count": 9
+    }
+  ],
+  "category_map": {
+    "market": "插件市场与发现",
+    "ui": "界面与体验",
+    "tool": "工具与能力",
+    "workflow": "协作与工作流",
+    "memory": "记忆与知识",
+    "billing": "模型与计费",
+    "security": "安全与治理",
+    "integration": "集成与迁移",
+    "fun": "娱乐与彩蛋",
+    "builtin": "官方内置能力"
+  },
+  "source_map": {
+    "wx-dabaihua": {
+      "title": "DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单",
+      "url": "http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9",
+      "publisher": "微信公众号（原文署名待补）",
+      "kind_label": "公众号"
+    },
+    "official-harness": {
+      "title": "DeepSeek Harness 官网：Everything is a plugin",
+      "url": "https://www.deepseek.com/en/harness/",
+      "publisher": "DeepSeek 官方",
+      "kind_label": "官方文档"
+    },
+    "baike-dsh": {
+      "title": "百度百科：DeepSeek Harness",
+      "url": "https://baike.baidu.com/item/deepseek%20harness/68533699",
+      "publisher": "百度百科",
+      "kind_label": "百科"
+    },
+    "tree-top10": {
+      "title": "10 Best DeepSeek Harness Plugins for AI Developers in 2026",
+      "url": "https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026",
+      "publisher": "TreeRouter Blog（英文，第三方）",
+      "kind_label": "第三方媒体"
+    },
+    "dsh-plugin-org": {
+      "title": "DSH Plugin Hub（中文插件目录站）",
+      "url": "https://dsh-plugin.org/zh",
+      "publisher": "dsh-plugin.org（社区，非官方）",
+      "kind_label": "目录站"
+    },
+    "deepseekai-works": {
+      "title": "DSH Plugins: What They Are, Where to Find Them, and How to Write One",
+      "url": "https://deepseekai.works/plugins",
+      "publisher": "deepseekai.works（第三方教程站）",
+      "kind_label": "教程 / 指南"
+    },
+    "dsh-plugin-net": {
+      "title": "What is a DSH plugin?（Plugin / Bundle / Profile 的区别）",
+      "url": "https://dsh-plugin.net/guides/what-is-dshplugin",
+      "publisher": "dsh-plugin.net（社区，非官方）",
+      "kind_label": "教程 / 指南"
+    }
+  },
+  "source_kind_label": {
+    "wechat": "公众号",
+    "official": "官方文档",
+    "encyclopedia": "百科",
+    "media": "第三方媒体",
+    "catalog": "目录站",
+    "guide": "教程 / 指南"
+  },
+  "status_label": {
+    "official": "官方",
+    "builtin": "官方内置",
+    "community": "社区",
+    "unknown": "原文未说明"
+  },
+  "stance_label": {
+    "印证": "印证",
+    "补充": "补充",
+    "仅提及": "仅提及",
+    "有出入": "有出入"
+  }
+}

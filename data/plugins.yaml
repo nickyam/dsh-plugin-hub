@@ -1,0 +1,620 @@
+# 插件主档：一个插件一条，别名合并到 aliases，所有说法挂到 mentions 证据链
+# 铁律：quote 只能是原文（英文来源为本站译述并标注）；没有的 repo / install 一律留空。
+# stance: 印证（说法一致） / 补充（角度不同不冲突） / 仅提及 / 有出入（说法冲突）
+# status: official（官方） / builtin（官方内置） / community（社区） / unknown（原文未说明）
+# flag: 需要读者额外注意的短提示，会显示成橙色徽章
+
+# ── 插件市场与发现 ──────────────────────────────────────────────
+- id: dsh-market
+  name: dsh-market
+  aliases: [插件市场, dshmarket, "dsh-market/dsh-market"]
+  category: market
+  status: community
+  summary: "DSH 里第一个该装的插件：给设置面板加一个「插件市场」入口，浏览、搜索、筛选、一键安装与切换版本。"
+  repo: "https://github.com/dsh-market/dsh-market"
+  tags: [必装, 一键安装, 入口]
+  flag: "安装写法有出入"
+  notes: "两篇来源都推荐「先装它」，但给的入口写法不同（仓库地址 / 名称@版本 / 命令行 add），全部保留在证据链与「口径核对」页。"
+  mentions:
+    - source: wx-dabaihua
+      stance: 印证
+      quote: "想在几万个插件里不迷路，第一个该装的就是 dsh-market——装上它，设置里会多出一个「插件市场」入口，可以搜索、筛选、一键安装 GitHub 上的 DSH 插件。输入 https://github.com/dsh-market/dsh-market 安装，失败可尝试输入插件名称 dshmarket@1.73.6。"
+    - source: tree-top10
+      stance: 有出入
+      quote: "译述：dsh-market 是 DSH 原生的可视化插件市场，卡片式画廊、标签筛选、一键安装与版本切换，awesome 清单也把它列为第一个该装的插件；命令行为 dsh plugin --profile web add dshmarket。"
+
+- id: dsh-find-plugin
+  name: dsh-find-plugin
+  category: market
+  status: community
+  summary: "不想开图形界面时，让 Agent 直接在对话里搜 GitHub 上带 dsh-plugin 标签的仓库。"
+  tags: [命令行, GitHub, 发现]
+  notes: "官方唯一的发现机制是 GitHub topic dsh-plugin，第三方目录站均非官方（见 deepseekai.works 的插件指南）。"
+  mentions:
+    - source: tree-top10
+      stance: 仅提及
+      quote: "译述：偏好对话式工作流的用户可以装 dsh-find-plugin，让 Agent 在会话里直接搜索带 dsh-plugin 标签的 GitHub 仓库。"
+
+# ── 界面与体验 ─────────────────────────────────────────────────
+- id: dsh-web-all
+  name: dsh-web-all（Web 全家桶）
+  aliases: ["dsh-web-ui-all", "@linxin666/dsh-web-all", "dsh-web full suite", "dsh-web"]
+  category: ui
+  status: community
+  summary: "把任务看板、Git 记录、实时统计、远程访问、桌面宠物和皮肤等常用 Web 插件打成一个包。"
+  install: "dsh plugin --profile web add @linxin666/dsh-web-all@latest"
+  tags: [全家桶, 看板, 远程]
+  flag: "名称有出入"
+  notes: "两篇来源功能描述高度重叠但名字不同，本站按同一条目收录、别名全部可搜；是否同一个仓库未确认。"
+  mentions:
+    - source: wx-dabaihua
+      stance: 印证
+      quote: "dsh-web-ui-all：把常用的 DSH Web 插件做成了一个全家桶。支持任务看板、Git 记录、实时统计、远程访问、桌面宠物和皮肤。"
+    - source: tree-top10
+      stance: 印证
+      quote: "译述：dsh-web 全家桶把任务看板、手机远程控制、SSH 操作面板、用量统计和会话归档等独立模块打包，通过官方 profile 机制挂到 Web 运行时，不改 DSH 源码；安装命令 dsh plugin --profile web add @linxin666/dsh-web-all@latest。"
+
+- id: dsh-desktop
+  name: DSH Desktop
+  aliases: ["DeepSeek Harness Desktop", "anywhere-labs"]
+  category: ui
+  status: community
+  summary: "把原本要命令行启动的 DSH 本地 Web UI 封成 macOS / Windows 桌面应用，不用装 Node.js。"
+  tags: [桌面端, 免命令行]
+  flag: "社区项目，非官方"
+  notes: "两篇来源都强调它是社区独立项目，与 DeepSeek 官方无隶属关系。"
+  mentions:
+    - source: baike-dsh
+      stance: 印证
+      quote: "社区开发者还基于官方开源项目构建了 DeepSeek Harness Desktop 桌面应用。该应用将原本需要通过命令行启动的 Harness 本地 Web UI 封装为独立应用，用户无需安装 Node.js 或执行命令。"
+    - source: tree-top10
+      stance: 印证
+      quote: "译述：anywhere-labs 维护的 DSH Desktop 把 Web UI、后端服务与插件生态打包成原生 Windows / macOS 应用；仓库明确说明是独立社区项目，与 DeepSeek 官方无隶属关系。另有 dataelement、hairyf 维护的桌面构建可选。"
+
+- id: dsh-better-sidebar
+  name: DSH Better Sidebar
+  category: ui
+  status: community
+  summary: "把文件管理、代码编辑、终端、Git 面板塞进同一个侧边栏。"
+  tags: [侧边栏, Git, 效率]
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "DSH Better Sidebar 将文件管理、代码编辑、终端、Git 面板等功能集成到侧边栏。"
+
+- id: selection-toolbar
+  name: 划词工具条
+  category: ui
+  status: unknown
+  summary: "选中文字后弹出复制 / 引用 / 翻译 / 解释 / 总结菜单，还能「顺便问」开小窗提问而不打断主会话。"
+  tags: [划词, 交互]
+  flag: "原文未给插件 ID"
+  notes: "公众号文章只给了中文功能名，未给仓库或包名，安装方式待补。"
+  mentions:
+    - source: wx-dabaihua
+      stance: 仅提及
+      quote: "划词工具条。选中任意文字，弹出复制/引用/翻译/解释/总结菜单；还能「顺便问」——单开一个小窗提问，不打断主会话。"
+
+# ── 工具与能力 ─────────────────────────────────────────────────
+- id: modsearch
+  name: ModSearch
+  category: tool
+  status: community
+  summary: "免费联网搜索，免注册、免 API Key，还能搜 X（推特）内容，用来替掉按量收费的官方搜索。"
+  tags: [搜索, 免费, 省成本]
+  notes: "与 dsh-websearch、官方内置网页搜索属于同类不同实现，本站不合并。"
+  mentions:
+    - source: wx-dabaihua
+      stance: 仅提及
+      quote: "ModSearch：免费的联网搜索。官方搜索按量收费，让 AI 查资料时，花费大头都在联网上。ModSearch 免注册、免 API Key，还能搜 X（推特）内容——能省的钱不省白不省。"
+
+- id: dsh-websearch
+  name: dsh-websearch
+  category: tool
+  status: community
+  summary: "并行查多个搜索引擎，去重后合并结果。"
+  tags: [搜索, 聚合]
+  mentions:
+    - source: tree-top10
+      stance: 仅提及
+      quote: "译述：dsh-websearch 并行查询 11 个搜索引擎，对结果去重并合并。"
+
+- id: browserskill
+  name: BrowserSkill
+  aliases: [浏览器技能]
+  category: tool
+  status: community
+  summary: "让 AI 连上 Chrome / Edge，借用已有登录状态读页面、填表单、截长图；任务跑在独立可见的代理窗口里。"
+  tags: [浏览器, 自动化, 腾讯]
+  mentions:
+    - source: wx-dabaihua
+      stance: 仅提及
+      quote: "BrowserSkill：让 AI 操作浏览器。腾讯出品，能把 AI 连上 Chrome/Edge，用你已有的登录状态读页面、填表单、截长图。任务在独立可见的「代理窗口」里跑，需要操作已有标签页时显式借用，用完归还。"
+
+- id: dsh-vision
+  name: dsh-vision
+  category: tool
+  status: community
+  summary: "视觉能力扩展类插件。"
+  tags: [视觉, 多模态]
+  flag: "原文仅给名称"
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "插件类型极其多样，包括功能增强类（如双模型路由 dsh-plan-execute、视觉能力扩展 dsh-vision）。"
+
+- id: dsh-at-file
+  name: dsh-at-file
+  category: tool
+  status: community
+  summary: "提供类似 @文件 的引用指令能力。"
+  tags: ["@文件", 指令]
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "dsh-at-file 提供类似 @ 文件的指令功能。"
+
+- id: open-design
+  name: open-design
+  category: tool
+  status: community
+  summary: "把 Agent 的提示词转成原型、演示文稿与设计资产，本地优先；2026 年 9 月宣布原生兼容 DSH 运行时。"
+  tags: [设计, 多模态, 演示文稿]
+  flag: "兼容性按版本与日期标注"
+  notes: "第三方文章称其在 DSH 插件里社区关注度最高，本站不引用具体 star 数（见口径核对）。"
+  mentions:
+    - source: tree-top10
+      stance: 仅提及
+      quote: "译述：open-design 定位为 Claude Design 的开源替代，是一个本地优先的桌面应用，把 Agent 提示词转成原型、幻灯片、系统架构图；2026 年 9 月宣布与 dsh 原生运行时兼容，支持结构化设计思考、工具调用、模型预览、任务取消与会话恢复。"
+
+- id: skill-report
+  name: 技能调用报告
+  category: tool
+  status: unknown
+  summary: "自动统计每轮对话用了哪些 skill，可在面板里直接装卸、更新，方便搞清楚「AI 到底在干嘛」。"
+  tags: [可观测, Skill]
+  flag: "原文未给插件 ID"
+  mentions:
+    - source: wx-dabaihua
+      stance: 仅提及
+      quote: "技能调用报告。自动统计每轮对话用了哪些 skill，支持在面板里直接装卸、更新，适合想搞清楚「AI 到底在干嘛」的同学。"
+
+# ── 官方内置能力 ───────────────────────────────────────────────
+- id: plugin-subagents
+  name: Subagents（子智能体）
+  aliases: [子智能体, 多智能体]
+  category: builtin
+  status: builtin
+  summary: "官方内置的子智能体能力：主 Agent 拆任务、派多个子智能体独立干、再汇总，轨迹可见。"
+  tags: [官方内置, 多智能体]
+  mentions:
+    - source: wx-dabaihua
+      stance: 印证
+      quote: "官方预置了什么？开箱自带六件套：子智能体、网页搜索、Agent 循环、终端四个插件。主 agent（队长）接到任务先拆解，派出多个子智能体各自独立干活，做完交回队长汇总，全程轨迹可见。"
+    - source: official-harness
+      stance: 印证
+      quote: "译述：官网 Plugins 面板列出 Subagents；Standard mode 包含文件编辑、shell、文件与网页搜索、skills、planning、goals、subagents 与 workflows。"
+
+- id: plugin-web-search
+  name: Web Search（网页搜索）
+  aliases: [网页搜索]
+  category: builtin
+  status: builtin
+  summary: "官方内置的网页搜索插件，也是各篇「省搜索费」类社区插件的对照基准。"
+  tags: [官方内置, 搜索]
+  notes: "公众号提到可配置搜索提供方；官方搜索按量收费的说法来自该文，本站未独立核实计费规则。"
+  mentions:
+    - source: wx-dabaihua
+      stance: 印证
+      quote: "开箱自带六件套：子智能体、网页搜索、Agent 循环、终端四个插件……设置 DeepSeek 的搜索提供方。官方搜索按量收费，让 AI 查资料时，花费大头都在联网上。"
+    - source: official-harness
+      stance: 印证
+      quote: "译述：Standard mode 为完整工具集的编码 Agent，包含文件编辑、shell、文件与网页搜索、skills、planning、goals、subagents 与 workflows。"
+
+- id: plugin-agent-loop
+  name: Agent loop（Agent 循环）
+  aliases: ["Agent 循环"]
+  category: builtin
+  status: builtin
+  summary: "官方内置的 Agent 循环，负责让任务一轮接一轮跑下去而不是聊完一句就散场。"
+  tags: [官方内置, 运行时]
+  mentions:
+    - source: wx-dabaihua
+      stance: 印证
+      quote: "中间这层「调度工具、管理任务、执行闭环」的系统，就叫 Harness……官方预置了子智能体、网页搜索、Agent 循环、终端四个插件。"
+    - source: official-harness
+      stance: 印证
+      quote: "译述：官网 Plugins 面板列出 Agent loop；架构文档说明连 agent loop 本身也是可替换的插件，而非特权内核功能。"
+
+- id: plugin-terminal
+  name: Terminal（终端）
+  aliases: [终端, Shell]
+  category: builtin
+  status: builtin
+  summary: "官方内置终端插件，让 Agent 能真正执行命令、落盘文件。"
+  tags: [官方内置, Shell]
+  mentions:
+    - source: wx-dabaihua
+      stance: 印证
+      quote: "它会答题、会写文案，但不会打开你的表格、不会跑个脚本、更不会把结果存成文件……开箱自带子智能体、网页搜索、Agent 循环、终端四个插件。"
+    - source: official-harness
+      stance: 印证
+      quote: "译述：官网 Plugins 面板列出 Terminal；Minimal mode 只保留一个持久 bash 与 str_replace_editor 两个工具，用于最小化环境里的模型评测。"
+
+- id: plugin-agent-teams
+  name: Agent teams（官方内置）
+  aliases: ["Agent teams", "dsh-agent-teams（社区同名）"]
+  category: builtin
+  status: builtin
+  summary: "官网界面里标为 Experimental 的 Agent teams；百科另列了同名的社区插件 dsh-agent-teams，两者关系未确认。"
+  tags: [官方内置, Experimental, 多智能体]
+  flag: "与社区同名插件并存"
+  notes: "多 Agent 团队能力在公众号文里也有整节介绍，并提醒「给每个队员配不同模型不是默认生效，需要显式配置」。"
+  mentions:
+    - source: official-harness
+      stance: 印证
+      quote: "译述：官网 Plugins 面板列出 Agent teams（Experimental）、Auto approval review（Experimental）、Scheduled tasks（Experimental）、Voice input（Experimental）、Terminal、Agent loop、Subagents。"
+    - source: baike-dsh
+      stance: 有出入
+      quote: "dsh-agent-teams 支持在会话中快速组建和管理多智能体协作团队。"
+    - source: wx-dabaihua
+      stance: 补充
+      quote: "给每个队员配不同模型目前不是默认生效，需要显式配置。看懂这点，就不容易被夸大的测评带偏。"
+
+- id: plugin-scheduled-tasks
+  name: Scheduled tasks（定时任务）
+  category: builtin
+  status: builtin
+  summary: "官网插件面板里标为 Experimental 的定时任务能力。"
+  tags: [官方内置, Experimental, 自动化]
+  mentions:
+    - source: official-harness
+      stance: 仅提及
+      quote: "译述：官网 Plugins 面板列出 Scheduled tasks，标注 Experimental。"
+
+- id: plugin-auto-approval
+  name: Auto approval review（自动审批复核）
+  category: builtin
+  status: builtin
+  summary: "官网插件面板里标为 Experimental 的自动审批复核能力。"
+  tags: [官方内置, Experimental, 权限]
+  mentions:
+    - source: official-harness
+      stance: 仅提及
+      quote: "译述：官网 Plugins 面板列出 Auto approval review，标注 Experimental。"
+
+- id: plugin-voice-input
+  name: Voice input（语音输入）
+  category: builtin
+  status: builtin
+  summary: "官网插件面板里标为 Experimental 的语音输入能力。"
+  tags: [官方内置, Experimental, 语音]
+  mentions:
+    - source: official-harness
+      stance: 仅提及
+      quote: "译述：官网 Plugins 面板列出 Voice input，标注 Experimental。"
+
+- id: runtime-modes
+  name: 四种运行模式
+  aliases: ["Standard / Code / Minimal / Creator", "标准 / 极简 / PTC / 创造"]
+  category: builtin
+  status: builtin
+  summary: "Standard（全工具集）、Code（用模型生成的 TypeScript 程序编排多步工具调用）、Minimal（只留两个工具做评测）、Creator（检查运行时、试挂载插件、编排新预设）。"
+  repo: "https://github.com/deepseek-ai/deepseek-harness"
+  tags: [官方内置, 模式, 架构]
+  flag: "PTC / Code 命名待核对"
+  notes: "不是单个插件，而是官方内置的可运行组合，收录在此便于和公众号里的说法对照。详细差异见「口径核对」页。"
+  mentions:
+    - source: official-harness
+      stance: 印证
+      quote: "译述：Standard mode 包含完整工具集；Code mode 通过 Code Mode SDK 把工具暴露给模型，可在一段 TypeScript 程序里组合多步调用；Minimal mode 只保留持久 bash 与 str_replace_editor；Creator mode 支持运行时检查、内存里试插件、编排自定义预设。"
+    - source: wx-dabaihua
+      stance: 有出入
+      quote: "它预设了四种模式：标准模式干日常活，极简模式省 token，PTC 模式适合程序化批量处理，创造模式让 AI 自己组队、自己造插件。"
+    - source: dsh-plugin-net
+      stance: 补充
+      quote: "译述：profile 是一种可运行的组合（如 web / headless），从空的插件树开始，按序叠加 bundle patch、profile patch、机器级 patch 与命令行 patch；后一层可覆盖前一层，卸载插件会撤销它注册的效果。"
+
+# ── 协作与工作流 ───────────────────────────────────────────────
+- id: dsh-agent-teams
+  name: dsh-agent-teams（社区版）
+  category: workflow
+  status: community
+  summary: "百科词条列出的社区插件：在会话里快速组建和管理多智能体协作团队。"
+  tags: [多智能体, 协作]
+  flag: "与官方内置同名"
+  notes: "官网界面里另有标为 Experimental 的 Agent teams（官方内置），两者是否为同一实现未确认，本站分列两条，详见「口径核对」。"
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "dsh-agent-teams 支持在会话中快速组建和管理多智能体协作团队。"
+    - source: wx-dabaihua
+      stance: 补充
+      quote: "主 agent（队长）接到任务先拆解，派出多个子智能体各自独立干活，做完交回队长汇总，全程轨迹可见……给每个队员配不同模型目前不是默认生效，需要显式配置。"
+
+- id: dsh-plan-execute
+  name: dsh-plan-execute
+  category: workflow
+  status: community
+  summary: "双模型路由：把规划与执行拆给不同模型。"
+  tags: [双模型, 路由, 省成本]
+  flag: "原文仅给名称"
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "插件类型极其多样，包括功能增强类（如双模型路由 dsh-plan-execute、视觉能力扩展 dsh-vision）。"
+
+- id: dsh-diff-approval
+  name: dsh-diff-approval
+  category: workflow
+  status: community
+  summary: "保留或回滚 Agent 做过的每一次代码修改，便于逐笔审阅。"
+  tags: [代码审阅, 回滚, 可追溯]
+  mentions:
+    - source: tree-top10
+      stance: 仅提及
+      quote: "译述：dsh-diff-approval 可以保留或回滚 Agent 执行的每一次代码修改。"
+
+# ── 记忆与知识 ─────────────────────────────────────────────────
+- id: dsh-memory-evolve
+  name: dsh-memory-evolve
+  category: memory
+  status: community
+  summary: "为智能体提供跨会话的长期记忆能力。"
+  tags: [记忆, 跨会话]
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "dsh-memory-evolve 为智能体提供跨会话的长期记忆能力。"
+
+- id: dsh-project-memory
+  name: dsh-project-memory
+  category: memory
+  status: community
+  summary: "项目级持久记忆：自动把任务清单、读过的文件与任务关联起来，切换上下文后能接着干。"
+  tags: [记忆, 项目级]
+  mentions:
+    - source: tree-top10
+      stance: 仅提及
+      quote: "译述：dsh-project-memory 提供项目级持久记忆，任务清单与文件读取记录会自动存为跨会话记忆，任务与关联文件保持链接；读取时索引文本与代码符号，而非全量扫描文档。"
+
+- id: dsh-engram
+  name: dsh-engram
+  category: memory
+  status: community
+  summary: "SQLite 分层存储 + 全文与向量检索的记忆插件，dsh-project-memory 的替代之一。"
+  tags: [记忆, SQLite, 向量检索]
+  mentions:
+    - source: tree-top10
+      stance: 仅提及
+      quote: "译述：替代方案包括 dsh-engram（SQLite 分层存储，结合全文与向量检索）与 runtime36（把 Obsidian vault 导入为 Agent 知识库）。"
+
+- id: runtime36
+  name: runtime36
+  category: memory
+  status: community
+  summary: "把 Obsidian 笔记库导入为 Agent 知识库。"
+  tags: [记忆, Obsidian, 知识库]
+  mentions:
+    - source: tree-top10
+      stance: 仅提及
+      quote: "译述：runtime36 可以把 Obsidian vault 导入为 Agent 知识库，是项目记忆插件的替代方案之一。"
+
+- id: dsh-basabase
+  name: "@basabase/dsh-plugin"
+  category: memory
+  status: community
+  summary: "让 Agent 访问可审计的知识库与结构化数据集。"
+  tags: [知识库, 数据库]
+  mentions:
+    - source: tree-top10
+      stance: 仅提及
+      quote: "译述：@basabase/dsh-plugin 让 Agent 访问可审计的知识库与结构化数据集；2026 年 9 月曾被 HN 推荐。"
+
+# ── 模型与计费 ─────────────────────────────────────────────────
+- id: dsh-api-dashboard
+  name: dsh-api-dashboard
+  category: billing
+  status: community
+  summary: "在输入框附近显示多家模型平台的余额与本次会话 / 子 Agent 的 token 消耗估算。"
+  tags: [余额, 用量, 多家平台]
+  mentions:
+    - source: tree-top10
+      stance: 仅提及
+      quote: "译述：dsh-api-dashboard 在输入框直接显示 DeepSeek、GLM、Kimi、MiniMax、OpenRouter 等平台的余额，估算当前会话与子 Agent 的 token 消耗，按 DeepSeek 计价规则算钱。"
+
+- id: dsh-api-balance
+  name: dsh-api-balance
+  category: billing
+  status: community
+  summary: "只用 DeepSeek 原生 API 时更轻的余额显示替代品。"
+  tags: [余额, 轻量]
+  mentions:
+    - source: tree-top10
+      stance: 仅提及
+      quote: "译述：只使用 DeepSeek 原生 API 的用户，可以换用更轻量的 dsh-api-balance。"
+
+- id: whale-cost-widget
+  name: 小鲸鱼记账挂件
+  category: billing
+  status: unknown
+  summary: "右下角桌宠实时显示上次对话花费、今日花费、钱包余额与峰谷时段。"
+  tags: [桌宠, 成本可视化]
+  flag: "原文未给插件 ID"
+  mentions:
+    - source: wx-dabaihua
+      stance: 仅提及
+      quote: "小鲸鱼记账挂件。屏幕右下角养一只桌宠小鲸鱼，实时显示上次对话花了多少钱、今天花了多少、钱包余额，甚至当前是峰时还是谷时。花销透明，心里不慌。"
+
+# ── 安全与治理 ─────────────────────────────────────────────────
+- id: dsh-plugin-gate
+  name: dsh-plugin-gate
+  category: security
+  status: community
+  summary: "装插件前先扫本地目录与 npm 包：安装脚本、权限要求、密钥、外连请求，给出 BLOCK / WARN / PASS 判定。"
+  tags: [安装前扫描, 安全]
+  notes: "第三方教程站也提醒：允许 prepare 脚本等于允许包代码在 Agent 沙箱外的宿主机上运行，只应信任审查过的包并固定 commit。"
+  mentions:
+    - source: tree-top10
+      stance: 仅提及
+      quote: "译述：执行 dsh plugin add 之前，dsh-plugin-gate 会扫描本地目录和 npm 包，检查安装脚本、权限需求、密钥与对外网络连接，返回 BLOCK、WARN、PASS 三级判定。"
+    - source: deepseekai-works
+      stance: 补充
+      quote: "译述：pnpm 10 起默认拦截 prepare 脚本，要在 profile 的 pnpm-workspace.yaml 里显式 allowBuilds；放行等于允许包代码在 Agent 沙箱外的宿主机执行，官方建议只信任审查过的包并用 github:you/hello-plugin#<commit> 固定版本。"
+
+- id: dsh-gov
+  name: dsh-gov
+  category: security
+  status: community
+  summary: "Agent 治理工具包，实现 allow / deny / ask 三种工具权限模式。"
+  tags: [权限, 治理]
+  mentions:
+    - source: tree-top10
+      stance: 仅提及
+      quote: "译述：建议成对安装两个安全插件——dsh-plugin-gate 负责安装前扫描，dsh-gov 是 Agent 治理工具包，实现 allow、deny、ask 三种工具权限模式。"
+
+# ── 集成与迁移 ─────────────────────────────────────────────────
+- id: dsh-wechat
+  name: dsh-wechat
+  category: integration
+  status: community
+  summary: "把 AI 接进微信：电脑息屏时仍在值守，手机上审批权限、用自然语言或语音派活。"
+  tags: [微信, 远程]
+  mentions:
+    - source: wx-dabaihua
+      stance: 仅提及
+      quote: "dsh-wechat：把 AI 接进微信。电脑息屏待机时，AI 仍在微信里值守：手机上审批权限、自然语言甚至语音控制，人不在电脑前也能派活。"
+
+- id: dsh-plugin-claude-bridge
+  name: dsh-plugin-claude-bridge
+  category: integration
+  status: community
+  summary: "迁移与集成工具，用于对接其他 Agent 生态。"
+  tags: [迁移, 桥接]
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "此外还有迁移与集成工具如 dsh-plugin-claude-bridge 和 dsh-claude-move。"
+
+- id: dsh-claude-move
+  name: dsh-claude-move
+  category: integration
+  status: community
+  summary: "从其他 Agent 工具迁移到 DSH 的配套工具。"
+  tags: [迁移]
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "此外还有迁移与集成工具如 dsh-plugin-claude-bridge 和 dsh-claude-move。"
+
+- id: dsh-mcp-client
+  name: "@deepseek-ai/dsh-mcp-client"
+  category: integration
+  status: official
+  summary: "把外部 MCP server 的工具桥接进 DSH，工具名以 mcp__ 前缀原生出现。"
+  tags: [MCP, 官方, 桥接]
+  notes: "第三方教程明确：MCP 只桥接 Tools，resources 与 prompts 不支持；所有 MCP server 默认不启用，因为启动命令是沙箱外受信任的可执行代码。"
+  mentions:
+    - source: deepseekai-works
+      stance: 仅提及
+      quote: "译述：@deepseek-ai/dsh-mcp-client 通过 stdio 或 streamable-http 连接 MCP server，其工具会以 mcp__github__create_issue 这类名字原生出现；只有 Tools 被桥接，resources 与 prompts 完全不支持。"
+
+# ── 娱乐与彩蛋 ─────────────────────────────────────────────────
+- id: dsh-minigames
+  name: dsh-minigames
+  category: fun
+  status: community
+  summary: "18 款小游戏合集，含俄罗斯方块、贪吃蛇等，直接嵌进 DSH 界面。"
+  tags: [游戏, 摸鱼]
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "集成包含俄罗斯方块、贪吃蛇等在内的 18 款小游戏合集（dsh-minigames）。"
+
+- id: dsh-ads
+  name: dsh-ads
+  category: fun
+  status: community
+  summary: "模拟 2005 年代中文互联网风格的广告 UI，纯怀旧彩蛋。"
+  tags: [怀旧, 界面]
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "模拟 2005 年代中文互联网风格的广告 UI（dsh-ads）等。"
+
+- id: dsh-anti-ads
+  name: dsh-anti-ads
+  category: fun
+  status: community
+  summary: "专门用来去掉 dsh-ads 广告的插件——社区里著名的插件攻防梗。"
+  tags: [去广告, 梗]
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "甚至出现了插件间的攻防（广告插件 dsh-ads 与去广告插件 dsh-anti-ads）。"
+
+- id: dsh-gomoku
+  name: dsh-gomoku
+  category: fun
+  status: community
+  summary: "五子棋插件。"
+  tags: [游戏]
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "娱乐游戏类（如五子棋 dsh-gomoku、摸鱼面板 dsh-lazyfish）。"
+
+- id: dsh-lazyfish
+  name: dsh-lazyfish
+  category: fun
+  status: community
+  summary: "摸鱼面板。"
+  tags: [摸鱼, 面板]
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "娱乐游戏类（如五子棋 dsh-gomoku、摸鱼面板 dsh-lazyfish）。"
+
+- id: dsh-qq2006
+  name: dsh-qq2006
+  category: fun
+  status: community
+  summary: "复古 QQ 皮肤。"
+  tags: [皮肤, 怀旧]
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "界面主题类（如复古 QQ 皮肤 dsh-qq2006、像素鲸鱼 dsh-ui-whale）。"
+
+- id: dsh-ui-whale
+  name: dsh-ui-whale
+  category: fun
+  status: community
+  summary: "像素鲸鱼主题。"
+  tags: [皮肤, 像素风]
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "界面主题类（如复古 QQ 皮肤 dsh-qq2006、像素鲸鱼 dsh-ui-whale）。"
+
+- id: dsh-emoji
+  name: dsh-emoji
+  category: fun
+  status: community
+  summary: "让 AI 回复带上自己的表情包，不改页面结构，只改聊天气氛。"
+  tags: [表情包]
+  mentions:
+    - source: wx-dabaihua
+      stance: 仅提及
+      quote: "dsh-emoji：让 AI 回复带上自己的表情包，不会改变页面，但能改变聊天气氛哦。"
+
+- id: fabric
+  name: fabric
+  category: fun
+  status: community
+  summary: "简介明确致敬《我的世界》Mod 加载器 Fabric，是社区把 DSH 生态类比成 MC Mod 的注脚。"
+  tags: [梗, Mod]
+  mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: "有开发者制作了名为「fabric」的插件，其简介明确指向《我的世界》的 Mod 加载器，印证了这一类比。"

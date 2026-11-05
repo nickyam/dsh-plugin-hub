@@ -1,0 +1,31 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-about">
+      <div class="brand brand-footer"><span class="brand-mark">DSH</span><span class="brand-text">插件图谱</span></div>
+      <p>把散落在公众号、官方文档与目录站里的 DeepSeek Harness 插件说法汇总到一处：去重、印证、标出分歧。</p>
+      <p class="muted">非官方站点，与 DeepSeek 及各插件作者无隶属关系。</p>
+    </div>
+    <div>
+      <h3>浏览</h3>
+      <a href="{{ "plugins/" | relURL }}">全部插件</a>
+      <a href="{{ "categories/" | relURL }}">按分类</a>
+      <a href="{{ "sources/" | relURL }}">来源台账</a>
+      <a href="{{ "notes/" | relURL }}">口径核对</a>
+    </div>
+    <div>
+      <h3>本站</h3>
+      <a href="{{ "about/" | relURL }}">整理方法</a>
+      <a href="{{ "privacy/" | relURL }}">广告与隐私</a>
+      <a href="https://www.deepseek.com/en/harness/" target="_blank" rel="noopener noreferrer">DSH 官网 ↗</a>
+      <a href="https://github.com/deepseek-ai/deepseek-harness" target="_blank" rel="noopener noreferrer">官方仓库 ↗</a>
+    </div>
+    <div class="footer-note">
+      <h3>一句话免责</h3>
+      <p>DSH 仍处开发者预览版，插件兼容性随时变化。本站是<strong>读书笔记式的索引</strong>，不构成安装建议；动手前请看官方仓库与插件自身的权限说明。</p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© {{ now.Year }} DSH 插件图谱 · 数据整理于 {{ hugo.Data.derived.generated_at }}</span>
+    <span>{{ hugo.Data.derived.stats.plugins }} 个插件 · {{ hugo.Data.derived.stats.sources }} 条来源 · {{ hugo.Data.derived.stats.mentions }} 条证据</span>
+  </div>
+</footer>

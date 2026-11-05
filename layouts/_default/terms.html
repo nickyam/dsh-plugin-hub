@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="wrap list-page">
+  <nav class="breadcrumb" aria-label="面包屑"><a href="{{ "/" | relURL }}">首页</a><span>/</span><span>{{ .Title }}</span></nav>
+  <header class="page-head">
+    <h1>{{ if eq .Data.Plural "categories" }}按分类浏览{{ else }}按标签浏览{{ end }}</h1>
+    <p>{{ if eq .Data.Plural "categories" }}本站把插件分成 {{ len .Pages }} 类；分类是整理口径，不是官方分类。{{ else }}来自各篇文章的关键词。{{ end }}</p>
+  </header>
+  {{ if eq .Data.Plural "categories" }}
+  <div class="category-grid">
+    {{ range .Pages }}
+    {{ $term := .Title }}
+    {{ $label := .Title }}{{ with index hugo.Data.derived.category_map $term }}{{ $label = . }}{{ end }}
+    {{ $desc := "" }}{{ range hugo.Data.derived.categories }}{{ if eq .id $term }}{{ $desc = .desc }}{{ end }}{{ end }}
+    <a class="category-card" href="{{ .RelPermalink }}">
+      <h2>{{ $label }}</h2>
+      <p>{{ $desc }}</p>
+      <span>{{ len .Pages }} 个插件 →</span>
+    </a>
+    {{ end }}
+  </div>
+  {{ else }}
+  <div class="tag-cloud">{{ range .Pages }}<a class="tag tag-lg" href="{{ .RelPermalink }}">{{ .Title }} <span>{{ len .Pages }}</span></a>{{ end }}</div>
+  {{ end }}
+</div>
+{{ end }}

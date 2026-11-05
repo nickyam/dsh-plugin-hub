@@ -1,0 +1,37 @@
+---
+title: dsh-ui-whale
+description: 像素鲸鱼主题。
+categories:
+- fun
+tags: &id001
+- 皮肤
+- 像素风
+weight: 100
+params:
+  plugin:
+    id: dsh-ui-whale
+    name: dsh-ui-whale
+    category: fun
+    status: community
+    summary: 像素鲸鱼主题。
+    tags: *id001
+    mentions:
+    - source: baike-dsh
+      stance: 仅提及
+      quote: 界面主题类（如复古 QQ 皮肤 dsh-qq2006、像素鲸鱼 dsh-ui-whale）。
+      source_title: 百度百科：DeepSeek Harness
+      source_url: https://baike.baidu.com/item/deepseek%20harness/68533699
+      source_kind_label: 百科
+      source_publisher: 百度百科
+    source_count: 1
+    has_conflict: false
+    agreement: 单篇提及
+    confidence: 待核实
+    category_label: 娱乐与彩蛋
+    status_label: 社区
+    weight: 100
+    url: /plugins/dsh-ui-whale/
+  generated: true
+---
+
+像素鲸鱼主题。

@@ -1,0 +1,27 @@
+# ⚠️ 上线前把 baseURL 改成真实域名（例如 https://dsh.example.com/）
+# 部署到 Cloudflare Pages：构建命令 `hugo --minify`，输出目录 public，环境变量 HUGO_VERSION=0.166.0
+baseURL = "https://example.com/"
+locale = "zh-CN"
+title = "DSH 插件图谱"
+enableRobotsTXT = true
+enableGitInfo = false
+
+[params]
+  description = "把散落在公众号、官方文档与目录站里的 DeepSeek Harness 插件说法汇总到一处：同一插件去重、多篇印证、说法有出入的单独标出。"
+  tagline = "把散落各处的 DSH 插件说法，收到一处"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# 谷歌广告：沿用你账号里已有的发布商 ID。
+# 用的是 Auto Ads（全站自动插位），不需要单独建广告单元；上线前请在 AdSense 后台把新域名加进「站点」并等审核通过。
+# 本地预览时脚本可能被网络拦住，属正常现象；想彻底关掉把 enabled 改成 false 即可。
+[params.adsense]
+  enabled = true
+  client = "ca-pub-7114121088728794"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

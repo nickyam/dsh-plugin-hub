@@ -1,0 +1,38 @@
+{{ define "main" }}
+<div class="wrap prose-page notes-page">
+  <nav class="breadcrumb" aria-label="面包屑"><a href="{{ "/" | relURL }}">首页</a><span>/</span><span>{{ .Title }}</span></nav>
+  <header class="page-head">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </header>
+  <div class="prose prose-tight">{{ .Content }}</div>
+
+  <div class="disc-list">
+    {{ range hugo.Data.discrepancies }}
+    <article class="disc" id="{{ .id }}">
+      <div class="disc-head">
+        <span class="badge {{ if eq .level "不采信" }}badge-orange{{ else if eq .level "待核对" }}badge-blue{{ else }}badge-ghost{{ end }}">{{ .level }}</span>
+        <h2>{{ .title }}</h2>
+      </div>
+      <p class="disc-summary">{{ .summary }}</p>
+      <div class="disc-sides">
+        {{ range .sides }}
+        {{ $s := index hugo.Data.derived.source_map .source }}
+        <div class="disc-side">
+          <div class="disc-side-head">
+            <a href="{{ "sources/" | relURL }}{{ .source }}/">{{ $s.title }}</a>
+            <span class="mini-tag">{{ $s.kind_label }}</span>
+          </div>
+          <p>{{ .claim }}</p>
+        </div>
+        {{ end }}
+      </div>
+      <div class="disc-handling"><strong>本站处理：</strong>{{ .handling }}</div>
+    </article>
+    {{ end }}
+  </div>
+
+  <p class="back-link"><a href="{{ "sources/" | relURL }}">← 看全部来源台账</a></p>
+  <div class="ad-note ad-note-wide" aria-label="广告">广告</div>
+</div>
+{{ end }}

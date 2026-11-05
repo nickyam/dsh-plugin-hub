@@ -1,0 +1,70 @@
+# 口径核对：多篇文章说法不一致时，不替读者「选一个对的」，把各方原话并列摆出来
+# level: 待核对 / 已并存 / 不采信
+
+- id: modes
+  title: "四种运行模式：PTC 和 Code mode 是同一个吗？"
+  level: 待核对
+  summary: "公众号文章与官网给出的模式数量一致，但第三个模式的名字对不上。"
+  sides:
+    - source: wx-dabaihua
+      claim: "预设了四种模式：标准模式干日常活，极简模式省 token，PTC 模式适合程序化批量处理，创造模式让 AI 自己组队、自己造插件。"
+    - source: official-harness
+      claim: "Standard mode / Code mode / Minimal mode / Creator mode；Code mode 把工具暴露给 Code Mode SDK，让模型在一个 TypeScript 程序里组合多步操作。"
+  handling: "从功能描述看 PTC 与 Code mode 高度相似，但官网未见 PTC 这一缩写，也未给官方中文译名。本站并列保留两种叫法，标注「待核对」，不擅自等同。"
+
+- id: market-install
+  title: "dsh-market 到底怎么装？三种写法"
+  level: 已并存
+  summary: "两篇文章给的都是「先装插件市场」，但入口写法各不相同。"
+  sides:
+    - source: wx-dabaihua
+      claim: "在插件页面右上角点「添加」，输入 https://github.com/dsh-market/dsh-market；失败可尝试输入插件名称 dshmarket@1.73.6。"
+    - source: tree-top10
+      claim: "dsh plugin --profile web add dshmarket（命令行写法）。"
+  handling: "图形界面添加仓库地址、按「名称@版本」添加、命令行 add 三种路径，可能对应不同版本或不同 profile 机制。三条原话全留在 dsh-market 的证据链里，安装字段不替读者选一个。"
+
+- id: web-all
+  title: "Web 全家桶：到底是 dsh-web-ui-all 还是 dsh-web-all？"
+  level: 已并存
+  summary: "同一族能力在两篇文章里叫了三个名字。"
+  sides:
+    - source: wx-dabaihua
+      claim: "dsh-web-ui-all：把常用的 DSH Web 插件做成了一个全家桶，支持任务看板、Git 记录、实时统计、远程访问、桌面宠物和皮肤。"
+    - source: tree-top10
+      claim: "dsh-web full suite / @linxin666/dsh-web-all@latest：task dashboards, remote mobile control, SSH operation panels, usage statistics and conversation archives。"
+  handling: "功能描述高度重叠，本站按同一条目收录，三个名字都进 aliases 便于搜索；但「是否同一个仓库」未经确认，卡片上挂了「名称有出入」标记。"
+
+- id: scale
+  title: "生态规模数字：时间点与统计口径都不同"
+  level: 不采信
+  summary: "星标数、仓库数、插件数在两处差异很大，且各自没写清统计时刻。"
+  sides:
+    - source: wx-dabaihua
+      claim: "开源 12 小时星标破 5 万、24 小时破 7 万、一个月 20 万+；带 #dsh-plugin 标签的仓库 700 多个、插件 5100 多个。"
+    - source: baike-dsh
+      claim: "半小时内 GitHub 星数破万、截至发稿超过 10 万；发布不到 24 小时已有 288 个插件仓库；截至 2026 年 8 月，带 dsh-plugin 标签的公开仓库超过 700 个。"
+    - source: tree-top10
+      claim: "Star counts and metadata are sourced from GitHub and the awesome-dsh-plugin public page on September 15, 2026。"
+  handling: "快速增长期的时间切片 + 「仓库 / 插件 / 标签」三种不同计数单位，混在一起比较没有意义。本站一律不把任何单一数字写进插件卡或首页统计，只保留「多来源提及社区生态活跃」这一定性结论。"
+
+- id: teams
+  title: "Agent teams：官方内置还是社区插件？"
+  level: 已并存
+  summary: "百科列的社区插件 dsh-agent-teams，与官网界面里的内置 Agent teams 名字几乎一样。"
+  sides:
+    - source: baike-dsh
+      claim: "dsh-agent-teams 支持在会话中快速组建和管理多智能体协作团队。"
+    - source: official-harness
+      claim: "官网界面 Plugins 列表下有 Agent teams（标为 Experimental），与 Terminal、Agent loop、Subagents 并列。"
+  handling: "可能是同名社区实现，也可能是百科把官方内置写成了社区插件。本站按两个不同条目收录（status 分别为社区 / 官方内置），互相加「相关」链接，不做合并。"
+
+- id: builtin-count
+  title: "「开箱自带六件套」却只列了四个"
+  level: 待核对
+  summary: "公众号原文的小标题与后面列举数量不一致，官网清单又是另一组。"
+  sides:
+    - source: wx-dabaihua
+      claim: "官方预置了什么？开箱自带六件套：子智能体、网页搜索、Agent 循环、终端四个插件。"
+    - source: official-harness
+      claim: "官网 Plugins 面板列出 Agent teams / Auto approval review / Scheduled tasks / Voice input / Terminal / Agent loop / Subagents 等，且部分标为 Experimental。"
+  handling: "预览版内置清单会随版本增删，「六件套」很可能是成文时的旧口径。本站把两边都对得上的四项（子智能体 / 网页搜索 / Agent 循环 / 终端）各拆成一个独立条目并标为「多篇印证」，官网独有的 Experimental 项另立单篇条目，不硬凑成一个「六件套」。"

@@ -1,0 +1,20 @@
+{{ $base := "" }}{{ with .File }}{{ $base = .BaseFileName }}{{ end }}
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ "/" | relURL }}" aria-label="{{ site.Title }} 首页">
+      <span class="brand-mark">DSH</span>
+      <span class="brand-text">插件图谱<small>非官方 · 中文资料库</small></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="{{ "plugins/" | relURL }}" {{ if eq .Section "plugins" }}class="is-current"{{ end }}>插件库</a>
+      <a href="{{ "categories/" | relURL }}" {{ if eq .Type "categories" }}class="is-current"{{ end }}>分类</a>
+      <a href="{{ "sources/" | relURL }}" {{ if eq .Section "sources" }}class="is-current"{{ end }}>来源</a>
+      <a href="{{ "notes/" | relURL }}" {{ if eq $base "notes" }}class="is-current"{{ end }}>口径核对<sup>{{ hugo.Data.derived.stats.discrepancies }}</sup></a>
+      <a href="{{ "about/" | relURL }}" {{ if eq $base "about" }}class="is-current"{{ end }}>关于</a>
+    </nav>
+    <a class="header-search" href="{{ "/" | relURL }}#catalog" title="去搜索插件">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span>搜插件</span>
+    </a>
+  </div>
+</header>

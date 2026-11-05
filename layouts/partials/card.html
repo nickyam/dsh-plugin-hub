@@ -1,0 +1,22 @@
+{{ $p := .Params.plugin }}
+{{ $hay := printf "%s %s %s %s %s" $p.name (delimit ($p.aliases | default (slice)) " ") $p.summary (delimit ($p.tags | default (slice)) " ") $p.category_label | lower }}
+<article class="card" data-category="{{ $p.category }}" data-hay="{{ $hay }}" data-agreement="{{ $p.agreement }}">
+  <div class="card-top">
+    <a class="cat-badge" href="{{ "categories/" | relURL }}{{ $p.category }}/">{{ $p.category_label }}</a>
+    {{ if eq $p.agreement "多篇印证" }}
+      <span class="badge badge-blue">{{ $p.source_count }} 篇印证</span>
+    {{ else if eq $p.agreement "口径有出入" }}
+      <span class="badge badge-orange">口径有出入</span>
+    {{ else }}
+      <span class="badge badge-ghost">单篇提及</span>
+    {{ end }}
+  </div>
+  <h3><a href="{{ .RelPermalink }}">{{ $p.name }}</a></h3>
+  {{ with $p.aliases }}<p class="aliases">也叫 {{ delimit . " · " }}</p>{{ end }}
+  <p class="card-summary">{{ $p.summary }}</p>
+  <div class="card-foot">
+    <span class="mini-tag">{{ $p.status_label }}</span>
+    {{ with $p.flag }}<span class="mini-tag mini-tag-warn">{{ . }}</span>{{ end }}
+    <span class="card-more">证据 {{ len $p.mentions }} 条 <span aria-hidden="true">→</span></span>
+  </div>
+</article>

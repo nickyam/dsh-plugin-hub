@@ -1,0 +1,863 @@
+[
+  {
+    "id": "plugin-agent-teams",
+    "name": "Agent teams（官方内置）",
+    "aliases": [
+      "Agent teams",
+      "dsh-agent-teams（社区同名）"
+    ],
+    "category": "builtin",
+    "category_label": "官方内置能力",
+    "summary": "官网界面里标为 Experimental 的 Agent teams；百科另列了同名的社区插件 dsh-agent-teams，两者关系未确认。",
+    "tags": [
+      "官方内置",
+      "Experimental",
+      "多智能体"
+    ],
+    "status_label": "官方内置",
+    "agreement": "口径有出入",
+    "source_count": 3,
+    "flag": "与社区同名插件并存",
+    "url": "/plugins/plugin-agent-teams/"
+  },
+  {
+    "id": "runtime-modes",
+    "name": "四种运行模式",
+    "aliases": [
+      "Standard / Code / Minimal / Creator",
+      "标准 / 极简 / PTC / 创造"
+    ],
+    "category": "builtin",
+    "category_label": "官方内置能力",
+    "summary": "Standard（全工具集）、Code（用模型生成的 TypeScript 程序编排多步工具调用）、Minimal（只留两个工具做评测）、Creator（检查运行时、试挂载插件、编排新预设）。",
+    "tags": [
+      "官方内置",
+      "模式",
+      "架构"
+    ],
+    "status_label": "官方内置",
+    "agreement": "口径有出入",
+    "source_count": 3,
+    "flag": "PTC / Code 命名待核对",
+    "url": "/plugins/runtime-modes/"
+  },
+  {
+    "id": "dsh-market",
+    "name": "dsh-market",
+    "aliases": [
+      "插件市场",
+      "dshmarket",
+      "dsh-market/dsh-market"
+    ],
+    "category": "market",
+    "category_label": "插件市场与发现",
+    "summary": "DSH 里第一个该装的插件：给设置面板加一个「插件市场」入口，浏览、搜索、筛选、一键安装与切换版本。",
+    "tags": [
+      "必装",
+      "一键安装",
+      "入口"
+    ],
+    "status_label": "社区",
+    "agreement": "口径有出入",
+    "source_count": 2,
+    "flag": "安装写法有出入",
+    "url": "/plugins/dsh-market/"
+  },
+  {
+    "id": "plugin-subagents",
+    "name": "Subagents（子智能体）",
+    "aliases": [
+      "子智能体",
+      "多智能体"
+    ],
+    "category": "builtin",
+    "category_label": "官方内置能力",
+    "summary": "官方内置的子智能体能力：主 Agent 拆任务、派多个子智能体独立干、再汇总，轨迹可见。",
+    "tags": [
+      "官方内置",
+      "多智能体"
+    ],
+    "status_label": "官方内置",
+    "agreement": "多篇印证",
+    "source_count": 2,
+    "flag": "",
+    "url": "/plugins/plugin-subagents/"
+  },
+  {
+    "id": "plugin-web-search",
+    "name": "Web Search（网页搜索）",
+    "aliases": [
+      "网页搜索"
+    ],
+    "category": "builtin",
+    "category_label": "官方内置能力",
+    "summary": "官方内置的网页搜索插件，也是各篇「省搜索费」类社区插件的对照基准。",
+    "tags": [
+      "官方内置",
+      "搜索"
+    ],
+    "status_label": "官方内置",
+    "agreement": "多篇印证",
+    "source_count": 2,
+    "flag": "",
+    "url": "/plugins/plugin-web-search/"
+  },
+  {
+    "id": "plugin-agent-loop",
+    "name": "Agent loop（Agent 循环）",
+    "aliases": [
+      "Agent 循环"
+    ],
+    "category": "builtin",
+    "category_label": "官方内置能力",
+    "summary": "官方内置的 Agent 循环，负责让任务一轮接一轮跑下去而不是聊完一句就散场。",
+    "tags": [
+      "官方内置",
+      "运行时"
+    ],
+    "status_label": "官方内置",
+    "agreement": "多篇印证",
+    "source_count": 2,
+    "flag": "",
+    "url": "/plugins/plugin-agent-loop/"
+  },
+  {
+    "id": "plugin-terminal",
+    "name": "Terminal（终端）",
+    "aliases": [
+      "终端",
+      "Shell"
+    ],
+    "category": "builtin",
+    "category_label": "官方内置能力",
+    "summary": "官方内置终端插件，让 Agent 能真正执行命令、落盘文件。",
+    "tags": [
+      "官方内置",
+      "Shell"
+    ],
+    "status_label": "官方内置",
+    "agreement": "多篇印证",
+    "source_count": 2,
+    "flag": "",
+    "url": "/plugins/plugin-terminal/"
+  },
+  {
+    "id": "dsh-web-all",
+    "name": "dsh-web-all（Web 全家桶）",
+    "aliases": [
+      "dsh-web-ui-all",
+      "@linxin666/dsh-web-all",
+      "dsh-web full suite",
+      "dsh-web"
+    ],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "把任务看板、Git 记录、实时统计、远程访问、桌面宠物和皮肤等常用 Web 插件打成一个包。",
+    "tags": [
+      "全家桶",
+      "看板",
+      "远程"
+    ],
+    "status_label": "社区",
+    "agreement": "多篇印证",
+    "source_count": 2,
+    "flag": "名称有出入",
+    "url": "/plugins/dsh-web-all/"
+  },
+  {
+    "id": "dsh-desktop",
+    "name": "DSH Desktop",
+    "aliases": [
+      "DeepSeek Harness Desktop",
+      "anywhere-labs"
+    ],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "把原本要命令行启动的 DSH 本地 Web UI 封成 macOS / Windows 桌面应用，不用装 Node.js。",
+    "tags": [
+      "桌面端",
+      "免命令行"
+    ],
+    "status_label": "社区",
+    "agreement": "多篇印证",
+    "source_count": 2,
+    "flag": "社区项目，非官方",
+    "url": "/plugins/dsh-desktop/"
+  },
+  {
+    "id": "dsh-agent-teams",
+    "name": "dsh-agent-teams（社区版）",
+    "aliases": [],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "百科词条列出的社区插件：在会话里快速组建和管理多智能体协作团队。",
+    "tags": [
+      "多智能体",
+      "协作"
+    ],
+    "status_label": "社区",
+    "agreement": "多篇印证",
+    "source_count": 2,
+    "flag": "与官方内置同名",
+    "url": "/plugins/dsh-agent-teams/"
+  },
+  {
+    "id": "dsh-plugin-gate",
+    "name": "dsh-plugin-gate",
+    "aliases": [],
+    "category": "security",
+    "category_label": "安全与治理",
+    "summary": "装插件前先扫本地目录与 npm 包：安装脚本、权限要求、密钥、外连请求，给出 BLOCK / WARN / PASS 判定。",
+    "tags": [
+      "安装前扫描",
+      "安全"
+    ],
+    "status_label": "社区",
+    "agreement": "多篇印证",
+    "source_count": 2,
+    "flag": "",
+    "url": "/plugins/dsh-plugin-gate/"
+  },
+  {
+    "id": "plugin-scheduled-tasks",
+    "name": "Scheduled tasks（定时任务）",
+    "aliases": [],
+    "category": "builtin",
+    "category_label": "官方内置能力",
+    "summary": "官网插件面板里标为 Experimental 的定时任务能力。",
+    "tags": [
+      "官方内置",
+      "Experimental",
+      "自动化"
+    ],
+    "status_label": "官方内置",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/plugin-scheduled-tasks/"
+  },
+  {
+    "id": "plugin-auto-approval",
+    "name": "Auto approval review（自动审批复核）",
+    "aliases": [],
+    "category": "builtin",
+    "category_label": "官方内置能力",
+    "summary": "官网插件面板里标为 Experimental 的自动审批复核能力。",
+    "tags": [
+      "官方内置",
+      "Experimental",
+      "权限"
+    ],
+    "status_label": "官方内置",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/plugin-auto-approval/"
+  },
+  {
+    "id": "plugin-voice-input",
+    "name": "Voice input（语音输入）",
+    "aliases": [],
+    "category": "builtin",
+    "category_label": "官方内置能力",
+    "summary": "官网插件面板里标为 Experimental 的语音输入能力。",
+    "tags": [
+      "官方内置",
+      "Experimental",
+      "语音"
+    ],
+    "status_label": "官方内置",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/plugin-voice-input/"
+  },
+  {
+    "id": "dsh-find-plugin",
+    "name": "dsh-find-plugin",
+    "aliases": [],
+    "category": "market",
+    "category_label": "插件市场与发现",
+    "summary": "不想开图形界面时，让 Agent 直接在对话里搜 GitHub 上带 dsh-plugin 标签的仓库。",
+    "tags": [
+      "命令行",
+      "GitHub",
+      "发现"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-find-plugin/"
+  },
+  {
+    "id": "dsh-better-sidebar",
+    "name": "DSH Better Sidebar",
+    "aliases": [],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "把文件管理、代码编辑、终端、Git 面板塞进同一个侧边栏。",
+    "tags": [
+      "侧边栏",
+      "Git",
+      "效率"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-better-sidebar/"
+  },
+  {
+    "id": "selection-toolbar",
+    "name": "划词工具条",
+    "aliases": [],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "选中文字后弹出复制 / 引用 / 翻译 / 解释 / 总结菜单，还能「顺便问」开小窗提问而不打断主会话。",
+    "tags": [
+      "划词",
+      "交互"
+    ],
+    "status_label": "原文未说明",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "原文未给插件 ID",
+    "url": "/plugins/selection-toolbar/"
+  },
+  {
+    "id": "modsearch",
+    "name": "ModSearch",
+    "aliases": [],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "免费联网搜索，免注册、免 API Key，还能搜 X（推特）内容，用来替掉按量收费的官方搜索。",
+    "tags": [
+      "搜索",
+      "免费",
+      "省成本"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/modsearch/"
+  },
+  {
+    "id": "dsh-websearch",
+    "name": "dsh-websearch",
+    "aliases": [],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "并行查多个搜索引擎，去重后合并结果。",
+    "tags": [
+      "搜索",
+      "聚合"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-websearch/"
+  },
+  {
+    "id": "browserskill",
+    "name": "BrowserSkill",
+    "aliases": [
+      "浏览器技能"
+    ],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "让 AI 连上 Chrome / Edge，借用已有登录状态读页面、填表单、截长图；任务跑在独立可见的代理窗口里。",
+    "tags": [
+      "浏览器",
+      "自动化",
+      "腾讯"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/browserskill/"
+  },
+  {
+    "id": "dsh-vision",
+    "name": "dsh-vision",
+    "aliases": [],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "视觉能力扩展类插件。",
+    "tags": [
+      "视觉",
+      "多模态"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "原文仅给名称",
+    "url": "/plugins/dsh-vision/"
+  },
+  {
+    "id": "dsh-at-file",
+    "name": "dsh-at-file",
+    "aliases": [],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "提供类似 @文件 的引用指令能力。",
+    "tags": [
+      "@文件",
+      "指令"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-at-file/"
+  },
+  {
+    "id": "open-design",
+    "name": "open-design",
+    "aliases": [],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "把 Agent 的提示词转成原型、演示文稿与设计资产，本地优先；2026 年 9 月宣布原生兼容 DSH 运行时。",
+    "tags": [
+      "设计",
+      "多模态",
+      "演示文稿"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "兼容性按版本与日期标注",
+    "url": "/plugins/open-design/"
+  },
+  {
+    "id": "skill-report",
+    "name": "技能调用报告",
+    "aliases": [],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "自动统计每轮对话用了哪些 skill，可在面板里直接装卸、更新，方便搞清楚「AI 到底在干嘛」。",
+    "tags": [
+      "可观测",
+      "Skill"
+    ],
+    "status_label": "原文未说明",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "原文未给插件 ID",
+    "url": "/plugins/skill-report/"
+  },
+  {
+    "id": "dsh-plan-execute",
+    "name": "dsh-plan-execute",
+    "aliases": [],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "双模型路由：把规划与执行拆给不同模型。",
+    "tags": [
+      "双模型",
+      "路由",
+      "省成本"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "原文仅给名称",
+    "url": "/plugins/dsh-plan-execute/"
+  },
+  {
+    "id": "dsh-diff-approval",
+    "name": "dsh-diff-approval",
+    "aliases": [],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "保留或回滚 Agent 做过的每一次代码修改，便于逐笔审阅。",
+    "tags": [
+      "代码审阅",
+      "回滚",
+      "可追溯"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-diff-approval/"
+  },
+  {
+    "id": "dsh-memory-evolve",
+    "name": "dsh-memory-evolve",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "为智能体提供跨会话的长期记忆能力。",
+    "tags": [
+      "记忆",
+      "跨会话"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-memory-evolve/"
+  },
+  {
+    "id": "dsh-project-memory",
+    "name": "dsh-project-memory",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "项目级持久记忆：自动把任务清单、读过的文件与任务关联起来，切换上下文后能接着干。",
+    "tags": [
+      "记忆",
+      "项目级"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-project-memory/"
+  },
+  {
+    "id": "dsh-engram",
+    "name": "dsh-engram",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "SQLite 分层存储 + 全文与向量检索的记忆插件，dsh-project-memory 的替代之一。",
+    "tags": [
+      "记忆",
+      "SQLite",
+      "向量检索"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-engram/"
+  },
+  {
+    "id": "runtime36",
+    "name": "runtime36",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "把 Obsidian 笔记库导入为 Agent 知识库。",
+    "tags": [
+      "记忆",
+      "Obsidian",
+      "知识库"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/runtime36/"
+  },
+  {
+    "id": "dsh-basabase",
+    "name": "@basabase/dsh-plugin",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "让 Agent 访问可审计的知识库与结构化数据集。",
+    "tags": [
+      "知识库",
+      "数据库"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-basabase/"
+  },
+  {
+    "id": "dsh-api-dashboard",
+    "name": "dsh-api-dashboard",
+    "aliases": [],
+    "category": "billing",
+    "category_label": "模型与计费",
+    "summary": "在输入框附近显示多家模型平台的余额与本次会话 / 子 Agent 的 token 消耗估算。",
+    "tags": [
+      "余额",
+      "用量",
+      "多家平台"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-api-dashboard/"
+  },
+  {
+    "id": "dsh-api-balance",
+    "name": "dsh-api-balance",
+    "aliases": [],
+    "category": "billing",
+    "category_label": "模型与计费",
+    "summary": "只用 DeepSeek 原生 API 时更轻的余额显示替代品。",
+    "tags": [
+      "余额",
+      "轻量"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-api-balance/"
+  },
+  {
+    "id": "whale-cost-widget",
+    "name": "小鲸鱼记账挂件",
+    "aliases": [],
+    "category": "billing",
+    "category_label": "模型与计费",
+    "summary": "右下角桌宠实时显示上次对话花费、今日花费、钱包余额与峰谷时段。",
+    "tags": [
+      "桌宠",
+      "成本可视化"
+    ],
+    "status_label": "原文未说明",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "原文未给插件 ID",
+    "url": "/plugins/whale-cost-widget/"
+  },
+  {
+    "id": "dsh-gov",
+    "name": "dsh-gov",
+    "aliases": [],
+    "category": "security",
+    "category_label": "安全与治理",
+    "summary": "Agent 治理工具包，实现 allow / deny / ask 三种工具权限模式。",
+    "tags": [
+      "权限",
+      "治理"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-gov/"
+  },
+  {
+    "id": "dsh-wechat",
+    "name": "dsh-wechat",
+    "aliases": [],
+    "category": "integration",
+    "category_label": "集成与迁移",
+    "summary": "把 AI 接进微信：电脑息屏时仍在值守，手机上审批权限、用自然语言或语音派活。",
+    "tags": [
+      "微信",
+      "远程"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-wechat/"
+  },
+  {
+    "id": "dsh-plugin-claude-bridge",
+    "name": "dsh-plugin-claude-bridge",
+    "aliases": [],
+    "category": "integration",
+    "category_label": "集成与迁移",
+    "summary": "迁移与集成工具，用于对接其他 Agent 生态。",
+    "tags": [
+      "迁移",
+      "桥接"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-plugin-claude-bridge/"
+  },
+  {
+    "id": "dsh-claude-move",
+    "name": "dsh-claude-move",
+    "aliases": [],
+    "category": "integration",
+    "category_label": "集成与迁移",
+    "summary": "从其他 Agent 工具迁移到 DSH 的配套工具。",
+    "tags": [
+      "迁移"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-claude-move/"
+  },
+  {
+    "id": "dsh-mcp-client",
+    "name": "@deepseek-ai/dsh-mcp-client",
+    "aliases": [],
+    "category": "integration",
+    "category_label": "集成与迁移",
+    "summary": "把外部 MCP server 的工具桥接进 DSH，工具名以 mcp__ 前缀原生出现。",
+    "tags": [
+      "MCP",
+      "官方",
+      "桥接"
+    ],
+    "status_label": "官方",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-mcp-client/"
+  },
+  {
+    "id": "dsh-minigames",
+    "name": "dsh-minigames",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "18 款小游戏合集，含俄罗斯方块、贪吃蛇等，直接嵌进 DSH 界面。",
+    "tags": [
+      "游戏",
+      "摸鱼"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-minigames/"
+  },
+  {
+    "id": "dsh-ads",
+    "name": "dsh-ads",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "模拟 2005 年代中文互联网风格的广告 UI，纯怀旧彩蛋。",
+    "tags": [
+      "怀旧",
+      "界面"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-ads/"
+  },
+  {
+    "id": "dsh-anti-ads",
+    "name": "dsh-anti-ads",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "专门用来去掉 dsh-ads 广告的插件——社区里著名的插件攻防梗。",
+    "tags": [
+      "去广告",
+      "梗"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-anti-ads/"
+  },
+  {
+    "id": "dsh-gomoku",
+    "name": "dsh-gomoku",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "五子棋插件。",
+    "tags": [
+      "游戏"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-gomoku/"
+  },
+  {
+    "id": "dsh-lazyfish",
+    "name": "dsh-lazyfish",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "摸鱼面板。",
+    "tags": [
+      "摸鱼",
+      "面板"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-lazyfish/"
+  },
+  {
+    "id": "dsh-qq2006",
+    "name": "dsh-qq2006",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "复古 QQ 皮肤。",
+    "tags": [
+      "皮肤",
+      "怀旧"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-qq2006/"
+  },
+  {
+    "id": "dsh-ui-whale",
+    "name": "dsh-ui-whale",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "像素鲸鱼主题。",
+    "tags": [
+      "皮肤",
+      "像素风"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-ui-whale/"
+  },
+  {
+    "id": "dsh-emoji",
+    "name": "dsh-emoji",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "让 AI 回复带上自己的表情包，不改页面结构，只改聊天气氛。",
+    "tags": [
+      "表情包"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-emoji/"
+  },
+  {
+    "id": "fabric",
+    "name": "fabric",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "简介明确致敬《我的世界》Mod 加载器 Fabric，是社区把 DSH 生态类比成 MC Mod 的注脚。",
+    "tags": [
+      "梗",
+      "Mod"
+    ],
+    "status_label": "社区",
+    "agreement": "单篇提及",
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/fabric/"
+  }
+]

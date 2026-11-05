@@ -1,0 +1,66 @@
+# 来源台账：每读一篇文章（公众号 / 官网 / 百科 / 目录站）就在这里加一条
+# 规则：不确定的字段留空或写「待补」，绝不猜日期、猜署名、猜数字。
+# kind 取值：wechat / official / encyclopedia / media / catalog / guide
+
+- id: wx-dabaihua
+  title: "DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单"
+  kind: wechat
+  publisher: "微信公众号（原文署名待补）"
+  url: "http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9"
+  date_note: "原文未标注发布日期，待补"
+  note: "本批种子资料里唯一的公众号长文。讲了 DSH 定位、两条安装路线、官方预置插件，并列出 8 个自用社区插件；文末自述参考了另外四篇文章，存在二次转述，涉及数字的说法本站一律不直接采信。"
+  tags: [入门, 插件清单, 公众号]
+
+- id: official-harness
+  title: "DeepSeek Harness 官网：Everything is a plugin"
+  kind: official
+  publisher: "DeepSeek 官方"
+  url: "https://www.deepseek.com/en/harness/"
+  date_note: "开发者预览版，文档持续更新"
+  note: "一手口径：Cordis 内核、一切皆插件、Standard / Code / Minimal / Creator 四种模式、append-only session log、官方内置插件清单，以及 npx @deepseek-ai/dsh web 启动方式。凡与二手文章冲突，以官网为准并保留差异记录。"
+  tags: [官方, 架构, 入门]
+
+- id: baike-dsh
+  title: "百度百科：DeepSeek Harness"
+  kind: encyclopedia
+  publisher: "百度百科"
+  url: "https://baike.baidu.com/item/deepseek%20harness/68533699"
+  date_note: "词条内容主要覆盖 2026 年 8 月发布期"
+  note: "提供了大量社区插件名（界面 / 游戏 / 记忆 / 迁移等），是本站插件名的主要来源；但词条里的星标、仓库数量等数字与公众号文章口径不一致，数字统一进「口径核对」不进插件卡。"
+  tags: [百科, 插件名, 生态]
+
+- id: tree-top10
+  title: "10 Best DeepSeek Harness Plugins for AI Developers in 2026"
+  kind: media
+  publisher: "TreeRouter Blog（英文，第三方）"
+  url: "https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026"
+  date_note: "文中数据自述截至 2026-09-15，来源为 GitHub 与 awesome-dsh-plugins"
+  note: "给出 Top10 清单、安装命令与同类替代品（记忆 / 计费 / 安全三组），可与公众号清单交叉印证；文中 star 数属特定时间切片，本站不引用。"
+  tags: [英文, Top10, 安装命令]
+
+- id: dsh-plugin-org
+  title: "DSH Plugin Hub（中文插件目录站）"
+  kind: catalog
+  publisher: "dsh-plugin.org（社区，非官方）"
+  url: "https://dsh-plugin.org/zh"
+  date_note: "持续更新"
+  note: "把 DSH 插件拆成十一大类，并强调 DSH 仍是开发者预览、可能有破坏性变更。本站分类体系参考了它，但没有照搬。"
+  tags: [目录站, 分类, 非官方]
+
+- id: deepseekai-works
+  title: "DSH Plugins: What They Are, Where to Find Them, and How to Write One"
+  kind: guide
+  publisher: "deepseekai.works（第三方教程站）"
+  url: "https://deepseekai.works/plugins"
+  date_note: "未标注"
+  note: "讲清 plugin / MCP server / skill / subagent 四种扩展点的区别、dsh.bundle 打包与 GitHub topic dsh-plugin 发现机制，以及 pnpm allowBuilds 的安全含义。用于给插件条目做机制性注释。"
+  tags: [开发, MCP, 机制]
+
+- id: dsh-plugin-net
+  title: "What is a DSH plugin?（Plugin / Bundle / Profile 的区别）"
+  kind: guide
+  publisher: "dsh-plugin.net（社区，非官方）"
+  url: "https://dsh-plugin.net/guides/what-is-dshplugin"
+  date_note: "未标注"
+  note: "区分 plugin（Cordis 里挂载的代码单元）、bundle（带 dsh.bundle manifest 的 npm 包）、profile（可运行的组合），并说明兼容声明要标注版本与日期。本站「安装方式」字段按这个口径填写。"
+  tags: [开发, 术语, 非官方]
