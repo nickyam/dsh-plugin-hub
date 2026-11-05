@@ -1,16 +1,7 @@
 # 口径核对：多篇文章说法不一致时，不替读者「选一个对的」，把各方原话并列摆出来
 # level: 待核对 / 已并存 / 不采信
-
-- id: modes
-  title: "四种运行模式：PTC 和 Code mode 是同一个吗？"
-  level: 待核对
-  summary: "公众号文章与官网给出的模式数量一致，但第三个模式的名字对不上。"
-  sides:
-    - source: wx-dabaihua
-      claim: "预设了四种模式：标准模式干日常活，极简模式省 token，PTC 模式适合程序化批量处理，创造模式让 AI 自己组队、自己造插件。"
-    - source: official-harness
-      claim: "Standard mode / Code mode / Minimal mode / Creator mode；Code mode 把工具暴露给 Code Mode SDK，让模型在一个 TypeScript 程序里组合多步操作。"
-  handling: "从功能描述看 PTC 与 Code mode 高度相似，但官网未见 PTC 这一缩写，也未给官方中文译名。本站并列保留两种叫法，标注「待核对」，不擅自等同。"
+# 说明：本站只收需要额外安装的插件，官方开箱即用的内置能力不建条目；
+#       官网口径只在这里作为「二手文章说法为什么对不上」的对照出现。
 
 - id: market-install
   title: "dsh-market 到底怎么装？三种写法"
@@ -23,7 +14,7 @@
       claim: "dsh plugin --profile web add dshmarket（命令行写法）。"
     - source: wx-quanjing
       claim: "dsh-market：DSH 内置的可视化插件市场，支持浏览、搜索、一键安装；GitHub 地址同为 https://github.com/dsh-market/dsh-market。"
-  handling: "两篇独立文章都指向同一个仓库地址，本站用 GitHub API 确认该仓库存在，因此 dsh-market 的 repo 字段填这个地址；按「名称@版本」添加与命令行 add 两条路径仍并列保留，可能对应不同版本或 profile 机制，安装字段不替读者选一个。"
+  handling: "两篇独立文章都指向同一个仓库地址，本站用 GitHub API 确认该仓库存在，因此 dsh-market 的 repo 字段填这个地址；按「名称@版本」添加与命令行 add 两条路径仍并列保留，可能对应不同版本或 profile 机制，安装字段不替读者选一个。注：wx-quanjing 用「内置」形容插件市场嵌在 DSH 界面里，该插件仍需单独安装，与本站不收录的开箱即用能力不是一回事。"
 
 - id: web-all
   title: "Web 全家桶：到底是 dsh-web-ui-all 还是 dsh-web-all？"
@@ -52,26 +43,15 @@
   handling: "快速增长期的时间切片 + 「仓库 / 插件 / 标签」三种不同计数单位，混在一起比较没有意义。本站另用 GitHub API 抽查了 4 个仓库的当前 star 数，均高于文中数值，进一步说明这只是成文时刻的切片。本站一律不把任何单一数字写进插件卡或首页统计，只保留「多来源提及社区生态活跃」这一定性结论。"
 
 - id: teams
-  title: "Agent teams：官方内置还是社区插件？"
+  title: "dsh-agent-teams 与官网 Agent teams 名字撞车"
   level: 已并存
-  summary: "百科列的社区插件 dsh-agent-teams，与官网界面里的内置 Agent teams 名字几乎一样。"
+  summary: "百科与清单文提到的社区插件 dsh-agent-teams，和官网界面里标为 Experimental 的 Agent teams 名字几乎一样。"
   sides:
     - source: baike-dsh
       claim: "dsh-agent-teams 支持在会话中快速组建和管理多智能体协作团队。"
     - source: official-harness
       claim: "官网界面 Plugins 列表下有 Agent teams（标为 Experimental），与 Terminal、Agent loop、Subagents 并列。"
-  handling: "可能是同名社区实现，也可能是百科把官方内置写成了社区插件。本站按两个不同条目收录（status 分别为社区 / 官方内置），互相加「相关」链接，不做合并。"
-
-- id: builtin-count
-  title: "「开箱自带六件套」却只列了四个"
-  level: 待核对
-  summary: "公众号原文的小标题与后面列举数量不一致，官网清单又是另一组。"
-  sides:
-    - source: wx-dabaihua
-      claim: "官方预置了什么？开箱自带六件套：子智能体、网页搜索、Agent 循环、终端四个插件。"
-    - source: official-harness
-      claim: "官网 Plugins 面板列出 Agent teams / Auto approval review / Scheduled tasks / Voice input / Terminal / Agent loop / Subagents 等，且部分标为 Experimental。"
-  handling: "预览版内置清单会随版本增删，「六件套」很可能是成文时的旧口径。本站把两边都对得上的四项（子智能体 / 网页搜索 / Agent 循环 / 终端）各拆成一个独立条目并标为「多篇印证」，官网独有的 Experimental 项另立单篇条目，不硬凑成一个「六件套」。"
+  handling: "官网那项属开箱即用的内置能力，按本站收录范围不建条目；这里只保留需要单独安装的社区插件 dsh-agent-teams，并把三篇提到它的引文都挂在它名下。两者是否为同一实现未确认，装之前请以仓库 README 为准。"
 
 - id: count-36-46
   title: "标题写「36 款」，正文实际列了 46 个"

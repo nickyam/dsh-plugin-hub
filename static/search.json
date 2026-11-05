@@ -1,47 +1,5 @@
 [
   {
-    "id": "plugin-agent-teams",
-    "name": "Agent teams（官方内置）",
-    "aliases": [
-      "Agent teams",
-      "dsh-agent-teams（社区同名）"
-    ],
-    "category": "builtin",
-    "category_label": "官方内置能力",
-    "summary": "官网界面里标为 Experimental 的 Agent teams；百科另列了同名的社区插件 dsh-agent-teams，两者关系未确认。",
-    "tags": [
-      "官方内置",
-      "Experimental",
-      "多智能体"
-    ],
-    "status_label": "官方内置",
-    "agreement": "口径有出入",
-    "source_count": 4,
-    "flag": "与社区同名插件并存",
-    "url": "/plugins/plugin-agent-teams/"
-  },
-  {
-    "id": "runtime-modes",
-    "name": "四种运行模式",
-    "aliases": [
-      "Standard / Code / Minimal / Creator",
-      "标准 / 极简 / PTC / 创造"
-    ],
-    "category": "builtin",
-    "category_label": "官方内置能力",
-    "summary": "Standard（全工具集）、Code（用模型生成的 TypeScript 程序编排多步工具调用）、Minimal（只留两个工具做评测）、Creator（检查运行时、试挂载插件、编排新预设）。",
-    "tags": [
-      "官方内置",
-      "模式",
-      "架构"
-    ],
-    "status_label": "官方内置",
-    "agreement": "口径有出入",
-    "source_count": 3,
-    "flag": "PTC / Code 命名待核对",
-    "url": "/plugins/runtime-modes/"
-  },
-  {
     "id": "dsh-market",
     "name": "dsh-market",
     "aliases": [
@@ -84,82 +42,21 @@
     "url": "/plugins/dsh-desktop/"
   },
   {
-    "id": "plugin-subagents",
-    "name": "Subagents（子智能体）",
-    "aliases": [
-      "子智能体",
-      "多智能体"
-    ],
-    "category": "builtin",
-    "category_label": "官方内置能力",
-    "summary": "官方内置的子智能体能力：主 Agent 拆任务、派多个子智能体独立干、再汇总，轨迹可见。",
+    "id": "dsh-agent-teams",
+    "name": "dsh-agent-teams（社区版）",
+    "aliases": [],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "百科词条列出的社区插件：在会话里快速组建和管理多智能体协作团队。",
     "tags": [
-      "官方内置",
-      "多智能体"
+      "多智能体",
+      "协作"
     ],
-    "status_label": "官方内置",
+    "status_label": "社区",
     "agreement": "多篇印证",
-    "source_count": 2,
-    "flag": "",
-    "url": "/plugins/plugin-subagents/"
-  },
-  {
-    "id": "plugin-web-search",
-    "name": "Web Search（网页搜索）",
-    "aliases": [
-      "网页搜索"
-    ],
-    "category": "builtin",
-    "category_label": "官方内置能力",
-    "summary": "官方内置的网页搜索插件，也是各篇「省搜索费」类社区插件的对照基准。",
-    "tags": [
-      "官方内置",
-      "搜索"
-    ],
-    "status_label": "官方内置",
-    "agreement": "多篇印证",
-    "source_count": 2,
-    "flag": "",
-    "url": "/plugins/plugin-web-search/"
-  },
-  {
-    "id": "plugin-agent-loop",
-    "name": "Agent loop（Agent 循环）",
-    "aliases": [
-      "Agent 循环"
-    ],
-    "category": "builtin",
-    "category_label": "官方内置能力",
-    "summary": "官方内置的 Agent 循环，负责让任务一轮接一轮跑下去而不是聊完一句就散场。",
-    "tags": [
-      "官方内置",
-      "运行时"
-    ],
-    "status_label": "官方内置",
-    "agreement": "多篇印证",
-    "source_count": 2,
-    "flag": "",
-    "url": "/plugins/plugin-agent-loop/"
-  },
-  {
-    "id": "plugin-terminal",
-    "name": "Terminal（终端）",
-    "aliases": [
-      "终端",
-      "Shell"
-    ],
-    "category": "builtin",
-    "category_label": "官方内置能力",
-    "summary": "官方内置终端插件，让 Agent 能真正执行命令、落盘文件。",
-    "tags": [
-      "官方内置",
-      "Shell"
-    ],
-    "status_label": "官方内置",
-    "agreement": "多篇印证",
-    "source_count": 2,
-    "flag": "",
-    "url": "/plugins/plugin-terminal/"
+    "source_count": 3,
+    "flag": "与官网内置 Agent teams 名称相近",
+    "url": "/plugins/dsh-agent-teams/"
   },
   {
     "id": "dsh-web-all",
@@ -244,23 +141,6 @@
     "url": "/plugins/open-design/"
   },
   {
-    "id": "dsh-agent-teams",
-    "name": "dsh-agent-teams（社区版）",
-    "aliases": [],
-    "category": "workflow",
-    "category_label": "协作与工作流",
-    "summary": "百科词条列出的社区插件：在会话里快速组建和管理多智能体协作团队。",
-    "tags": [
-      "多智能体",
-      "协作"
-    ],
-    "status_label": "社区",
-    "agreement": "多篇印证",
-    "source_count": 2,
-    "flag": "与官方内置同名",
-    "url": "/plugins/dsh-agent-teams/"
-  },
-  {
     "id": "whale-cost-widget",
     "name": "小鲸鱼记账挂件",
     "aliases": [
@@ -297,60 +177,6 @@
     "source_count": 2,
     "flag": "",
     "url": "/plugins/dsh-plugin-gate/"
-  },
-  {
-    "id": "plugin-scheduled-tasks",
-    "name": "Scheduled tasks（定时任务）",
-    "aliases": [],
-    "category": "builtin",
-    "category_label": "官方内置能力",
-    "summary": "官网插件面板里标为 Experimental 的定时任务能力。",
-    "tags": [
-      "官方内置",
-      "Experimental",
-      "自动化"
-    ],
-    "status_label": "官方内置",
-    "agreement": "单篇提及",
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/plugin-scheduled-tasks/"
-  },
-  {
-    "id": "plugin-auto-approval",
-    "name": "Auto approval review（自动审批复核）",
-    "aliases": [],
-    "category": "builtin",
-    "category_label": "官方内置能力",
-    "summary": "官网插件面板里标为 Experimental 的自动审批复核能力。",
-    "tags": [
-      "官方内置",
-      "Experimental",
-      "权限"
-    ],
-    "status_label": "官方内置",
-    "agreement": "单篇提及",
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/plugin-auto-approval/"
-  },
-  {
-    "id": "plugin-voice-input",
-    "name": "Voice input（语音输入）",
-    "aliases": [],
-    "category": "builtin",
-    "category_label": "官方内置能力",
-    "summary": "官网插件面板里标为 Experimental 的语音输入能力。",
-    "tags": [
-      "官方内置",
-      "Experimental",
-      "语音"
-    ],
-    "status_label": "官方内置",
-    "agreement": "单篇提及",
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/plugin-voice-input/"
   },
   {
     "id": "dsh-find-plugin",

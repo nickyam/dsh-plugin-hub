@@ -28,9 +28,6 @@ params:
     - id: dsh-at-file
       name: dsh-at-file
       agreement: 单篇提及
-    - id: plugin-agent-teams
-      name: Agent teams（官方内置）
-      agreement: 口径有出入
     - id: dsh-agent-teams
       name: dsh-agent-teams（社区版）
       agreement: 多篇印证
@@ -70,7 +67,7 @@ params:
     - id: fabric
       name: fabric
       agreement: 单篇提及
-    mentioned_count: 18
+    mentioned_count: 17
   generated: true
 ---
 

@@ -15,11 +15,8 @@ params:
     - 术语
     - 非官方
     kind_label: 教程 / 指南
-    mentioned:
-    - id: runtime-modes
-      name: 四种运行模式
-      agreement: 口径有出入
-    mentioned_count: 1
+    mentioned: []
+    mentioned_count: 0
   generated: true
 ---
 

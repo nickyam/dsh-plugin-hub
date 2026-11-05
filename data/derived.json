@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-06 00:27",
+  "generated_at": "2026-11-06 00:44",
   "stats": {
-    "plugins": 87,
+    "plugins": 78,
     "sources": 8,
     "wechat": 2,
-    "mentions": 107,
-    "corroborated": 15,
-    "conflicts": 3,
-    "discrepancies": 8,
-    "categories": 14
+    "mentions": 90,
+    "corroborated": 9,
+    "conflicts": 1,
+    "discrepancies": 6,
+    "categories": 13
   },
   "categories": [
     {
@@ -66,12 +66,6 @@
       "count": 11
     },
     {
-      "id": "builtin",
-      "label": "官方内置能力",
-      "desc": "开箱即用的插件、模式与运行时",
-      "count": 9
-    },
-    {
       "id": "model",
       "label": "免费模型与接入",
       "desc": "免 API Key、订阅复用、网页凭证",
@@ -106,7 +100,6 @@
     "security": "安全与治理",
     "integration": "集成与迁移",
     "fun": "娱乐与彩蛋",
-    "builtin": "官方内置能力",
     "model": "免费模型与接入",
     "visual": "视觉与设计",
     "content": "内容创作与办公",
@@ -172,7 +165,6 @@
   },
   "status_label": {
     "official": "官方",
-    "builtin": "官方内置",
     "community": "社区",
     "unknown": "原文未说明"
   },

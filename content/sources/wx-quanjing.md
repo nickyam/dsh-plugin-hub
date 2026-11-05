@@ -32,9 +32,9 @@ params:
     - id: open-design
       name: open-design
       agreement: 多篇印证
-    - id: plugin-agent-teams
-      name: Agent teams（官方内置）
-      agreement: 口径有出入
+    - id: dsh-agent-teams
+      name: dsh-agent-teams（社区版）
+      agreement: 多篇印证
     - id: whale-cost-widget
       name: 小鲸鱼记账挂件
       agreement: 多篇印证

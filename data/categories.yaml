@@ -26,9 +26,6 @@
 - id: fun
   label: 娱乐与彩蛋
   desc: 皮肤、桌宠、小游戏
-- id: builtin
-  label: 官方内置能力
-  desc: 开箱即用的插件、模式与运行时
 - id: model
   label: 免费模型与接入
   desc: 免 API Key、订阅复用、网页凭证

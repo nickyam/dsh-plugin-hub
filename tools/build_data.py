@@ -35,7 +35,6 @@ KIND_LABEL = {
 }
 STATUS_LABEL = {
     "official": "官方",
-    "builtin": "官方内置",
     "community": "社区",
     "unknown": "原文未说明",
 }
@@ -90,6 +89,8 @@ def main():
     cat_map = {c["id"]: c["label"] for c in categories}
     if len(cat_ids) != len(set(cat_ids)):
         errors.append("categories.yaml 里有重复的 id")
+    if "builtin" in cat_ids:
+        errors.append("categories.yaml 不应含 builtin：官方内置能力开箱即用，本站不展示")
 
     plugin_ids = [p.get("id") for p in plugins]
     if len(plugin_ids) != len(set(plugin_ids)):
@@ -98,6 +99,10 @@ def main():
         for key in REQUIRED_PLUGIN:
             if not p.get(key):
                 errors.append(f"插件 {p.get('id')} 缺字段 {key}")
+        if p.get("status") == "builtin" or p.get("category") == "builtin":
+            errors.append(
+                f"插件 {p.get('id')} 是官方内置能力：本站只收需要额外安装的插件，请勿建条目"
+            )
         if p.get("category") not in cat_ids:
             errors.append(f"插件 {p.get('id')} 的分类不存在：{p.get('category')}")
         if p.get("status") not in STATUS_LABEL:
@@ -158,11 +163,7 @@ def main():
         p["confidence"] = "高" if p["source_count"] >= 3 else ("中" if p["source_count"] == 2 else "待核实")
         p["category_label"] = cat_map[p["category"]]
         p["status_label"] = STATUS_LABEL[p["status"]]
-        p["weight"] = (
-            p["source_count"] * 100
-            + (20 if p["has_conflict"] else 0)
-            + (10 if p["status"] == "builtin" else 0)
-        )
+        p["weight"] = p["source_count"] * 100 + (20 if p["has_conflict"] else 0)
         p["url"] = f"/plugins/{p['id']}/"
 
     # ── 生成插件页 ──────────────────────────────────────────────

@@ -34,24 +34,6 @@ params:
     - id: skill-report
       name: 技能调用报告
       agreement: 单篇提及
-    - id: plugin-subagents
-      name: Subagents（子智能体）
-      agreement: 多篇印证
-    - id: plugin-web-search
-      name: Web Search（网页搜索）
-      agreement: 多篇印证
-    - id: plugin-agent-loop
-      name: Agent loop（Agent 循环）
-      agreement: 多篇印证
-    - id: plugin-terminal
-      name: Terminal（终端）
-      agreement: 多篇印证
-    - id: plugin-agent-teams
-      name: Agent teams（官方内置）
-      agreement: 口径有出入
-    - id: runtime-modes
-      name: 四种运行模式
-      agreement: 口径有出入
     - id: dsh-agent-teams
       name: dsh-agent-teams（社区版）
       agreement: 多篇印证
@@ -64,7 +46,7 @@ params:
     - id: dsh-emoji
       name: dsh-emoji
       agreement: 单篇提及
-    mentioned_count: 16
+    mentioned_count: 10
   generated: true
 ---
 

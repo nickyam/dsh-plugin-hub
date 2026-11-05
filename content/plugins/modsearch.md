@@ -19,7 +19,7 @@ params:
     summary: 免费联网搜索，免注册、免 API Key，还能搜 X（推特）内容，用来替掉按量收费的官方搜索。
     repo: https://github.com/liustack/modsearch
     tags: *id001
-    notes: 与 dsh-websearch、官方内置网页搜索属于同类不同实现，本站不合并。
+    notes: 与 dsh-websearch 属于同类不同实现，本站不合并；官方自带的网页搜索属开箱即用能力，不在本站收录范围。
     mentions:
     - source: wx-dabaihua
       stance: 印证
