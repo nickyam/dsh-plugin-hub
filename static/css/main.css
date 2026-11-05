@@ -141,10 +141,10 @@ code { font-size: .9em; background: var(--surface-2); padding: 2px 6px; border-r
 .badge-orange { background: var(--orange-soft); color: var(--orange); }
 .badge-green { background: var(--green-soft); color: var(--green); }
 .badge-ghost { background: var(--surface-2); color: var(--muted); }
-.card h3, .source-card h3 { margin: 0 0 5px; font-size: 16.5px; line-height: 1.4; font-weight: 700; }
+.card h3, .source-card h3 { margin: 0 0 5px; font-size: 16.5px; line-height: 1.4; font-weight: 700; overflow-wrap: anywhere; }
 .card h3 a, .source-card h3 a { color: var(--ink); }
 .card h3 a:hover { color: var(--brand-dark); text-decoration: none; }
-.aliases { font-size: 11.5px; color: var(--muted); margin: 0 0 9px; line-height: 1.5; }
+.aliases { font-size: 11.5px; color: var(--muted); margin: 0 0 9px; line-height: 1.5; overflow-wrap: anywhere; }
 .aliases-lg { font-size: 13px; }
 .card-summary { font-size: 13.5px; color: var(--ink-2); margin: 0 0 14px; flex: 1; line-height: 1.68; }
 .card-foot { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 11px; font-size: 11px; }

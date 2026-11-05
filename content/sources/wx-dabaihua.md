@@ -27,7 +27,7 @@ params:
       agreement: 单篇提及
     - id: modsearch
       name: ModSearch
-      agreement: 单篇提及
+      agreement: 多篇印证
     - id: browserskill
       name: BrowserSkill
       agreement: 单篇提及
@@ -57,7 +57,7 @@ params:
       agreement: 多篇印证
     - id: whale-cost-widget
       name: 小鲸鱼记账挂件
-      agreement: 单篇提及
+      agreement: 多篇印证
     - id: dsh-wechat
       name: dsh-wechat
       agreement: 单篇提及

@@ -1,45 +1,45 @@
 {
-  "generated_at": "2026-11-06 00:04",
+  "generated_at": "2026-11-06 00:27",
   "stats": {
-    "plugins": 48,
-    "sources": 7,
-    "wechat": 1,
-    "mentions": 61,
-    "corroborated": 11,
+    "plugins": 87,
+    "sources": 8,
+    "wechat": 2,
+    "mentions": 107,
+    "corroborated": 15,
     "conflicts": 3,
-    "discrepancies": 6,
-    "categories": 10
+    "discrepancies": 8,
+    "categories": 14
   },
   "categories": [
     {
       "id": "market",
       "label": "插件市场与发现",
       "desc": "找插件、装插件、管版本",
-      "count": 2
+      "count": 7
     },
     {
       "id": "ui",
       "label": "界面与体验",
       "desc": "侧边栏、主题、桌面端、交互挂件",
-      "count": 4
+      "count": 10
     },
     {
       "id": "tool",
       "label": "工具与能力",
       "desc": "搜索、浏览器、视觉、文件引用",
-      "count": 7
+      "count": 6
     },
     {
       "id": "workflow",
       "label": "协作与工作流",
       "desc": "多智能体、任务编排、代码审阅",
-      "count": 3
+      "count": 8
     },
     {
       "id": "memory",
       "label": "记忆与知识",
       "desc": "跨会话记忆、项目上下文、知识库",
-      "count": 5
+      "count": 8
     },
     {
       "id": "billing",
@@ -51,7 +51,7 @@
       "id": "security",
       "label": "安全与治理",
       "desc": "安装前扫描、权限策略",
-      "count": 2
+      "count": 5
     },
     {
       "id": "integration",
@@ -63,13 +63,37 @@
       "id": "fun",
       "label": "娱乐与彩蛋",
       "desc": "皮肤、桌宠、小游戏",
-      "count": 9
+      "count": 11
     },
     {
       "id": "builtin",
       "label": "官方内置能力",
       "desc": "开箱即用的插件、模式与运行时",
       "count": 9
+    },
+    {
+      "id": "model",
+      "label": "免费模型与接入",
+      "desc": "免 API Key、订阅复用、网页凭证",
+      "count": 3
+    },
+    {
+      "id": "visual",
+      "label": "视觉与设计",
+      "desc": "看图、UI 还原、图表与设计资产",
+      "count": 7
+    },
+    {
+      "id": "content",
+      "label": "内容创作与办公",
+      "desc": "长文写作、PPT、表格与文档",
+      "count": 3
+    },
+    {
+      "id": "remote",
+      "label": "移动端与远程",
+      "desc": "手机客户端、远程接管、iOS 调试",
+      "count": 3
     }
   ],
   "category_map": {
@@ -82,7 +106,11 @@
     "security": "安全与治理",
     "integration": "集成与迁移",
     "fun": "娱乐与彩蛋",
-    "builtin": "官方内置能力"
+    "builtin": "官方内置能力",
+    "model": "免费模型与接入",
+    "visual": "视觉与设计",
+    "content": "内容创作与办公",
+    "remote": "移动端与远程"
   },
   "source_map": {
     "wx-dabaihua": {
@@ -126,6 +154,12 @@
       "url": "https://dsh-plugin.net/guides/what-is-dshplugin",
       "publisher": "dsh-plugin.net（社区，非官方）",
       "kind_label": "教程 / 指南"
+    },
+    "wx-quanjing": {
+      "title": "DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件",
+      "url": "https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw",
+      "publisher": "智宇AI说",
+      "kind_label": "公众号"
     }
   },
   "source_kind_label": {

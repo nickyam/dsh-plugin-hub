@@ -64,3 +64,12 @@
   date_note: "未标注"
   note: "区分 plugin（Cordis 里挂载的代码单元）、bundle（带 dsh.bundle manifest 的 npm 包）、profile（可运行的组合），并说明兼容声明要标注版本与日期。本站「安装方式」字段按这个口径填写。"
   tags: [开发, 术语, 非官方]
+
+- id: wx-quanjing
+  title: "DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件"
+  kind: wechat
+  publisher: "智宇AI说"
+  url: "https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw"
+  date_note: "2026-10-29 13:20（浙江）"
+  note: "第二篇公众号清单文，按 14 类逐个介绍插件，附 GitHub 地址、Stars 排行与七条生态洞察。本站按正文实际条目收录（标题写 36 款，正文列了 46 个，见口径核对）；仓库地址抽查 24 个，23 个返回 200、1 个 301 重定向，可作为线索但未经逐一内容核对；Stars 数字一律不进插件卡。"
+  tags: [清单, 公众号, 插件推荐, 14大类]

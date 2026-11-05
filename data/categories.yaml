@@ -29,3 +29,15 @@
 - id: builtin
   label: 官方内置能力
   desc: 开箱即用的插件、模式与运行时
+- id: model
+  label: 免费模型与接入
+  desc: 免 API Key、订阅复用、网页凭证
+- id: visual
+  label: 视觉与设计
+  desc: 看图、UI 还原、图表与设计资产
+- id: content
+  label: 内容创作与办公
+  desc: 长文写作、PPT、表格与文档
+- id: remote
+  label: 移动端与远程
+  desc: 手机客户端、远程接管、iOS 调试

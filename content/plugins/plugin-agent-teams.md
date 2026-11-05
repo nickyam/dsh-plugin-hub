@@ -7,7 +7,7 @@ tags: &id001
 - 官方内置
 - Experimental
 - 多智能体
-weight: 330
+weight: 430
 params:
   plugin:
     id: plugin-agent-teams
@@ -43,13 +43,20 @@ params:
       source_url: http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9
       source_kind_label: 公众号
       source_publisher: 微信公众号（原文署名待补）
-    source_count: 3
+    - source: wx-quanjing
+      stance: 印证
+      quote: dsh-agent-teams：让多个 AI Agent 组成团队，分工协作完成复杂任务。你可以定义调研员、写手、审核员等角色，给每个角色分配不同的模型和指令……自动分工、并行执行、互相通信、汇总结果。
+      source_title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
+      source_url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
+      source_kind_label: 公众号
+      source_publisher: 智宇AI说
+    source_count: 4
     has_conflict: true
     agreement: 口径有出入
     confidence: 高
     category_label: 官方内置能力
     status_label: 官方内置
-    weight: 330
+    weight: 430
     url: /plugins/plugin-agent-teams/
   generated: true
 ---

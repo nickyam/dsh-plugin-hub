@@ -14,7 +14,7 @@
   repo: "https://github.com/dsh-market/dsh-market"
   tags: [必装, 一键安装, 入口]
   flag: "安装写法有出入"
-  notes: "两篇来源都推荐「先装它」，但给的入口写法不同（仓库地址 / 名称@版本 / 命令行 add），全部保留在证据链与「口径核对」页。"
+  notes: "三篇来源都提到「先装它」；其中两篇指向同一个 GitHub 仓库（本站已确认该仓库存在），但添加方式还给出「名称@版本」与命令行 add 两种，全部并列保留在证据链与「口径核对」页。"
   mentions:
     - source: wx-dabaihua
       stance: 印证
@@ -22,6 +22,9 @@
     - source: tree-top10
       stance: 有出入
       quote: "译述：dsh-market 是 DSH 原生的可视化插件市场，卡片式画廊、标签筛选、一键安装与版本切换，awesome 清单也把它列为第一个该装的插件；命令行为 dsh plugin --profile web add dshmarket。"
+    - source: wx-quanjing
+      stance: 印证
+      quote: "dsh-market：DSH 内置的可视化插件市场，支持浏览、搜索、一键安装。跟 dsh-web 的区别在于它是嵌入 DSH 界面里的，体验更接近应用商店，适合喜欢图形化操作的人。"
 
 - id: dsh-find-plugin
   name: dsh-find-plugin
@@ -60,9 +63,10 @@
   category: ui
   status: community
   summary: "把原本要命令行启动的 DSH 本地 Web UI 封成 macOS / Windows 桌面应用，不用装 Node.js。"
+  repo: "https://github.com/anywhere-labs/dsh-desktop"
   tags: [桌面端, 免命令行]
   flag: "社区项目，非官方"
-  notes: "两篇来源都强调它是社区独立项目，与 DeepSeek 官方无隶属关系。"
+  notes: "三篇来源都强调它是社区独立项目，与 DeepSeek 官方无隶属关系。dataelement 版、Tauri 版是另外的独立项目，本站单独立项，不合并。"
   mentions:
     - source: baike-dsh
       stance: 印证
@@ -70,17 +74,25 @@
     - source: tree-top10
       stance: 印证
       quote: "译述：anywhere-labs 维护的 DSH Desktop 把 Web UI、后端服务与插件生态打包成原生 Windows / macOS 应用；仓库明确说明是独立社区项目，与 DeepSeek 官方无隶属关系。另有 dataelement、hairyf 维护的桌面构建可选。"
+    - source: wx-quanjing
+      stance: 印证
+      quote: "dsh-desktop (anywhere-labs)：把 DSH 从浏览器和命令行变成一个独立的桌面应用，提供 Windows、macOS、Linux 三端安装包。文件管理、对话历史、插件管理都在窗口里完成……对不习惯命令行的人来说，这是把 DSH 变成日常工具的关键一步。"
 
 - id: dsh-better-sidebar
   name: DSH Better Sidebar
+  aliases: ["DSH-better-sidebar", "Better Sidebar"]
   category: ui
   status: community
   summary: "把文件管理、代码编辑、终端、Git 面板塞进同一个侧边栏。"
+  repo: "https://github.com/omdsh-dev/DSH-better-sidebar"
   tags: [侧边栏, Git, 效率]
   mentions:
     - source: baike-dsh
       stance: 仅提及
       quote: "DSH Better Sidebar 将文件管理、代码编辑、终端、Git 面板等功能集成到侧边栏。"
+    - source: wx-quanjing
+      stance: 印证
+      quote: "DSH-better-sidebar：把 DSH 的侧边栏重构成一个开放底座：文件树、内嵌终端、对话历史、Git 变更、子代理状态等多个面板可切换，还支持第三方扩展注册新页面。"
 
 - id: selection-toolbar
   name: 划词工具条
@@ -98,15 +110,20 @@
 # ── 工具与能力 ─────────────────────────────────────────────────
 - id: modsearch
   name: ModSearch
+  aliases: [modsearch]
   category: tool
   status: community
   summary: "免费联网搜索，免注册、免 API Key，还能搜 X（推特）内容，用来替掉按量收费的官方搜索。"
+  repo: "https://github.com/liustack/modsearch"
   tags: [搜索, 免费, 省成本]
   notes: "与 dsh-websearch、官方内置网页搜索属于同类不同实现，本站不合并。"
   mentions:
     - source: wx-dabaihua
-      stance: 仅提及
+      stance: 印证
       quote: "ModSearch：免费的联网搜索。官方搜索按量收费，让 AI 查资料时，花费大头都在联网上。ModSearch 免注册、免 API Key，还能搜 X（推特）内容——能省的钱不省白不省。"
+    - source: wx-quanjing
+      stance: 印证
+      quote: "modsearch：给 DSH 加上免费的联网搜索能力，不需要任何 API Key……还支持搜索 X（原 Twitter）上的内容。返回的是结构化 JSON 而不是原始网页，模型消化起来更准确。"
 
 - id: dsh-websearch
   name: dsh-websearch
@@ -133,11 +150,11 @@
 
 - id: dsh-vision
   name: dsh-vision
-  category: tool
+  category: visual
   status: community
   summary: "视觉能力扩展类插件。"
   tags: [视觉, 多模态]
-  flag: "原文仅给名称"
+  flag: "与 dsh-vision-toolkit 名称相近，勿混"
   mentions:
     - source: baike-dsh
       stance: 仅提及
@@ -156,16 +173,20 @@
 
 - id: open-design
   name: open-design
-  category: tool
+  category: visual
   status: community
   summary: "把 Agent 的提示词转成原型、演示文稿与设计资产，本地优先；2026 年 9 月宣布原生兼容 DSH 运行时。"
   tags: [设计, 多模态, 演示文稿]
   flag: "兼容性按版本与日期标注"
+  repo: "https://github.com/nexu-io/open-design"
   notes: "第三方文章称其在 DSH 插件里社区关注度最高，本站不引用具体 star 数（见口径核对）。"
   mentions:
     - source: tree-top10
       stance: 仅提及
       quote: "译述：open-design 定位为 Claude Design 的开源替代，是一个本地优先的桌面应用，把 Agent 提示词转成原型、幻灯片、系统架构图；2026 年 9 月宣布与 dsh 原生运行时兼容，支持结构化设计思考、工具调用、模型预览、任务取消与会话恢复。"
+    - source: wx-quanjing
+      stance: 印证
+      quote: "open-design：首个协作式 AI 设计 Agent 工作区，本地优先、开源。支持动态设计、原型制作和多人协作。"
 
 - id: skill-report
   name: 技能调用报告
@@ -260,6 +281,9 @@
     - source: wx-dabaihua
       stance: 补充
       quote: "给每个队员配不同模型目前不是默认生效，需要显式配置。看懂这点，就不容易被夸大的测评带偏。"
+    - source: wx-quanjing
+      stance: 印证
+      quote: "dsh-agent-teams：让多个 AI Agent 组成团队，分工协作完成复杂任务。你可以定义调研员、写手、审核员等角色，给每个角色分配不同的模型和指令……自动分工、并行执行、互相通信、汇总结果。"
 
 - id: plugin-scheduled-tasks
   name: Scheduled tasks（定时任务）
@@ -321,6 +345,7 @@
   category: workflow
   status: community
   summary: "百科词条列出的社区插件：在会话里快速组建和管理多智能体协作团队。"
+  repo: "https://github.com/NanmiCoder/dsh-agent-teams"
   tags: [多智能体, 协作]
   flag: "与官方内置同名"
   notes: "官网界面里另有标为 Experimental 的 Agent teams（官方内置），两者是否为同一实现未确认，本站分列两条，详见「口径核对」。"
@@ -436,15 +461,21 @@
 
 - id: whale-cost-widget
   name: 小鲸鱼记账挂件
+  aliases: ["Balance Whale Widget", "DeepSeek-Balance-Whale-Widget", "鲸鱼余额挂件"]
   category: billing
   status: unknown
   summary: "右下角桌宠实时显示上次对话花费、今日花费、钱包余额与峰谷时段。"
+  repo: "https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget"
   tags: [桌宠, 成本可视化]
-  flag: "原文未给插件 ID"
+  flag: "两篇视角不同：用量 / 余额"
   mentions:
     - source: wx-dabaihua
-      stance: 仅提及
+      stance: 印证
       quote: "小鲸鱼记账挂件。屏幕右下角养一只桌宠小鲸鱼，实时显示上次对话花了多少钱、今天花了多少、钱包余额，甚至当前是峰时还是谷时。花销透明，心里不慌。"
+    - source: wx-quanjing
+      stance: 补充
+      quote: "Balance Whale Widget：一只住在 DSH 界面右下角的小鲸鱼，帮你实时盯着账户余额。支持拖拽、吸附、翻转，数字变化时有滚动动画……它不提供生产力，但解决了一个真实痛点：用着用着突然欠费中断。"
+  notes: "两篇公众号文章说的是同一只鲸鱼：一篇讲「花了多少钱」（用量视角），一篇讲「账户余额」（余额视角），本站按同一条目合并，英文名进 aliases。"
 
 # ── 安全与治理 ─────────────────────────────────────────────────
 - id: dsh-plugin-gate
@@ -618,3 +649,430 @@
     - source: baike-dsh
       stance: 仅提及
       quote: "有开发者制作了名为「fabric」的插件，其简介明确指向《我的世界》的 Mod 加载器，印证了这一类比。"
+
+
+# ══════════════════════════════════════════════════════════════
+# 来源 wx-quanjing（智宇AI说《插件全景推荐》2026-10-29）新增条目
+# 所有 repo 均为该文给出的 GitHub 地址；Stars 数字一律不录入。
+# ══════════════════════════════════════════════════════════════
+
+# ── 插件市场与发现 ──────────────────────────────────────────────
+- id: awesome-dsh-plugin
+  name: awesome-dsh-plugin
+  category: market
+  status: community
+  summary: "社区维护的精选插件清单，按功能分类收录，相当于生态里的「大众点评」。"
+  repo: "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin"
+  tags: [清单, 目录站]
+  flag: "清单类项目，不是插件"
+  notes: "第三方 Top10 文章也把 awesome-dsh-plugin 公开页当作数据来源之一；本站按独立条目收录，不混进插件市场。"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "社区维护的精选插件列表，按功能分类收录高质量插件。相当于 DSH 生态的「大众点评」，不知道装什么的时候先翻这个列表，比自己在 GitHub 上盲搜效率高得多。"}
+
+- id: dsh-web
+  name: dsh-web（创意工坊）
+  category: market
+  status: community
+  summary: "DSH Web 端的插件聚合生态，通过「创意工坊」分发插件，不离开网页即可完成发现与安装。"
+  repo: "https://github.com/zhu1090093659/dsh-web"
+  tags: [Web, 创意工坊, 分发]
+  flag: "与 dsh-web-all 名称相近，勿混"
+  notes: "指向另一个仓库、定位是插件分发入口，与「Web 全家桶」不是一回事，详见口径核对。"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "DSH Web 端的插件聚合生态，通过「创意工坊」分发插件。如果你用的是浏览器版 DSH，这是最方便的插件发现和安装入口，不用离开网页就能完成整个流程。"}
+
+- id: dsh-plugin-radar
+  name: dsh-plugin-radar
+  category: market
+  status: community
+  summary: "持续扫描 GitHub 候选项目并自动分类审核的生态雷达，主打「捞到冷门小众插件」。"
+  repo: "https://github.com/AdamPlatin123/dsh-plugin-radar"
+  tags: [雷达, 自动分类, 发现]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "开源生态雷达，持续扫描 GitHub 上超过 2.1 万个候选项目，自动分类审核。它的价值在于「全」：很多小众但实用的插件不会被精选列表收录，但雷达能捞到。"}
+
+- id: dsh-plugin-shop
+  name: dsh-plugin-shop
+  category: market
+  status: community
+  summary: "每日刷新的插件市场，全网采集后人工审核上架，用审核机制过滤蹭标签项目。"
+  repo: "https://github.com/LivXue/dsh-plugin-shop"
+  tags: [市场, 人工审核]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "每日刷新的插件市场，全网采集并人工审核后上架。审核机制是它的差异化优势，能过滤掉蹭标签、质量差的项目。"}
+
+- id: awesome-deepseek-harness
+  name: awesome-deepseek-harness
+  category: market
+  status: community
+  summary: "覆盖面更广的精选列表，除插件外还收录工具、基础设施与运行时。"
+  repo: "https://github.com/0xsline/awesome-deepseek-harness"
+  tags: [清单, 目录站]
+  flag: "清单类项目，不是插件"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "另一个精选列表，覆盖面更广，除了插件还收录工具、基础设施、运行时等。跟 awesome-dsh-plugin 互补使用效果更好。"}
+
+# ── 免费模型与接入 ──────────────────────────────────────────────
+- id: dsh-our-free-model
+  name: dsh-our-free-model
+  category: model
+  status: community
+  summary: "装上后模型列表里多出若干可直接用的选项，不用注册、不用填 API Key，用来零成本起步。"
+  repo: "https://github.com/Ebony-Vinyl/dsh-our-free-model"
+  tags: [免费模型, 免Key, 备用通道]
+  flag: "免费额度与可用性以仓库说明为准"
+  notes: "原文「完全免费、不限量」属额度承诺，本站不作为事实收录；作者自己也提醒高峰期可能排队、正式任务建议用自己的 Key。"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "装上之后，DSH 的模型列表里会多出 DeepSeek V4.1 Flash、Kimi K3 等多个选项，直接选就能用，不需要注册账号、不需要填 API Key、不需要配置任何东西……唯一需要注意的是免费通道高峰期可能排队，正式生产任务还是建议用自己的 Key。"}
+
+- id: dsh-plugin-subscriptions
+  name: dsh-plugin-subscriptions
+  category: model
+  status: community
+  summary: "把已有的 ChatGPT Plus / Claude Pro / Grok 订阅通过 OAuth 接进 DSH，复用同一批模型。"
+  repo: "https://github.com/V1ki/dsh-plugin-subscriptions"
+  tags: [订阅复用, OAuth]
+  flag: "第三方接入，先看清服务条款"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "把你已有的 ChatGPT Plus、Claude Pro、Grok 订阅账号接入 DSH，通过 OAuth 登录即可调用同一批模型。等于不加钱多了一个使用入口。"}
+
+- id: dsh-deepseek-web-login
+  name: dsh-deepseek-web-login
+  category: model
+  status: community
+  summary: "通过浏览器登录网页版捕获凭证，把网页版模型作为 LLM 提供者。"
+  repo: "https://github.com/cv-superding/dsh-deepseek-web-login"
+  tags: [网页凭证, 免API Key]
+  flag: "涉及账号凭证，注意安全与条款"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "通过浏览器登录 chat.deepseek.com 捕获凭证，将网页版模型作为 LLM 提供者……如果你有 DeepSeek 网页账号但没有 API Key，这是一条捷径。"}
+
+# ── 视觉与设计 ──────────────────────────────────────────────────
+- id: modlens
+  name: modlens
+  category: visual
+  status: community
+  summary: "给纯文本模型补上视觉能力：粘贴图片后做 OCR、版面分析与语义提取，输出结构化 JSON 交给模型。"
+  repo: "https://github.com/liustack/modlens"
+  tags: [OCR, 视觉, 结构化输出]
+  notes: "与百科里只有名字的 dsh-vision、本文的 dsh-vision-toolkit 是不同条目，本站不合并。"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "粘贴一张图片进对话窗口，它会自动识别图中的文字（OCR）、分析版面结构、提取语义信息，然后以结构化 JSON 的形式交给模型处理……它不挑模型，DeepSeek、GLM 等纯文本模型都能用。"}
+
+- id: dsh-vision-toolkit
+  name: dsh-vision-toolkit
+  category: visual
+  status: community
+  summary: "在 modlens 基础上加多图对比问答、截图还原前端 UI、批量处理等进阶功能。"
+  repo: "https://github.com/Anionex/dsh-vision-toolkit"
+  tags: [多图, UI还原, 批量处理]
+  flag: "与 dsh-vision 名称相近，勿混"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "在 modlens 基础上增加了多图对比问答、截图到前端 UI 还原、批量处理等进阶功能……前端开发者尤其值得关注。"}
+
+- id: archify
+  name: archify
+  category: visual
+  status: community
+  summary: "把想法、计划或代码库变成交互式图表：架构图、流程图、系统拓扑图。"
+  repo: "https://github.com/tt-a1i/archify"
+  tags: [架构图, 流程图, 可视化]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "将任何想法、计划或代码库变成精美的交互式图表。架构图、流程图、系统拓扑图，一句话就能生成。"}
+
+- id: openpencil
+  name: openpencil
+  category: visual
+  status: community
+  summary: "开源 AI 原生矢量设计工具，支持并发 Agent 协作。"
+  repo: "https://github.com/ZSeven-W/openpencil"
+  tags: [矢量设计, 协作]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "首个开源 AI 原生矢量设计工具，支持并发 Agent 协作。适合需要在 DSH 里直接做矢量设计的场景。"}
+
+- id: deepseek-design
+  name: deepseek-design
+  category: visual
+  status: community
+  summary: "可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT 制作一体化。"
+  repo: "https://github.com/Devin-AXIS/deepseek-design"
+  tags: [设计稿, PPT, 模板]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT 制作一体化。适合需要在 DSH 里直接出设计稿和演示文稿的人。"}
+
+# ── 内容发现（工具） ────────────────────────────────────────────
+- id: openbiliclaw
+  name: OpenBiliClaw
+  category: tool
+  status: community
+  summary: "自进化内容发现 Agent：按兴趣偏好主动从 B 站、小红书、抖音、YouTube、X、知乎、Reddit 等平台找内容，本地私有部署。"
+  repo: "https://github.com/whiteguo233/OpenBiliClaw"
+  tags: [内容发现, 主动推送, 本地优先]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "自进化跨平台 AI 内容发现 Agent。你先告诉它你的兴趣偏好，它会主动从 B 站、小红书、抖音、YouTube、X、知乎、Reddit、微博等平台寻找匹配的内容……本地私有部署，数据不出本机。"}
+
+# ── 界面与桌面端（新增独立项目） ────────────────────────────────
+- id: dsh-desktop-dataelement
+  name: dsh-desktop（dataelement）
+  category: ui
+  status: community
+  summary: "另一个独立的 DSH 桌面客户端项目，与 anywhere-labs 版功能各有侧重。"
+  repo: "https://github.com/dataelement/dsh-desktop"
+  tags: [桌面端, 独立实现]
+  flag: "与 anywhere-labs 版是两个项目"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "另一个独立的桌面客户端项目，功能和 anywhere-labs 版各有侧重。两个版本可以都试试看，选更顺手的那个。"}
+
+- id: dsh-desktop-tauri
+  name: deepseek-harness-desktop（Tauri）
+  category: ui
+  status: community
+  summary: "基于 Tauri 的轻量桌面版，安装包小、零环境配置、预置插件。"
+  repo: "https://github.com/dsh-tauri/deepseek-harness-desktop"
+  tags: [桌面端, 轻量, Tauri]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "基于 Tauri 框架的轻量桌面版，安装包仅 8MB，零环境配置，预置插件。适合磁盘空间紧张或者追求极致轻量的用户。"}
+
+- id: dsh-tui
+  name: dsh-TUI
+  category: ui
+  status: community
+  summary: "终端界面插件：彩色界面、像素风鲸鱼图标、鼠标交互，性能开销低。"
+  repo: "https://github.com/ccch1mneyyy/dsh-TUI"
+  tags: [终端, TUI, 轻量]
+  flag: "「官方首推」为该文说法，未见官方来源"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "DSH 官方首推的终端界面插件。npm 一行命令装好，终端里就有了彩色界面、像素风鲸鱼图标、平滑鼠标交互。性能开销极低，老机器也跑得动。"}
+
+- id: dsh-genui
+  name: dsh-genui
+  category: ui
+  status: community
+  summary: "让回复里内联渲染交互式 UI：图表、表单、测验、Mermaid 图、3D 场景等。"
+  repo: "https://github.com/omdsh-dev/dsh-genui"
+  tags: [GenUI, 内联渲染, 可视化]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "让 DSH 在助手回复中内联渲染交互式 UI 组件：图表、表单、测验、Mermaid 图、3D 场景等。适合需要在对话中直接展示可视化内容的场景。"}
+
+- id: dsh-synapse
+  name: dsh-synapse
+  category: ui
+  status: community
+  summary: "画布式非线性对话工作区，可把对话拆成多个分支像思维导图一样探索。"
+  repo: "https://github.com/liangmianya/dsh-synapse"
+  tags: [画布, 分支, 非线性]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "可视化非线性对话工作区，画布式会话浏览器。你可以把对话拆成多个分支，像思维导图一样探索不同的回答路径。"}
+
+- id: dsh-x
+  name: DSH-X
+  category: ui
+  status: community
+  summary: "轻量桌面启动器，统一管理多实例、版本切换与插件 / 整合包 / MCP / 技能。"
+  repo: "https://github.com/yyh-001/DSH-X"
+  tags: [启动器, 多实例, 版本管理]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "轻量桌面启动器，支持多实例管理、版本切换、插件/整合包/MCP/技能的统一管理。适合需要在多个 DSH 配置之间频繁切换的重度用户。"}
+
+# ── 趣味与个性化 ────────────────────────────────────────────────
+- id: dsh-pet
+  name: dsh-pet
+  category: fun
+  status: community
+  summary: "透明桌面宠物，支持多开、大小位置配置，可用 AI 生成动画素材自动转成桌宠。"
+  repo: "https://github.com/PC2005-cloud/dsh-pet"
+  tags: [桌宠, DIY素材]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "一行命令装一个透明桌面宠物，支持多开、大小位置随心配置。亮点是内置 DIY 素材链：你可以用 AI 生成一段动画视频，插件自动转成桌宠素材。"}
+
+- id: petdex
+  name: petdex
+  category: fun
+  status: community
+  summary: "动画宠物公共画廊，跨 Codex、Claude Code、DSH、Hermes、OpenCode、Gemini 等平台。"
+  repo: "https://github.com/crafter-station/petdex"
+  tags: [桌宠, 画廊, 跨平台]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "动画宠物公共画廊，支持 Codex、Claude Code、DSH、Hermes、OpenCode、Gemini 等多个平台。如果你不想自己造宠物，这里有现成的可以挑。"}
+
+# ── 上下文与工作流 ──────────────────────────────────────────────
+- id: dsh-context
+  name: dsh-context
+  category: workflow
+  status: community
+  summary: "把对话上下文可视化：当前 token 占用、哪些内容被压缩、多个 Agent 间怎么共享信息。"
+  repo: "https://github.com/bowenliang123/dsh-context"
+  tags: [上下文, 可观测, 诊断]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "一站式上下文可视化插件……你不知道当前占了多少 token、哪些内容被压缩了、多个 Agent 之间怎么共享信息。dsh-context 把这些全部可视化，提供面板、浏览器、侧栏三种查看方式。"}
+
+- id: dsh-routing-suite
+  name: dsh-routing-suite
+  category: workflow
+  status: community
+  summary: "模型路由套件：简单问答走快模型、复杂推理走强模型，失败自动降级。"
+  repo: "https://github.com/yjh051108/dsh-routing-suite"
+  tags: [模型路由, 省成本, 自动降级]
+  notes: "与百科里只有名字的 dsh-plan-execute（双模型路由）是同类不同实现，本站不合并。"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "模型路由套件，让不同任务自动匹配最合适的模型。简单问答走 Flash，复杂推理走 Max，失败了自动降级。"}
+
+- id: dsh-ops
+  name: dsh-ops
+  category: workflow
+  status: community
+  summary: "底层操作工具集，优化 token 消耗与任务执行时间，适合大量自动化任务。"
+  repo: "https://github.com/T-Auto/dsh-ops"
+  tags: [自动化, token优化]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "底层操作工具集，专门优化 token 消耗和任务执行时间。适合跑大量自动化任务、对成本和时间敏感的用户。"}
+
+- id: answer-me-with-html
+  name: answer-me-with-html
+  category: workflow
+  status: community
+  summary: "让复杂问题用一页自包含的交互 HTML 回答，内含流程图、对比表格、交互图表，方便分享。"
+  repo: "https://github.com/QingYunA/answer-me-with-html"
+  tags: [HTML, 可视化回答, 分享]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "让 DSH 用一页可交互的 HTML 来回答复杂问题……这个插件会生成一个自包含的单页 HTML，里面有流程图、对比表格、交互式图表，直接在浏览器里打开就能看。分享给同事也方便。"}
+
+- id: deepseek-bot
+  name: DeepSeek-Bot
+  category: workflow
+  status: community
+  summary: "长生命周期 Bot 团队，支持主 Bot、Bot 间消息与群聊，偏持久运行的自动化场景。"
+  repo: "https://github.com/Fei2411/DeepSeek-Bot"
+  tags: [多智能体, Bot, 长生命周期]
+  notes: "文章明确把它与 dsh-agent-teams 区分：后者偏任务分工，前者偏持久性与社交性。"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "长生命周期 Bot 团队，支持主 Bot、Bot 间消息和群聊。跟 agent-teams 的区别在于它更强调 Bot 的持久性和社交性，适合需要长期运行的自动化场景。"}
+
+# ── 移动端与远程 ────────────────────────────────────────────────
+- id: ds-harness-remote
+  name: ds-harness-remote
+  category: remote
+  status: community
+  summary: "P2P 优先的加密网络实现多端远程访问，手机上继续看进度、发指令。"
+  repo: "https://github.com/liguobao/ds-harness-remote"
+  tags: [远程, P2P, 端到端加密]
+  flag: "加密与中继方式以仓库说明为准"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "通过 P2P 优先的加密网络实现多端远程访问。在公司电脑上跑着 DSH，通勤路上用手机继续看进度、发指令。端到端加密，不经过第三方服务器，延迟低、隐私好。"}
+
+- id: dsh-mobile
+  name: dsh-mobile
+  category: remote
+  status: community
+  summary: "原生 iOS 客户端，通过 WebSocket 连接 Harness。"
+  repo: "https://github.com/Clarklevis1995/dsh-mobile"
+  tags: [iOS, WebSocket, 移动]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "原生 iOS 客户端，通过 WebSocket 连接 Harness。iPhone 用户的专属入口。"}
+
+- id: dsh-ios
+  name: dsh-ios
+  category: remote
+  status: community
+  summary: "iOS 模拟器插件，支持 USB 连真机，提供一组 Agent 工具，偏开发调试。"
+  repo: "https://github.com/ZSeven-W/dsh-ios"
+  tags: [iOS, 模拟器, 调试]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "iOS 模拟器插件，还支持 USB 连接真机，提供 22 个 Agent 工具。适合 iOS 开发者在 DSH 里直接调试和测试。"}
+
+# ── 内容创作与办公 ──────────────────────────────────────────────
+- id: webnovel-writer
+  name: webnovel-writer
+  category: content
+  status: community
+  summary: "长篇网文辅助创作系统，用章节管理与角色记忆缓解长篇创作里的遗忘和幻觉。"
+  repo: "https://github.com/lingfengQAQ/webnovel-writer"
+  tags: [网文, 长篇, 角色记忆]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "长篇网文辅助创作系统，支持 200 万字量级连载。专门解决 AI 写作中的遗忘和幻觉问题，通过结构化的章节管理和角色记忆机制，让 AI 在超长篇创作中保持一致性。"}
+
+- id: oh-story-dsh
+  name: oh-story-dsh
+  category: content
+  status: community
+  summary: "面向网文、短剧、游戏脚本、视频解说的创作工作流，内置四个体裁工作台与提示词模板。"
+  repo: "https://github.com/zenstory-ai/oh-story-dsh"
+  tags: [短剧, 脚本, 工作流]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "专为网文、短剧、游戏脚本、视频解说设计的创作工作流插件，内置四个工作台，每个对应一种体裁，预设了提示词模板、章节管理、角色卡片等。"}
+
+- id: dsh-univer-office
+  name: dsh-univer-office
+  category: content
+  status: community
+  summary: "把电子表格、文档、幻灯片、画布、关系表集成进同一个运行时的 Office 插件。"
+  repo: "https://github.com/dream-num/dsh-univer-office"
+  tags: [表格, 文档, 幻灯片]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "Univer Office 插件，把电子表格、文档、幻灯片、画布、关系表集成到一个运行时里。适合需要在 DSH 里处理办公文档的场景。"}
+
+# ── 安全与治理 ──────────────────────────────────────────────────
+- id: dsh-purge
+  name: dsh-purge
+  category: security
+  status: community
+  summary: "该文所称的「解除回答限制」插件，不同模型可换不同提示词，默认面向国产模型优化。"
+  repo: "https://github.com/YuJunZhiXue/dsh-purge"
+  tags: [破限, 提示词]
+  flag: "涉及绕过模型安全策略，本站不评价；仓库地址返回 301"
+  notes: "只记录「该文提及」这一事实，不提供用法、不背书效果；原文自己也写了「使用时请注意合规边界」。"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "让所有模型解除回答限制的插件，不同模型可换不同提示词，默认面向国产模型优化……使用时请注意合规边界。"}
+
+- id: dsh-unrestricted
+  name: dsh-unrestricted
+  category: security
+  status: community
+  summary: "另一款提示词破限插件，适配 Web 与桌面端多模式及工具调用。"
+  repo: "https://github.com/yexi-by/dsh-unrestricted"
+  tags: [破限, 提示词]
+  flag: "涉及绕过模型安全策略，本站不评价"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "另一个提示词破限插件，深度适配 Web 与桌面端多模式及工具调用。跟 dsh-purge 可以对比选用。"}
+
+- id: deepsec
+  name: DeepSec
+  category: security
+  status: community
+  summary: "AI 安全攻防平台：Shield 审计生成代码里的幻觉包与缺失防护，Spear 做授权渗透测试。"
+  repo: "https://github.com/Unclecheng-li/DeepSec"
+  tags: [代码审计, 渗透测试, 安全]
+  flag: "渗透测试须在授权范围内使用"
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "AI 安全攻防平台，包含两个模块：Shield 审计 AI 生成代码中的幻觉包、缺失防护和模式错误；Spear 自动化授权渗透测试，内置 40 多个技能包。"}
+
+# ── 记忆与知识管理 ──────────────────────────────────────────────
+- id: everos
+  name: EverOS
+  category: memory
+  status: community
+  summary: "便携记忆层：本地优先、Markdown 原生、用户自有，给 Agent 加长期记忆。"
+  repo: "https://github.com/EverMind-AI/EverOS"
+  tags: [长期记忆, 本地优先, Markdown]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "便携记忆层，本地优先、Markdown 原生、用户自有、自进化。给 DSH 加上长期记忆能力，让它记住你的偏好、项目背景和历史决策。"}
+
+- id: memos
+  name: MemOS
+  category: memory
+  status: community
+  summary: "自进化记忆操作系统，支持超持久记忆、混合检索与跨任务迁移。"
+  repo: "https://github.com/MemTensor/MemOS"
+  tags: [记忆操作系统, 混合检索]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "自进化记忆操作系统，支持超持久记忆、混合检索和跨任务迁移。跟 EverOS 定位类似但技术路线不同，可以对比选用。"}
+
+- id: reme
+  name: ReMe
+  category: memory
+  status: community
+  summary: "Agent 记忆管理工具包，提供更细粒度的记忆读写接口。"
+  repo: "https://github.com/agentscope-ai/ReMe"
+  tags: [记忆, 开发工具包]
+  mentions:
+    - {source: wx-quanjing, stance: 仅提及, quote: "Agent 记忆管理工具包，提供更细粒度的记忆操作接口。适合需要精细控制记忆读写策略的开发者。"}

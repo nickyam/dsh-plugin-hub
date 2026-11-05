@@ -33,7 +33,7 @@ params:
       agreement: 单篇提及
     - id: open-design
       name: open-design
-      agreement: 单篇提及
+      agreement: 多篇印证
     - id: dsh-diff-approval
       name: dsh-diff-approval
       agreement: 单篇提及

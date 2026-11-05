@@ -2,7 +2,7 @@
 title: dsh-vision
 description: 视觉能力扩展类插件。
 categories:
-- tool
+- visual
 tags: &id001
 - 视觉
 - 多模态
@@ -11,11 +11,11 @@ params:
   plugin:
     id: dsh-vision
     name: dsh-vision
-    category: tool
+    category: visual
     status: community
     summary: 视觉能力扩展类插件。
     tags: *id001
-    flag: 原文仅给名称
+    flag: 与 dsh-vision-toolkit 名称相近，勿混
     mentions:
     - source: baike-dsh
       stance: 仅提及
@@ -28,7 +28,7 @@ params:
     has_conflict: false
     agreement: 单篇提及
     confidence: 待核实
-    category_label: 工具与能力
+    category_label: 视觉与设计
     status_label: 社区
     weight: 100
     url: /plugins/dsh-vision/

@@ -21,7 +21,7 @@ params:
       agreement: 多篇印证
     - id: dsh-better-sidebar
       name: DSH Better Sidebar
-      agreement: 单篇提及
+      agreement: 多篇印证
     - id: dsh-vision
       name: dsh-vision
       agreement: 单篇提及

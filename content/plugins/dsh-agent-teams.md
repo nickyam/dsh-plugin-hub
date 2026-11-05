@@ -14,6 +14,7 @@ params:
     category: workflow
     status: community
     summary: 百科词条列出的社区插件：在会话里快速组建和管理多智能体协作团队。
+    repo: https://github.com/NanmiCoder/dsh-agent-teams
     tags: *id001
     flag: 与官方内置同名
     notes: 官网界面里另有标为 Experimental 的 Agent teams（官方内置），两者是否为同一实现未确认，本站分列两条，详见「口径核对」。
