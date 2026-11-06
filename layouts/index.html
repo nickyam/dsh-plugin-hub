@@ -3,30 +3,29 @@
 <section class="hero">
   <div class="wrap hero-inner">
     <div class="hero-copy">
-      <h1>把散落各处的 DSH 插件说法，收到一处</h1>
-      <p class="hero-sub">公众号文章写了一遍，目录站又写了一遍，官网还是另一套叫法。本站把它们拆成「插件主档 + 来源台账 + 证据链」：同一个插件去重合并，多篇说法一致的标印证，对不上的单独摆出来让你自己判断。</p>
+      <h1>把散落各处的 DSH 插件，收到一处</h1>
+      <p class="hero-sub">公众号文章写了一批，社区目录又写了一批，名字还常常对不上。本站的思路很简单：顺着文章发现插件，再回到它的官方 GitHub 仓库读 README，把简介、安装、功能亮点整理成一张能查的卡片。文章只是「发现来源」，正文以官方说明为准。</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#catalog">浏览 {{ $stats.plugins }} 个插件</a>
-        <a class="btn btn-ghost" href="{{ "notes/" | relURL }}">看 {{ $stats.discrepancies }} 条口径分歧</a>
+        <a class="btn btn-ghost" href="{{ "about/" | relURL }}">看收录方法</a>
       </div>
       <p class="hero-note">DeepSeek Harness（DSH）是 DeepSeek 开源的 Agent 运行框架，主打「一切皆插件」。本站只做资料整理，不是插件市场，也不是官方目录。</p>
     </div>
     <aside class="hero-file" aria-hidden="true">
-      <div class="file-head"><span>evidence-chain</span><span>dsh-market</span></div>
-      <div class="file-row"><span class="k">alias</span><span>插件市场 / dshmarket</span></div>
-      <div class="file-row"><span class="k">sources</span><span>2</span></div>
-      <div class="quote"><span class="q-tag">印证</span> 公众号：装上它，设置里会多出一个「插件市场」入口…</div>
-      <div class="quote"><span class="q-tag q-tag--alt">有出入</span> 第三方：dsh plugin --profile web add dshmarket…</div>
-      <p class="file-foot">合并为 1 条主档，差异进口径核对</p>
+      <div class="file-head"><span>plugin</span><span>dsh-market</span></div>
+      <div class="file-row"><span class="k">repo</span><span>dsh-market/dsh-market</span></div>
+      <div class="file-row"><span class="k">install</span><span>dsh plugin add …</span></div>
+      <div class="quote"><span class="q-tag">README</span> 给设置面板加一个「插件市场」入口，浏览、搜索、一键安装 DSH 插件。</div>
+      <p class="file-foot">内容以官方仓库 README 为准</p>
     </aside>
   </div>
   <div class="wrap">
     <div class="stats">
       <div class="stat"><strong>{{ $stats.plugins }}</strong><span>插件条目</span></div>
-      <div class="stat"><strong>{{ $stats.mentions }}</strong><span>条来源引文</span></div>
-      <div class="stat"><strong>{{ $stats.corroborated }}</strong><span>多篇印证</span></div>
-      <div class="stat"><strong>{{ $stats.conflicts }}</strong><span>插件内有分歧</span></div>
+      <div class="stat"><strong>{{ $stats.repos_confirmed }}</strong><span>已确认官方仓库</span></div>
+      <div class="stat"><strong>{{ $stats.refs_total }}</strong><span>条参考文章</span></div>
       <div class="stat"><strong>{{ $stats.sources }}</strong><span>篇来源台账</span></div>
+      <div class="stat"><strong>{{ $stats.categories }}</strong><span>个分类</span></div>
     </div>
   </div>
 </section>
@@ -34,7 +33,7 @@
 <div class="wrap" id="catalog">
   <div class="notice">
     <span class="notice-icon">!</span>
-    <div><strong>先说清楚：</strong>这是读书笔记式的索引，不是已实测的插件清单。带「单篇提及」的条目只有一处出处，「口径有出入」的条目各篇文章说法不一致；DSH 仍是开发者预览版，兼容性随时会变。安装前请回到官方仓库与插件仓库自行核对。<a href="{{ "about/" | relURL }}">整理方法</a></div>
+    <div><strong>先说清楚：</strong>这是读书笔记式的索引，不是已实测的插件清单。每个插件的简介、安装、功能都按对应官方仓库的 README 整理；DSH 仍是开发者预览版，兼容性随时会变，安装前请回到官方仓库自行核对。<a href="{{ "about/" | relURL }}">收录方法</a></div>
   </div>
 
   <div class="toolbar">
@@ -53,7 +52,7 @@
 
   <div class="columns">
     <div class="col-main">
-      <div class="result-bar"><span id="result-count">{{ $stats.plugins }} 个插件</span><span class="muted">按证据充分度排序</span></div>
+      <div class="result-bar"><span id="result-count">{{ $stats.plugins }} 个插件</span><span class="muted">已确认官方仓库的排前面</span></div>
       <div class="cards" id="cards">
         {{ range sort (where site.RegularPages "Section" "plugins") "Weight" "desc" }}
           {{ partial "card.html" . }}
@@ -66,19 +65,14 @@
       <section class="side-box">
         <h2>卡片上的徽章</h2>
         <ul class="legend">
-          <li><span class="badge badge-blue">多篇印证</span> 两篇以上说法对得上</li>
-          <li><span class="badge badge-ghost">单篇提及</span> 目前只有一处出处</li>
-          <li><span class="badge badge-orange">口径有出入</span> 各篇说法不一致</li>
+          <li><span class="badge badge-green">官方仓库已确认</span> 已链到 GitHub 仓库</li>
+          <li><span class="badge badge-ghost">仓库待确认</span> 暂未找到官方仓库</li>
           <li><span class="mini-tag mini-tag-warn">提示</span> 名称 / ID / 兼容性待核</li>
         </ul>
       </section>
       <section class="side-box">
-        <h2>口径核对 <a class="more" href="{{ "notes/" | relURL }}">全部</a></h2>
-        <ul class="side-list">
-          {{ range hugo.Data.discrepancies }}
-          <li><a href="{{ "notes/" | relURL }}#{{ .id }}">{{ .title }}</a><span class="mini-tag">{{ .level }}</span></li>
-          {{ end }}
-        </ul>
+        <h2>收录说明</h2>
+        <p class="side-note">每个插件都回到官方 GitHub 仓库读 README 整理；公众号与社区文章只作为发现来源，不渲染原文、不作为正文。你发我新文章，我按同样方式补卡片。</p>
       </section>
       <section class="side-box">
         <h2>来源台账 <a class="more" href="{{ "sources/" | relURL }}">全部</a></h2>
@@ -87,20 +81,20 @@
           <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="mini-tag">{{ .Params.source.kind_label }}</span></li>
           {{ end }}
         </ul>
-        <p class="side-note">目前只有 {{ $stats.wechat }} 篇公众号文章；你把链接发我，我按同样格式继续往台账里加，印证数会自己长起来。</p>
+        <p class="side-note">目前 {{ $stats.wechat }} 篇公众号文章；你把链接发我，我顺着它发现插件、再去官方仓库补全内容。</p>
       </section>
       <div class="ad-note" aria-label="广告">广告</div>
     </aside>
   </div>
 
   <section class="howto">
-    <h2>往后怎么加一篇公众号文章</h2>
+    <h2>怎么加一篇公众号文章</h2>
     <div class="steps">
       <div class="step"><span>01</span><h3>存来源</h3><p>在 <code>data/sources.yaml</code> 加一条：标题、公众号、原文链接、日期（没有就写「待补」）。</p></div>
-      <div class="step"><span>02</span><h3>挂证据</h3><p>文章提到的插件，在 <code>data/plugins.yaml</code> 已有条目下追加一条 <code>mentions</code> 引文；没见过的才新建条目，别名塞进 <code>aliases</code>。</p></div>
-      <div class="step"><span>03</span><h3>重新生成</h3><p>跑 <code>python3 tools/build_data.py &amp;&amp; hugo --minify</code>，印证数、冲突标记、搜索索引全部自动重算。</p></div>
+      <div class="step"><span>02</span><h3>找仓库写内容</h3><p>文章提到的插件，顺着名字去 GitHub 找官方仓库、读 README，在 <code>data/plugins.yaml</code> 里补 <code>repo</code> / <code>install</code> / <code>summary</code> / <code>features</code>，并把来源塞进 <code>refs</code> 作为参考。</p></div>
+      <div class="step"><span>03</span><h3>重新生成</h3><p>跑 <code>python3 tools/build_data.py &amp;&amp; hugo --minify</code>，仓库确认数、搜索索引全部自动重算。</p></div>
     </div>
-    <p class="howto-foot">说法打架时不去「选一个对的」，而是写进 <code>data/discrepancies.yaml</code>，把各方原话并列摆出来。<a href="{{ "about/" | relURL }}">完整整理方法</a></p>
+    <p class="howto-foot">正文一律以官方仓库 README 为准，公众号文章只作发现来源与补充说明。<a href="{{ "about/" | relURL }}">完整收录方法</a></p>
   </section>
 </div>
 {{ end }}

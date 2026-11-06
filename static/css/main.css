@@ -253,6 +253,13 @@ button, input, select, textarea { font: inherit; }
 .callout { border-top: var(--rule-bar) solid var(--color-rule-2); border-bottom: var(--rule-hair) solid var(--color-rule); background: var(--color-paper-2); padding: var(--space-md) var(--space-lg); margin-bottom: var(--space-lg); font-size: var(--text-sm); color: var(--color-ink); }
 .callout b { color: var(--color-ink); }
 .disclaimer { font-size: var(--text-sm); color: var(--color-muted); line-height: 1.7; border-top: var(--rule-hair) solid var(--color-rule); padding-top: var(--space-md); margin: var(--space-lg) 0 0; }
+.feature-list { margin: 0; padding-left: var(--space-xl); }
+.feature-list li { font-size: var(--text-sm); color: var(--color-ink-2); line-height: 1.7; margin-bottom: var(--space-2xs); }
+.feature-list li::marker { color: var(--color-rule-2); }
+.ref-list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-2xs); }
+.ref-list li { display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); font-size: var(--text-sm); }
+.ref-list li a { color: var(--color-ink); text-decoration: none; overflow-wrap: anywhere; }
+.ref-list li a:hover { color: var(--color-accent); text-decoration: underline; }
 .source-plugins { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--space-2xs); }
 .source-plugin { display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); background: var(--color-paper-2); padding: var(--space-sm) var(--space-md); font-size: var(--text-sm); color: var(--color-ink-2); text-decoration: none; }
 .source-plugin:hover { background: var(--color-paper-3); text-decoration: none; }
@@ -288,7 +295,7 @@ button, input, select, textarea { font: inherit; }
 .prose code { font-family: var(--font-outlier); white-space: normal; word-break: break-word; background: var(--color-paper-2); padding: 2px 6px; border-radius: var(--radius-control); font-size: 0.9em; color: var(--color-ink); }
 .prose-tight { margin-bottom: var(--space-xl); }
 
-/* ── Notes / discrepancies ──────────────────────────── */
+/* ── Reference lists (source pages / plugin sidebars) ── */
 .disc { background: var(--color-sheet); border-top: var(--rule-bar) solid var(--color-ink); padding: var(--space-lg) var(--space-xl); margin-bottom: var(--space-lg); scroll-margin-top: calc(var(--header-h) + var(--space-xl)); }
 .disc-head { display: flex; align-items: center; gap: var(--space-sm); flex-wrap: wrap; margin-bottom: var(--space-sm); }
 .disc-head h2 { font-size: var(--text-lg); margin: 0; }

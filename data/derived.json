@@ -1,13 +1,11 @@
 {
-  "generated_at": "2026-11-06 21:34",
+  "generated_at": "2026-11-06 22:00",
   "stats": {
     "plugins": 78,
     "sources": 8,
     "wechat": 2,
-    "mentions": 90,
-    "corroborated": 9,
-    "conflicts": 1,
-    "discrepancies": 6,
+    "refs_total": 90,
+    "repos_confirmed": 48,
     "categories": 13
   },
   "categories": [
@@ -167,11 +165,5 @@
     "official": "官方",
     "community": "社区",
     "unknown": "原文未说明"
-  },
-  "stance_label": {
-    "印证": "印证",
-    "补充": "补充",
-    "仅提及": "仅提及",
-    "有出入": "有出入"
   }
 }

@@ -7,7 +7,7 @@ tags: &id001
 - HTML
 - 可视化回答
 - 分享
-weight: 100
+weight: 1010
 params:
   plugin:
     id: answer-me-with-html
@@ -21,17 +21,17 @@ params:
     - source: wx-quanjing
       stance: 仅提及
       quote: 让 DSH 用一页可交互的 HTML 来回答复杂问题……这个插件会生成一个自包含的单页 HTML，里面有流程图、对比表格、交互式图表，直接在浏览器里打开就能看。分享给同事也方便。
-      source_title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      source_url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      source_kind_label: 公众号
-      source_publisher: 智宇AI说
+    refs:
+    - id: wx-quanjing
+      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
+      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
+      kind_label: 公众号
+      publisher: 智宇AI说
     source_count: 1
-    has_conflict: false
-    agreement: 单篇提及
-    confidence: 待核实
+    repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区
-    weight: 100
+    weight: 1010
     url: /plugins/answer-me-with-html/
   generated: true
 ---

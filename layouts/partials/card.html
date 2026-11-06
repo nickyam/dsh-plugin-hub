@@ -1,14 +1,12 @@
 {{ $p := .Params.plugin }}
 {{ $hay := printf "%s %s %s %s %s" $p.name (delimit ($p.aliases | default (slice)) " ") $p.summary (delimit ($p.tags | default (slice)) " ") $p.category_label | lower }}
-<article class="card" data-category="{{ $p.category }}" data-hay="{{ $hay }}" data-agreement="{{ $p.agreement }}">
+<article class="card" data-category="{{ $p.category }}" data-hay="{{ $hay }}" data-repo="{{ if $p.repo_confirmed }}1{{ else }}0{{ end }}">
   <div class="card-top">
     <a class="cat-badge" href="{{ "categories/" | relURL }}{{ $p.category }}/">{{ $p.category_label }}</a>
-    {{ if eq $p.agreement "多篇印证" }}
-      <span class="badge badge-blue">{{ $p.source_count }} 篇印证</span>
-    {{ else if eq $p.agreement "口径有出入" }}
-      <span class="badge badge-orange">口径有出入</span>
+    {{ if $p.repo_confirmed }}
+      <span class="badge badge-green">官方仓库已确认</span>
     {{ else }}
-      <span class="badge badge-ghost">单篇提及</span>
+      <span class="badge badge-ghost">仓库待确认</span>
     {{ end }}
   </div>
   <h3><a href="{{ .RelPermalink }}">{{ $p.name }}</a></h3>
@@ -17,6 +15,6 @@
   <div class="card-foot">
     <span class="mini-tag">{{ $p.status_label }}</span>
     {{ with $p.flag }}<span class="mini-tag mini-tag-warn">{{ . }}</span>{{ end }}
-    <span class="card-more">证据 {{ len $p.mentions }} 条</span>
+    <span class="card-more">参考 {{ $p.source_count }} 篇</span>
   </div>
 </article>

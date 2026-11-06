@@ -7,7 +7,7 @@ tags: &id001
 - 设计稿
 - PPT
 - 模板
-weight: 100
+weight: 1010
 params:
   plugin:
     id: deepseek-design
@@ -21,17 +21,17 @@ params:
     - source: wx-quanjing
       stance: 仅提及
       quote: 可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT 制作一体化。适合需要在 DSH 里直接出设计稿和演示文稿的人。
-      source_title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      source_url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      source_kind_label: 公众号
-      source_publisher: 智宇AI说
+    refs:
+    - id: wx-quanjing
+      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
+      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
+      kind_label: 公众号
+      publisher: 智宇AI说
     source_count: 1
-    has_conflict: false
-    agreement: 单篇提及
-    confidence: 待核实
+    repo_confirmed: true
     category_label: 视觉与设计
     status_label: 社区
-    weight: 100
+    weight: 1010
     url: /plugins/deepseek-design/
   generated: true
 ---

@@ -7,7 +7,7 @@
   </nav>
   <header class="page-head">
     <h1>{{ $label }}</h1>
-    <p>{{ len .Pages }} 个插件，按证据充分度排序</p>
+    <p>{{ len .Pages }} 个插件，已确认官方仓库的排前面</p>
   </header>
   <div class="cards">
     {{ range sort .Pages "Weight" "desc" }}{{ partial "card.html" . }}{{ end }}

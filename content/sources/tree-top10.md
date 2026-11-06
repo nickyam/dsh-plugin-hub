@@ -18,49 +18,49 @@ params:
     mentioned:
     - id: dsh-market
       name: dsh-market
-      agreement: 口径有出入
+      repo_confirmed: true
     - id: dsh-find-plugin
       name: dsh-find-plugin
-      agreement: 单篇提及
+      repo_confirmed: false
     - id: dsh-web-all
       name: dsh-web-all（Web 全家桶）
-      agreement: 多篇印证
+      repo_confirmed: true
     - id: dsh-desktop
       name: DSH Desktop
-      agreement: 多篇印证
+      repo_confirmed: true
     - id: dsh-websearch
       name: dsh-websearch
-      agreement: 单篇提及
+      repo_confirmed: false
     - id: open-design
       name: open-design
-      agreement: 多篇印证
+      repo_confirmed: true
     - id: dsh-diff-approval
       name: dsh-diff-approval
-      agreement: 单篇提及
+      repo_confirmed: false
     - id: dsh-project-memory
       name: dsh-project-memory
-      agreement: 单篇提及
+      repo_confirmed: false
     - id: dsh-engram
       name: dsh-engram
-      agreement: 单篇提及
+      repo_confirmed: false
     - id: runtime36
       name: runtime36
-      agreement: 单篇提及
+      repo_confirmed: false
     - id: dsh-basabase
       name: '@basabase/dsh-plugin'
-      agreement: 单篇提及
+      repo_confirmed: false
     - id: dsh-api-dashboard
       name: dsh-api-dashboard
-      agreement: 单篇提及
+      repo_confirmed: false
     - id: dsh-api-balance
       name: dsh-api-balance
-      agreement: 单篇提及
+      repo_confirmed: false
     - id: dsh-plugin-gate
       name: dsh-plugin-gate
-      agreement: 多篇印证
+      repo_confirmed: false
     - id: dsh-gov
       name: dsh-gov
-      agreement: 单篇提及
+      repo_confirmed: false
     mentioned_count: 15
   generated: true
 ---

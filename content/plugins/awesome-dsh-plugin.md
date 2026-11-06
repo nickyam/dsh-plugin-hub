@@ -6,7 +6,7 @@ categories:
 tags: &id001
 - 清单
 - 目录站
-weight: 100
+weight: 1010
 params:
   plugin:
     id: awesome-dsh-plugin
@@ -22,17 +22,17 @@ params:
     - source: wx-quanjing
       stance: 仅提及
       quote: 社区维护的精选插件列表，按功能分类收录高质量插件。相当于 DSH 生态的「大众点评」，不知道装什么的时候先翻这个列表，比自己在 GitHub 上盲搜效率高得多。
-      source_title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      source_url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      source_kind_label: 公众号
-      source_publisher: 智宇AI说
+    refs:
+    - id: wx-quanjing
+      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
+      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
+      kind_label: 公众号
+      publisher: 智宇AI说
     source_count: 1
-    has_conflict: false
-    agreement: 单篇提及
-    confidence: 待核实
+    repo_confirmed: true
     category_label: 插件市场与发现
     status_label: 社区
-    weight: 100
+    weight: 1010
     url: /plugins/awesome-dsh-plugin/
   generated: true
 ---

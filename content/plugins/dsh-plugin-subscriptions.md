@@ -6,7 +6,7 @@ categories:
 tags: &id001
 - 订阅复用
 - OAuth
-weight: 100
+weight: 1010
 params:
   plugin:
     id: dsh-plugin-subscriptions
@@ -21,17 +21,17 @@ params:
     - source: wx-quanjing
       stance: 仅提及
       quote: 把你已有的 ChatGPT Plus、Claude Pro、Grok 订阅账号接入 DSH，通过 OAuth 登录即可调用同一批模型。等于不加钱多了一个使用入口。
-      source_title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      source_url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      source_kind_label: 公众号
-      source_publisher: 智宇AI说
+    refs:
+    - id: wx-quanjing
+      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
+      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
+      kind_label: 公众号
+      publisher: 智宇AI说
     source_count: 1
-    has_conflict: false
-    agreement: 单篇提及
-    confidence: 待核实
+    repo_confirmed: true
     category_label: 免费模型与接入
     status_label: 社区
-    weight: 100
+    weight: 1010
     url: /plugins/dsh-plugin-subscriptions/
   generated: true
 ---

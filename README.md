@@ -1,6 +1,6 @@
 # DSH 插件图谱
 
-把散落在公众号、官方文档、百科与目录站里的 **DeepSeek Harness（DSH）插件**说法汇总到一个 Hugo 静态站：同一个插件去重合并，多篇说法一致的标「印证」，打架的单独列进「口径核对」。自己当速查手册，也能直接分享。
+把散落在公众号、官方文档、百科与目录站里的 **DeepSeek Harness（DSH）插件**汇总到一个 Hugo 静态站：顺着文章发现插件，再回到它的官方 GitHub 仓库读 README，把简介、安装与功能亮点整理成能查的卡片。文章只作「发现来源 / 参考」，正文以官方说明为准。自己当速查手册，也能直接分享。
 
 **正式地址：`https://ai.limzero.com/dsh/`**（挂在已备案的 `ai.limzero.com` 主站下的子目录，走阿里云 ECS）
 
@@ -31,17 +31,16 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory /tmp/dsh-preview
 
 ```
 data/
-  sources.yaml          来源台账：一篇文章一条
-  plugins.yaml          插件主档：一个插件一条 + mentions 证据链
-  discrepancies.yaml    口径核对：说法打架的并列摆出来
+  sources.yaml          来源台账：一篇文章一条（发现来源 / 参考）
+  plugins.yaml          插件主档：一个插件一条，内容以官方仓库 README 为准
   categories.yaml       分类表
   derived.json          【脚本生成】统计 + 各种映射
-tools/build_data.py     校验 / 去重 / 算印证 / 生成页面与索引
+tools/build_data.py     校验 / 去重 / 算仓库确认数 / 生成页面与索引
 deploy/deploy.sh        部署到 ECS 的 index/dsh/
 content/
   plugins/*.md          【脚本生成】78 个插件详情页
   sources/*.md          【脚本生成】8 个来源页
-  about.md privacy.md notes.md _index.md   手写页面
+  about.md privacy.md _index.md   手写页面
 layouts/                 自建零依赖主题（不拉 submodule）
 static/
   css/main.css js/site.js favicon.svg
@@ -58,7 +57,7 @@ public/                  hugo 构建产物（不入库）
 
 **判断标准只有一条：这个插件要不要你自己动手装一次？** 要，才收录。
 
-官网开箱自带的 Subagents、Terminal、Agent loop、网页搜索、Standard / Code / Minimal / Creator 四种运行模式，以及界面里标为 Experimental 的内置项，**一律不建条目**：不用装、也没法单独装，混进「值得装什么」的清单只会添乱。官网与架构类来源仍留在来源台账里，但只作核对二手文章说法的基准，差异记在口径核对页，不另开插件卡。
+官网开箱自带的 Subagents、Terminal、Agent loop、网页搜索、Standard / Code / Minimal / Creator 四种运行模式，以及界面里标为 Experimental 的内置项，**一律不建条目**：不用装、也没法单独装，混进「值得装什么」的清单只会添乱。官网与架构类来源仍留在来源台账里，只作为发现线索。
 
 `tools/build_data.py` 会直接拦下误加回来的 `status: builtin` / `category: builtin` 条目，别绕过它。
 
@@ -75,24 +74,26 @@ public/                  hugo 构建产物（不入库）
      note: "这篇补了 XX 类插件，与之前某篇有重叠。"
      tags: [插件清单]
    ```
-2. `data/plugins.yaml`：文章提到的插件**已有条目就只在 `mentions` 追加一条**，没有才新建。别名（中文名 / 包名 / 旧名）全塞进 `aliases`，以后才能自动对上；**官方内置能力不要新建条目**：
+2. `data/plugins.yaml`：文章提到的插件**已有条目就只在 `refs` 追加一个来源 id**，没有才新建。别名（中文名 / 包名 / 旧名）全塞进 `aliases`，以后才能自动对上；**官方内置能力不要新建条目**。然后**顺着名字去 GitHub 找官方仓库**，补上 `repo` / `install` / `summary` / `features`（按 README 写，不抄文章）：
    ```yaml
    - id: dsh-market
      name: dsh-market
      aliases: [插件市场, dshmarket]
      category: market
      status: community
-     summary: "一句话说明"
-     mentions:
-       - source: wx-plugin-2026-11-06
-         stance: 印证            # 印证 / 补充 / 仅提及 / 有出入
-         quote: "文章里的原话（英文来源写「译述：…」）"
+     repo: "https://github.com/dsh-market/dsh-market"
+     install: "dsh plugin add https://github.com/dsh-market/dsh-market"
+     summary: "一句话说明（按 README 整理）"
+     features:
+       - "浏览、搜索、一键安装 DSH 插件"
+     refs:
+       - wx-plugin-2026-11-06
    ```
-3. 跑 `./build.sh`。印证数、冲突徽章、首页统计、搜索索引全部自动重算。说法冲突时把 `stance` 写成 `有出入`，并去 `data/discrepancies.yaml` 加一条。
+3. 跑 `./build.sh`。仓库确认数、首页统计、搜索索引全部自动重算。
 
-脚本会拦下：重复 id、引用了不存在的来源、分类 / status / stance 不合法、引文为空、以及官方内置条目；别名撞车只给提示不阻断（那往往正是要人工合并的信号）。
+脚本会拦下：重复 id、引用了不存在的来源、分类 / status 不合法、以及官方内置条目；别名撞车只给提示不阻断（那往往正是要人工合并的信号）。
 
-**事实纪律**：原文没写的仓库地址、安装命令、发布日期、署名，一律留空或标「待补」；星标数 / 仓库数这类口径不统一的数字不进插件卡；英文引文标「译述」并保留原文链接。
+**事实纪律**：正文一律以官方仓库 README 为准，不照搬文章原文；原文没写的仓库地址、安装命令、发布日期、署名，一律留空或标「待补」；星标数 / 仓库数这类口径不统一的数字不进插件卡。
 
 ## 谷歌广告
 
@@ -133,10 +134,10 @@ bash deploy/deploy.sh --sync-only  # 产物已构建，只同步
 
 ## 目前的数据
 
-78 个插件 / 8 条来源 / 90 条证据，其中 9 条多篇印证、1 条插件内口径冲突、6 条待核对分歧，13 个分类均有条目。
+78 个插件 / 8 条来源，已确认官方仓库的数量见首页统计；13 个分类均有条目。
 
-已录入两篇公众号清单文：第 1 篇偏入门与自用清单，第 2 篇（智宇AI说，14 大类）带来 46 条插件引用——其中 7 条并入已有插件的证据链（如 `modsearch`、`dsh-market`、小鲸鱼挂件从「单篇提及」升为「多篇印证」），39 条是全新条目。该文的仓库地址抽查 24 个（23 个 200 / 1 个 301），Stars 数字与标题「36 款」按纪律不采信，详见口径核对页。
+已录入两篇公众号清单文作为「发现来源」：第 1 篇偏入门与自用清单，第 2 篇（智宇AI说，14 大类）带来 46 条插件引用——其中 7 条并入已有插件的参考来源（如 `modsearch`、`dsh-market`、小鲸鱼挂件），39 条是全新条目。该文的仓库地址抽查 24 个（23 个 200 / 1 个 301），Stars 数字与标题「36 款」按纪律不采信。每个插件的内容都以对应官方仓库 README 为准，公众号文章只作发现来源与对照。
 
-官方开箱即用的 9 个内置能力条目与「官方内置能力」分类已整体移除；原先误挂在内置条目上的一条 `dsh-agent-teams` 引文已迁回社区插件主档，官网来源仅保留作核对基准。
+官方开箱即用的 9 个内置能力条目与「官方内置能力」分类已整体移除；原先误挂在内置条目上的一条 `dsh-agent-teams` 引文已迁回社区插件主档。
 
-其余来源是官网、百科、目录站与第三方教程。**你继续把公众号文章链接发过来，印证数才会真正长起来**，这也是这个站越用越值钱的地方。
+其余来源是官网、百科、目录站与第三方教程。**你继续把公众号文章链接发过来，我顺着它发现插件、再去官方仓库补全内容**，这个站越用越完整。

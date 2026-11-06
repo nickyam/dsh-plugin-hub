@@ -18,34 +18,34 @@ params:
     mentioned:
     - id: dsh-market
       name: dsh-market
-      agreement: 口径有出入
+      repo_confirmed: true
     - id: dsh-web-all
       name: dsh-web-all（Web 全家桶）
-      agreement: 多篇印证
+      repo_confirmed: true
     - id: selection-toolbar
       name: 划词工具条
-      agreement: 单篇提及
+      repo_confirmed: false
     - id: modsearch
       name: ModSearch
-      agreement: 多篇印证
+      repo_confirmed: true
     - id: browserskill
       name: BrowserSkill
-      agreement: 单篇提及
+      repo_confirmed: false
     - id: skill-report
       name: 技能调用报告
-      agreement: 单篇提及
+      repo_confirmed: false
     - id: dsh-agent-teams
       name: dsh-agent-teams（社区版）
-      agreement: 多篇印证
+      repo_confirmed: true
     - id: whale-cost-widget
       name: 小鲸鱼记账挂件
-      agreement: 多篇印证
+      repo_confirmed: true
     - id: dsh-wechat
       name: dsh-wechat
-      agreement: 单篇提及
+      repo_confirmed: false
     - id: dsh-emoji
       name: dsh-emoji
-      agreement: 单篇提及
+      repo_confirmed: false
     mentioned_count: 10
   generated: true
 ---

@@ -1,13 +1,13 @@
 ---
 title: dsh-market
-description: DSH 里第一个该装的插件：给设置面板加一个「插件市场」入口，浏览、搜索、筛选、一键安装与切换版本。
+description: DSH 内置的插件市场应用：在「插件」页提供一个「市场」标签页，浏览、搜索、筛选、一键安装与切换版本。列表来自官方维护的 awesome-dsh-plugin 精选 Registry（4200+ 插件），支持评论、收藏、分组、备份恢复与更新。
 categories:
 - market
 tags: &id001
 - 必装
 - 一键安装
 - 入口
-weight: 320
+weight: 1030
 params:
   plugin:
     id: dsh-market
@@ -15,45 +15,42 @@ params:
     aliases:
     - 插件市场
     - dshmarket
-    - dsh-market/dsh-market
     category: market
     status: community
-    summary: DSH 里第一个该装的插件：给设置面板加一个「插件市场」入口，浏览、搜索、筛选、一键安装与切换版本。
     repo: https://github.com/dsh-market/dsh-market
+    install: dsh plugin --profile web add dshmarket
+    summary: DSH 内置的插件市场应用：在「插件」页提供一个「市场」标签页，浏览、搜索、筛选、一键安装与切换版本。列表来自官方维护的 awesome-dsh-plugin 精选 Registry（4200+ 插件），支持评论、收藏、分组、备份恢复与更新。
+    features:
+    - 浏览 / 搜索 / 一键安装：接入官方 curated Registry，卡片带分类、星标、双语描述
+    - 宿主感知发现：卡片标注所需 DSH 版本，自动过滤确认不兼容项
+    - 主题中心、收藏夹、分组开关、备份恢复（WebDAV / Gist 同步）
+    - 更新管理、热禁用 / 卸载（写 cordis.patch.yml，~1s HMR 重组成）；安全策略拒绝非 Registry 来源
     tags: *id001
-    flag: 安装写法有出入
-    notes: 三篇来源都提到「先装它」；其中两篇指向同一个 GitHub 仓库（本站已确认该仓库存在），但添加方式还给出「名称@版本」与命令行 add 两种，全部并列保留在证据链与「口径核对」页。
-    mentions:
-    - source: wx-dabaihua
-      stance: 印证
-      quote: 想在几万个插件里不迷路，第一个该装的就是 dsh-market：装上它，设置里会多出一个「插件市场」入口，可以搜索、筛选、一键安装 GitHub 上的 DSH 插件。输入 https://github.com/dsh-market/dsh-market 安装，失败可尝试输入插件名称 dshmarket@1.73.6。
-      source_title: DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单
-      source_url: http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9
-      source_kind_label: 公众号
-      source_publisher: 微信公众号（原文署名待补）
-    - source: tree-top10
-      stance: 有出入
-      quote: 译述：dsh-market 是 DSH 原生的可视化插件市场，卡片式画廊、标签筛选、一键安装与版本切换，awesome 清单也把它列为第一个该装的插件；命令行为 dsh plugin --profile web add dshmarket。
-      source_title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
-      source_url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
-      source_kind_label: 第三方媒体
-      source_publisher: TreeRouter Blog（英文，第三方）
-    - source: wx-quanjing
-      stance: 印证
-      quote: dsh-market：DSH 内置的可视化插件市场，支持浏览、搜索、一键安装。跟 dsh-web 的区别在于它是嵌入 DSH 界面里的，体验更接近应用商店，适合喜欢图形化操作的人。
-      source_title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      source_url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      source_kind_label: 公众号
-      source_publisher: 智宇AI说
+    flag: 安装写法有多种，以仓库 README 为准
+    notes: dsh 0.2.1+ 市场是「插件」页的一个标签页；旧版在「设置 → 插件市场」打开，需 dsh web 0.1.0-rc.6+。注意：在装了 DSH Desktop 的机器上用命令行 add 可能装进 profiles/web 而非 Desktop 实际使用的 profile，桌面端请在应用内 Settings → Plugins 安装。
+    refs:
+    - id: wx-dabaihua
+      title: DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单
+      url: http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9
+      kind_label: 公众号
+      publisher: 微信公众号（原文署名待补）
+    - id: tree-top10
+      title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
+      url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
+      kind_label: 第三方媒体
+      publisher: TreeRouter Blog（英文，第三方）
+    - id: wx-quanjing
+      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
+      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
+      kind_label: 公众号
+      publisher: 智宇AI说
     source_count: 3
-    has_conflict: true
-    agreement: 口径有出入
-    confidence: 高
+    repo_confirmed: true
     category_label: 插件市场与发现
     status_label: 社区
-    weight: 320
+    weight: 1030
     url: /plugins/dsh-market/
   generated: true
 ---
 
-DSH 里第一个该装的插件：给设置面板加一个「插件市场」入口，浏览、搜索、筛选、一键安装与切换版本。
+DSH 内置的插件市场应用：在「插件」页提供一个「市场」标签页，浏览、搜索、筛选、一键安装与切换版本。列表来自官方维护的 awesome-dsh-plugin 精选 Registry（4200+ 插件），支持评论、收藏、分组、备份恢复与更新。

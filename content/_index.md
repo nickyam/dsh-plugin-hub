@@ -1,4 +1,4 @@
 ---
 title: "DSH 插件图谱"
-description: "把散落在公众号、官方文档与目录站里的 DeepSeek Harness 插件说法汇总到一处：同一插件去重、多篇印证、说法有出入的单独标出。"
+description: "顺着公众号与社区文章发现 DeepSeek Harness 插件，再回到官方 GitHub 仓库读 README，把简介、安装与功能亮点整理成能查的卡片。"
 ---

@@ -9,7 +9,6 @@
       <a href="{{ "plugins/" | relURL }}" {{ if eq .Section "plugins" }}class="is-current"{{ end }}>插件库</a>
       <a href="{{ "categories/" | relURL }}" {{ if eq .Type "categories" }}class="is-current"{{ end }}>分类</a>
       <a href="{{ "sources/" | relURL }}" {{ if eq .Section "sources" }}class="is-current"{{ end }}>来源</a>
-      <a href="{{ "notes/" | relURL }}" {{ if eq $base "notes" }}class="is-current"{{ end }}>口径核对<sup>{{ hugo.Data.derived.stats.discrepancies }}</sup></a>
       <a href="{{ "about/" | relURL }}" {{ if eq $base "about" }}class="is-current"{{ end }}>关于</a>
     </nav>
     <a class="header-search" href="{{ site.Home.RelPermalink }}#catalog" title="去搜索插件">

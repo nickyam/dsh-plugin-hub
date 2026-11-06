@@ -7,7 +7,7 @@ tags: &id001
 - 命令行
 - GitHub
 - 发现
-weight: 100
+weight: 10
 params:
   plugin:
     id: dsh-find-plugin
@@ -21,17 +21,17 @@ params:
     - source: tree-top10
       stance: 仅提及
       quote: 译述：偏好对话式工作流的用户可以装 dsh-find-plugin，让 Agent 在会话里直接搜索带 dsh-plugin 标签的 GitHub 仓库。
-      source_title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
-      source_url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
-      source_kind_label: 第三方媒体
-      source_publisher: TreeRouter Blog（英文，第三方）
+    refs:
+    - id: tree-top10
+      title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
+      url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
+      kind_label: 第三方媒体
+      publisher: TreeRouter Blog（英文，第三方）
     source_count: 1
-    has_conflict: false
-    agreement: 单篇提及
-    confidence: 待核实
+    repo_confirmed: false
     category_label: 插件市场与发现
     status_label: 社区
-    weight: 100
+    weight: 10
     url: /plugins/dsh-find-plugin/
   generated: true
 ---

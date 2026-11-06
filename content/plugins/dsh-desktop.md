@@ -1,12 +1,12 @@
 ---
 title: DSH Desktop
-description: 把原本要命令行启动的 DSH 本地 Web UI 封成 macOS / Windows 桌面应用，不用装 Node.js。
+description: 把 DeepSeek Harness 的本地 Web UI、Host 服务与插件系统封装进原生桌面应用：提供窗口、系统托盘、终端、更新与工作配置，开箱即用、免命令行、无需装 Node.js。项目固定并原样运行特定上游版本，通过 Harness 的插件机制组合上游能力。
 categories:
 - ui
 tags: &id001
 - 桌面端
 - 免命令行
-weight: 300
+weight: 1030
 params:
   plugin:
     id: dsh-desktop
@@ -16,42 +16,40 @@ params:
     - anywhere-labs
     category: ui
     status: community
-    summary: 把原本要命令行启动的 DSH 本地 Web UI 封成 macOS / Windows 桌面应用，不用装 Node.js。
     repo: https://github.com/anywhere-labs/dsh-desktop
+    install: 下载官方桌面客户端（dshdesktop.cn），在应用内 Settings → Plugins 安装插件
+    summary: 把 DeepSeek Harness 的本地 Web UI、Host 服务与插件系统封装进原生桌面应用：提供窗口、系统托盘、终端、更新与工作配置，开箱即用、免命令行、无需装 Node.js。项目固定并原样运行特定上游版本，通过 Harness 的插件机制组合上游能力。
+    features:
+    - 原生桌面封装：窗口 + 系统托盘 + 终端 + 自动更新
+    - macOS / Windows / Linux 安装包
+    - 内置 DSH Community Market：插件发现、详情、安装与管理
+    - 本地服务启动 / 停止 / 恢复，更适合桌面的界面体验
     tags: *id001
-    flag: 社区项目，非官方
-    notes: 三篇来源都强调它是社区独立项目，与 DeepSeek 官方无隶属关系。dataelement 版、Tauri 版是另外的独立项目，本站单独立项，不合并。
-    mentions:
-    - source: baike-dsh
-      stance: 印证
-      quote: 社区开发者还基于官方开源项目构建了 DeepSeek Harness Desktop 桌面应用。该应用将原本需要通过命令行启动的 Harness 本地 Web UI 封装为独立应用，用户无需安装 Node.js 或执行命令。
-      source_title: 百度百科：DeepSeek Harness
-      source_url: https://baike.baidu.com/item/deepseek%20harness/68533699
-      source_kind_label: 百科
-      source_publisher: 百度百科
-    - source: tree-top10
-      stance: 印证
-      quote: 译述：anywhere-labs 维护的 DSH Desktop 把 Web UI、后端服务与插件生态打包成原生 Windows / macOS 应用；仓库明确说明是独立社区项目，与 DeepSeek 官方无隶属关系。另有 dataelement、hairyf 维护的桌面构建可选。
-      source_title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
-      source_url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
-      source_kind_label: 第三方媒体
-      source_publisher: TreeRouter Blog（英文，第三方）
-    - source: wx-quanjing
-      stance: 印证
-      quote: dsh-desktop (anywhere-labs)：把 DSH 从浏览器和命令行变成一个独立的桌面应用，提供 Windows、macOS、Linux 三端安装包。文件管理、对话历史、插件管理都在窗口里完成……对不习惯命令行的人来说，这是把 DSH 变成日常工具的关键一步。
-      source_title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      source_url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      source_kind_label: 公众号
-      source_publisher: 智宇AI说
+    flag: 独立社区项目，与 DeepSeek 无隶属关系
+    notes: 独立的社区开源项目，与 DeepSeek 不存在隶属、合作、授权或背书关系（README 明确声明）。另有 dataelement、Tauri 两个独立桌面构建，本站单独立项，不合并。
+    refs:
+    - id: baike-dsh
+      title: 百度百科：DeepSeek Harness
+      url: https://baike.baidu.com/item/deepseek%20harness/68533699
+      kind_label: 百科
+      publisher: 百度百科
+    - id: tree-top10
+      title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
+      url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
+      kind_label: 第三方媒体
+      publisher: TreeRouter Blog（英文，第三方）
+    - id: wx-quanjing
+      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
+      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
+      kind_label: 公众号
+      publisher: 智宇AI说
     source_count: 3
-    has_conflict: false
-    agreement: 多篇印证
-    confidence: 高
+    repo_confirmed: true
     category_label: 界面与体验
     status_label: 社区
-    weight: 300
+    weight: 1030
     url: /plugins/dsh-desktop/
   generated: true
 ---
 
-把原本要命令行启动的 DSH 本地 Web UI 封成 macOS / Windows 桌面应用，不用装 Node.js。
+把 DeepSeek Harness 的本地 Web UI、Host 服务与插件系统封装进原生桌面应用：提供窗口、系统托盘、终端、更新与工作配置，开箱即用、免命令行、无需装 Node.js。项目固定并原样运行特定上游版本，通过 Harness 的插件机制组合上游能力。

@@ -7,7 +7,7 @@ tags: &id001
 - 免费模型
 - 免Key
 - 备用通道
-weight: 100
+weight: 1010
 params:
   plugin:
     id: dsh-our-free-model
@@ -23,17 +23,17 @@ params:
     - source: wx-quanjing
       stance: 仅提及
       quote: 装上之后，DSH 的模型列表里会多出 DeepSeek V4.1 Flash、Kimi K3 等多个选项，直接选就能用，不需要注册账号、不需要填 API Key、不需要配置任何东西……唯一需要注意的是免费通道高峰期可能排队，正式生产任务还是建议用自己的 Key。
-      source_title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      source_url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      source_kind_label: 公众号
-      source_publisher: 智宇AI说
+    refs:
+    - id: wx-quanjing
+      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
+      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
+      kind_label: 公众号
+      publisher: 智宇AI说
     source_count: 1
-    has_conflict: false
-    agreement: 单篇提及
-    confidence: 待核实
+    repo_confirmed: true
     category_label: 免费模型与接入
     status_label: 社区
-    weight: 100
+    weight: 1010
     url: /plugins/dsh-our-free-model/
   generated: true
 ---

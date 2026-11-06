@@ -18,10 +18,10 @@ params:
     mentioned:
     - id: dsh-plugin-gate
       name: dsh-plugin-gate
-      agreement: 多篇印证
+      repo_confirmed: false
     - id: dsh-mcp-client
       name: '@deepseek-ai/dsh-mcp-client'
-      agreement: 单篇提及
+      repo_confirmed: true
     mentioned_count: 2
   generated: true
 ---

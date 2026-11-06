@@ -28,19 +28,19 @@
       </section>
 
       <section class="panel">
-        <h2>这篇文章提到的插件 <small>{{ $s.mentioned_count }} 条</small></h2>
-        <p class="panel-note">点进去可以看到这篇文章的原话，以及别的文章是不是也这么说。</p>
+        <h2>这篇文章发现 / 参考的插件 <small>{{ $s.mentioned_count }} 条</small></h2>
+        <p class="panel-note">点进去可以看到该插件的官方仓库与 README 整理内容；本文仅作为发现来源，不渲染原文。</p>
         <div class="source-plugins">
           {{ range $s.mentioned }}
           <a class="source-plugin" href="{{ "plugins/" | relURL }}{{ .id }}/">
             <strong>{{ .name }}</strong>
-            <span class="mini-tag {{ if eq .agreement "多篇印证" }}mini-tag-blue{{ end }}">{{ .agreement }}</span>
+            <span class="mini-tag {{ if .repo_confirmed }}mini-tag-blue{{ end }}">{{ if .repo_confirmed }}已确认仓库{{ else }}待确认{{ end }}</span>
           </a>
           {{ end }}
         </div>
       </section>
 
-      <p class="disclaimer">本站只摘录与插件相关的说法并附原文链接，不转载全文、不复制图片。原文版权归作者所有；若你是作者且不希望被收录，按<a href="{{ "about/" | relURL }}">关于页</a>的方式删掉对应台账即可。</p>
+      <p class="disclaimer">本站把这篇文章作为发现插件的来源，插件介绍以对应官方仓库 README 为准，不转载原文、不复制图片。原文版权归作者所有；若你是作者且不希望被收录，按<a href="{{ "about/" | relURL }}">关于页</a>的方式删掉对应台账即可。</p>
       <div class="ad-note ad-note-wide" aria-label="广告">广告</div>
     </div>
 
@@ -55,7 +55,7 @@
       </section>
       <section class="side-box side-box-plain">
         <h3>录入规矩</h3>
-        <p class="muted">日期、署名、数字，原文没写就留空或标「待补」，不猜。英文来源的引文在插件页里标为「译述」。</p>
+        <p class="muted">日期、署名、数字，原文没写就留空或标「待补」，不猜；插件介绍一律以官方仓库 README 为准。</p>
       </section>
     </aside>
   </div>

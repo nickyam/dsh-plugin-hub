@@ -1,32 +1,32 @@
-# 插件主档：一个插件一条，别名合并到 aliases，所有说法挂到 mentions 证据链
-# 铁律：quote 只能是原文（英文来源为本站译述并标注）；没有的 repo / install 一律留空。
-# stance: 印证（说法一致） / 补充（角度不同不冲突） / 仅提及 / 有出入（说法冲突）
+# 插件主档：一个插件一条，别名合并到 aliases。
+# 内容来源：以官方 GitHub 仓库（repo）的 README 为准；summary / install / features 都按 README 整理，
+#           不照搬公众号等文章原文，文章只作为「发现来源 / 参考」存入 refs。
 # status: official（官方） / community（社区） / unknown（原文未说明）
-# 收录范围：只收需要额外安装的插件。官方开箱即用的内置能力（Subagents / Terminal / 运行模式等）不建条目，
-# 官网与架构类来源只在「口径核对」里作为文章说法的对照基准，不单独成卡。
-# flag: 需要读者额外注意的短提示，会显示成橙色徽章
+# 收录范围：只收需要额外安装的插件。官方开箱即用的内置能力（Subagents / Terminal / 运行模式等）不建条目。
+# flag: 需要读者额外注意的短提示，会显示成橙色徽章（如名称有出入、社区项目非官方等）。
+# refs: 参考来源 id 列表（来自 data/sources.yaml）；仅作发现来源与对照，不渲染原文。
 
 # ── 插件市场与发现 ──────────────────────────────────────────────
 - id: dsh-market
   name: dsh-market
-  aliases: [插件市场, dshmarket, "dsh-market/dsh-market"]
+  aliases: [插件市场, dshmarket]
   category: market
   status: community
-  summary: "DSH 里第一个该装的插件：给设置面板加一个「插件市场」入口，浏览、搜索、筛选、一键安装与切换版本。"
   repo: "https://github.com/dsh-market/dsh-market"
+  install: "dsh plugin --profile web add dshmarket"
+  summary: "DSH 内置的插件市场应用：在「插件」页提供一个「市场」标签页，浏览、搜索、筛选、一键安装与切换版本。列表来自官方维护的 awesome-dsh-plugin 精选 Registry（4200+ 插件），支持评论、收藏、分组、备份恢复与更新。"
+  features:
+    - "浏览 / 搜索 / 一键安装：接入官方 curated Registry，卡片带分类、星标、双语描述"
+    - "宿主感知发现：卡片标注所需 DSH 版本，自动过滤确认不兼容项"
+    - "主题中心、收藏夹、分组开关、备份恢复（WebDAV / Gist 同步）"
+    - "更新管理、热禁用 / 卸载（写 cordis.patch.yml，~1s HMR 重组成）；安全策略拒绝非 Registry 来源"
   tags: [必装, 一键安装, 入口]
-  flag: "安装写法有出入"
-  notes: "三篇来源都提到「先装它」；其中两篇指向同一个 GitHub 仓库（本站已确认该仓库存在），但添加方式还给出「名称@版本」与命令行 add 两种，全部并列保留在证据链与「口径核对」页。"
-  mentions:
-    - source: wx-dabaihua
-      stance: 印证
-      quote: "想在几万个插件里不迷路，第一个该装的就是 dsh-market：装上它，设置里会多出一个「插件市场」入口，可以搜索、筛选、一键安装 GitHub 上的 DSH 插件。输入 https://github.com/dsh-market/dsh-market 安装，失败可尝试输入插件名称 dshmarket@1.73.6。"
-    - source: tree-top10
-      stance: 有出入
-      quote: "译述：dsh-market 是 DSH 原生的可视化插件市场，卡片式画廊、标签筛选、一键安装与版本切换，awesome 清单也把它列为第一个该装的插件；命令行为 dsh plugin --profile web add dshmarket。"
-    - source: wx-quanjing
-      stance: 印证
-      quote: "dsh-market：DSH 内置的可视化插件市场，支持浏览、搜索、一键安装。跟 dsh-web 的区别在于它是嵌入 DSH 界面里的，体验更接近应用商店，适合喜欢图形化操作的人。"
+  flag: "安装写法有多种，以仓库 README 为准"
+  notes: "dsh 0.2.1+ 市场是「插件」页的一个标签页；旧版在「设置 → 插件市场」打开，需 dsh web 0.1.0-rc.6+。注意：在装了 DSH Desktop 的机器上用命令行 add 可能装进 profiles/web 而非 Desktop 实际使用的 profile，桌面端请在应用内 Settings → Plugins 安装。"
+  refs:
+    - wx-dabaihua
+    - tree-top10
+    - wx-quanjing
 
 - id: dsh-find-plugin
   name: dsh-find-plugin
@@ -43,58 +43,65 @@
 # ── 界面与体验 ─────────────────────────────────────────────────
 - id: dsh-web-all
   name: dsh-web-all（Web 全家桶）
-  aliases: ["dsh-web-ui-all", "@linxin666/dsh-web-all", "dsh-web full suite", "dsh-web"]
+  aliases: ["dsh-web-ui-all", "@linxin666/dsh-web-all", "dsh-web full suite"]
   category: ui
   status: community
-  summary: "把任务看板、Git 记录、实时统计、远程访问、桌面宠物和皮肤等常用 Web 插件打成一个包。"
+  repo: "https://github.com/zhu1090093659/dsh-web"
   install: "dsh plugin --profile web add @linxin666/dsh-web-all@latest"
-  tags: [全家桶, 看板, 远程]
-  flag: "名称有出入"
-  notes: "两篇来源功能描述高度重叠但名字不同，本站按同一条目收录、别名全部可搜；是否同一个仓库未确认。"
-  mentions:
-    - source: wx-dabaihua
-      stance: 印证
-      quote: "dsh-web-ui-all：把常用的 DSH Web 插件做成了一个全家桶。支持任务看板、Git 记录、实时统计、远程访问、桌面宠物和皮肤。"
-    - source: tree-top10
-      stance: 印证
-      quote: "译述：dsh-web 全家桶把任务看板、手机远程控制、SSH 操作面板、用量统计和会话归档等独立模块打包，通过官方 profile 机制挂到 Web 运行时，不改 DSH 源码；安装命令 dsh plugin --profile web add @linxin666/dsh-web-all@latest。"
+  summary: "DSH Web 的官方聚合包，一条命令装齐家族全部功能插件：任务看板、Git 图谱、桌面宠物、移动端远程、SSH 运维、模型能力、用量统计、会话归档、皮肤中心、设置区与社区插件，外加右侧面板 dsh-better-sidebar。每项可在「设置 → 插件 → 插件管理」里单独开关。"
+  features:
+    - "任务看板：多列跟踪与定时调度"
+    - "移动端远程：二维码配对、跨设备同步、触控手势"
+    - "SSH 运维：Web 终端、SFTP 传输、隧道与集群命令"
+    - "用量统计、会话归档、皮肤中心、社区插件源"
+    - "右侧面板 dsh-better-sidebar（文件渲染 / 编辑、终端、Git、对话、子代理）"
+  tags: [全家桶, 看板, 远程, SSH]
+  flag: "包名 @linxin666/dsh-web-all，仓库是 zhu1090093659/dsh-web 单体仓"
+  notes: "官方仓库是 zhu1090093659/dsh-web 单体仓，npm 包发布在 @linxin666 名下；安装后需重启 dsh web 才出现侧栏图标。也可直接 `dsh plugin --profile web add github:zhu1090093659/dsh-web` 从仓库装。子插件独立发包，只想用部分功能可单独安装对应 @linxin666/dsh-* 包。"
+  refs:
+    - wx-dabaihua
+    - tree-top10
 
 - id: dsh-desktop
   name: DSH Desktop
   aliases: ["DeepSeek Harness Desktop", "anywhere-labs"]
   category: ui
   status: community
-  summary: "把原本要命令行启动的 DSH 本地 Web UI 封成 macOS / Windows 桌面应用，不用装 Node.js。"
   repo: "https://github.com/anywhere-labs/dsh-desktop"
+  install: "下载官方桌面客户端（dshdesktop.cn），在应用内 Settings → Plugins 安装插件"
+  summary: "把 DeepSeek Harness 的本地 Web UI、Host 服务与插件系统封装进原生桌面应用：提供窗口、系统托盘、终端、更新与工作配置，开箱即用、免命令行、无需装 Node.js。项目固定并原样运行特定上游版本，通过 Harness 的插件机制组合上游能力。"
+  features:
+    - "原生桌面封装：窗口 + 系统托盘 + 终端 + 自动更新"
+    - "macOS / Windows / Linux 安装包"
+    - "内置 DSH Community Market：插件发现、详情、安装与管理"
+    - "本地服务启动 / 停止 / 恢复，更适合桌面的界面体验"
   tags: [桌面端, 免命令行]
-  flag: "社区项目，非官方"
-  notes: "三篇来源都强调它是社区独立项目，与 DeepSeek 官方无隶属关系。dataelement 版、Tauri 版是另外的独立项目，本站单独立项，不合并。"
-  mentions:
-    - source: baike-dsh
-      stance: 印证
-      quote: "社区开发者还基于官方开源项目构建了 DeepSeek Harness Desktop 桌面应用。该应用将原本需要通过命令行启动的 Harness 本地 Web UI 封装为独立应用，用户无需安装 Node.js 或执行命令。"
-    - source: tree-top10
-      stance: 印证
-      quote: "译述：anywhere-labs 维护的 DSH Desktop 把 Web UI、后端服务与插件生态打包成原生 Windows / macOS 应用；仓库明确说明是独立社区项目，与 DeepSeek 官方无隶属关系。另有 dataelement、hairyf 维护的桌面构建可选。"
-    - source: wx-quanjing
-      stance: 印证
-      quote: "dsh-desktop (anywhere-labs)：把 DSH 从浏览器和命令行变成一个独立的桌面应用，提供 Windows、macOS、Linux 三端安装包。文件管理、对话历史、插件管理都在窗口里完成……对不习惯命令行的人来说，这是把 DSH 变成日常工具的关键一步。"
+  flag: "独立社区项目，与 DeepSeek 无隶属关系"
+  notes: "独立的社区开源项目，与 DeepSeek 不存在隶属、合作、授权或背书关系（README 明确声明）。另有 dataelement、Tauri 两个独立桌面构建，本站单独立项，不合并。"
+  refs:
+    - baike-dsh
+    - tree-top10
+    - wx-quanjing
 
 - id: dsh-better-sidebar
   name: DSH Better Sidebar
   aliases: ["DSH-better-sidebar", "Better Sidebar"]
   category: ui
   status: community
-  summary: "把文件管理、代码编辑、终端、Git 面板塞进同一个侧边栏。"
   repo: "https://github.com/omdsh-dev/DSH-better-sidebar"
+  install: "dsh plugin --profile web add dsh-better-sidebar@latest"
+  summary: "开放的侧边栏底座：在 DSH 里加一条原生右侧栏 + 自绘底部面板，把文件渲染 / 编辑、终端、侧边对话、Git、子代理等面板整合到一起，并通过 ctx.betterSidebar 服务向所有插件开放，第三方可注册新侧边栏页面。"
+  features:
+    - "右侧栏 + 底部面板双工作台"
+    - "内置文件渲染/编辑、终端、侧边对话、Git、子代理页面"
+    - "开放 ctx.betterSidebar 服务，支持三方扩展注册新页面"
+    - "与 dsh-web-all 全家桶配合作为默认右侧面板"
   tags: [侧边栏, Git, 效率]
-  mentions:
-    - source: baike-dsh
-      stance: 仅提及
-      quote: "DSH Better Sidebar 将文件管理、代码编辑、终端、Git 面板等功能集成到侧边栏。"
-    - source: wx-quanjing
-      stance: 印证
-      quote: "DSH-better-sidebar：把 DSH 的侧边栏重构成一个开放底座：文件树、内嵌终端、对话历史、Git 变更、子代理状态等多个面板可切换，还支持第三方扩展注册新页面。"
+  flag: "需按 DSH 版本选对应插件版本"
+  notes: "安装前硬刷新浏览器（Cmd/Ctrl+Shift+R）。注意版本匹配：DSH 0.2.2-rc.1+ 用 @0.30.1；0.2.1 线（含当前 latest）需钉 @0.28.2；更老的 host 见 README 版本对照表——装错版本会触发版本拒绝错误。"
+  refs:
+    - baike-dsh
+    - wx-quanjing
 
 - id: selection-toolbar
   name: 划词工具条
@@ -115,17 +122,19 @@
   aliases: [modsearch]
   category: tool
   status: community
-  summary: "免费联网搜索，免注册、免 API Key，还能搜 X（推特）内容，用来替掉按量收费的官方搜索。"
   repo: "https://github.com/liustack/modsearch"
+  install: "npx -y @deepseek-ai/dsh plugin --profile web add @liustack/modsearch@5.10.11"
+  summary: "DSH 里最强的免费联网搜索插件：网页搜索、X（推特）搜索、单页抓取，默认走 Firecrawl Keyless（每月 1000 免费额度，免注册免 API Key），为多模型补上原生缺失的联网能力，返回结构化 JSON 证据。"
+  features:
+    - "免费开箱：默认 Firecrawl Keyless，1000 免费额度/月，无账号无 Key 无卡"
+    - "多引擎自动故障转移：Firecrawl / Keenable / You.com / Tavily / Exa / Grok(X) / 本地"
+    - "可配多 Key 轮转；支持 Antigravity CLI、自托管端点"
+    - "X（Twitter）搜索（需 Grok Build）；搜索、抓取、引用一体"
   tags: [搜索, 免费, 省成本]
-  notes: "与 dsh-websearch 属于同类不同实现，本站不合并；官方自带的网页搜索属开箱即用能力，不在本站收录范围。"
-  mentions:
-    - source: wx-dabaihua
-      stance: 印证
-      quote: "ModSearch：免费的联网搜索。官方搜索按量收费，让 AI 查资料时，花费大头都在联网上。ModSearch 免注册、免 API Key，还能搜 X（推特）内容：能省的钱不省白不省。"
-    - source: wx-quanjing
-      stance: 印证
-      quote: "modsearch：给 DSH 加上免费的联网搜索能力，不需要任何 API Key……还支持搜索 X（原 Twitter）上的内容。返回的是结构化 JSON 而不是原始网页，模型消化起来更准确。"
+  notes: "与 dsh-websearch 属同类不同实现，本站不合并；官方自带网页搜索属开箱即用能力，不在收录范围。桌面端在 Plugins → Add plugin 输入 @liustack/modsearch。Key 存于 ~/.modsearch/config.json（权限 0600，显示时脱敏）。"
+  refs:
+    - wx-dabaihua
+    - wx-quanjing
 
 - id: dsh-websearch
   name: dsh-websearch
@@ -181,7 +190,7 @@
   tags: [设计, 多模态, 演示文稿]
   flag: "兼容性按版本与日期标注"
   repo: "https://github.com/nexu-io/open-design"
-  notes: "第三方文章称其在 DSH 插件里社区关注度最高，本站不引用具体 star 数（见口径核对）。"
+  notes: "第三方文章称其在 DSH 插件里社区关注度最高，本站不引用具体 star 数。"
   mentions:
     - source: tree-top10
       stance: 仅提及
@@ -211,7 +220,7 @@
   repo: "https://github.com/NanmiCoder/dsh-agent-teams"
   tags: [多智能体, 协作]
   flag: "与官网内置 Agent teams 名称相近"
-  notes: "官网界面另有标为 Experimental 的 Agent teams，属开箱即用能力，本站不收录；这里只记需要单独安装的社区插件，名称差异详见「口径核对」。"
+  notes: "官网界面另有标为 Experimental 的 Agent teams，属开箱即用能力，本站不收录；这里只记需要单独安装的社区插件。"
   mentions:
     - source: baike-dsh
       stance: 仅提及
@@ -408,13 +417,19 @@
   name: "@deepseek-ai/dsh-mcp-client"
   category: integration
   status: official
-  summary: "把外部 MCP server 的工具桥接进 DSH，工具名以 mcp__ 前缀原生出现。"
-  tags: [MCP, 官方, 桥接]
-  notes: "第三方教程明确：MCP 只桥接 Tools，resources 与 prompts 不支持；所有 MCP server 默认不启用，因为启动命令是沙箱外受信任的可执行代码。"
-  mentions:
-    - source: deepseekai-works
-      stance: 仅提及
-      quote: "译述：@deepseek-ai/dsh-mcp-client 通过 stdio 或 streamable-http 连接 MCP server，其工具会以 mcp__github__create_issue 这类名字原生出现；只有 Tools 被桥接，resources 与 prompts 完全不支持。"
+  repo: "https://github.com/deepseek-ai/deepseek-harness"
+  install: "在 cordis.yml 里为该插件加一条配置（每服务器一条），无独立 dsh plugin add 命令"
+  summary: "官方 MCP 客户端桥接插件：连接外部 Model Context Protocol 服务器，把它们的工具注册到 ctx.tools，供模型像原生工具一样调用（工具名形如 mcp__github__create_issue）。支持 stdio 与 streamable-http 两种传输，自带断线自动重连。"
+  features:
+    - "把外部 MCP server 的 Tools 桥接为原生工具（mcp__ 前缀命名，与 Claude Code / Codex 同形）"
+    - "传输方式：stdio（本地程序）/ streamable-http（远端服务）"
+    - "断线自动重连、工具名稳定（重连/重载不更名）、按服务器隔离命名空间"
+    - "默认不启用任何服务器；每服务器一条配置，工具随 harness 启动出现"
+  tags: [MCP, 官方, 桥接, 集成]
+  flag: "官方包，只桥接 Tools（resources / prompts 不支持）"
+  notes: "源码位于官方 deepseek-harness 单体仓的 packages/mcp/mcp-client；所有 MCP server 默认不启用，且启动命令是沙箱外的可执行代码，请只接可信服务器。MCP resources 与 prompts 当前不被桥接。"
+  refs:
+    - deepseekai-works
 
 # ── 娱乐与彩蛋 ─────────────────────────────────────────────────
 - id: dsh-minigames
@@ -543,7 +558,7 @@
   repo: "https://github.com/zhu1090093659/dsh-web"
   tags: [Web, 创意工坊, 分发]
   flag: "与 dsh-web-all 名称相近，勿混"
-  notes: "指向另一个仓库、定位是插件分发入口，与「Web 全家桶」不是一回事，详见口径核对。"
+  notes: "指向另一个仓库、定位是插件分发入口，与「Web 全家桶」不是一回事。"
   mentions:
     - {source: wx-quanjing, stance: 仅提及, quote: "DSH Web 端的插件聚合生态，通过「创意工坊」分发插件。如果你用的是浏览器版 DSH，这是最方便的插件发现和安装入口，不用离开网页就能完成整个流程。"}
 

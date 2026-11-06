@@ -7,7 +7,7 @@ tags: &id001
 - 多智能体
 - Bot
 - 长生命周期
-weight: 100
+weight: 1010
 params:
   plugin:
     id: deepseek-bot
@@ -22,17 +22,17 @@ params:
     - source: wx-quanjing
       stance: 仅提及
       quote: 长生命周期 Bot 团队，支持主 Bot、Bot 间消息和群聊。跟 agent-teams 的区别在于它更强调 Bot 的持久性和社交性，适合需要长期运行的自动化场景。
-      source_title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      source_url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      source_kind_label: 公众号
-      source_publisher: 智宇AI说
+    refs:
+    - id: wx-quanjing
+      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
+      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
+      kind_label: 公众号
+      publisher: 智宇AI说
     source_count: 1
-    has_conflict: false
-    agreement: 单篇提及
-    confidence: 待核实
+    repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区
-    weight: 100
+    weight: 1010
     url: /plugins/deepseek-bot/
   generated: true
 ---
