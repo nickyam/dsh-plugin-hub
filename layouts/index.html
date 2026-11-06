@@ -3,8 +3,7 @@
 <section class="hero">
   <div class="wrap hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow">非官方 · 中文资料库 · 持续整理</p>
-      <h1>把散落各处的 <em>DSH 插件</em><br>说法，收到一处</h1>
+      <h1>把散落各处的 DSH 插件说法，收到一处</h1>
       <p class="hero-sub">公众号文章写了一遍，目录站又写了一遍，官网还是另一套叫法。本站把它们拆成「插件主档 + 来源台账 + 证据链」：同一个插件去重合并，多篇说法一致的标印证，对不上的单独摆出来让你自己判断。</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#catalog">浏览 {{ $stats.plugins }} 个插件</a>
@@ -12,17 +11,14 @@
       </div>
       <p class="hero-note">DeepSeek Harness（DSH）是 DeepSeek 开源的 Agent 运行框架，主打「一切皆插件」。本站只做资料整理，不是插件市场，也不是官方目录。</p>
     </div>
-    <div class="hero-board" aria-hidden="true">
-      <div class="board-head"><span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span><span>evidence-chain.md</span></div>
-      <div class="board-body">
-        <p class="board-line"><span class="board-k">plugin</span> dsh-market</p>
-        <p class="board-line"><span class="board-k">alias</span> 插件市场 / dshmarket</p>
-        <p class="board-line"><span class="board-k">sources</span> 2</p>
-        <div class="board-quote"><span class="q-tag q-blue">印证</span> 公众号：装上它，设置里会多出一个「插件市场」入口…</div>
-        <div class="board-quote"><span class="q-tag q-orange">有出入</span> 第三方：dsh plugin --profile web add dshmarket…</div>
-        <p class="board-line board-foot">→ 合并为 1 条主档，差异进「口径核对」</p>
-      </div>
-    </div>
+    <aside class="hero-file" aria-hidden="true">
+      <div class="file-head"><span>evidence-chain</span><span>dsh-market</span></div>
+      <div class="file-row"><span class="k">alias</span><span>插件市场 / dshmarket</span></div>
+      <div class="file-row"><span class="k">sources</span><span>2</span></div>
+      <div class="quote"><span class="q-tag">印证</span> 公众号：装上它，设置里会多出一个「插件市场」入口…</div>
+      <div class="quote"><span class="q-tag q-tag--alt">有出入</span> 第三方：dsh plugin --profile web add dshmarket…</div>
+      <p class="file-foot">合并为 1 条主档，差异进口径核对</p>
+    </aside>
   </div>
   <div class="wrap">
     <div class="stats">
@@ -38,7 +34,7 @@
 <div class="wrap" id="catalog">
   <div class="notice">
     <span class="notice-icon">!</span>
-    <div><strong>先说清楚：</strong>这是读书笔记式的索引，不是已实测的插件清单。带「单篇提及」的条目只有一处出处，「口径有出入」的条目各篇文章说法不一致；DSH 仍是开发者预览版，兼容性随时会变。安装前请回到官方仓库与插件仓库自行核对。<a href="{{ "about/" | relURL }}">整理方法 →</a></div>
+    <div><strong>先说清楚：</strong>这是读书笔记式的索引，不是已实测的插件清单。带「单篇提及」的条目只有一处出处，「口径有出入」的条目各篇文章说法不一致；DSH 仍是开发者预览版，兼容性随时会变。安装前请回到官方仓库与插件仓库自行核对。<a href="{{ "about/" | relURL }}">整理方法</a></div>
   </div>
 
   <div class="toolbar">
@@ -77,7 +73,7 @@
         </ul>
       </section>
       <section class="side-box">
-        <h2>口径核对 <a class="more" href="{{ "notes/" | relURL }}">全部 →</a></h2>
+        <h2>口径核对 <a class="more" href="{{ "notes/" | relURL }}">全部</a></h2>
         <ul class="side-list">
           {{ range hugo.Data.discrepancies }}
           <li><a href="{{ "notes/" | relURL }}#{{ .id }}">{{ .title }}</a><span class="mini-tag">{{ .level }}</span></li>
@@ -85,7 +81,7 @@
         </ul>
       </section>
       <section class="side-box">
-        <h2>来源台账 <a class="more" href="{{ "sources/" | relURL }}">全部 →</a></h2>
+        <h2>来源台账 <a class="more" href="{{ "sources/" | relURL }}">全部</a></h2>
         <ul class="side-list">
           {{ range first 5 (where site.RegularPages "Section" "sources") }}
           <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="mini-tag">{{ .Params.source.kind_label }}</span></li>
@@ -104,7 +100,7 @@
       <div class="step"><span>02</span><h3>挂证据</h3><p>文章提到的插件，在 <code>data/plugins.yaml</code> 已有条目下追加一条 <code>mentions</code> 引文；没见过的才新建条目，别名塞进 <code>aliases</code>。</p></div>
       <div class="step"><span>03</span><h3>重新生成</h3><p>跑 <code>python3 tools/build_data.py &amp;&amp; hugo --minify</code>，印证数、冲突标记、搜索索引全部自动重算。</p></div>
     </div>
-    <p class="howto-foot">说法打架时不去「选一个对的」，而是写进 <code>data/discrepancies.yaml</code>，把各方原话并列摆出来。<a href="{{ "about/" | relURL }}">完整整理方法 →</a></p>
+    <p class="howto-foot">说法打架时不去「选一个对的」，而是写进 <code>data/discrepancies.yaml</code>，把各方原话并列摆出来。<a href="{{ "about/" | relURL }}">完整整理方法</a></p>
   </section>
 </div>
 {{ end }}

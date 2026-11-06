@@ -20,7 +20,7 @@ params:
     mentions:
     - source: wx-dabaihua
       stance: 仅提及
-      quote: 划词工具条。选中任意文字，弹出复制/引用/翻译/解释/总结菜单；还能「顺便问」——单开一个小窗提问，不打断主会话。
+      quote: 划词工具条。选中任意文字，弹出复制/引用/翻译/解释/总结菜单；还能「顺便问」：单开一个小窗提问，不打断主会话。
       source_title: DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单
       source_url: http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9
       source_kind_label: 公众号

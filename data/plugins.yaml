@@ -20,7 +20,7 @@
   mentions:
     - source: wx-dabaihua
       stance: 印证
-      quote: "想在几万个插件里不迷路，第一个该装的就是 dsh-market——装上它，设置里会多出一个「插件市场」入口，可以搜索、筛选、一键安装 GitHub 上的 DSH 插件。输入 https://github.com/dsh-market/dsh-market 安装，失败可尝试输入插件名称 dshmarket@1.73.6。"
+      quote: "想在几万个插件里不迷路，第一个该装的就是 dsh-market：装上它，设置里会多出一个「插件市场」入口，可以搜索、筛选、一键安装 GitHub 上的 DSH 插件。输入 https://github.com/dsh-market/dsh-market 安装，失败可尝试输入插件名称 dshmarket@1.73.6。"
     - source: tree-top10
       stance: 有出入
       quote: "译述：dsh-market 是 DSH 原生的可视化插件市场，卡片式画廊、标签筛选、一键安装与版本切换，awesome 清单也把它列为第一个该装的插件；命令行为 dsh plugin --profile web add dshmarket。"
@@ -107,7 +107,7 @@
   mentions:
     - source: wx-dabaihua
       stance: 仅提及
-      quote: "划词工具条。选中任意文字，弹出复制/引用/翻译/解释/总结菜单；还能「顺便问」——单开一个小窗提问，不打断主会话。"
+      quote: "划词工具条。选中任意文字，弹出复制/引用/翻译/解释/总结菜单；还能「顺便问」：单开一个小窗提问，不打断主会话。"
 
 # ── 工具与能力 ─────────────────────────────────────────────────
 - id: modsearch
@@ -122,7 +122,7 @@
   mentions:
     - source: wx-dabaihua
       stance: 印证
-      quote: "ModSearch：免费的联网搜索。官方搜索按量收费，让 AI 查资料时，花费大头都在联网上。ModSearch 免注册、免 API Key，还能搜 X（推特）内容——能省的钱不省白不省。"
+      quote: "ModSearch：免费的联网搜索。官方搜索按量收费，让 AI 查资料时，花费大头都在联网上。ModSearch 免注册、免 API Key，还能搜 X（推特）内容：能省的钱不省白不省。"
     - source: wx-quanjing
       stance: 印证
       quote: "modsearch：给 DSH 加上免费的联网搜索能力，不需要任何 API Key……还支持搜索 X（原 Twitter）上的内容。返回的是结构化 JSON 而不是原始网页，模型消化起来更准确。"
@@ -368,7 +368,7 @@
   mentions:
     - source: tree-top10
       stance: 仅提及
-      quote: "译述：建议成对安装两个安全插件——dsh-plugin-gate 负责安装前扫描，dsh-gov 是 Agent 治理工具包，实现 allow、deny、ask 三种工具权限模式。"
+      quote: "译述：建议成对安装两个安全插件：dsh-plugin-gate 负责安装前扫描，dsh-gov 是 Agent 治理工具包，实现 allow、deny、ask 三种工具权限模式。"
 
 # ── 集成与迁移 ─────────────────────────────────────────────────
 - id: dsh-wechat
@@ -443,7 +443,7 @@
   name: dsh-anti-ads
   category: fun
   status: community
-  summary: "专门用来去掉 dsh-ads 广告的插件——社区里著名的插件攻防梗。"
+  summary: "专门用来去掉 dsh-ads 广告的插件：社区里著名的插件攻防梗。"
   tags: [去广告, 梗]
   mentions:
     - source: baike-dsh

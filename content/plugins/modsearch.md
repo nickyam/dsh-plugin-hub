@@ -23,7 +23,7 @@ params:
     mentions:
     - source: wx-dabaihua
       stance: 印证
-      quote: ModSearch：免费的联网搜索。官方搜索按量收费，让 AI 查资料时，花费大头都在联网上。ModSearch 免注册、免 API Key，还能搜 X（推特）内容——能省的钱不省白不省。
+      quote: ModSearch：免费的联网搜索。官方搜索按量收费，让 AI 查资料时，花费大头都在联网上。ModSearch 免注册、免 API Key，还能搜 X（推特）内容：能省的钱不省白不省。
       source_title: DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单
       source_url: http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9
       source_kind_label: 公众号

@@ -18,7 +18,7 @@
         <div class="card-top"><span class="badge badge-blue">{{ $s.kind_label }}</span><span class="mini-tag">{{ $s.mentioned_count }} 个插件</span></div>
         <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
         <p class="card-summary">{{ $s.note }}</p>
-        <div class="card-foot"><span class="muted">{{ $s.publisher }} · {{ with $s.date_note }}{{ . }}{{ else }}日期待补{{ end }}</span></div>
+        <div class="card-foot"><span class="muted">{{ $s.publisher }}，{{ with $s.date_note }}{{ . }}{{ else }}日期待补{{ end }}</span></div>
       </article>
       {{ end }}
     </div>

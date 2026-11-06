@@ -26,7 +26,7 @@ params:
     mentions:
     - source: wx-dabaihua
       stance: 印证
-      quote: 想在几万个插件里不迷路，第一个该装的就是 dsh-market——装上它，设置里会多出一个「插件市场」入口，可以搜索、筛选、一键安装 GitHub 上的 DSH 插件。输入 https://github.com/dsh-market/dsh-market 安装，失败可尝试输入插件名称 dshmarket@1.73.6。
+      quote: 想在几万个插件里不迷路，第一个该装的就是 dsh-market：装上它，设置里会多出一个「插件市场」入口，可以搜索、筛选、一键安装 GitHub 上的 DSH 插件。输入 https://github.com/dsh-market/dsh-market 安装，失败可尝试输入插件名称 dshmarket@1.73.6。
       source_title: DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单
       source_url: http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9
       source_kind_label: 公众号

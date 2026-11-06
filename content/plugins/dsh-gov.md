@@ -18,7 +18,7 @@ params:
     mentions:
     - source: tree-top10
       stance: 仅提及
-      quote: 译述：建议成对安装两个安全插件——dsh-plugin-gate 负责安装前扫描，dsh-gov 是 Agent 治理工具包，实现 allow、deny、ask 三种工具权限模式。
+      quote: 译述：建议成对安装两个安全插件：dsh-plugin-gate 负责安装前扫描，dsh-gov 是 Agent 治理工具包，实现 allow、deny、ask 三种工具权限模式。
       source_title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
       source_url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
       source_kind_label: 第三方媒体

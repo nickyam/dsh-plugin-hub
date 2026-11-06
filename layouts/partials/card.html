@@ -12,11 +12,11 @@
     {{ end }}
   </div>
   <h3><a href="{{ .RelPermalink }}">{{ $p.name }}</a></h3>
-  {{ with $p.aliases }}<p class="aliases">也叫 {{ delimit . " · " }}</p>{{ end }}
+  {{ with $p.aliases }}<p class="aliases">也叫 {{ delimit . "、" }}</p>{{ end }}
   <p class="card-summary">{{ $p.summary }}</p>
   <div class="card-foot">
     <span class="mini-tag">{{ $p.status_label }}</span>
     {{ with $p.flag }}<span class="mini-tag mini-tag-warn">{{ . }}</span>{{ end }}
-    <span class="card-more">证据 {{ len $p.mentions }} 条 <span aria-hidden="true">→</span></span>
+    <span class="card-more">证据 {{ len $p.mentions }} 条</span>
   </div>
 </article>

@@ -22,10 +22,10 @@
           <span class="badge badge-ghost">{{ $p.status_label }}</span>
           {{ if eq $p.agreement "多篇印证" }}<span class="badge badge-blue">{{ $p.source_count }} 篇印证</span>{{ end }}
           {{ if eq $p.agreement "口径有出入" }}<span class="badge badge-orange">口径有出入</span>{{ end }}
-          {{ if eq $p.agreement "单篇提及" }}<span class="badge badge-ghost">单篇提及 · 待更多来源</span>{{ end }}
+          {{ if eq $p.agreement "单篇提及" }}<span class="badge badge-ghost">单篇提及，待更多来源</span>{{ end }}
         </div>
         <h1>{{ $p.name }}</h1>
-        {{ with $p.aliases }}<p class="aliases aliases-lg">也叫 {{ delimit . " · " }}</p>{{ end }}
+        {{ with $p.aliases }}<p class="aliases aliases-lg">也叫 {{ delimit . "、" }}</p>{{ end }}
         <div class="lead">{{ .Content }}</div>
       </header>
 
@@ -38,9 +38,9 @@
         <dl class="kv">
           <div><dt>分类</dt><dd><a href="{{ "categories/" | relURL }}{{ $p.category }}/">{{ $p.category_label }}</a></dd></div>
           <div><dt>性质</dt><dd>{{ $p.status_label }}{{ if eq $p.status "unknown" }}（原文没写是谁做的）{{ end }}</dd></div>
-          <div><dt>证据</dt><dd>{{ len $p.mentions }} 条引文 / {{ $p.source_count }} 个来源 · 可信度 <strong>{{ $p.confidence }}</strong></dd></div>
+          <div><dt>证据</dt><dd>{{ len $p.mentions }} 条引文 / {{ $p.source_count }} 个来源，可信度 <strong>{{ $p.confidence }}</strong></dd></div>
           <div><dt>安装</dt><dd>{{ with $p.install }}<code class="code-block">{{ . }}</code>{{ else }}<span class="muted">原文未给出安装命令{{ if eq $p.agreement "口径有出入" }}；不同写法见下方证据链{{ end }}</span>{{ end }}</dd></div>
-          <div><dt>仓库</dt><dd>{{ with $p.repo }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }} ↗</a>{{ else }}<span class="muted">原文未提供地址</span>{{ end }}</dd></div>
+          <div><dt>仓库</dt><dd>{{ with $p.repo }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>{{ else }}<span class="muted">原文未提供地址</span>{{ end }}</dd></div>
           <div><dt>标签</dt><dd>{{ range $p.tags }}<a class="tag" href="{{ "tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>{{ else }}<span class="muted">—</span>{{ end }}</dd></div>
         </dl>
       </section>
@@ -53,8 +53,8 @@
           <p>{{ .quote }}</p>
           <footer>
             <span class="badge {{ if eq .stance "有出入" }}badge-orange{{ else if eq .stance "印证" }}badge-blue{{ else if eq .stance "补充" }}badge-green{{ else }}badge-ghost{{ end }}">{{ .stance }}</span>
-            <a href="{{ .source_url }}" target="_blank" rel="noopener noreferrer">{{ .source_title }} ↗</a>
-            <span class="muted">{{ .source_kind_label }} · {{ .source_publisher }}</span>
+            <a href="{{ .source_url }}" target="_blank" rel="noopener noreferrer">{{ .source_title }}</a>
+            <span class="muted">{{ .source_kind_label }}，{{ .source_publisher }}</span>
           </footer>
         </blockquote>
         {{ end }}

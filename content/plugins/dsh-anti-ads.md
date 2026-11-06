@@ -1,6 +1,6 @@
 ---
 title: dsh-anti-ads
-description: 专门用来去掉 dsh-ads 广告的插件——社区里著名的插件攻防梗。
+description: 专门用来去掉 dsh-ads 广告的插件：社区里著名的插件攻防梗。
 categories:
 - fun
 tags: &id001
@@ -13,7 +13,7 @@ params:
     name: dsh-anti-ads
     category: fun
     status: community
-    summary: 专门用来去掉 dsh-ads 广告的插件——社区里著名的插件攻防梗。
+    summary: 专门用来去掉 dsh-ads 广告的插件：社区里著名的插件攻防梗。
     tags: *id001
     mentions:
     - source: baike-dsh
@@ -34,4 +34,4 @@ params:
   generated: true
 ---
 
-专门用来去掉 dsh-ads 广告的插件——社区里著名的插件攻防梗。
+专门用来去掉 dsh-ads 广告的插件：社区里著名的插件攻防梗。

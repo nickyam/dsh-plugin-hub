@@ -13,7 +13,7 @@
         <div class="badge-row"><span class="badge badge-blue">{{ $s.kind_label }}</span><span class="badge badge-ghost">提到 {{ $s.mentioned_count }} 个插件</span></div>
         <h1>{{ $s.title }}</h1>
         <p class="lead">{{ .Content }}</p>
-        <a class="btn btn-primary" href="{{ $s.url }}" target="_blank" rel="noopener noreferrer">打开原文 ↗</a>
+        <a class="btn btn-primary" href="{{ $s.url }}" target="_blank" rel="noopener noreferrer">打开原文</a>
       </header>
 
       <section class="panel">
@@ -22,7 +22,7 @@
           <div><dt>类型</dt><dd>{{ $s.kind_label }}</dd></div>
           <div><dt>署名 / 发布方</dt><dd>{{ $s.publisher }}</dd></div>
           <div><dt>日期</dt><dd>{{ with $s.date_note }}{{ . }}{{ else }}未标注{{ end }}</dd></div>
-          <div><dt>原文</dt><dd><a href="{{ $s.url }}" target="_blank" rel="noopener noreferrer" class="break">{{ $s.url }} ↗</a></dd></div>
+          <div><dt>原文</dt><dd><a href="{{ $s.url }}" target="_blank" rel="noopener noreferrer" class="break">{{ $s.url }}</a></dd></div>
           <div><dt>标签</dt><dd>{{ range $s.tags }}<span class="tag">{{ . }}</span>{{ else }}<span class="muted">—</span>{{ end }}</dd></div>
         </dl>
       </section>
