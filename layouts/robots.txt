@@ -1,3 +1,5 @@
+# 注意：robots.txt 只有放在主机根目录才生效（https://ai.limzero.com/robots.txt）。
+# 本副本位于 /dsh/，爬虫不会读取；主站 robots.txt 里应声明本站的 sitemap。
 User-agent: *
 Allow: /
 

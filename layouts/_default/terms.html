@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="wrap list-page">
-  <nav class="breadcrumb" aria-label="面包屑"><a href="{{ "/" | relURL }}">首页</a><span>/</span><span>{{ .Title }}</span></nav>
+  <nav class="breadcrumb" aria-label="面包屑"><a href="{{ site.Home.RelPermalink }}">首页</a><span>/</span><span>{{ .Title }}</span></nav>
   <header class="page-head">
     <h1>{{ if eq .Data.Plural "categories" }}按分类浏览{{ else }}按标签浏览{{ end }}</h1>
     <p>{{ if eq .Data.Plural "categories" }}本站把插件分成 {{ len .Pages }} 类；分类是整理口径，不是官方分类。{{ else }}来自各篇文章的关键词。{{ end }}</p>

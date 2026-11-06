@@ -2,7 +2,7 @@
 {{ $s := .Params.source }}
 <div class="wrap detail-page">
   <nav class="breadcrumb" aria-label="面包屑">
-    <a href="{{ "/" | relURL }}">首页</a><span>/</span>
+    <a href="{{ site.Home.RelPermalink }}">首页</a><span>/</span>
     <a href="{{ "sources/" | relURL }}">来源台账</a><span>/</span>
     <span>{{ $s.title }}</span>
   </nav>
