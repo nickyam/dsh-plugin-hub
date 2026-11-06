@@ -1,6 +1,6 @@
 ---
 title: open-design
-description: 把 Agent 的提示词转成原型、演示文稿与设计资产，本地优先；2026 年 9 月宣布原生兼容 DSH 运行时。
+description: 首个协作式 AI 设计智能体工作区，本地优先、开源：用简要需求驱动 Agent 生成遵循设计系统的原型、演示稿、图表与视频。
 categories:
 - visual
 tags: &id001
@@ -14,18 +14,17 @@ params:
     name: open-design
     category: visual
     status: community
-    summary: 把 Agent 的提示词转成原型、演示文稿与设计资产，本地优先；2026 年 9 月宣布原生兼容 DSH 运行时。
-    tags: *id001
-    flag: 兼容性按版本与日期标注
     repo: https://github.com/nexu-io/open-design
-    notes: 第三方文章称其在 DSH 插件里社区关注度最高，本站不引用具体 star 数。
-    mentions:
-    - source: tree-top10
-      stance: 仅提及
-      quote: 译述：open-design 定位为 Claude Design 的开源替代，是一个本地优先的桌面应用，把 Agent 提示词转成原型、幻灯片、系统架构图；2026 年 9 月宣布与 dsh 原生运行时兼容，支持结构化设计思考、工具调用、模型预览、任务取消与会话恢复。
-    - source: wx-quanjing
-      stance: 印证
-      quote: open-design：首个协作式 AI 设计 Agent 工作区，本地优先、开源。支持动态设计、原型制作和多人协作。
+    install: od agent setup deepseek-harness
+    summary: 首个协作式 AI 设计智能体工作区，本地优先、开源：用简要需求驱动 Agent 生成遵循设计系统的原型、演示稿、图表与视频。
+    features:
+    - 协作式 AI 设计工作区：团队与 Agent 共创，分享作品、交换反馈、迭代
+    - agent 原生、模型无关：直接复用 PATH 中已有的 claude / codex / cursor 等作为设计引擎
+    - 本地优先 + BYOK（自带密钥），代理含 SSRF 防护
+    - 四平面可组合：插件 / 功能技能 / 设计模板 / 设计系统均为可版本化目录
+    - 品牌级默认渲染：每次生成读取 DESIGN.md 作为品牌契约，附 151 个设计系统包
+    tags: *id001
+    notes: 接入 DSH 原生运行时：先装官方 dsh CLI，再运行 `od agent setup deepseek-harness` 安装 / 修复 OD 连接组件；也可用 `od mcp install deepseek-harness` 一键装 MCP。macOS 桌面版因系统 od 命令冲突，建议从 App 内 Settings → MCP server 复制路径。
     refs:
     - id: tree-top10
       title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
@@ -46,4 +45,4 @@ params:
   generated: true
 ---
 
-把 Agent 的提示词转成原型、演示文稿与设计资产，本地优先；2026 年 9 月宣布原生兼容 DSH 运行时。
+首个协作式 AI 设计智能体工作区，本地优先、开源：用简要需求驱动 Agent 生成遵循设计系统的原型、演示稿、图表与视频。

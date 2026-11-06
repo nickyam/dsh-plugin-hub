@@ -1,11 +1,12 @@
 ---
 title: awesome-dsh-plugin
-description: 社区维护的精选插件清单，按功能分类收录，相当于生态里的「大众点评」。
+description: DeepSeek Harness 插件精选列表（awesome list）：按功能分类收录社区插件，并编译成可被 DSH 主机读取的插件市场索引（/index.json），在官方「插件 → 发现」标签页与 plugin_market 工具中浏览。
 categories:
 - market
 tags: &id001
 - 清单
 - 目录站
+- 市场索引
 weight: 1010
 params:
   plugin:
@@ -13,15 +14,18 @@ params:
     name: awesome-dsh-plugin
     category: market
     status: community
-    summary: 社区维护的精选插件清单，按功能分类收录，相当于生态里的「大众点评」。
     repo: https://github.com/awesome-dsh-plugin/awesome-dsh-plugin
+    install: ''
+    summary: DeepSeek Harness 插件精选列表（awesome list）：按功能分类收录社区插件，并编译成可被 DSH 主机读取的插件市场索引（/index.json），在官方「插件 → 发现」标签页与 plugin_market 工具中浏览。
+    features:
+    - 精选目录：按 20+ 分类（Core/Bundles、Agents、Memory、UI 等）收录 900+ 条目，每条附 GitHub 链接与一句话简介
+    - 市场索引：构建 /index.json，由 @deepseek-ai/dsh-plugin-market-index 解析，主机在「发现」标签页直接读取
+    - 双语文档：提供英文与简体中文 README，通过 awesome-lint 校验
+    - 透明来源：内容抓取自 dsh-external/hub 官方目录与公开 GitHub dsh-plugin 主题
+    - 贡献指引：含安装说明、贡献指南与公开议题追踪
     tags: *id001
     flag: 清单类项目，不是插件
-    notes: 第三方 Top10 文章也把 awesome-dsh-plugin 公开页当作数据来源之一；本站按独立条目收录，不混进插件市场。
-    mentions:
-    - source: wx-quanjing
-      stance: 仅提及
-      quote: 社区维护的精选插件列表，按功能分类收录高质量插件。相当于 DSH 生态的「大众点评」，不知道装什么的时候先翻这个列表，比自己在 GitHub 上盲搜效率高得多。
+    notes: 本站按独立条目收录，不混进插件市场。列表本身无需安装，DSH 主机可直接把其 /index.json 作为市场来源读取。
     refs:
     - id: wx-quanjing
       title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
@@ -37,4 +41,4 @@ params:
   generated: true
 ---
 
-社区维护的精选插件清单，按功能分类收录，相当于生态里的「大众点评」。
+DeepSeek Harness 插件精选列表（awesome list）：按功能分类收录社区插件，并编译成可被 DSH 主机读取的插件市场索引（/index.json），在官方「插件 → 发现」标签页与 plugin_market 工具中浏览。

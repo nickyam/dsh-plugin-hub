@@ -1,6 +1,6 @@
 ---
 title: dsh-plan-execute
-description: 双模型路由：把规划与执行拆给不同模型。
+description: 双模型路由：把规划与执行拆给不同模型，复杂任务先由推理模型规划拆解，再交给经济模型执行，从而兼顾规划质量与执行成本。
 categories:
 - workflow
 tags: &id001
@@ -14,13 +14,15 @@ params:
     name: dsh-plan-execute
     category: workflow
     status: community
-    summary: 双模型路由：把规划与执行拆给不同模型。
+    repo: ''
+    install: ''
+    summary: 双模型路由：把规划与执行拆给不同模型，复杂任务先由推理模型规划拆解，再交给经济模型执行，从而兼顾规划质量与执行成本。
+    features:
+    - 规划与执行分离：复杂任务由推理模型产出方案，经济模型负责落地
+    - 按需规划：执行模型先判断是否需要规划，需要时才调用规划模型
+    - 降本增效：规划阶段保证思考质量，执行阶段压低 token 成本
     tags: *id001
-    flag: 原文仅给名称
-    mentions:
-    - source: baike-dsh
-      stance: 仅提及
-      quote: 插件类型极其多样，包括功能增强类（如双模型路由 dsh-plan-execute、视觉能力扩展 dsh-vision）。
+    notes: 未找到与 ID 同名且可公开访问验证的仓库；检索命中多为名称相近的 dsh-plan-and-execute（如 Yaaaaaaa233/dsh-plan-and-execute，双模型路由/规划执行分离）以及不公开的 dsh-external/dsh-plan-execute，内容依据参考文章整理。
     refs:
     - id: baike-dsh
       title: 百度百科：DeepSeek Harness
@@ -36,4 +38,4 @@ params:
   generated: true
 ---
 
-双模型路由：把规划与执行拆给不同模型。
+双模型路由：把规划与执行拆给不同模型，复杂任务先由推理模型规划拆解，再交给经济模型执行，从而兼顾规划质量与执行成本。

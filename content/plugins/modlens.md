@@ -1,6 +1,6 @@
 ---
 title: modlens
-description: 给纯文本模型补上视觉能力：粘贴图片后做 OCR、版面分析与语义提取，输出结构化 JSON 交给模型。
+description: DSH 上能力最强的视觉插件（作者自称）：给 DeepSeek、GLM 等纯文本模型外挂视觉能力，粘贴图片即得结构化 JSON 证据（OCR、版面、语义），无需先存文件再传路径。
 categories:
 - visual
 tags: &id001
@@ -14,14 +14,18 @@ params:
     name: modlens
     category: visual
     status: community
-    summary: 给纯文本模型补上视觉能力：粘贴图片后做 OCR、版面分析与语义提取，输出结构化 JSON 交给模型。
     repo: https://github.com/liustack/modlens
+    install: npx -y @deepseek-ai/dsh plugin --profile web add @liustack/modlens@3.27.2
+    summary: DSH 上能力最强的视觉插件（作者自称）：给 DeepSeek、GLM 等纯文本模型外挂视觉能力，粘贴图片即得结构化 JSON 证据（OCR、版面、语义），无需先存文件再传路径。
+    features:
+    - 粘贴即识别：在纯文本模型上粘贴图片自动转临时文件或 (modlens vision) 变体，自动覆盖可识别的路由
+    - 最轻侵入：不改任何 harness 配置、无本地代理守护进程，卸载即删文件夹恢复原状
+    - 零配置启动：复用 Claude Code / Codex / OpenCode / Pi 等既有设置，免费通道可用 Antigravity CLI 或 Gemini Key
+    - 多 Key 轮转：逗号分隔的 Key 在鉴权 / 限流 / 配额失败时轮转，其他失败跳过剩余 Key 保留既有故障转移
+    - 证据而非臆测：输出完整转录、阅读顺序版面区域、实体与关系列表，模型可引用具体细节
     tags: *id001
-    notes: 与百科里只有名字的 dsh-vision、本文的 dsh-vision-toolkit 是不同条目，本站不合并。
-    mentions:
-    - source: wx-quanjing
-      stance: 仅提及
-      quote: 粘贴一张图片进对话窗口，它会自动识别图中的文字（OCR）、分析版面结构、提取语义信息，然后以结构化 JSON 的形式交给模型处理……它不挑模型，DeepSeek、GLM 等纯文本模型都能用。
+    flag: 与 dsh-vision、dsh-vision-toolkit 是不同条目，本站不合并
+    notes: README 注明 Web UI 里直接粘贴图片可能被宿主拒绝（DeepSeek 适配器硬编码 inputModalities 为 text），read_image 在 Web UI 已验证端到端可用。仓库另含兄弟插件 ModSearch（免费网页搜索）。
     refs:
     - id: wx-quanjing
       title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
@@ -37,4 +41,4 @@ params:
   generated: true
 ---
 
-给纯文本模型补上视觉能力：粘贴图片后做 OCR、版面分析与语义提取，输出结构化 JSON 交给模型。
+DSH 上能力最强的视觉插件（作者自称）：给 DeepSeek、GLM 等纯文本模型外挂视觉能力，粘贴图片即得结构化 JSON 证据（OCR、版面、语义），无需先存文件再传路径。

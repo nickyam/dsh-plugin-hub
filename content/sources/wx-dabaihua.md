@@ -24,16 +24,16 @@ params:
       repo_confirmed: true
     - id: selection-toolbar
       name: 划词工具条
-      repo_confirmed: false
+      repo_confirmed: true
     - id: modsearch
       name: ModSearch
       repo_confirmed: true
     - id: browserskill
       name: BrowserSkill
-      repo_confirmed: false
+      repo_confirmed: true
     - id: skill-report
       name: 技能调用报告
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-agent-teams
       name: dsh-agent-teams（社区版）
       repo_confirmed: true
@@ -42,10 +42,10 @@ params:
       repo_confirmed: true
     - id: dsh-wechat
       name: dsh-wechat
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-emoji
       name: dsh-emoji
-      repo_confirmed: false
+      repo_confirmed: true
     mentioned_count: 10
   generated: true
 ---

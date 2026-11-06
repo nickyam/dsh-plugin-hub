@@ -1,28 +1,29 @@
 ---
 title: dsh-plugin-gate
-description: 装插件前先扫本地目录与 npm 包：安装脚本、权限要求、密钥、外连请求，给出 BLOCK / WARN / PASS 判定。
+description: DSH 的安装安全门与数据保护守卫：在 dsh plugin add 之前用 60 条静态规则扫描插件源码（恶意脚本/凭证窃取/混淆/网络回连），并用 gate_guard 在执行 rm -rf 类危险命令前拦截或要求确认。
 categories:
 - security
 tags: &id001
 - 安装前扫描
 - 安全
-weight: 20
+weight: 1020
 params:
   plugin:
     id: dsh-plugin-gate
     name: dsh-plugin-gate
     category: security
     status: community
-    summary: 装插件前先扫本地目录与 npm 包：安装脚本、权限要求、密钥、外连请求，给出 BLOCK / WARN / PASS 判定。
+    repo: https://github.com/863683348/dsh-plugin-gate
+    install: dsh plugin --profile web add dsh-plugin-gate
+    summary: DSH 的安装安全门与数据保护守卫：在 dsh plugin add 之前用 60 条静态规则扫描插件源码（恶意脚本/凭证窃取/混淆/网络回连），并用 gate_guard 在执行 rm -rf 类危险命令前拦截或要求确认。
+    features:
+    - 60 条静态签名规则：覆盖安装脚本、混淆、权限读取、网络回连、硬编码密钥与供应链（Google OSV）
+    - gate_scan：只读扫描本地目录或 npm tarball，绝不执行被扫代码、绝不写文件
+    - gate_guard：执行 rm -rf 类危险命令前评估，按工作区边界与关键文件返回 BLOCK / WARN / PASS
+    - gate_diff / gate_report：与基线对比新/已解决/变更的风险点，可导出 Markdown / JSON 报告
+    - 上下文感知降级：注释与文档中的示例代码降为低危，密钥与 webhook 即便在注释中也仍标记
     tags: *id001
-    notes: 第三方教程站也提醒：允许 prepare 脚本等于允许包代码在 Agent 沙箱外的宿主机上运行，只应信任审查过的包并固定 commit。
-    mentions:
-    - source: tree-top10
-      stance: 仅提及
-      quote: 译述：执行 dsh plugin add 之前，dsh-plugin-gate 会扫描本地目录和 npm 包，检查安装脚本、权限需求、密钥与对外网络连接，返回 BLOCK、WARN、PASS 三级判定。
-    - source: deepseekai-works
-      stance: 补充
-      quote: 译述：pnpm 10 起默认拦截 prepare 脚本，要在 profile 的 pnpm-workspace.yaml 里显式 allowBuilds；放行等于允许包代码在 Agent 沙箱外的宿主机执行，官方建议只信任审查过的包并用 github:you/hello-plugin#<commit> 固定版本。
+    notes: 网关只读、绝不执行被扫代码、绝不写文件；它是启发式签名扫描，可能漏检新型恶意代码或误报无辜代码，BLOCK/WARN 需自行复核。仅作安装前与危险命令前的额外护栏。
     refs:
     - id: tree-top10
       title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
@@ -35,12 +36,12 @@ params:
       kind_label: 教程 / 指南
       publisher: deepseekai.works（第三方教程站）
     source_count: 2
-    repo_confirmed: false
+    repo_confirmed: true
     category_label: 安全与治理
     status_label: 社区
-    weight: 20
+    weight: 1020
     url: /plugins/dsh-plugin-gate/
   generated: true
 ---
 
-装插件前先扫本地目录与 npm 包：安装脚本、权限要求、密钥、外连请求，给出 BLOCK / WARN / PASS 判定。
+DSH 的安装安全门与数据保护守卫：在 dsh plugin add 之前用 60 条静态规则扫描插件源码（恶意脚本/凭证窃取/混淆/网络回连），并用 gate_guard 在执行 rm -rf 类危险命令前拦截或要求确认。

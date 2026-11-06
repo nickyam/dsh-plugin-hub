@@ -1,6 +1,6 @@
 ---
 title: 小鲸鱼记账挂件
-description: 右下角桌宠实时显示上次对话花费、今日花费、钱包余额与峰谷时段。
+description: 在 DSH Web/桌面端右下角常驻一只可拖拽吸附的小鲸鱼挂件，监控 DeepSeek 账户余额、今日已用与每轮对话消耗；泡泡、音效与交互可完全自定义，基础记账无需配置令牌。
 categories:
 - billing
 tags: &id001
@@ -17,18 +17,17 @@ params:
     - 鲸鱼余额挂件
     category: billing
     status: unknown
-    summary: 右下角桌宠实时显示上次对话花费、今日花费、钱包余额与峰谷时段。
     repo: https://github.com/MeteorNOX/DeepSeek-Balance-Whale-Widget
+    install: dsh plugin --profile web add github:MeteorNOX/DeepSeek-Balance-Whale-Widget
+    summary: 在 DSH Web/桌面端右下角常驻一只可拖拽吸附的小鲸鱼挂件，监控 DeepSeek 账户余额、今日已用与每轮对话消耗；泡泡、音效与交互可完全自定义，基础记账无需配置令牌。
+    features:
+    - 常驻自启与智能余额监控：随 DSH 界面自动出现，支持 API Key 或登录态取数，60 秒刷新带数字滚动动画
+    - 零令牌小鲸鱼记账：通过余额下降观测「今日已用」，并监听本机会话事件按真实 token 用量换算「每轮对话消耗」
+    - 完全可自定义的泡泡系统：文本/超链接/图片/随机语句模块化，支持 A/B 加权与跑马灯渐变样式
+    - 细腻交互与多端适配：四边拖拽吸附、按压 Q 弹玩偶、移动端自研触摸接管
+    - 多厂商余额与额度扩展：内置 34 个厂商模板，可添加任意自定义 API 查询多厂商余额
     tags: *id001
-    flag: 两篇视角不同：用量 / 余额
-    mentions:
-    - source: wx-dabaihua
-      stance: 印证
-      quote: 小鲸鱼记账挂件。屏幕右下角养一只桌宠小鲸鱼，实时显示上次对话花了多少钱、今天花了多少、钱包余额，甚至当前是峰时还是谷时。花销透明，心里不慌。
-    - source: wx-quanjing
-      stance: 补充
-      quote: Balance Whale Widget：一只住在 DSH 界面右下角的小鲸鱼，帮你实时盯着账户余额。支持拖拽、吸附、翻转，数字变化时有滚动动画……它不提供生产力，但解决了一个真实痛点：用着用着突然欠费中断。
-    notes: 两篇公众号文章说的是同一只鲸鱼：一篇讲「花了多少钱」（用量视角），一篇讲「账户余额」（余额视角），本站按同一条目合并，英文名进 aliases。
+    notes: 基础记账功能无需配置令牌即可用；泡泡/音效/交互均可自定义。npm 包名为 dsh-whale-widget，也可从桌面端 plugin_manager 安装。
     refs:
     - id: wx-dabaihua
       title: DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单
@@ -49,4 +48,4 @@ params:
   generated: true
 ---
 
-右下角桌宠实时显示上次对话花费、今日花费、钱包余额与峰谷时段。
+在 DSH Web/桌面端右下角常驻一只可拖拽吸附的小鲸鱼挂件，监控 DeepSeek 账户余额、今日已用与每轮对话消耗；泡泡、音效与交互可完全自定义，基础记账无需配置令牌。

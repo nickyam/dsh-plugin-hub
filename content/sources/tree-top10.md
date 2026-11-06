@@ -21,7 +21,7 @@ params:
       repo_confirmed: true
     - id: dsh-find-plugin
       name: dsh-find-plugin
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-web-all
       name: dsh-web-all（Web 全家桶）
       repo_confirmed: true
@@ -36,31 +36,31 @@ params:
       repo_confirmed: true
     - id: dsh-diff-approval
       name: dsh-diff-approval
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-project-memory
       name: dsh-project-memory
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-engram
       name: dsh-engram
-      repo_confirmed: false
+      repo_confirmed: true
     - id: runtime36
       name: runtime36
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-basabase
-      name: '@basabase/dsh-plugin'
-      repo_confirmed: false
+      name: '@busabase/dsh-plugin'
+      repo_confirmed: true
     - id: dsh-api-dashboard
       name: dsh-api-dashboard
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-api-balance
       name: dsh-api-balance
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-plugin-gate
       name: dsh-plugin-gate
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-gov
       name: dsh-gov
-      repo_confirmed: false
+      repo_confirmed: true
     mentioned_count: 15
   generated: true
 ---

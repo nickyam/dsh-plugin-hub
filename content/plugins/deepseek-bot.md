@@ -1,6 +1,6 @@
 ---
 title: DeepSeek-Bot
-description: 长生命周期 Bot 团队，支持主 Bot、Bot 间消息与群聊，偏持久运行的自动化场景。
+description: DS Bot 是 DeepSeek Harness（DSH）的 Bot 插件，把 DSH 变成可创建和协作的 Bot：支持主 Bot、Bot 间消息与群聊，并内置记忆、共享能力库（MCP / Skill）与按时间 / 模型维度的用量统计。
 categories:
 - workflow
 tags: &id001
@@ -14,14 +14,21 @@ params:
     name: DeepSeek-Bot
     category: workflow
     status: community
-    summary: 长生命周期 Bot 团队，支持主 Bot、Bot 间消息与群聊，偏持久运行的自动化场景。
     repo: https://github.com/Fei2411/DeepSeek-Bot
+    install: 'npx @deepseek-ai/dsh@0.2.1-rc.5 plugin --profile web add ds-bot
+
+      npx @deepseek-ai/dsh@0.2.1-rc.5 web
+
+      '
+    summary: DS Bot 是 DeepSeek Harness（DSH）的 Bot 插件，把 DSH 变成可创建和协作的 Bot：支持主 Bot、Bot 间消息与群聊，并内置记忆、共享能力库（MCP / Skill）与按时间 / 模型维度的用量统计。
+    features:
+    - 主 Bot 与工作小组：内置可管理其他 Bot 与群聊的「主 Bot」，一句话即可搭建 Bot 团队与群聊
+    - Bot 记忆：每个 Bot 记住用户偏好并在后续工作中复用，可在详情页管理
+    - 群聊目标驱动：群聊可由 admin 拆解任务、分阶段推进并基于证据检查
+    - 共享能力库（Capabilities）：在设置里为 Bot 挂载 MCP server、Skill 与 pack
+    - 办公文件处理：创建 / 编辑 .docx / .pptx / .xlsx，检查缺陷、做定向编辑与幻灯片重排
     tags: *id001
-    notes: 文章明确把它与 dsh-agent-teams 区分：后者偏任务分工，前者偏持久性与社交性。
-    mentions:
-    - source: wx-quanjing
-      stance: 仅提及
-      quote: 长生命周期 Bot 团队，支持主 Bot、Bot 间消息和群聊。跟 agent-teams 的区别在于它更强调 Bot 的持久性和社交性，适合需要长期运行的自动化场景。
+    notes: 仓库已由 DeepSeek-Bot 更名为 DS Bot（Fei2411/DS-Bot），本仓库地址仍可访问并指向同一项目；DSH 插件包名为 ds-bot。与 dsh-agent-teams 是同类不同定位：后者偏任务分工，前者偏 Bot 的持久性与社交性（群聊）。
     refs:
     - id: wx-quanjing
       title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
@@ -37,4 +44,4 @@ params:
   generated: true
 ---
 
-长生命周期 Bot 团队，支持主 Bot、Bot 间消息与群聊，偏持久运行的自动化场景。
+DS Bot 是 DeepSeek Harness（DSH）的 Bot 插件，把 DSH 变成可创建和协作的 Bot：支持主 Bot、Bot 间消息与群聊，并内置记忆、共享能力库（MCP / Skill）与按时间 / 模型维度的用量统计。

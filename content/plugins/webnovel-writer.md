@@ -1,6 +1,6 @@
 ---
 title: webnovel-writer
-description: 长篇网文辅助创作系统，用章节管理与角色记忆缓解长篇创作里的遗忘和幻觉。
+description: Webnovel Writer 是一套面向长篇连载的网文辅助创作系统，用结构化的章节管理、角色 / 设定记忆与一致性审查，缓解 AI 写作中的遗忘与前后矛盾，支持 200 万字量级连载。
 categories:
 - content
 tags: &id001
@@ -14,13 +14,17 @@ params:
     name: webnovel-writer
     category: content
     status: community
-    summary: 长篇网文辅助创作系统，用章节管理与角色记忆缓解长篇创作里的遗忘和幻觉。
     repo: https://github.com/lingfengQAQ/webnovel-writer
+    install: ''
+    summary: Webnovel Writer 是一套面向长篇连载的网文辅助创作系统，用结构化的章节管理、角色 / 设定记忆与一致性审查，缓解 AI 写作中的遗忘与前后矛盾，支持 200 万字量级连载。
+    features:
+    - 深度初始化与卷纲规划：分阶段搭骨架、设定集与总纲，再拆卷拆章补时间线
+    - 章节创作流水线：备上下文 → 起草 → 多维审查 → 润色 → 记事实 → 自动备份，blocking 问题阻断
+    - 质量审查：从爽点、一致性、节奏、OOC、连贯性、追读力等维度审查章节
+    - 状态查询与项目学习：查询角色 / 伏笔 / 状态，把好用的写法沉淀进项目长期记忆
+    - 只读可视化面板：浏览项目状态、实体关系图、章节内容与追读力数据
     tags: *id001
-    mentions:
-    - source: wx-quanjing
-      stance: 仅提及
-      quote: 长篇网文辅助创作系统，支持 200 万字量级连载。专门解决 AI 写作中的遗忘和幻觉问题，通过结构化的章节管理和角色记忆机制，让 AI 在超长篇创作中保持一致性。
+    notes: 本仓库 master 分支为 Claude Code 版（v6），其 README 给出的安装命令是 Claude Code 插件；DSH 版（v8 写作工作台）在 README 中被引用但未在此 README 给出安装命令，需前往其产品主页获取，故 install 留空。
     refs:
     - id: wx-quanjing
       title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
@@ -36,4 +40,4 @@ params:
   generated: true
 ---
 
-长篇网文辅助创作系统，用章节管理与角色记忆缓解长篇创作里的遗忘和幻觉。
+Webnovel Writer 是一套面向长篇连载的网文辅助创作系统，用结构化的章节管理、角色 / 设定记忆与一致性审查，缓解 AI 写作中的遗忘与前后矛盾，支持 200 万字量级连载。

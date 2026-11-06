@@ -1,6 +1,6 @@
 ---
 title: dsh-context
-description: 把对话上下文可视化：当前 token 占用、哪些内容被压缩、多个 Agent 间怎么共享信息。
+description: 一站式 DeepSeek Harness 上下文可视化插件，提供 Context 面板、浏览器、侧栏与命令，透视上下文的组成、演进、压缩与多 Agent 协作。
 categories:
 - workflow
 tags: &id001
@@ -14,13 +14,17 @@ params:
     name: dsh-context
     category: workflow
     status: community
-    summary: 把对话上下文可视化：当前 token 占用、哪些内容被压缩、多个 Agent 间怎么共享信息。
     repo: https://github.com/bowenliang123/dsh-context
+    install: dsh plugin --profile web add dsh-context
+    summary: 一站式 DeepSeek Harness 上下文可视化插件，提供 Context 面板、浏览器、侧栏与命令，透视上下文的组成、演进、压缩与多 Agent 协作。
+    features:
+    - 上下文洞察页面：跨会话总览的一级侧边栏面板，含 KPI 栏、活动热力图、汇总组成环形图与会话卡片
+    - Context 标签页：上下文统计、组成、逐请求趋势、事件、文件活动与命令执行的仪表板
+    - Fleet 标签页：Agent 家族专页，当前 Agent、父级与每个子 Agent 实时卡片呈现
+    - Context 面板：右侧边栏标签页，聊天旁打开并含 Agent 网络
+    - /context 命令：斜杠命令显示当前上下文组成与近期演变
     tags: *id001
-    mentions:
-    - source: wx-quanjing
-      stance: 仅提及
-      quote: 一站式上下文可视化插件……你不知道当前占了多少 token、哪些内容被压缩了、多个 Agent 之间怎么共享信息。dsh-context 把这些全部可视化，提供面板、浏览器、侧栏三种查看方式。
+    notes: 需 @deepseek-ai/dsh 0.2.0-rc.2 及以上（各版本支持见 docs/compatibility.md）；数值采用 dsh 自身 Token 计量投影，与内置计量器一致。UI 支持简中 / 英 / 日等多语言（切换需 dsh 0.2.2+）。
     refs:
     - id: wx-quanjing
       title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
@@ -36,4 +40,4 @@ params:
   generated: true
 ---
 
-把对话上下文可视化：当前 token 占用、哪些内容被压缩、多个 Agent 间怎么共享信息。
+一站式 DeepSeek Harness 上下文可视化插件，提供 Context 面板、浏览器、侧栏与命令，透视上下文的组成、演进、压缩与多 Agent 协作。

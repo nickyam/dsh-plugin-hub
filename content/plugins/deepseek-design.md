@@ -1,12 +1,13 @@
 ---
 title: deepseek-design
-description: 可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT 制作一体化。
+description: DSH 的可编辑设计系统插件：AI 生成、可视化编辑、模板市场与 PPT 制作一体化，并提供视频能力，适合在 DSH 里直接出设计稿和演示文稿。
 categories:
 - visual
 tags: &id001
 - 设计稿
 - PPT
 - 模板
+- 视频
 weight: 1010
 params:
   plugin:
@@ -14,13 +15,17 @@ params:
     name: deepseek-design
     category: visual
     status: community
-    summary: 可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT 制作一体化。
     repo: https://github.com/Devin-AXIS/deepseek-design
+    install: npx @deepseek-ai/dsh plugin --profile web add deepseek-idesign deepseek-ippt deepseek-ivideo
+    summary: DSH 的可编辑设计系统插件：AI 生成、可视化编辑、模板市场与 PPT 制作一体化，并提供视频能力，适合在 DSH 里直接出设计稿和演示文稿。
+    features:
+    - 可编辑设计系统：AI 生成设计稿并可视化编辑，模板市场一站式取用（deepseek-idesign）
+    - PPT 工作室：演示文稿制作能力，直接产出可编辑幻灯片（deepseek-ippt）
+    - 视频能力：视频生成 / 编辑（deepseek-ivideo）随仓提供
+    - 原生 DSH 集成：以 deepseek-idesign / deepseek-ippt / deepseek-ivideo 三个包发布，dsh plugin 安装
+    - （README 未列更多细节；以仓库说明为准）
     tags: *id001
-    mentions:
-    - source: wx-quanjing
-      stance: 仅提及
-      quote: 可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT 制作一体化。适合需要在 DSH 里直接出设计稿和演示文稿的人。
+    notes: 实际以 deepseek-idesign、deepseek-ippt、deepseek-ivideo 三个包同时安装；若已装 dsh 命令，可将 npx @deepseek-ai/dsh 替换为 dsh。Web 界面默认 http://127.0.0.1:3080。
     refs:
     - id: wx-quanjing
       title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
@@ -36,4 +41,4 @@ params:
   generated: true
 ---
 
-可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT 制作一体化。
+DSH 的可编辑设计系统插件：AI 生成、可视化编辑、模板市场与 PPT 制作一体化，并提供视频能力，适合在 DSH 里直接出设计稿和演示文稿。

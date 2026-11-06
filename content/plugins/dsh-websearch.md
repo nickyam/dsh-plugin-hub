@@ -1,6 +1,6 @@
 ---
 title: dsh-websearch
-description: 并行查多个搜索引擎，去重后合并结果。
+description: 并行查询多个搜索引擎、对结果去重并合并的联网搜索插件（社区同类实现较多，未确认单一官方仓库）。
 categories:
 - tool
 tags: &id001
@@ -13,12 +13,15 @@ params:
     name: dsh-websearch
     category: tool
     status: community
-    summary: 并行查多个搜索引擎，去重后合并结果。
+    repo: ''
+    install: ''
+    summary: 并行查询多个搜索引擎、对结果去重并合并的联网搜索插件（社区同类实现较多，未确认单一官方仓库）。
+    features:
+    - 并行查询多个（约 11 个）搜索引擎
+    - 对返回结果去重
+    - 合并去重后的结果供模型使用
     tags: *id001
-    mentions:
-    - source: tree-top10
-      stance: 仅提及
-      quote: 译述：dsh-websearch 并行查询 11 个搜索引擎，对结果去重并合并。
+    notes: 未找到官方仓库（GitHub 搜索无果，社区存在多个名称相近的 dsh-web-search 实现），内容依据参考文章整理，安装命令待补。
     refs:
     - id: tree-top10
       title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
@@ -34,4 +37,4 @@ params:
   generated: true
 ---
 
-并行查多个搜索引擎，去重后合并结果。
+并行查询多个搜索引擎、对结果去重并合并的联网搜索插件（社区同类实现较多，未确认单一官方仓库）。

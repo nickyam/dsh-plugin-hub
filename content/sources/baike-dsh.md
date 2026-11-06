@@ -22,11 +22,14 @@ params:
     - id: dsh-better-sidebar
       name: DSH Better Sidebar
       repo_confirmed: true
-    - id: dsh-vision
-      name: dsh-vision
-      repo_confirmed: false
     - id: dsh-at-file
       name: dsh-at-file
+      repo_confirmed: true
+    - id: dsh-fabric
+      name: dsh-fabric
+      repo_confirmed: true
+    - id: dsh-vision
+      name: dsh-vision
       repo_confirmed: false
     - id: dsh-agent-teams
       name: dsh-agent-teams（社区版）
@@ -36,37 +39,34 @@ params:
       repo_confirmed: false
     - id: dsh-memory-evolve
       name: dsh-memory-evolve
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-plugin-claude-bridge
       name: dsh-plugin-claude-bridge
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-claude-move
       name: dsh-claude-move
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-minigames
       name: dsh-minigames
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-ads
       name: dsh-ads
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-anti-ads
       name: dsh-anti-ads
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-gomoku
       name: dsh-gomoku
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-lazyfish
       name: dsh-lazyfish
       repo_confirmed: false
     - id: dsh-qq2006
       name: dsh-qq2006
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-ui-whale
       name: dsh-ui-whale
-      repo_confirmed: false
-    - id: fabric
-      name: fabric
-      repo_confirmed: false
+      repo_confirmed: true
     mentioned_count: 17
   generated: true
 ---

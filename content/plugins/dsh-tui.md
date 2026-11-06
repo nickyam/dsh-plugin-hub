@@ -1,6 +1,6 @@
 ---
 title: dsh-TUI
-description: 终端界面插件：彩色界面、像素风鲸鱼图标、鼠标交互，性能开销低。
+description: DSH 的交互式终端 UI，内置像素鲸鱼头部、实时工作状态、流式思考、双击 Esc 时间回溯、上下文进度条与 TPS 仪表盘；零核心改动，仅消费 DSH 公共导出。
 categories:
 - ui
 tags: &id001
@@ -14,14 +14,16 @@ params:
     name: dsh-TUI
     category: ui
     status: community
-    summary: 终端界面插件：彩色界面、像素风鲸鱼图标、鼠标交互，性能开销低。
     repo: https://github.com/ccch1mneyyy/dsh-TUI
+    install: dsh plugin --profile dsh-tui add @deepseek-harness-tui/dsh-tui
+    summary: DSH 的交互式终端 UI，内置像素鲸鱼头部、实时工作状态、流式思考、双击 Esc 时间回溯、上下文进度条与 TPS 仪表盘；零核心改动，仅消费 DSH 公共导出。
+    features:
+    - 像素鲸鱼宠物：三次开场动画，点击唤醒，首次任务后冻结
+    - 终端原生 UI：流式 Markdown、工具卡片、/ 与 @ 补全、#L12-14 行号范围、历史搜索与中英文界面切换
+    - 侧边面板：终端够宽时 Ctrl+B 分屏出面板列，八个内置面板默认启用
+    - 实时状态展示：活动动画、上下文占用条、TPS、缓存命中率、推理强度、令牌消耗与会话成本估算
     tags: *id001
-    flag: 「官方首推」为该文说法，未见官方来源
-    mentions:
-    - source: wx-quanjing
-      stance: 仅提及
-      quote: DSH 官方首推的终端界面插件。npm 一行命令装好，终端里就有了彩色界面、像素风鲸鱼图标、平滑鼠标交互。性能开销极低，老机器也跑得动。
+    notes: 安装即启用，卸载不留补丁；README 提及其正从挂载插件演进为带独立入口的 app，需匹配当前验证线版本的 DSH。
     refs:
     - id: wx-quanjing
       title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
@@ -37,4 +39,4 @@ params:
   generated: true
 ---
 
-终端界面插件：彩色界面、像素风鲸鱼图标、鼠标交互，性能开销低。
+DSH 的交互式终端 UI，内置像素鲸鱼头部、实时工作状态、流式思考、双击 Esc 时间回溯、上下文进度条与 TPS 仪表盘；零核心改动，仅消费 DSH 公共导出。

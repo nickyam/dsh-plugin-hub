@@ -46,7 +46,7 @@
     "aliases": [],
     "category": "workflow",
     "category_label": "协作与工作流",
-    "summary": "百科词条列出的社区插件：在会话里快速组建和管理多智能体协作团队。",
+    "summary": "把当前 DSH 会话变成队长，可组装持久化的子智能体、把目标拆成依赖感知的任务，并通过直接消息协调工作；提供团队协议、14 个协调工具、持久状态、自动共享任务调度器与实时 Web UI，无需额外工作流引擎。",
     "tags": [
       "多智能体",
       "协作"
@@ -54,7 +54,7 @@
     "status_label": "社区",
     "repo_confirmed": true,
     "source_count": 3,
-    "flag": "与官网内置 Agent teams 名称相近",
+    "flag": "与官网内置 Agent teams 名称相近，勿混",
     "url": "/plugins/dsh-agent-teams/"
   },
   {
@@ -127,7 +127,7 @@
     "aliases": [],
     "category": "visual",
     "category_label": "视觉与设计",
-    "summary": "把 Agent 的提示词转成原型、演示文稿与设计资产，本地优先；2026 年 9 月宣布原生兼容 DSH 运行时。",
+    "summary": "首个协作式 AI 设计智能体工作区，本地优先、开源：用简要需求驱动 Agent 生成遵循设计系统的原型、演示稿、图表与视频。",
     "tags": [
       "设计",
       "多模态",
@@ -136,7 +136,7 @@
     "status_label": "社区",
     "repo_confirmed": true,
     "source_count": 2,
-    "flag": "兼容性按版本与日期标注",
+    "flag": "",
     "url": "/plugins/open-design/"
   },
   {
@@ -149,7 +149,7 @@
     ],
     "category": "billing",
     "category_label": "模型与计费",
-    "summary": "右下角桌宠实时显示上次对话花费、今日花费、钱包余额与峰谷时段。",
+    "summary": "在 DSH Web/桌面端右下角常驻一只可拖拽吸附的小鲸鱼挂件，监控 DeepSeek 账户余额、今日已用与每轮对话消耗；泡泡、音效与交互可完全自定义，基础记账无需配置令牌。",
     "tags": [
       "桌宠",
       "成本可视化"
@@ -157,8 +157,884 @@
     "status_label": "原文未说明",
     "repo_confirmed": true,
     "source_count": 2,
-    "flag": "两篇视角不同：用量 / 余额",
+    "flag": "",
     "url": "/plugins/whale-cost-widget/"
+  },
+  {
+    "id": "dsh-plugin-gate",
+    "name": "dsh-plugin-gate",
+    "aliases": [],
+    "category": "security",
+    "category_label": "安全与治理",
+    "summary": "DSH 的安装安全门与数据保护守卫：在 dsh plugin add 之前用 60 条静态规则扫描插件源码（恶意脚本/凭证窃取/混淆/网络回连），并用 gate_guard 在执行 rm -rf 类危险命令前拦截或要求确认。",
+    "tags": [
+      "安装前扫描",
+      "安全"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 2,
+    "flag": "",
+    "url": "/plugins/dsh-plugin-gate/"
+  },
+  {
+    "id": "dsh-find-plugin",
+    "name": "dsh-find-plugin",
+    "aliases": [],
+    "category": "market",
+    "category_label": "插件市场与发现",
+    "summary": "一个「找插件的插件」——让 Agent 在对话里搜索 GitHub 上的 DSH 插件生态，按星标排序返回结果，每条带一行简介和可直接执行的安装命令。",
+    "tags": [
+      "命令行",
+      "GitHub",
+      "发现"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-find-plugin/"
+  },
+  {
+    "id": "awesome-dsh-plugin",
+    "name": "awesome-dsh-plugin",
+    "aliases": [],
+    "category": "market",
+    "category_label": "插件市场与发现",
+    "summary": "DeepSeek Harness 插件精选列表（awesome list）：按功能分类收录社区插件，并编译成可被 DSH 主机读取的插件市场索引（/index.json），在官方「插件 → 发现」标签页与 plugin_market 工具中浏览。",
+    "tags": [
+      "清单",
+      "目录站",
+      "市场索引"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "清单类项目，不是插件",
+    "url": "/plugins/awesome-dsh-plugin/"
+  },
+  {
+    "id": "dsh-web",
+    "name": "dsh-web（创意工坊）",
+    "aliases": [],
+    "category": "market",
+    "category_label": "插件市场与发现",
+    "summary": "面向 DSH Web GUI 的模块化插件聚合生态与 AI 智能体开发工作台：一键装齐全家桶功能（任务看板、Git 图谱、桌面宠物、移动端远程、SSH 运维、模型能力、用量统计、会话归档、皮肤中心、社区插件），并通过「创意工坊」（dsh-market.com）分发皮肤、宠物与插件。",
+    "tags": [
+      "Web",
+      "创意工坊",
+      "分发",
+      "全家桶"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "与 dsh-web-all 为同一官方聚合仓（zhu1090093659/dsh-web）；本卡按 README 整理，二者可合并",
+    "url": "/plugins/dsh-web/"
+  },
+  {
+    "id": "dsh-plugin-radar",
+    "name": "dsh-plugin-radar",
+    "aliases": [],
+    "category": "market",
+    "category_label": "插件市场与发现",
+    "summary": "DSH 开源生态雷达：持续收集插件候选、归并兼容性记录，并发布可浏览的目录与机器可读数据，帮助使用者按兼容性筛选插件、把生态数据接入自己的工具。",
+    "tags": [
+      "雷达",
+      "兼容性",
+      "数据接口"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "数据 / 目录类项目，非可安装插件",
+    "url": "/plugins/dsh-plugin-radar/"
+  },
+  {
+    "id": "dsh-plugin-shop",
+    "name": "dsh-plugin-shop",
+    "aliases": [],
+    "category": "market",
+    "category_label": "插件市场与发现",
+    "summary": "DeepSeek Harness 的插件商店：在 DSH 内提供浏览、安装、启用、禁用与更新插件的市场 UI，每次目录变更都提交进 Git 可追溯。",
+    "tags": [
+      "市场",
+      "人工审核",
+      "可追溯"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "与 dsh-market、dsh-plugin-radar 同类不同实现，本站不合并",
+    "url": "/plugins/dsh-plugin-shop/"
+  },
+  {
+    "id": "awesome-deepseek-harness",
+    "name": "awesome-deepseek-harness",
+    "aliases": [],
+    "category": "market",
+    "category_label": "插件市场与发现",
+    "summary": "覆盖面更广的精选列表（awesome list）：除插件外还收录工具、基础设施与运行时，与 awesome-dsh-plugin 互补。",
+    "tags": [
+      "清单",
+      "目录站",
+      "生态"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "清单类项目，不是插件",
+    "url": "/plugins/awesome-deepseek-harness/"
+  },
+  {
+    "id": "selection-toolbar",
+    "name": "划词工具条",
+    "aliases": [],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "在 DSH 会话里划选文本，选区上方浮现浮动工具栏（复制 / 引用 / 询问 / 解释 / 翻译 / 总结 //btw）；AI 动作默认就地弹窗，可一键「转到主线」把回答发进当前对话。",
+    "tags": [
+      "划词",
+      "交互"
+    ],
+    "status_label": "原文未说明",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/selection-toolbar/"
+  },
+  {
+    "id": "dsh-desktop-dataelement",
+    "name": "dsh-desktop（dataelement）",
+    "aliases": [],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "DSH Desktop by Dataelem（DSH 客户端）是 Dataelem 团队基于 DeepSeek Harness 框架打造的桌面 Agent 应用，增强主流模型适配、Office 模板、启动恢复与工作台，提供开箱即用的桌面体验。",
+    "tags": [
+      "桌面端",
+      "独立实现"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "与 anywhere-labs 版是两个项目",
+    "url": "/plugins/dsh-desktop-dataelement/"
+  },
+  {
+    "id": "dsh-desktop-tauri",
+    "name": "deepseek-harness-desktop（Tauri）",
+    "aliases": [],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "基于 Tauri 2 的轻量桌面版，在桌面上运行 DeepSeek Harness，无需手动安装 Node.js / pnpm / Docker，零环境配置，预置插件。",
+    "tags": [
+      "桌面端",
+      "轻量",
+      "Tauri"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-desktop-tauri/"
+  },
+  {
+    "id": "dsh-tui",
+    "name": "dsh-TUI",
+    "aliases": [],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "DSH 的交互式终端 UI，内置像素鲸鱼头部、实时工作状态、流式思考、双击 Esc 时间回溯、上下文进度条与 TPS 仪表盘；零核心改动，仅消费 DSH 公共导出。",
+    "tags": [
+      "终端",
+      "TUI",
+      "轻量"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-tui/"
+  },
+  {
+    "id": "dsh-genui",
+    "name": "dsh-genui",
+    "aliases": [],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "面向 DSH 的生成式 UI 插件，将助手回复转化为安全、完全交互式的 UI 界面，在模型文本回复旁内联渲染图表、表单、测验、Mermaid 图与 3D 场景等组件。",
+    "tags": [
+      "GenUI",
+      "内联渲染",
+      "可视化"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-genui/"
+  },
+  {
+    "id": "dsh-synapse",
+    "name": "dsh-synapse",
+    "aliases": [],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "DSH 的可视化对话工作台，把同一工作区中的会话、追问和分支组织成一张可浏览、可拖拽、可缩放的地图，保留 DSH 原生会话作为唯一事实来源。",
+    "tags": [
+      "画布",
+      "分支",
+      "非线性"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-synapse/"
+  },
+  {
+    "id": "dsh-x",
+    "name": "DSH-X",
+    "aliases": [],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "DSH 的第三方桌面启动器：启动项与多实例，版本、插件、整合包、MCP 和技能管理；只负责版本安装、启动和插件管理，不修改 DSH 网页界面。社区开源项目，非 DeepSeek 官方产品。",
+    "tags": [
+      "启动器",
+      "多实例",
+      "版本管理"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "社区项目，非官方",
+    "url": "/plugins/dsh-x/"
+  },
+  {
+    "id": "browserskill",
+    "name": "BrowserSkill",
+    "aliases": [
+      "浏览器技能"
+    ],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "让 AI Agent 连上你真实已登录的 Chrome / Edge 浏览器，复用已有登录态去读页面、填表单、截图；任务跑在独立可见的 Agent Window，需要人工介入的（验证码 / 登录 / 确认）由你接管后继续。",
+    "tags": [
+      "浏览器",
+      "自动化",
+      "腾讯"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/browserskill/"
+  },
+  {
+    "id": "dsh-at-file",
+    "name": "dsh-at-file",
+    "aliases": [],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "给 DSH Web 界面加 Codex 风格 @文件 引用：输入框打 @ 搜工作区文件 / 目录，插入工作区相对路径引用而不粘贴全文内容。",
+    "tags": [
+      "@文件",
+      "指令"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-at-file/"
+  },
+  {
+    "id": "skill-report",
+    "name": "技能调用报告",
+    "aliases": [],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "DSH 面板插件：统计每轮对话实际用到了哪些 skill，并让你在应用内直接安装、更新、停用、删除 skill。",
+    "tags": [
+      "可观测",
+      "Skill"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/skill-report/"
+  },
+  {
+    "id": "openbiliclaw",
+    "name": "OpenBiliClaw",
+    "aliases": [],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "通用个性化内容推荐 Agent——本地运行、跨平台理解你、只为你一个人构建。",
+    "tags": [
+      "内容发现",
+      "主动推送",
+      "本地优先"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/openbiliclaw/"
+  },
+  {
+    "id": "dsh-fabric",
+    "name": "dsh-fabric",
+    "aliases": [],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "DSH 的「万物皆插件」运行时原语：用一套声明式 DSL 把所有可扩展接缝（工具、技能、提示段、事件监听、LLM 适配器、子代理、Web 路由等）收敛成可编程、可查询、可撤销的扩展能力，让「插件扩展插件」成为可能。",
+    "tags": [
+      "运行时",
+      "扩展",
+      "DSL"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-fabric/"
+  },
+  {
+    "id": "modlens",
+    "name": "modlens",
+    "aliases": [],
+    "category": "visual",
+    "category_label": "视觉与设计",
+    "summary": "DSH 上能力最强的视觉插件（作者自称）：给 DeepSeek、GLM 等纯文本模型外挂视觉能力，粘贴图片即得结构化 JSON 证据（OCR、版面、语义），无需先存文件再传路径。",
+    "tags": [
+      "OCR",
+      "视觉",
+      "结构化输出"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "与 dsh-vision、dsh-vision-toolkit 是不同条目，本站不合并",
+    "url": "/plugins/modlens/"
+  },
+  {
+    "id": "dsh-vision-toolkit",
+    "name": "dsh-vision-toolkit",
+    "aliases": [],
+    "category": "visual",
+    "category_label": "视觉与设计",
+    "summary": "DSH 原生视觉工具包：为纯文本模型赋予图像问答、长截图 OCR、UI 还原与 GUI 视觉任务能力，把视觉工具与 Skill 无缝嵌入 Profile、会话、设置、Artifacts 与 Web UI。",
+    "tags": [
+      "多图",
+      "UI还原",
+      "批量处理",
+      "视觉"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "与 dsh-vision 名称相近，勿混；视觉能力打包自上游 agent-vision-toolkit",
+    "url": "/plugins/dsh-vision-toolkit/"
+  },
+  {
+    "id": "archify",
+    "name": "archify",
+    "aliases": [],
+    "category": "visual",
+    "category_label": "视觉与设计",
+    "summary": "把想法、计划或代码库变成交互式图表的 agent skill；针对 DSH 提供社区维护的插件集成（@tt-a1i/archify-dsh），可在 DSH 对话里调用 archify 技能生成架构图、流程图、系统拓扑图。",
+    "tags": [
+      "架构图",
+      "流程图",
+      "可视化"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "社区集成，非 DeepSeek 官方产品；实际 DSH 包名 @tt-a1i/archify-dsh",
+    "url": "/plugins/archify/"
+  },
+  {
+    "id": "openpencil",
+    "name": "openpencil",
+    "aliases": [],
+    "category": "visual",
+    "category_label": "视觉与设计",
+    "summary": "把 OpenPencil 这款开源 AI 原生矢量设计工具接入 DSH 的插件：在对话里生成、预览、检查并修改真实 .op 矢量文档，带多画框精确渲染、只读交互画布与侧栏管理编辑器。",
+    "tags": [
+      "矢量设计",
+      "协作",
+      "DSH插件"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "DSH 接入形态为同仓子包 @zseven-w/dsh-openpencil；本体 OpenPencil 是独立 Rust 设计 App",
+    "url": "/plugins/openpencil/"
+  },
+  {
+    "id": "deepseek-design",
+    "name": "deepseek-design",
+    "aliases": [],
+    "category": "visual",
+    "category_label": "视觉与设计",
+    "summary": "DSH 的可编辑设计系统插件：AI 生成、可视化编辑、模板市场与 PPT 制作一体化，并提供视频能力，适合在 DSH 里直接出设计稿和演示文稿。",
+    "tags": [
+      "设计稿",
+      "PPT",
+      "模板",
+      "视频"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/deepseek-design/"
+  },
+  {
+    "id": "dsh-diff-approval",
+    "name": "dsh-diff-approval",
+    "aliases": [],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "待处理改动审查插件：自动跟踪每次成功的 edit / write / str_replace_editor 改动，在侧边栏汇成待处理列表，可逐块、逐文件保留或回退，支持撤销/重做，并一键导入工作区版本控制的本地改动。",
+    "tags": [
+      "代码审阅",
+      "回滚",
+      "可追溯"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-diff-approval/"
+  },
+  {
+    "id": "dsh-context",
+    "name": "dsh-context",
+    "aliases": [],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "一站式 DeepSeek Harness 上下文可视化插件，提供 Context 面板、浏览器、侧栏与命令，透视上下文的组成、演进、压缩与多 Agent 协作。",
+    "tags": [
+      "上下文",
+      "可观测",
+      "诊断"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-context/"
+  },
+  {
+    "id": "dsh-routing-suite",
+    "name": "dsh-routing-suite",
+    "aliases": [],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "注入器 × 思维模式路由 × 分级模式的套装：含运行时注入器、任务感知推理模式路由预设与分级任务协议（含红队门与审计端点）。",
+    "tags": [
+      "模型路由",
+      "省成本",
+      "自动降级"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-routing-suite/"
+  },
+  {
+    "id": "dsh-ops",
+    "name": "dsh-ops",
+    "aliases": [],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "以提高 token 效率为目的的底层操作工具插件，提供 ops 系列工具并隐藏 / 替换部分官方工具，减少 Token 消耗与任务耗时，低改动面、低侵入性。",
+    "tags": [
+      "自动化",
+      "token优化"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-ops/"
+  },
+  {
+    "id": "answer-me-with-html",
+    "name": "answer-me-with-html",
+    "aliases": [],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "一个 agent skill，用一页可交互的单文件 HTML 回答复杂问题：内含流程图、对比表格、交互图表，离线可打开、便于分享。",
+    "tags": [
+      "HTML",
+      "可视化回答",
+      "分享"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/answer-me-with-html/"
+  },
+  {
+    "id": "deepseek-bot",
+    "name": "DeepSeek-Bot",
+    "aliases": [],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "DS Bot 是 DeepSeek Harness（DSH）的 Bot 插件，把 DSH 变成可创建和协作的 Bot：支持主 Bot、Bot 间消息与群聊，并内置记忆、共享能力库（MCP / Skill）与按时间 / 模型维度的用量统计。",
+    "tags": [
+      "多智能体",
+      "Bot",
+      "长生命周期"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/deepseek-bot/"
+  },
+  {
+    "id": "dsh-memory-evolve",
+    "name": "dsh-memory-evolve",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "给 DSH 补上跨会话长期记忆与后台自我进化：五轨分层记忆、四轨待办、内部会话团队、外部 AI 派单与记忆同步，多数能力默认关闭、按需开启。",
+    "tags": [
+      "记忆",
+      "跨会话"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-memory-evolve/"
+  },
+  {
+    "id": "dsh-project-memory",
+    "name": "dsh-project-memory",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "为 DSH agent 建一份能活过单次会话的项目记忆：自动持久化任务清单与读过的文件/文档/代码符号，会话被压缩或切换后仍可检索，并带 path:line 引用以便溯源。",
+    "tags": [
+      "记忆",
+      "项目级"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-project-memory/"
+  },
+  {
+    "id": "dsh-engram",
+    "name": "dsh-engram",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "纯本地 SQLite 的跨会话长期记忆：零外部服务、零 API Key、零 Docker，混合检索（FTS5 全文 + 本地向量 RRF），带证据门与全链路审计，把「记忆」做成装完即用的本地库。",
+    "tags": [
+      "记忆",
+      "SQLite",
+      "向量检索"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-engram/"
+  },
+  {
+    "id": "runtime36",
+    "name": "runtime36",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "把 Obsidian / Markdown 笔记库作为 Agent 的持久知识库：每日封存与蒸馏，用简短名词精准定位经验页面，让 Agent 跨会话记住已做的决策与沉淀的方法。",
+    "tags": [
+      "记忆",
+      "Obsidian",
+      "知识库"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/runtime36/"
+  },
+  {
+    "id": "dsh-basabase",
+    "name": "@busabase/dsh-plugin",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "把 DSH 连接到 Busabase，让 Agent 读取可信知识、处理结构化数据，并把每次提议的写入提交人工审查（changeRequest），在不静默改写真源的同时赋予持久上下文。",
+    "tags": [
+      "知识库",
+      "数据库"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-basabase/"
+  },
+  {
+    "id": "everos",
+    "name": "EverOS",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "EverOS 是面向 Agent 与开发者的本地优先、Markdown 原生长期记忆运行时，将对话、文件与 Agent 轨迹存为可读 Markdown，并同步本地 SQLite 与 LanceDB 索引以实现快速检索与跨应用自我演化；官方提供 DeepSeek Harness 集成插件。",
+    "tags": [
+      "长期记忆",
+      "本地优先",
+      "Markdown",
+      "DSH"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/everos/"
+  },
+  {
+    "id": "memos",
+    "name": "MemOS",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "MemOS 是面向 LLM 与 AI Agent 的记忆操作系统，统一长期记忆的存储 / 检索 / 管理，原生支持 DeepSeek Harness 的本地与云端插件，提供自动召回、后台捕获、混合检索与本地记忆查看器。",
+    "tags": [
+      "记忆操作系统",
+      "混合检索",
+      "DSH"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/memos/"
+  },
+  {
+    "id": "reme",
+    "name": "ReMe",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "ReMe 是本地优先、自我演化的个人知识库（记忆管理工具包），把对话与资源转成可读、可编辑、可检索、互联的 Markdown 记忆，供 DeepSeek Harness 等 Agent 共享同一工作区进行检索、维护与演化。",
+    "tags": [
+      "记忆",
+      "开发工具包",
+      "Markdown",
+      "DSH"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/reme/"
+  },
+  {
+    "id": "dsh-our-free-model",
+    "name": "dsh-our-free-model",
+    "aliases": [],
+    "category": "model",
+    "category_label": "免费模型与接入",
+    "summary": "装上后模型列表里多出若干可直接用的免费选项，不用注册、不用填 API Key，用来零成本起步；免费车道来自 OpenCode Zen 网关、Kilo AI 公共网关等上游，直连不经第三方中转。",
+    "tags": [
+      "免费模型",
+      "免Key",
+      "备用通道"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "免费额度与可用性以仓库说明为准；npm 裸名 dsh-our-free-model 非本仓库发布，请装带 scope 的 @ebony-vinyl 包",
+    "url": "/plugins/dsh-our-free-model/"
+  },
+  {
+    "id": "dsh-plugin-subscriptions",
+    "name": "dsh-plugin-subscriptions",
+    "aliases": [],
+    "category": "model",
+    "category_label": "免费模型与接入",
+    "summary": "把已有的 ChatGPT (Codex)、Claude、Grok (X Premium)、GitHub Copilot、Google Antigravity 订阅通过 OAuth 接进 DSH，复用同一批模型，无需申请或填写 API Key。",
+    "tags": [
+      "订阅复用",
+      "OAuth",
+      "免Key"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "第三方接入，使用前先看清各服务条款",
+    "url": "/plugins/dsh-plugin-subscriptions/"
+  },
+  {
+    "id": "dsh-deepseek-web-login",
+    "name": "dsh-deepseek-web-login",
+    "aliases": [],
+    "category": "model",
+    "category_label": "免费模型与接入",
+    "summary": "非官方的 DSH 插件：通过浏览器登录 chat.deepseek.com 捕获登录态凭证，把网页版模型作为 LLM 提供者驱动 agent 的工具调用、思考流与图片理解，不调用官方 API。",
+    "tags": [
+      "网页凭证",
+      "免API Key",
+      "非官方"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "涉及账号凭证与网页端私有接口，注意安全与条款；非 DeepSeek 官方客户端",
+    "url": "/plugins/dsh-deepseek-web-login/"
+  },
+  {
+    "id": "dsh-api-dashboard",
+    "name": "dsh-api-dashboard",
+    "aliases": [],
+    "category": "billing",
+    "category_label": "模型与计费",
+    "summary": "在 Web GUI 输入框下方实时显示各平台 API 余额与本会话/子代理的 token 消耗估算，覆盖多家国内外平台；未开放余额接口的如实显示「未开放」、不伪造数字。",
+    "tags": [
+      "余额",
+      "用量",
+      "多家平台"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-api-dashboard/"
+  },
+  {
+    "id": "dsh-api-balance",
+    "name": "dsh-api-balance",
+    "aliases": [],
+    "category": "billing",
+    "category_label": "模型与计费",
+    "summary": "轻量的 DeepSeek 原生 API 余额与用量插件：在输入框下方常驻余额胶囊，提供详情弹窗、/balance 命令与 api_balance 工具，只依赖 DeepSeek 官方余额接口。",
+    "tags": [
+      "余额",
+      "轻量"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "存在多个同名社区实现，本条目以 Muzi1015 版（npm 包 dsh-api-balance-plugin）为准",
+    "url": "/plugins/dsh-api-balance/"
+  },
+  {
+    "id": "dsh-gov",
+    "name": "dsh-gov",
+    "aliases": [],
+    "category": "security",
+    "category_label": "安全与治理",
+    "summary": "Agent 治理套件（企业配套）：基于策略的工具门控（允许/拒绝/询问）、只追加的结构化 JSONL 审计日志，以及按 agent 的 token 配额与周期预算，状态持久化在 $DSH_HOME/gov/。",
+    "tags": [
+      "权限",
+      "治理"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-gov/"
+  },
+  {
+    "id": "dsh-purge",
+    "name": "dsh-purge",
+    "aliases": [],
+    "category": "security",
+    "category_label": "安全与治理",
+    "summary": "dsh-purge 是针对本地官方 DeepSeek Harness 的开源红队插件（破限 / 越狱工具），通过注入可替换的加密提示词与运行时补丁，在本地授权环境下评估并绕过宿主与模型的默认安全限制；项目声明禁止用于未授权公网攻击。",
+    "tags": [
+      "破限",
+      "提示词",
+      "红队"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "涉及绕过模型安全策略，本站不评价",
+    "url": "/plugins/dsh-purge/"
+  },
+  {
+    "id": "dsh-unrestricted",
+    "name": "dsh-unrestricted",
+    "aliases": [],
+    "category": "security",
+    "category_label": "安全与治理",
+    "summary": "dsh-unrestricted 是 DeepSeek Harness（DSH）的提示词破限插件，在系统提示词组装阶段注入破限规则，放开模型在逆向分析、安全测试、敏感题材写作等场景下的拒答限制，并提供总开关控制规则启停。",
+    "tags": [
+      "破限",
+      "提示词"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "涉及绕过模型安全策略，本站不评价",
+    "url": "/plugins/dsh-unrestricted/"
+  },
+  {
+    "id": "deepsec",
+    "name": "DeepSec",
+    "aliases": [],
+    "category": "security",
+    "category_label": "安全与治理",
+    "summary": "DeepSec（前 VibeGuard）是 AI 安全攻防一体平台，将 Shield（AI 生成代码安全审计）与 Spear（授权渗透测试引擎）统一到一套 CLI、TUI 与 IDE 插件中；并提供了包装该 CLI 的 DSH 插件封装。",
+    "tags": [
+      "代码审计",
+      "渗透测试",
+      "安全"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "渗透测试须在授权范围内使用",
+    "url": "/plugins/deepsec/"
+  },
+  {
+    "id": "dsh-plugin-claude-bridge",
+    "name": "dsh-plugin-claude-bridge",
+    "aliases": [],
+    "category": "integration",
+    "category_label": "集成与迁移",
+    "summary": "把 Claude Code 的记忆、技能与全局配置桥接进 DeepSeek Harness——零迁移、完全兼容：直接读取 Claude Code 标准文件位置，无需迁移脚本、文件拷贝或软链接。",
+    "tags": [
+      "迁移",
+      "桥接",
+      "Claude Code"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "社区项目，非官方",
+    "url": "/plugins/dsh-plugin-claude-bridge/"
+  },
+  {
+    "id": "dsh-claude-move",
+    "name": "dsh-claude-move",
+    "aliases": [],
+    "category": "integration",
+    "category_label": "集成与迁移",
+    "summary": "把 Claude Code、Codex、OpenCode 和 Hermes 的历史迁进 DeepSeek Harness——会话可续聊、记忆自动带上、技能与命令照常可用；四来源迁移向导加会话导入器，只复制、不移动、不删除源文件，写入前先过审批。",
+    "tags": [
+      "迁移",
+      "Claude Code"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "社区项目，非官方（PerryLink 维护，Apache-2.0）",
+    "url": "/plugins/dsh-claude-move/"
   },
   {
     "id": "dsh-mcp-client",
@@ -180,481 +1056,24 @@
     "url": "/plugins/dsh-mcp-client/"
   },
   {
-    "id": "awesome-dsh-plugin",
-    "name": "awesome-dsh-plugin",
-    "aliases": [],
-    "category": "market",
-    "category_label": "插件市场与发现",
-    "summary": "社区维护的精选插件清单，按功能分类收录，相当于生态里的「大众点评」。",
-    "tags": [
-      "清单",
-      "目录站"
+    "id": "dsh-wechat",
+    "name": "dsh-wechat",
+    "aliases": [
+      "微信桥接"
     ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "清单类项目，不是插件",
-    "url": "/plugins/awesome-dsh-plugin/"
-  },
-  {
-    "id": "dsh-web",
-    "name": "dsh-web（创意工坊）",
-    "aliases": [],
-    "category": "market",
-    "category_label": "插件市场与发现",
-    "summary": "DSH Web 端的插件聚合生态，通过「创意工坊」分发插件，不离开网页即可完成发现与安装。",
+    "category": "integration",
+    "category_label": "集成与迁移",
+    "summary": "把微信联系人接到 DeepSeek Harness 会话的桥接插件：每个微信发送者对应一个独立的 DSH 会话（wechat-），各自保留上下文；扫码绑定一次后，在微信里发消息即可驱动 Agent，电脑息屏时也能值守。",
     "tags": [
-      "Web",
-      "创意工坊",
-      "分发"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "与 dsh-web-all 名称相近，勿混",
-    "url": "/plugins/dsh-web/"
-  },
-  {
-    "id": "dsh-plugin-radar",
-    "name": "dsh-plugin-radar",
-    "aliases": [],
-    "category": "market",
-    "category_label": "插件市场与发现",
-    "summary": "持续扫描 GitHub 候选项目并自动分类审核的生态雷达，主打「捞到冷门小众插件」。",
-    "tags": [
-      "雷达",
-      "自动分类",
-      "发现"
+      "微信",
+      "远程",
+      "桥接"
     ],
     "status_label": "社区",
     "repo_confirmed": true,
     "source_count": 1,
     "flag": "",
-    "url": "/plugins/dsh-plugin-radar/"
-  },
-  {
-    "id": "dsh-plugin-shop",
-    "name": "dsh-plugin-shop",
-    "aliases": [],
-    "category": "market",
-    "category_label": "插件市场与发现",
-    "summary": "每日刷新的插件市场，全网采集后人工审核上架，用审核机制过滤蹭标签项目。",
-    "tags": [
-      "市场",
-      "人工审核"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-plugin-shop/"
-  },
-  {
-    "id": "awesome-deepseek-harness",
-    "name": "awesome-deepseek-harness",
-    "aliases": [],
-    "category": "market",
-    "category_label": "插件市场与发现",
-    "summary": "覆盖面更广的精选列表，除插件外还收录工具、基础设施与运行时。",
-    "tags": [
-      "清单",
-      "目录站"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "清单类项目，不是插件",
-    "url": "/plugins/awesome-deepseek-harness/"
-  },
-  {
-    "id": "dsh-our-free-model",
-    "name": "dsh-our-free-model",
-    "aliases": [],
-    "category": "model",
-    "category_label": "免费模型与接入",
-    "summary": "装上后模型列表里多出若干可直接用的选项，不用注册、不用填 API Key，用来零成本起步。",
-    "tags": [
-      "免费模型",
-      "免Key",
-      "备用通道"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "免费额度与可用性以仓库说明为准",
-    "url": "/plugins/dsh-our-free-model/"
-  },
-  {
-    "id": "dsh-plugin-subscriptions",
-    "name": "dsh-plugin-subscriptions",
-    "aliases": [],
-    "category": "model",
-    "category_label": "免费模型与接入",
-    "summary": "把已有的 ChatGPT Plus / Claude Pro / Grok 订阅通过 OAuth 接进 DSH，复用同一批模型。",
-    "tags": [
-      "订阅复用",
-      "OAuth"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "第三方接入，先看清服务条款",
-    "url": "/plugins/dsh-plugin-subscriptions/"
-  },
-  {
-    "id": "dsh-deepseek-web-login",
-    "name": "dsh-deepseek-web-login",
-    "aliases": [],
-    "category": "model",
-    "category_label": "免费模型与接入",
-    "summary": "通过浏览器登录网页版捕获凭证，把网页版模型作为 LLM 提供者。",
-    "tags": [
-      "网页凭证",
-      "免API Key"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "涉及账号凭证，注意安全与条款",
-    "url": "/plugins/dsh-deepseek-web-login/"
-  },
-  {
-    "id": "modlens",
-    "name": "modlens",
-    "aliases": [],
-    "category": "visual",
-    "category_label": "视觉与设计",
-    "summary": "给纯文本模型补上视觉能力：粘贴图片后做 OCR、版面分析与语义提取，输出结构化 JSON 交给模型。",
-    "tags": [
-      "OCR",
-      "视觉",
-      "结构化输出"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/modlens/"
-  },
-  {
-    "id": "dsh-vision-toolkit",
-    "name": "dsh-vision-toolkit",
-    "aliases": [],
-    "category": "visual",
-    "category_label": "视觉与设计",
-    "summary": "在 modlens 基础上加多图对比问答、截图还原前端 UI、批量处理等进阶功能。",
-    "tags": [
-      "多图",
-      "UI还原",
-      "批量处理"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "与 dsh-vision 名称相近，勿混",
-    "url": "/plugins/dsh-vision-toolkit/"
-  },
-  {
-    "id": "archify",
-    "name": "archify",
-    "aliases": [],
-    "category": "visual",
-    "category_label": "视觉与设计",
-    "summary": "把想法、计划或代码库变成交互式图表：架构图、流程图、系统拓扑图。",
-    "tags": [
-      "架构图",
-      "流程图",
-      "可视化"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/archify/"
-  },
-  {
-    "id": "openpencil",
-    "name": "openpencil",
-    "aliases": [],
-    "category": "visual",
-    "category_label": "视觉与设计",
-    "summary": "开源 AI 原生矢量设计工具，支持并发 Agent 协作。",
-    "tags": [
-      "矢量设计",
-      "协作"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/openpencil/"
-  },
-  {
-    "id": "deepseek-design",
-    "name": "deepseek-design",
-    "aliases": [],
-    "category": "visual",
-    "category_label": "视觉与设计",
-    "summary": "可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT 制作一体化。",
-    "tags": [
-      "设计稿",
-      "PPT",
-      "模板"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/deepseek-design/"
-  },
-  {
-    "id": "openbiliclaw",
-    "name": "OpenBiliClaw",
-    "aliases": [],
-    "category": "tool",
-    "category_label": "工具与能力",
-    "summary": "自进化内容发现 Agent：按兴趣偏好主动从 B 站、小红书、抖音、YouTube、X、知乎、Reddit 等平台找内容，本地私有部署。",
-    "tags": [
-      "内容发现",
-      "主动推送",
-      "本地优先"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/openbiliclaw/"
-  },
-  {
-    "id": "dsh-desktop-dataelement",
-    "name": "dsh-desktop（dataelement）",
-    "aliases": [],
-    "category": "ui",
-    "category_label": "界面与体验",
-    "summary": "另一个独立的 DSH 桌面客户端项目，与 anywhere-labs 版功能各有侧重。",
-    "tags": [
-      "桌面端",
-      "独立实现"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "与 anywhere-labs 版是两个项目",
-    "url": "/plugins/dsh-desktop-dataelement/"
-  },
-  {
-    "id": "dsh-desktop-tauri",
-    "name": "deepseek-harness-desktop（Tauri）",
-    "aliases": [],
-    "category": "ui",
-    "category_label": "界面与体验",
-    "summary": "基于 Tauri 的轻量桌面版，安装包小、零环境配置、预置插件。",
-    "tags": [
-      "桌面端",
-      "轻量",
-      "Tauri"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-desktop-tauri/"
-  },
-  {
-    "id": "dsh-tui",
-    "name": "dsh-TUI",
-    "aliases": [],
-    "category": "ui",
-    "category_label": "界面与体验",
-    "summary": "终端界面插件：彩色界面、像素风鲸鱼图标、鼠标交互，性能开销低。",
-    "tags": [
-      "终端",
-      "TUI",
-      "轻量"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "「官方首推」为该文说法，未见官方来源",
-    "url": "/plugins/dsh-tui/"
-  },
-  {
-    "id": "dsh-genui",
-    "name": "dsh-genui",
-    "aliases": [],
-    "category": "ui",
-    "category_label": "界面与体验",
-    "summary": "让回复里内联渲染交互式 UI：图表、表单、测验、Mermaid 图、3D 场景等。",
-    "tags": [
-      "GenUI",
-      "内联渲染",
-      "可视化"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-genui/"
-  },
-  {
-    "id": "dsh-synapse",
-    "name": "dsh-synapse",
-    "aliases": [],
-    "category": "ui",
-    "category_label": "界面与体验",
-    "summary": "画布式非线性对话工作区，可把对话拆成多个分支像思维导图一样探索。",
-    "tags": [
-      "画布",
-      "分支",
-      "非线性"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-synapse/"
-  },
-  {
-    "id": "dsh-x",
-    "name": "DSH-X",
-    "aliases": [],
-    "category": "ui",
-    "category_label": "界面与体验",
-    "summary": "轻量桌面启动器，统一管理多实例、版本切换与插件 / 整合包 / MCP / 技能。",
-    "tags": [
-      "启动器",
-      "多实例",
-      "版本管理"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-x/"
-  },
-  {
-    "id": "dsh-pet",
-    "name": "dsh-pet",
-    "aliases": [],
-    "category": "fun",
-    "category_label": "娱乐与彩蛋",
-    "summary": "透明桌面宠物，支持多开、大小位置配置，可用 AI 生成动画素材自动转成桌宠。",
-    "tags": [
-      "桌宠",
-      "DIY素材"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-pet/"
-  },
-  {
-    "id": "petdex",
-    "name": "petdex",
-    "aliases": [],
-    "category": "fun",
-    "category_label": "娱乐与彩蛋",
-    "summary": "动画宠物公共画廊，跨 Codex、Claude Code、DSH、Hermes、OpenCode、Gemini 等平台。",
-    "tags": [
-      "桌宠",
-      "画廊",
-      "跨平台"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/petdex/"
-  },
-  {
-    "id": "dsh-context",
-    "name": "dsh-context",
-    "aliases": [],
-    "category": "workflow",
-    "category_label": "协作与工作流",
-    "summary": "把对话上下文可视化：当前 token 占用、哪些内容被压缩、多个 Agent 间怎么共享信息。",
-    "tags": [
-      "上下文",
-      "可观测",
-      "诊断"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-context/"
-  },
-  {
-    "id": "dsh-routing-suite",
-    "name": "dsh-routing-suite",
-    "aliases": [],
-    "category": "workflow",
-    "category_label": "协作与工作流",
-    "summary": "模型路由套件：简单问答走快模型、复杂推理走强模型，失败自动降级。",
-    "tags": [
-      "模型路由",
-      "省成本",
-      "自动降级"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-routing-suite/"
-  },
-  {
-    "id": "dsh-ops",
-    "name": "dsh-ops",
-    "aliases": [],
-    "category": "workflow",
-    "category_label": "协作与工作流",
-    "summary": "底层操作工具集，优化 token 消耗与任务执行时间，适合大量自动化任务。",
-    "tags": [
-      "自动化",
-      "token优化"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-ops/"
-  },
-  {
-    "id": "answer-me-with-html",
-    "name": "answer-me-with-html",
-    "aliases": [],
-    "category": "workflow",
-    "category_label": "协作与工作流",
-    "summary": "让复杂问题用一页自包含的交互 HTML 回答，内含流程图、对比表格、交互图表，方便分享。",
-    "tags": [
-      "HTML",
-      "可视化回答",
-      "分享"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/answer-me-with-html/"
-  },
-  {
-    "id": "deepseek-bot",
-    "name": "DeepSeek-Bot",
-    "aliases": [],
-    "category": "workflow",
-    "category_label": "协作与工作流",
-    "summary": "长生命周期 Bot 团队，支持主 Bot、Bot 间消息与群聊，偏持久运行的自动化场景。",
-    "tags": [
-      "多智能体",
-      "Bot",
-      "长生命周期"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/deepseek-bot/"
+    "url": "/plugins/dsh-wechat/"
   },
   {
     "id": "ds-harness-remote",
@@ -662,7 +1081,7 @@
     "aliases": [],
     "category": "remote",
     "category_label": "移动端与远程",
-    "summary": "P2P 优先的加密网络实现多端远程访问，手机上继续看进度、发指令。",
+    "summary": "ds-harness-remote 是基于 DeepSeek Harness 插件机制的远程访问方案，通过低延迟、端到端加密的 P2P / 中继网络，让你用手机、电脑或浏览器随时连回本地 DSH 工作区，无需公网端口。",
     "tags": [
       "远程",
       "P2P",
@@ -680,9 +1099,10 @@
     "aliases": [],
     "category": "remote",
     "category_label": "移动端与远程",
-    "summary": "原生 iOS 客户端，通过 WebSocket 连接 Harness。",
+    "summary": "Whaleness（dsh-mobile）是 DeepSeek Harness 的第三方原生移动客户端，Android 与 iOS 通过 Kotlin Multiplatform 共享核心逻辑，经宿主端的 dsh-plugin-mobile-gateway 以 WebSocket 把工作区、会话、实时回复与 Agent 轨迹带到手机。",
     "tags": [
       "iOS",
+      "Android",
       "WebSocket",
       "移动"
     ],
@@ -698,7 +1118,7 @@
     "aliases": [],
     "category": "remote",
     "category_label": "移动端与远程",
-    "summary": "iOS 模拟器插件，支持 USB 连真机，提供一组 Agent 工具，偏开发调试。",
+    "summary": "dsh-ios 是 DeepSeek Harness 的 iOS 模拟器插件，在对话中提供实时模拟器画面与通过 USB 连接的真实 iPhone 画面，并赋予 AI 代理 22 个工具来启动设备、构建运行应用、驱动 UI 与调试检查。",
     "tags": [
       "iOS",
       "模拟器",
@@ -716,7 +1136,7 @@
     "aliases": [],
     "category": "content",
     "category_label": "内容创作与办公",
-    "summary": "长篇网文辅助创作系统，用章节管理与角色记忆缓解长篇创作里的遗忘和幻觉。",
+    "summary": "Webnovel Writer 是一套面向长篇连载的网文辅助创作系统，用结构化的章节管理、角色 / 设定记忆与一致性审查，缓解 AI 写作中的遗忘与前后矛盾，支持 200 万字量级连载。",
     "tags": [
       "网文",
       "长篇",
@@ -734,10 +1154,12 @@
     "aliases": [],
     "category": "content",
     "category_label": "内容创作与办公",
-    "summary": "面向网文、短剧、游戏脚本、视频解说的创作工作流，内置四个体裁工作台与提示词模板。",
+    "summary": "oh-story-dsh 是 DeepSeek Harness（DSH）的社区插件，把小说、短剧、互动游戏与视频解说四大创作工作台打包集成进 DSH Web，为本地作品目录提供专业的故事创作、改编与生产工具（与 DeepSeek 无隶属关系）。",
     "tags": [
+      "小说",
       "短剧",
-      "脚本",
+      "游戏脚本",
+      "视频解说",
       "工作流"
     ],
     "status_label": "社区",
@@ -752,11 +1174,12 @@
     "aliases": [],
     "category": "content",
     "category_label": "内容创作与办公",
-    "summary": "把电子表格、文档、幻灯片、画布、关系表集成进同一个运行时的 Office 插件。",
+    "summary": "dsh-univer-office 是 DeepSeek Harness（DSH）的 Univer 办公插件，把电子表格、文档、幻灯片、关系表与画布集成进统一运行时，让 AI 代理用自然语言创建 / 编辑 / 验证办公文件，并通过隔离工作树实现安全检查。",
     "tags": [
       "表格",
       "文档",
-      "幻灯片"
+      "幻灯片",
+      "画布"
     ],
     "status_label": "社区",
     "repo_confirmed": true,
@@ -765,160 +1188,159 @@
     "url": "/plugins/dsh-univer-office/"
   },
   {
-    "id": "dsh-purge",
-    "name": "dsh-purge",
+    "id": "dsh-minigames",
+    "name": "dsh-minigames",
     "aliases": [],
-    "category": "security",
-    "category_label": "安全与治理",
-    "summary": "该文所称的「解除回答限制」插件，不同模型可换不同提示词，默认面向国产模型优化。",
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "DSH Web UI 浮动小游戏窗口：等待模型回复或修 bug 时的摸鱼神器；折叠态留下可拖动浮动 🎮 按钮，展开态为可拖拽吸附的面板，内置多款离线小游戏。",
     "tags": [
-      "破限",
-      "提示词"
+      "游戏",
+      "摸鱼"
     ],
     "status_label": "社区",
     "repo_confirmed": true,
     "source_count": 1,
-    "flag": "涉及绕过模型安全策略，本站不评价；仓库地址返回 301",
-    "url": "/plugins/dsh-purge/"
+    "flag": "社区项目，非官方；注意 DSH 版本→插件版本对应关系，装错会崩（如 useConversation is not a function）",
+    "url": "/plugins/dsh-minigames/"
   },
   {
-    "id": "dsh-unrestricted",
-    "name": "dsh-unrestricted",
+    "id": "dsh-ads",
+    "name": "dsh-ads",
     "aliases": [],
-    "category": "security",
-    "category_label": "安全与治理",
-    "summary": "另一款提示词破限插件，适配 Web 与桌面端多模式及工具调用。",
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "把 DeepSeek Harness 的 Web UI 变成 2005 年门户网站风格的恶搞广告插件：侧栏广告、对话内信息流、推理中途弹窗与抽奖转盘等一整套虚构广告 UI，纯娱乐。",
     "tags": [
-      "破限",
-      "提示词"
+      "怀旧",
+      "界面"
     ],
     "status_label": "社区",
     "repo_confirmed": true,
     "source_count": 1,
-    "flag": "涉及绕过模型安全策略，本站不评价",
-    "url": "/plugins/dsh-unrestricted/"
+    "flag": "社区整活项目，非官方；广告会延迟回答显示，正式工作场景慎用",
+    "url": "/plugins/dsh-ads/"
   },
   {
-    "id": "deepsec",
-    "name": "DeepSec",
+    "id": "dsh-anti-ads",
+    "name": "dsh-anti-ads",
     "aliases": [],
-    "category": "security",
-    "category_label": "安全与治理",
-    "summary": "AI 安全攻防平台：Shield 审计生成代码里的幻觉包与缺失防护，Spear 做授权渗透测试。",
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "DSH Web 广告拦截器，用四层独立防御拦截 dsh-ads 插件的所有广告位；只针对 dsh-ads，右下角小徽章记录拦掉的弹层数。",
     "tags": [
-      "代码审计",
-      "渗透测试",
-      "安全"
+      "去广告",
+      "梗"
     ],
     "status_label": "社区",
     "repo_confirmed": true,
     "source_count": 1,
-    "flag": "渗透测试须在授权范围内使用",
-    "url": "/plugins/deepsec/"
+    "flag": "社区项目，非官方；仅针对 dsh-ads，需与 dsh-ads 配合才有意义",
+    "url": "/plugins/dsh-anti-ads/"
   },
   {
-    "id": "everos",
-    "name": "EverOS",
+    "id": "dsh-gomoku",
+    "name": "dsh-gomoku",
     "aliases": [],
-    "category": "memory",
-    "category_label": "记忆与知识",
-    "summary": "便携记忆层：本地优先、Markdown 原生、用户自有，给 Agent 加长期记忆。",
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "在 DSH 里和 AI 下五子棋，也可以让两个 AI 对局看谁棋力更强；15×15 棋盘嵌在侧边栏，每步落子来自 LLM 纯推理判断，黑/白提示词可编辑、推理过程可见。",
     "tags": [
-      "长期记忆",
-      "本地优先",
-      "Markdown"
+      "游戏",
+      "五子棋"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "社区项目，非官方；当前适配 dsh 0.2.0-rc.2，需 Web profile，不再兼容 0.1.x 客户端运行时",
+    "url": "/plugins/dsh-gomoku/"
+  },
+  {
+    "id": "dsh-qq2006",
+    "name": "dsh-qq2006",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "把 DeepSeek Harness 的 WebUI 一键变回 2006 年的 QQ 客户端：注册珊瑚蓝主题、镜像 body[data-ds-skin]、全局皮肤表 + 完整组件级补丁，从登录窗到聊天窗口全链路还原那个蓝色小企鹅。可切换、可持久化、默认皮肤零污染。",
+    "tags": [
+      "皮肤",
+      "怀旧"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "社区项目，非官方；npm 发行版仅含 token 换肤与全局皮肤表，登录窗/聊天窗等组件级效果需源码 monorepo 形态才完整",
+    "url": "/plugins/dsh-qq2006/"
+  },
+  {
+    "id": "dsh-ui-whale",
+    "name": "dsh-ui-whale",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "DSH Web UI 的常驻像素鲸鱼伙伴插件：在会话标题栏常驻一只手绘像素小鲸鱼，随会话快照实时反应——空闲眨眼、偶尔摆尾、思考时持续动、回合完成喷水、点击冒爱心、空闲久了睡觉，零核心改动。",
+    "tags": [
+      "皮肤",
+      "像素风",
+      "桌宠"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "社区项目，非官方；注意 DSH 版本→插件版本对应关系，装错会崩",
+    "url": "/plugins/dsh-ui-whale/"
+  },
+  {
+    "id": "dsh-emoji",
+    "name": "dsh-emoji",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "给 DeepSeek Harness 的 AI 回复加入可切换、自定义的行内表情与独立表情包；支持 B 站、小红书、贴吧、知乎等多平台表情包，也可自定义，让冷冰冰的回复多点 human 味。",
+    "tags": [
+      "表情包",
+      "趣味"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "社区项目，非官方",
+    "url": "/plugins/dsh-emoji/"
+  },
+  {
+    "id": "dsh-pet",
+    "name": "dsh-pet",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "一只住在 DeepSeek Harness 里的桌面宠物，100+ 段透明动画资产，可多开、拖拽甩抛、脱离浏览器独立运行，也能自定义宠物种类（pet pack）。",
+    "tags": [
+      "桌宠",
+      "DIY素材"
     ],
     "status_label": "社区",
     "repo_confirmed": true,
     "source_count": 1,
     "flag": "",
-    "url": "/plugins/everos/"
+    "url": "/plugins/dsh-pet/"
   },
   {
-    "id": "memos",
-    "name": "MemOS",
+    "id": "petdex",
+    "name": "petdex",
     "aliases": [],
-    "category": "memory",
-    "category_label": "记忆与知识",
-    "summary": "自进化记忆操作系统，支持超持久记忆、混合检索与跨任务迁移。",
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "面向 Codex、Claude Code、DSH、Hermes、OpenCode、Gemini 等多平台的动画宠物公共画廊，一个命令安装宠物，桌面应用让宠物悬浮并随 Agent 活动实时反应。",
     "tags": [
-      "记忆操作系统",
-      "混合检索"
+      "桌宠",
+      "画廊",
+      "跨平台"
     ],
     "status_label": "社区",
     "repo_confirmed": true,
     "source_count": 1,
     "flag": "",
-    "url": "/plugins/memos/"
-  },
-  {
-    "id": "reme",
-    "name": "ReMe",
-    "aliases": [],
-    "category": "memory",
-    "category_label": "记忆与知识",
-    "summary": "Agent 记忆管理工具包，提供更细粒度的记忆读写接口。",
-    "tags": [
-      "记忆",
-      "开发工具包"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/reme/"
-  },
-  {
-    "id": "dsh-plugin-gate",
-    "name": "dsh-plugin-gate",
-    "aliases": [],
-    "category": "security",
-    "category_label": "安全与治理",
-    "summary": "装插件前先扫本地目录与 npm 包：安装脚本、权限要求、密钥、外连请求，给出 BLOCK / WARN / PASS 判定。",
-    "tags": [
-      "安装前扫描",
-      "安全"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 2,
-    "flag": "",
-    "url": "/plugins/dsh-plugin-gate/"
-  },
-  {
-    "id": "dsh-find-plugin",
-    "name": "dsh-find-plugin",
-    "aliases": [],
-    "category": "market",
-    "category_label": "插件市场与发现",
-    "summary": "不想开图形界面时，让 Agent 直接在对话里搜 GitHub 上带 dsh-plugin 标签的仓库。",
-    "tags": [
-      "命令行",
-      "GitHub",
-      "发现"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-find-plugin/"
-  },
-  {
-    "id": "selection-toolbar",
-    "name": "划词工具条",
-    "aliases": [],
-    "category": "ui",
-    "category_label": "界面与体验",
-    "summary": "选中文字后弹出复制 / 引用 / 翻译 / 解释 / 总结菜单，还能「顺便问」开小窗提问而不打断主会话。",
-    "tags": [
-      "划词",
-      "交互"
-    ],
-    "status_label": "原文未说明",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "原文未给插件 ID",
-    "url": "/plugins/selection-toolbar/"
+    "url": "/plugins/petdex/"
   },
   {
     "id": "dsh-websearch",
@@ -926,7 +1348,7 @@
     "aliases": [],
     "category": "tool",
     "category_label": "工具与能力",
-    "summary": "并行查多个搜索引擎，去重后合并结果。",
+    "summary": "并行查询多个搜索引擎、对结果去重并合并的联网搜索插件（社区同类实现较多，未确认单一官方仓库）。",
     "tags": [
       "搜索",
       "聚合"
@@ -938,32 +1360,12 @@
     "url": "/plugins/dsh-websearch/"
   },
   {
-    "id": "browserskill",
-    "name": "BrowserSkill",
-    "aliases": [
-      "浏览器技能"
-    ],
-    "category": "tool",
-    "category_label": "工具与能力",
-    "summary": "让 AI 连上 Chrome / Edge，借用已有登录状态读页面、填表单、截长图；任务跑在独立可见的代理窗口里。",
-    "tags": [
-      "浏览器",
-      "自动化",
-      "腾讯"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/browserskill/"
-  },
-  {
     "id": "dsh-vision",
     "name": "dsh-vision",
     "aliases": [],
     "category": "visual",
     "category_label": "视觉与设计",
-    "summary": "视觉能力扩展类插件。",
+    "summary": "为 DSH 纯文本模型补充视觉识别能力的社区插件类别（GitHub 上存在多个同名仓库，未确认单一官方仓库）。",
     "tags": [
       "视觉",
       "多模态"
@@ -975,46 +1377,12 @@
     "url": "/plugins/dsh-vision/"
   },
   {
-    "id": "dsh-at-file",
-    "name": "dsh-at-file",
-    "aliases": [],
-    "category": "tool",
-    "category_label": "工具与能力",
-    "summary": "提供类似 @文件 的引用指令能力。",
-    "tags": [
-      "@文件",
-      "指令"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-at-file/"
-  },
-  {
-    "id": "skill-report",
-    "name": "技能调用报告",
-    "aliases": [],
-    "category": "tool",
-    "category_label": "工具与能力",
-    "summary": "自动统计每轮对话用了哪些 skill，可在面板里直接装卸、更新，方便搞清楚「AI 到底在干嘛」。",
-    "tags": [
-      "可观测",
-      "Skill"
-    ],
-    "status_label": "原文未说明",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "原文未给插件 ID",
-    "url": "/plugins/skill-report/"
-  },
-  {
     "id": "dsh-plan-execute",
     "name": "dsh-plan-execute",
     "aliases": [],
     "category": "workflow",
     "category_label": "协作与工作流",
-    "summary": "双模型路由：把规划与执行拆给不同模型。",
+    "summary": "双模型路由：把规划与执行拆给不同模型，复杂任务先由推理模型规划拆解，再交给经济模型执行，从而兼顾规划质量与执行成本。",
     "tags": [
       "双模型",
       "路由",
@@ -1023,282 +1391,8 @@
     "status_label": "社区",
     "repo_confirmed": false,
     "source_count": 1,
-    "flag": "原文仅给名称",
+    "flag": "",
     "url": "/plugins/dsh-plan-execute/"
-  },
-  {
-    "id": "dsh-diff-approval",
-    "name": "dsh-diff-approval",
-    "aliases": [],
-    "category": "workflow",
-    "category_label": "协作与工作流",
-    "summary": "保留或回滚 Agent 做过的每一次代码修改，便于逐笔审阅。",
-    "tags": [
-      "代码审阅",
-      "回滚",
-      "可追溯"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-diff-approval/"
-  },
-  {
-    "id": "dsh-memory-evolve",
-    "name": "dsh-memory-evolve",
-    "aliases": [],
-    "category": "memory",
-    "category_label": "记忆与知识",
-    "summary": "为智能体提供跨会话的长期记忆能力。",
-    "tags": [
-      "记忆",
-      "跨会话"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-memory-evolve/"
-  },
-  {
-    "id": "dsh-project-memory",
-    "name": "dsh-project-memory",
-    "aliases": [],
-    "category": "memory",
-    "category_label": "记忆与知识",
-    "summary": "项目级持久记忆：自动把任务清单、读过的文件与任务关联起来，切换上下文后能接着干。",
-    "tags": [
-      "记忆",
-      "项目级"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-project-memory/"
-  },
-  {
-    "id": "dsh-engram",
-    "name": "dsh-engram",
-    "aliases": [],
-    "category": "memory",
-    "category_label": "记忆与知识",
-    "summary": "SQLite 分层存储 + 全文与向量检索的记忆插件，dsh-project-memory 的替代之一。",
-    "tags": [
-      "记忆",
-      "SQLite",
-      "向量检索"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-engram/"
-  },
-  {
-    "id": "runtime36",
-    "name": "runtime36",
-    "aliases": [],
-    "category": "memory",
-    "category_label": "记忆与知识",
-    "summary": "把 Obsidian 笔记库导入为 Agent 知识库。",
-    "tags": [
-      "记忆",
-      "Obsidian",
-      "知识库"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/runtime36/"
-  },
-  {
-    "id": "dsh-basabase",
-    "name": "@basabase/dsh-plugin",
-    "aliases": [],
-    "category": "memory",
-    "category_label": "记忆与知识",
-    "summary": "让 Agent 访问可审计的知识库与结构化数据集。",
-    "tags": [
-      "知识库",
-      "数据库"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-basabase/"
-  },
-  {
-    "id": "dsh-api-dashboard",
-    "name": "dsh-api-dashboard",
-    "aliases": [],
-    "category": "billing",
-    "category_label": "模型与计费",
-    "summary": "在输入框附近显示多家模型平台的余额与本次会话 / 子 Agent 的 token 消耗估算。",
-    "tags": [
-      "余额",
-      "用量",
-      "多家平台"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-api-dashboard/"
-  },
-  {
-    "id": "dsh-api-balance",
-    "name": "dsh-api-balance",
-    "aliases": [],
-    "category": "billing",
-    "category_label": "模型与计费",
-    "summary": "只用 DeepSeek 原生 API 时更轻的余额显示替代品。",
-    "tags": [
-      "余额",
-      "轻量"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-api-balance/"
-  },
-  {
-    "id": "dsh-gov",
-    "name": "dsh-gov",
-    "aliases": [],
-    "category": "security",
-    "category_label": "安全与治理",
-    "summary": "Agent 治理工具包，实现 allow / deny / ask 三种工具权限模式。",
-    "tags": [
-      "权限",
-      "治理"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-gov/"
-  },
-  {
-    "id": "dsh-wechat",
-    "name": "dsh-wechat",
-    "aliases": [],
-    "category": "integration",
-    "category_label": "集成与迁移",
-    "summary": "把 AI 接进微信：电脑息屏时仍在值守，手机上审批权限、用自然语言或语音派活。",
-    "tags": [
-      "微信",
-      "远程"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-wechat/"
-  },
-  {
-    "id": "dsh-plugin-claude-bridge",
-    "name": "dsh-plugin-claude-bridge",
-    "aliases": [],
-    "category": "integration",
-    "category_label": "集成与迁移",
-    "summary": "迁移与集成工具，用于对接其他 Agent 生态。",
-    "tags": [
-      "迁移",
-      "桥接"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-plugin-claude-bridge/"
-  },
-  {
-    "id": "dsh-claude-move",
-    "name": "dsh-claude-move",
-    "aliases": [],
-    "category": "integration",
-    "category_label": "集成与迁移",
-    "summary": "从其他 Agent 工具迁移到 DSH 的配套工具。",
-    "tags": [
-      "迁移"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-claude-move/"
-  },
-  {
-    "id": "dsh-minigames",
-    "name": "dsh-minigames",
-    "aliases": [],
-    "category": "fun",
-    "category_label": "娱乐与彩蛋",
-    "summary": "18 款小游戏合集，含俄罗斯方块、贪吃蛇等，直接嵌进 DSH 界面。",
-    "tags": [
-      "游戏",
-      "摸鱼"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-minigames/"
-  },
-  {
-    "id": "dsh-ads",
-    "name": "dsh-ads",
-    "aliases": [],
-    "category": "fun",
-    "category_label": "娱乐与彩蛋",
-    "summary": "模拟 2005 年代中文互联网风格的广告 UI，纯怀旧彩蛋。",
-    "tags": [
-      "怀旧",
-      "界面"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-ads/"
-  },
-  {
-    "id": "dsh-anti-ads",
-    "name": "dsh-anti-ads",
-    "aliases": [],
-    "category": "fun",
-    "category_label": "娱乐与彩蛋",
-    "summary": "专门用来去掉 dsh-ads 广告的插件：社区里著名的插件攻防梗。",
-    "tags": [
-      "去广告",
-      "梗"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-anti-ads/"
-  },
-  {
-    "id": "dsh-gomoku",
-    "name": "dsh-gomoku",
-    "aliases": [],
-    "category": "fun",
-    "category_label": "娱乐与彩蛋",
-    "summary": "五子棋插件。",
-    "tags": [
-      "游戏"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-gomoku/"
   },
   {
     "id": "dsh-lazyfish",
@@ -1306,7 +1400,7 @@
     "aliases": [],
     "category": "fun",
     "category_label": "娱乐与彩蛋",
-    "summary": "摸鱼面板。",
+    "summary": "DSH 右侧摸鱼面板：聚合多源信息流与 B 站播放器，边等待模型边摸鱼（Lazy Fish = 摸鱼）。",
     "tags": [
       "摸鱼",
       "面板"
@@ -1314,74 +1408,7 @@
     "status_label": "社区",
     "repo_confirmed": false,
     "source_count": 1,
-    "flag": "",
+    "flag": "社区项目，非官方；未找到可验证的官方仓库（GitHub 搜索无果）",
     "url": "/plugins/dsh-lazyfish/"
-  },
-  {
-    "id": "dsh-qq2006",
-    "name": "dsh-qq2006",
-    "aliases": [],
-    "category": "fun",
-    "category_label": "娱乐与彩蛋",
-    "summary": "复古 QQ 皮肤。",
-    "tags": [
-      "皮肤",
-      "怀旧"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-qq2006/"
-  },
-  {
-    "id": "dsh-ui-whale",
-    "name": "dsh-ui-whale",
-    "aliases": [],
-    "category": "fun",
-    "category_label": "娱乐与彩蛋",
-    "summary": "像素鲸鱼主题。",
-    "tags": [
-      "皮肤",
-      "像素风"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-ui-whale/"
-  },
-  {
-    "id": "dsh-emoji",
-    "name": "dsh-emoji",
-    "aliases": [],
-    "category": "fun",
-    "category_label": "娱乐与彩蛋",
-    "summary": "让 AI 回复带上自己的表情包，不改页面结构，只改聊天气氛。",
-    "tags": [
-      "表情包"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-emoji/"
-  },
-  {
-    "id": "fabric",
-    "name": "fabric",
-    "aliases": [],
-    "category": "fun",
-    "category_label": "娱乐与彩蛋",
-    "summary": "简介明确致敬《我的世界》Mod 加载器 Fabric，是社区把 DSH 生态类比成 MC Mod 的注脚。",
-    "tags": [
-      "梗",
-      "Mod"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/fabric/"
   }
 ]

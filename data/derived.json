@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-06 22:00",
+  "generated_at": "2026-11-06 22:25",
   "stats": {
     "plugins": 78,
     "sources": 8,
     "wechat": 2,
     "refs_total": 90,
-    "repos_confirmed": 48,
+    "repos_confirmed": 74,
     "categories": 13
   },
   "categories": [
@@ -25,7 +25,7 @@
       "id": "tool",
       "label": "工具与能力",
       "desc": "搜索、浏览器、视觉、文件引用",
-      "count": 6
+      "count": 7
     },
     {
       "id": "workflow",
@@ -61,7 +61,7 @@
       "id": "fun",
       "label": "娱乐与彩蛋",
       "desc": "皮肤、桌宠、小游戏",
-      "count": 11
+      "count": 10
     },
     {
       "id": "model",

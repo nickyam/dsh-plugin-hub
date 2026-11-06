@@ -18,7 +18,7 @@ params:
     mentioned:
     - id: dsh-plugin-gate
       name: dsh-plugin-gate
-      repo_confirmed: false
+      repo_confirmed: true
     - id: dsh-mcp-client
       name: '@deepseek-ai/dsh-mcp-client'
       repo_confirmed: true

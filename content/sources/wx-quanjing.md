@@ -20,24 +20,6 @@ params:
     - id: dsh-market
       name: dsh-market
       repo_confirmed: true
-    - id: dsh-desktop
-      name: DSH Desktop
-      repo_confirmed: true
-    - id: dsh-better-sidebar
-      name: DSH Better Sidebar
-      repo_confirmed: true
-    - id: modsearch
-      name: ModSearch
-      repo_confirmed: true
-    - id: open-design
-      name: open-design
-      repo_confirmed: true
-    - id: dsh-agent-teams
-      name: dsh-agent-teams（社区版）
-      repo_confirmed: true
-    - id: whale-cost-widget
-      name: 小鲸鱼记账挂件
-      repo_confirmed: true
     - id: awesome-dsh-plugin
       name: awesome-dsh-plugin
       repo_confirmed: true
@@ -53,32 +35,11 @@ params:
     - id: awesome-deepseek-harness
       name: awesome-deepseek-harness
       repo_confirmed: true
-    - id: dsh-our-free-model
-      name: dsh-our-free-model
+    - id: dsh-desktop
+      name: DSH Desktop
       repo_confirmed: true
-    - id: dsh-plugin-subscriptions
-      name: dsh-plugin-subscriptions
-      repo_confirmed: true
-    - id: dsh-deepseek-web-login
-      name: dsh-deepseek-web-login
-      repo_confirmed: true
-    - id: modlens
-      name: modlens
-      repo_confirmed: true
-    - id: dsh-vision-toolkit
-      name: dsh-vision-toolkit
-      repo_confirmed: true
-    - id: archify
-      name: archify
-      repo_confirmed: true
-    - id: openpencil
-      name: openpencil
-      repo_confirmed: true
-    - id: deepseek-design
-      name: deepseek-design
-      repo_confirmed: true
-    - id: openbiliclaw
-      name: OpenBiliClaw
+    - id: dsh-better-sidebar
+      name: DSH Better Sidebar
       repo_confirmed: true
     - id: dsh-desktop-dataelement
       name: dsh-desktop（dataelement）
@@ -98,11 +59,32 @@ params:
     - id: dsh-x
       name: DSH-X
       repo_confirmed: true
-    - id: dsh-pet
-      name: dsh-pet
+    - id: modsearch
+      name: ModSearch
       repo_confirmed: true
-    - id: petdex
-      name: petdex
+    - id: openbiliclaw
+      name: OpenBiliClaw
+      repo_confirmed: true
+    - id: open-design
+      name: open-design
+      repo_confirmed: true
+    - id: modlens
+      name: modlens
+      repo_confirmed: true
+    - id: dsh-vision-toolkit
+      name: dsh-vision-toolkit
+      repo_confirmed: true
+    - id: archify
+      name: archify
+      repo_confirmed: true
+    - id: openpencil
+      name: openpencil
+      repo_confirmed: true
+    - id: deepseek-design
+      name: deepseek-design
+      repo_confirmed: true
+    - id: dsh-agent-teams
+      name: dsh-agent-teams（社区版）
       repo_confirmed: true
     - id: dsh-context
       name: dsh-context
@@ -118,6 +100,36 @@ params:
       repo_confirmed: true
     - id: deepseek-bot
       name: DeepSeek-Bot
+      repo_confirmed: true
+    - id: everos
+      name: EverOS
+      repo_confirmed: true
+    - id: memos
+      name: MemOS
+      repo_confirmed: true
+    - id: reme
+      name: ReMe
+      repo_confirmed: true
+    - id: dsh-our-free-model
+      name: dsh-our-free-model
+      repo_confirmed: true
+    - id: dsh-plugin-subscriptions
+      name: dsh-plugin-subscriptions
+      repo_confirmed: true
+    - id: dsh-deepseek-web-login
+      name: dsh-deepseek-web-login
+      repo_confirmed: true
+    - id: whale-cost-widget
+      name: 小鲸鱼记账挂件
+      repo_confirmed: true
+    - id: dsh-purge
+      name: dsh-purge
+      repo_confirmed: true
+    - id: dsh-unrestricted
+      name: dsh-unrestricted
+      repo_confirmed: true
+    - id: deepsec
+      name: DeepSec
       repo_confirmed: true
     - id: ds-harness-remote
       name: ds-harness-remote
@@ -137,23 +149,11 @@ params:
     - id: dsh-univer-office
       name: dsh-univer-office
       repo_confirmed: true
-    - id: dsh-purge
-      name: dsh-purge
+    - id: dsh-pet
+      name: dsh-pet
       repo_confirmed: true
-    - id: dsh-unrestricted
-      name: dsh-unrestricted
-      repo_confirmed: true
-    - id: deepsec
-      name: DeepSec
-      repo_confirmed: true
-    - id: everos
-      name: EverOS
-      repo_confirmed: true
-    - id: memos
-      name: MemOS
-      repo_confirmed: true
-    - id: reme
-      name: ReMe
+    - id: petdex
+      name: petdex
       repo_confirmed: true
     mentioned_count: 46
   generated: true
