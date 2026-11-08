@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-08 18:12",
+  "generated_at": "2026-11-08 21:35",
   "stats": {
     "plugins": 75,
-    "sources": 9,
+    "sources": 6,
     "wechat": 3,
     "refs_total": 87,
     "repos_confirmed": 75,
@@ -110,12 +110,6 @@
       "publisher": "微信公众号（原文署名待补）",
       "kind_label": "公众号"
     },
-    "official-harness": {
-      "title": "DeepSeek Harness 官网：Everything is a plugin",
-      "url": "https://www.deepseek.com/en/harness/",
-      "publisher": "DeepSeek 官方",
-      "kind_label": "官方文档"
-    },
     "baike-dsh": {
       "title": "百度百科：DeepSeek Harness",
       "url": "https://baike.baidu.com/item/deepseek%20harness/68533699",
@@ -128,22 +122,10 @@
       "publisher": "TreeRouter Blog（英文，第三方）",
       "kind_label": "第三方媒体"
     },
-    "dsh-plugin-org": {
-      "title": "DSH Plugin Hub（中文插件目录站）",
-      "url": "https://dsh-plugin.org/zh",
-      "publisher": "dsh-plugin.org（社区，非官方）",
-      "kind_label": "目录站"
-    },
     "deepseekai-works": {
       "title": "DSH Plugins: What They Are, Where to Find Them, and How to Write One",
       "url": "https://deepseekai.works/plugins",
       "publisher": "deepseekai.works（第三方教程站）",
-      "kind_label": "教程 / 指南"
-    },
-    "dsh-plugin-net": {
-      "title": "What is a DSH plugin?（Plugin / Bundle / Profile 的区别）",
-      "url": "https://dsh-plugin.net/guides/what-is-dshplugin",
-      "publisher": "dsh-plugin.net（社区，非官方）",
       "kind_label": "教程 / 指南"
     },
     "wx-quanjing": {

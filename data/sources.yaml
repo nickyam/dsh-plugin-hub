@@ -1,5 +1,6 @@
-# 来源台账：每读一篇文章（公众号 / 官网 / 百科 / 目录站）就在这里加一条
-# 规则：不确定的字段留空或写「待补」，绝不猜日期、猜署名、猜数字。
+# 来源台账：每读一篇文章（公众号 / 百科 / 第三方媒体 / 教程等）就在这里加一条
+# 规则：只登记本站实际引用过的线索来源，没有插件引用的空条目不保留；
+#       不确定的字段留空或写「待补」，绝不猜日期、猜署名、猜数字。
 # kind 取值：wechat / official / encyclopedia / media / catalog / guide
 
 - id: wx-dabaihua
@@ -10,15 +11,6 @@
   date_note: "原文未标注发布日期，待补"
   note: "本批种子资料里唯一的公众号长文。讲了 DSH 定位、两条安装路线、官方预置插件，并列出 8 个自用社区插件；文末自述参考了另外四篇文章，存在二次转述，涉及数字的说法本站一律不直接采信。"
   tags: [入门, 插件清单, 公众号]
-
-- id: official-harness
-  title: "DeepSeek Harness 官网：Everything is a plugin"
-  kind: official
-  publisher: "DeepSeek 官方"
-  url: "https://www.deepseek.com/en/harness/"
-  date_note: "开发者预览版，文档持续更新"
-  note: "一手口径：Cordis 内核、一切皆插件、Standard / Code / Minimal / Creator 四种模式、append-only session log、官方内置插件清单，以及 npx @deepseek-ai/dsh web 启动方式。凡与二手文章冲突，以官网为准并保留差异记录。注意：官网列出的内置能力属开箱即用，本站不建插件条目，该来源只作核对基准。"
-  tags: [官方, 架构, 入门]
 
 - id: baike-dsh
   title: "百度百科：DeepSeek Harness"
@@ -38,15 +30,6 @@
   note: "给出 Top10 清单、安装命令与同类替代品（记忆 / 计费 / 安全三组），可与公众号清单交叉印证；文中 star 数属特定时间切片，本站不引用。"
   tags: [英文, Top10, 安装命令]
 
-- id: dsh-plugin-org
-  title: "DSH Plugin Hub（中文插件目录站）"
-  kind: catalog
-  publisher: "dsh-plugin.org（社区，非官方）"
-  url: "https://dsh-plugin.org/zh"
-  date_note: "持续更新"
-  note: "把 DSH 插件拆成十一大类，并强调 DSH 仍是开发者预览、可能有破坏性变更。本站分类体系参考了它，但没有照搬。"
-  tags: [目录站, 分类, 非官方]
-
 - id: deepseekai-works
   title: "DSH Plugins: What They Are, Where to Find Them, and How to Write One"
   kind: guide
@@ -55,15 +38,6 @@
   date_note: "未标注"
   note: "讲清 plugin / MCP server / skill / subagent 四种扩展点的区别、dsh.bundle 打包与 GitHub topic dsh-plugin 发现机制，以及 pnpm allowBuilds 的安全含义。用于给插件条目做机制性注释。"
   tags: [开发, MCP, 机制]
-
-- id: dsh-plugin-net
-  title: "What is a DSH plugin?（Plugin / Bundle / Profile 的区别）"
-  kind: guide
-  publisher: "dsh-plugin.net（社区，非官方）"
-  url: "https://dsh-plugin.net/guides/what-is-dshplugin"
-  date_note: "未标注"
-  note: "区分 plugin（Cordis 里挂载的代码单元）、bundle（带 dsh.bundle manifest 的 npm 包）、profile（可运行的组合），并说明兼容声明要标注版本与日期。本站「安装方式」字段按这个口径填写。"
-  tags: [开发, 术语, 非官方]
 
 - id: wx-quanjing
   title: "DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件"
