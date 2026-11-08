@@ -515,7 +515,7 @@
     "status_label": "社区",
     "repo_confirmed": true,
     "source_count": 1,
-    "flag": "与 dsh-vision、dsh-vision-toolkit 是不同条目，本站不合并",
+    "flag": "与 dsh-vision-toolkit 是不同条目，本站不合并",
     "url": "/plugins/modlens/"
   },
   {
@@ -534,7 +534,7 @@
     "status_label": "社区",
     "repo_confirmed": true,
     "source_count": 1,
-    "flag": "与 dsh-vision 名称相近，勿混；视觉能力打包自上游 agent-vision-toolkit",
+    "flag": "视觉能力打包自上游 agent-vision-toolkit",
     "url": "/plugins/dsh-vision-toolkit/"
   },
   {
@@ -1365,74 +1365,5 @@
     "source_count": 1,
     "flag": "",
     "url": "/plugins/petdex/"
-  },
-  {
-    "id": "dsh-websearch",
-    "name": "dsh-websearch",
-    "aliases": [],
-    "category": "tool",
-    "category_label": "工具与能力",
-    "summary": "并行查询多个搜索引擎、对结果去重并合并的联网搜索插件（社区同类实现较多，未确认单一官方仓库）。",
-    "tags": [
-      "搜索",
-      "聚合"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-websearch/"
-  },
-  {
-    "id": "dsh-vision",
-    "name": "dsh-vision",
-    "aliases": [],
-    "category": "visual",
-    "category_label": "视觉与设计",
-    "summary": "为 DSH 纯文本模型补充视觉识别能力的社区插件类别（GitHub 上存在多个同名仓库，未确认单一官方仓库）。",
-    "tags": [
-      "视觉",
-      "多模态"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "与 dsh-vision-toolkit 名称相近，勿混",
-    "url": "/plugins/dsh-vision/"
-  },
-  {
-    "id": "dsh-plan-execute",
-    "name": "dsh-plan-execute",
-    "aliases": [],
-    "category": "workflow",
-    "category_label": "协作与工作流",
-    "summary": "双模型路由：把规划与执行拆给不同模型，复杂任务先由推理模型规划拆解，再交给经济模型执行，从而兼顾规划质量与执行成本。",
-    "tags": [
-      "双模型",
-      "路由",
-      "省成本"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-plan-execute/"
-  },
-  {
-    "id": "dsh-lazyfish",
-    "name": "dsh-lazyfish",
-    "aliases": [],
-    "category": "fun",
-    "category_label": "娱乐与彩蛋",
-    "summary": "DSH 右侧摸鱼面板：聚合多源信息流与 B 站播放器，边等待模型边摸鱼（Lazy Fish = 摸鱼）。",
-    "tags": [
-      "摸鱼",
-      "面板"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": false,
-    "source_count": 1,
-    "flag": "社区项目，非官方；未找到可验证的官方仓库（GitHub 搜索无果）",
-    "url": "/plugins/dsh-lazyfish/"
   }
 ]

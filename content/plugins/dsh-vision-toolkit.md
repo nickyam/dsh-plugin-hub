@@ -25,7 +25,7 @@ params:
     - 实战检验的方法论：捆绑 vision-skills，带入上游 playbooks 指导 Agent 看什么、选什么工具、如何验证
     - 10 种可组合视觉工具：vision_glance、vision_ground、vision_detect、vision_crop、vision_trace、vision_long_screenshot_ocr 等，坐标统一用原始像素格式
     tags: *id001
-    flag: 与 dsh-vision 名称相近，勿混；视觉能力打包自上游 agent-vision-toolkit
+    flag: 视觉能力打包自上游 agent-vision-toolkit
     notes: README 注明其视觉能力来自打包固定的上游项目 agent-vision-toolkit，本仓库负责 DSH 原生集成。另提供 headless / desktop profile 的同形安装命令。
     refs:
     - id: wx-quanjing

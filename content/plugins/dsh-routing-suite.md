@@ -24,7 +24,7 @@ params:
     - 单仓库三件套：injector / preset / graded 直接入库，一键安装装配
     - 实测驱动：router-standard 预设 P1-P23 实测，含路由收敛与反稀释数据
     tags: *id001
-    notes: 与百科里只有名字的 dsh-plan-execute（双模型路由）是同类不同实现，本站不合并。DSH Target：>=0.1.0-rc.6 <0.2.0（已跟进 rc.8 / 0.1.1-rc.2 等）。
+    notes: DSH Target：>=0.1.0-rc.6 <0.2.0（已跟进 rc.8 / 0.1.1-rc.2 等）。
     refs:
     - id: wx-quanjing
       title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件

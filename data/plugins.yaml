@@ -392,27 +392,10 @@
   - 搜索
   - 免费
   - 省成本
-  notes: 与 dsh-websearch 属同类不同实现，本站不合并；官方自带网页搜索属开箱即用能力，不在收录范围。桌面端在 Plugins → Add plugin 输入 @liustack/modsearch。Key 存于 ~/.modsearch/config.json（权限 0600，显示时脱敏）。
+  notes: 官方自带网页搜索属开箱即用能力，不在收录范围。桌面端在 Plugins → Add plugin 输入 @liustack/modsearch。Key 存于 ~/.modsearch/config.json（权限 0600，显示时脱敏）。
   refs:
   - wx-dabaihua
   - wx-quanjing
-- id: dsh-websearch
-  name: dsh-websearch
-  category: tool
-  status: community
-  repo: ''
-  install: ''
-  summary: 并行查询多个搜索引擎、对结果去重并合并的联网搜索插件（社区同类实现较多，未确认单一官方仓库）。
-  features:
-  - 并行查询多个（约 11 个）搜索引擎
-  - 对返回结果去重
-  - 合并去重后的结果供模型使用
-  tags:
-  - 搜索
-  - 聚合
-  notes: 未找到官方仓库（GitHub 搜索无果，社区存在多个名称相近的 dsh-web-search 实现），内容依据参考文章整理，安装命令待补。
-  refs:
-  - tree-top10
 - id: browserskill
   name: BrowserSkill
   aliases:
@@ -512,23 +495,6 @@
   - baike-dsh
 
 # ── 视觉与设计 ─────────────────────────────────────────────────
-- id: dsh-vision
-  name: dsh-vision
-  category: visual
-  status: community
-  repo: ''
-  install: ''
-  summary: 为 DSH 纯文本模型补充视觉识别能力的社区插件类别（GitHub 上存在多个同名仓库，未确认单一官方仓库）。
-  features:
-  - 为纯文本模型补充图像识别 / 视觉理解能力
-  - 常见实现方式：桥接 OpenAI 兼容 VLM，或由本地 / 系统 OCR 兜底
-  tags:
-  - 视觉
-  - 多模态
-  flag: 与 dsh-vision-toolkit 名称相近，勿混
-  notes: 未找到单一权威官方仓库（GitHub 上同名社区仓库有 sjakdhasdh / yepyeel / oil-oil / william-jin-cmu 等多个），内容依据参考文章整理，安装命令待补。
-  refs:
-  - baike-dsh
 - id: open-design
   name: open-design
   category: visual
@@ -567,7 +533,7 @@
   - OCR
   - 视觉
   - 结构化输出
-  flag: 与 dsh-vision、dsh-vision-toolkit 是不同条目，本站不合并
+  flag: 与 dsh-vision-toolkit 是不同条目，本站不合并
   notes: README 注明 Web UI 里直接粘贴图片可能被宿主拒绝（DeepSeek 适配器硬编码 inputModalities 为 text），read_image 在 Web UI 已验证端到端可用。仓库另含兄弟插件 ModSearch（免费网页搜索）。
   refs:
   - wx-quanjing
@@ -589,7 +555,7 @@
   - UI还原
   - 批量处理
   - 视觉
-  flag: 与 dsh-vision 名称相近，勿混；视觉能力打包自上游 agent-vision-toolkit
+  flag: 视觉能力打包自上游 agent-vision-toolkit
   notes: README 注明其视觉能力来自打包固定的上游项目 agent-vision-toolkit，本仓库负责 DSH 原生集成。另提供 headless / desktop profile 的同形安装命令。
   refs:
   - wx-quanjing
@@ -680,24 +646,6 @@
   - baike-dsh
   - wx-dabaihua
   - wx-quanjing
-- id: dsh-plan-execute
-  name: dsh-plan-execute
-  category: workflow
-  status: community
-  repo: ''
-  install: ''
-  summary: 双模型路由：把规划与执行拆给不同模型，复杂任务先由推理模型规划拆解，再交给经济模型执行，从而兼顾规划质量与执行成本。
-  features:
-  - 规划与执行分离：复杂任务由推理模型产出方案，经济模型负责落地
-  - 按需规划：执行模型先判断是否需要规划，需要时才调用规划模型
-  - 降本增效：规划阶段保证思考质量，执行阶段压低 token 成本
-  tags:
-  - 双模型
-  - 路由
-  - 省成本
-  notes: 未找到与 ID 同名且可公开访问验证的仓库；检索命中多为名称相近的 dsh-plan-and-execute（如 Yaaaaaaa233/dsh-plan-and-execute，双模型路由/规划执行分离）以及不公开的 dsh-external/dsh-plan-execute，内容依据参考文章整理。
-  refs:
-  - baike-dsh
 - id: dsh-diff-approval
   name: dsh-diff-approval
   category: workflow
@@ -756,7 +704,7 @@
   - 模型路由
   - 省成本
   - 自动降级
-  notes: 与百科里只有名字的 dsh-plan-execute（双模型路由）是同类不同实现，本站不合并。DSH Target：>=0.1.0-rc.6 <0.2.0（已跟进 rc.8 / 0.1.1-rc.2 等）。
+  notes: DSH Target：>=0.1.0-rc.6 <0.2.0（已跟进 rc.8 / 0.1.1-rc.2 等）。
   refs:
   - wx-quanjing
 - id: dsh-ops
@@ -1547,24 +1495,6 @@
   - 五子棋
   flag: 社区项目，非官方；当前适配 dsh 0.2.0-rc.2，需 Web profile，不再兼容 0.1.x 客户端运行时
   notes: README 提示：需 Web profile（如内置 web profile），适配 dsh 0.2.0-rc.2；使用新版 dsh.client 声明与 dsh-client-ui-renderer 插槽，升级 dsh 后应重新做兼容性检查。
-  refs:
-  - baike-dsh
-- id: dsh-lazyfish
-  name: dsh-lazyfish
-  category: fun
-  status: community
-  repo: ''
-  install: ''
-  summary: DSH 右侧摸鱼面板：聚合多源信息流与 B 站播放器，边等待模型边摸鱼（Lazy Fish = 摸鱼）。
-  features:
-  - DSH 右侧常驻摸鱼面板
-  - 聚合多源信息流 + B 站播放器
-  - 与任务/会话状态联动显示
-  tags:
-  - 摸鱼
-  - 面板
-  flag: 社区项目，非官方；未找到可验证的官方仓库（GitHub 搜索无果）
-  notes: 未找到官方仓库（GitHub 搜索无果）：目录记录 owner 为 dsh-external/dsh-lazyfish，但 GitHub 元数据未确认公开仓库。内容依据参考文章（baike-dsh / awesome-dsh-plugins 目录）整理，安装前请自行核实仓库与源码。
   refs:
   - baike-dsh
 - id: dsh-qq2006

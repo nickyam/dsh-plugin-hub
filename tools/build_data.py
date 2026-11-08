@@ -12,6 +12,7 @@ content/plugins/*.md、content/sources/*.md、static/search.json、data/derived.
 
 内容来源：每个插件以官方 GitHub 仓库（repo）为准，简介/安装/功能亮点均依据 README 整理；
 公众号与社区文章仅作为「发现来源 / 参考」（refs），不渲染原文、不作为正文。
+只收能核实到官方仓库的插件：缺 repo 直接报错，不留「待确认」占位条目。
 """
 import json
 import sys
@@ -117,8 +118,9 @@ def main():
             if r not in source_map:
                 errors.append(f"插件 {p.get('id')} 引用了不存在的来源：{r}")
         if not p.get("repo"):
-            warnings.append(
-                f"插件 {p.get('id')} 缺少 repo：尚未找到官方 GitHub 仓库，内容待依据 README 补全"
+            errors.append(
+                f"插件 {p.get('id')} 缺少 repo：本站只收已确认官方仓库的插件，"
+                "找不到可信仓库就不要建条目（不要留空占位）"
             )
 
     # 别名撞车检查：只警告，不阻断（撞车往往正是需要人工合并的信号）

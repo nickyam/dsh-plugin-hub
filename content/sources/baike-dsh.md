@@ -28,15 +28,9 @@ params:
     - id: dsh-fabric
       name: dsh-fabric
       repo_confirmed: true
-    - id: dsh-vision
-      name: dsh-vision
-      repo_confirmed: false
     - id: dsh-agent-teams
       name: dsh-agent-teams（社区版）
       repo_confirmed: true
-    - id: dsh-plan-execute
-      name: dsh-plan-execute
-      repo_confirmed: false
     - id: dsh-memory-evolve
       name: dsh-memory-evolve
       repo_confirmed: true
@@ -58,16 +52,13 @@ params:
     - id: dsh-gomoku
       name: dsh-gomoku
       repo_confirmed: true
-    - id: dsh-lazyfish
-      name: dsh-lazyfish
-      repo_confirmed: false
     - id: dsh-qq2006
       name: dsh-qq2006
       repo_confirmed: true
     - id: dsh-ui-whale
       name: dsh-ui-whale
       repo_confirmed: true
-    mentioned_count: 17
+    mentioned_count: 14
   generated: true
 ---
 

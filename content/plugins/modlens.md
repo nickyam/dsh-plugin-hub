@@ -24,7 +24,7 @@ params:
     - 多 Key 轮转：逗号分隔的 Key 在鉴权 / 限流 / 配额失败时轮转，其他失败跳过剩余 Key 保留既有故障转移
     - 证据而非臆测：输出完整转录、阅读顺序版面区域、实体与关系列表，模型可引用具体细节
     tags: *id001
-    flag: 与 dsh-vision、dsh-vision-toolkit 是不同条目，本站不合并
+    flag: 与 dsh-vision-toolkit 是不同条目，本站不合并
     notes: README 注明 Web UI 里直接粘贴图片可能被宿主拒绝（DeepSeek 适配器硬编码 inputModalities 为 text），read_image 在 Web UI 已验证端到端可用。仓库另含兄弟插件 ModSearch（免费网页搜索）。
     refs:
     - id: wx-quanjing

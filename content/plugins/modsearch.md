@@ -25,7 +25,7 @@ params:
     - 可配多 Key 轮转；支持 Antigravity CLI、自托管端点
     - X（Twitter）搜索（需 Grok Build）；搜索、抓取、引用一体
     tags: *id001
-    notes: 与 dsh-websearch 属同类不同实现，本站不合并；官方自带网页搜索属开箱即用能力，不在收录范围。桌面端在 Plugins → Add plugin 输入 @liustack/modsearch。Key 存于 ~/.modsearch/config.json（权限 0600，显示时脱敏）。
+    notes: 官方自带网页搜索属开箱即用能力，不在收录范围。桌面端在 Plugins → Add plugin 输入 @liustack/modsearch。Key 存于 ~/.modsearch/config.json（权限 0600，显示时脱敏）。
     refs:
     - id: wx-dabaihua
       title: DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单

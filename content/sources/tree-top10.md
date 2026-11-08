@@ -28,9 +28,6 @@ params:
     - id: dsh-desktop
       name: DSH Desktop
       repo_confirmed: true
-    - id: dsh-websearch
-      name: dsh-websearch
-      repo_confirmed: false
     - id: open-design
       name: open-design
       repo_confirmed: true
@@ -61,7 +58,7 @@ params:
     - id: dsh-gov
       name: dsh-gov
       repo_confirmed: true
-    mentioned_count: 15
+    mentioned_count: 14
   generated: true
 ---
 

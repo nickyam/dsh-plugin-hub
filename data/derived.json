@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-08 17:45",
+  "generated_at": "2026-11-08 18:12",
   "stats": {
-    "plugins": 79,
+    "plugins": 75,
     "sources": 9,
     "wechat": 3,
-    "refs_total": 91,
+    "refs_total": 87,
     "repos_confirmed": 75,
     "categories": 13
   },
@@ -25,13 +25,13 @@
       "id": "tool",
       "label": "工具与能力",
       "desc": "搜索、浏览器、视觉、文件引用",
-      "count": 7
+      "count": 6
     },
     {
       "id": "workflow",
       "label": "协作与工作流",
       "desc": "多智能体、任务编排、代码审阅",
-      "count": 9
+      "count": 8
     },
     {
       "id": "memory",
@@ -61,7 +61,7 @@
       "id": "fun",
       "label": "娱乐与彩蛋",
       "desc": "皮肤、桌宠、小游戏",
-      "count": 10
+      "count": 9
     },
     {
       "id": "model",
@@ -73,7 +73,7 @@
       "id": "visual",
       "label": "视觉与设计",
       "desc": "看图、UI 还原、图表与设计资产",
-      "count": 7
+      "count": 6
     },
     {
       "id": "content",

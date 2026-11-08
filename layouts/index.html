@@ -52,7 +52,7 @@
 
   <div class="columns">
     <div class="col-main">
-      <div class="result-bar"><span id="result-count">{{ $stats.plugins }} 个插件</span><span class="muted">已确认官方仓库的排前面</span></div>
+      <div class="result-bar"><span id="result-count">{{ $stats.plugins }} 个插件</span><span class="muted">全部已确认官方仓库</span></div>
       <div class="cards" id="cards">
         {{ range sort (where site.RegularPages "Section" "plugins") "Weight" "desc" }}
           {{ partial "card.html" . }}
@@ -66,7 +66,7 @@
         <h2>卡片上的徽章</h2>
         <ul class="legend">
           <li><span class="badge badge-green">官方仓库已确认</span> 已链到 GitHub 仓库</li>
-          <li><span class="badge badge-ghost">仓库待确认</span> 暂未找到官方仓库</li>
+          <li><span class="mini-tag">社区 / 官方</span> 插件发布方性质</li>
           <li><span class="mini-tag mini-tag-warn">提示</span> 名称 / ID / 兼容性待核</li>
         </ul>
       </section>
