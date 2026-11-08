@@ -664,6 +664,30 @@
     "url": "/plugins/dsh-ops/"
   },
   {
+    "id": "dsh-devops",
+    "name": "dsh-devops",
+    "aliases": [
+      "@bigbigtooth/dsh-devops",
+      "DSH-DevOps-Plugin",
+      "远程运维"
+    ],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "把服务器运维搬进 DSH Web 侧栏：管理 SSH 服务器、监控硬件 / 进程 / 日志、定时做只读 AI 巡检，并把 Git 仓库部署到服务器，形成可复用的部署闭环。",
+    "tags": [
+      "运维",
+      "SSH",
+      "部署",
+      "监控",
+      "AI巡检"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "涉及生产服务器写操作，请先在测试环境验证",
+    "url": "/plugins/dsh-devops/"
+  },
+  {
     "id": "answer-me-with-html",
     "name": "answer-me-with-html",
     "aliases": [],

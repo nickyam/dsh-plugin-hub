@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-06 23:09",
+  "generated_at": "2026-11-08 17:45",
   "stats": {
-    "plugins": 78,
-    "sources": 8,
-    "wechat": 2,
-    "refs_total": 90,
-    "repos_confirmed": 74,
+    "plugins": 79,
+    "sources": 9,
+    "wechat": 3,
+    "refs_total": 91,
+    "repos_confirmed": 75,
     "categories": 13
   },
   "categories": [
@@ -31,7 +31,7 @@
       "id": "workflow",
       "label": "协作与工作流",
       "desc": "多智能体、任务编排、代码审阅",
-      "count": 8
+      "count": 9
     },
     {
       "id": "memory",
@@ -150,6 +150,12 @@
       "title": "DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件",
       "url": "https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw",
       "publisher": "智宇AI说",
+      "kind_label": "公众号"
+    },
+    "wx-devops": {
+      "title": "DeepSeek Harness这个神级插件，用完我直接跪了！",
+      "url": "https://mp.weixin.qq.com/s/gdWT1tC-ajn2HMjwJJKA4w",
+      "publisher": "运维网工（原文署名 bigbigtooth）",
       "kind_label": "公众号"
     }
   },

@@ -73,3 +73,12 @@
   date_note: "2026-10-29 13:20（浙江）"
   note: "第二篇公众号清单文，按 14 类逐个介绍插件，附 GitHub 地址、Stars 排行与七条生态洞察。本站按正文实际条目收录（标题写 36 款，正文列了 46 个）；仓库地址抽查 24 个，23 个返回 200、1 个 301 重定向，可作为线索但未经逐一内容核对；Stars 数字一律不进插件卡。"
   tags: [清单, 公众号, 插件推荐, 14大类]
+
+- id: wx-devops
+  title: "DeepSeek Harness这个神级插件，用完我直接跪了！"
+  kind: wechat
+  publisher: "运维网工（原文署名 bigbigtooth）"
+  url: "https://mp.weixin.qq.com/s/gdWT1tC-ajn2HMjwJJKA4w"
+  date_note: "2026-11-03 09:34（重庆）"
+  note: "第三篇公众号，但是单插件深度介绍而非清单文：讲 dsh-devops 的 SSH 运维、AI 巡检与 Git 部署闭环，正文与仓库中文 README 高度重叠。本站只把它当发现来源，插件内容一律以官方仓库 README 为准；文章的推荐口吻、评价性标题与文末加群信息不采信。"
+  tags: [公众号, 运维, 单插件]
