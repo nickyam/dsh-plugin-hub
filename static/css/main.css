@@ -119,9 +119,6 @@ button, input, select, textarea { font: inherit; }
 .header-search { display: inline-flex; align-items: center; gap: 7px; border: var(--rule-hair) solid var(--color-rule); background: var(--color-paper); padding: 7px 13px; border-radius: var(--radius-control); font-size: var(--text-sm); color: var(--color-ink-2); text-decoration: none; }
 .header-search:hover { border-color: var(--color-rule-2); text-decoration: none; }
 /* 右上角姊妹站入口：淡蓝底 + 主色描边，hover 反白 */
-.header-cta { display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0; border: var(--rule-hair) solid var(--color-accent); background: var(--color-accent-wash); color: var(--color-accent-text); padding: 7px 12px; border-radius: var(--radius-control); font-size: var(--text-sm); font-weight: 500; text-decoration: none; white-space: nowrap; }
-.header-cta:hover { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-accent-ink); text-decoration: none; }
-.header-cta svg { flex-shrink: 0; }
 
 /* ── Hero ───────────────────────────────────────────── */
 .hero { background: var(--color-paper); padding-top: var(--space-3xl); padding-bottom: 0; }
@@ -347,7 +344,6 @@ button, input, select, textarea { font: inherit; }
   .nav { order: 3; flex: 0 0 100%; width: 100%; overflow-x: auto; }
   .nav a { padding: 5px 9px; white-space: nowrap; }
   .header-search { display: none; }
-  .header-cta { margin-left: auto; padding: 5px 9px; font-size: var(--text-xs); }
   .hero { padding-top: var(--space-2xl); }
   .stats { grid-template-columns: repeat(3, 1fr); }
   .stat { border-bottom: var(--rule-hair) solid var(--color-rule); }
