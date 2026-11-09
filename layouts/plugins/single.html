@@ -58,18 +58,6 @@
       </section>
       {{ end }}
 
-      {{ with $p.refs }}
-      <section class="panel panel-soft">
-        <h2>参考文章 <small>发现来源，非正文</small></h2>
-        <p class="panel-note">以下文章是本站发现该插件的来源，仅供对照；插件介绍以上方官方仓库为准。</p>
-        <ul class="ref-list">
-          {{ range . }}
-          <li><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a><span class="mini-tag">{{ .kind_label }}，{{ .publisher }}</span></li>
-          {{ end }}
-        </ul>
-      </section>
-      {{ end }}
-
       <p class="disclaimer">本站内容依据各插件的<strong>官方 GitHub 仓库 README</strong> 整理，<strong>未对以上插件做安装实测</strong>，也不保证它们与当前版本 DSH 兼容。DSH 处于开发者预览版，插件机制可能有破坏性变更；安装第三方插件等于把可信代码放进运行时，请先看权限、安装脚本与外连请求。</p>
     </div>
 
