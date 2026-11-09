@@ -36,6 +36,10 @@ DEPLOY_DIR="/opt/1panel/apps/openresty/openresty/www/sites/${DOMAIN}/index/${SUB
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PUBLIC_DIR="${REPO_ROOT}/public"
 
+# 优先 GNU rsync 3.x（中文目录名与 filter 行为更可靠），没有则回退系统 rsync。
+RSYNC_BIN="${RSYNC_BIN:-/opt/homebrew/bin/rsync}"
+[ -x "${RSYNC_BIN}" ] || RSYNC_BIN="$(command -v rsync)"
+
 log() { printf '\033[36m[deploy]\033[0m %s\n' "$*"; }
 die() { printf '\033[31m[deploy] ERROR:\033[0m %s\n' "$*" >&2; exit 1; }
 
@@ -58,7 +62,7 @@ log "构建完成：$(find "${PUBLIC_DIR}" -name '*.html' | wc -l | tr -d ' ') �
 log "同步到 ${REMOTE_HOST}:${DEPLOY_DIR}"
 ssh -i "${SSH_KEY}" -o StrictHostKeyChecking=no "${REMOTE_HOST}" "mkdir -p '${DEPLOY_DIR}'"
 
-rsync -az --delete --delete-excluded \
+"${RSYNC_BIN}" -az --delete --delete-excluded \
   -e "ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no" \
   --exclude '.DS_Store' \
   --exclude '*.log' \
