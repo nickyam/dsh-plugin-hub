@@ -213,9 +213,6 @@ button, input, select, textarea { font: inherit; }
 .side-list a:hover { color: var(--color-accent-text); text-decoration: underline; }
 .side-note { font-size: var(--text-xs); color: var(--color-muted); background: var(--color-paper-2); padding: var(--space-sm) var(--space-md); margin: var(--space-md) 0 0; line-height: 1.6; }
 .side-box-plain p { font-size: var(--text-sm); margin: 0; }
-.ad-note { border: var(--rule-hair) dashed var(--color-rule); padding: var(--space-2xl) var(--space-md); text-align: center; font-size: var(--text-xs); color: var(--color-muted); background: color-mix(in oklab, var(--color-sheet) 60%, transparent); min-height: 90px; display: flex; align-items: center; justify-content: center; }
-.ad-note-wide { margin-top: var(--space-2xl); min-height: 100px; }
-
 /* ── How-to ─────────────────────────────────────────── */
 .howto { margin: var(--space-3xl) 0; background: var(--color-sheet); border-top: var(--rule-bar) solid var(--color-ink); border-bottom: var(--rule-hair) solid var(--color-rule); padding: var(--space-2xl); }
 .howto h2 { font-size: var(--text-section); margin: 0 0 var(--space-xl); }
@@ -333,7 +330,6 @@ button, input, select, textarea { font: inherit; }
   .hero-file { max-width: 520px; }
   .columns, .detail-columns { grid-template-columns: 1fr; }
   .col-side, .detail-side { position: static; display: grid; grid-template-columns: repeat(2, 1fr); }
-  .col-side .ad-note { grid-column: 1 / -1; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 700px) {

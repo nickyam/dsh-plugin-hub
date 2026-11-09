@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-08 21:35",
+  "generated_at": "2026-11-09 14:42",
   "stats": {
-    "plugins": 75,
-    "sources": 6,
-    "wechat": 3,
-    "refs_total": 87,
-    "repos_confirmed": 75,
+    "plugins": 78,
+    "sources": 7,
+    "wechat": 4,
+    "refs_total": 91,
+    "repos_confirmed": 78,
     "categories": 13
   },
   "categories": [
@@ -37,7 +37,7 @@
       "id": "memory",
       "label": "记忆与知识",
       "desc": "跨会话记忆、项目上下文、知识库",
-      "count": 8
+      "count": 9
     },
     {
       "id": "billing",
@@ -73,13 +73,13 @@
       "id": "visual",
       "label": "视觉与设计",
       "desc": "看图、UI 还原、图表与设计资产",
-      "count": 6
+      "count": 7
     },
     {
       "id": "content",
       "label": "内容创作与办公",
       "desc": "长文写作、PPT、表格与文档",
-      "count": 3
+      "count": 4
     },
     {
       "id": "remote",
@@ -138,6 +138,12 @@
       "title": "DeepSeek Harness这个神级插件，用完我直接跪了！",
       "url": "https://mp.weixin.qq.com/s/gdWT1tC-ajn2HMjwJJKA4w",
       "publisher": "运维网工（原文署名 bigbigtooth）",
+      "kind_label": "公众号"
+    },
+    "wx-feishu": {
+      "title": "3.5 万个插件里，DeepSeek 官方为什么只挑了这 4 个?",
+      "url": "https://mp.weixin.qq.com/s/pdJ8cQW1Ua_jhtRR7wR8iQ",
+      "publisher": "飞叔（公众号：飞叔 AI赋能推客）",
       "kind_label": "公众号"
     }
   },

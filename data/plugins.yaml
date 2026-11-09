@@ -687,6 +687,7 @@
   notes: 需 @deepseek-ai/dsh 0.2.0-rc.2 及以上（各版本支持见 docs/compatibility.md）；数值采用 dsh 自身 Token 计量投影，与内置计量器一致。UI 支持简中 / 英 / 日等多语言（切换需 dsh 0.2.2+）。
   refs:
   - wx-quanjing
+  - wx-feishu
 - id: dsh-routing-suite
   name: dsh-routing-suite
   category: workflow
@@ -1594,3 +1595,80 @@
   notes: 宠物为社区提交的粉丝作品，版权归提交者所有；Petdex 不主张任何底层 IP。源码 MIT，宠物素材按提交者声明许可。
   refs:
   - wx-quanjing
+
+- id: dsh-media-desk
+  name: dsh-media-desk
+  aliases:
+  - 自媒体工作台
+  - 蜗牛的科技笔记
+  category: content
+  status: community
+  repo: https://github.com/woniuniuniu/dsh-media-desk
+  install: dsh plugin --profile web add dsh-media-desk
+  summary: 装在 DSH 侧栏的自媒体创作工作台，一句话记灵感，一键生成口播脚本、标题、视频封面、配图和分镜，并支持排期与发布复盘。
+  features:
+  - 灵感墙：文字、链接、图片、视频、金句贴成卡片，无限画布或信息流视图，相关灵感按相关度自动靠拢
+  - 一键成稿：点开灵感同时生成标题、脚本、封面、配图与六格分镜，对话里说一句即时改、每步可撤销
+  - 五页结构：灵感、内容、排期、复盘、风格，作品拖到日历排期、发布后回看数据
+  - 多平台覆盖：小红书、抖音、B 站、公众号，以及 TikTok、Instagram、YouTube、X
+  - 中英双语：界面跟随 DSH 语言也可固定，切英文后脚本、标题、分镜用英文输出，网页版手机也可开
+  tags:
+  - 自媒体
+  - 脚本
+  - 封面
+  - 分镜
+  - 灵感
+  notes: 社区项目（MIT，非 DeepSeek 官方），作者为小红书博主「蜗牛的科技笔记」。需 DSH 0.2.x；包已发 npm（dsh-media-desk），也可从 Releases 下载 tgz 离线装。桌面版与网页版命令分别是 --profile desktop 与 web。文章（wx-feishu）称其「记灵感、写脚本、做封面、设计分镜、复盘」的工作台，与 README 一致。
+  refs:
+  - wx-feishu
+
+- id: dsh-guizang-design
+  name: dsh-guizang-design
+  aliases:
+  - 歸藏设计
+  category: visual
+  status: community
+  repo: https://github.com/op7418/dsh-guizang-design
+  install: dsh plugin --profile web add dsh-guizang-design
+  summary: 把「歸藏」的内容生产 skill 装进 DSH，提供网页 PPT、图文卡片、网页排版、去 AI 味，外加学你写作语气的语气档案，共用一套设计系统。
+  features:
+  - 五个 skill：网页 PPT（/guizang-ppt-skill）、图文卡片（/guizang-social-card-skill）、网页排版（/guizang-page-skill）、去 AI 味（/humanizer-zh）、语气档案（/guizang-voice）
+  - 一套设计系统：PPT、卡片、网页共用 token，6 套杂志风与 4 套瑞士风主题，支持品牌色按 OKLCH 约束生成、字体子集化内嵌
+  - 插件页面：概览、我的作品、内容生产工作流、语气档案、官方示例，作品自动登记进作品库、可一键「做同款」
+  - 跨 skill 工作流：一篇文章三种出口、先去 AI 味再排版、演讲回收、品牌套件、封面矩阵、中英双版本
+  - 语气档案：从本机 DSH 会话与你写过的文章学出写作习惯，每条特征需至少两处证据，去 AI 味与代写时复用
+  tags:
+  - 设计
+  - PPT
+  - 排版
+  - 去AI味
+  - 语气档案
+  notes: 社区项目（作者 op7418，非 DeepSeek 官方）。需 DSH 0.2.1-rc.2 及以上、0.3.0 以下；包名即 dsh-guizang-design，也支持 github:op7418/dsh-guizang-design 指定版本。卡片出图依赖 Playwright Chromium，网页导出 PDF 与长图依赖本机 Chrome。文章（wx-feishu）称其「一篇文章变网页、图文卡片或封面」与此一致。
+  refs:
+  - wx-feishu
+
+- id: agentero-dsh
+  name: agentero-dsh
+  aliases:
+  - Agentero
+  - "Agentero × DeepSeek Harness"
+  category: memory
+  status: community
+  repo: https://github.com/poco-ai/agentero-dsh-plugin
+  install: dsh plugin --profile web add agentero-dsh
+  summary: 把本地优先的科研工作台 Agentero 接进 DSH，在对话旁开文献库与 PDF 阅读器，让 Agent 查论文、划词翻译、写笔记、整理结论，资料留在本机 Vault。
+  features:
+  - 读文献：搜索、标签、按 arXiv、DOI 或链接导入、补下载、删除到回收站，回答时引用真实本地论文
+  - 读 PDF：翻页、查找、目录、链接，划词后复制、高亮、批注、翻译或加入对话
+  - 全文翻译：用 DSH 配置的模型在原页面逐段替换，保留公式与版面
+  - 写笔记：编辑自有笔记或让 Agent 代写，每篇论文有专属笔记，讨论结论可整理成阅读笔记
+  - 本地优先：论文、PDF、笔记、标注都留在 Vault，与 Agentero 桌面端共用，插件只在本机运行、不另建数据库
+  tags:
+  - 科研
+  - 文献
+  - PDF
+  - 笔记
+  - 知识库
+  notes: 社区项目（组织 poco-ai，非 DeepSeek 官方；原文署名作者 Phil-Fan 为贡献者，主项目仓库在 poco-ai/Agentero）。npm 包名为 agentero-dsh，对应仓库名是 agentero-dsh-plugin（两者不一致，以此仓库为准）。需 DSH 0.2.x、Node.js 24.9+、一个 Agentero Vault 与 Agentero CLI；装完在侧栏打开 agentero-dsh 并配置 CLI 与知识库目录。文章（wx-feishu）称其「读论文、高亮、翻译、记笔记在一个窗口完成」，与 README 一致。
+  refs:
+  - wx-feishu

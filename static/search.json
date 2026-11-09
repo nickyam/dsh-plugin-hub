@@ -140,6 +140,24 @@
     "url": "/plugins/open-design/"
   },
   {
+    "id": "dsh-context",
+    "name": "dsh-context",
+    "aliases": [],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "一站式 DeepSeek Harness 上下文可视化插件，提供 Context 面板、浏览器、侧栏与命令，透视上下文的组成、演进、压缩与多 Agent 协作。",
+    "tags": [
+      "上下文",
+      "可观测",
+      "诊断"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 2,
+    "flag": "",
+    "url": "/plugins/dsh-context/"
+  },
+  {
     "id": "whale-cost-widget",
     "name": "小鲸鱼记账挂件",
     "aliases": [
@@ -609,24 +627,6 @@
     "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-diff-approval/"
-  },
-  {
-    "id": "dsh-context",
-    "name": "dsh-context",
-    "aliases": [],
-    "category": "workflow",
-    "category_label": "协作与工作流",
-    "summary": "一站式 DeepSeek Harness 上下文可视化插件，提供 Context 面板、浏览器、侧栏与命令，透视上下文的组成、演进、压缩与多 Agent 协作。",
-    "tags": [
-      "上下文",
-      "可观测",
-      "诊断"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-context/"
   },
   {
     "id": "dsh-routing-suite",
@@ -1365,5 +1365,73 @@
     "source_count": 1,
     "flag": "",
     "url": "/plugins/petdex/"
+  },
+  {
+    "id": "dsh-media-desk",
+    "name": "dsh-media-desk",
+    "aliases": [
+      "自媒体工作台",
+      "蜗牛的科技笔记"
+    ],
+    "category": "content",
+    "category_label": "内容创作与办公",
+    "summary": "装在 DSH 侧栏的自媒体创作工作台，一句话记灵感，一键生成口播脚本、标题、视频封面、配图和分镜，并支持排期与发布复盘。",
+    "tags": [
+      "自媒体",
+      "脚本",
+      "封面",
+      "分镜",
+      "灵感"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-media-desk/"
+  },
+  {
+    "id": "dsh-guizang-design",
+    "name": "dsh-guizang-design",
+    "aliases": [
+      "歸藏设计"
+    ],
+    "category": "visual",
+    "category_label": "视觉与设计",
+    "summary": "把「歸藏」的内容生产 skill 装进 DSH，提供网页 PPT、图文卡片、网页排版、去 AI 味，外加学你写作语气的语气档案，共用一套设计系统。",
+    "tags": [
+      "设计",
+      "PPT",
+      "排版",
+      "去AI味",
+      "语气档案"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/dsh-guizang-design/"
+  },
+  {
+    "id": "agentero-dsh",
+    "name": "agentero-dsh",
+    "aliases": [
+      "Agentero",
+      "Agentero × DeepSeek Harness"
+    ],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "把本地优先的科研工作台 Agentero 接进 DSH，在对话旁开文献库与 PDF 阅读器，让 Agent 查论文、划词翻译、写笔记、整理结论，资料留在本机 Vault。",
+    "tags": [
+      "科研",
+      "文献",
+      "PDF",
+      "笔记",
+      "知识库"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 1,
+    "flag": "",
+    "url": "/plugins/agentero-dsh/"
   }
 ]
