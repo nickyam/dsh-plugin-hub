@@ -33,6 +33,26 @@
 
   input.addEventListener('input', apply);
 
+  // 分类栏横向滚动提示：还有内容时显示渐隐 + 右箭头，滚到头自动隐藏
+  var filtersWrap = document.querySelector('.filters-wrap');
+  var filtersTrack = document.querySelector('.filters');
+  var nextBtn = document.querySelector('.filters-next');
+  if (filtersWrap && filtersTrack && nextBtn) {
+    function syncMore() {
+      var max = filtersTrack.scrollWidth - filtersTrack.clientWidth;
+      // 留 8px 容差，避免在终点因亚像素误差反复闪烁
+      filtersWrap.classList.toggle('has-more', max > 8 && filtersTrack.scrollLeft < max - 8);
+    }
+    nextBtn.addEventListener('click', function () {
+      filtersTrack.scrollBy({ left: Math.max(filtersTrack.clientWidth - 80, 240), behavior: 'smooth' });
+    });
+    filtersTrack.addEventListener('scroll', syncMore, { passive: true });
+    window.addEventListener('resize', syncMore);
+    // 字体加载完成后文字宽度会变，重算一次避免初始判断偏差
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncMore);
+    syncMore();
+  }
+
   document.addEventListener('keydown', function (e) {
     if (e.key === '/' && document.activeElement !== input &&
         !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) {
