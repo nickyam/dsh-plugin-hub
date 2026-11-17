@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
-  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+  {{/* 版本戳：ECS 对静态资源设 immutable 长缓存，URL 不变会导致改样式后用户拿到旧 CSS/JS。每次构建换查询串强制刷新。 */}}
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?v={{ now.Unix }}">
   {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .Permalink }}">{{ end }}
   {{ if site.Params.adsense.enabled }}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.Params.adsense.client }}" crossorigin="anonymous"></script>
@@ -22,6 +23,6 @@
   {{ partial "header.html" . }}
   <main id="main">{{ block "main" . }}{{ end }}</main>
   {{ partial "footer.html" . }}
-  <script src="{{ "js/site.js" | relURL }}" defer></script>
+  <script src="{{ "js/site.js" | relURL }}?v={{ now.Unix }}" defer></script>
 </body>
 </html>

@@ -6,20 +6,84 @@
   var filters = Array.prototype.slice.call(document.querySelectorAll('.filter'));
   var count = document.getElementById('result-count');
   var noResult = document.getElementById('no-result');
+  var pager = document.getElementById('pager');
+  var pagerPages = document.getElementById('pager-pages');
   var active = 'all';
+  var PAGE_SIZE = 24;
+  var page = 1;
+  var visible = []; // 当前筛选下命中的卡片（按页面顺序）
 
-  function apply() {
+  function renderPager(totalPages) {
+    if (!pager || !pagerPages) return;
+    pager.hidden = totalPages <= 1;
+    pagerPages.textContent = '';
+    function addNum(p) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'pager-num' + (p === page ? ' is-current' : '');
+      b.textContent = String(p);
+      b.setAttribute('aria-label', '第 ' + p + ' 页');
+      if (p === page) b.setAttribute('aria-current', 'page');
+      b.addEventListener('click', function () { goto(p); });
+      pagerPages.appendChild(b);
+    }
+    function addEllipsis() {
+      var s = document.createElement('span');
+      s.className = 'pager-ellipsis';
+      s.textContent = '…';
+      pagerPages.appendChild(s);
+    }
+    // 页数不多时全列；多了只显示首尾与当前页附近，中间用省略号
+    if (totalPages <= 9) {
+      for (var i = 1; i <= totalPages; i++) addNum(i);
+    } else {
+      addNum(1);
+      var from = Math.max(2, page - 2);
+      var to = Math.min(totalPages - 1, page + 2);
+      if (from > 2) addEllipsis();
+      for (var j = from; j <= to; j++) addNum(j);
+      if (to < totalPages - 1) addEllipsis();
+      addNum(totalPages);
+    }
+    var prev = pager.querySelector('[data-page="prev"]');
+    var next = pager.querySelector('[data-page="next"]');
+    if (prev) prev.disabled = page <= 1;
+    if (next) next.disabled = page >= totalPages;
+  }
+
+  function apply(resetPage) {
+    if (resetPage) page = 1;
     var q = input.value.trim().toLowerCase();
-    var n = 0;
+    visible = [];
     cards.forEach(function (card) {
       var okCat = active === 'all' || card.getAttribute('data-category') === active;
       var okQuery = !q || (card.getAttribute('data-hay') || '').indexOf(q) !== -1;
-      var show = okCat && okQuery;
-      card.hidden = !show;
-      if (show) n++;
+      card.hidden = true;
+      if (okCat && okQuery) visible.push(card);
     });
-    if (count) count.textContent = n + ' 个插件';
-    if (noResult) noResult.hidden = n !== 0;
+    var totalPages = Math.max(1, Math.ceil(visible.length / PAGE_SIZE));
+    if (page > totalPages) page = totalPages;
+    var start = (page - 1) * PAGE_SIZE;
+    visible.slice(start, start + PAGE_SIZE).forEach(function (card) { card.hidden = false; });
+    if (count) count.textContent = visible.length + ' 个插件' + (totalPages > 1 ? '（第 ' + page + '/' + totalPages + ' 页）' : '');
+    if (noResult) noResult.hidden = visible.length !== 0;
+    renderPager(totalPages);
+  }
+
+  function goto(p) {
+    var totalPages = Math.max(1, Math.ceil(visible.length / PAGE_SIZE));
+    var target = p === 'prev' ? page - 1 : p === 'next' ? page + 1 : p;
+    if (target < 1 || target > totalPages || target === page) return;
+    page = target;
+    apply(false);
+    if (pager && pager.scrollIntoView) pager.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }
+
+  if (pager) {
+    pager.addEventListener('click', function (e) {
+      var btn = e.target.closest('[data-page]');
+      if (btn) goto(btn.getAttribute('data-page'));
+    });
   }
 
   filters.forEach(function (btn) {
@@ -27,11 +91,11 @@
       filters.forEach(function (b) { b.classList.remove('is-active'); });
       btn.classList.add('is-active');
       active = btn.getAttribute('data-filter');
-      apply();
+      apply(true);
     });
   });
 
-  input.addEventListener('input', apply);
+  input.addEventListener('input', function () { apply(true); });
 
   // 分类栏横向滚动提示：还有内容时显示渐隐 + 右箭头，滚到头自动隐藏
   var filtersWrap = document.querySelector('.filters-wrap');
@@ -62,7 +126,7 @@
     }
     if (e.key === 'Escape' && document.activeElement === input) {
       input.value = '';
-      apply();
+      apply(true);
       input.blur();
     }
   });
@@ -70,6 +134,9 @@
   // 从其它页带 #catalog 回来时，把光标直接放进搜索框
   if (location.hash === '#catalog' || /[?&]q=/.test(location.search)) {
     var m = location.search.match(/[?&]q=([^&]+)/);
-    if (m) { input.value = decodeURIComponent(m[1].replace(/\+/g, ' ')); apply(); }
+    if (m) { input.value = decodeURIComponent(m[1].replace(/\+/g, ' ')); apply(true); }
   }
+
+  // 初始渲染：HTML 里卡片默认全显示，这里收窄到第一页（幂等，URL 带 q 时已调用过也无妨）
+  apply(true);
 })();
