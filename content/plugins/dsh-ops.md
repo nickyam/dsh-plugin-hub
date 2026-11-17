@@ -6,7 +6,7 @@ categories:
 tags: &id001
 - 自动化
 - token优化
-weight: 1010
+weight: 1030
 params:
   plugin:
     id: dsh-ops
@@ -30,11 +30,21 @@ params:
       url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
       kind_label: 公众号
       publisher: 智宇AI说
-    source_count: 1
+    - id: wx-huxiaomo
+      title: DSH 最值得装的 7 款插件：从省 5 倍 token 到余额小鲸鱼
+      url: https://mp.weixin.qq.com/s/pOxsRRqyCiFI3moxX676xQ
+      kind_label: 公众号
+      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
+    - id: wx-jiaweisi
+      title: 给 DeepSeek 大肥鱼装省 Token 插件，实测 5 款，最高竟然省了近 40%
+      url: https://mp.weixin.qq.com/s/fJnxDLVbNezuCbsjb2asrw
+      kind_label: 公众号
+      publisher: 甲维斯机（公众号：甲维斯机）
+    source_count: 3
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区
-    weight: 1010
+    weight: 1030
     url: /plugins/dsh-ops/
   generated: true
 ---

@@ -7,7 +7,7 @@ tags: &id001
 - 多智能体
 - Bot
 - 长生命周期
-weight: 1010
+weight: 1030
 params:
   plugin:
     id: deepseek-bot
@@ -35,11 +35,21 @@ params:
       url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
       kind_label: 公众号
       publisher: 智宇AI说
-    source_count: 1
+    - id: wx-fanxing
+      title: 2K Star！又一神级插件：把 DeepSeek Harness 变成一支有记忆、能群聊、互相派活的 Bot 团队
+      url: https://mp.weixin.qq.com/s/ewKzM3nfPTU1iYurPdAR9A
+      kind_label: 公众号
+      publisher: 繁星（公众号：繁星AI随笔）
+    - id: wx-shixiang
+      title: 亲测，DSH 最应该装的 10 个插件
+      url: https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA
+      kind_label: 公众号
+      publisher: 世相智能体（公众号：世相Ai智能体）
+    source_count: 3
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区
-    weight: 1010
+    weight: 1030
     url: /plugins/deepseek-bot/
   generated: true
 ---

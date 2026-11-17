@@ -1,0 +1,50 @@
+---
+title: dsh-openviking（用户画像与记忆）
+description: 把火山引擎开源的 OpenViking 接进 DSH：user + agent 双空间的检索、资源管理、自动召回与会话记忆，每轮执行前可先翻一遍你的画像（如「中文、简洁」），越用越懂你；需本地跑一个 OpenViking 服务（默认 http://localhost:1933）。
+categories:
+- memory
+tags: &id001
+- OpenViking
+- 用户画像
+- 会话记忆
+- 自动召回
+weight: 1010
+params:
+  plugin:
+    id: dsh-openviking
+    name: dsh-openviking（用户画像与记忆）
+    aliases:
+    - OpenViking
+    - dsh-openviking
+    - 用户画像
+    - 会话记忆
+    category: memory
+    status: community
+    repo: https://github.com/Rxiain/dsh-openviking
+    install: dsh plugin --profile web add github:Rxiain/dsh-openviking
+    summary: 把火山引擎开源的 OpenViking 接进 DSH：user + agent 双空间的检索、资源管理、自动召回与会话记忆，每轮执行前可先翻一遍你的画像（如「中文、简洁」），越用越懂你；需本地跑一个 OpenViking 服务（默认 http://localhost:1933）。
+    features:
+    - 双空间记忆：user / agent 双空间的语义搜索（memsearch，含 deep 模式带会话上下文）、快速查找（memfind）、读取 viking:// URI（memread）与浏览文件系统（membrowse）
+    - 自动召回：通过上下文注入通道在每轮前自动召回相关记忆与已索引仓库上下文，带总 token 预算、去重与长度上限
+    - 流程经验召回：对审计/修复/迁移等流程类问题启用 procedure lane，按方法论 / playbook / workflow / runbook 等标记筛选流程分支
+    - 记忆沉淀：memcommit 提交会话提取持久记忆，memlearn 主动写/合并记忆或铸 skill playbook（脱敏+查重+即时注入）；观察者队列自动做嵌入、摘要与内容重组
+    - 安装方式：DSH 0.1.7+ 可在插件管理页直接装；CLI 可用 sh install.sh 或 dsh plugin --profile <name> add github:Rxiain/dsh-openviking
+    tags: *id001
+    flag: 社区项目；依赖本地 OpenViking 服务（默认 localhost:1933），不是装了就能用；Node ^22.19.0 || >=24，DSH >=0.1.7-rc.2
+    notes: 仓库 Rxiain/dsh-openviking，底层对接火山引擎开源的 OpenViking（github.com/volcengine/OpenViking），本插件是 DSH 侧对接层；GitHub 上另有 dsh-openviking-expand / dsh-memory-openviking 等近似项目，本条取 README 完整、★ 数最高的 Rxiain 主仓。文章把它描述为「用户画像」，README 里对应 user 空间记忆 + 自动召回，本站按 README 写。
+    refs:
+    - id: wx-huxiaomo2
+      title: DSH 别只装那 7 款：本期再添 10 件新装备
+      url: https://mp.weixin.qq.com/s/YP-CJeIaQhn2zdP4JBHR6A
+      kind_label: 公众号
+      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
+    source_count: 1
+    repo_confirmed: true
+    category_label: 记忆与知识
+    status_label: 社区
+    weight: 1010
+    url: /plugins/dsh-openviking/
+  generated: true
+---
+
+把火山引擎开源的 OpenViking 接进 DSH：user + agent 双空间的检索、资源管理、自动召回与会话记忆，每轮执行前可先翻一遍你的画像（如「中文、简洁」），越用越懂你；需本地跑一个 OpenViking 服务（默认 http://localhost:1933）。

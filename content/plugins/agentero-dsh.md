@@ -9,7 +9,7 @@ tags: &id001
 - PDF
 - 笔记
 - 知识库
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: agentero-dsh
@@ -36,11 +36,16 @@ params:
       url: https://mp.weixin.qq.com/s/pdJ8cQW1Ua_jhtRR7wR8iQ
       kind_label: 公众号
       publisher: 飞叔（公众号：飞叔 AI赋能推客）
-    source_count: 1
+    - id: wx-papertoday
+      title: DeepSeek官方推荐的科研神器，我装上了，超惊喜
+      url: https://mp.weixin.qq.com/s/-afBryEeI_iNkkvypHU_LQ
+      kind_label: 公众号
+      publisher: 每天学AI的老马（公众号：PaperToday）
+    source_count: 2
     repo_confirmed: true
     category_label: 记忆与知识
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/agentero-dsh/
   generated: true
 ---

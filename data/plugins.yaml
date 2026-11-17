@@ -1,13 +1,3 @@
-# 插件主档：一个插件一条，别名合并到 aliases。
-# 内容来源：以官方 GitHub 仓库（repo）的 README 为准；summary / install / features 都按 README 整理，
-#           不照搬公众号等文章原文，文章只作为「发现来源 / 参考」存入 refs。
-# status: official（官方） / community（社区） / unknown（原文未说明）
-# 收录范围：只收需要额外安装的插件。官方开箱即用的内置能力（Subagents / Terminal / 运行模式等）不建条目。
-# flag: 需要读者额外注意的短提示，会显示成橙色徽章（如社区项目非官方、破限不评价、名称相近勿混等）。
-# refs: 参考来源 id 列表（来自 data/sources.yaml）；仅作发现来源与对照，不渲染原文。
-
-
-# ── 插件市场与发现 ──────────────────────────────────────────────
 - id: dsh-market
   name: dsh-market
   aliases:
@@ -33,6 +23,9 @@
   - wx-dabaihua
   - tree-top10
   - wx-quanjing
+  - wx-huxiaomo
+  - wx-shixiang
+  - wx-xiaobai
 - id: dsh-find-plugin
   name: dsh-find-plugin
   category: market
@@ -52,6 +45,7 @@
   notes: 官方唯一的发现机制是 GitHub topic dsh-plugin，第三方目录站均非官方。
   refs:
   - tree-top10
+  - wx-xiaobai
 - id: awesome-dsh-plugin
   name: awesome-dsh-plugin
   category: market
@@ -95,6 +89,8 @@
   notes: 仓库即「Web 全家桶」单体仓，npm 聚合包发布在 @linxin666/dsh-web-all 名下；「创意工坊」(dsh-market.com) 是其组件之一。也可从仓库直接装：dsh plugin --profile web add github:zhu1090093659/dsh-web。
   refs:
   - wx-quanjing
+  - wx-huxiaomo2
+  - wx-xiaobai
 - id: dsh-plugin-radar
   name: dsh-plugin-radar
   category: market
@@ -158,8 +154,6 @@
   notes: 本站按独立条目收录，不混进插件市场。列表本身无需安装。
   refs:
   - wx-quanjing
-
-# ── 界面与体验 ─────────────────────────────────────────────────
 - id: dsh-web-all
   name: dsh-web-all（Web 全家桶）
   aliases:
@@ -235,6 +229,8 @@
   refs:
   - baike-dsh
   - wx-quanjing
+  - wx-huxiaomo
+  - wx-xiaobai
 - id: selection-toolbar
   name: 划词工具条
   category: ui
@@ -331,6 +327,7 @@
   notes: npm 包名现为 @changfenhuang/dsh-genui，旧包 @omdsh-dev/dsh-genui 已弃用，需先移除再重装新包。
   refs:
   - wx-quanjing
+  - wx-shixiang
 - id: dsh-synapse
   name: dsh-synapse
   category: ui
@@ -372,8 +369,6 @@
   notes: DSH-X 启动的是 DSH 官方原版 Web 页面，只做版本安装 / 启动 / 插件管理，不修改 DSH 网页界面；与 DSH Desktop（anywhere-labs / dataelement / Tauri 版）是不同项目，注意区分。安装包从 Releases 下载，非 dsh plugin add 路径。
   refs:
   - wx-quanjing
-
-# ── 工具与能力 ─────────────────────────────────────────────────
 - id: modsearch
   name: ModSearch
   aliases:
@@ -436,6 +431,7 @@
   notes: README 提醒：官方 DSH 新版已内置 @file / @session 引用，新装建议优先用官方实现；本插件保留给已有环境，偶发维护。安装后重启 dsh web 使 Host 与客户端加载新版本。
   refs:
   - baike-dsh
+  - wx-shixiang
 - id: skill-report
   name: 技能调用报告
   category: tool
@@ -493,8 +489,6 @@
   notes: 百科文章曾把它类比成《我的世界》的 Fabric Mod 加载器（社区把 DSH 生态比作 MC Mod 生态的注脚）；实际仓库是一个严肃的「运行时扩展」原语插件，并非游戏梗。本站按实际仓库 README 收录。
   refs:
   - baike-dsh
-
-# ── 视觉与设计 ─────────────────────────────────────────────────
 - id: open-design
   name: open-design
   category: visual
@@ -537,6 +531,8 @@
   notes: README 注明 Web UI 里直接粘贴图片可能被宿主拒绝（DeepSeek 适配器硬编码 inputModalities 为 text），read_image 在 Web UI 已验证端到端可用。仓库另含兄弟插件 ModSearch（免费网页搜索）。
   refs:
   - wx-quanjing
+  - wx-huxiaomo
+  - wx-shixiang
 - id: dsh-vision-toolkit
   name: dsh-vision-toolkit
   category: visual
@@ -622,8 +618,6 @@
   notes: 实际以 deepseek-idesign、deepseek-ippt、deepseek-ivideo 三个包同时安装；若已装 dsh 命令，可将 npx @deepseek-ai/dsh 替换为 dsh。Web 界面默认 http://127.0.0.1:3080。
   refs:
   - wx-quanjing
-
-# ── 协作与工作流 ───────────────────────────────────────────────
 - id: dsh-agent-teams
   name: dsh-agent-teams（社区版）
   category: workflow
@@ -646,6 +640,7 @@
   - baike-dsh
   - wx-dabaihua
   - wx-quanjing
+  - wx-xiaobai
 - id: dsh-diff-approval
   name: dsh-diff-approval
   category: workflow
@@ -688,6 +683,8 @@
   refs:
   - wx-quanjing
   - wx-feishu
+  - wx-huxiaomo
+  - wx-shixiang
 - id: dsh-routing-suite
   name: dsh-routing-suite
   category: workflow
@@ -727,10 +724,12 @@
   notes: 需 DSH 0.2.2-rc.1 及以上（0.5 系列不再支持 0.2.0 / 0.2.1）；桌面端须用桌面应用自带 CLI。README 曾提示 0.5.0 存在缓存膨胀 bug，安装前请确认已修复到最新版。
   refs:
   - wx-quanjing
+  - wx-huxiaomo
+  - wx-jiaweisi
 - id: dsh-devops
   name: dsh-devops
   aliases:
-  - "@bigbigtooth/dsh-devops"
+  - '@bigbigtooth/dsh-devops'
   - DSH-DevOps-Plugin
   - 远程运维
   category: workflow
@@ -797,8 +796,8 @@
   notes: 仓库已由 DeepSeek-Bot 更名为 DS Bot（Fei2411/DS-Bot），本仓库地址仍可访问并指向同一项目；DSH 插件包名为 ds-bot。与 dsh-agent-teams 是同类不同定位：后者偏任务分工，前者偏 Bot 的持久性与社交性（群聊）。
   refs:
   - wx-quanjing
-
-# ── 记忆与知识 ─────────────────────────────────────────────────
+  - wx-fanxing
+  - wx-shixiang
 - id: dsh-memory-evolve
   name: dsh-memory-evolve
   category: memory
@@ -957,8 +956,6 @@
   notes: DSH 插件包为 @agentscope-ai/reme-dsh-plugin；核心记忆服务通过 `pip install reme-ai` 安装后 `reme start` 启动（默认 127.0.0.1:2333）。
   refs:
   - wx-quanjing
-
-# ── 模型与接入 ─────────────────────────────────────────────────
 - id: dsh-our-free-model
   name: dsh-our-free-model
   category: model
@@ -980,6 +977,8 @@
   notes: README 警告不要装 npm 上裸名的 dsh-our-free-model（非本仓库发布）；本仓库发布的是带 scope 的 @ebony-vinyl/dsh-our-free-model。免费车道高峰期可能按会话限流返回 429；部分上游声明提示词可能被记录，勿发敏感内容。上游额度政策随时可能变更。
   refs:
   - wx-quanjing
+  - wx-shixiang
+  - wx-huxiaomo2
 - id: dsh-plugin-subscriptions
   name: dsh-plugin-subscriptions
   category: model
@@ -1014,16 +1013,16 @@
   - 流式兼容：同时兼容 response/fragments 与 thinking_content/content 两套 SSE 格式，按逻辑流去重
   - 工具调用：用提示词 JSON 协议 + 流式过滤器合成 tool-call 块，补足网页端缺失的 function calling
   - 图片输入：走网页端文件上传通道，同一张图多处出现自动去重
+  - 账号库与防风控：本机保存多个账号可一键切换；设置页提供请求节流、随机间隔、会话清理与调用台账，0.7.0 起 PoW 改为在真实浏览器页面里求解、按 DSH 会话复用连接以降低被识别概率（仍需 Edge/Chrome，README 明确不保证不被封）
   tags:
   - 网页凭证
   - 免API Key
   - 非官方
-  flag: 涉及账号凭证与网页端私有接口，注意安全与条款；非 DeepSeek 官方客户端
-  notes: README 提供三种安装方式（Release tgz / git 装配 / npm），主推桌面端：dsh plugin --profile desktop add github:cv-superding/dsh-deepseek-web-login；npm 装写作 dsh plugin --profile desktop add dsh-deepseek-web-login。这是网页端私有接口的非官方客户端，非反向代理或 DOM 自动化。
+  flag: 涉及账号凭证与网页端私有接口，注意安全与条款；非 DeepSeek 官方客户端；一个账号同一时间只开一个聊天窗口，多开可能触发临时封禁
+  notes: README 提供三种安装方式（Release tgz / git 装配 / npm），主推桌面端：dsh plugin --profile desktop add github:cv-superding/dsh-deepseek-web-login；npm 装写作 dsh plugin --profile desktop add dsh-deepseek-web-login。这是网页端私有接口的非官方客户端，非反向代理或 DOM 自动化。文章（wx-you-liao）只给 git 来源并称更新失败无法回滚，README 说明市场条目当前将该包标为 npm 为 null（未发布）、仅支持 git 来源，故更新需从 GitHub 拉取；该文强调的 40 万字符 / 并发 2 次等风控阀门属文章实测口径，本站不采信为结论。
   refs:
   - wx-quanjing
-
-# ── 模型与计费 ─────────────────────────────────────────────────
+  - wx-you-liao
 - id: dsh-api-dashboard
   name: dsh-api-dashboard
   category: billing
@@ -1088,8 +1087,7 @@
   refs:
   - wx-dabaihua
   - wx-quanjing
-
-# ── 安全与治理 ─────────────────────────────────────────────────
+  - wx-huxiaomo
 - id: dsh-plugin-gate
   name: dsh-plugin-gate
   category: security
@@ -1191,8 +1189,6 @@
   notes: README 同时提供 dsh-deepsec-shield 与 dsh-deepsec-spear 两个 DSH 插件封装（位于 dsh-plugins/，包装 DeepSec CLI 为 Agent 工具），但本 README 未给出对应的 dsh plugin add 命令，故 install 留空；核心安装为 pip install -e .，另有 Rust TUI 与 IDE 插件。Spear 渗透以授权白名单为闸门，私有 / 回环地址默认拒绝。
   refs:
   - wx-quanjing
-
-# ── 集成与迁移 ─────────────────────────────────────────────────
 - id: dsh-plugin-claude-bridge
   name: dsh-plugin-claude-bridge
   category: integration
@@ -1276,8 +1272,6 @@
   notes: 走腾讯 iLink 机器人通道（ilinkai.weixin.qq.com），协议层基于 @tencent-weixin/openclaw-weixin（MIT）并改写为 DSH 原生。社区另有多个微信桥接实现（panqing0313/dsh-plugin-weixin、gnulife/dsh-plugin-wechat、zgat/dsh-wechat 等），本条目以 dAI-aigc/dsh-wechat 为准。装好后需重启 dsh web 生效。
   refs:
   - wx-dabaihua
-
-# ── 移动端与远程 ────────────────────────────────────────────────
 - id: ds-harness-remote
   name: ds-harness-remote
   category: remote
@@ -1344,8 +1338,6 @@
   notes: README 标注适配 DSH Web 0.2.2-rc.1 与 Desktop 0.2.1-rc.5；需宿主端启用移动网关或模拟器 / 真机环境。
   refs:
   - wx-quanjing
-
-# ── 内容创作与办公 ──────────────────────────────────────────────
 - id: webnovel-writer
   name: webnovel-writer
   category: content
@@ -1417,8 +1409,6 @@
   notes: Dream Num 出品的 Univer 办公套件 DSH 插件；支持 Sheets / Docs / Slides / Bases / Boards 统一于 .univer 文件。
   refs:
   - wx-quanjing
-
-# ── 娱乐与彩蛋 ─────────────────────────────────────────────────
 - id: dsh-minigames
   name: dsh-minigames
   category: fun
@@ -1595,7 +1585,6 @@
   notes: 宠物为社区提交的粉丝作品，版权归提交者所有；Petdex 不主张任何底层 IP。源码 MIT，宠物素材按提交者声明许可。
   refs:
   - wx-quanjing
-
 - id: dsh-media-desk
   name: dsh-media-desk
   aliases:
@@ -1621,7 +1610,6 @@
   notes: 社区项目（MIT，非 DeepSeek 官方），作者为小红书博主「蜗牛的科技笔记」。需 DSH 0.2.x；包已发 npm（dsh-media-desk），也可从 Releases 下载 tgz 离线装。桌面版与网页版命令分别是 --profile desktop 与 web。文章（wx-feishu）称其「记灵感、写脚本、做封面、设计分镜、复盘」的工作台，与 README 一致。
   refs:
   - wx-feishu
-
 - id: dsh-guizang-design
   name: dsh-guizang-design
   aliases:
@@ -1646,12 +1634,11 @@
   notes: 社区项目（作者 op7418，非 DeepSeek 官方）。需 DSH 0.2.1-rc.2 及以上、0.3.0 以下；包名即 dsh-guizang-design，也支持 github:op7418/dsh-guizang-design 指定版本。卡片出图依赖 Playwright Chromium，网页导出 PDF 与长图依赖本机 Chrome。文章（wx-feishu）称其「一篇文章变网页、图文卡片或封面」与此一致。
   refs:
   - wx-feishu
-
 - id: agentero-dsh
   name: agentero-dsh
   aliases:
   - Agentero
-  - "Agentero × DeepSeek Harness"
+  - Agentero × DeepSeek Harness
   category: memory
   status: community
   repo: https://github.com/poco-ai/agentero-dsh-plugin
@@ -1672,3 +1659,705 @@
   notes: 社区项目（组织 poco-ai，非 DeepSeek 官方；原文署名作者 Phil-Fan 为贡献者，主项目仓库在 poco-ai/Agentero）。npm 包名为 agentero-dsh，对应仓库名是 agentero-dsh-plugin（两者不一致，以此仓库为准）。需 DSH 0.2.x、Node.js 24.9+、一个 Agentero Vault 与 Agentero CLI；装完在侧栏打开 agentero-dsh 并配置 CLI 与知识库目录。文章（wx-feishu）称其「读论文、高亮、翻译、记笔记在一个窗口完成」，与 README 一致。
   refs:
   - wx-feishu
+  - wx-papertoday
+- id: dsh-skills-manager
+  name: DSH Skills Manager
+  aliases:
+  - '@michengai/dsh-skills-manager'
+  - 技能管理器
+  category: tool
+  status: community
+  repo: https://github.com/MichengAI/dsh-skills-manager
+  install: dsh plugin --profile web add @michengai/dsh-skills-manager@latest --registry=https://registry.npmjs.org/
+  summary: 把散落在本机与项目里的 Agent 技能收拢到 DSH 统一管理：全局 / 项目 / 发现 / 回收站四视图，跨 20 多种工具与 CLI 环境读取，并从技能市场与公开仓库浏览、订阅、增量更新与备份回退。
+  features:
+  - 四视图集中管理：全局技能、项目技能、发现、回收站，支持搜索、状态筛选与来源折叠
+  - 广泛生态兼容：覆盖 DSH、公共 Agent、Codex、Claude Code、Copilot、Cursor、Antigravity、Windsurf、Qoder、Trae 等 20+ 工具与 CLI，统一读取且不改动第三方文件
+  - 公共市场与仓库订阅：内置发现中心接 ClawHub 热门榜与 skills.sh 技能市场，支持公开 GitHub 仓库订阅、增量更新检测与版本备份回退
+  - 分类与拖拽归类：按来源建分类文件夹、拖拽卡片归类排序、分类级一键启停，分类元数据独立保存不动物理文件
+  - 回收站与防误删：删除优先移入回收站，完整保留安装身份与更新历史以便安全恢复
+  - 成本与体验：技能简介近似 Token 徽标与常驻系统提示词 Token 汇总，760px 宽屏详情弹窗与一键复制 Markdown 正文
+  tags:
+  - 技能管理
+  - 多Agent
+  - 技能市场
+  flag: 社区项目（Apache-2.0，非 DeepSeek 官方）
+  notes: 仓库 MichengAI/dsh-skills-manager（master 分支），npm 包 @michengai/dsh-skills-manager，README 版本 1.4.11（文章写 1.2.26，以仓库为准）。兼容 DSH 0.2.x 全系列（>=0.2.0-rc.1 <0.3.0-0）；仍用 0.1.x 的须改装 1.1.23，不要装 @latest。装后在「设置 → 技能」使用，需重启 DSH 并刷新页面。支持带路径前缀的反向代理部署（API 按 document.baseURI 相对解析）。与 dsh-client-ui-skill-explorer 功能有重叠，一般装一个即可。
+  refs:
+  - wx-top10-30d
+  - wx-shixiang
+- id: dsh-client-ui-skill-explorer
+  name: dsh-skill-explorer（技能浏览器）
+  aliases:
+  - '@linxin666/dsh-client-ui-skill-explorer'
+  - 技能浏览器
+  - Skill Center
+  category: tool
+  status: community
+  repo: https://github.com/zhu1090093659/dsh-web/tree/dev/packages/dsh-skill-explorer
+  install: dsh plugin --profile web add @linxin666/dsh-client-ui-skill-explorer
+  summary: 在 DSH 侧栏加一行「Skill Center」，按来源分层浏览当前加载的技能，用每行开关决定某个技能给不给模型调用（改 SKILL.md 头部的 disable-model-invocation），并提供可视化编辑、导入与安全回收站。
+  features:
+  - 按来源分组：系统自带、项目 .dsh/skills 与 .agents/skills、自定义目录、用户级 ~/.dsh/skills 与 ~/.agents/skills、运行时注册
+  - 模型调用开关：每行开关改写 SKILL.md 头部的 disable-model-invocation，关掉后模型看不到该技能但文件仍在硬盘，模型目录热刷新
+  - 搜索与分面筛选：按名称或描述边打边筛，叠加来源分组、启用状态与行标记（插件提供 / 无本地文件 / 符号链接）三个分面
+  - 导入 / 新建 / 编辑：从主机目录或浏览器读 ZIP 批量建技能（按官方验收规则校验、强来源已提供则跳过、只新建不覆盖），表单新建标准 SKILL.md，编辑只改描述、when-to-use 与正文
+  - 安全回收站：删除把文件移入 .trash 可恢复；偏好存 localStorage
+  tags:
+  - 技能管理
+  - 侧栏
+  - 模型调用开关
+  flag: 社区项目（BSD-3-Clause，非 DeepSeek 官方）；与 dsh-skills-manager 功能重叠
+  notes: 官方仓库是 zhu1090093659/dsh-web 单体仓 dev 分支下的 packages/dsh-skill-explorer 子包，npm 包发布在 @linxin666 名下（@linxin666/dsh-client-ui-skill-explorer），和 dsh-web-all 同源。README 标 DSH >=0.2.2-rc.3。注意 npm repository 字段只写了单体仓根地址，实际源码在 packages/dsh-skill-explorer。文章（wx-top10-30d）把它与第 6 名技能管理器并列并称「功能有重叠，装一个就够」，与 README 定位一致。
+  refs:
+  - wx-top10-30d
+- id: dsh-cost-meter
+  name: dsh-cost-meter（费用统计）
+  aliases:
+  - 费用统计
+  - Cost Meter
+  category: billing
+  status: community
+  repo: https://github.com/Han-1413141/dsh-cost-meter
+  install: dsh plugin --profile web add dsh-cost-meter
+  summary: DSH 的统一成本账本：按会话、模型、调用与轮次追踪费用和 Token，集中查看账户余额、订阅额度与预算，并把 API 按量费用与 Plan 折算分开统计，支持多厂商价目表与峰谷提醒。
+  features:
+  - 会话与调用成本：输入框、顶栏与每轮显示费用，可查费率、Token、记录的输入与工具结果，含主 / 子 Agent 成本归属
+  - 统计与导出：按日期、Provider、模型筛选，查看趋势、排行、缓存命中率与 Token 热力图，导出会话并单独看本地模型的 API 等价成本
+  - 额度与余额：Codex / ChatGPT、OpenCode Go、MiniMax、Claude、GLM、Kimi、千问、MiMo、OpenDesign 等 Plan，CLIProxyAPI 多账户额度与自定义 HTTP 余额源
+  - 多厂商价目表：自动匹配模型、可编辑费率与倍率、峰谷分档，同步 DeepSeek 官价与 OpenRouter 目录，API 费用与 Plan 折算分开
+  - 预算与告警：日 / 月 / 累计 / 自定义日期预算，峰谷时段与倒计时，切换前弹窗与系统通知
+  - 显示与历史：可配侧栏卡片、输入框条目、额度条与轮次费用，中英界面与深色 / 移动布局，历史导入与保留期控制
+  tags:
+  - 成本
+  - 用量
+  - 多厂商
+  - 预算
+  flag: 社区项目（MIT，非 DeepSeek 官方）
+  notes: 仓库 Han-1413141/dsh-cost-meter（master 分支），npm 包 dsh-cost-meter，README 版本 1.9.70（文章写 1.9.47，以仓库为准）。环境要求 Node.js >= 20、DSH 0.2.0+ 且宿主可用 pnpm；装完需重启 dsh web。桌面端用其内置 CLI 与 desktop profile。文章（wx-top10-30d）称其「内置 170+ 模型价目表、可查十二家 Coding Plan 额度」，README 印证支持多厂商 Plan 与自定义余额源，具体家数以仓库为准。
+  refs:
+  - wx-top10-30d
+- id: dsh-codex-ui
+  name: DSH Codex UI
+  aliases:
+  - '@michengai/dsh-codex-ui'
+  - Codex 风格界面
+  - Codex UI 2.0
+  category: ui
+  status: community
+  repo: https://github.com/MichengAI/dsh-codex-ui
+  install: dsh plugin --profile web add @michengai/dsh-codex-ui
+  summary: 一套 Codex 风格的 DSH 界面增强，由六个可独立启停的子插件组成：输入历史召回、全屏双岛设置、物理毛玻璃换肤、模块化侧栏、智能会话标题与桌面窗口菜单；2.0 起全面改用官方插槽与原语，降低宿主升级带来的破坏风险。
+  features:
+  - 输入框增强：行内意图预测与续写（Tab 采纳、Alt+↓/↑ 候选）、终端风格历史（↑/↓ 召回）、自适应宽度手柄
+  - 设置皮肤：全屏悬浮双岛工作台、Ambient Ground 漫反射底板、分类导航与原生搜索
+  - 主题换肤：内置 14 款主题（含 Codex、Claude、Dracula、Cyberpunk、Solarized、Gruvbox、Catppuccin 系列），平铺 / 云母双排版、三档材质与地面光斑
+  - 模块化侧栏：工作区分区、手风琴折叠抽屉、拖拽排序、会话未读标记；折叠态 100% 对齐宿主官方 56px 导轨
+  - 智能会话标题：首条消息语义提炼，支持推理模型 4096 tokens 上下文
+  - 生态管理：官方与第三方插件集中看护、版本检测与一键批量升级
+  tags:
+  - 界面
+  - 主题
+  - 侧栏
+  - Codex
+  flag: 社区项目（Apache-2.0，非 DeepSeek 官方）
+  notes: 仓库 MichengAI/dsh-codex-ui（main 分支），npm 包 @michengai/dsh-codex-ui，README 版本 v2.0（文章写 2.0.9，npm 仓库实时版本以 registry 为准）。环境要求 Node.js 22+。2.0 彻底重写：放弃 1.x 直接改宿主 DOM、高权重 CSS 覆盖的做法，改用官方 Slots 插槽与 @deepseek-ai/dsh-client-ui-primitives 原语，升级 DSH 更不易崩。文章（wx-top10-30d）称「1.x 暴力覆盖、2.0 推倒重写」，与 README 的技术决策一节一致。
+  refs:
+  - wx-top10-30d
+- id: dsh-remote-bridge
+  name: dsh-remote-bridge（远程访问桥）
+  aliases:
+  - dsh-workspace（旧名）
+  - 远程访问桥
+  category: remote
+  status: community
+  repo: https://github.com/westanke/dsh-remote-bridge
+  install: dsh plugin --profile web add dsh-remote-bridge
+  summary: 把 DSH 内核的私有 remote 协议翻译成版本化 REST，让 dsh-companion 等受信手机客户端在离开电脑后仍能用同一套聊天、会话、文件与设备能力；桌面端在设置里提供「手机设置」面板，远程访问默认关闭、不启用时只监听回环地址。
+  features:
+  - 协议桥接：私有 remote 协议转版本化 REST，聊天、会话、文件、设备全程留在同一台机器，配 dsh-companion 手机端（GitHub / Gitee）使用
+  - 手机设置面板：DSH 设置内联折叠卡片，主列表五张（远程访问 / 外网隧道 / 设备 / 回收站 / App 下载）+ 默认收起的高级设置组（根目录 / 识图 / 插件）
+  - 安全默认：远程访问默认关闭，未启用只监听回环地址，不会自动暴露到局域网；管理员可设绑定 IP、端口与新设备初始权限
+  - 跨平台：Windows / macOS / Linux，安装包含编译产物无需在服务器重建；界面默认中文可切英文
+  tags:
+  - 远程访问
+  - 手机配对
+  - REST
+  - 隧道
+  flag: 社区项目（AGPL-3.0，非 DeepSeek 官方）；远程访问把本机开放给手机，注意信任边界
+  notes: 仓库 westanke/dsh-remote-bridge（main 分支），npm 包 dsh-remote-bridge，README 版本 v2.11.1。由 dsh-workspace 在 2.0.4 改名而来；REST 前缀 /dsh-workspace-api 与状态目录 dsh-workspace 为兼容旧 App 刻意保留，属预期行为。务必用 >= v2.0.4。环境要求 DSH 内核 >=0.2.2-rc.1 <0.3.0、Node.js ^22.19.0 或 >=24、默认端口 3090 可用。它是文章（wx-top10-30d）第 9 名已弃用的 dsh-remote-web-ui（@linxin666）的接替者；本站只收接替者，不收弃用包。
+  refs:
+  - wx-top10-30d
+- id: billion-context
+  name: billion-context（上下文压缩）
+  aliases:
+  - bili
+  - 十亿上下文
+  - 上下文压缩代理
+  category: workflow
+  status: community
+  repo: https://github.com/ranxianglei/billion-context
+  install: dsh plugin --profile web add billion-context
+  summary: 架在编程助手与模型 API 之间的上下文压缩代理：由模型自己决定何时压缩、压缩什么，把已消耗的对话增量压缩成分层摘要且可逆、对前缀缓存友好，让小上下文窗口也能跑月级长会话；DSH 只是它支持的 20 多个客户端之一。
+  features:
+  - 模型驱动的分层增量压缩：压缩时机与范围由模型判断而非硬截断，摘要分层写入、可按需解压，保留前缀缓存
+  - 四个上下文管理工具：compress（折叠区间为摘要）、decompress（按需还原）、search_context（在摘要与可见消息里搜关键词）、acp_status（上下文占用与可压缩区间概览）
+  - 跨客户端通用：同一套 acp-kernel 支持 DSH、Claude Code、Codex、OpenCode、Kimi、Gemini、Qwen 等 20+ 编程助手，DSH 下提供 /acp 与 /acp-cache 会话内命令
+  - 长会话能力：官方称 100K 小窗口即可、省 5 倍 token、单会话可跑月级；仓库附生产规模纵向研究与第三方基准报告（数字以仓库原文为准，本站未实测）
+  - 安装通道：DSH 下 `dsh plugin --profile <name> add billion-context` 与 `bili plugin install dsh` 等价；也可 `bili dsh` 用启动器全量注入
+  tags:
+  - 上下文压缩
+  - 长会话
+  - 省token
+  - 跨客户端
+  flag: 通用代理型工具，非 DSH 专属；native 插件与 standalone 扩展不可同时启用，否则会重复压缩
+  notes: 仓库 ranxianglei/billion-context（master 分支），npm 包 billion-context，README 标 v0.1.208 附近（文章写 0.1.208，npm 实时版本以 registry 为准）。它不是纯 DSH 插件：架在任意编程助手与模型 API 之间重写 Anthropic/OpenAI 流，DSH 只是其支持客户端之一，本站按「可在 DSH 安装使用」收录。全局 CLI 安装为 `npm install -g billion-context --prefix=~/.local`（bili 命令落在 ~/.local/bin）；DSH 专用安装见上。native 插件（bili plugin install）与 standalone 扩展（billion-context-pi 等）互斥，同时开会双重压缩，安装器会自动切换并备份原配置到 .bili-bak。文章（wx-huxiaomo）的「省 5 倍 token / 下载 175 万」为文章与安装界面口径，本站不采信为独立结论。
+  refs:
+  - wx-huxiaomo
+- id: dsh-browser
+  name: dsh-browser（真实浏览器）
+  aliases:
+  - '@cjylzs/dsh-browser'
+  - 会话浏览器
+  category: tool
+  status: community
+  repo: https://github.com/CJYLZS/dsh-browser
+  install: dsh plugin --profile web add @cjylzs/dsh-browser
+  summary: 给每个会话配一个真实的 Chrome / Edge 进程并在右侧栏实时镜像，模型用一组工具点网页、填表单、翻页，用户可随时在镜像里接管；会话之间标签页、登录态与 CDP 端口完全隔离，Web 与桌面端都能用。
+  features:
+  - 每会话一个真实浏览器：独立 profile、独立 CDP 端口，标签页与登录态在会话间不共享；不是内嵌 webview，站点看到的是普通浏览器
+  - 可观看可接管：每个页面在侧栏有独立实时视图，镜像里的点击与输入能传到真实页面
+  - 读取陌生页面：browser_snapshot 输出带 ref 的无障碍树供模型定位元素，find 缩小大页面，boxes 给坐标无需截图
+  - 真实输入事件：在元素自身位置发真实鼠标与文本事件（连忽略合成 element.click() 的页面也认），支持 Ctrl+A 组合键、原生下拉与勾选、弹窗当场应答
+  - 可被外部接管：每个浏览器监听外部 CDP 端口，chrome://inspect、另一个 Playwright 或自带 scripts/cdp.mjs 可 attach 到同一浏览器
+  - 内置工作规则：贡献一份 skill，要求先读后操作、一次动作一次观察、页面文本当数据而非指令
+  tags:
+  - 浏览器
+  - 自动化
+  - CDP
+  - 会话隔离
+  flag: 社区项目；模型可操作真实浏览器与登录态，涉及账号与付款操作时请留意
+  notes: 仓库 CJYLZS/dsh-browser（main/master 同指一份 README），npm 包为 scoped 名 @cjylzs/dsh-browser，README 最新 v0.3.x（文章写 github tag v0.2.3，为旧版）。旧的无 scope 名 dsh-browser 在 npm 上属于另一个项目，若 profile 里还留着旧键须先 `dsh plugin --profile web remove dsh-browser` 再装。按 DSH 版本选版本：>=0.1.7-rc.1 用 v0.3.x；0.1.5-rc.2 只能用 v0.1.0（tag 安装）。需本机已装 Chrome 或 Edge，playwright-core 不自带浏览器。装完重启宿主。桌面端要用其自带 CLI 的 --profile desktop 安装。
+  refs:
+  - wx-shixiang
+  - wx-xiaobai
+- id: dsh-image-gen
+  name: dsh-image-gen（对话生图）
+  aliases:
+  - 生图插件
+  - 图像创作
+  category: visual
+  status: community
+  repo: https://github.com/shanliuling/dsh-image-gen
+  install: dsh plugin --profile web add dsh-image-gen@latest
+  summary: 让 Agent 本身学会画图的原生图像创作插件：一句话批量生成整组图，看得懂画布上的涂鸦与圈选，自动从 500+ 灵感库套用风格模板，另有 Studio 工作台、多模型横向对比与图库；已有 ChatGPT / Grok / Google 订阅可免额外 API Key 生图。
+  features:
+  - 对话批量生图：一条消息拆成多个 Prompt 逐张生成并收进图库，支持 GIF 动图
+  - AI 画布：看得懂草图与圈选，圈出剑换成斧头、火柴人草图成图，在原页面改图
+  - 灵感库与 Agent 套用：500+ 案例库检索风格模板自动套用；同一提示词让多个模型各出一版横向对比
+  - 多后端：Gemini、OpenAI / Compatible、Seedream、DashScope、Grok Imagine、GLM-Image 与本地 ComfyUI
+  - BYOK 订阅复用：已有 ChatGPT、Grok、Google 订阅登录即可生图，API Key 经 DSH Credentials 保存不回显明文
+  tags:
+  - 生图
+  - 画布
+  - 多模型
+  - BYOK
+  flag: 社区项目（Apache-2.0，非 DeepSeek 官方）；生图走第三方后端，注意各 Provider 的内容政策与费用
+  notes: 仓库 shanliuling/dsh-image-gen，npm 包 dsh-image-gen，README 标 v0.11.3（npm registry 实时版本，文章只写 @latest）。README 安装命令带 pnpm 前缀（pnpm dsh plugin ...），本站 install 用等价的无前缀写法；从源码装可用 `dsh plugin --profile web add git+https://github.com/shanliuling/dsh-image-gen.git`。生图为 BYOK 模式，支持订阅账号登录复用额度。文章（wx-shixiang）称「500+ Prompt 灵感库、多模型对比、订阅免 Key」，与 README 一致。
+  refs:
+  - wx-shixiang
+- id: dsh-rewind
+  name: dsh-rewind（对话回退）
+  aliases:
+  - dsh-rewind-plugin
+  - 对话回退
+  - 消息回退
+  - 就地回退
+  category: workflow
+  status: community
+  repo: https://github.com/SiriLee/dsh-rewind
+  install: dsh plugin --profile web add dsh-rewind-plugin
+  summary: 在原会话内一键回退到任意更早的用户消息，把目标消息及其之后的内容同时从模型上下文与界面撤回，原提示词自动回填输入框；可选连同写类工具改过的文件一起还原，对齐 Claude Code 的 /rewind 语义，不新建分支、不换窗口。
+  features:
+  - 就地消息回退：目标消息及其后的内容从模型上下文与渲染对话中一并撤回，原提示词回填输入框可改后重发；全程在原会话完成，不新建分支、不残留副本
+  - 轻量文件还原：只追踪写类工具（write / edit）碰过的文件，回退时可按「仅回退对话」或「回退对话和文件」两种模式选择；局部追踪 + 写前备份 + 不变不存，不依赖 git
+  - 只追加不删改：会话日志仅追加一个空消息标记做「遮盖替换」，历史原文保留在底层日志可审计，禁用插件即可临时显示回来
+  - /rewind 与 /undo 命令：除每条消息旁的 ↶ 按钮外，可用命令打开候选选择器，支持 ↑↓ 选择、Enter 确认、Esc 取消
+  - 快照管理：默认开启 Snapshot backups，保存最近 100 个检查点的文件快照到 ~/.dsh/rewind-snapshots/；长期不用的会话快照可配置自动清理（默认关闭，约 30 天）
+  tags:
+  - 对话回退
+  - 文件还原
+  - 检查点
+  - 审计
+  flag: 社区项目；回退不可就地撤销，操作前确认目标消息；文件还原只在选「对话和文件」时写入工作区
+  notes: 仓库 SiriLee/dsh-rewind，npm 包名是 dsh-rewind-plugin——README 明确警告 npm 上的 dsh-rewind 属于另一位作者，装错包会出事，本站 install 按官方写法。文章只说「粘贴仓库链接安装」，未给 npm 名，本站以 README 为准。Node.js >=24.9.0；兼容 DSH 版本见 package.json engines.dsh。回退内容并非删除，仍在会话日志与 Trajectory 面板里；要把回退前的内容带到新会话，先禁用插件让它显示，再在回退点前一条消息上「Branch into a new conversation」。快照默认保存最近 100 个检查点，不替代 Git。
+  refs:
+  - wx-weike
+- id: dsh-vision-router
+  name: dsh-vision-router（视觉路由）
+  aliases:
+  - deepstare
+  - 视觉路由
+  - dsh 的眼睛
+  - 免Key视觉链
+  category: visual
+  status: community
+  repo: https://github.com/ysr666/dsh-vision-router
+  install: dsh plugin --profile web add dsh-vision-router
+  summary: 给纯文本 DSH 模型装上「眼睛」：内置免 Key 视觉链与十多个像素级视觉工具，看图问答、目标定位、裁剪取色、抠图、截图等都能当普通工具调用来做；需要时点输入框旁的 👁 Vision 开关，图进入会话日志、可溯源可复现。
+  features:
+  - 免 Key 开箱可用：内置免费视觉后端，一键安装、无需 Python、无需自己配 Key；另有匿名 cloud 兜底，默认即会把图片发给云端视觉模型（涉密内容须开 strict local-only）
+  - 像素级视觉工具：看图问答、grounding 定位、crop 裁剪、取色、像素比对、OCR、SVG 描摹、抠图与截图等十多个 deep tools，输出可度量可复现
+  - 像普通工具调用一样用图：开启 👁 Vision 后，图片轮次走正常 tool-calling 流程，图能进 DSH 会话日志，不再「看完就忘」
+  - 本地 OCR 可选：v3.4.0 起本地 OCR 改为手动开启，可复用系统 Tesseract（chi_sim+eng）或按需装 SHA 校验的 Tesseract.js/WASM；大多数用户无需装
+  - 第三方审计徽章：README 挂有 dsh-recommend 认证、dshbase 安装测试与 DeepGuard 审计标记（历史 v2.0.1），站方未实测
+  tags:
+  - 视觉
+  - 免Key
+  - 像素工具
+  - 看图
+  flag: 社区项目；默认会把图片/裁剪图发给云端视觉模型（含匿名兜底），涉密或敏感素材请开 strict local-only；DSH >=0.2.1-rc.5 <0.3.0-0、Node.js >=24.9.0
+  notes: 仓库 ysr666/dsh-vision-router（GitHub 搜索同名项目很多，本条取 README 详实、带 dsh-recommend 认证与 DeepGuard 审计标记、★ 数遥遥领先的 ysr666 主仓）。文章把它在视频里的叫法写作 deepstare，插件包名是 dsh-vision-router。README 有专门的「Data flow and strict local-only use」小节说明数据外发。
+  refs:
+  - wx-huxiaomo2
+- id: dsh-nacos-bridge
+  name: dsh-nacos-bridge（Nacos 接口桥）
+  aliases:
+  - Nacos 接口桥
+  - dsh-nacos-bridge-plugin
+  - 外部接口桥
+  category: integration
+  status: community
+  repo: https://github.com/MalcolmFeng/dsh-nacos-bridge-plugin
+  install: dsh plugin --profile web add dsh-nacos-bridge-plugin
+  summary: 一个很薄的桥接插件：从 Nacos 3.2+ AI 注册中心读取已登记的 MCP 服务器与 A2A Agent Card，挂载成 DSH 里能直接调用的工具；新能力只要注册到 Nacos，无需改代码。
+  features:
+  - 发现并挂载：从 Nacos AI Registry 读 MCP server → mcp__<name>__* 工具，读 A2A Agent Card → a2a__<name>__chat 多轮能力
+  - 刻意做薄：约 540 行的胶水层，无 UI、无数据库、无自有业务逻辑，只「发现并重新暴露」已有能力；skill/记忆/会话/多模型交给 DSH 原生插件
+  - 零代码扩展：加能力 = 在 Nacos 里注册，插件自动发现成工具
+  - 自带运维台：可选 operator console（file IPC），另有 rebuild/restart/start 脚本便于开发与无人值守
+  tags:
+  - Nacos
+  - MCP
+  - A2A
+  - 接口桥
+  flag: 社区项目；需自建可达的 Nacos 3.2+ 实例并开启 AI Registry，且能力已在其中注册；非普通用户开箱即用
+  notes: 仓库 MalcolmFeng/dsh-nacos-bridge-plugin（GitHub 搜 dsh-nacos-bridge 唯一精确命中）。README 未给一行式 dsh plugin add 命令，而是通过 pnpm 把 plugins/dsh-nacos-bridge 以 link 方式装进 profile、再用 dsh web --profile web --patch runtime/cordis.yml 启动；本站 install 按插件包名写通用形式，实际按 README 的 pnpm link 流程操作。前置：Nacos 3.2+ 开启 AI Registry，配置 DEEPSEEK_API_KEY。
+  refs:
+  - wx-huxiaomo2
+- id: dsh-im
+  name: dsh-im（9 渠道 IM 专线）
+  aliases:
+  - '@xmanrui/dsh-im'
+  - IM 机器人
+  - 信息专线
+  category: integration
+  status: community
+  repo: https://github.com/xmanrui/dsh-im
+  install: dsh plugin --profile web add -w @xmanrui/dsh-im
+  summary: 通过扫码或机器人凭据把主流 IM 接进 DSH：微信、飞书、钉钉、企业微信、QQ、Slack、Telegram、Discord、WhatsApp、iMessage 等一个插件全收，手机发句话就能驱动电脑上的 agent。
+  features:
+  - 多渠道接入：微信、飞书、钉钉、企微、QQ、Slack、Telegram、Discord、WhatsApp、iMessage，扫码或机器人凭据二选一
+  - 本机凭据：Secret / Token 只提交给本机 Harness Host 并写入受保护凭据存储，状态接口和机器人列表不回传
+  - 配置即引导：安装后在「设置 → IM机器人」按各渠道内置引导完成扫码或凭据配置
+  - npm 稳定版优先：推荐 @xmanrui/dsh-im，也可用 GitHub 源安装器试用未发布代码（pnpm 10+ 可能需允许构建脚本）
+  tags:
+  - IM
+  - 微信
+  - 飞书
+  - 远程接入
+  flag: 社区项目；接入机器人涉及各平台凭据，注意 Token 安全与平台条款
+  notes: 仓库 xmanrui/dsh-im，npm 包名是 scoped 的 @xmanrui/dsh-im——README 明确「安装请认准完整包名」，GitHub 上另有 MichengAI/dsh-im-connect、SoledadAki/dsh-im-qq-wechat 等近似项目，本站取名字精确、功能覆盖最广的 xmanrui 主仓。文章说的「二维码接 9 个渠道」与 README 渠道列表一致（实际列了 10 个）。安装带 -w 参数（写 profile），Web 与 Desktop 命令分别为 --profile web / --profile desktop，装完重启。
+  refs:
+  - wx-huxiaomo2
+- id: dsh-pocket
+  name: dsh-pocket（手机同屏）
+  aliases:
+  - DSH Pocket
+  - 手机远程
+  - 口袋 DSH
+  category: remote
+  status: community
+  repo: https://github.com/shaobeichen/dsh-pocket
+  install: dsh plugin --profile web add dsh-pocket
+  summary: 把 DSH 装进口袋：电脑上跑 dsh web，装好插件后手机扫个二维码就能实时看到并操控电脑上的同一个界面——发任务、看输出、点审批，局域网或公网都能用。
+  features:
+  - 扫码同屏：手机扫码即实时同步电脑上 DSH 的同一界面，人在外面也能看进度、发任务、点审批
+  - 局域网 + 公网：支持局域网直连与公网访问两种链路，无需远程桌面或 SSH
+  - 一个包一个设置页：装上插件、打开设置页即可用，不用改 DSH 源码
+  tags:
+  - 手机
+  - 远程
+  - 扫码
+  - 同屏
+  flag: 社区项目；公网访问意味着把 DSH 界面暴露到外网，请设置强口令并留意可访问范围
+  notes: 仓库 shaobeichen/dsh-pocket（GitHub 有多个同名 dsh-pocket / dsh-pocket-plus，本条取 README 完整、★ 数最高的 shaobeichen 主仓），npm 包 dsh-pocket。README 徽章里 License 标注有 MIT/GPL 混排，本站不据此下结论。
+  refs:
+  - wx-huxiaomo2
+- id: dsh-wallpaper-engine
+  name: dsh-wallpaper-engine（壁纸引擎）
+  aliases:
+  - dsh-plugin-wallpaper-engine
+  - 壁纸引擎
+  - DSH Wallpaper Engine
+  category: ui
+  status: community
+  repo: https://github.com/elysia395/dsh-wallpaper-engine
+  install: dsh plugin --profile web add dsh-plugin-wallpaper-engine
+  summary: 把本机 Wallpaper Engine 的 Scene、Web 与视频壁纸搬进 DSH 对话界面，再配液态玻璃、字体、吉祥物与可分享的外观预设；纯外观插件，不向 agent 注册工具、不注入提示词、不增加 token 开销。
+  features:
+  - 壁纸进界面：支持 Wallpaper Engine 的 Scene / Web / 视频壁纸，场景壁纸由内置 MIT 引擎 WebWallGL 实时 WebGL 渲染（粒子/着色器等）
+  - 外观预设：液态玻璃、字体、吉祥物与可分享的皮肤预设，风格资产与功能插件解耦
+  - 零 token 开销：不注册工具、不注入提示文本，只改界面观感
+  tags:
+  - 壁纸
+  - 皮肤
+  - 界面
+  - 外观
+  flag: 社区项目；纯外观，不影响模型能力；视频/场景壁纸可能占用一定渲染资源
+  notes: 仓库 elysia395/dsh-wallpaper-engine，npm 包名是 dsh-plugin-wallpaper-engine（比仓库名多 plugin- 前缀，别填错）。GitHub 上有多个二次开发分支，本条取 README 完整、标注为正式主仓且 ★ 数最高的 elysia395 仓库。
+  refs:
+  - wx-huxiaomo2
+- id: dsh-openviking
+  name: dsh-openviking（用户画像与记忆）
+  aliases:
+  - OpenViking
+  - dsh-openviking
+  - 用户画像
+  - 会话记忆
+  category: memory
+  status: community
+  repo: https://github.com/Rxiain/dsh-openviking
+  install: dsh plugin --profile web add github:Rxiain/dsh-openviking
+  summary: 把火山引擎开源的 OpenViking 接进 DSH：user + agent 双空间的检索、资源管理、自动召回与会话记忆，每轮执行前可先翻一遍你的画像（如「中文、简洁」），越用越懂你；需本地跑一个 OpenViking 服务（默认 http://localhost:1933）。
+  features:
+  - 双空间记忆：user / agent 双空间的语义搜索（memsearch，含 deep 模式带会话上下文）、快速查找（memfind）、读取 viking:// URI（memread）与浏览文件系统（membrowse）
+  - 自动召回：通过上下文注入通道在每轮前自动召回相关记忆与已索引仓库上下文，带总 token 预算、去重与长度上限
+  - 流程经验召回：对审计/修复/迁移等流程类问题启用 procedure lane，按方法论 / playbook / workflow / runbook 等标记筛选流程分支
+  - 记忆沉淀：memcommit 提交会话提取持久记忆，memlearn 主动写/合并记忆或铸 skill playbook（脱敏+查重+即时注入）；观察者队列自动做嵌入、摘要与内容重组
+  - 安装方式：DSH 0.1.7+ 可在插件管理页直接装；CLI 可用 sh install.sh 或 dsh plugin --profile <name> add github:Rxiain/dsh-openviking
+  tags:
+  - OpenViking
+  - 用户画像
+  - 会话记忆
+  - 自动召回
+  flag: 社区项目；依赖本地 OpenViking 服务（默认 localhost:1933），不是装了就能用；Node ^22.19.0 || >=24，DSH >=0.1.7-rc.2
+  notes: 仓库 Rxiain/dsh-openviking，底层对接火山引擎开源的 OpenViking（github.com/volcengine/OpenViking），本插件是 DSH 侧对接层；GitHub 上另有 dsh-openviking-expand / dsh-memory-openviking 等近似项目，本条取 README 完整、★ 数最高的 Rxiain 主仓。文章把它描述为「用户画像」，README 里对应 user 空间记忆 + 自动召回，本站按 README 写。
+  refs:
+  - wx-huxiaomo2
+- id: dsh-wechat-article
+  name: dsh-wechat-article（公众号写作）
+  aliases:
+  - aws-wechat-article
+  - 公众号运营插件
+  - 写公众号
+  category: content
+  status: community
+  repo: https://github.com/aiworkskills/dsh-wechat-article
+  install: dsh plugin --profile web add github:aiworkskills/dsh-wechat-article
+  summary: 在对话里把一篇公众号文章从选题一路写到微信草稿箱：给一句话需求，它依次完成选题、写稿、审稿、排版、配图、发布，把定稿、HTML 和图片留在你自己的项目目录，需要你拍板的地方停下来问。
+  features:
+  - 全流程流水线：选题 → 写稿 → 审稿 → 排版 → 配图 → 发布，终点是微信草稿箱而非聊天框
+  - 人在环把关：需要拍板的地方会停下来问，产物（定稿/HTML/图片）落在本地项目目录
+  - 自然语言驱动：像平时说话一样提需求即可，不必逐步下指令
+  tags:
+  - 公众号
+  - 写作
+  - 内容创作
+  - 草稿箱
+  flag: 社区项目；README 仅给出本地路径与 pnpm 开发安装示例，未提供已发布 npm 包名，本站 install 按官方仓库的 git 形式写
+  notes: 仓库 aiworkskills/dsh-wechat-article（README 标题写 aws-wechat-article），npm 上 dsh-wechat-article 与 aws-wechat-article 均查不到已发布包，README 安装的 "$HOME/code/aiworkskills/dsh-plugin" 是作者本地路径，故本站按 git 仓库形式写 install。GitHub 另有 alitrack/dsh-wechat-article 等同名项目，本条取 README 完整、★ 数最高的 aiworkskills 主仓。
+  refs:
+  - wx-xiaobai
+- id: dsh-novel
+  name: dsh-novel（标准小说工作台）
+  aliases:
+  - 小说插件
+  - DSH Novel
+  category: content
+  status: community
+  repo: https://github.com/ddedook/dsh-novel
+  install: dsh plugin --profile web add dsh-novel
+  summary: 标准化小说创作插件：一个工作区目录就是一本书，人物、世界观、大纲和章节落在同一份 canon（设定正典）里，Agent 通过工具读写、你在 Web UI「内容」页侧栏核对，避免长篇写到后面设定崩、看不见前文。
+  features:
+  - 目录即书：一个工作区目录 = 一本小说，人物 / 世界 / 大纲 / 章节统一落在 canon，防止设定穿帮
+  - 侧栏核对：在官方 Web UI 会话的「内容」页查看人物档案与章节，Agent 写、你来核对
+  - 本地存储：用 PGlite 在工作区内保存数据
+  tags:
+  - 小说
+  - 长文
+  - 设定管理
+  - 创作
+  flag: 社区项目；数据存本地工作区，注意备份
+  notes: 仓库 ddedook/dsh-novel，npm 已发布 dsh-novel（registry 200），README 同时给 dsh plugin add github:ddedook/dsh-novel 与 dsh plugin add dsh-novel 两种方式，本站 install 用 npm 稳定版。文章把小说拆成 dsh-novel（标准化）与 dsh-novel-craft（偏好学习）两条，本站按两个独立仓库分别建条目。GitHub 另有 huangziyuan-general/dsh-novel-forge 等不同实现，本条取文章点名的 dsh-novel 名字精确主仓。
+  refs:
+  - wx-xiaobai
+- id: dsh-novel-craft
+  name: dsh-novel-craft（文风偏好小说）
+  aliases:
+  - 文风偏好插件
+  - 点赞点踩写小说
+  category: content
+  status: community
+  repo: https://github.com/shiyan688/dsh-novel-craft
+  install: dsh plugin --profile web add dsh-novel-craft
+  summary: 面向中文小说作者的写作插件：正文不进写稿上下文，你只对候选稿点赞/点踩，模型自己把偏好总结成一份可编辑的「文风档案」，下一轮带档案写稿、写完再点再总结，越用越懂你的口味。
+  features:
+  - 点赞点踩学文风：对好段落 👍、坏段落 👎，模型把点选提炼成可编辑的偏好档案（喜欢什么、避免什么）
+  - 候选稿与局部改稿：支持候选稿、章节管理与局部重写
+  - 正文不进上下文：靠偏好积累而非堆提示词来调文风，减少上下文占用
+  tags:
+  - 小说
+  - 文风
+  - 偏好学习
+  - 创作
+  flag: 社区项目（MIT）；依赖使用者持续点选来积累偏好
+  notes: 仓库 shiyan688/dsh-novel-craft，npm 已发布 dsh-novel-craft（registry 200），README 给 npm 与 git 两种安装，本站 install 用 npm 稳定版；README 明确英文文档只放仓库、不进 npm 包。文章称它「只让你点赞点踩，模型自己总结你的文风」，与 README 一致。
+  refs:
+  - wx-xiaobai
+- id: dsh-plugin-academic-paper
+  name: dsh-plugin-academic-paper（学术文献）
+  aliases:
+  - 学术文献插件
+  - 防编造文献
+  category: content
+  status: community
+  repo: https://github.com/zhaoxuejie/dsh-plugin-academic-paper
+  install: dsh plugin --profile web add dsh-plugin-academic-paper
+  summary: 学术文献插件：检索交给插件、综述交给模型——从 arXiv 与 Semantic Scholar 真实数据源检索并生成 GB/T 7714 / APA / BibTeX 引用，引用格式本地确定性生成，从机制上杜绝模型编造论文、作者与 DOI。
+  features:
+  - 真实数据源检索：arXiv + Semantic Scholar 公开 API，支持关键词/作者/年份过滤与相关性/日期/引用数排序
+  - 单篇详情：摘要、全部作者、期刊/会议、引用数、PDF 与官方链接
+  - 确定性引用：GB/T 7714 / APA / BibTeX 三种格式本地生成，不依赖大模型
+  - 会话隔离文献库：DOI / arXiv ID / 标题自动去重，支持删除、清空、批量导出 .bib / .md
+  - 防幻觉：system prompt 强制学术文献必须经工具检索，禁止编造
+  tags:
+  - 学术
+  - 文献
+  - arXiv
+  - 引用
+  - 防幻觉
+  flag: 社区项目；需 Node.js 22+ 的 DSH Web profile；检索走公开 API，注意网络可达性
+  notes: 仓库 zhaoxuejie/dsh-plugin-academic-paper，npm 已发布 dsh-plugin-academic-paper（registry 200），README 推荐方式 A npm 安装 dsh plugin --profile web add dsh-plugin-academic-paper，本站 install 与其一致。文章称其「把查这件事从模型手里拿走」，与 README 的「插件负责检索与引用、模型负责解读综述」一致。
+  refs:
+  - wx-xiaobai
+- id: dsh-deep-research
+  name: dsh-deep-research（自适应深度研究）
+  aliases:
+  - '@dsh-external/dsh-deep-research'
+  - 深度研究插件
+  category: workflow
+  status: community
+  repo: https://github.com/dsh-external/dsh-deep-research
+  install: dsh plugin --profile web add git+https://github.com/dsh-external/dsh-deep-research.git
+  summary: 基于 DSH 官方 workflow 引擎的深度研究插件，按控制论 + 信息论设计成自适应研究闭环：先定义答案空间与验收标准，再并行研究子问题、按缺口自动派发下一轮、边际增益为零即停，不是固定的提示词流水线。
+  features:
+  - 答案空间与验收标准：规划代理先定义 scope 与每个子问题的 acceptance，避免闭环校准错误目标
+  - 覆盖度自检：按必要多样性定律枚举信息维度，输出 coverage_gaps
+  - 三态证据：confirmed / uncertain / gaps 保留置信度与矛盾，不掩盖不确定性
+  - 边际增益验证：预测 → 行动（web_search/web_fetch）→ 更新证据 → 零增益即停 + 轮次硬上限
+  - 闭环再规划：每轮收集高优缺口自动派发补充研究，对盲区定向侦察
+  tags:
+  - 深度研究
+  - workflow
+  - 控制论
+  - 信息论
+  flag: 社区项目；npm 未发布（@dsh-external/dsh-deep-research 查不到），须从 git 安装；研究能力依赖 web_search/web_fetch 工具
+  notes: 官方组织仓 dsh-external/dsh-deep-research（GitHub 搜索首位的 omdsh-dev/dsh-deep-research 是镜像，README 相同；README 内 git 安装地址明确写 github.com/dsh-external/dsh-deep-research），npm registry 上 @dsh-external/dsh-deep-research 返回 404，故 install 用 README 的 git+https 形式。README 声明包带 dsh.bundle.patch（cordis.patch.yml），可装进任意 profile。
+  refs:
+  - wx-xiaobai
+- id: dsh-dev-mode
+  name: dsh-dev-mode（开发模式流水线）
+  aliases:
+  - Developer Mode
+  - 白话开发
+  category: workflow
+  status: community
+  repo: https://github.com/lingyingaojue/dsh-dev-mode
+  install: dsh plugin --profile web add github:lingyingaojue/dsh-dev-mode
+  summary: 给 DSH 装上开发模式：几句大白话讲需求，它走开工体检 → 写计划 → 独立评审 → 后台实现与自测 → 独立测试 → 修复 → 复测 → 交付的多阶段流水线；你说不清要什么时先给三个具体示例让你选，全程最多问一轮。
+  features:
+  - 七阶段流水线：体检 → 计划 → 评审 → 实现自测 → 独立测试 → 修复 → 复测交付
+  - 需求不清先举例：说不清时给三个具体示例让你选，最多问一轮
+  - 原生子代理：基于 native-subagent 编排，评审与测试分角色独立执行
+  tags:
+  - 开发模式
+  - 编程
+  - 子代理
+  - 流水线
+  flag: 社区项目；要求 DSH 0.2.2+、Windows 10/11；会在工作目录改文件跑命令，建议在空目录或独立项目目录使用
+  notes: 仓库 lingyingaojue/dsh-dev-mode——文章在装机章节明确给出 github:lingyingaojue/dsh-dev-mode，与 GitHub 搜索精确命中一致。README 标注 DSH 0.2.2+、平台 Windows 10/11（npm 未发布，按 git 安装）。GitHub 另有 OugeX/dsh-web-dev-mode 等不同项目，本条取文章点名仓库。
+  refs:
+  - wx-xiaobai
+- id: dsh-computer-use-win
+  name: dsh-computer-use-win（Windows 桌面操控）
+  aliases:
+  - dsh-computer-use
+  - Windows 电脑操控
+  - 桌面控制
+  category: tool
+  status: community
+  repo: https://github.com/Yu-tao-Li/dsh-computer-use-win
+  install: dsh plugin --profile desktop add dsh-computer-use-win
+  summary: 让 DSH 看懂并操作真实的 Windows 桌面：找到按钮与输入框、读出屏幕文字、点击打字、切换管理窗口；网页默认在 DSH 自己的浏览器后台完成、不动你的鼠标，用到鼠标键盘时有明显提示、按 Esc 随时停止。
+  features:
+  - Windows 桌面操控：屏幕文字识别、按钮/输入框定位、鼠标键盘操作、窗口管理
+  - 不抢前台：网页任务在 DSH 自带浏览器后台完成，不抢焦点、不动用户鼠标
+  - 看得见的控制：浮窗按步骤显示思考与操作，用到键鼠时屏幕边缘发亮并给提示条
+  - 随时叫停：按 Esc 立即停止当前一轮操作
+  - 25 个操作工具 + 1 个管理入口，中英文设置界面
+  tags:
+  - 桌面操控
+  - Windows
+  - 电脑控制
+  - 工具
+  flag: 社区项目；仅 Windows；能真实操作桌面与键鼠，涉及账号/付款操作请全程留意并按需用 Esc 停止
+  notes: 文章写的是「dsh-computer-use，目前只有 Windows 版」，据此取 Yu-tao-Li/dsh-computer-use-win（README 明确 Windows 专属、npm 包 dsh-computer-use-win，registry 200）。GitHub 上另有一个 Anionex/dsh-computer-use 是 macOS 版（描述为 Native macOS control），与文章「只有 Windows 版」不符，未收。文章把它当作 dsh-computer-use 介绍，本站以实际 Windows 仓库名建条目并留别名。
+  refs:
+  - wx-xiaobai
+- id: dsh-topic-audit
+  name: dsh-topic-audit（插件真伪审计）
+  aliases:
+  - 话题审计
+  - dsh-plugin 话题审计
+  category: security
+  status: community
+  repo: https://github.com/ciceroyang/dsh-topic-audit
+  install: dsh plugin --profile web add github:ciceroyang/dsh-topic-audit
+  summary: 审计 GitHub 的 dsh-plugin 话题、把真插件与蹭话题的无关仓库分开的工具：按仓库根目录是否带 cordis bundle 清单、README 是否提到 DSH，判成 plugin / companion / not-a-plugin 三类，可作为 GitHub Action 每晚复跑。
+  features:
+  - 三类判定：plugin（根带 cordis.patch.yml 等清单、可 dsh plugin add）/ companion（无清单但与 DSH 相关）/ not-a-plugin
+  - 应对话题冒名：话题可按 star 排序，无关仓库蹭标签就能排在真插件前面，本工具专门识别这种情况
+  - 可复现：每晚从干净 --bands 运行重建资产，rolling latest 标签附可验证配方
+  - 可作 composite action：夜间任务三行接入
+  tags:
+  - 安全
+  - 审计
+  - 话题
+  - 防投毒
+  flag: 社区项目；npm 未发布（registry 404），按 git 安装；判定的是「是否真插件」，不是仓库质量
+  notes: 仓库 ciceroyang/dsh-topic-audit（npm registry 返回 404，故 install 用 github 形式）。README 自述它更像生态审计工具（companion 类），但文章把它列为「地基」插件之一用于查真伪，本站按社区条目收录并在简介里说明它是审计工具。GitHub 有 yunhuantian/dsh-plugin-hub、863683348/dsh-plugin-audit 等近似项目，本条取名字精确命中的 ciceroyang 仓库。
+  refs:
+  - wx-xiaobai
+- id: dsh-skill-zh-distribute
+  name: dsh-skill-zh-distribute（中文多平台分发）
+  aliases:
+  - zh-distribute
+  - 一稿多发
+  - 多平台分发 skill
+  category: content
+  status: community
+  repo: https://github.com/zjukop/dsh-skill-zh-distribute
+  install: npm i -g dsh-skill-zh-distribute && dsh-skill-zh-distribute
+  summary: 零代码 DSH skill：把一份「母本」内容改写成掘金、公众号、X、小红书、B站五个平台各自的原生格式，并给出错开发布的防垃圾时间表；诚实说明多数中文平台没有免费发文 API，实际模式是 AI 生成各平台文案、人工五分钟粘贴。
+  features:
+  - 一稿五平台：母本 → 掘金 / 公众号 / X / 小红书 / B站各自的头部博主格式文案
+  - 各平台档案：受众、格式、长度、语气、标签、CTA、坑位逐平台给出
+  - 防垃圾时间表：错开发布时间并给出理由
+  - 诚实边界：不代发、不绕反垃圾，多数平台无免费写 API，产出 daily-pack 供人工粘贴
+  tags:
+  - 分发
+  - 多平台
+  - skill
+  - 内容创作
+  flag: 社区 skill（非 Cordis bundle）；走 skill 文件系统 provider 加载，不是 dsh plugin add；npm 全局安装后用附带链接器装到 ~/.dsh/skills/zh-distribute
+  notes: 仓库 zjukop/dsh-skill-zh-distribute（GitHub 精确命中唯一），npm 已发布 dsh-skill-zh-distribute（registry 200）。README 明确这是零代码 skill 而非代码插件，dsh plugin add 装的是 bundle、不适用；正确装法 npm i -g 后运行 dsh-skill-zh-distribute 链接器。文章把它列为创作组「一稿多发」，本站按其 skill 属性在 install 与 flag 里写清。
+  refs:
+  - wx-xiaobai
+- id: dsh-mic-input
+  name: dsh-mic-input（麦克风输入）
+  aliases:
+  - 语音输入
+  - 话筒输入
+  category: ui
+  status: community
+  repo: https://github.com/QT-Chen/dsh-mic-input
+  install: dsh plugin --profile web add dsh-mic-input
+  summary: 给 DSH Web 输入框加一个麦克风按钮，点一下开始口述、识别结果实时落进输入框；全部在浏览器里用内置 Web Speech API 完成，无服务端、无 API Key、无需下载模型，音频只发给浏览器自带的语音服务。
+  features:
+  - 麦克风按钮：在输入框工具行（发送键旁）加麦克风，点击开始/停止，录音时红色脉冲环
+  - 实时转写：边说边出字， interim 结果直接填进输入框
+  - 不重复文字：草稿始终基于录音开始时的文本重建，并去除中间结果回显前缀，修复常见重复 bug
+  - 纯客户端：Chrome 用 Google 语音服务、Edge 用 Azure 语音服务，无需 Key
+  tags:
+  - 语音输入
+  - 麦克风
+  - Web Speech
+  - 界面
+  flag: 社区项目；语音识别走浏览器自带服务（Edge→Azure / Chrome→Google），音频会发给对应浏览器语音服务；npm 安装免 allowBuilds
+  notes: 仓库 QT-Chen/dsh-mic-input（README 标题即 dsh-mic-input，与文章名字精确一致），npm 已发布 dsh-mic-input（registry 200），README 给 git 与 npm 两种方式，本站 install 用 npm 稳定版免构建授权。GitHub 另有 woodess/dsh-voice-input、hjcnx/dsh-web-voice-input 等近似项目，本条取文章点名且名字精确的 QT-Chen 仓库。
+  refs:
+  - wx-xiaobai
+- id: dsh-autoresearch
+  name: dsh-autoresearch（自动实验循环）
+  aliases:
+  - 自动研究
+  - dsh-reprise
+  category: workflow
+  status: community
+  repo: https://github.com/aa2246740/dsh-autoresearch
+  install: dsh plugin --profile web add github:aa2246740/dsh-autoresearch#v1.0.11
+  summary: 给 DSH 加一个持久化的自动研究/实验循环：创建一个目标后 Agent 连续修改、测量、保留或回滚，会话顶部面板显示结果；开工前先建本地保护，能用 Git 就存基线、否则打私有快照，翻车自动恢复受保护文件。
+  features:
+  - 自动实验循环：创建目标后连续改→测→留/回滚，结果在会话顶部面板可见
+  - 本地保护：开工先建基线（Git 或私有快照），翻车自动恢复受保护文件
+  - '版本明确：README 标正式版 1.0.11、适配 DSH 0.2.1-rc.5，安装命令带 #v1.0.11 标签'
+  tags:
+  - 自动研究
+  - 实验循环
+  - 自动化
+  - workflow
+  flag: 社区项目；会在工作目录反复修改文件，务必在独立目录/有基线保护下使用；安装按 README 固定 v1.0.11 标签
+  notes: 仓库 aa2246740/dsh-autoresearch（README 标正式版 1.0.11、适配 DSH 0.2.1-rc.5，安装给 github:aa2246740/dsh-autoresearch#v1.0.11）。GitHub 另有 beibingyangliuying、vlozg 等多个 0 星同名 dsh-autoresearch，本条取 README 有正式版本号、安装说明完整的 aa2246740 主仓。文章描述「设定轮次连续改、测量、保留或回滚、开工建本地保护」与 README 一致。
+  refs:
+  - wx-xiaobai
+- id: dsh-plugin-save-token
+  name: dsh-plugin-save-token（省 Token 压缩）
+  aliases:
+  - save-token
+  - 动态省token插件
+  category: billing
+  status: community
+  repo: https://github.com/vibe-any/dsh-plugin-save-token
+  install: dsh plugin --profile web add dsh-plugin-save-token
+  summary: 在每次模型请求入口对超长工具输出做可逆、结构感知的压缩：原始全文存盘，模型只看到带检索路径的浓缩版；每条替换都要求一步可还原、且压缩后 token 数严格变小，目标是只降 token 成本不降智能水平。
+  features:
+  - 结构感知压缩：识别管道分隔的高密度表格，保留首 60 行 + 带行号步进采样中段 + 末 40 行，模型拿到「带坐标的地图」可按行号精确取回
+  - 可逆红线：任何替换都能一步还原，原始文本始终落盘；压缩后估算 token 必须严格小于原文
+  - 中度过压缩更省：README 引述 RCT，激进压缩（keep 0.2）反而让成本 +1.8%，中度压缩（0.5）省 27.9%，故按结构保留而非乱删
+  - 长内容才动手：对过长工具结果（大 JSON / CLI 表格 / 日志）生效，短输出不触发
+  - 跨客户端：同一套 token 优化内核也作为 Codex CLI 插件（MCP stdio server）发布
+  tags:
+  - 省token
+  - 上下文压缩
+  - 工具输出
+  - 可逆
+  flag: 社区项目；需 Web profile 与 pnpm；依赖 spillStore（标准部署自带，缺失时压缩默认关闭）；装后需重启 dsh
+  notes: 仓库 vibe-any/dsh-plugin-save-token（GitHub 搜索「save-token deepseek harness」精确命中、★ 最高），npm 已发布 dsh-plugin-save-token（registry 200），README 给 npm / github / 本地三种安装，本站 install 用 npm 稳定版。文章（wx-jiaweisi）实测它省 7.6%，属作者单次口径，本站不采信数字；README 自述「长任务省两成左右、完成率未受影响」也是作者口径，同样只作功能描述不作结论。
+  refs:
+  - wx-jiaweisi
+- id: dsh-flash-presets
+  name: dsh-flash-presets（V4.1 Flash 预设）
+  aliases:
+  - flash-presets
+  - V4 Flash 预设
+  category: billing
+  status: community
+  repo: https://github.com/LarryE135/dsh-flash-presets
+  install: dsh plugin --profile web add dsh-flash-presets@0.3.1
+  summary: 专为 DeepSeek V4.1 Flash 调校的 DSH agent 预设包：更短上下文窗口 + 工具裁切 + 低频工具优化 + run_code 合并调用，并内置一份「干活规矩」（如 20 轮内完成、长结果只看末尾、检查通过就交付），在不改变模型能力上限的前提下用更低预算完成能力范围内的任务。
+  features:
+  - 13 条效率规矩：20 轮内完成、超长运行结果只看最后几行、检查通过即交付不再额外测试等，核心是管住「什么时候停手」
+  - 工具与调用优化：工具裁切、低频工具优化、run_code 合并批量调用、常驻 PTC 运行时
+  - 计划模式：内置计划模式组件（plan-mode v1）与旧 preset id 兼容层
+  - 版本门槛严格：要求 DSH >=0.2.1-rc.5 <0.2.3-0，engines 闸会拒装不兼容版本；不要装 0.2.5（在 0.2.2-rc.1 上无法新建会话）
+  - 以组合包交付：向 profile 插入预设行，不改宿主源码；--profile 取 web/desktop
+  tags:
+  - 省token
+  - 预设
+  - V4.1 Flash
+  - PTC
+  flag: 社区项目；仅适配 DeepSeek V4.1 Flash 与 DSH 0.2.1-rc.5~0.2.2 区间；三项运行时改动对整个 profile 生效（PTC 覆盖 / glob-grep 并发标记 / 旧 id 解析），需按需用环境变量关闭；装 0.3.1 别装 0.2.5
+  notes: 仓库 LarryE135/dsh-flash-presets（GitHub 搜索「flash-presets deepseek」精确命中、★ 最高），npm 包 dsh-flash-presets（registry 200，README 载 latest=0.3.1）。README 说明仓库内版本 0.3.2（2026-11-16）尚未发 npm/Release，故 install 固定到已发布的 0.3.1，避免装到有问题的 0.2.5。文章（wx-jiaweisi）实测省 23%、把浏览器检查次数从 30 降到 17，属作者单次口径，本站不采信数字，只按其「管住停手」的机制描述写功能。
+  refs:
+  - wx-jiaweisi

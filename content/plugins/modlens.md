@@ -7,7 +7,7 @@ tags: &id001
 - OCR
 - 视觉
 - 结构化输出
-weight: 1010
+weight: 1030
 params:
   plugin:
     id: modlens
@@ -32,11 +32,21 @@ params:
       url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
       kind_label: 公众号
       publisher: 智宇AI说
-    source_count: 1
+    - id: wx-huxiaomo
+      title: DSH 最值得装的 7 款插件：从省 5 倍 token 到余额小鲸鱼
+      url: https://mp.weixin.qq.com/s/pOxsRRqyCiFI3moxX676xQ
+      kind_label: 公众号
+      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
+    - id: wx-shixiang
+      title: 亲测，DSH 最应该装的 10 个插件
+      url: https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA
+      kind_label: 公众号
+      publisher: 世相智能体（公众号：世相Ai智能体）
+    source_count: 3
     repo_confirmed: true
     category_label: 视觉与设计
     status_label: 社区
-    weight: 1010
+    weight: 1030
     url: /plugins/modlens/
   generated: true
 ---

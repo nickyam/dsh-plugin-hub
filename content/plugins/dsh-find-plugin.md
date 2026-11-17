@@ -7,7 +7,7 @@ tags: &id001
 - 命令行
 - GitHub
 - 发现
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: dsh-find-plugin
@@ -30,11 +30,16 @@ params:
       url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
       kind_label: 第三方媒体
       publisher: TreeRouter Blog（英文，第三方）
-    source_count: 1
+    - id: wx-xiaobai
+      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
+      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
+      kind_label: 公众号
+      publisher: Stefan学AI（公众号：晓白AI纪元）
+    source_count: 2
     repo_confirmed: true
     category_label: 插件市场与发现
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/dsh-find-plugin/
   generated: true
 ---

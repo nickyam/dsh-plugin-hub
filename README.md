@@ -4,7 +4,7 @@
 
 **正式地址：`https://ai.limzero.com/dsh/`**（挂在已备案的 `ai.limzero.com` 主站下的子目录，走阿里云 ECS）
 
-> 非官方站点，与 DeepSeek 及各插件作者无隶属关系。数据来自 7 个真实公开来源（含 4 篇公众号文章），**未对任何插件做安装实测**。**只收需要额外安装的插件**，官方开箱即用的内置能力不展示。
+> 非官方站点，与 DeepSeek 及各插件作者无隶属关系。数据来自 17 个真实公开来源（含 14 篇公众号文章），**未对任何插件做安装实测**。**只收需要额外安装的插件**，官方开箱即用的内置能力不展示。
 
 **视觉**：用 hallmark 的 **Almanac** 主题（石板蓝纸底、蓝黑墨字、方形直角、双线规、DeepSeek 鲸鱼蓝、等宽数字）做全量 redesign，自建零依赖浅色主题，全站纯静态、无后端无统计。
 
@@ -38,7 +38,7 @@ data/
 tools/build_data.py     校验 / 去重 / 算仓库确认数 / 生成页面与索引
 deploy/deploy.sh        部署到 ECS 的 index/dsh/
 content/
-  plugins/*.md          【脚本生成】78 个插件详情页
+  plugins/*.md          【脚本生成】106 个插件详情页
   sources/*.md          【脚本生成】6 个来源页
   about.md privacy.md _index.md   手写页面
 layouts/                 自建零依赖主题（不拉 submodule）
@@ -137,11 +137,27 @@ bash deploy/deploy.sh --sync-only  # 产物已构建，只同步
 
 ## 目前的数据
 
-78 个插件 / 7 条来源，**全部已确认官方仓库**；13 个分类均有条目。
+106 个插件 / 17 条来源，**全部已确认官方仓库**；13 个分类均有条目。
 
-已录入两篇公众号清单文作为「发现来源」：第 1 篇偏入门与自用清单，第 2 篇（智宇AI说，14 大类）带来 46 条插件引用——其中 7 条并入已有插件的参考来源（如 `modsearch`、`dsh-market`、小鲸鱼挂件），39 条是全新条目。该文的仓库地址抽查 24 个（23 个 200 / 1 个 301），Stars 数字与标题「36 款」按纪律不采信。每个插件的内容都以对应官方仓库 README 为准，公众号文章只作发现来源与对照。后续又录入第 3 篇（运维网工，单插件 dsh-devops 深度文）与第 4 篇（飞叔，官方点名的 4 个插件盘点），均只作发现来源。
+已录入两篇公众号清单文作为「发现来源」：第 1 篇偏入门与自用清单，第 2 篇（智宇AI说，14 大类）带来 46 条插件引用——其中 7 条并入已有插件的参考来源（如 `modsearch`、`dsh-market`、小鲸鱼挂件），39 条是全新条目。该文的仓库地址抽查 24 个（23 个 200 / 1 个 301），Stars 数字与标题「36 款」按纪律不采信。每个插件的内容都以对应官方仓库 README 为准，公众号文章只作发现来源与对照。后续又录入第 3 篇（运维网工，单插件 dsh-devops 深度文）、第 4 篇（飞叔，官方点名的 4 个插件盘点）、第 5 篇（近 30 天下载 TOP10 榜）、第 6 篇（狐小墨，7 款推荐清单）、第 7 篇（老马 PaperToday，agentero-dsh 实测）、第 8 篇（繁星，deepseek-bot 介绍）、第 9 篇（世相智能体，10 款亲测清单）、第 10 篇（维客笔记，dsh-rewind 菜单回退）与第 11 篇（有料黑科技，dsh-deepseek-web-login 实操踩坑）、第 12 篇（狐小墨进阶篇，再添 10 件新装备）、第 13 篇（晓白AI纪元，17 插件四路盘点）、第 14 篇（甲维斯机，5 款省 Token 插件实测），均只作发现来源。
 
 第 3 篇（运维网工，2026-11-03）不是清单文，而是 `dsh-devops` 的单插件深度介绍，正文与该仓库中文 README 高度重叠；本站据此去 GitHub 核对了仓库、package.json、LICENSE 与安装路径，新增 1 个插件条目，文章仍只作发现来源。
+
+第 5 篇（小白分享1234，2026-11-01）是近 30 天下载量 TOP10 榜。文中下载量、星标与版本号均为文章口径且与仓库实时数据有出入，一律不采信；本站顺着名字逐个核对官方仓库 README，新增 5 个条目（`dsh-skills-manager`、`dsh-client-ui-skill-explorer`、`dsh-cost-meter`、`dsh-codex-ui`、`dsh-remote-bridge`）。榜单第 9 名 `dsh-remote-web-ui` 文章已注明弃用、由 `dsh-remote-bridge` 接替，本站只收接替者。
+
+第 6 篇（狐小墨，2026-10-31）是 7 款推荐清单，其中 6 款此前已收录、本条只为它们补新的发现线索；唯一新条目 `billion-context` 是跨 20+ 编程助手的通用上下文压缩代理（DSH 只是其一），本站按其官方仓库 README 收录并注明。文中的星标、下载量与「省 5 倍 token」均为文章或安装界面口径，不采信为独立结论。
+
+第 7、8 篇均为单插件介绍（`agentero-dsh` / `deepseek-bot`），两款此前已收录、仓库地址一致，本条只作新的发现线索，内容仍以官方仓库 README 为准；文中的实测数字与评价性说法不采信为收录口径。
+
+第 9 篇（世相智能体，2026-11-06）是 10 款亲测清单，新增 `dsh-browser`（真实浏览器）与 `dsh-image-gen`（对话生图）两条，其余 8 款只补发现线索；文章写的 dsh-browser 旧版 github tag 安装命令不采用，按官方 README 用最新 scoped 包名。另有读者发来一篇 AnySearch 深度搜索插件的文章，但该服务查不到可信官方仓库 / npm 包（文章只说「在插件市场搜索安装」），按「查不到仓库就不建条目」的规则未收录。
+
+第 10 篇（维客笔记，2026-10-20）新增 `dsh-rewind`（对话回退）一条：仓库 SiriLee/dsh-rewind 核实为真，npm 包名是 `dsh-rewind-plugin`（README 明确警告 `dsh-rewind` 属于他人），文章只写「粘贴仓库链接安装」未给 npm 名，本站按官方 README 写。第 11 篇（有料黑科技，2026-10-30）是已收录 `dsh-deepseek-web-login` 的实操踩坑文，本条只补发现线索并按官方 README 补账号库 / 防风控两组能力；文中 40 万字符、并发 2 次等风控阀门属文章实测口径，不采信为结论。
+
+第 12 篇（狐小墨，2026-11-04）是 7 款推荐的进阶篇，新增 6 条：`dsh-vision-router`（视觉路由）、`dsh-nacos-bridge`（Nacos 接口桥）、`dsh-im`（9 渠道 IM）、`dsh-pocket`（手机同屏）、`dsh-wallpaper-engine`（壁纸引擎）、`dsh-openviking`（用户画像与记忆），`dsh-our-free-model` 与 `dsh-web` 两条此前已收录只补线索。文中 `hindsight` 名字泛化、GitHub 上多个 2~9 星同名仓库且外链经微信跳转无法确认指向，`WeKnora` 本身是腾讯开源知识库系统（Tencent/WeKnora）而非独立 DSH 插件、对接仓库均为 0 星且功能分散——两者都按「查不到可信仓库就不建条目」未收。
+
+第 13 篇（晓白AI纪元，2026-10-27）按创作/科研/办公/地基四路盘 17 个插件（另 3 个编号是变现思路不是插件，未建条目）。本次新增 11 条：`dsh-wechat-article`、`dsh-novel`、`dsh-novel-craft`、`dsh-plugin-academic-paper`、`dsh-deep-research`、`dsh-dev-mode`、`dsh-computer-use-win`、`dsh-topic-audit`、`dsh-skill-zh-distribute`、`dsh-mic-input`、`dsh-autoresearch`；`dsh-agent-teams`、`dsh-browser`、`dsh-market`、`dsh-better-sidebar`、`dsh-find-plugin`、`dsh-web` 已收录只补线索。几个按仓库事实做的校正：文章写 `dsh-computer-use`「只有 Windows 版」，故收 Yu-tao-Li 的 Windows 仓（Anionex 的 macOS 版不收）；`dsh-dev-mode` 用文章明确给出的 lingyingaojue 仓库；`dsh-deep-research` 取官方 org `dsh-external` 仓（搜索首位的 omdsh-dev 是镜像）；`dsh-wechat-article` 与 `dsh-topic-audit` 无已发布 npm 包，按 git 形式写安装。`dsh-automation` 因 README 声明 2026-10-08 停止维护且 DSH 已有官方定时能力，按弃用未收。
+
+第 14 篇（甲维斯机，2026-11-05）是省 Token 插件横向实测，新增 `dsh-plugin-save-token`（结构感知可逆压缩）与 `dsh-flash-presets`（V4.1 Flash 预设）两条，`dsh-ops` 已收录只补线索。文中实测的省 4.5%~36.4% 与费用数字属单次口径不采信；PTC 是 DSH 官方自带模式按内置不收；Condense 插件只给名字与功能、GitHub/npm 均无精确匹配的可信仓库，按「查不到仓库就不建条目」未收；flash-presets 安装固定到已发布的 0.3.1（README 警告别装 0.2.5）。
 
 官方开箱即用的 9 个内置能力条目与「官方内置能力」分类已整体移除；原先误挂在内置条目上的一条 `dsh-agent-teams` 引文已迁回社区插件主档。
 

@@ -65,3 +65,93 @@
   date_note: "2026-11-08 01:08（广西）"
   note: "第四篇公众号。借 DeepSeek 官方《DeepSeek Harness 与插件社区共同成长》点名的 4 个插件（dsh-media-desk / dsh-guizang-design / dsh-context / agentero-dsh）做解读，并提醒社区尚无官方插件市场、装前需确认来源可信。本站只当发现来源，4 个插件内容一律以各自官方仓库 README 为准；文章的「官方只挑了这 4 个」说法与盘点口吻不采信为收录口径。其中 dsh-context 此前已由 wx-quanjing 收录，本条仅补充新的发现线索。"
   tags: [公众号, 官方点名, 单篇盘点]
+
+- id: wx-top10-30d
+  title: "DSH 近 30 天插件 TOP10，鲸鱼娘挂件霸榜第一"
+  kind: wechat
+  publisher: "小白分享1234（公众号）"
+  url: "https://mp.weixin.qq.com/s/7C46btfXy97CahMiDuOEnQ"
+  date_note: "2026-11-01 13:01（山西）"
+  note: "第五篇公众号，按近 30 天下载量排的 TOP10 榜单。本站只当发现来源：文中的下载量、星标数与版本号均为文章口径且与官方仓库实时数据有出入，一律不采信；插件内容以各自官方仓库 README 为准。榜单里 dsh-pet / dsh-context / dsh-better-sidebar / modlens / whale-cost-widget（文中叫 dsh-whale-widget）此前已收录，本条只为其中若干补充新发现线索。第 9 名 dsh-remote-web-ui 文章已注明弃用、由 dsh-remote-bridge 接替，本站只收接替者。"
+  tags: [公众号, 下载榜, 单篇盘点]
+
+- id: wx-huxiaomo
+  title: "DSH 最值得装的 7 款插件：从省 5 倍 token 到余额小鲸鱼"
+  kind: wechat
+  publisher: "狐小墨（公众号：狐小墨 AI驱动创新）"
+  url: "https://mp.weixin.qq.com/s/pOxsRRqyCiFI3moxX676xQ"
+  date_note: "2026-10-31 08:08（广东）"
+  note: "第六篇公众号，7 款推荐清单（dshmarket / billion-context / dsh-better-sidebar / dsh-context / @liustack/modlens / dsh-ops / 余额小鲸鱼挂件）。本站只当发现来源：文中的星标数、下载量、「省 5 倍 token」等说法均为文章或安装界面口径，不采信为独立结论；插件内容以各自官方仓库 README 为准。清单里除 billion-context 外 6 款此前已收录，本条为它们补新的发现线索；billion-context 是跨 20+ 编程助手的通用上下文压缩代理（DSH 只是其一），本站按其官方仓库 README 收录并注明这一点。"
+  tags: [公众号, 推荐清单, 单篇盘点]
+
+- id: wx-papertoday
+  title: "DeepSeek官方推荐的科研神器，我装上了，超惊喜"
+  kind: wechat
+  publisher: "每天学AI的老马（公众号：PaperToday）"
+  url: "https://mp.weixin.qq.com/s/-afBryEeI_iNkkvypHU_LQ"
+  date_note: "2026-11-09 20:19（湖北）"
+  note: "第七篇公众号，agentero-dsh 的单插件深度实测文：用 RSI 方向走了一遍 arXiv 找论文入库、跨文献找关联、把讨论写成笔记的科研工作流。该插件已由 wx-feishu 收录，本条只作新的发现线索，内容仍以官方仓库 README 为准；文中的实测数字与「DeepSeek 官方推荐」说法不采信为收录口径。"
+  tags: [公众号, 科研, 单插件]
+
+- id: wx-fanxing
+  title: "2K Star！又一神级插件：把 DeepSeek Harness 变成一支有记忆、能群聊、互相派活的 Bot 团队"
+  kind: wechat
+  publisher: "繁星（公众号：繁星AI随笔）"
+  url: "https://mp.weixin.qq.com/s/ewKzM3nfPTU1iYurPdAR9A"
+  date_note: "2026-10-16 12:17（山东）"
+  note: "第八篇公众号，deepseek-bot 的单插件介绍：Bot 持久记忆、Main Bot 管理、群聊 @ 派活、共享能力库与用量追踪。该插件已由 wx-quanjing 收录且仓库地址一致，本条只作新的发现线索，内容仍以官方仓库 README 为准；文中的「2K Star」「神级」等评价口径不采信。"
+  tags: [公众号, 多智能体, 单插件]
+
+- id: wx-shixiang
+  title: "亲测，DSH 最应该装的 10 个插件"
+  kind: wechat
+  publisher: "世相智能体（公众号：世相Ai智能体）"
+  url: "https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA"
+  date_note: "2026-11-06 07:27（广东）"
+  note: "第九篇公众号，作者亲测留下来的 10 款清单。本站只当发现来源：文中的星标、下载量与「亲测」结论均为文章口径，不采信为独立结论；插件内容以各自官方仓库 README 为准。10 款里 dsh-browser 与 dsh-image-gen 是全新条目，其余 8 款此前已收录，本条为它们补新的发现线索。文章写的 dsh-browser 安装命令是旧版 github tag，本站按官方 README 用最新 scoped 包名。"
+  tags: [公众号, 亲测清单, 单篇盘点]
+
+- id: wx-weike
+  title: "分享一个DeepSeek Harness 必备插件，使用体验大大提升！"
+  kind: wechat
+  publisher: "维客笔记（来自1037号森林的维客）"
+  url: "https://mp.weixin.qq.com/s/hMuGyJvyDyOj6ZcCD5zgtg"
+  date_note: "2026-10-20 19:55（湖北）"
+  note: "第十篇公众号，单插件深度介绍：dsh-rewind 的就地对话回退、文件还原、快照管理与使用体验。本站只当发现来源，插件内容全部以 SiriLee/dsh-rewind 官方 README 为准；文章只写「粘贴仓库链接安装」、未给 npm 包名，而 README 明确要求装 dsh-rewind-plugin（dsh-rewind 是他人包），本站按 README 写。文章的「必备」「体验大大提升」等评价口径不采信。"
+  tags: [公众号, 对话回退, 单插件]
+
+- id: wx-you-liao
+  title: "不填API Key，DSH免费用上DeepSeek网页版（附实操）"
+  kind: wechat
+  publisher: "有料黑科技（公众号）"
+  url: "https://mp.weixin.qq.com/s/EmUKw2TVo20gkhk1j1jCwA"
+  date_note: "2026-10-30 16:31（山西）"
+  note: "第十一篇公众号，dsh-deepseek-web-login 的单插件实操与踩坑文。该插件已由 wx-quanjing 收录且仓库地址一致，本条只作新的发现线索，内容仍以 cv-superding/dsh-deepseek-web-login 官方 README 为准；文章强调的『风控阀门 / 不建议重度使用』与 README 的免责边界一致，但文章的安装口径（只写 git 来源）不完备，README 还给了 Release tgz 与 npm 两种方式，本站按 README 写。文中的实测数字与评价不采信。"
+  tags: [公众号, 网页凭证, 免API Key, 单插件]
+
+- id: wx-huxiaomo2
+  title: "DSH 别只装那 7 款：本期再添 10 件新装备"
+  kind: wechat
+  publisher: "狐小墨（公众号：狐小墨 AI驱动创新）"
+  url: "https://mp.weixin.qq.com/s/YP-CJeIaQhn2zdP4JBHR6A"
+  date_note: "2026-11-04 07:55（广东）"
+  note: "第十二篇公众号，是第六篇（狐小墨 7 款推荐）的进阶篇，自带上期 7 款的对照表，再列 10 件新装备。本站只当发现来源：文中的『省 5 倍 token』『白嫖算力』等评价与劝退口吻不采信；插件内容以各自官方仓库 README 为准。10 件里 dsh-our-free-model 与 dsh-web 此前已收录，本条只补发现线索；dsh-vision-router / dsh-nacos-bridge / dsh-im / dsh-pocket / dsh-wallpaper-engine / dsh-openviking 按官方仓库 README 新建条目。hindsight 名字泛化、GitHub 上有多个 2~9 星同名仓库且文章外链经微信跳转无法确认指向，按『无可信仓库不建条目』未收；WeKnora 本身是腾讯开源的知识库系统（Tencent/WeKnora）而非独立 DSH 插件，GitHub 上对接它的三个仓库均为 0 星且功能分散，同样未收。"
+  tags: [公众号, 进阶清单, 单篇盘点]
+
+- id: wx-xiaobai
+  title: "DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！"
+  kind: wechat
+  publisher: "Stefan学AI（公众号：晓白AI纪元）"
+  url: "https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ"
+  date_note: "2026-10-27 08:58（山东）"
+  note: "第十三篇公众号，按创作/科研/办公/地基四路盘 20 个编号（17 个插件 + 3 条变现思路，其中两处各含双插件）。本站只当发现来源：文中的『60% 用户用第三方插件』『star/仓库数』等数字与劝装顺序属文章口径，不采信；插件内容以各自官方仓库 README 为准。17 个里 dsh-agent-teams / dsh-browser / dsh-market / dsh-better-sidebar / dsh-find-plugin / dsh-web-ui 此前已收录，本条只补线索；编号 12-14 是变现思路不是插件，未建条目。新条目逐个核实仓库：dev-mode 用文章明确的 lingyingaojue 仓库；computer-use 按文章『目前只有 Windows 版』取 dsh-computer-use-win（macOS 版不符未收）；deep-research 取官方 org dsh-external/dsh-deep-research；dsh-automation 的 README 已声明 2026-10-08 停止维护且 DSH 已有官方定时功能，按弃用未收。"
+  tags: [公众号, 四路清单, 单篇盘点]
+
+- id: wx-jiaweisi
+  title: "给 DeepSeek 大肥鱼装省 Token 插件，实测 5 款，最高竟然省了近 40%"
+  kind: wechat
+  publisher: "甲维斯机（公众号：甲维斯机）"
+  url: "https://mp.weixin.qq.com/s/fJnxDLVbNezuCbsjb2asrw"
+  date_note: "2026-11-05 06:18（北京）"
+  note: "第十四篇公众号，省 Token 插件的横向实测文：同一模型同一提示词做同一个 2D 游戏，比六轮 token 消耗。本站只当发现来源：文中的下载量、星标、省 4.5%/6.7%/7.6%/23%/36.4% 与费用数字都是作者单次实测口径，不采信为结论，也不进插件卡。五个方法里 PTC 是 DSH 官方自带模式（不需安装，按内置不收）；dsh-ops 此前已收录只补线索；save-token（vibe-any）与 flash-presets（LarryE135）按官方 README 新建条目。Condense 文章只写插件名与功能描述、GitHub/npm 均无精确匹配的官方仓库（搜到的 auto-compact / rtk-filter 功能不一致），按『查不到可信仓库就不建条目』未收。"
+  tags: [公众号, 省Token, 横向实测]

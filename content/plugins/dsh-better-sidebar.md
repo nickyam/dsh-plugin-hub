@@ -7,7 +7,7 @@ tags: &id001
 - 侧边栏
 - Git
 - 效率
-weight: 1020
+weight: 1040
 params:
   plugin:
     id: dsh-better-sidebar
@@ -39,11 +39,21 @@ params:
       url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
       kind_label: 公众号
       publisher: 智宇AI说
-    source_count: 2
+    - id: wx-huxiaomo
+      title: DSH 最值得装的 7 款插件：从省 5 倍 token 到余额小鲸鱼
+      url: https://mp.weixin.qq.com/s/pOxsRRqyCiFI3moxX676xQ
+      kind_label: 公众号
+      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
+    - id: wx-xiaobai
+      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
+      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
+      kind_label: 公众号
+      publisher: Stefan学AI（公众号：晓白AI纪元）
+    source_count: 4
     repo_confirmed: true
     category_label: 界面与体验
     status_label: 社区
-    weight: 1020
+    weight: 1040
     url: /plugins/dsh-better-sidebar/
   generated: true
 ---

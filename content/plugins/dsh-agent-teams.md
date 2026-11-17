@@ -6,7 +6,7 @@ categories:
 tags: &id001
 - 多智能体
 - 协作
-weight: 1030
+weight: 1040
 params:
   plugin:
     id: dsh-agent-teams
@@ -41,11 +41,16 @@ params:
       url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
       kind_label: 公众号
       publisher: 智宇AI说
-    source_count: 3
+    - id: wx-xiaobai
+      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
+      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
+      kind_label: 公众号
+      publisher: Stefan学AI（公众号：晓白AI纪元）
+    source_count: 4
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区
-    weight: 1030
+    weight: 1040
     url: /plugins/dsh-agent-teams/
   generated: true
 ---

@@ -7,7 +7,7 @@ tags: &id001
 - 免费模型
 - 免Key
 - 备用通道
-weight: 1010
+weight: 1030
 params:
   plugin:
     id: dsh-our-free-model
@@ -32,11 +32,21 @@ params:
       url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
       kind_label: 公众号
       publisher: 智宇AI说
-    source_count: 1
+    - id: wx-shixiang
+      title: 亲测，DSH 最应该装的 10 个插件
+      url: https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA
+      kind_label: 公众号
+      publisher: 世相智能体（公众号：世相Ai智能体）
+    - id: wx-huxiaomo2
+      title: DSH 别只装那 7 款：本期再添 10 件新装备
+      url: https://mp.weixin.qq.com/s/YP-CJeIaQhn2zdP4JBHR6A
+      kind_label: 公众号
+      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
+    source_count: 3
     repo_confirmed: true
     category_label: 免费模型与接入
     status_label: 社区
-    weight: 1010
+    weight: 1030
     url: /plugins/dsh-our-free-model/
   generated: true
 ---

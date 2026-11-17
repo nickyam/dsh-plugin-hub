@@ -8,7 +8,7 @@ tags: &id001
 - 创意工坊
 - 分发
 - 全家桶
-weight: 1010
+weight: 1030
 params:
   plugin:
     id: dsh-web
@@ -33,11 +33,21 @@ params:
       url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
       kind_label: 公众号
       publisher: 智宇AI说
-    source_count: 1
+    - id: wx-huxiaomo2
+      title: DSH 别只装那 7 款：本期再添 10 件新装备
+      url: https://mp.weixin.qq.com/s/YP-CJeIaQhn2zdP4JBHR6A
+      kind_label: 公众号
+      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
+    - id: wx-xiaobai
+      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
+      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
+      kind_label: 公众号
+      publisher: Stefan学AI（公众号：晓白AI纪元）
+    source_count: 3
     repo_confirmed: true
     category_label: 插件市场与发现
     status_label: 社区
-    weight: 1010
+    weight: 1030
     url: /plugins/dsh-web/
   generated: true
 ---

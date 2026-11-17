@@ -6,7 +6,7 @@ categories:
 tags: &id001
 - '@文件'
 - 指令
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: dsh-at-file
@@ -29,11 +29,16 @@ params:
       url: https://baike.baidu.com/item/deepseek%20harness/68533699
       kind_label: 百科
       publisher: 百度百科
-    source_count: 1
+    - id: wx-shixiang
+      title: 亲测，DSH 最应该装的 10 个插件
+      url: https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA
+      kind_label: 公众号
+      publisher: 世相智能体（公众号：世相Ai智能体）
+    source_count: 2
     repo_confirmed: true
     category_label: 工具与能力
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/dsh-at-file/
   generated: true
 ---

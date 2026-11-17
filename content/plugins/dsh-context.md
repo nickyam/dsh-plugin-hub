@@ -7,7 +7,7 @@ tags: &id001
 - 上下文
 - 可观测
 - 诊断
-weight: 1020
+weight: 1040
 params:
   plugin:
     id: dsh-context
@@ -36,11 +36,21 @@ params:
       url: https://mp.weixin.qq.com/s/pdJ8cQW1Ua_jhtRR7wR8iQ
       kind_label: 公众号
       publisher: 飞叔（公众号：飞叔 AI赋能推客）
-    source_count: 2
+    - id: wx-huxiaomo
+      title: DSH 最值得装的 7 款插件：从省 5 倍 token 到余额小鲸鱼
+      url: https://mp.weixin.qq.com/s/pOxsRRqyCiFI3moxX676xQ
+      kind_label: 公众号
+      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
+    - id: wx-shixiang
+      title: 亲测，DSH 最应该装的 10 个插件
+      url: https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA
+      kind_label: 公众号
+      publisher: 世相智能体（公众号：世相Ai智能体）
+    source_count: 4
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区
-    weight: 1020
+    weight: 1040
     url: /plugins/dsh-context/
   generated: true
 ---

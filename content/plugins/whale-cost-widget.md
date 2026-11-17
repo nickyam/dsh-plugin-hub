@@ -6,7 +6,7 @@ categories:
 tags: &id001
 - 桌宠
 - 成本可视化
-weight: 1020
+weight: 1030
 params:
   plugin:
     id: whale-cost-widget
@@ -39,11 +39,16 @@ params:
       url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
       kind_label: 公众号
       publisher: 智宇AI说
-    source_count: 2
+    - id: wx-huxiaomo
+      title: DSH 最值得装的 7 款插件：从省 5 倍 token 到余额小鲸鱼
+      url: https://mp.weixin.qq.com/s/pOxsRRqyCiFI3moxX676xQ
+      kind_label: 公众号
+      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
+    source_count: 3
     repo_confirmed: true
     category_label: 模型与计费
     status_label: 原文未说明
-    weight: 1020
+    weight: 1030
     url: /plugins/whale-cost-widget/
   generated: true
 ---

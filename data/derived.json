@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-09 14:42",
+  "generated_at": "2026-11-17 12:55",
   "stats": {
-    "plugins": 78,
-    "sources": 7,
-    "wechat": 4,
-    "refs_total": 91,
-    "repos_confirmed": 78,
+    "plugins": 106,
+    "sources": 17,
+    "wechat": 14,
+    "refs_total": 145,
+    "repos_confirmed": 106,
     "categories": 13
   },
   "categories": [
@@ -19,43 +19,43 @@
       "id": "ui",
       "label": "界面与体验",
       "desc": "侧边栏、主题、桌面端、交互挂件",
-      "count": 10
+      "count": 13
     },
     {
       "id": "tool",
       "label": "工具与能力",
       "desc": "搜索、浏览器、视觉、文件引用",
-      "count": 6
+      "count": 10
     },
     {
       "id": "workflow",
       "label": "协作与工作流",
       "desc": "多智能体、任务编排、代码审阅",
-      "count": 8
+      "count": 13
     },
     {
       "id": "memory",
       "label": "记忆与知识",
       "desc": "跨会话记忆、项目上下文、知识库",
-      "count": 9
+      "count": 10
     },
     {
       "id": "billing",
       "label": "模型与计费",
       "desc": "余额、用量、成本可视化",
-      "count": 3
+      "count": 6
     },
     {
       "id": "security",
       "label": "安全与治理",
       "desc": "安装前扫描、权限策略",
-      "count": 5
+      "count": 6
     },
     {
       "id": "integration",
       "label": "集成与迁移",
       "desc": "微信、其他 Agent、MCP 桥接",
-      "count": 4
+      "count": 6
     },
     {
       "id": "fun",
@@ -73,19 +73,19 @@
       "id": "visual",
       "label": "视觉与设计",
       "desc": "看图、UI 还原、图表与设计资产",
-      "count": 7
+      "count": 9
     },
     {
       "id": "content",
       "label": "内容创作与办公",
       "desc": "长文写作、PPT、表格与文档",
-      "count": 4
+      "count": 9
     },
     {
       "id": "remote",
       "label": "移动端与远程",
       "desc": "手机客户端、远程接管、iOS 调试",
-      "count": 3
+      "count": 5
     }
   ],
   "category_map": {
@@ -144,6 +144,66 @@
       "title": "3.5 万个插件里，DeepSeek 官方为什么只挑了这 4 个?",
       "url": "https://mp.weixin.qq.com/s/pdJ8cQW1Ua_jhtRR7wR8iQ",
       "publisher": "飞叔（公众号：飞叔 AI赋能推客）",
+      "kind_label": "公众号"
+    },
+    "wx-top10-30d": {
+      "title": "DSH 近 30 天插件 TOP10，鲸鱼娘挂件霸榜第一",
+      "url": "https://mp.weixin.qq.com/s/7C46btfXy97CahMiDuOEnQ",
+      "publisher": "小白分享1234（公众号）",
+      "kind_label": "公众号"
+    },
+    "wx-huxiaomo": {
+      "title": "DSH 最值得装的 7 款插件：从省 5 倍 token 到余额小鲸鱼",
+      "url": "https://mp.weixin.qq.com/s/pOxsRRqyCiFI3moxX676xQ",
+      "publisher": "狐小墨（公众号：狐小墨 AI驱动创新）",
+      "kind_label": "公众号"
+    },
+    "wx-papertoday": {
+      "title": "DeepSeek官方推荐的科研神器，我装上了，超惊喜",
+      "url": "https://mp.weixin.qq.com/s/-afBryEeI_iNkkvypHU_LQ",
+      "publisher": "每天学AI的老马（公众号：PaperToday）",
+      "kind_label": "公众号"
+    },
+    "wx-fanxing": {
+      "title": "2K Star！又一神级插件：把 DeepSeek Harness 变成一支有记忆、能群聊、互相派活的 Bot 团队",
+      "url": "https://mp.weixin.qq.com/s/ewKzM3nfPTU1iYurPdAR9A",
+      "publisher": "繁星（公众号：繁星AI随笔）",
+      "kind_label": "公众号"
+    },
+    "wx-shixiang": {
+      "title": "亲测，DSH 最应该装的 10 个插件",
+      "url": "https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA",
+      "publisher": "世相智能体（公众号：世相Ai智能体）",
+      "kind_label": "公众号"
+    },
+    "wx-weike": {
+      "title": "分享一个DeepSeek Harness 必备插件，使用体验大大提升！",
+      "url": "https://mp.weixin.qq.com/s/hMuGyJvyDyOj6ZcCD5zgtg",
+      "publisher": "维客笔记（来自1037号森林的维客）",
+      "kind_label": "公众号"
+    },
+    "wx-you-liao": {
+      "title": "不填API Key，DSH免费用上DeepSeek网页版（附实操）",
+      "url": "https://mp.weixin.qq.com/s/EmUKw2TVo20gkhk1j1jCwA",
+      "publisher": "有料黑科技（公众号）",
+      "kind_label": "公众号"
+    },
+    "wx-huxiaomo2": {
+      "title": "DSH 别只装那 7 款：本期再添 10 件新装备",
+      "url": "https://mp.weixin.qq.com/s/YP-CJeIaQhn2zdP4JBHR6A",
+      "publisher": "狐小墨（公众号：狐小墨 AI驱动创新）",
+      "kind_label": "公众号"
+    },
+    "wx-xiaobai": {
+      "title": "DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！",
+      "url": "https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ",
+      "publisher": "Stefan学AI（公众号：晓白AI纪元）",
+      "kind_label": "公众号"
+    },
+    "wx-jiaweisi": {
+      "title": "给 DeepSeek 大肥鱼装省 Token 插件，实测 5 款，最高竟然省了近 40%",
+      "url": "https://mp.weixin.qq.com/s/fJnxDLVbNezuCbsjb2asrw",
+      "publisher": "甲维斯机（公众号：甲维斯机）",
       "kind_label": "公众号"
     }
   },
