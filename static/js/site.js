@@ -10,6 +10,9 @@
   var pagerPages = document.getElementById('pager-pages');
   var active = 'all';
   var PAGE_SIZE = 24;
+  var filtersWrap = document.querySelector('.filters-wrap');
+  var headerEl = document.querySelector('.site-header');
+  function headerH() { return headerEl ? headerEl.offsetHeight : 64; }
   var page = 1;
   var visible = []; // 当前筛选下命中的卡片（按页面顺序）
 
@@ -70,13 +73,22 @@
     renderPager(totalPages);
   }
 
+  // 翻页后回到卡片区顶部，并让开头避开吸顶的 header + 分类栏
+  function scrollToCardsTop() {
+    var el = document.getElementById('cards');
+    if (!el) return;
+    var barH = filtersWrap ? filtersWrap.offsetHeight : 0;
+    var y = el.getBoundingClientRect().top + window.pageYOffset - headerH() - barH - 8;
+    window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+  }
+
   function goto(p) {
     var totalPages = Math.max(1, Math.ceil(visible.length / PAGE_SIZE));
     var target = p === 'prev' ? page - 1 : p === 'next' ? page + 1 : p;
     if (target < 1 || target > totalPages || target === page) return;
     page = target;
     apply(false);
-    if (pager && pager.scrollIntoView) pager.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    scrollToCardsTop();
   }
 
   if (pager) {
@@ -98,7 +110,6 @@
   input.addEventListener('input', function () { apply(true); });
 
   // 分类栏横向滚动提示：还有内容时显示渐隐 + 右箭头，滚到头自动隐藏
-  var filtersWrap = document.querySelector('.filters-wrap');
   var filtersTrack = document.querySelector('.filters');
   var nextBtn = document.querySelector('.filters-next');
   if (filtersWrap && filtersTrack && nextBtn) {
@@ -115,6 +126,27 @@
     // 字体加载完成后文字宽度会变，重算一次避免初始判断偏差
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncMore);
     syncMore();
+  }
+
+  // 分类栏吸顶：滚过搜索框后固定在 header 下方，加一道分隔线提示已吸附
+  if (filtersWrap) {
+    // 移动端 --header-h 是 auto（header 会折行），calc 会失效，这里把实测高度写进变量
+    function syncHeaderVar() {
+      document.documentElement.style.setProperty('--header-real-h', headerH() + 'px');
+    }
+    function syncStuck() {
+      filtersWrap.classList.toggle('is-stuck', filtersWrap.getBoundingClientRect().top <= headerH() + 0.5);
+    }
+    var stuckRaf = false;
+    window.addEventListener('scroll', function () {
+      if (stuckRaf) return;
+      stuckRaf = true;
+      requestAnimationFrame(function () { stuckRaf = false; syncStuck(); });
+    }, { passive: true });
+    window.addEventListener('resize', function () { syncHeaderVar(); syncStuck(); });
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncStuck);
+    syncHeaderVar();
+    syncStuck();
   }
 
   document.addEventListener('keydown', function (e) {

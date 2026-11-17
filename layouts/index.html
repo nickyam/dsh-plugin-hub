@@ -42,17 +42,18 @@
       <input id="q" type="search" placeholder="搜插件名、别名、功能，例如 微信 / 记忆 / dsh-market" autocomplete="off" aria-label="搜索插件">
       <kbd>/</kbd>
     </div>
-    <div class="filters-wrap">
-      <div class="filters" role="group" aria-label="按分类筛选">
-        <button class="filter is-active" data-filter="all">全部 <span>{{ $stats.plugins }}</span></button>
-        {{ range hugo.Data.derived.categories }}
-        <button class="filter" data-filter="{{ .id }}">{{ .label }} <span>{{ .count }}</span></button>
-        {{ end }}
-      </div>
-      <button class="filters-next" type="button" aria-label="查看更多分类" title="向右查看更多分类">
-        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M9.5 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
+  </div>
+
+  <div class="filters-wrap">
+    <div class="filters" role="group" aria-label="按分类筛选">
+      <button class="filter is-active" data-filter="all">全部 <span>{{ $stats.plugins }}</span></button>
+      {{ range hugo.Data.derived.categories }}
+      <button class="filter" data-filter="{{ .id }}">{{ .label }} <span>{{ .count }}</span></button>
+      {{ end }}
     </div>
+    <button class="filters-next" type="button" aria-label="查看更多分类" title="向右查看更多分类">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M9.5 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
   </div>
 
   <div class="columns">
