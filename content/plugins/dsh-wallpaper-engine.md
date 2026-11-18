@@ -29,13 +29,6 @@ params:
     tags: *id001
     flag: 社区项目；纯外观，不影响模型能力；视频/场景壁纸可能占用一定渲染资源
     notes: 仓库 elysia395/dsh-wallpaper-engine，npm 包名是 dsh-plugin-wallpaper-engine（比仓库名多 plugin- 前缀，别填错）。GitHub 上有多个二次开发分支，本条取 README 完整、标注为正式主仓且 ★ 数最高的 elysia395 仓库。
-    refs:
-    - id: wx-huxiaomo2
-      title: DSH 别只装那 7 款：本期再添 10 件新装备
-      url: https://mp.weixin.qq.com/s/YP-CJeIaQhn2zdP4JBHR6A
-      kind_label: 公众号
-      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
-    source_count: 1
     repo_confirmed: true
     category_label: 界面与体验
     status_label: 社区

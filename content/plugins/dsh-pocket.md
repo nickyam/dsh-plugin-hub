@@ -29,13 +29,6 @@ params:
     tags: *id001
     flag: 社区项目；公网访问意味着把 DSH 界面暴露到外网，请设置强口令并留意可访问范围
     notes: 仓库 shaobeichen/dsh-pocket（GitHub 有多个同名 dsh-pocket / dsh-pocket-plus，本条取 README 完整、★ 数最高的 shaobeichen 主仓），npm 包 dsh-pocket。README 徽章里 License 标注有 MIT/GPL 混排，本站不据此下结论。
-    refs:
-    - id: wx-huxiaomo2
-      title: DSH 别只装那 7 款：本期再添 10 件新装备
-      url: https://mp.weixin.qq.com/s/YP-CJeIaQhn2zdP4JBHR6A
-      kind_label: 公众号
-      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
-    source_count: 1
     repo_confirmed: true
     category_label: 移动端与远程
     status_label: 社区

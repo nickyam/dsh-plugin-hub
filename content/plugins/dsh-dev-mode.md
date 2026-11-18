@@ -28,13 +28,6 @@ params:
     tags: *id001
     flag: 社区项目；要求 DSH 0.2.2+、Windows 10/11；会在工作目录改文件跑命令，建议在空目录或独立项目目录使用
     notes: 仓库 lingyingaojue/dsh-dev-mode——文章在装机章节明确给出 github:lingyingaojue/dsh-dev-mode，与 GitHub 搜索精确命中一致。README 标注 DSH 0.2.2+、平台 Windows 10/11（npm 未发布，按 git 安装）。GitHub 另有 OugeX/dsh-web-dev-mode 等不同项目，本条取文章点名仓库。
-    refs:
-    - id: wx-xiaobai
-      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
-      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
-      kind_label: 公众号
-      publisher: Stefan学AI（公众号：晓白AI纪元）
-    source_count: 1
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区

@@ -31,13 +31,6 @@ params:
     tags: *id001
     flag: 社区项目；仅 Windows；能真实操作桌面与键鼠，涉及账号/付款操作请全程留意并按需用 Esc 停止
     notes: 文章写的是「dsh-computer-use，目前只有 Windows 版」，据此取 Yu-tao-Li/dsh-computer-use-win（README 明确 Windows 专属、npm 包 dsh-computer-use-win，registry 200）。GitHub 上另有一个 Anionex/dsh-computer-use 是 macOS 版（描述为 Native macOS control），与文章「只有 Windows 版」不符，未收。文章把它当作 dsh-computer-use 介绍，本站以实际 Windows 仓库名建条目并留别名。
-    refs:
-    - id: wx-xiaobai
-      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
-      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
-      kind_label: 公众号
-      publisher: Stefan学AI（公众号：晓白AI纪元）
-    source_count: 1
     repo_confirmed: true
     category_label: 工具与能力
     status_label: 社区

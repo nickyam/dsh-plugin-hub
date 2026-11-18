@@ -25,13 +25,6 @@ params:
     - 只读可视化面板：浏览项目状态、实体关系图、章节内容与追读力数据
     tags: *id001
     notes: 本仓库 master 分支为 Claude Code 版（v6），其 README 给出的安装命令是 Claude Code 插件；DSH 版（v8 写作工作台）在 README 中被引用但未在此 README 给出安装命令，需前往其产品主页获取，故 install 留空。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 1
     repo_confirmed: true
     category_label: 内容创作与办公
     status_label: 社区

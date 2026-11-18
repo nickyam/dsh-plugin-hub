@@ -26,13 +26,6 @@ params:
     tags: *id001
     flag: 渗透测试须在授权范围内使用
     notes: README 同时提供 dsh-deepsec-shield 与 dsh-deepsec-spear 两个 DSH 插件封装（位于 dsh-plugins/，包装 DeepSec CLI 为 Agent 工具），但本 README 未给出对应的 dsh plugin add 命令，故 install 留空；核心安装为 pip install -e .，另有 Rust TUI 与 IDE 插件。Spear 渗透以授权白名单为闸门，私有 / 回环地址默认拒绝。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 1
     repo_confirmed: true
     category_label: 安全与治理
     status_label: 社区

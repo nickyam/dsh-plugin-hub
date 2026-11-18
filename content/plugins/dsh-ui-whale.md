@@ -26,13 +26,6 @@ params:
     tags: *id001
     flag: 社区项目，非官方；注意 DSH 版本→插件版本对应关系，装错会崩
     notes: README 提示：DSH 版本决定装哪个插件版本（0.1.2-alpha.1 ~ 0.2.1-alpha.1 用新版）；pnpm 11 可能拦截 node-pty 等构建脚本，需在 ~/.dsh/profiles/web 下 pnpm approve-builds --all 后重装并硬刷新浏览器。
-    refs:
-    - id: baike-dsh
-      title: 百度百科：DeepSeek Harness
-      url: https://baike.baidu.com/item/deepseek%20harness/68533699
-      kind_label: 百科
-      publisher: 百度百科
-    source_count: 1
     repo_confirmed: true
     category_label: 娱乐与彩蛋
     status_label: 社区

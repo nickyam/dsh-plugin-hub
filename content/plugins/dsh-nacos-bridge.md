@@ -30,13 +30,6 @@ params:
     tags: *id001
     flag: 社区项目；需自建可达的 Nacos 3.2+ 实例并开启 AI Registry，且能力已在其中注册；非普通用户开箱即用
     notes: 仓库 MalcolmFeng/dsh-nacos-bridge-plugin（GitHub 搜 dsh-nacos-bridge 唯一精确命中）。README 未给一行式 dsh plugin add 命令，而是通过 pnpm 把 plugins/dsh-nacos-bridge 以 link 方式装进 profile、再用 dsh web --profile web --patch runtime/cordis.yml 启动；本站 install 按插件包名写通用形式，实际按 README 的 pnpm link 流程操作。前置：Nacos 3.2+ 开启 AI Registry，配置 DEEPSEEK_API_KEY。
-    refs:
-    - id: wx-huxiaomo2
-      title: DSH 别只装那 7 款：本期再添 10 件新装备
-      url: https://mp.weixin.qq.com/s/YP-CJeIaQhn2zdP4JBHR6A
-      kind_label: 公众号
-      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
-    source_count: 1
     repo_confirmed: true
     category_label: 集成与迁移
     status_label: 社区

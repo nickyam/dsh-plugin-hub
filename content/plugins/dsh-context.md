@@ -25,33 +25,6 @@ params:
     - /context 命令：斜杠命令显示当前上下文组成与近期演变
     tags: *id001
     notes: 需 @deepseek-ai/dsh 0.2.0-rc.2 及以上（各版本支持见 docs/compatibility.md）；数值采用 dsh 自身 Token 计量投影，与内置计量器一致。UI 支持简中 / 英 / 日等多语言（切换需 dsh 0.2.2+）。
-    refs:
-    - id: wx-shuzishanshui
-      title: DSH 十大插件大洗牌：桌宠掉队，billion-context 月下载破百万
-      url: https://mp.weixin.qq.com/s/ymm_FIwOinNF1mRcmts53g
-      kind_label: 公众号
-      publisher: 数字山水间（公众号：码途山海）
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    - id: wx-feishu
-      title: 3.5 万个插件里，DeepSeek 官方为什么只挑了这 4 个?
-      url: https://mp.weixin.qq.com/s/pdJ8cQW1Ua_jhtRR7wR8iQ
-      kind_label: 公众号
-      publisher: 飞叔（公众号：飞叔 AI赋能推客）
-    - id: wx-huxiaomo
-      title: DSH 最值得装的 7 款插件：从省 5 倍 token 到余额小鲸鱼
-      url: https://mp.weixin.qq.com/s/pOxsRRqyCiFI3moxX676xQ
-      kind_label: 公众号
-      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
-    - id: wx-shixiang
-      title: 亲测，DSH 最应该装的 10 个插件
-      url: https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA
-      kind_label: 公众号
-      publisher: 世相智能体（公众号：世相Ai智能体）
-    source_count: 5
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区

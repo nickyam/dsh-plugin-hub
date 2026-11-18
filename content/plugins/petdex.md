@@ -25,13 +25,6 @@ params:
     - 社区提交：可通过网页或 CLI 提交自己的宠物，并管理个人收藏
     tags: *id001
     notes: 宠物为社区提交的粉丝作品，版权归提交者所有；Petdex 不主张任何底层 IP。源码 MIT，宠物素材按提交者声明许可。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 1
     repo_confirmed: true
     category_label: 娱乐与彩蛋
     status_label: 社区

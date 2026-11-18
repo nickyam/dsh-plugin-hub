@@ -24,13 +24,6 @@ params:
     - 记忆同步：用代码仓库的专用分支作为记忆远端，多机自动识别同一项目，冲突可选本地/远端/两者
     tags: *id001
     notes: 社区同名实现不止一个（另有 piaobo123/dsh-memory-evolve 等），本条目以 csyangwen 版为准；装后需在设置里按需开启各项能力。
-    refs:
-    - id: baike-dsh
-      title: 百度百科：DeepSeek Harness
-      url: https://baike.baidu.com/item/deepseek%20harness/68533699
-      kind_label: 百科
-      publisher: 百度百科
-    source_count: 1
     repo_confirmed: true
     category_label: 记忆与知识
     status_label: 社区

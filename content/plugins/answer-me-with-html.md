@@ -24,13 +24,6 @@ params:
     - 写作检查：草稿按改编自 ASD-STE100 的规则（长句、冗词、被动语态）检查，默认仅警告
     - 自动修正错误：草稿出错时 CLI 返回行号、组件名与正确示例，代理通常一次修复
     tags: *id001
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 1
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区

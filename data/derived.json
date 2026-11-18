@@ -1,10 +1,7 @@
 {
-  "generated_at": "2026-11-18 11:09",
+  "generated_at": "2026-11-18 11:16",
   "stats": {
     "plugins": 106,
-    "sources": 18,
-    "wechat": 15,
-    "refs_total": 154,
     "repos_confirmed": 106,
     "categories": 13
   },
@@ -102,124 +99,6 @@
     "visual": "视觉与设计",
     "content": "内容创作与办公",
     "remote": "移动端与远程"
-  },
-  "source_map": {
-    "wx-dabaihua": {
-      "title": "DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单",
-      "url": "http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9",
-      "publisher": "微信公众号（原文署名待补）",
-      "kind_label": "公众号"
-    },
-    "baike-dsh": {
-      "title": "百度百科：DeepSeek Harness",
-      "url": "https://baike.baidu.com/item/deepseek%20harness/68533699",
-      "publisher": "百度百科",
-      "kind_label": "百科"
-    },
-    "tree-top10": {
-      "title": "10 Best DeepSeek Harness Plugins for AI Developers in 2026",
-      "url": "https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026",
-      "publisher": "TreeRouter Blog（英文，第三方）",
-      "kind_label": "第三方媒体"
-    },
-    "deepseekai-works": {
-      "title": "DSH Plugins: What They Are, Where to Find Them, and How to Write One",
-      "url": "https://deepseekai.works/plugins",
-      "publisher": "deepseekai.works（第三方教程站）",
-      "kind_label": "教程 / 指南"
-    },
-    "wx-quanjing": {
-      "title": "DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件",
-      "url": "https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw",
-      "publisher": "智宇AI说",
-      "kind_label": "公众号"
-    },
-    "wx-devops": {
-      "title": "DeepSeek Harness这个神级插件，用完我直接跪了！",
-      "url": "https://mp.weixin.qq.com/s/gdWT1tC-ajn2HMjwJJKA4w",
-      "publisher": "运维网工（原文署名 bigbigtooth）",
-      "kind_label": "公众号"
-    },
-    "wx-feishu": {
-      "title": "3.5 万个插件里，DeepSeek 官方为什么只挑了这 4 个?",
-      "url": "https://mp.weixin.qq.com/s/pdJ8cQW1Ua_jhtRR7wR8iQ",
-      "publisher": "飞叔（公众号：飞叔 AI赋能推客）",
-      "kind_label": "公众号"
-    },
-    "wx-top10-30d": {
-      "title": "DSH 近 30 天插件 TOP10，鲸鱼娘挂件霸榜第一",
-      "url": "https://mp.weixin.qq.com/s/7C46btfXy97CahMiDuOEnQ",
-      "publisher": "小白分享1234（公众号）",
-      "kind_label": "公众号"
-    },
-    "wx-huxiaomo": {
-      "title": "DSH 最值得装的 7 款插件：从省 5 倍 token 到余额小鲸鱼",
-      "url": "https://mp.weixin.qq.com/s/pOxsRRqyCiFI3moxX676xQ",
-      "publisher": "狐小墨（公众号：狐小墨 AI驱动创新）",
-      "kind_label": "公众号"
-    },
-    "wx-papertoday": {
-      "title": "DeepSeek官方推荐的科研神器，我装上了，超惊喜",
-      "url": "https://mp.weixin.qq.com/s/-afBryEeI_iNkkvypHU_LQ",
-      "publisher": "每天学AI的老马（公众号：PaperToday）",
-      "kind_label": "公众号"
-    },
-    "wx-fanxing": {
-      "title": "2K Star！又一神级插件：把 DeepSeek Harness 变成一支有记忆、能群聊、互相派活的 Bot 团队",
-      "url": "https://mp.weixin.qq.com/s/ewKzM3nfPTU1iYurPdAR9A",
-      "publisher": "繁星（公众号：繁星AI随笔）",
-      "kind_label": "公众号"
-    },
-    "wx-shixiang": {
-      "title": "亲测，DSH 最应该装的 10 个插件",
-      "url": "https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA",
-      "publisher": "世相智能体（公众号：世相Ai智能体）",
-      "kind_label": "公众号"
-    },
-    "wx-weike": {
-      "title": "分享一个DeepSeek Harness 必备插件，使用体验大大提升！",
-      "url": "https://mp.weixin.qq.com/s/hMuGyJvyDyOj6ZcCD5zgtg",
-      "publisher": "维客笔记（来自1037号森林的维客）",
-      "kind_label": "公众号"
-    },
-    "wx-you-liao": {
-      "title": "不填API Key，DSH免费用上DeepSeek网页版（附实操）",
-      "url": "https://mp.weixin.qq.com/s/EmUKw2TVo20gkhk1j1jCwA",
-      "publisher": "有料黑科技（公众号）",
-      "kind_label": "公众号"
-    },
-    "wx-huxiaomo2": {
-      "title": "DSH 别只装那 7 款：本期再添 10 件新装备",
-      "url": "https://mp.weixin.qq.com/s/YP-CJeIaQhn2zdP4JBHR6A",
-      "publisher": "狐小墨（公众号：狐小墨 AI驱动创新）",
-      "kind_label": "公众号"
-    },
-    "wx-xiaobai": {
-      "title": "DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！",
-      "url": "https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ",
-      "publisher": "Stefan学AI（公众号：晓白AI纪元）",
-      "kind_label": "公众号"
-    },
-    "wx-jiaweisi": {
-      "title": "给 DeepSeek 大肥鱼装省 Token 插件，实测 5 款，最高竟然省了近 40%",
-      "url": "https://mp.weixin.qq.com/s/fJnxDLVbNezuCbsjb2asrw",
-      "publisher": "甲维斯机（公众号：甲维斯机）",
-      "kind_label": "公众号"
-    },
-    "wx-shuzishanshui": {
-      "title": "DSH 十大插件大洗牌：桌宠掉队，billion-context 月下载破百万",
-      "url": "https://mp.weixin.qq.com/s/ymm_FIwOinNF1mRcmts53g",
-      "publisher": "数字山水间（公众号：码途山海）",
-      "kind_label": "公众号"
-    }
-  },
-  "source_kind_label": {
-    "wechat": "公众号",
-    "official": "官方文档",
-    "encyclopedia": "百科",
-    "media": "第三方媒体",
-    "catalog": "目录站",
-    "guide": "教程 / 指南"
   },
   "status_label": {
     "official": "官方",

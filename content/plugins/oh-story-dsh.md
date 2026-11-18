@@ -31,13 +31,6 @@ params:
     - 纯 DSH 原生扩展：Agent / 会话 / 模型 / 权限审批 / Chat 仍是 DSH 原生，插件只加 Skills、Roles 与工作流
     tags: *id001
     notes: README 示例安装固定 @oh-story/dsh@0.1.23 与 dsh@0.2.1-rc.5；社区插件，与 DeepSeek 无隶属关系。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 1
     repo_confirmed: true
     category_label: 内容创作与办公
     status_label: 社区

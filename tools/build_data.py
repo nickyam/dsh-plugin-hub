@@ -167,51 +167,39 @@ def main():
         p["url"] = f"/plugins/{p['id']}/"
 
     # ── 生成插件页 ──────────────────────────────────────────────
-    pdir, sdir = CONTENT / "plugins", CONTENT / "sources"
-    pdir.mkdir(parents=True, exist_ok=True)
-    sdir.mkdir(parents=True, exist_ok=True)
-    for d in (pdir, sdir):
-        for old in d.glob("*.md"):
+    # 来源台账（data/sources.yaml）只作仓库内部记录：校验 refs 完整性用，
+    # 2026-11-18 起站点不再生成来源页、也不在页面上展示任何来源信息。
+    sdir = CONTENT / "sources"
+    if sdir.exists():
+        for old in sdir.glob("*.md"):
             old.unlink()
+        try:
+            sdir.rmdir()
+        except OSError:
+            pass
+
+    pdir = CONTENT / "plugins"
+    pdir.mkdir(parents=True, exist_ok=True)
+    for old in pdir.glob("*.md"):
+        old.unlink()
 
     write_front_matter(
         pdir / "_index.md",
         {"title": "插件库", "description": "按官方仓库整理的 DSH 插件条目"},
-        "全部插件条目。每条都链到官方 GitHub 仓库，简介、安装与功能亮点以 README 为准；公众号与社区文章仅作发现来源参考。",
+        "全部插件条目。每条都链到官方 GitHub 仓库，简介、安装与功能亮点以 README 为准。",
     )
     for p in plugins:
+        # refs / source_count 只用于内部台账与排序，不进产物（站点不展示任何来源信息）
+        payload = {k: v for k, v in p.items() if k not in ("refs", "source_count")}
         front = {
             "title": p["name"],
             "description": p["summary"],
             "categories": [p["category"]],
             "tags": p.get("tags") or [],
             "weight": p["weight"],
-            "params": {"plugin": p, "generated": True},
+            "params": {"plugin": payload, "generated": True},
         }
         write_front_matter(pdir / f"{p['id']}.md", front, p["summary"])
-
-    # ── 生成来源页 ──────────────────────────────────────────────
-    write_front_matter(
-        sdir / "_index.md",
-        {"title": "来源台账", "description": "本站发现插件所参考的文章与目录"},
-        "每一条来源都有独立页面，列出本站从它发现 / 参考过的插件。",
-    )
-    for s in sources:
-        mentioned = [
-            {"id": p["id"], "name": p["name"], "repo_confirmed": p["repo_confirmed"]}
-            for p in plugins
-            if s["id"] in [r["id"] for r in p["refs"]]
-        ]
-        payload = dict(s)
-        payload["kind_label"] = KIND_LABEL[s["kind"]]
-        payload["mentioned"] = mentioned
-        payload["mentioned_count"] = len(mentioned)
-        front = {
-            "title": s["title"],
-            "description": s.get("note", ""),
-            "params": {"source": payload, "generated": True},
-        }
-        write_front_matter(sdir / f"{s['id']}.md", front, s.get("note") or "")
 
     # ── 搜索索引 ────────────────────────────────────────────────
     index = [
@@ -225,7 +213,6 @@ def main():
             "tags": p.get("tags") or [],
             "status_label": p["status_label"],
             "repo_confirmed": p["repo_confirmed"],
-            "source_count": p["source_count"],
             "flag": p.get("flag", ""),
             "url": p["url"],
         }
@@ -236,13 +223,12 @@ def main():
     )
 
     # ── 派生统计 ────────────────────────────────────────────────
+    # 🔴 2026-11-18 用户决定：站点不再有「来源」板块。
+    # derived.json 会随站点发布，所以这里绝不能带任何来源标题 / 链接 / 计数。
     derived = {
         "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "stats": {
             "plugins": len(plugins),
-            "sources": len(sources),
-            "wechat": sum(1 for s in sources if s["kind"] == "wechat"),
-            "refs_total": total_refs,
             "repos_confirmed": sum(1 for p in plugins if p["repo_confirmed"]),
             "categories": len(categories),
         },
@@ -256,24 +242,15 @@ def main():
             for c in categories
         ],
         "category_map": cat_map,
-        "source_map": {
-            s["id"]: {
-                "title": s["title"],
-                "url": s["url"],
-                "publisher": s["publisher"],
-                "kind_label": KIND_LABEL[s["kind"]],
-            }
-            for s in sources
-        },
-        "source_kind_label": KIND_LABEL,
         "status_label": STATUS_LABEL,
     }
     (DATA / "derived.json").write_text(
         json.dumps(derived, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    print(f"✓ 校验通过：{len(plugins)} 个插件 / {len(sources)} 条来源 / {total_refs} 条参考")
-    print(f"  已确认官方仓库 {derived['stats']['repos_confirmed']} · 参考文章 {derived['stats']['refs_total']} 条")
+    print(f"✓ 校验通过：{len(plugins)} 个插件 / {len(categories)} 个分类")
+    print(f"  已确认官方仓库 {derived['stats']['repos_confirmed']}")
+    print(f"  台账（不上站）：{len(sources)} 条来源 / {total_refs} 条参考，仅用于 refs 完整性校验")
     if warnings:
         print(f"  ⚠ 提示 {len(warnings)} 条：")
         for w in warnings[:10]:

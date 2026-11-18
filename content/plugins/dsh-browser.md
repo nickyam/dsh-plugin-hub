@@ -31,18 +31,6 @@ params:
     tags: *id001
     flag: 社区项目；模型可操作真实浏览器与登录态，涉及账号与付款操作时请留意
     notes: 仓库 CJYLZS/dsh-browser（main/master 同指一份 README），npm 包为 scoped 名 @cjylzs/dsh-browser，README 最新 v0.3.x（文章写 github tag v0.2.3，为旧版）。旧的无 scope 名 dsh-browser 在 npm 上属于另一个项目，若 profile 里还留着旧键须先 `dsh plugin --profile web remove dsh-browser` 再装。按 DSH 版本选版本：>=0.1.7-rc.1 用 v0.3.x；0.1.5-rc.2 只能用 v0.1.0（tag 安装）。需本机已装 Chrome 或 Edge，playwright-core 不自带浏览器。装完重启宿主。桌面端要用其自带 CLI 的 --profile desktop 安装。
-    refs:
-    - id: wx-shixiang
-      title: 亲测，DSH 最应该装的 10 个插件
-      url: https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA
-      kind_label: 公众号
-      publisher: 世相智能体（公众号：世相Ai智能体）
-    - id: wx-xiaobai
-      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
-      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
-      kind_label: 公众号
-      publisher: Stefan学AI（公众号：晓白AI纪元）
-    source_count: 2
     repo_confirmed: true
     category_label: 工具与能力
     status_label: 社区

@@ -25,13 +25,6 @@ params:
     tags: *id001
     flag: 社区项目，非官方（PerryLink 维护，Apache-2.0）
     notes: README 声明：社区插件，与 DeepSeek 官方无关；唯一仓库为 github.com/PerryLink/dsh-claude-move（Gitee 为镜像）。导入仅读取源目录、不改动 Claude 源数据。
-    refs:
-    - id: baike-dsh
-      title: 百度百科：DeepSeek Harness
-      url: https://baike.baidu.com/item/deepseek%20harness/68533699
-      kind_label: 百科
-      publisher: 百度百科
-    source_count: 1
     repo_confirmed: true
     category_label: 集成与迁移
     status_label: 社区

@@ -26,13 +26,6 @@ params:
     tags: *id001
     flag: 加密与中继方式以仓库说明为准
     notes: README 标注当前基线 dsh-v0.2.2-rc.1，Host 端无需公网 IP 或端口转发；Linux 一键安装需登录官网获取授权码。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 1
     repo_confirmed: true
     category_label: 移动端与远程
     status_label: 社区

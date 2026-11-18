@@ -30,13 +30,6 @@ params:
     tags: *id001
     flag: 社区项目；接入机器人涉及各平台凭据，注意 Token 安全与平台条款
     notes: 仓库 xmanrui/dsh-im，npm 包名是 scoped 的 @xmanrui/dsh-im——README 明确「安装请认准完整包名」，GitHub 上另有 MichengAI/dsh-im-connect、SoledadAki/dsh-im-qq-wechat 等近似项目，本站取名字精确、功能覆盖最广的 xmanrui 主仓。文章说的「二维码接 9 个渠道」与 README 渠道列表一致（实际列了 10 个）。安装带 -w 参数（写 profile），Web 与 Desktop 命令分别为 --profile web / --profile desktop，装完重启。
-    refs:
-    - id: wx-huxiaomo2
-      title: DSH 别只装那 7 款：本期再添 10 件新装备
-      url: https://mp.weixin.qq.com/s/YP-CJeIaQhn2zdP4JBHR6A
-      kind_label: 公众号
-      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
-    source_count: 1
     repo_confirmed: true
     category_label: 集成与迁移
     status_label: 社区

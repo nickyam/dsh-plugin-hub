@@ -25,13 +25,6 @@ params:
     - SM-2 间隔重复复习：只给坐标与门牌线索、先回忆后揭示；协议标签防提示注入、入库脱敏
     tags: *id001
     notes: 嵌入模型离线推理，失败时自动降级纯关键词检索并显式标记；零外部服务、零 API Key、零 Docker。
-    refs:
-    - id: tree-top10
-      title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
-      url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
-      kind_label: 第三方媒体
-      publisher: TreeRouter Blog（英文，第三方）
-    source_count: 1
     repo_confirmed: true
     category_label: 记忆与知识
     status_label: 社区

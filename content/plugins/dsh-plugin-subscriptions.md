@@ -26,13 +26,6 @@ params:
     tags: *id001
     flag: 第三方接入，使用前先看清各服务条款
     notes: 从 GitHub 源码安装写作 dsh plugin --profile web add github:V1ki/dsh-plugin-subscriptions。Claude 若本地有 Claude Code 会话可直接导入凭证，否则走浏览器 OAuth。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 1
     repo_confirmed: true
     category_label: 免费模型与接入
     status_label: 社区

@@ -29,13 +29,6 @@ params:
     tags: *id001
     flag: 社区项目；npm 未发布（registry 404），按 git 安装；判定的是「是否真插件」，不是仓库质量
     notes: 仓库 ciceroyang/dsh-topic-audit（npm registry 返回 404，故 install 用 github 形式）。README 自述它更像生态审计工具（companion 类），但文章把它列为「地基」插件之一用于查真伪，本站按社区条目收录并在简介里说明它是审计工具。GitHub 有 yunhuantian/dsh-plugin-hub、863683348/dsh-plugin-audit 等近似项目，本条取名字精确命中的 ciceroyang 仓库。
-    refs:
-    - id: wx-xiaobai
-      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
-      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
-      kind_label: 公众号
-      publisher: Stefan学AI（公众号：晓白AI纪元）
-    source_count: 1
     repo_confirmed: true
     category_label: 安全与治理
     status_label: 社区

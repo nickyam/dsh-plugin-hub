@@ -25,13 +25,6 @@ params:
     tags: *id001
     flag: 社区项目，非官方
     notes: 桥接只读取 Claude Code 文件、不回写；需先在 Claude Code 中生成过 memory/skills/CLAUDE.md 才能生效。仓库 README 注明 MIT 许可。
-    refs:
-    - id: baike-dsh
-      title: 百度百科：DeepSeek Harness
-      url: https://baike.baidu.com/item/deepseek%20harness/68533699
-      kind_label: 百科
-      publisher: 百度百科
-    source_count: 1
     repo_confirmed: true
     category_label: 集成与迁移
     status_label: 社区

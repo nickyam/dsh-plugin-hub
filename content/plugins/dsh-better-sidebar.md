@@ -28,33 +28,6 @@ params:
     tags: *id001
     flag: 需按 DSH 版本选对应插件版本
     notes: 安装前硬刷新浏览器（Cmd/Ctrl+Shift+R）。注意版本匹配：DSH 0.2.2-rc.1+ 用 @0.30.1；0.2.1 线（含当前 latest）需钉 @0.28.2；更老的 host 见 README 版本对照表——装错版本会触发版本拒绝错误。
-    refs:
-    - id: wx-shuzishanshui
-      title: DSH 十大插件大洗牌：桌宠掉队，billion-context 月下载破百万
-      url: https://mp.weixin.qq.com/s/ymm_FIwOinNF1mRcmts53g
-      kind_label: 公众号
-      publisher: 数字山水间（公众号：码途山海）
-    - id: baike-dsh
-      title: 百度百科：DeepSeek Harness
-      url: https://baike.baidu.com/item/deepseek%20harness/68533699
-      kind_label: 百科
-      publisher: 百度百科
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    - id: wx-huxiaomo
-      title: DSH 最值得装的 7 款插件：从省 5 倍 token 到余额小鲸鱼
-      url: https://mp.weixin.qq.com/s/pOxsRRqyCiFI3moxX676xQ
-      kind_label: 公众号
-      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
-    - id: wx-xiaobai
-      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
-      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
-      kind_label: 公众号
-      publisher: Stefan学AI（公众号：晓白AI纪元）
-    source_count: 5
     repo_confirmed: true
     category_label: 界面与体验
     status_label: 社区

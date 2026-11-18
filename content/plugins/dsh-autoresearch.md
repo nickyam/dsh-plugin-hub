@@ -28,13 +28,6 @@ params:
     tags: *id001
     flag: 社区项目；会在工作目录反复修改文件，务必在独立目录/有基线保护下使用；安装按 README 固定 v1.0.11 标签
     notes: 仓库 aa2246740/dsh-autoresearch（README 标正式版 1.0.11、适配 DSH 0.2.1-rc.5，安装给 github:aa2246740/dsh-autoresearch#v1.0.11）。GitHub 另有 beibingyangliuying、vlozg 等多个 0 星同名 dsh-autoresearch，本条取 README 有正式版本号、安装说明完整的 aa2246740 主仓。文章描述「设定轮次连续改、测量、保留或回滚、开工建本地保护」与 README 一致。
-    refs:
-    - id: wx-xiaobai
-      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
-      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
-      kind_label: 公众号
-      publisher: Stefan学AI（公众号：晓白AI纪元）
-    source_count: 1
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区

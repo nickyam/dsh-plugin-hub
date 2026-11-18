@@ -71,18 +71,8 @@
           {{ if not $related }}<li class="muted">这个分类暂时只有它一个。</li>{{ end }}
         </ul>
       </section>
-      {{ with $p.refs }}
-      <section class="side-box">
-        <h2>参考来源</h2>
-        <ul class="side-list">
-          {{ range . }}
-          <li><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a><span class="mini-tag">{{ .kind_label }}</span></li>
-          {{ end }}
-        </ul>
-      </section>
-      {{ end }}
       <section class="side-box side-box-plain">
-        <p class="muted">发现官方仓库有更新，或想补一篇新文章？按<a href="{{ "about/" | relURL }}">收录方法</a>改 <code>data/*.yaml</code> 就行。</p>
+        <p class="muted">发现官方仓库有更新，或者觉得哪条写得不准？按<a href="{{ "about/" | relURL }}">收录方法</a>改 <code>data/plugins.yaml</code> 就行。</p>
       </section>
     </aside>
   </div>

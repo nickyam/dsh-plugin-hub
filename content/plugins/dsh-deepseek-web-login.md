@@ -27,18 +27,6 @@ params:
     tags: *id001
     flag: 涉及账号凭证与网页端私有接口，注意安全与条款；非 DeepSeek 官方客户端；一个账号同一时间只开一个聊天窗口，多开可能触发临时封禁
     notes: README 提供三种安装方式（Release tgz / git 装配 / npm），主推桌面端：dsh plugin --profile desktop add github:cv-superding/dsh-deepseek-web-login；npm 装写作 dsh plugin --profile desktop add dsh-deepseek-web-login。这是网页端私有接口的非官方客户端，非反向代理或 DOM 自动化。文章（wx-you-liao）只给 git 来源并称更新失败无法回滚，README 说明市场条目当前将该包标为 npm 为 null（未发布）、仅支持 git 来源，故更新需从 GitHub 拉取；该文强调的 40 万字符 / 并发 2 次等风控阀门属文章实测口径，本站不采信为结论。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    - id: wx-you-liao
-      title: 不填API Key，DSH免费用上DeepSeek网页版（附实操）
-      url: https://mp.weixin.qq.com/s/EmUKw2TVo20gkhk1j1jCwA
-      kind_label: 公众号
-      publisher: 有料黑科技（公众号）
-    source_count: 2
     repo_confirmed: true
     category_label: 免费模型与接入
     status_label: 社区

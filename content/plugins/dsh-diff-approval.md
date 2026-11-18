@@ -26,13 +26,6 @@ params:
     - 持久化：待处理状态按工作区存盘，重启后仍在
     tags: *id001
     notes: 纯前端审查，不修改你的文件；待处理状态存于 <dshHome>/diff-approval/workspaces/ 并跨重启保留。从 GitHub 源码安装可能需按提示配置 allowBuilds 构建授权。
-    refs:
-    - id: tree-top10
-      title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
-      url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
-      kind_label: 第三方媒体
-      publisher: TreeRouter Blog（英文，第三方）
-    source_count: 1
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区

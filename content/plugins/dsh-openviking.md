@@ -32,13 +32,6 @@ params:
     tags: *id001
     flag: 社区项目；依赖本地 OpenViking 服务（默认 localhost:1933），不是装了就能用；Node ^22.19.0 || >=24，DSH >=0.1.7-rc.2
     notes: 仓库 Rxiain/dsh-openviking，底层对接火山引擎开源的 OpenViking（github.com/volcengine/OpenViking），本插件是 DSH 侧对接层；GitHub 上另有 dsh-openviking-expand / dsh-memory-openviking 等近似项目，本条取 README 完整、★ 数最高的 Rxiain 主仓。文章把它描述为「用户画像」，README 里对应 user 空间记忆 + 自动召回，本站按 README 写。
-    refs:
-    - id: wx-huxiaomo2
-      title: DSH 别只装那 7 款：本期再添 10 件新装备
-      url: https://mp.weixin.qq.com/s/YP-CJeIaQhn2zdP4JBHR6A
-      kind_label: 公众号
-      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
-    source_count: 1
     repo_confirmed: true
     category_label: 记忆与知识
     status_label: 社区

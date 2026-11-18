@@ -25,18 +25,6 @@ params:
     - 品牌级默认渲染：每次生成读取 DESIGN.md 作为品牌契约，附 151 个设计系统包
     tags: *id001
     notes: 接入 DSH 原生运行时：先装官方 dsh CLI，再运行 `od agent setup deepseek-harness` 安装 / 修复 OD 连接组件；也可用 `od mcp install deepseek-harness` 一键装 MCP。macOS 桌面版因系统 od 命令冲突，建议从 App 内 Settings → MCP server 复制路径。
-    refs:
-    - id: tree-top10
-      title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
-      url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
-      kind_label: 第三方媒体
-      publisher: TreeRouter Blog（英文，第三方）
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 2
     repo_confirmed: true
     category_label: 视觉与设计
     status_label: 社区

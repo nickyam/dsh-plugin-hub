@@ -29,23 +29,6 @@ params:
     - 办公文件处理：创建 / 编辑 .docx / .pptx / .xlsx，检查缺陷、做定向编辑与幻灯片重排
     tags: *id001
     notes: 仓库已由 DeepSeek-Bot 更名为 DS Bot（Fei2411/DS-Bot），本仓库地址仍可访问并指向同一项目；DSH 插件包名为 ds-bot。与 dsh-agent-teams 是同类不同定位：后者偏任务分工，前者偏 Bot 的持久性与社交性（群聊）。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    - id: wx-fanxing
-      title: 2K Star！又一神级插件：把 DeepSeek Harness 变成一支有记忆、能群聊、互相派活的 Bot 团队
-      url: https://mp.weixin.qq.com/s/ewKzM3nfPTU1iYurPdAR9A
-      kind_label: 公众号
-      publisher: 繁星（公众号：繁星AI随笔）
-    - id: wx-shixiang
-      title: 亲测，DSH 最应该装的 10 个插件
-      url: https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA
-      kind_label: 公众号
-      publisher: 世相智能体（公众号：世相Ai智能体）
-    source_count: 3
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区

@@ -24,13 +24,6 @@ params:
     tags: *id001
     flag: 社区项目，非官方
     notes: 社区插件，MIT 许可；仅影响回复展示层，不改模型逻辑。安装前请核对仓库与许可证。
-    refs:
-    - id: wx-dabaihua
-      title: DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单
-      url: http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9
-      kind_label: 公众号
-      publisher: 微信公众号（原文署名待补）
-    source_count: 1
     repo_confirmed: true
     category_label: 娱乐与彩蛋
     status_label: 社区

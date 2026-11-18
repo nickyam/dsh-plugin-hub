@@ -16,7 +16,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 7,
     "flag": "安装写法有多种，以仓库 README 为准",
     "url": "/plugins/dsh-market/"
   },
@@ -37,7 +36,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 5,
     "flag": "需按 DSH 版本选对应插件版本",
     "url": "/plugins/dsh-better-sidebar/"
   },
@@ -55,7 +53,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 5,
     "flag": "",
     "url": "/plugins/dsh-context/"
   },
@@ -73,7 +70,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 4,
     "flag": "与 dsh-vision-toolkit 是不同条目，本站不合并",
     "url": "/plugins/modlens/"
   },
@@ -90,7 +86,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 4,
     "flag": "与官网内置 Agent teams 名称相近，勿混",
     "url": "/plugins/dsh-agent-teams/"
   },
@@ -109,7 +104,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 3,
     "flag": "与 dsh-web-all 为同一官方聚合仓（zhu1090093659/dsh-web）；本卡按 README 整理，二者可合并",
     "url": "/plugins/dsh-web/"
   },
@@ -129,7 +123,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 3,
     "flag": "独立社区项目，与 DeepSeek 无隶属关系",
     "url": "/plugins/dsh-desktop/"
   },
@@ -146,7 +139,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 3,
     "flag": "",
     "url": "/plugins/dsh-ops/"
   },
@@ -164,7 +156,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 3,
     "flag": "",
     "url": "/plugins/deepseek-bot/"
   },
@@ -182,7 +173,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 3,
     "flag": "免费额度与可用性以仓库说明为准；npm 裸名 dsh-our-free-model 非本仓库发布，请装带 scope 的 @ebony-vinyl 包",
     "url": "/plugins/dsh-our-free-model/"
   },
@@ -203,7 +193,6 @@
     ],
     "status_label": "原文未说明",
     "repo_confirmed": true,
-    "source_count": 3,
     "flag": "",
     "url": "/plugins/whale-cost-widget/"
   },
@@ -224,7 +213,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 3,
     "flag": "社区项目（Apache-2.0，非 DeepSeek 官方）",
     "url": "/plugins/dsh-skills-manager/"
   },
@@ -242,7 +230,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 2,
     "flag": "",
     "url": "/plugins/dsh-find-plugin/"
   },
@@ -265,7 +252,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 2,
     "flag": "包名 @linxin666/dsh-web-all，仓库是 zhu1090093659/dsh-web 单体仓",
     "url": "/plugins/dsh-web-all/"
   },
@@ -283,7 +269,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 2,
     "flag": "",
     "url": "/plugins/dsh-genui/"
   },
@@ -303,7 +288,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 2,
     "flag": "",
     "url": "/plugins/modsearch/"
   },
@@ -320,7 +304,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 2,
     "flag": "",
     "url": "/plugins/dsh-at-file/"
   },
@@ -338,7 +321,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 2,
     "flag": "",
     "url": "/plugins/open-design/"
   },
@@ -356,7 +338,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 2,
     "flag": "涉及账号凭证与网页端私有接口，注意安全与条款；非 DeepSeek 官方客户端；一个账号同一时间只开一个聊天窗口，多开可能触发临时封禁",
     "url": "/plugins/dsh-deepseek-web-login/"
   },
@@ -373,7 +354,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 2,
     "flag": "",
     "url": "/plugins/dsh-plugin-gate/"
   },
@@ -390,7 +370,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 2,
     "flag": "",
     "url": "/plugins/dsh-pet/"
   },
@@ -413,7 +392,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 2,
     "flag": "",
     "url": "/plugins/agentero-dsh/"
   },
@@ -435,7 +413,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 2,
     "flag": "社区项目（MIT，非 DeepSeek 官方）",
     "url": "/plugins/dsh-cost-meter/"
   },
@@ -458,7 +435,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 2,
     "flag": "社区项目（Apache-2.0，非 DeepSeek 官方）",
     "url": "/plugins/dsh-codex-ui/"
   },
@@ -481,7 +457,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 2,
     "flag": "通用代理型工具，非 DSH 专属；native 插件与 standalone 扩展不可同时启用，否则会重复压缩",
     "url": "/plugins/billion-context/"
   },
@@ -503,7 +478,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 2,
     "flag": "社区项目；模型可操作真实浏览器与登录态，涉及账号与付款操作时请留意",
     "url": "/plugins/dsh-browser/"
   },
@@ -521,7 +495,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "清单类项目，不是插件",
     "url": "/plugins/awesome-dsh-plugin/"
   },
@@ -539,7 +512,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "数据 / 目录类项目，非可安装插件",
     "url": "/plugins/dsh-plugin-radar/"
   },
@@ -557,7 +529,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "与 dsh-market、dsh-plugin-radar 同类不同实现，本站不合并",
     "url": "/plugins/dsh-plugin-shop/"
   },
@@ -575,7 +546,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "清单类项目，不是插件",
     "url": "/plugins/awesome-deepseek-harness/"
   },
@@ -592,7 +562,6 @@
     ],
     "status_label": "原文未说明",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/selection-toolbar/"
   },
@@ -609,7 +578,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "与 anywhere-labs 版是两个项目",
     "url": "/plugins/dsh-desktop-dataelement/"
   },
@@ -627,7 +595,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-desktop-tauri/"
   },
@@ -645,7 +612,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-tui/"
   },
@@ -663,7 +629,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-synapse/"
   },
@@ -681,7 +646,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目，非官方",
     "url": "/plugins/dsh-x/"
   },
@@ -701,7 +665,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/browserskill/"
   },
@@ -718,7 +681,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/skill-report/"
   },
@@ -736,7 +698,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/openbiliclaw/"
   },
@@ -754,7 +715,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-fabric/"
   },
@@ -773,7 +733,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "视觉能力打包自上游 agent-vision-toolkit",
     "url": "/plugins/dsh-vision-toolkit/"
   },
@@ -791,7 +750,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区集成，非 DeepSeek 官方产品；实际 DSH 包名 @tt-a1i/archify-dsh",
     "url": "/plugins/archify/"
   },
@@ -809,7 +767,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "DSH 接入形态为同仓子包 @zseven-w/dsh-openpencil；本体 OpenPencil 是独立 Rust 设计 App",
     "url": "/plugins/openpencil/"
   },
@@ -828,7 +785,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/deepseek-design/"
   },
@@ -846,7 +802,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-diff-approval/"
   },
@@ -864,7 +819,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-routing-suite/"
   },
@@ -888,7 +842,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "涉及生产服务器写操作，请先在测试环境验证",
     "url": "/plugins/dsh-devops/"
   },
@@ -906,7 +859,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/answer-me-with-html/"
   },
@@ -923,7 +875,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-memory-evolve/"
   },
@@ -940,7 +891,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-project-memory/"
   },
@@ -958,7 +908,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-engram/"
   },
@@ -976,7 +925,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/runtime36/"
   },
@@ -993,7 +941,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-basabase/"
   },
@@ -1012,7 +959,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/everos/"
   },
@@ -1030,7 +976,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/memos/"
   },
@@ -1049,7 +994,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/reme/"
   },
@@ -1067,7 +1011,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "第三方接入，使用前先看清各服务条款",
     "url": "/plugins/dsh-plugin-subscriptions/"
   },
@@ -1085,7 +1028,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-api-dashboard/"
   },
@@ -1102,7 +1044,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "存在多个同名社区实现，本条目以 Muzi1015 版（npm 包 dsh-api-balance-plugin）为准",
     "url": "/plugins/dsh-api-balance/"
   },
@@ -1119,7 +1060,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-gov/"
   },
@@ -1137,7 +1077,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "涉及绕过模型安全策略，本站不评价",
     "url": "/plugins/dsh-purge/"
   },
@@ -1154,7 +1093,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "涉及绕过模型安全策略，本站不评价",
     "url": "/plugins/dsh-unrestricted/"
   },
@@ -1172,7 +1110,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "渗透测试须在授权范围内使用",
     "url": "/plugins/deepsec/"
   },
@@ -1190,7 +1127,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目，非官方",
     "url": "/plugins/dsh-plugin-claude-bridge/"
   },
@@ -1207,7 +1143,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目，非官方（PerryLink 维护，Apache-2.0）",
     "url": "/plugins/dsh-claude-move/"
   },
@@ -1226,7 +1161,6 @@
     ],
     "status_label": "官方",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "官方包，只桥接 Tools（resources / prompts 不支持）",
     "url": "/plugins/dsh-mcp-client/"
   },
@@ -1246,7 +1180,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-wechat/"
   },
@@ -1264,7 +1197,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "加密与中继方式以仓库说明为准",
     "url": "/plugins/ds-harness-remote/"
   },
@@ -1283,7 +1215,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-mobile/"
   },
@@ -1301,7 +1232,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-ios/"
   },
@@ -1319,7 +1249,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/webnovel-writer/"
   },
@@ -1339,7 +1268,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/oh-story-dsh/"
   },
@@ -1358,7 +1286,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-univer-office/"
   },
@@ -1375,7 +1302,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目，非官方；注意 DSH 版本→插件版本对应关系，装错会崩（如 useConversation is not a function）",
     "url": "/plugins/dsh-minigames/"
   },
@@ -1392,7 +1318,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区整活项目，非官方；广告会延迟回答显示，正式工作场景慎用",
     "url": "/plugins/dsh-ads/"
   },
@@ -1409,7 +1334,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目，非官方；仅针对 dsh-ads，需与 dsh-ads 配合才有意义",
     "url": "/plugins/dsh-anti-ads/"
   },
@@ -1426,7 +1350,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目，非官方；当前适配 dsh 0.2.0-rc.2，需 Web profile，不再兼容 0.1.x 客户端运行时",
     "url": "/plugins/dsh-gomoku/"
   },
@@ -1443,7 +1366,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目，非官方；npm 发行版仅含 token 换肤与全局皮肤表，登录窗/聊天窗等组件级效果需源码 monorepo 形态才完整",
     "url": "/plugins/dsh-qq2006/"
   },
@@ -1461,7 +1383,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目，非官方；注意 DSH 版本→插件版本对应关系，装错会崩",
     "url": "/plugins/dsh-ui-whale/"
   },
@@ -1478,7 +1399,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目，非官方",
     "url": "/plugins/dsh-emoji/"
   },
@@ -1496,7 +1416,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/petdex/"
   },
@@ -1519,7 +1438,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-media-desk/"
   },
@@ -1541,7 +1459,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "",
     "url": "/plugins/dsh-guizang-design/"
   },
@@ -1563,7 +1480,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目（BSD-3-Clause，非 DeepSeek 官方）；与 dsh-skills-manager 功能重叠",
     "url": "/plugins/dsh-client-ui-skill-explorer/"
   },
@@ -1585,7 +1501,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目（AGPL-3.0，非 DeepSeek 官方）；远程访问把本机开放给手机，注意信任边界",
     "url": "/plugins/dsh-remote-bridge/"
   },
@@ -1607,7 +1522,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目（Apache-2.0，非 DeepSeek 官方）；生图走第三方后端，注意各 Provider 的内容政策与费用",
     "url": "/plugins/dsh-image-gen/"
   },
@@ -1631,7 +1545,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；回退不可就地撤销，操作前确认目标消息；文件还原只在选「对话和文件」时写入工作区",
     "url": "/plugins/dsh-rewind/"
   },
@@ -1655,7 +1568,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；默认会把图片/裁剪图发给云端视觉模型（含匿名兜底），涉密或敏感素材请开 strict local-only；DSH >=0.2.1-rc.5 <0.3.0-0、Node.js >=24.9.0",
     "url": "/plugins/dsh-vision-router/"
   },
@@ -1678,7 +1590,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；需自建可达的 Nacos 3.2+ 实例并开启 AI Registry，且能力已在其中注册；非普通用户开箱即用",
     "url": "/plugins/dsh-nacos-bridge/"
   },
@@ -1701,7 +1612,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；接入机器人涉及各平台凭据，注意 Token 安全与平台条款",
     "url": "/plugins/dsh-im/"
   },
@@ -1724,7 +1634,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；公网访问意味着把 DSH 界面暴露到外网，请设置强口令并留意可访问范围",
     "url": "/plugins/dsh-pocket/"
   },
@@ -1747,7 +1656,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；纯外观，不影响模型能力；视频/场景壁纸可能占用一定渲染资源",
     "url": "/plugins/dsh-wallpaper-engine/"
   },
@@ -1771,7 +1679,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；依赖本地 OpenViking 服务（默认 localhost:1933），不是装了就能用；Node ^22.19.0 || >=24，DSH >=0.1.7-rc.2",
     "url": "/plugins/dsh-openviking/"
   },
@@ -1794,7 +1701,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；README 仅给出本地路径与 pnpm 开发安装示例，未提供已发布 npm 包名，本站 install 按官方仓库的 git 形式写",
     "url": "/plugins/dsh-wechat-article/"
   },
@@ -1816,7 +1722,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；数据存本地工作区，注意备份",
     "url": "/plugins/dsh-novel/"
   },
@@ -1838,7 +1743,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目（MIT）；依赖使用者持续点选来积累偏好",
     "url": "/plugins/dsh-novel-craft/"
   },
@@ -1861,7 +1765,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；需 Node.js 22+ 的 DSH Web profile；检索走公开 API，注意网络可达性",
     "url": "/plugins/dsh-plugin-academic-paper/"
   },
@@ -1883,7 +1786,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；npm 未发布（@dsh-external/dsh-deep-research 查不到），须从 git 安装；研究能力依赖 web_search/web_fetch 工具",
     "url": "/plugins/dsh-deep-research/"
   },
@@ -1905,7 +1807,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；要求 DSH 0.2.2+、Windows 10/11；会在工作目录改文件跑命令，建议在空目录或独立项目目录使用",
     "url": "/plugins/dsh-dev-mode/"
   },
@@ -1928,7 +1829,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；仅 Windows；能真实操作桌面与键鼠，涉及账号/付款操作请全程留意并按需用 Esc 停止",
     "url": "/plugins/dsh-computer-use-win/"
   },
@@ -1950,7 +1850,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；npm 未发布（registry 404），按 git 安装；判定的是「是否真插件」，不是仓库质量",
     "url": "/plugins/dsh-topic-audit/"
   },
@@ -1973,7 +1872,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区 skill（非 Cordis bundle）；走 skill 文件系统 provider 加载，不是 dsh plugin add；npm 全局安装后用附带链接器装到 ~/.dsh/skills/zh-distribute",
     "url": "/plugins/dsh-skill-zh-distribute/"
   },
@@ -1995,7 +1893,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；语音识别走浏览器自带服务（Edge→Azure / Chrome→Google），音频会发给对应浏览器语音服务；npm 安装免 allowBuilds",
     "url": "/plugins/dsh-mic-input/"
   },
@@ -2017,7 +1914,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；会在工作目录反复修改文件，务必在独立目录/有基线保护下使用；安装按 README 固定 v1.0.11 标签",
     "url": "/plugins/dsh-autoresearch/"
   },
@@ -2039,7 +1935,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；需 Web profile 与 pnpm；依赖 spillStore（标准部署自带，缺失时压缩默认关闭）；装后需重启 dsh",
     "url": "/plugins/dsh-plugin-save-token/"
   },
@@ -2061,7 +1956,6 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 1,
     "flag": "社区项目；仅适配 DeepSeek V4.1 Flash 与 DSH 0.2.1-rc.5~0.2.2 区间；三项运行时改动对整个 profile 生效（PTC 覆盖 / glob-grep 并发标记 / 旧 id 解析），需按需用环境变量关闭；装 0.3.1 别装 0.2.5",
     "url": "/plugins/dsh-flash-presets/"
   }

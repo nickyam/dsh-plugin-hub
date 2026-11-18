@@ -24,13 +24,6 @@ params:
     tags: *id001
     flag: 社区项目，非官方；仅针对 dsh-ads，需与 dsh-ads 配合才有意义
     notes: README 提示：L4 广播的「本次关闭」是 dsh-ads 刻意做成不可撤销的，若已广播过，广告层要刷新页面才会回来；拦截器只清理 dsh-ads 自身设置的广告位。
-    refs:
-    - id: baike-dsh
-      title: 百度百科：DeepSeek Harness
-      url: https://baike.baidu.com/item/deepseek%20harness/68533699
-      kind_label: 百科
-      publisher: 百度百科
-    source_count: 1
     repo_confirmed: true
     category_label: 娱乐与彩蛋
     status_label: 社区

@@ -24,13 +24,6 @@ params:
     - 分层洞察记忆：教训/决策/程序为统一实体，跨任务/项目/全局范围，近重复自动合并或强化
     tags: *id001
     notes: 无原生构建、无向量数据库；79MB 本地嵌入表（leanvec）默认安装运行，缺失时回退纯词法召回。装后需重启 dsh web。
-    refs:
-    - id: tree-top10
-      title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
-      url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
-      kind_label: 第三方媒体
-      publisher: TreeRouter Blog（英文，第三方）
-    source_count: 1
     repo_confirmed: true
     category_label: 记忆与知识
     status_label: 社区

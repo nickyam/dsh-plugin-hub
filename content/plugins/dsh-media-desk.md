@@ -30,13 +30,6 @@ params:
     - 中英双语：界面跟随 DSH 语言也可固定，切英文后脚本、标题、分镜用英文输出，网页版手机也可开
     tags: *id001
     notes: 社区项目（MIT，非 DeepSeek 官方），作者为小红书博主「蜗牛的科技笔记」。需 DSH 0.2.x；包已发 npm（dsh-media-desk），也可从 Releases 下载 tgz 离线装。桌面版与网页版命令分别是 --profile desktop 与 web。文章（wx-feishu）称其「记灵感、写脚本、做封面、设计分镜、复盘」的工作台，与 README 一致。
-    refs:
-    - id: wx-feishu
-      title: 3.5 万个插件里，DeepSeek 官方为什么只挑了这 4 个?
-      url: https://mp.weixin.qq.com/s/pdJ8cQW1Ua_jhtRR7wR8iQ
-      kind_label: 公众号
-      publisher: 飞叔（公众号：飞叔 AI赋能推客）
-    source_count: 1
     repo_confirmed: true
     category_label: 内容创作与办公
     status_label: 社区

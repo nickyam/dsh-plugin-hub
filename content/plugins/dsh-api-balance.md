@@ -25,13 +25,6 @@ params:
     tags: *id001
     flag: 存在多个同名社区实现，本条目以 Muzi1015 版（npm 包 dsh-api-balance-plugin）为准
     notes: 另有 Kihara777/dsh-api-balance（仅 GitHub 源码安装、无 npm 包，作者说明因视力障碍暂未发布 npm）等同类轻量实现；本条目以 Muzi1015 版为准。
-    refs:
-    - id: tree-top10
-      title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
-      url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
-      kind_label: 第三方媒体
-      publisher: TreeRouter Blog（英文，第三方）
-    source_count: 1
     repo_confirmed: true
     category_label: 模型与计费
     status_label: 社区

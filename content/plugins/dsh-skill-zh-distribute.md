@@ -30,13 +30,6 @@ params:
     tags: *id001
     flag: 社区 skill（非 Cordis bundle）；走 skill 文件系统 provider 加载，不是 dsh plugin add；npm 全局安装后用附带链接器装到 ~/.dsh/skills/zh-distribute
     notes: 仓库 zjukop/dsh-skill-zh-distribute（GitHub 精确命中唯一），npm 已发布 dsh-skill-zh-distribute（registry 200）。README 明确这是零代码 skill 而非代码插件，dsh plugin add 装的是 bundle、不适用；正确装法 npm i -g 后运行 dsh-skill-zh-distribute 链接器。文章把它列为创作组「一稿多发」，本站按其 skill 属性在 install 与 flag 里写清。
-    refs:
-    - id: wx-xiaobai
-      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
-      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
-      kind_label: 公众号
-      publisher: Stefan学AI（公众号：晓白AI纪元）
-    source_count: 1
     repo_confirmed: true
     category_label: 内容创作与办公
     status_label: 社区

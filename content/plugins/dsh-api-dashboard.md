@@ -25,13 +25,6 @@ params:
     - 可选「大肥鱼」桌宠挂件（移植自鲸鱼挂件）与一键自更新
     tags: *id001
     notes: 深度绑定 DSH 客户端与宿主 API，只能在 DSH 里运行；未开放余额接口的平台如实显示「未开放」，不伪造数字。安装或维护前建议先读仓库 AGENTS.md。
-    refs:
-    - id: tree-top10
-      title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
-      url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
-      kind_label: 第三方媒体
-      publisher: TreeRouter Blog（英文，第三方）
-    source_count: 1
     repo_confirmed: true
     category_label: 模型与计费
     status_label: 社区

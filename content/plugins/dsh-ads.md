@@ -25,13 +25,6 @@ params:
     tags: *id001
     flag: 社区整活项目，非官方；广告会延迟回答显示，正式工作场景慎用
     notes: README 声明：内容纯属虚构，与 DeepSeek 或任何真实公司无关；唯一网络请求是可选的「验证修复」点击后查询 GitHub Star（优先本地 gh/token，否则匿名 API）。
-    refs:
-    - id: baike-dsh
-      title: 百度百科：DeepSeek Harness
-      url: https://baike.baidu.com/item/deepseek%20harness/68533699
-      kind_label: 百科
-      publisher: 百度百科
-    source_count: 1
     repo_confirmed: true
     category_label: 娱乐与彩蛋
     status_label: 社区

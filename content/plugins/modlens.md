@@ -26,28 +26,6 @@ params:
     tags: *id001
     flag: 与 dsh-vision-toolkit 是不同条目，本站不合并
     notes: README 注明 Web UI 里直接粘贴图片可能被宿主拒绝（DeepSeek 适配器硬编码 inputModalities 为 text），read_image 在 Web UI 已验证端到端可用。仓库另含兄弟插件 ModSearch（免费网页搜索）。
-    refs:
-    - id: wx-shuzishanshui
-      title: DSH 十大插件大洗牌：桌宠掉队，billion-context 月下载破百万
-      url: https://mp.weixin.qq.com/s/ymm_FIwOinNF1mRcmts53g
-      kind_label: 公众号
-      publisher: 数字山水间（公众号：码途山海）
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    - id: wx-huxiaomo
-      title: DSH 最值得装的 7 款插件：从省 5 倍 token 到余额小鲸鱼
-      url: https://mp.weixin.qq.com/s/pOxsRRqyCiFI3moxX676xQ
-      kind_label: 公众号
-      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
-    - id: wx-shixiang
-      title: 亲测，DSH 最应该装的 10 个插件
-      url: https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA
-      kind_label: 公众号
-      publisher: 世相智能体（公众号：世相Ai智能体）
-    source_count: 4
     repo_confirmed: true
     category_label: 视觉与设计
     status_label: 社区

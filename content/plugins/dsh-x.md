@@ -26,13 +26,6 @@ params:
     tags: *id001
     flag: 社区项目，非官方
     notes: DSH-X 启动的是 DSH 官方原版 Web 页面，只做版本安装 / 启动 / 插件管理，不修改 DSH 网页界面；与 DSH Desktop（anywhere-labs / dataelement / Tauri 版）是不同项目，注意区分。安装包从 Releases 下载，非 dsh plugin add 路径。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 1
     repo_confirmed: true
     category_label: 界面与体验
     status_label: 社区

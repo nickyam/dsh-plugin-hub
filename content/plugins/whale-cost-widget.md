@@ -28,23 +28,6 @@ params:
     - 多厂商余额与额度扩展：内置 34 个厂商模板，可添加任意自定义 API 查询多厂商余额
     tags: *id001
     notes: 基础记账功能无需配置令牌即可用；泡泡/音效/交互均可自定义。npm 包名为 dsh-whale-widget，也可从桌面端 plugin_manager 安装。
-    refs:
-    - id: wx-dabaihua
-      title: DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单
-      url: http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9
-      kind_label: 公众号
-      publisher: 微信公众号（原文署名待补）
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    - id: wx-huxiaomo
-      title: DSH 最值得装的 7 款插件：从省 5 倍 token 到余额小鲸鱼
-      url: https://mp.weixin.qq.com/s/pOxsRRqyCiFI3moxX676xQ
-      kind_label: 公众号
-      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
-    source_count: 3
     repo_confirmed: true
     category_label: 模型与计费
     status_label: 原文未说明

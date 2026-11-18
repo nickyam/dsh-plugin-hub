@@ -31,13 +31,6 @@ params:
     tags: *id001
     flag: 社区项目；需 Node.js 22+ 的 DSH Web profile；检索走公开 API，注意网络可达性
     notes: 仓库 zhaoxuejie/dsh-plugin-academic-paper，npm 已发布 dsh-plugin-academic-paper（registry 200），README 推荐方式 A npm 安装 dsh plugin --profile web add dsh-plugin-academic-paper，本站 install 与其一致。文章称其「把查这件事从模型手里拿走」，与 README 的「插件负责检索与引用、模型负责解读综述」一致。
-    refs:
-    - id: wx-xiaobai
-      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
-      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
-      kind_label: 公众号
-      publisher: Stefan学AI（公众号：晓白AI纪元）
-    source_count: 1
     repo_confirmed: true
     category_label: 内容创作与办公
     status_label: 社区

@@ -25,28 +25,6 @@ params:
     tags: *id001
     flag: 与官网内置 Agent teams 名称相近，勿混
     notes: 官网界面另有标为 Experimental 的 Agent teams，属开箱即用能力，本站不收录；这里只记需要单独安装的社区插件。需在兼容宿主（README 提供确切版本与兼容矩阵）上运行。
-    refs:
-    - id: baike-dsh
-      title: 百度百科：DeepSeek Harness
-      url: https://baike.baidu.com/item/deepseek%20harness/68533699
-      kind_label: 百科
-      publisher: 百度百科
-    - id: wx-dabaihua
-      title: DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单
-      url: http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9
-      kind_label: 公众号
-      publisher: 微信公众号（原文署名待补）
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    - id: wx-xiaobai
-      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
-      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
-      kind_label: 公众号
-      publisher: Stefan学AI（公众号：晓白AI纪元）
-    source_count: 4
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区

@@ -27,23 +27,6 @@ params:
     tags: *id001
     flag: 独立社区项目，与 DeepSeek 无隶属关系
     notes: 独立的社区开源项目，与 DeepSeek 不存在隶属、合作、授权或背书关系（README 明确声明）。另有 dataelement、Tauri 两个独立桌面构建，本站单独立项，不合并。
-    refs:
-    - id: baike-dsh
-      title: 百度百科：DeepSeek Harness
-      url: https://baike.baidu.com/item/deepseek%20harness/68533699
-      kind_label: 百科
-      publisher: 百度百科
-    - id: tree-top10
-      title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
-      url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
-      kind_label: 第三方媒体
-      publisher: TreeRouter Blog（英文，第三方）
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 3
     repo_confirmed: true
     category_label: 界面与体验
     status_label: 社区

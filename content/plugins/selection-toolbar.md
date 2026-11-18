@@ -24,13 +24,6 @@ params:
     - AI 动作复用当前会话，划选内容作为素材以 Markdown 引用块注入
     tags: *id001
     notes: 本插件只经 git 分发，不发布到 npm；桌面端请在应用内「插件 → 添加插件」填同一地址。装完后刷新页面即可（仅改动 host 半端时才需重启 dsh web / 桌面应用）。
-    refs:
-    - id: wx-dabaihua
-      title: DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单
-      url: http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9
-      kind_label: 公众号
-      publisher: 微信公众号（原文署名待补）
-    source_count: 1
     repo_confirmed: true
     category_label: 界面与体验
     status_label: 原文未说明

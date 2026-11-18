@@ -24,23 +24,6 @@ params:
     - PTC 模式结构化工具：返回结构化 JSON 值，降低编写 TypeScript 的 token 总量与心智负担
     tags: *id001
     notes: 需 DSH 0.2.2-rc.1 及以上（0.5 系列不再支持 0.2.0 / 0.2.1）；桌面端须用桌面应用自带 CLI。README 曾提示 0.5.0 存在缓存膨胀 bug，安装前请确认已修复到最新版。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    - id: wx-huxiaomo
-      title: DSH 最值得装的 7 款插件：从省 5 倍 token 到余额小鲸鱼
-      url: https://mp.weixin.qq.com/s/pOxsRRqyCiFI3moxX676xQ
-      kind_label: 公众号
-      publisher: 狐小墨（公众号：狐小墨 AI驱动创新）
-    - id: wx-jiaweisi
-      title: 给 DeepSeek 大肥鱼装省 Token 插件，实测 5 款，最高竟然省了近 40%
-      url: https://mp.weixin.qq.com/s/fJnxDLVbNezuCbsjb2asrw
-      kind_label: 公众号
-      publisher: 甲维斯机（公众号：甲维斯机）
-    source_count: 3
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区

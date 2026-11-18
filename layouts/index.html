@@ -4,7 +4,7 @@
   <div class="wrap hero-inner">
     <div class="hero-copy">
       <h1>把散落各处的 DSH 插件，收到一处</h1>
-      <p class="hero-sub">公众号文章写了一批，社区目录又写了一批，名字还常常对不上。本站的思路很简单：顺着文章发现插件，再回到它的官方 GitHub 仓库读 README，把简介、安装、功能亮点整理成一张能查的卡片。文章只是「发现来源」，正文以官方说明为准。</p>
+      <p class="hero-sub">同一批插件被翻来覆去地讲，名字还常常对不上：有的叫 <code>dsh-web-ui-all</code>，有的叫 <code>@linxin666/dsh-web-all</code>，其实是同一族东西。本站的做法很简单：找到它的官方 GitHub 仓库、读 README，把简介、安装、功能亮点整理成一张能查的卡片。一切以官方说明为准。</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#catalog">浏览 {{ $stats.plugins }} 个插件</a>
         <a class="btn btn-ghost" href="{{ "about/" | relURL }}">看收录方法</a>
@@ -23,8 +23,6 @@
     <div class="stats">
       <div class="stat"><strong>{{ $stats.plugins }}</strong><span>插件条目</span></div>
       <div class="stat"><strong>{{ $stats.repos_confirmed }}</strong><span>已确认官方仓库</span></div>
-      <div class="stat"><strong>{{ $stats.refs_total }}</strong><span>条参考文章</span></div>
-      <div class="stat"><strong>{{ $stats.sources }}</strong><span>篇来源台账</span></div>
       <div class="stat"><strong>{{ $stats.categories }}</strong><span>个分类</span></div>
     </div>
   </div>
@@ -64,7 +62,7 @@
           {{ partial "card.html" . }}
         {{ end }}
       </div>
-      <p class="no-result" id="no-result" hidden>没找到匹配的插件。试试别名（例如「全家桶」「桌宠」「记账」），或者<a href="{{ "sources/" | relURL }}">看看来源台账</a>。</p>
+      <p class="no-result" id="no-result" hidden>没找到匹配的插件。试试别名，或者换个说法（例如「全家桶」「桌宠」「记账」）。</p>
       <nav class="pager" id="pager" aria-label="插件分页" hidden>
         <button class="pager-btn" type="button" data-page="prev" aria-label="上一页">‹</button>
         <span class="pager-pages" id="pager-pages"></span>
@@ -83,28 +81,27 @@
       </section>
       <section class="side-box">
         <h2>收录说明</h2>
-        <p class="side-note">每个插件都回到官方 GitHub 仓库读 README 整理；公众号与社区文章只作为发现来源，不渲染原文、不作为正文。你发我新文章，我按同样方式补卡片。</p>
+        <p class="side-note">每个插件都回到官方 GitHub 仓库读 README 整理，只写它自己是什么、怎么装、能干嘛；不转载文章正文，也不复制原文图片。</p>
       </section>
       <section class="side-box">
-        <h2>来源台账 <a class="more" href="{{ "sources/" | relURL }}">全部</a></h2>
-        <ul class="side-list">
-          {{ range first 5 (where site.RegularPages "Section" "sources") }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="mini-tag">{{ .Params.source.kind_label }}</span></li>
-          {{ end }}
+        <h2>怎么用</h2>
+        <ul class="legend">
+          <li>按分类筛一轮，先挑你要解决的事</li>
+          <li>搜别名最快，比如「全家桶」「桌宠」</li>
+          <li>点进卡片看安装命令，装前回仓库核一遍</li>
         </ul>
-        <p class="side-note">目前 {{ $stats.wechat }} 篇公众号文章；你把链接发我，我顺着它发现插件、再去官方仓库补全内容。</p>
       </section>
     </aside>
   </div>
 
   <section class="howto">
-    <h2>怎么加一篇公众号文章</h2>
+    <h2>这些卡片是怎么来的</h2>
     <div class="steps">
-      <div class="step"><span>01</span><h3>存来源</h3><p>在 <code>data/sources.yaml</code> 加一条：标题、公众号、原文链接、日期（没有就写「待补」）。</p></div>
-      <div class="step"><span>02</span><h3>找仓库写内容</h3><p>文章提到的插件，顺着名字去 GitHub 找官方仓库、读 README，在 <code>data/plugins.yaml</code> 里补 <code>repo</code> / <code>install</code> / <code>summary</code> / <code>features</code>，并把来源塞进 <code>refs</code> 作为参考。</p></div>
-      <div class="step"><span>03</span><h3>重新生成</h3><p>跑 <code>python3 tools/build_data.py &amp;&amp; hugo --minify</code>，仓库确认数、搜索索引全部自动重算。</p></div>
+      <div class="step"><span>01</span><h3>找到官方仓库</h3><p>按插件名字去 GitHub 搜，确认仓库确实是它、维护者确实是这批人。查不到可信仓库的名字，一律不建条目。</p></div>
+      <div class="step"><span>02</span><h3>读 README 写卡片</h3><p>在 <code>data/plugins.yaml</code> 里补 <code>repo</code> / <code>install</code> / <code>summary</code> / <code>features</code>，全部按 README 写，不抄第三方介绍。</p></div>
+      <div class="step"><span>03</span><h3>重新生成</h3><p>跑 <code>python3 tools/build_data.py &amp;&amp; hugo --minify</code>，统计、搜索索引、分页清单全部自动重算。</p></div>
     </div>
-    <p class="howto-foot">正文一律以官方仓库 README 为准，公众号文章只作发现来源与补充说明。<a href="{{ "about/" | relURL }}">完整收录方法</a></p>
+    <p class="howto-foot">只收需要自己动手安装的插件，官方开箱即用的内置能力不建条目。<a href="{{ "about/" | relURL }}">完整收录方法</a></p>
   </section>
 </div>
 {{ end }}

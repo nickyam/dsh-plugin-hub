@@ -29,13 +29,6 @@ params:
     - 语气档案：从本机 DSH 会话与你写过的文章学出写作习惯，每条特征需至少两处证据，去 AI 味与代写时复用
     tags: *id001
     notes: 社区项目（作者 op7418，非 DeepSeek 官方）。需 DSH 0.2.1-rc.2 及以上、0.3.0 以下；包名即 dsh-guizang-design，也支持 github:op7418/dsh-guizang-design 指定版本。卡片出图依赖 Playwright Chromium，网页导出 PDF 与长图依赖本机 Chrome。文章（wx-feishu）称其「一篇文章变网页、图文卡片或封面」与此一致。
-    refs:
-    - id: wx-feishu
-      title: 3.5 万个插件里，DeepSeek 官方为什么只挑了这 4 个?
-      url: https://mp.weixin.qq.com/s/pdJ8cQW1Ua_jhtRR7wR8iQ
-      kind_label: 公众号
-      publisher: 飞叔（公众号：飞叔 AI赋能推客）
-    source_count: 1
     repo_confirmed: true
     category_label: 视觉与设计
     status_label: 社区

@@ -30,23 +30,6 @@ params:
     tags: *id001
     flag: 社区项目（Apache-2.0，非 DeepSeek 官方）
     notes: 仓库 MichengAI/dsh-skills-manager（master 分支），npm 包 @michengai/dsh-skills-manager，README 版本 1.4.11（文章写 1.2.26，以仓库为准）。兼容 DSH 0.2.x 全系列（>=0.2.0-rc.1 <0.3.0-0）；仍用 0.1.x 的须改装 1.1.23，不要装 @latest。装后在「设置 → 技能」使用，需重启 DSH 并刷新页面。支持带路径前缀的反向代理部署（API 按 document.baseURI 相对解析）。与 dsh-client-ui-skill-explorer 功能有重叠，一般装一个即可。
-    refs:
-    - id: wx-shuzishanshui
-      title: DSH 十大插件大洗牌：桌宠掉队，billion-context 月下载破百万
-      url: https://mp.weixin.qq.com/s/ymm_FIwOinNF1mRcmts53g
-      kind_label: 公众号
-      publisher: 数字山水间（公众号：码途山海）
-    - id: wx-top10-30d
-      title: DSH 近 30 天插件 TOP10，鲸鱼娘挂件霸榜第一
-      url: https://mp.weixin.qq.com/s/7C46btfXy97CahMiDuOEnQ
-      kind_label: 公众号
-      publisher: 小白分享1234（公众号）
-    - id: wx-shixiang
-      title: 亲测，DSH 最应该装的 10 个插件
-      url: https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA
-      kind_label: 公众号
-      publisher: 世相智能体（公众号：世相Ai智能体）
-    source_count: 3
     repo_confirmed: true
     category_label: 工具与能力
     status_label: 社区

@@ -26,13 +26,6 @@ params:
     tags: *id001
     flag: 官方包，只桥接 Tools（resources / prompts 不支持）
     notes: 源码位于官方 deepseek-harness 单体仓的 packages/mcp/mcp-client；所有 MCP server 默认不启用，且启动命令是沙箱外的可执行代码，请只接可信服务器。MCP resources 与 prompts 当前不被桥接。
-    refs:
-    - id: deepseekai-works
-      title: 'DSH Plugins: What They Are, Where to Find Them, and How to Write One'
-      url: https://deepseekai.works/plugins
-      kind_label: 教程 / 指南
-      publisher: deepseekai.works（第三方教程站）
-    source_count: 1
     repo_confirmed: true
     category_label: 集成与迁移
     status_label: 官方

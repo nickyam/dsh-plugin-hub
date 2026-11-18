@@ -26,13 +26,6 @@ params:
     tags: *id001
     flag: 与 dsh-market、dsh-plugin-radar 同类不同实现，本站不合并
     notes: README 标注当前版本 0.9.2，安装命令钉该版本；若用 npx 前置则写作 npx -y @deepseek-ai/dsh plugin --profile web add dsh-plugin-shop@0.9.2。安装后需重启 dsh 以加载插件。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 1
     repo_confirmed: true
     category_label: 插件市场与发现
     status_label: 社区

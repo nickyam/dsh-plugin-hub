@@ -29,13 +29,6 @@ params:
     tags: *id001
     flag: 社区项目（AGPL-3.0，非 DeepSeek 官方）；远程访问把本机开放给手机，注意信任边界
     notes: 仓库 westanke/dsh-remote-bridge（main 分支），npm 包 dsh-remote-bridge，README 版本 v2.11.1。由 dsh-workspace 在 2.0.4 改名而来；REST 前缀 /dsh-workspace-api 与状态目录 dsh-workspace 为兼容旧 App 刻意保留，属预期行为。务必用 >= v2.0.4。环境要求 DSH 内核 >=0.2.2-rc.1 <0.3.0、Node.js ^22.19.0 或 >=24、默认端口 3090 可用。它是文章（wx-top10-30d）第 9 名已弃用的 dsh-remote-web-ui（@linxin666）的接替者；本站只收接替者，不收弃用包。
-    refs:
-    - id: wx-top10-30d
-      title: DSH 近 30 天插件 TOP10，鲸鱼娘挂件霸榜第一
-      url: https://mp.weixin.qq.com/s/7C46btfXy97CahMiDuOEnQ
-      kind_label: 公众号
-      publisher: 小白分享1234（公众号）
-    source_count: 1
     repo_confirmed: true
     category_label: 移动端与远程
     status_label: 社区

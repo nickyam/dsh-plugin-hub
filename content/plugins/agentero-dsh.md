@@ -30,18 +30,6 @@ params:
     - 本地优先：论文、PDF、笔记、标注都留在 Vault，与 Agentero 桌面端共用，插件只在本机运行、不另建数据库
     tags: *id001
     notes: 社区项目（组织 poco-ai，非 DeepSeek 官方；原文署名作者 Phil-Fan 为贡献者，主项目仓库在 poco-ai/Agentero）。npm 包名为 agentero-dsh，对应仓库名是 agentero-dsh-plugin（两者不一致，以此仓库为准）。需 DSH 0.2.x、Node.js 24.9+、一个 Agentero Vault 与 Agentero CLI；装完在侧栏打开 agentero-dsh 并配置 CLI 与知识库目录。文章（wx-feishu）称其「读论文、高亮、翻译、记笔记在一个窗口完成」，与 README 一致。
-    refs:
-    - id: wx-feishu
-      title: 3.5 万个插件里，DeepSeek 官方为什么只挑了这 4 个?
-      url: https://mp.weixin.qq.com/s/pdJ8cQW1Ua_jhtRR7wR8iQ
-      kind_label: 公众号
-      publisher: 飞叔（公众号：飞叔 AI赋能推客）
-    - id: wx-papertoday
-      title: DeepSeek官方推荐的科研神器，我装上了，超惊喜
-      url: https://mp.weixin.qq.com/s/-afBryEeI_iNkkvypHU_LQ
-      kind_label: 公众号
-      publisher: 每天学AI的老马（公众号：PaperToday）
-    source_count: 2
     repo_confirmed: true
     category_label: 记忆与知识
     status_label: 社区

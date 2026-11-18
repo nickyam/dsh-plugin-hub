@@ -30,13 +30,6 @@ params:
     tags: *id001
     flag: 社区项目；npm 未发布（@dsh-external/dsh-deep-research 查不到），须从 git 安装；研究能力依赖 web_search/web_fetch 工具
     notes: 官方组织仓 dsh-external/dsh-deep-research（GitHub 搜索首位的 omdsh-dev/dsh-deep-research 是镜像，README 相同；README 内 git 安装地址明确写 github.com/dsh-external/dsh-deep-research），npm registry 上 @dsh-external/dsh-deep-research 返回 404，故 install 用 README 的 git+https 形式。README 声明包带 dsh.bundle.patch（cordis.patch.yml），可装进任意 profile。
-    refs:
-    - id: wx-xiaobai
-      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
-      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
-      kind_label: 公众号
-      publisher: Stefan学AI（公众号：晓白AI纪元）
-    source_count: 1
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区

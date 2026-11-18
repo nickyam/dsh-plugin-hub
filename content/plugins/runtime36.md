@@ -25,13 +25,6 @@ params:
     - 三层验证：实现、对比（lock vs neighbor）、作者自报严格分离
     tags: *id001
     notes: 上游仓库现已将项目重命名为 KRouter，README 主推通过 bootstrap 脚本安装（而非 dsh plugin add），并强调面向 Claude Code / Codex / Cursor 的 MCP 记忆；核心仍是把 Obsidian/Markdown 笔记库作为 Agent 持久记忆。安装前请先读仓库 README 确认当前 DSH 安装方式。
-    refs:
-    - id: tree-top10
-      title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
-      url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
-      kind_label: 第三方媒体
-      publisher: TreeRouter Blog（英文，第三方）
-    source_count: 1
     repo_confirmed: true
     category_label: 记忆与知识
     status_label: 社区

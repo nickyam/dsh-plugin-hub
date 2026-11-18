@@ -32,13 +32,6 @@ params:
     tags: *id001
     flag: 涉及生产服务器写操作，请先在测试环境验证
     notes: 社区项目（MIT，非 DeepSeek 官方），与名称相近的 dsh-ops（T-Auto 的 token 优化工具）不是同一个插件。README 实测组合为 dsh-devops 0.5.0 / 0.4.x 配 DSH 0.1.5-rc.2；0.5.0 起改用 scoped 包名。安装三坑：保存凭据前先设 DSH_DEVOPS_KEY_FILE（不设则重启后凭据无法解密，密钥文件 0600 且丢失不可找回）、同版本重装须先 remove 再 add、装完必须重启宿主。本站直连 npm registry 查询 @bigbigtooth/dsh-devops 返回 404，npm 上只有他人预留的 dsh-devops@0.0.1 占位包；若 npm 路径装不上，改用 README 的 Release tarball（github.com/bigbigtooth/DSH-DevOps-Plugin/releases/latest/download/dsh-devops-latest.tgz）。巡检只读，部署写入仅限显式创建的任务，不读取 DSH 会话内容。
-    refs:
-    - id: wx-devops
-      title: DeepSeek Harness这个神级插件，用完我直接跪了！
-      url: https://mp.weixin.qq.com/s/gdWT1tC-ajn2HMjwJJKA4w
-      kind_label: 公众号
-      publisher: 运维网工（原文署名 bigbigtooth）
-    source_count: 1
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区

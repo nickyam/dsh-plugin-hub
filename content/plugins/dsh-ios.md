@@ -29,13 +29,6 @@ params:
     - SwiftUI 预览热重载：包外生成临时宿主应用，将预览编译为 dylib 在运行中的模拟器内热替换（约 2–5 秒）
     tags: *id001
     notes: README 标注适配 DSH Web 0.2.2-rc.1 与 Desktop 0.2.1-rc.5；需宿主端启用移动网关或模拟器 / 真机环境。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 1
     repo_confirmed: true
     category_label: 移动端与远程
     status_label: 社区

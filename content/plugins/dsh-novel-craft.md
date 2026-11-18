@@ -28,13 +28,6 @@ params:
     tags: *id001
     flag: 社区项目（MIT）；依赖使用者持续点选来积累偏好
     notes: 仓库 shiyan688/dsh-novel-craft，npm 已发布 dsh-novel-craft（registry 200），README 给 npm 与 git 两种安装，本站 install 用 npm 稳定版；README 明确英文文档只放仓库、不进 npm 包。文章称它「只让你点赞点踩，模型自己总结你的文风」，与 README 一致。
-    refs:
-    - id: wx-xiaobai
-      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
-      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
-      kind_label: 公众号
-      publisher: Stefan学AI（公众号：晓白AI纪元）
-    source_count: 1
     repo_confirmed: true
     category_label: 内容创作与办公
     status_label: 社区

@@ -24,18 +24,6 @@ params:
     - 'lib 已提交仓库，github: 安装无需构建审批即可落地'
     tags: *id001
     notes: 官方唯一的发现机制是 GitHub topic dsh-plugin，第三方目录站均非官方。
-    refs:
-    - id: tree-top10
-      title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
-      url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
-      kind_label: 第三方媒体
-      publisher: TreeRouter Blog（英文，第三方）
-    - id: wx-xiaobai
-      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
-      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
-      kind_label: 公众号
-      publisher: Stefan学AI（公众号：晓白AI纪元）
-    source_count: 2
     repo_confirmed: true
     category_label: 插件市场与发现
     status_label: 社区

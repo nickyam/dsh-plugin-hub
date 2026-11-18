@@ -27,13 +27,6 @@ params:
     - 桥接会话自动挂到 cwd 对应工作区，直接出现在 Web 端侧栏分组下
     tags: *id001
     notes: 走腾讯 iLink 机器人通道（ilinkai.weixin.qq.com），协议层基于 @tencent-weixin/openclaw-weixin（MIT）并改写为 DSH 原生。社区另有多个微信桥接实现（panqing0313/dsh-plugin-weixin、gnulife/dsh-plugin-wechat、zgat/dsh-wechat 等），本条目以 dAI-aigc/dsh-wechat 为准。装好后需重启 dsh web 生效。
-    refs:
-    - id: wx-dabaihua
-      title: DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单
-      url: http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9
-      kind_label: 公众号
-      publisher: 微信公众号（原文署名待补）
-    source_count: 1
     repo_confirmed: true
     category_label: 集成与迁移
     status_label: 社区

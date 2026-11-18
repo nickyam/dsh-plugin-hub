@@ -27,13 +27,6 @@ params:
     - 官方仅支持 Chrome 与 Microsoft Edge（其他 Chromium 可能可用）
     tags: *id001
     notes: 由腾讯维护的社区项目（与 DeepSeek 无隶属关系）；安装前需先装 bsk CLI 与浏览器扩展，并让 bsk 在 DSH 启用的 PATH 上可用。
-    refs:
-    - id: wx-dabaihua
-      title: DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单
-      url: http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9
-      kind_label: 公众号
-      publisher: 微信公众号（原文署名待补）
-    source_count: 1
     repo_confirmed: true
     category_label: 工具与能力
     status_label: 社区

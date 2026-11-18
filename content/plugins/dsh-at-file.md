@@ -23,18 +23,6 @@ params:
     - 可配置 maxIndexedFiles 索引上限与 ignoreDirs 忽略目录
     tags: *id001
     notes: README 提醒：官方 DSH 新版已内置 @file / @session 引用，新装建议优先用官方实现；本插件保留给已有环境，偶发维护。安装后重启 dsh web 使 Host 与客户端加载新版本。
-    refs:
-    - id: baike-dsh
-      title: 百度百科：DeepSeek Harness
-      url: https://baike.baidu.com/item/deepseek%20harness/68533699
-      kind_label: 百科
-      publisher: 百度百科
-    - id: wx-shixiang
-      title: 亲测，DSH 最应该装的 10 个插件
-      url: https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA
-      kind_label: 公众号
-      publisher: 世相智能体（公众号：世相Ai智能体）
-    source_count: 2
     repo_confirmed: true
     category_label: 工具与能力
     status_label: 社区

@@ -26,13 +26,6 @@ params:
     tags: *id001
     flag: 涉及绕过模型安全策略，本站不评价
     notes: 原文章给出的仓库地址 YuJunZhiXue/dsh-purge 已重定向至 HunYiSage/dsh-purge（内容一致），故 repo 更新为现地址。项目不在 npm 发布，README 明确不建议经插件市场一键安装。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 1
     repo_confirmed: true
     category_label: 安全与治理
     status_label: 社区

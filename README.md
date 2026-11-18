@@ -1,10 +1,10 @@
 # DSH 插件图谱
 
-把散落在公众号、百科与第三方文章里的 **DeepSeek Harness（DSH）插件**汇总到一个 Hugo 静态站：顺着文章发现插件，再回到它的官方 GitHub 仓库读 README，把简介、安装与功能亮点整理成能查的卡片。文章只作「发现来源 / 参考」，正文以官方说明为准。自己当速查手册，也能直接分享。
+把散落各处的 **DeepSeek Harness（DSH）插件**汇总到一个 Hugo 静态站：顺着名字找到插件的官方 GitHub 仓库、读 README，把简介、安装与功能亮点整理成能查的卡片。一切以官方说明为准。自己当速查手册，也能直接分享。
 
 **正式地址：`https://ai.limzero.com/dsh/`**（挂在已备案的 `ai.limzero.com` 主站下的子目录，走阿里云 ECS）
 
-> 非官方站点，与 DeepSeek 及各插件作者无隶属关系。数据来自 18 个真实公开来源（含 15 篇公众号文章），**未对任何插件做安装实测**。**只收需要额外安装的插件**，官方开箱即用的内置能力不展示。
+> 非官方站点，与 DeepSeek 及各插件作者无隶属关系。**未对任何插件做安装实测**。**只收需要额外安装、且能核实到官方仓库的插件**，官方开箱即用的内置能力不展示。
 
 **视觉**：用 hallmark 的 **Almanac** 主题（石板蓝纸底、蓝黑墨字、方形直角、双线规、DeepSeek 鲸鱼蓝、等宽数字）做全量 redesign，自建零依赖浅色主题，全站纯静态、无后端无统计。
 
@@ -31,7 +31,7 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory /tmp/dsh-preview
 
 ```
 data/
-  sources.yaml          来源台账：一篇文章一条（发现来源 / 参考）
+  sources.yaml          线索台账：一篇文章一条，只用于内部去重与 refs 完整性校验，不上站
   plugins.yaml          插件主档：一个插件一条，内容以官方仓库 README 为准
   categories.yaml       分类表
   derived.json          【脚本生成】统计 + 各种映射
@@ -39,7 +39,6 @@ tools/build_data.py     校验 / 去重 / 算仓库确认数 / 生成页面与�
 deploy/deploy.sh        部署到 ECS 的 index/dsh/
 content/
   plugins/*.md          【脚本生成】106 个插件详情页
-  sources/*.md          【脚本生成】6 个来源页
   about.md privacy.md _index.md   手写页面
 layouts/                 自建零依赖主题（不拉 submodule）
 static/
@@ -49,7 +48,7 @@ static/
 public/                  hugo 构建产物（不入库）
 ```
 
-⚠️ `content/plugins/`、`content/sources/`、`static/search.json`、`data/derived.json` **是产物但要一起提交进 git**——这样线上构建只要 Hugo，不用装 Python/PyYAML。改完 data 必须跑一次生成脚本再提交，否则线上还是旧数据。`build.sh` 带了 `--cleanDestinationDir`，删条目时 `public/` 里的旧页会一起清掉，不留幽灵页面。
+⚠️ `content/plugins/`、`static/search.json`、`data/derived.json` **是产物但要一起提交进 git**——这样线上构建只要 Hugo，不用装 Python/PyYAML。改完 data 必须跑一次生成脚本再提交，否则线上还是旧数据。`build.sh` 带了 `--cleanDestinationDir`，删条目时 `public/` 里的旧页会一起清掉，不留幽灵页面。
 
 `static/search.json` 里的 `url` 是站点根相对路径（如 `/plugins/xxx/`）。将来若用 JS 拼链接，先读 `<html data-base>`（值形如 `/dsh/`）再拼，别直接拿它当完整 URL。
 
@@ -64,7 +63,9 @@ public/                  hugo 构建产物（不入库）
 
 `tools/build_data.py` 会直接拦下误加回来的 `status: builtin` / `category: builtin` 条目，别绕过它。
 
-## 加一篇公众号文章
+## 加一篇公众号文章（内部线索，不上站）
+
+> 🔴 2026-11-18 用户决定：**站点取消「来源」板块** —— 没有来源列表页、插件页不列参考来源、卡片不标「参考 N 篇」、导航与页脚也不出现来源入口。`data/sources.yaml` 与插件的 `refs` 只作仓库内部记录（判断「这篇录过没」、避免重复劳动），`build_data.py` 仍校验 refs 完整性，但**不写进任何产物**，`derived.json` 与 `search.json` 里也不许出现来源标题 / 链接 / 计数。
 
 1. `data/sources.yaml` 追加一条，`id` 短横线小写，链接贴进 `url`：
    ```yaml

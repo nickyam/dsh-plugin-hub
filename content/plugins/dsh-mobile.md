@@ -26,13 +26,6 @@ params:
     - 插件管理与定时任务：浏览官方与已装插件及其状态，查看、编辑与删除定时任务
     tags: *id001
     notes: 移动端 App 需配合宿主端的 dsh-plugin-mobile-gateway（0.11.2+）使用；iOS 走 TestFlight、Android 走 GitHub Releases APK（独立的第三方客户端，与 DeepSeek 无隶属关系）。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 1
     repo_confirmed: true
     category_label: 移动端与远程
     status_label: 社区

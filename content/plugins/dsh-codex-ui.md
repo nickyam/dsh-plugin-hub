@@ -32,18 +32,6 @@ params:
     tags: *id001
     flag: 社区项目（Apache-2.0，非 DeepSeek 官方）
     notes: 仓库 MichengAI/dsh-codex-ui（main 分支），npm 包 @michengai/dsh-codex-ui，README 版本 v2.0（文章写 2.0.9，npm 仓库实时版本以 registry 为准）。环境要求 Node.js 22+。2.0 彻底重写：放弃 1.x 直接改宿主 DOM、高权重 CSS 覆盖的做法，改用官方 Slots 插槽与 @deepseek-ai/dsh-client-ui-primitives 原语，升级 DSH 更不易崩。文章（wx-top10-30d）称「1.x 暴力覆盖、2.0 推倒重写」，与 README 的技术决策一节一致。
-    refs:
-    - id: wx-shuzishanshui
-      title: DSH 十大插件大洗牌：桌宠掉队，billion-context 月下载破百万
-      url: https://mp.weixin.qq.com/s/ymm_FIwOinNF1mRcmts53g
-      kind_label: 公众号
-      publisher: 数字山水间（公众号：码途山海）
-    - id: wx-top10-30d
-      title: DSH 近 30 天插件 TOP10，鲸鱼娘挂件霸榜第一
-      url: https://mp.weixin.qq.com/s/7C46btfXy97CahMiDuOEnQ
-      kind_label: 公众号
-      publisher: 小白分享1234（公众号）
-    source_count: 2
     repo_confirmed: true
     category_label: 界面与体验
     status_label: 社区

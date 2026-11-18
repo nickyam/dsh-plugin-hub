@@ -24,18 +24,6 @@ params:
     - 上下文感知降级：注释与文档中的示例代码降为低危，密钥与 webhook 即便在注释中也仍标记
     tags: *id001
     notes: 网关只读、绝不执行被扫代码、绝不写文件；它是启发式签名扫描，可能漏检新型恶意代码或误报无辜代码，BLOCK/WARN 需自行复核。仅作安装前与危险命令前的额外护栏。
-    refs:
-    - id: tree-top10
-      title: 10 Best DeepSeek Harness Plugins for AI Developers in 2026
-      url: https://api.treerouter.ai/en/blog/best-deepseek-harness-plugins-2026
-      kind_label: 第三方媒体
-      publisher: TreeRouter Blog（英文，第三方）
-    - id: deepseekai-works
-      title: 'DSH Plugins: What They Are, Where to Find Them, and How to Write One'
-      url: https://deepseekai.works/plugins
-      kind_label: 教程 / 指南
-      publisher: deepseekai.works（第三方教程站）
-    source_count: 2
     repo_confirmed: true
     category_label: 安全与治理
     status_label: 社区

@@ -30,13 +30,6 @@ params:
     tags: *id001
     flag: 社区项目；仅适配 DeepSeek V4.1 Flash 与 DSH 0.2.1-rc.5~0.2.2 区间；三项运行时改动对整个 profile 生效（PTC 覆盖 / glob-grep 并发标记 / 旧 id 解析），需按需用环境变量关闭；装 0.3.1 别装 0.2.5
     notes: 仓库 LarryE135/dsh-flash-presets（GitHub 搜索「flash-presets deepseek」精确命中、★ 最高），npm 包 dsh-flash-presets（registry 200，README 载 latest=0.3.1）。README 说明仓库内版本 0.3.2（2026-11-16）尚未发 npm/Release，故 install 固定到已发布的 0.3.1，避免装到有问题的 0.2.5。文章（wx-jiaweisi）实测省 23%、把浏览器检查次数从 30 降到 17，属作者单次口径，本站不采信数字，只按其「管住停手」的机制描述写功能。
-    refs:
-    - id: wx-jiaweisi
-      title: 给 DeepSeek 大肥鱼装省 Token 插件，实测 5 款，最高竟然省了近 40%
-      url: https://mp.weixin.qq.com/s/fJnxDLVbNezuCbsjb2asrw
-      kind_label: 公众号
-      publisher: 甲维斯机（公众号：甲维斯机）
-    source_count: 1
     repo_confirmed: true
     category_label: 模型与计费
     status_label: 社区

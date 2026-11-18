@@ -24,13 +24,6 @@ params:
     - 实时状态展示：活动动画、上下文占用条、TPS、缓存命中率、推理强度、令牌消耗与会话成本估算
     tags: *id001
     notes: 安装即启用，卸载不留补丁；README 提及其正从挂载插件演进为带独立入口的 app，需匹配当前验证线版本的 DSH。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 1
     repo_confirmed: true
     category_label: 界面与体验
     status_label: 社区

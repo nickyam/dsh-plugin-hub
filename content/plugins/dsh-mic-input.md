@@ -29,13 +29,6 @@ params:
     tags: *id001
     flag: 社区项目；语音识别走浏览器自带服务（Edge→Azure / Chrome→Google），音频会发给对应浏览器语音服务；npm 安装免 allowBuilds
     notes: 仓库 QT-Chen/dsh-mic-input（README 标题即 dsh-mic-input，与文章名字精确一致），npm 已发布 dsh-mic-input（registry 200），README 给 git 与 npm 两种方式，本站 install 用 npm 稳定版免构建授权。GitHub 另有 woodess/dsh-voice-input、hjcnx/dsh-web-voice-input 等近似项目，本条取文章点名且名字精确的 QT-Chen 仓库。
-    refs:
-    - id: wx-xiaobai
-      title: DeepSeek Harness 插件越装越卡？17 个真插件＋3 条变现路，按这个顺序装！
-      url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
-      kind_label: 公众号
-      publisher: Stefan学AI（公众号：晓白AI纪元）
-    source_count: 1
     repo_confirmed: true
     category_label: 界面与体验
     status_label: 社区

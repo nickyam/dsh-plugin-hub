@@ -25,13 +25,6 @@ params:
     tags: *id001
     flag: 涉及绕过模型安全策略，本站不评价
     notes: README 标注兼容 DSH Web 0.2.2-rc.1 与 Desktop 0.2.1-rc.5；开关状态存于当前 profile 的 cordis.patch.yml，不改写 DSH 文件沙箱与命令审批机制。
-    refs:
-    - id: wx-quanjing
-      title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
-      url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
-      kind_label: 公众号
-      publisher: 智宇AI说
-    source_count: 1
     repo_confirmed: true
     category_label: 安全与治理
     status_label: 社区
