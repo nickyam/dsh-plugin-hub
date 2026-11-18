@@ -7,7 +7,7 @@ tags: &id001
 - 必装
 - 一键安装
 - 入口
-weight: 1060
+weight: 1070
 params:
   plugin:
     id: dsh-market
@@ -29,6 +29,11 @@ params:
     flag: 安装写法有多种，以仓库 README 为准
     notes: dsh 0.2.1+ 市场是「插件」页的一个标签页；旧版在「设置 → 插件市场」打开，需 dsh web 0.1.0-rc.6+。注意：在装了 DSH Desktop 的机器上用命令行 add 可能装进 profiles/web 而非 Desktop 实际使用的 profile，桌面端请在应用内 Settings → Plugins 安装。
     refs:
+    - id: wx-shuzishanshui
+      title: DSH 十大插件大洗牌：桌宠掉队，billion-context 月下载破百万
+      url: https://mp.weixin.qq.com/s/ymm_FIwOinNF1mRcmts53g
+      kind_label: 公众号
+      publisher: 数字山水间（公众号：码途山海）
     - id: wx-dabaihua
       title: DeepSeek Harness 是个啥？大白话讲透 + 10 分钟上手 + 好用插件清单
       url: http://mp.weixin.qq.com/s?__biz=MzkwMDMzMzE0Mg==&mid=2247488511&idx=1&sn=b8f08d42ca17c2895080d4180cd3d6c9
@@ -59,11 +64,11 @@ params:
       url: https://mp.weixin.qq.com/s/2JXJhd9hmSHGfB39dCUlSQ
       kind_label: 公众号
       publisher: Stefan学AI（公众号：晓白AI纪元）
-    source_count: 6
+    source_count: 7
     repo_confirmed: true
     category_label: 插件市场与发现
     status_label: 社区
-    weight: 1060
+    weight: 1070
     url: /plugins/dsh-market/
   generated: true
 ---

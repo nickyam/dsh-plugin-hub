@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-17 15:17",
+  "generated_at": "2026-11-18 11:09",
   "stats": {
     "plugins": 106,
-    "sources": 17,
-    "wechat": 14,
-    "refs_total": 145,
+    "sources": 18,
+    "wechat": 15,
+    "refs_total": 154,
     "repos_confirmed": 106,
     "categories": 13
   },
@@ -204,6 +204,12 @@
       "title": "给 DeepSeek 大肥鱼装省 Token 插件，实测 5 款，最高竟然省了近 40%",
       "url": "https://mp.weixin.qq.com/s/fJnxDLVbNezuCbsjb2asrw",
       "publisher": "甲维斯机（公众号：甲维斯机）",
+      "kind_label": "公众号"
+    },
+    "wx-shuzishanshui": {
+      "title": "DSH 十大插件大洗牌：桌宠掉队，billion-context 月下载破百万",
+      "url": "https://mp.weixin.qq.com/s/ymm_FIwOinNF1mRcmts53g",
+      "publisher": "数字山水间（公众号：码途山海）",
       "kind_label": "公众号"
     }
   },

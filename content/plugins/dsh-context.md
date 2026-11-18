@@ -7,7 +7,7 @@ tags: &id001
 - 上下文
 - 可观测
 - 诊断
-weight: 1040
+weight: 1050
 params:
   plugin:
     id: dsh-context
@@ -26,6 +26,11 @@ params:
     tags: *id001
     notes: 需 @deepseek-ai/dsh 0.2.0-rc.2 及以上（各版本支持见 docs/compatibility.md）；数值采用 dsh 自身 Token 计量投影，与内置计量器一致。UI 支持简中 / 英 / 日等多语言（切换需 dsh 0.2.2+）。
     refs:
+    - id: wx-shuzishanshui
+      title: DSH 十大插件大洗牌：桌宠掉队，billion-context 月下载破百万
+      url: https://mp.weixin.qq.com/s/ymm_FIwOinNF1mRcmts53g
+      kind_label: 公众号
+      publisher: 数字山水间（公众号：码途山海）
     - id: wx-quanjing
       title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
       url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
@@ -46,11 +51,11 @@ params:
       url: https://mp.weixin.qq.com/s/DXkOWSmgT6k3Ypsukl5GJA
       kind_label: 公众号
       publisher: 世相智能体（公众号：世相Ai智能体）
-    source_count: 4
+    source_count: 5
     repo_confirmed: true
     category_label: 协作与工作流
     status_label: 社区
-    weight: 1040
+    weight: 1050
     url: /plugins/dsh-context/
   generated: true
 ---

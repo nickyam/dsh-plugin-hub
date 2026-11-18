@@ -8,7 +8,7 @@ tags: &id001
 - 用量
 - 多厂商
 - 预算
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: dsh-cost-meter
@@ -32,16 +32,21 @@ params:
     flag: 社区项目（MIT，非 DeepSeek 官方）
     notes: 仓库 Han-1413141/dsh-cost-meter（master 分支），npm 包 dsh-cost-meter，README 版本 1.9.70（文章写 1.9.47，以仓库为准）。环境要求 Node.js >= 20、DSH 0.2.0+ 且宿主可用 pnpm；装完需重启 dsh web。桌面端用其内置 CLI 与 desktop profile。文章（wx-top10-30d）称其「内置 170+ 模型价目表、可查十二家 Coding Plan 额度」，README 印证支持多厂商 Plan 与自定义余额源，具体家数以仓库为准。
     refs:
+    - id: wx-shuzishanshui
+      title: DSH 十大插件大洗牌：桌宠掉队，billion-context 月下载破百万
+      url: https://mp.weixin.qq.com/s/ymm_FIwOinNF1mRcmts53g
+      kind_label: 公众号
+      publisher: 数字山水间（公众号：码途山海）
     - id: wx-top10-30d
       title: DSH 近 30 天插件 TOP10，鲸鱼娘挂件霸榜第一
       url: https://mp.weixin.qq.com/s/7C46btfXy97CahMiDuOEnQ
       kind_label: 公众号
       publisher: 小白分享1234（公众号）
-    source_count: 1
+    source_count: 2
     repo_confirmed: true
     category_label: 模型与计费
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/dsh-cost-meter/
   generated: true
 ---

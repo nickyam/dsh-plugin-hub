@@ -6,7 +6,7 @@ categories:
 tags: &id001
 - 桌宠
 - DIY素材
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: dsh-pet
@@ -23,16 +23,21 @@ params:
     - 交互与物理手感：点击回应、拖拽甩抛、双击弹弓、宠物互撞，同一套物理与 Q 弹挤压手感，参数可调
     tags: *id001
     refs:
+    - id: wx-shuzishanshui
+      title: DSH 十大插件大洗牌：桌宠掉队，billion-context 月下载破百万
+      url: https://mp.weixin.qq.com/s/ymm_FIwOinNF1mRcmts53g
+      kind_label: 公众号
+      publisher: 数字山水间（公众号：码途山海）
     - id: wx-quanjing
       title: DeepSeek Harness 插件全景推荐：14 大类、36 款值得装的插件
       url: https://mp.weixin.qq.com/s/btWqFHCDWwgAD_uj2n0MDw
       kind_label: 公众号
       publisher: 智宇AI说
-    source_count: 1
+    source_count: 2
     repo_confirmed: true
     category_label: 娱乐与彩蛋
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/dsh-pet/
   generated: true
 ---

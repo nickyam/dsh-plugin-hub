@@ -20,6 +20,7 @@
   flag: 安装写法有多种，以仓库 README 为准
   notes: dsh 0.2.1+ 市场是「插件」页的一个标签页；旧版在「设置 → 插件市场」打开，需 dsh web 0.1.0-rc.6+。注意：在装了 DSH Desktop 的机器上用命令行 add 可能装进 profiles/web 而非 Desktop 实际使用的 profile，桌面端请在应用内 Settings → Plugins 安装。
   refs:
+  - wx-shuzishanshui
   - wx-dabaihua
   - tree-top10
   - wx-quanjing
@@ -227,6 +228,7 @@
   flag: 需按 DSH 版本选对应插件版本
   notes: 安装前硬刷新浏览器（Cmd/Ctrl+Shift+R）。注意版本匹配：DSH 0.2.2-rc.1+ 用 @0.30.1；0.2.1 线（含当前 latest）需钉 @0.28.2；更老的 host 见 README 版本对照表——装错版本会触发版本拒绝错误。
   refs:
+  - wx-shuzishanshui
   - baike-dsh
   - wx-quanjing
   - wx-huxiaomo
@@ -530,6 +532,7 @@
   flag: 与 dsh-vision-toolkit 是不同条目，本站不合并
   notes: README 注明 Web UI 里直接粘贴图片可能被宿主拒绝（DeepSeek 适配器硬编码 inputModalities 为 text），read_image 在 Web UI 已验证端到端可用。仓库另含兄弟插件 ModSearch（免费网页搜索）。
   refs:
+  - wx-shuzishanshui
   - wx-quanjing
   - wx-huxiaomo
   - wx-shixiang
@@ -681,6 +684,7 @@
   - 诊断
   notes: 需 @deepseek-ai/dsh 0.2.0-rc.2 及以上（各版本支持见 docs/compatibility.md）；数值采用 dsh 自身 Token 计量投影，与内置计量器一致。UI 支持简中 / 英 / 日等多语言（切换需 dsh 0.2.2+）。
   refs:
+  - wx-shuzishanshui
   - wx-quanjing
   - wx-feishu
   - wx-huxiaomo
@@ -1564,6 +1568,7 @@
   - 桌宠
   - DIY素材
   refs:
+  - wx-shuzishanshui
   - wx-quanjing
 - id: petdex
   name: petdex
@@ -1684,6 +1689,7 @@
   flag: 社区项目（Apache-2.0，非 DeepSeek 官方）
   notes: 仓库 MichengAI/dsh-skills-manager（master 分支），npm 包 @michengai/dsh-skills-manager，README 版本 1.4.11（文章写 1.2.26，以仓库为准）。兼容 DSH 0.2.x 全系列（>=0.2.0-rc.1 <0.3.0-0）；仍用 0.1.x 的须改装 1.1.23，不要装 @latest。装后在「设置 → 技能」使用，需重启 DSH 并刷新页面。支持带路径前缀的反向代理部署（API 按 document.baseURI 相对解析）。与 dsh-client-ui-skill-explorer 功能有重叠，一般装一个即可。
   refs:
+  - wx-shuzishanshui
   - wx-top10-30d
   - wx-shixiang
 - id: dsh-client-ui-skill-explorer
@@ -1736,6 +1742,7 @@
   flag: 社区项目（MIT，非 DeepSeek 官方）
   notes: 仓库 Han-1413141/dsh-cost-meter（master 分支），npm 包 dsh-cost-meter，README 版本 1.9.70（文章写 1.9.47，以仓库为准）。环境要求 Node.js >= 20、DSH 0.2.0+ 且宿主可用 pnpm；装完需重启 dsh web。桌面端用其内置 CLI 与 desktop profile。文章（wx-top10-30d）称其「内置 170+ 模型价目表、可查十二家 Coding Plan 额度」，README 印证支持多厂商 Plan 与自定义余额源，具体家数以仓库为准。
   refs:
+  - wx-shuzishanshui
   - wx-top10-30d
 - id: dsh-codex-ui
   name: DSH Codex UI
@@ -1763,6 +1770,7 @@
   flag: 社区项目（Apache-2.0，非 DeepSeek 官方）
   notes: 仓库 MichengAI/dsh-codex-ui（main 分支），npm 包 @michengai/dsh-codex-ui，README 版本 v2.0（文章写 2.0.9，npm 仓库实时版本以 registry 为准）。环境要求 Node.js 22+。2.0 彻底重写：放弃 1.x 直接改宿主 DOM、高权重 CSS 覆盖的做法，改用官方 Slots 插槽与 @deepseek-ai/dsh-client-ui-primitives 原语，升级 DSH 更不易崩。文章（wx-top10-30d）称「1.x 暴力覆盖、2.0 推倒重写」，与 README 的技术决策一节一致。
   refs:
+  - wx-shuzishanshui
   - wx-top10-30d
 - id: dsh-remote-bridge
   name: dsh-remote-bridge（远程访问桥）
@@ -1813,6 +1821,7 @@
   flag: 通用代理型工具，非 DSH 专属；native 插件与 standalone 扩展不可同时启用，否则会重复压缩
   notes: 仓库 ranxianglei/billion-context（master 分支），npm 包 billion-context，README 标 v0.1.208 附近（文章写 0.1.208，npm 实时版本以 registry 为准）。它不是纯 DSH 插件：架在任意编程助手与模型 API 之间重写 Anthropic/OpenAI 流，DSH 只是其支持客户端之一，本站按「可在 DSH 安装使用」收录。全局 CLI 安装为 `npm install -g billion-context --prefix=~/.local`（bili 命令落在 ~/.local/bin）；DSH 专用安装见上。native 插件（bili plugin install）与 standalone 扩展（billion-context-pi 等）互斥，同时开会双重压缩，安装器会自动切换并备份原配置到 .bili-bak。文章（wx-huxiaomo）的「省 5 倍 token / 下载 175 万」为文章与安装界面口径，本站不采信为独立结论。
   refs:
+  - wx-shuzishanshui
   - wx-huxiaomo
 - id: dsh-browser
   name: dsh-browser（真实浏览器）

@@ -16,7 +16,7 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 6,
+    "source_count": 7,
     "flag": "安装写法有多种，以仓库 README 为准",
     "url": "/plugins/dsh-market/"
   },
@@ -37,9 +37,45 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "source_count": 4,
+    "source_count": 5,
     "flag": "需按 DSH 版本选对应插件版本",
     "url": "/plugins/dsh-better-sidebar/"
+  },
+  {
+    "id": "dsh-context",
+    "name": "dsh-context",
+    "aliases": [],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "一站式 DeepSeek Harness 上下文可视化插件，提供 Context 面板、浏览器、侧栏与命令，透视上下文的组成、演进、压缩与多 Agent 协作。",
+    "tags": [
+      "上下文",
+      "可观测",
+      "诊断"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 5,
+    "flag": "",
+    "url": "/plugins/dsh-context/"
+  },
+  {
+    "id": "modlens",
+    "name": "modlens",
+    "aliases": [],
+    "category": "visual",
+    "category_label": "视觉与设计",
+    "summary": "DSH 上能力最强的视觉插件（作者自称）：给 DeepSeek、GLM 等纯文本模型外挂视觉能力，粘贴图片即得结构化 JSON 证据（OCR、版面、语义），无需先存文件再传路径。",
+    "tags": [
+      "OCR",
+      "视觉",
+      "结构化输出"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 4,
+    "flag": "与 dsh-vision-toolkit 是不同条目，本站不合并",
+    "url": "/plugins/modlens/"
   },
   {
     "id": "dsh-agent-teams",
@@ -57,24 +93,6 @@
     "source_count": 4,
     "flag": "与官网内置 Agent teams 名称相近，勿混",
     "url": "/plugins/dsh-agent-teams/"
-  },
-  {
-    "id": "dsh-context",
-    "name": "dsh-context",
-    "aliases": [],
-    "category": "workflow",
-    "category_label": "协作与工作流",
-    "summary": "一站式 DeepSeek Harness 上下文可视化插件，提供 Context 面板、浏览器、侧栏与命令，透视上下文的组成、演进、压缩与多 Agent 协作。",
-    "tags": [
-      "上下文",
-      "可观测",
-      "诊断"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 4,
-    "flag": "",
-    "url": "/plugins/dsh-context/"
   },
   {
     "id": "dsh-web",
@@ -114,24 +132,6 @@
     "source_count": 3,
     "flag": "独立社区项目，与 DeepSeek 无隶属关系",
     "url": "/plugins/dsh-desktop/"
-  },
-  {
-    "id": "modlens",
-    "name": "modlens",
-    "aliases": [],
-    "category": "visual",
-    "category_label": "视觉与设计",
-    "summary": "DSH 上能力最强的视觉插件（作者自称）：给 DeepSeek、GLM 等纯文本模型外挂视觉能力，粘贴图片即得结构化 JSON 证据（OCR、版面、语义），无需先存文件再传路径。",
-    "tags": [
-      "OCR",
-      "视觉",
-      "结构化输出"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 3,
-    "flag": "与 dsh-vision-toolkit 是不同条目，本站不合并",
-    "url": "/plugins/modlens/"
   },
   {
     "id": "dsh-ops",
@@ -206,6 +206,27 @@
     "source_count": 3,
     "flag": "",
     "url": "/plugins/whale-cost-widget/"
+  },
+  {
+    "id": "dsh-skills-manager",
+    "name": "DSH Skills Manager",
+    "aliases": [
+      "@michengai/dsh-skills-manager",
+      "技能管理器"
+    ],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "把散落在本机与项目里的 Agent 技能收拢到 DSH 统一管理：全局 / 项目 / 发现 / 回收站四视图，跨 20 多种工具与 CLI 环境读取，并从技能市场与公开仓库浏览、订阅、增量更新与备份回退。",
+    "tags": [
+      "技能管理",
+      "多Agent",
+      "技能市场"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 3,
+    "flag": "社区项目（Apache-2.0，非 DeepSeek 官方）",
+    "url": "/plugins/dsh-skills-manager/"
   },
   {
     "id": "dsh-find-plugin",
@@ -357,6 +378,23 @@
     "url": "/plugins/dsh-plugin-gate/"
   },
   {
+    "id": "dsh-pet",
+    "name": "dsh-pet",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "一只住在 DeepSeek Harness 里的桌面宠物，100+ 段透明动画资产，可多开、拖拽甩抛、脱离浏览器独立运行，也能自定义宠物种类（pet pack）。",
+    "tags": [
+      "桌宠",
+      "DIY素材"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 2,
+    "flag": "",
+    "url": "/plugins/dsh-pet/"
+  },
+  {
     "id": "agentero-dsh",
     "name": "agentero-dsh",
     "aliases": [
@@ -380,25 +418,72 @@
     "url": "/plugins/agentero-dsh/"
   },
   {
-    "id": "dsh-skills-manager",
-    "name": "DSH Skills Manager",
+    "id": "dsh-cost-meter",
+    "name": "dsh-cost-meter（费用统计）",
     "aliases": [
-      "@michengai/dsh-skills-manager",
-      "技能管理器"
+      "费用统计",
+      "Cost Meter"
     ],
-    "category": "tool",
-    "category_label": "工具与能力",
-    "summary": "把散落在本机与项目里的 Agent 技能收拢到 DSH 统一管理：全局 / 项目 / 发现 / 回收站四视图，跨 20 多种工具与 CLI 环境读取，并从技能市场与公开仓库浏览、订阅、增量更新与备份回退。",
+    "category": "billing",
+    "category_label": "模型与计费",
+    "summary": "DSH 的统一成本账本：按会话、模型、调用与轮次追踪费用和 Token，集中查看账户余额、订阅额度与预算，并把 API 按量费用与 Plan 折算分开统计，支持多厂商价目表与峰谷提醒。",
     "tags": [
-      "技能管理",
-      "多Agent",
-      "技能市场"
+      "成本",
+      "用量",
+      "多厂商",
+      "预算"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 2,
+    "flag": "社区项目（MIT，非 DeepSeek 官方）",
+    "url": "/plugins/dsh-cost-meter/"
+  },
+  {
+    "id": "dsh-codex-ui",
+    "name": "DSH Codex UI",
+    "aliases": [
+      "@michengai/dsh-codex-ui",
+      "Codex 风格界面",
+      "Codex UI 2.0"
+    ],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "一套 Codex 风格的 DSH 界面增强，由六个可独立启停的子插件组成：输入历史召回、全屏双岛设置、物理毛玻璃换肤、模块化侧栏、智能会话标题与桌面窗口菜单；2.0 起全面改用官方插槽与原语，降低宿主升级带来的破坏风险。",
+    "tags": [
+      "界面",
+      "主题",
+      "侧栏",
+      "Codex"
     ],
     "status_label": "社区",
     "repo_confirmed": true,
     "source_count": 2,
     "flag": "社区项目（Apache-2.0，非 DeepSeek 官方）",
-    "url": "/plugins/dsh-skills-manager/"
+    "url": "/plugins/dsh-codex-ui/"
+  },
+  {
+    "id": "billion-context",
+    "name": "billion-context（上下文压缩）",
+    "aliases": [
+      "bili",
+      "十亿上下文",
+      "上下文压缩代理"
+    ],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "架在编程助手与模型 API 之间的上下文压缩代理：由模型自己决定何时压缩、压缩什么，把已消耗的对话增量压缩成分层摘要且可逆、对前缀缓存友好，让小上下文窗口也能跑月级长会话；DSH 只是它支持的 20 多个客户端之一。",
+    "tags": [
+      "上下文压缩",
+      "长会话",
+      "省token",
+      "跨客户端"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "source_count": 2,
+    "flag": "通用代理型工具，非 DSH 专属；native 插件与 standalone 扩展不可同时启用，否则会重复压缩",
+    "url": "/plugins/billion-context/"
   },
   {
     "id": "dsh-browser",
@@ -1398,23 +1483,6 @@
     "url": "/plugins/dsh-emoji/"
   },
   {
-    "id": "dsh-pet",
-    "name": "dsh-pet",
-    "aliases": [],
-    "category": "fun",
-    "category_label": "娱乐与彩蛋",
-    "summary": "一只住在 DeepSeek Harness 里的桌面宠物，100+ 段透明动画资产，可多开、拖拽甩抛、脱离浏览器独立运行，也能自定义宠物种类（pet pack）。",
-    "tags": [
-      "桌宠",
-      "DIY素材"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "",
-    "url": "/plugins/dsh-pet/"
-  },
-  {
     "id": "petdex",
     "name": "petdex",
     "aliases": [],
@@ -1500,51 +1568,6 @@
     "url": "/plugins/dsh-client-ui-skill-explorer/"
   },
   {
-    "id": "dsh-cost-meter",
-    "name": "dsh-cost-meter（费用统计）",
-    "aliases": [
-      "费用统计",
-      "Cost Meter"
-    ],
-    "category": "billing",
-    "category_label": "模型与计费",
-    "summary": "DSH 的统一成本账本：按会话、模型、调用与轮次追踪费用和 Token，集中查看账户余额、订阅额度与预算，并把 API 按量费用与 Plan 折算分开统计，支持多厂商价目表与峰谷提醒。",
-    "tags": [
-      "成本",
-      "用量",
-      "多厂商",
-      "预算"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "社区项目（MIT，非 DeepSeek 官方）",
-    "url": "/plugins/dsh-cost-meter/"
-  },
-  {
-    "id": "dsh-codex-ui",
-    "name": "DSH Codex UI",
-    "aliases": [
-      "@michengai/dsh-codex-ui",
-      "Codex 风格界面",
-      "Codex UI 2.0"
-    ],
-    "category": "ui",
-    "category_label": "界面与体验",
-    "summary": "一套 Codex 风格的 DSH 界面增强，由六个可独立启停的子插件组成：输入历史召回、全屏双岛设置、物理毛玻璃换肤、模块化侧栏、智能会话标题与桌面窗口菜单；2.0 起全面改用官方插槽与原语，降低宿主升级带来的破坏风险。",
-    "tags": [
-      "界面",
-      "主题",
-      "侧栏",
-      "Codex"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "社区项目（Apache-2.0，非 DeepSeek 官方）",
-    "url": "/plugins/dsh-codex-ui/"
-  },
-  {
     "id": "dsh-remote-bridge",
     "name": "dsh-remote-bridge（远程访问桥）",
     "aliases": [
@@ -1565,29 +1588,6 @@
     "source_count": 1,
     "flag": "社区项目（AGPL-3.0，非 DeepSeek 官方）；远程访问把本机开放给手机，注意信任边界",
     "url": "/plugins/dsh-remote-bridge/"
-  },
-  {
-    "id": "billion-context",
-    "name": "billion-context（上下文压缩）",
-    "aliases": [
-      "bili",
-      "十亿上下文",
-      "上下文压缩代理"
-    ],
-    "category": "workflow",
-    "category_label": "协作与工作流",
-    "summary": "架在编程助手与模型 API 之间的上下文压缩代理：由模型自己决定何时压缩、压缩什么，把已消耗的对话增量压缩成分层摘要且可逆、对前缀缓存友好，让小上下文窗口也能跑月级长会话；DSH 只是它支持的 20 多个客户端之一。",
-    "tags": [
-      "上下文压缩",
-      "长会话",
-      "省token",
-      "跨客户端"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "source_count": 1,
-    "flag": "通用代理型工具，非 DSH 专属；native 插件与 standalone 扩展不可同时启用，否则会重复压缩",
-    "url": "/plugins/billion-context/"
   },
   {
     "id": "dsh-image-gen",
