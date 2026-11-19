@@ -1921,6 +1921,21 @@
    "description": "DeepSeek Harness skill",
    "html_url": "https://github.com/zjukop/dsh-skill-zh-distribute",
    "fetched_at": "2026-11-19T01:38:11Z"
+  },
+  "topmindspace/dsh-super-kanban": {
+   "full_name": "topmindspace/dsh-super-kanban",
+   "stars": 132,
+   "forks": 13,
+   "issues": 0,
+   "watchers": null,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-11-19T05:08:42Z",
+   "created_at": null,
+   "archived": false,
+   "description": "AI task kanban plugin for DeepSeek Harness — derives task goals, progress and issues from DSH sessions, with session hand-off, subtasks, artifacts and a dual full-page/sidebar UI.",
+   "html_url": "https://github.com/topmindspace/dsh-super-kanban",
+   "fetched_at": "2026-11-19T14:49:45Z"
   }
  }
 }

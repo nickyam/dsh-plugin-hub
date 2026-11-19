@@ -227,3 +227,11 @@
   date_note: "2026-11-12 13:58（浙江）"
   note: "第二十二篇。这篇是分析向文章，不是插件推荐清单：对比各插件市场 Top10，归纳出冲前列的三类（dsh-our-free-model 免 Key 模型 / archify 架构可视化 / open-design 设计）与稳定前十的六类（dsh-desktop、dsh-purge、learn-harness-engineering、awesome-dsh-plugin、dsh-market、记忆类 EverOS/MemOS/Hindsight/OpenViking），核心观点是「爆火插件=把黑盒变可见+打成本痛点+复杂任务可视化+结果可传播」。文中排行图自述「图片来源于网络」，未给任何仓库地址/安装命令，本站逐个按名字核对：9 个已收录（dsh-our-free-model、archify、open-design、dsh-desktop、awesome-dsh-plugin、dsh-market、everos、memos、dsh-openviking）本条只补发现线索。三类不收：dsh-purge 仓库仍 404（此前已删，本轮复查未变）；hindsight 名字泛化、无可信仓库（维持第十二篇拒收判定）；learn-harness-engineering（walkinglabs，★25k，Github 可查）是 Harness engineering 入门教程、不是 DSH 插件，按本站「只收需要额外安装的插件」不建条目。文章对各市场榜单、Star 涨势与「日活破百万/插件数万」的描述属作者口径，不采信为独立结论，也不进卡片。"
   tags: [公众号, 分析向, 生态观察, 无新插件]
+- id: wx-jimao
+  title: "Super Kanban：自动整理会话任务的 DSH 插件"
+  kind: wechat
+  publisher: "鸡猫AI江湖（公众号：鸡猫AI江湖）"
+  url: "https://mp.weixin.qq.com/s/ITImBjfgFIJXwZeWncxQWg"
+  date_note: "2026-11-15 13:50（上海）"
+  note: "第二十三篇。单插件深度介绍，作者即插件作者，给了明确仓库 github.com/topmindspace/dsh-super-kanban 与安装命令，逐条与官方 README 核对后新建 dsh-super-kanban 条目。文章安装写 @0.10.1，README 与 npm latest 均为 0.10.5，按 README 用 0.10.5 并在卡片 notes 注明文章版本已旧。文章功能描述（AI 自动整理任务、待处理列表、待验收卡片条、三种形态、项目日程时间线、带上下文续做、内置快聊、数据本机无遥测）与 README 一致。作者自述体验与封面示意图不采信为独立结论。"
+  tags: [公众号, 单插件, 任务看板, 作者自述]

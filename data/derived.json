@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-19 20:52",
+  "generated_at": "2026-11-19 22:50",
   "stats": {
-    "plugins": 132,
-    "repos_confirmed": 132,
+    "plugins": 133,
+    "repos_confirmed": 133,
     "categories": 13,
-    "stars_median": 644,
-    "stars_median_label": "644",
-    "gh_synced": 132,
+    "stars_median": 622,
+    "stars_median_label": "622",
+    "gh_synced": 133,
     "gh_synced_at": "2026-11-19T08:48:10Z"
   },
   "categories": [
@@ -32,7 +32,7 @@
       "id": "workflow",
       "label": "协作与工作流",
       "desc": "多智能体、任务编排、代码审阅",
-      "count": 13
+      "count": 14
     },
     {
       "id": "memory",
