@@ -191,3 +191,21 @@
   date_note: "2026-11-14 15:21（浙江）"
   note: "第十八篇。按一个人日常干活的顺序分成四组（打开就有文件与浏览器 / 资料查得到长任务能接着干 / 离开电脑也知道进度 / 情报和桌宠），文末自己声明「清单依据项目公开文档整理，未逐个安装实测」，这一点本站采信。15 条里 7 条此前已收录（dsh-market、dsh-better-sidebar、dsh-context、dsh-browser、billion-context、universal-plugin-hub、dsh-bili-scroll），新增 7 条：helloHub1212/dsh-windows-mcp、Soren-ABT/dsh-knowledge、kenryu42/cc-safety-net、YunzhouLi-hub/dsh-overall-mcp、THEWOLFWALKER/dsh-notifier、stjq12/dsh-remote-control、gosomea/dsh-bigfish。dsh-automation 维持不收：此前已判定为停维、且 DSH 有官方定时能力，本轮复查没有改变这个结论。三处同名歧义按 README 特征认定：dsh-knowledge 有 lemoncat7、XZX888、slder 等多个同名或近名包，按文中「关键词和向量检索 + 本地向量模型、重排和 OCR 需相应配置」锁定 Soren-ABT 那一份（FTS5 BM25 + 向量 + RRF/MMR + 本地 rerank/OCR）；dsh-remote-control 另有 icrefin 的同名实现走 relay 通道，按文中「README 明说桥接用明文 WebSocket、令牌相当于控制权限」锁定 stjq12（bridge 用明文 ws:// + bearer token）；dsh-notifier 与 xzk-abao/dsh-notify-im、YanYunCY/dsh-gateway-notify、c-ling/dsh-plugin-notify 属同类近名包，按包名与 8 通道适配器锁定 THEWOLFWALKER。文中的场景分组与「第一次只挑三个」的建议属编辑口径，不进插件卡。"
   tags: [公众号, 场景分组, 未实测]
+
+- id: wx-ruanjian
+  title: "3个宝藏插件，牛得一批~"
+  kind: wechat
+  publisher: "徐千（公众号：软件室）"
+  url: "https://mp.weixin.qq.com/s/YQah_gNlGoEdU-pLKNQ0Hg"
+  date_note: "2026-11-19 12:22（广东）"
+  note: "第十九篇。三款里第一款 dsh-web-ui-all 是已收录的 dsh-web-all（@linxin666/dsh-web-all，README 已核实全家桶），本条只给它补发现线索；文中「只支持 DeepSeek V4.1 系列」属文章口径，不进卡片。第二款 dsh-brows 文中给的地址 github.com/omdsh-dev/dsh-browser 与安装命令里的 Lum1104/dsh-browser 是同一仓库（GitHub API 显示 Lum1104 已 301 到 omdsh-dev），本站用正式名 omdsh-dev；它是桥插件+浏览器 MV3 扩展的新形态，与已收的 CJYLZS/dsh-browser（每会话真实浏览器进程）不是一个东西，另建条目。第三款鲸鱼娘皮肤，官方仓库 Small-tailqwq/dsh-deep-whale 下有 maid-atelier、orca-link 两个独立皮肤包与 skin-manager 管理器，逐个按 npm 包名建条目；文中「Claude Code Style 风格」在该仓库 479 个文件里查无对应子包，为文章口径不采信。文中「3.1k 星」属文章口径，本站星标以 GitHub API 为准。文章开头「推荐 AI 更安全」及聊天吹水段与插件无关，不进台账。"
+  tags: [公众号, 全家桶, 皮肤, 浏览器]
+
+- id: wx-fenxiangmi
+  title: "5个超火的DeepSeek Harness插件，这才是完全体！"
+  kind: wechat
+  publisher: "分享迷（公众号：分享迷）"
+  url: "https://mp.weixin.qq.com/s/tvdx0X7LWy_T3uUmXXpjqQ"
+  date_note: "2026-11-13 19:49（湖南）"
+  note: "第二十篇。5 款全部此前已收录（dsh-market、dsh-vision-router、billion-context、ModSearch、dsh-media-desk），逐条比对仓库地址与包名一致，本条只给这 5 个补发现线索，不新建条目。文中包名写法 dshmarket 对应 dsh-market；dsh-vision-router 文中强调的「免 Key 免费视觉链路会外发云端」与已收卡片 notes 里的数据外发说明一致；ModSearch、billion-context、media-desk 的安装命令以各自 README 为准，文章只给包名不推翻。作者自述「本来打算分享 10 个太长了先来 5 个」及「未来可能变内置」属编辑口径，不进卡片。"
+  tags: [公众号, 新手入门, 已全部收录]

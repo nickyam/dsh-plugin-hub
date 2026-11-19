@@ -31,6 +31,7 @@
   - wx-huxiaomo
   - wx-shixiang
   - wx-xiaobai
+  - wx-fenxiangmi
 - id: dsh-find-plugin
   name: dsh-find-plugin
   category: market
@@ -186,6 +187,7 @@
   refs:
   - wx-dabaihua
   - tree-top10
+  - wx-ruanjian
 - id: dsh-desktop
   name: DSH Desktop
   aliases:
@@ -401,6 +403,7 @@
   refs:
   - wx-dabaihua
   - wx-quanjing
+  - wx-fenxiangmi
 - id: browserskill
   name: BrowserSkill
   aliases:
@@ -1616,6 +1619,7 @@
   notes: 社区项目（MIT，非 DeepSeek 官方），作者为小红书博主「蜗牛的科技笔记」。需 DSH 0.2.x；包已发 npm（dsh-media-desk），也可从 Releases 下载 tgz 离线装。桌面版与网页版命令分别是 --profile desktop 与 web。文章（wx-feishu）称其「记灵感、写脚本、做封面、设计分镜、复盘」的工作台，与 README 一致。
   refs:
   - wx-feishu
+  - wx-fenxiangmi
 - id: dsh-guizang-design
   name: dsh-guizang-design
   aliases:
@@ -1829,6 +1833,7 @@
   - wx-xiaocheng
   - wx-shuzishanshui
   - wx-huxiaomo
+  - wx-fenxiangmi
 - id: dsh-browser
   name: dsh-browser（真实浏览器）
   aliases:
@@ -1854,7 +1859,6 @@
   flag: 社区项目；模型可操作真实浏览器与登录态，涉及账号与付款操作时请留意
   notes: 仓库 CJYLZS/dsh-browser（main/master 同指一份 README），npm 包为 scoped 名 @cjylzs/dsh-browser，README 最新 v0.3.x（文章写 github tag v0.2.3，为旧版）。旧的无 scope 名 dsh-browser 在 npm 上属于另一个项目，若 profile 里还留着旧键须先 `dsh plugin --profile web remove dsh-browser` 再装。按 DSH 版本选版本：>=0.1.7-rc.1 用 v0.3.x；0.1.5-rc.2 只能用 v0.1.0（tag 安装）。需本机已装 Chrome 或 Edge，playwright-core 不自带浏览器。装完重启宿主。桌面端要用其自带 CLI 的 --profile desktop 安装。
   refs:
-  - wx-aisketchlab
   - wx-aisketchlab
   - wx-shixiang
   - wx-xiaobai
@@ -1937,6 +1941,7 @@
   notes: 仓库 ysr666/dsh-vision-router（GitHub 搜索同名项目很多，本条取 README 详实、带 dsh-recommend 认证与 DeepGuard 审计标记、★ 数遥遥领先的 ysr666 主仓）。文章把它在视频里的叫法写作 deepstare，插件包名是 dsh-vision-router。README 有专门的「Data flow and strict local-only use」小节说明数据外发。
   refs:
   - wx-huxiaomo2
+  - wx-fenxiangmi
 - id: dsh-nacos-bridge
   name: dsh-nacos-bridge（Nacos 接口桥）
   aliases:
@@ -2915,3 +2920,90 @@
   notes: 和本站已收的 dsh-pet（PC2005-cloud）不是一回事：dsh-pet 明确说「不轮询、不插桩、不感知任何东西」，只负责陪；dsh-bigfish 主打跟着任务状态演出，两只要一起装就得接受右下角有俩。Node 要 ^22.19.0 || >=24.0.0，只用 Web 界面。稳定版 0.6.0，另有 0.7 Web 预览版（散步与回家、互动玩具、三套小窝）。发布首日装到旧版是 pnpm 11 的 24 小时发布冷却，不是装错。作者在 macOS Apple Silicon + Node 24.19.0 上跑过 151 项单测、34 项 Chromium 回归与 DSH 0.2.0-rc.2 的 15 组隔离原生流程。
   refs:
   - wx-aisketchlab
+- id: dsh-browser-bridge
+  name: dsh-browser-bridge（浏览器桥接扩展）
+  aliases:
+  - dsh-brows
+  - dsh-browser 浏览器助手
+  - dsh 浏览器操作
+  category: tool
+  status: community
+  repo: https://github.com/omdsh-dev/dsh-browser
+  install: 'curl -fsSL https://raw.githubusercontent.com/Lum1104/dsh-browser/refs/heads/main/scripts/install.sh | bash'
+  summary: 把 DSH 接到你正在用的 Chrome / Firefox 标签页上的桥插件加 MV3 扩展：模型直接读取当前页面、点按输入、导航和管理标签页，复用已有登录态与 Cookie，侧栏即可对话；无需视觉能力即可操作浏览器。与本站已收的 dsh-browser（CJYLZS，每会话起一个隔离 Chrome 进程）是两套不同实现。
+  features:
+  - 连接现有标签页：不新起浏览器实例，保留登录态、会话与 Cookie；Chrome 本机免配置，Firefox 需在扩展设置里填 ~/.dsh/ext-bridge-token 的 bearer token
+  - 结构化页面读取：browser_snapshot 给标题/URL/正文/带编号交互清单/表单字段，敏感值掩码；delta 只看变化，query 按文本/选择器/角色定位
+  - 受控交互：按编号或选择器点击双击、输入（兼容 React/Vue 受控组件）、按键组合、滚动、剪贴板、文件上传；支持跨域 iframe
+  - 标签页管理：列出/跟随/关闭/新开/前进后退刷新；截图需受控标签页在前台且窗口聚焦
+  - 划选即引用：页面里划选的文字连同来源与不可信内容边界一起进下一条消息；失败可点「继续生成」
+  - 侧栏内发图：宿主声明图片能力时可发 PNG/JPEG/WebP/GIF；受保护页面与扩展商店只读元数据，不碰 DOM
+  flag: 安装脚本来自 Lum1104 旧仓（GitHub 已 301 到 omdsh-dev），与已收的 CJYLZS/dsh-browser 不是同一个项目，别装重了
+  notes: 仓库 github.com/Lum1104/dsh-browser 在 GitHub API 里 full_name 已返回 omdsh-dev/dsh-browser（重定向），README 的安装脚本仍写 Lum1104 路径，故 install 按 README 原文保留。npm 上无 scope 的 dsh-browser 属另一个项目（即本站已收的 @cjylzs/dsh-browser），本仓库没发 npm 包，只能走安装器。前置 Node.js>=24.9.0、Corepack/pnpm、Chrome 125+ 或 Firefox 140+；工作区固定 DSH 0.2.2-rc.2，其他版本未声明支持。安装器打开 chrome://extensions 后需手动加载或重新加载扩展，dsh 正在运行要重启。README 附 2026-08-18 的 60 次配对评测（扩展 30/30 成功、平均 5.32s，对比 Playwright 6.67s）属作者口径，本站不采信为独立结论。
+  refs:
+  - wx-ruanjian
+- id: dsh-skin-maid-atelier
+  name: dsh-skin-maid-atelier（深海女仆工坊皮肤）
+  aliases:
+  - maid-atelier
+  - '@smalltailqwq/dsh-client-ui-skin-maid-atelier'
+  - 鲸鱼娘皮肤
+  category: fun
+  status: community
+  repo: https://github.com/Small-tailqwq/dsh-deep-whale/tree/main/maid-atelier
+  install: dsh plugin --profile web add '@smalltailqwq/dsh-client-ui-skin-maid-atelier'
+  summary: DSH Web UI 的鲸鱼娘主题皮肤之一：两位鲸鱼娘女仆配深海蓝蕾丝与 Q 版侧栏，把界面布置成女仆工坊；纯展示层插件，不注入服务、不改模型请求，亮暗主题自动切换。
+  features:
+  - 双女仆工坊场景：立绘整层挂在对话区内部，随聊天区尺寸自适应，聊天记录与输入器之下
+  - 深海蓝/陶瓷白/长春花蓝/柔金配色可在「设置 → 皮肤管理」热切换；亮色消息气泡可调背景亮度 60%~100%（默认 80%）与简洁过程行
+  - Q 版侧栏角色、视口装饰与 favicon 三表情随机；安装为 Web App 固定托腮图
+  - 加载失败时默认用双女仆立绘装饰原生错误报告，窄屏重排
+  - 素材随包同源路由分发，激活不依赖任何远程 URL
+  flag: 美术资源 CC BY-NC-SA 4.0 禁止商业使用；与 dsh-web-all 自带皮肤中心的适配版不能叠装
+  notes: 官方仓库 Small-tailqwq/dsh-deep-whale 的 maid-atelier 子目录，npm 包 @smalltailqwq/dsh-client-ui-skin-maid-atelier（另两套皮肤 orca-link 与管理器 skin-manager 分开建条目）。README 明确：已装 @linxin666/dsh-web-all 的用户请在 dsh-web 自带皮肤中心装适配版，standalone 版与皮肤中心版样式契约不同，不能同 profile 叠装。同时装多套皮肤必须装并保持 skin-manager 启用，否则界面错乱；首次装完重启一次 DSH 再切。素材署名链为一创上善（鲸鱼娘原作）、二创 ZipZipPipe（DeepSeek 元素女仆鲸鱼娘）、三创作者本人，代码 MIT、美术禁商用。文中「3.1k 星」属文章口径，本站以 GitHub API 为准。
+  refs:
+  - wx-ruanjian
+- id: dsh-skin-orca-link
+  name: dsh-skin-orca-link（虎鲸链路皮肤）
+  aliases:
+  - orca-link
+  - '@smalltailqwq/dsh-client-ui-skin-orca-link'
+  - 虎鲸链路
+  category: fun
+  status: community
+  repo: https://github.com/Small-tailqwq/dsh-deep-whale/tree/main/orca-link
+  install: dsh plugin --profile web add '@smalltailqwq/dsh-client-ui-skin-orca-link'
+  summary: 鲸鱼娘皮肤系列的第二套：小黑鲸操作员配全直角界面与直线重绘图标，亮色白色机械舱、暗色夜间书房各含空态与工作态场景；纯展示层插件，不碰模型请求。
+  features:
+  - 全局直角契约：按钮/输入框/卡片/菜单/弹窗等圆角归零，状态信号与 favicon 方形化
+  - 运行时把宿主 SVG 图标重绘为仅由水平垂直线、45 度折线与方块构成的直线图形，卸载即还原
+  - 亮/暗各一对 16:9 场景（机械舱/夜间书房），640ms 交叉淡化，随任务状态切换
+  - 侧栏顶部十状态角色（待机/同步/工作/授权/输入/审阅/完成/失败/离线/就绪）多帧动作
+  - 峰谷定价红绿灯按北京时间显色，工作日高峰前 20 分钟黄灯预警，展开侧栏可看详情卡
+  - 对第三方插件侧栏入口有注入格式要求（data-dsh-part 或 data-plugin-entry），形态不符的按钮会被当宿主原生控件处理
+  flag: 美术资源 CC BY-NC-SA 4.0 禁止商业使用；与 dsh-web-all 自带皮肤中心的适配版不能叠装
+  notes: 官方仓库 Small-tailqwq/dsh-deep-whale 的 orca-link 子目录，npm 包 @smalltailqwq/dsh-client-ui-skin-orca-link（另见 maid-atelier 与 skin-manager 条目）。README 明确：已装 @linxin666/dsh-web-all 的用户请在 dsh-web 自带皮肤中心装适配版，不能与 standalone 版同 profile 叠装。同时装多套皮肤必须装并保持 skin-manager 启用。侧栏入口注入要求详见子包 README，装了第三方插件发现入口消失时先查这一条。代码 MIT、美术 CC BY-NC-SA 4.0 禁商用。
+  refs:
+  - wx-ruanjian
+- id: dsh-skin-manager
+  name: dsh-skin-manager（鲸鱼娘皮肤管理器）
+  aliases:
+  - skin-manager
+  - '@smalltailqwq/dsh-client-ui-skin-deep-whale-manager'
+  - 皮肤管理器
+  category: fun
+  status: community
+  repo: https://github.com/Small-tailqwq/dsh-deep-whale/tree/main/skin-manager
+  install: dsh plugin --profile web add '@smalltailqwq/dsh-client-ui-skin-deep-whale-manager'
+  summary: 鲸鱼娘皮肤系列配套的常驻皮肤管理模块：在 DSH 设置页注册「皮肤管理」，发现并互斥切换官方默认与已安装皮肤，渲染各皮肤自带的开关、下拉、滑杆与可见时段配置；同时装多套皮肤时必须启用它。
+  features:
+  - 从当前 Web profile 依赖里发现所有带有效 skin.json 的皮肤，官方默认与任意皮肤之间互斥切换
+  - 启动兜底：两套及以上皮肤同时启用时原子回退官方默认；桌面切换同步核对宿主插件清单与页面激活标记
+  - 渲染皮肤通过版本化协议暴露的开关/下拉/复选/滑杆/颜色/可见时段配置（当前 v2，兼容 v1 声明）
+  - DSH 0.1.7+ 自动停用不支持当前版本的皮肤，点「切换」确认后按皮肤版本+DSH 版本精确放行
+  - 管理页可把官方预设插件图标切成当前皮肤提供的图形，默认关闭
+  - 窄屏下再点一次已打开的全局面板入口即可回到对话
+  flag: 本身不是皮肤；只装一套皮肤时可选，同时装多套皮肤则必须装并一直保持启用
+  notes: 官方仓库 Small-tailqwq/dsh-deep-whale 的 skin-manager 子目录，npm 包 @smalltailqwq/dsh-client-ui-skin-deep-whale-manager。README 明确：已装 @linxin666/dsh-web-all 的用户请用 dsh-web 自带皮肤中心及其适配皮肤，不要装本管理器，两套发行不能同 profile 叠装。与皮肤一起装、首次装完重启一次 DSH；两套皮肤都装时首次重启会显示官方默认，这是管理器把它们都关掉等用户去选，属预期行为。管理器自身 MIT 许可，皮肤美术资源另有 CC BY-NC-SA 4.0 禁商用条款（见各皮肤条目）。
+  refs:
+  - wx-ruanjian

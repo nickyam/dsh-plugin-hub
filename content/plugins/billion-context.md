@@ -8,7 +8,7 @@ tags: &id001
 - 长会话
 - 省token
 - 跨客户端
-weight: 1040
+weight: 1050
 params:
   plugin:
     id: billion-context
@@ -46,7 +46,7 @@ params:
       pushed_date: '2026-11-19'
     category_label: 协作与工作流
     status_label: 社区
-    weight: 1040
+    weight: 1050
     url: /plugins/billion-context/
   generated: true
 ---

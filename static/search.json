@@ -63,6 +63,30 @@
     "url": "/plugins/dsh-context/"
   },
   {
+    "id": "billion-context",
+    "name": "billion-context（上下文压缩）",
+    "aliases": [
+      "bili",
+      "十亿上下文",
+      "上下文压缩代理"
+    ],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "架在编程助手与模型 API 之间的上下文压缩代理：由模型自己决定何时压缩、压缩什么，把已消耗的对话增量压缩成分层摘要且可逆、对前缀缓存友好，让小上下文窗口也能跑月级长会话；DSH 只是它支持的 20 多个客户端之一。",
+    "tags": [
+      "上下文压缩",
+      "长会话",
+      "省token",
+      "跨客户端"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 7861,
+    "stars_label": "7861",
+    "flag": "通用代理型工具，非 DSH 专属；native 插件与 standalone 扩展不可同时启用，否则会重复压缩",
+    "url": "/plugins/billion-context/"
+  },
+  {
     "id": "modlens",
     "name": "modlens",
     "aliases": [],
@@ -118,30 +142,6 @@
     "url": "/plugins/dsh-ops/"
   },
   {
-    "id": "billion-context",
-    "name": "billion-context（上下文压缩）",
-    "aliases": [
-      "bili",
-      "十亿上下文",
-      "上下文压缩代理"
-    ],
-    "category": "workflow",
-    "category_label": "协作与工作流",
-    "summary": "架在编程助手与模型 API 之间的上下文压缩代理：由模型自己决定何时压缩、压缩什么，把已消耗的对话增量压缩成分层摘要且可逆、对前缀缓存友好，让小上下文窗口也能跑月级长会话；DSH 只是它支持的 20 多个客户端之一。",
-    "tags": [
-      "上下文压缩",
-      "长会话",
-      "省token",
-      "跨客户端"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 7861,
-    "stars_label": "7861",
-    "flag": "通用代理型工具，非 DSH 专属；native 插件与 standalone 扩展不可同时启用，否则会重复压缩",
-    "url": "/plugins/billion-context/"
-  },
-  {
     "id": "dsh-web",
     "name": "dsh-web（创意工坊）",
     "aliases": [],
@@ -160,6 +160,30 @@
     "stars_label": "10.5k",
     "flag": "与 dsh-web-all 为同一官方聚合仓（zhu1090093659/dsh-web）；本卡按 README 整理，二者可合并",
     "url": "/plugins/dsh-web/"
+  },
+  {
+    "id": "dsh-web-all",
+    "name": "dsh-web-all（Web 全家桶）",
+    "aliases": [
+      "dsh-web-ui-all",
+      "@linxin666/dsh-web-all",
+      "dsh-web full suite"
+    ],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "DSH Web 的官方聚合包，一条命令装齐家族全部功能插件：任务看板、Git 图谱、桌面宠物、移动端远程、SSH 运维、模型能力、用量统计、会话归档、皮肤中心、设置区与社区插件，外加右侧面板 dsh-better-sidebar。每项可在「设置 → 插件 → 插件管理」里单独开关。",
+    "tags": [
+      "全家桶",
+      "看板",
+      "远程",
+      "SSH"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 10515,
+    "stars_label": "10.5k",
+    "flag": "包名 @linxin666/dsh-web-all，仓库是 zhu1090093659/dsh-web 单体仓",
+    "url": "/plugins/dsh-web-all/"
   },
   {
     "id": "dsh-desktop",
@@ -200,6 +224,27 @@
     "stars_label": "1024",
     "flag": "",
     "url": "/plugins/dsh-genui/"
+  },
+  {
+    "id": "modsearch",
+    "name": "ModSearch",
+    "aliases": [
+      "modsearch"
+    ],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "DSH 里最强的免费联网搜索插件：网页搜索、X（推特）搜索、单页抓取，默认走 Firecrawl Keyless（每月 1000 免费额度，免注册免 API Key），为多模型补上原生缺失的联网能力，返回结构化 JSON 证据。",
+    "tags": [
+      "搜索",
+      "免费",
+      "省成本"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 1017,
+    "stars_label": "1017",
+    "flag": "",
+    "url": "/plugins/modsearch/"
   },
   {
     "id": "deepseek-bot",
@@ -395,51 +440,6 @@
     "url": "/plugins/dsh-find-plugin/"
   },
   {
-    "id": "dsh-web-all",
-    "name": "dsh-web-all（Web 全家桶）",
-    "aliases": [
-      "dsh-web-ui-all",
-      "@linxin666/dsh-web-all",
-      "dsh-web full suite"
-    ],
-    "category": "ui",
-    "category_label": "界面与体验",
-    "summary": "DSH Web 的官方聚合包，一条命令装齐家族全部功能插件：任务看板、Git 图谱、桌面宠物、移动端远程、SSH 运维、模型能力、用量统计、会话归档、皮肤中心、设置区与社区插件，外加右侧面板 dsh-better-sidebar。每项可在「设置 → 插件 → 插件管理」里单独开关。",
-    "tags": [
-      "全家桶",
-      "看板",
-      "远程",
-      "SSH"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 10515,
-    "stars_label": "10.5k",
-    "flag": "包名 @linxin666/dsh-web-all，仓库是 zhu1090093659/dsh-web 单体仓",
-    "url": "/plugins/dsh-web-all/"
-  },
-  {
-    "id": "modsearch",
-    "name": "ModSearch",
-    "aliases": [
-      "modsearch"
-    ],
-    "category": "tool",
-    "category_label": "工具与能力",
-    "summary": "DSH 里最强的免费联网搜索插件：网页搜索、X（推特）搜索、单页抓取，默认走 Firecrawl Keyless（每月 1000 免费额度，免注册免 API Key），为多模型补上原生缺失的联网能力，返回结构化 JSON 证据。",
-    "tags": [
-      "搜索",
-      "免费",
-      "省成本"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 1017,
-    "stars_label": "1017",
-    "flag": "",
-    "url": "/plugins/modsearch/"
-  },
-  {
     "id": "dsh-at-file",
     "name": "dsh-at-file",
     "aliases": [],
@@ -576,6 +576,30 @@
     "url": "/plugins/dsh-univer-office/"
   },
   {
+    "id": "dsh-media-desk",
+    "name": "dsh-media-desk",
+    "aliases": [
+      "自媒体工作台",
+      "蜗牛的科技笔记"
+    ],
+    "category": "content",
+    "category_label": "内容创作与办公",
+    "summary": "装在 DSH 侧栏的自媒体创作工作台，一句话记灵感，一键生成口播脚本、标题、视频封面、配图和分镜，并支持排期与发布复盘。",
+    "tags": [
+      "自媒体",
+      "脚本",
+      "封面",
+      "分镜",
+      "灵感"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 1532,
+    "stars_label": "1532",
+    "flag": "",
+    "url": "/plugins/dsh-media-desk/"
+  },
+  {
     "id": "agentero-dsh",
     "name": "agentero-dsh",
     "aliases": [
@@ -598,6 +622,31 @@
     "stars_label": "237",
     "flag": "",
     "url": "/plugins/agentero-dsh/"
+  },
+  {
+    "id": "dsh-vision-router",
+    "name": "dsh-vision-router（视觉路由）",
+    "aliases": [
+      "deepstare",
+      "视觉路由",
+      "dsh 的眼睛",
+      "免Key视觉链"
+    ],
+    "category": "visual",
+    "category_label": "视觉与设计",
+    "summary": "给纯文本 DSH 模型装上「眼睛」：内置免 Key 视觉链与十多个像素级视觉工具，看图问答、目标定位、裁剪取色、抠图、截图等都能当普通工具调用来做；需要时点输入框旁的 👁 Vision 开关，图进入会话日志、可溯源可复现。",
+    "tags": [
+      "视觉",
+      "免Key",
+      "像素工具",
+      "看图"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 1286,
+    "stars_label": "1286",
+    "flag": "社区项目；默认会把图片/裁剪图发给云端视觉模型（含匿名兜底），涉密或敏感素材请开 strict local-only；DSH >=0.2.1-rc.5 <0.3.0-0、Node.js >=24.9.0",
+    "url": "/plugins/dsh-vision-router/"
   },
   {
     "id": "universal-plugin-hub",
@@ -1616,30 +1665,6 @@
     "url": "/plugins/petdex/"
   },
   {
-    "id": "dsh-media-desk",
-    "name": "dsh-media-desk",
-    "aliases": [
-      "自媒体工作台",
-      "蜗牛的科技笔记"
-    ],
-    "category": "content",
-    "category_label": "内容创作与办公",
-    "summary": "装在 DSH 侧栏的自媒体创作工作台，一句话记灵感，一键生成口播脚本、标题、视频封面、配图和分镜，并支持排期与发布复盘。",
-    "tags": [
-      "自媒体",
-      "脚本",
-      "封面",
-      "分镜",
-      "灵感"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 1532,
-    "stars_label": "1532",
-    "flag": "",
-    "url": "/plugins/dsh-media-desk/"
-  },
-  {
     "id": "dsh-guizang-design",
     "name": "dsh-guizang-design",
     "aliases": [
@@ -1755,31 +1780,6 @@
     "stars_label": "286",
     "flag": "社区项目；回退不可就地撤销，操作前确认目标消息；文件还原只在选「对话和文件」时写入工作区",
     "url": "/plugins/dsh-rewind/"
-  },
-  {
-    "id": "dsh-vision-router",
-    "name": "dsh-vision-router（视觉路由）",
-    "aliases": [
-      "deepstare",
-      "视觉路由",
-      "dsh 的眼睛",
-      "免Key视觉链"
-    ],
-    "category": "visual",
-    "category_label": "视觉与设计",
-    "summary": "给纯文本 DSH 模型装上「眼睛」：内置免 Key 视觉链与十多个像素级视觉工具，看图问答、目标定位、裁剪取色、抠图、截图等都能当普通工具调用来做；需要时点输入框旁的 👁 Vision 开关，图进入会话日志、可溯源可复现。",
-    "tags": [
-      "视觉",
-      "免Key",
-      "像素工具",
-      "看图"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 1286,
-    "stars_label": "1286",
-    "flag": "社区项目；默认会把图片/裁剪图发给云端视觉模型（含匿名兜底），涉密或敏感素材请开 strict local-only；DSH >=0.2.1-rc.5 <0.3.0-0、Node.js >=24.9.0",
-    "url": "/plugins/dsh-vision-router/"
   },
   {
     "id": "dsh-nacos-bridge",
@@ -2619,5 +2619,81 @@
     "stars_label": "29",
     "flag": "与 dsh-pet 是两个项目，别装重了",
     "url": "/plugins/dsh-bigfish/"
+  },
+  {
+    "id": "dsh-browser-bridge",
+    "name": "dsh-browser-bridge（浏览器桥接扩展）",
+    "aliases": [
+      "dsh-brows",
+      "dsh-browser 浏览器助手",
+      "dsh 浏览器操作"
+    ],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "把 DSH 接到你正在用的 Chrome / Firefox 标签页上的桥插件加 MV3 扩展：模型直接读取当前页面、点按输入、导航和管理标签页，复用已有登录态与 Cookie，侧栏即可对话；无需视觉能力即可操作浏览器。与本站已收的 dsh-browser（CJYLZS，每会话起一个隔离 Chrome 进程）是两套不同实现。",
+    "tags": [],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 1101,
+    "stars_label": "1101",
+    "flag": "安装脚本来自 Lum1104 旧仓（GitHub 已 301 到 omdsh-dev），与已收的 CJYLZS/dsh-browser 不是同一个项目，别装重了",
+    "url": "/plugins/dsh-browser-bridge/"
+  },
+  {
+    "id": "dsh-skin-maid-atelier",
+    "name": "dsh-skin-maid-atelier（深海女仆工坊皮肤）",
+    "aliases": [
+      "maid-atelier",
+      "@smalltailqwq/dsh-client-ui-skin-maid-atelier",
+      "鲸鱼娘皮肤"
+    ],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "DSH Web UI 的鲸鱼娘主题皮肤之一：两位鲸鱼娘女仆配深海蓝蕾丝与 Q 版侧栏，把界面布置成女仆工坊；纯展示层插件，不注入服务、不改模型请求，亮暗主题自动切换。",
+    "tags": [],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 3127,
+    "stars_label": "3127",
+    "flag": "美术资源 CC BY-NC-SA 4.0 禁止商业使用；与 dsh-web-all 自带皮肤中心的适配版不能叠装",
+    "url": "/plugins/dsh-skin-maid-atelier/"
+  },
+  {
+    "id": "dsh-skin-orca-link",
+    "name": "dsh-skin-orca-link（虎鲸链路皮肤）",
+    "aliases": [
+      "orca-link",
+      "@smalltailqwq/dsh-client-ui-skin-orca-link",
+      "虎鲸链路"
+    ],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "鲸鱼娘皮肤系列的第二套：小黑鲸操作员配全直角界面与直线重绘图标，亮色白色机械舱、暗色夜间书房各含空态与工作态场景；纯展示层插件，不碰模型请求。",
+    "tags": [],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 3127,
+    "stars_label": "3127",
+    "flag": "美术资源 CC BY-NC-SA 4.0 禁止商业使用；与 dsh-web-all 自带皮肤中心的适配版不能叠装",
+    "url": "/plugins/dsh-skin-orca-link/"
+  },
+  {
+    "id": "dsh-skin-manager",
+    "name": "dsh-skin-manager（鲸鱼娘皮肤管理器）",
+    "aliases": [
+      "skin-manager",
+      "@smalltailqwq/dsh-client-ui-skin-deep-whale-manager",
+      "皮肤管理器"
+    ],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "鲸鱼娘皮肤系列配套的常驻皮肤管理模块：在 DSH 设置页注册「皮肤管理」，发现并互斥切换官方默认与已安装皮肤，渲染各皮肤自带的开关、下拉、滑杆与可见时段配置；同时装多套皮肤时必须启用它。",
+    "tags": [],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 3127,
+    "stars_label": "3127",
+    "flag": "本身不是皮肤；只装一套皮肤时可选，同时装多套皮肤则必须装并一直保持启用",
+    "url": "/plugins/dsh-skin-manager/"
   }
 ]

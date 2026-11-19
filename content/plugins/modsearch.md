@@ -7,7 +7,7 @@ tags: &id001
 - 搜索
 - 免费
 - 省成本
-weight: 1020
+weight: 1030
 params:
   plugin:
     id: modsearch
@@ -41,7 +41,7 @@ params:
       pushed_date: '2026-11-15'
     category_label: 工具与能力
     status_label: 社区
-    weight: 1020
+    weight: 1030
     url: /plugins/modsearch/
   generated: true
 ---
