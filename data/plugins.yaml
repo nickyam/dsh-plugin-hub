@@ -32,6 +32,7 @@
   - wx-shixiang
   - wx-xiaobai
   - wx-fenxiangmi
+  - wx-mianbiren
 - id: dsh-find-plugin
   name: dsh-find-plugin
   category: market
@@ -655,6 +656,7 @@
   - wx-dabaihua
   - wx-quanjing
   - wx-xiaobai
+  - wx-mianbiren
 - id: dsh-diff-approval
   name: dsh-diff-approval
   category: workflow
@@ -703,6 +705,7 @@
   - wx-feishu
   - wx-huxiaomo
   - wx-shixiang
+  - wx-mianbiren
 - id: dsh-routing-suite
   name: dsh-routing-suite
   category: workflow
@@ -1091,6 +1094,7 @@
 - id: whale-cost-widget
   name: 小鲸鱼记账挂件
   aliases:
+  - dsh-whale-widget
   - Balance Whale Widget
   - DeepSeek-Balance-Whale-Widget
   - 鲸鱼余额挂件
@@ -1113,6 +1117,7 @@
   - wx-dabaihua
   - wx-quanjing
   - wx-huxiaomo
+  - wx-mianbiren
 - id: dsh-plugin-gate
   name: dsh-plugin-gate
   category: security
@@ -1416,6 +1421,7 @@
   refs:
   - wx-yuanma
   - wx-quanjing
+  - wx-mianbiren
 - id: dsh-minigames
   name: dsh-minigames
   category: fun
@@ -1574,6 +1580,7 @@
   - wx-yuanma
   - wx-shuzishanshui
   - wx-quanjing
+  - wx-mianbiren
 - id: petdex
   name: petdex
   category: fun
@@ -1834,6 +1841,7 @@
   - wx-shuzishanshui
   - wx-huxiaomo
   - wx-fenxiangmi
+  - wx-mianbiren
 - id: dsh-browser
   name: dsh-browser（真实浏览器）
   aliases:
@@ -1992,6 +2000,7 @@
   notes: 仓库 xmanrui/dsh-im，npm 包名是 scoped 的 @xmanrui/dsh-im——README 明确「安装请认准完整包名」，GitHub 上另有 MichengAI/dsh-im-connect、SoledadAki/dsh-im-qq-wechat 等近似项目，本站取名字精确、功能覆盖最广的 xmanrui 主仓。文章说的「二维码接 9 个渠道」与 README 渠道列表一致（实际列了 10 个）。安装带 -w 参数（写 profile），Web 与 Desktop 命令分别为 --profile web / --profile desktop，装完重启。
   refs:
   - wx-huxiaomo2
+  - wx-mianbiren
 - id: dsh-pocket
   name: dsh-pocket（手机同屏）
   aliases:
@@ -2016,6 +2025,7 @@
   notes: 仓库 shaobeichen/dsh-pocket（GitHub 有多个同名 dsh-pocket / dsh-pocket-plus，本条取 README 完整、★ 数最高的 shaobeichen 主仓），npm 包 dsh-pocket。README 徽章里 License 标注有 MIT/GPL 混排，本站不据此下结论。
   refs:
   - wx-huxiaomo2
+  - wx-mianbiren
 - id: dsh-wallpaper-engine
   name: dsh-wallpaper-engine（壁纸引擎）
   aliases:
@@ -2656,6 +2666,7 @@
   notes: 需要 DSH ≥ 0.1.2-rc.1、Node ≥ 22。侧栏优先注册进 DSH 0.2.1 起的原生右侧边栏；宿主没有原生侧栏时回退到 dsh-better-sidebar（≥ 0.12.2，推荐 ≥ 0.17.1），两个都没有就只留工具、不显示面板。Windows 上 Chrome / Edge ≥ 127 的 profile 复制路径会读到 0 条 cookie（ABE 绑定原始路径），必须走扩展桥接。README 徽章写 MIT，但 GitHub 识别的许可证是 NOASSERTION（自定义条款），要商用或再分发先自己读一眼 LICENSE。
   refs:
   - wx-yuanma
+  - wx-mianbiren
 - id: dsh-bili-scroll
   name: dsh-bili-scroll（刷 B 站）
   aliases:
@@ -2817,6 +2828,7 @@
   notes: 定位要说清——它 deny 调用，但不设置文件权限、不监控网络出口、不把进程关进容器，真正的沙箱还得靠宿主。路径匹配基本按 POSIX 来，PowerShell 覆盖有限。Node 18 以上，Windows / macOS / Linux 都能跑。装完先用 doctor 自检、status 看状态，怀疑没生效时先确认策略文件能不能正常解析（解析失败是有意回落，不是坏了）。README 把 DSH 的安装细节放在官网文档页（ccsafetynet.com/docs/installation/deepseek-harness），命令走 --deepseek-harness 这个开关。它同时支持 Claude Code、Codex、Cursor、Copilot CLI、Gemini CLI 等十几个 CLI，DSH 只是其中一个接入点。
   refs:
   - wx-aisketchlab
+  - wx-mianbiren
 - id: dsh-overall-mcp
   name: dsh-overall-mcp（全局 MCP 与 Skill）
   aliases:
@@ -3007,3 +3019,64 @@
   notes: 官方仓库 Small-tailqwq/dsh-deep-whale 的 skin-manager 子目录，npm 包 @smalltailqwq/dsh-client-ui-skin-deep-whale-manager。README 明确：已装 @linxin666/dsh-web-all 的用户请用 dsh-web 自带皮肤中心及其适配皮肤，不要装本管理器，两套发行不能同 profile 叠装。与皮肤一起装、首次装完重启一次 DSH；两套皮肤都装时首次重启会显示官方默认，这是管理器把它们都关掉等用户去选，属预期行为。管理器自身 MIT 许可，皮肤美术资源另有 CC BY-NC-SA 4.0 禁商用条款（见各皮肤条目）。
   refs:
   - wx-ruanjian
+- id: dsh-voice-mode
+  name: dsh-voice-mode（全双工语音）
+  aliases:
+  - dsh-voice-mode
+  - 语音模式
+  category: tool
+  status: community
+  repo: https://github.com/qishuilalala/dsh-voice-mode
+  install: dsh plugin --profile web add dsh-voice-mode
+  summary: 给 DSH 会话加全双工语音：边说边出字、按句朗读、发声打断，可开关流式识别、字幕与 TTS；识别在宿主端推理（默认免 API Key），朗读默认走 Edge 在线服务、可选本地 VITS/Kokoro 或 OpenAI 兼容远程引擎。
+  features:
+  - 语音输入：流式识别进草稿，本地识别免 API Key；状态条显示模型加载进度，国内可配 hf-mirror.com 镜像
+  - 按句朗读 + 实时字幕：朗读走 Edge 在线服务，可选本地 VITS（WASM）/ Kokoro（原生 addon）或自建 POST /v1/audio/speech 远程引擎（失败自动回退本地）
+  - 发声打断：说话即停止当前朗读，once 打断续说，切会话停朗读
+  - 自动发送与打断行为可在设置中调整；设置存放位置按 DSH 版本区分（0.1.6 用官方设置存储，0.1.7+ 用插件自有文件）
+  - v0.7.39 补丁版跟进到 dsh 0.2.2-rc.5 的锚点、类型与隔离运行时复核（仓库自述，非真实麦克风/全平台验收）
+  flag: 同类同名项目很多（Hericaneeeeee、wuhe888、bin-r00t 等），本站取 npm 正式包 dsh-voice-mode 对应的 qishuilalala 主仓
+  notes: 官方仓库 qishuilalala/dsh-voice-mode，npm 包 dsh-voice-mode，安装后按实际部署方式重启宿主。GitHub 上另有 dsh-voice-mode-custom、dsh-voice-mode-plus、dsh-voice-mode-headless、dsh-voice-mode-desktop 等多个非官方分支或同名实现，包名与 README 特征（流式识别入草稿 + 按句朗读 + 开口打断 + 本地识别免 Key）锁定 qishuilalala 主仓。朗读效果取决于模型、设备、回声消除与网络，README 不承诺全平台可用。文章只强调语音输入省时间，实际插件功能远不止输入。
+  refs:
+  - wx-mianbiren
+- id: dsh-video-skin
+  name: dsh-video-skin（视频皮肤）
+  aliases:
+  - dsh-video-skin
+  - 视频皮肤
+  - 开机动画皮肤
+  category: fun
+  status: community
+  repo: https://github.com/Something11235/dsh-video-skin
+  install: dsh plugin --profile web add dsh-video-skin@0.1.6
+  summary: 给 DSH 加一段视频皮肤：一段短片无声循环铺成聊天背景，另一段做有声开机动画并在片尾交叉溶解进界面；右下角半透明小圆钮调透明度，开机动画点一下即可跳过，零依赖。
+  features:
+  - 聊天背景：短片循环铺满界面，无声，透明度在界面里的滑块实时调节，调完刷新仍在
+  - 开机动画：一段有声短片，片尾交叉溶解进 DSH 界面，点击画面随时跳过
+  - 零依赖；npm 预编译包 dsh-video-skin@0.1.6，也可从 github:Something11235/dsh-video-skin#main 装源码
+  - 桌面版（Electron）索引注入表只在宿主启动时收集一次，装完必须完全退出并重新打开 DSH，刷新页面不够
+  flag: 文章描述的「大肥鱼说欢迎回家、界面里走动工作休息」README 未证实，本站按 README 只记视频背景+有声开机动画
+  notes: 官方仓库 Something11235/dsh-video-skin，npm 包 dsh-video-skin（latest 0.1.6），安装栏按 README 钉 0.1.6（不带版本号则跟随 latest）。卸载用 `dsh plugin --profile <profile> remove dsh-video-skin` 或仓库的 scripts/uninstall.ps1。文中把开机动画内容具象成「大肥鱼说欢迎回家」及界面内走动/工作/休息的桌宠动画，README 并无此描述，属文章口径不采信。
+  refs:
+  - wx-mianbiren
+- id: dsh-memsearch
+  name: dsh-memsearch（自动语义记忆）
+  aliases:
+  - dsh-memsearch
+  - MemSearch-dsh
+  - 语义记忆插件
+  category: memory
+  status: community
+  repo: https://github.com/clouwer/dsh-memsearch
+  install: dsh plugin --profile web add dsh-memsearch
+  summary: 让 DSH 像 Codex / Claude Code 的 memsearch 插件一样默认自动写入与按需召回记忆：会话开始后台跑一次索引并注入状态提示，每轮结束把用户问题与最终回复追加进本地记忆日志并增量重索引；纯本地，默认不调用任何 LLM。
+  features:
+  - 会话开始：后台 memsearch index，注入一条插件来源状态消息（版本、embedding provider、记忆目录、历史文件数 + 用 memory-recall skill 的提示）
+  - 每轮结束：自动捕获用户问题与最终回复，按紧凑格式追加到 <memoryDir>/<YYYY-MM-DD>.md，去重后增量重索引
+  - 检索沿用官方设计：不自动塞上下文，由 agent 按需通过 memsearch 官方 memory-recall skill 检索
+  - 可配置 memoryDir、collection、injectSessionStatus、capture、captureMinPromptLength（默认 10，短问候不捕获）、maxCaptureChars（默认 8000）、summarizePlugin、indexAfterCapture
+  - 记忆日志默认落 ~/.memsearch/memory/，设 MEMSEARCH_DIR 时落 $MEMSEARCH_DIR/memory/；配置需要在 cordis.patch.yml 用 insert 列表追加插件实例
+  flag: npm 包名是 dsh-memsearch，文章写的 MemSearch-dsh 返回 404；跨平台记忆是 memsearch 生态能力，本插件只负责 DSH 侧的写与召回
+  notes: 官方仓库 clouwer/dsh-memsearch，npm 包 dsh-memsearch；文章包名 MemSearch-dsh 在 npm 查无此包（404），按 README 用 dsh-memsearch。文中「记忆在 Claude Code、Codex、DSH、OpenClaw、OpenCode 之间自由流动、同一台机器同一项目文件夹下通用」描述的是 memsearch 本体生态，本插件 README 只声明「对齐官方 Codex/Claude Code memsearch 插件的自动写入与召回」，不承诺跨平台，卡片按 README 写。安装后还需在 cordis.patch.yml 用 insert 列表追加配置才能启用自动捕获，不是装完即生效。
+  refs:
+  - wx-mianbiren

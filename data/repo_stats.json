@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T07:40:58Z",
+ "generated_at": "2026-11-19T08:48:10Z",
  "source": "GitHub REST API（匿名）",
  "repos": {
   "00080000/dsh-project-memory": {
@@ -602,6 +602,21 @@
    "html_url": "https://github.com/Small-tailqwq/dsh-deep-whale",
    "fetched_at": "2026-11-19T07:40:58Z"
   },
+  "Something11235/dsh-video-skin": {
+   "full_name": "Something11235/dsh-video-skin",
+   "stars": 136,
+   "forks": 12,
+   "issues": 8,
+   "watchers": null,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-11-03T14:29:02Z",
+   "created_at": "2026-10-02T13:12:03Z",
+   "archived": false,
+   "description": "DSH 视频皮肤：聊天背景 + 有声开机动画 + 界面内透明度调节",
+   "html_url": "https://github.com/Something11235/dsh-video-skin",
+   "fetched_at": "2026-11-19T08:47:55Z"
+  },
   "Soren-ABT/dsh-knowledge": {
    "full_name": "Soren-ABT/dsh-knowledge",
    "stars": 107,
@@ -1021,6 +1036,21 @@
    "description": "Audit the GitHub dsh-plugin topic: which repos are real DSH plugins, which are companions, which are pollution.",
    "html_url": "https://github.com/ciceroyang/dsh-topic-audit",
    "fetched_at": "2026-11-19T01:38:03Z"
+  },
+  "clouwer/dsh-memsearch": {
+   "full_name": "clouwer/dsh-memsearch",
+   "stars": 1,
+   "forks": 0,
+   "issues": 0,
+   "watchers": null,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-08-14T06:26:58Z",
+   "created_at": "2026-08-14T04:04:12Z",
+   "archived": false,
+   "description": "Automatic semantic memory plugin for DeepSeek Harness (DSH) via memsearch",
+   "html_url": "https://github.com/clouwer/dsh-memsearch",
+   "fetched_at": "2026-11-19T08:48:03Z"
   },
   "crafter-station/petdex": {
    "full_name": "crafter-station/petdex",
@@ -1561,6 +1591,21 @@
    "description": "给 DeepSeek Harness 用的科研文献库插件：搜论文、带出处、审批入库、把笔记线索交给同会话其他插件。Academic research library for DSH — search, cite, approve imports, hand off notes.",
    "html_url": "https://github.com/poco-ai/agentero-dsh-plugin",
    "fetched_at": "2026-11-19T01:34:16Z"
+  },
+  "qishuilalala/dsh-voice-mode": {
+   "full_name": "qishuilalala/dsh-voice-mode",
+   "stars": 34,
+   "forks": 11,
+   "issues": 1,
+   "watchers": null,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-11-19T08:44:50Z",
+   "created_at": "2026-08-22T16:16:35Z",
+   "archived": false,
+   "description": "DSH 全双工语音插件：流式语音识别入草稿、语音合成按句朗读 + 实时字幕、开口即打断；本地识别免 API Key，可选唤醒词。 · Full-duplex voice plugin for DeepSeek Harness: streaming speech-to-text into an editable draft, text-to-speech read-aloud with live captions, true barge-in and wake word; on-device ASR, no API key.",
+   "html_url": "https://github.com/qishuilalala/dsh-voice-mode",
+   "fetched_at": "2026-11-19T08:47:47Z"
   },
   "ranxianglei/billion-context": {
    "full_name": "ranxianglei/billion-context",

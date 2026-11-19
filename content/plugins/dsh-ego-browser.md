@@ -7,7 +7,7 @@ tags: &id001
 - 浏览器
 - 可观察
 - 人机接管
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: dsh-ego-browser
@@ -48,7 +48,7 @@ params:
       pushed_date: '2026-11-16'
     category_label: 工具与能力
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/dsh-ego-browser/
   generated: true
 ---

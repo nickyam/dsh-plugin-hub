@@ -209,3 +209,12 @@
   date_note: "2026-11-13 19:49（湖南）"
   note: "第二十篇。5 款全部此前已收录（dsh-market、dsh-vision-router、billion-context、ModSearch、dsh-media-desk），逐条比对仓库地址与包名一致，本条只给这 5 个补发现线索，不新建条目。文中包名写法 dshmarket 对应 dsh-market；dsh-vision-router 文中强调的「免 Key 免费视觉链路会外发云端」与已收卡片 notes 里的数据外发说明一致；ModSearch、billion-context、media-desk 的安装命令以各自 README 为准，文章只给包名不推翻。作者自述「本来打算分享 10 个太长了先来 5 个」及「未来可能变内置」属编辑口径，不进卡片。"
   tags: [公众号, 新手入门, 已全部收录]
+
+- id: wx-mianbiren
+  title: "给Deepseek Harness装上这十三个插件，让你的Deepseek Harness好用十倍！"
+  kind: wechat
+  publisher: "面壁人（公众号：智来云AI日记）"
+  url: "https://mp.weixin.qq.com/s/5xRM2MbyWcsHVpcjkSzKlA"
+  date_note: "2026-11-10 16:04（云南）"
+  note: "第二十一篇。分美观篇与实用篇共 13 条，全部只给插件名+「插件市场搜索安装」，没给任何仓库地址，本站逐个去 GitHub 按名字精确匹配 + README 特征锁定。10 条此前已收录（dsh-market、billion-context、dsh-context、dsh-ego-browser、dsh-agent-teams、dsh-univer-office、cc-safety-net、dsh-pet、dsh-whale-widget、dsh-im），本条只补线索。新增 3 条：dsh-voice-mode、dsh-video-skin、dsh-memsearch。三处按 README 纠正：① 文章包名 MemSearch-dsh 在 npm 为 404，精确包是 dsh-memsearch（clouwer/dsh-memsearch），文中「跨 Claude Code/Codex/OpenClaw/OpenCode 统一记忆、同一项目文件夹下通用」是 memsearch 生态能力，README 本身只做 DSH 自动写与按需召回，卡片按 README 写；② 已收的 dsh-im 完整包名是 @xmanrui/dsh-im，文章写 dsh-im 会在市场里撞到多个近名包；③ dsh-video-skin 文中「大肥鱼说欢迎回家、界面里走动工作休息」的具象描述 README 未证实，README 只说视频背景+有声开机动画+透明度滑块，按 README 写。文章「星数多基本不会差」「语音比手敲省时间」「微信风控会封号」属作者口径，不采信为独立结论，封号提醒进 flag 仅作提示。文中链到作者另两篇自媒体文章与本文插件无关，不进台账。"
+  tags: [公众号, 十三插件, 美观篇, 实用篇]

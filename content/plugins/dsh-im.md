@@ -8,7 +8,7 @@ tags: &id001
 - 微信
 - 飞书
 - 远程接入
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: dsh-im
@@ -45,7 +45,7 @@ params:
       pushed_date: '2026-11-07'
     category_label: 集成与迁移
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/dsh-im/
   generated: true
 ---

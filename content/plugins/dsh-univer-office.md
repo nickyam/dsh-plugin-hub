@@ -8,7 +8,7 @@ tags: &id001
 - 文档
 - 幻灯片
 - 画布
-weight: 1020
+weight: 1030
 params:
   plugin:
     id: dsh-univer-office
@@ -45,7 +45,7 @@ params:
       pushed_date: '2026-11-18'
     category_label: 内容创作与办公
     status_label: 社区
-    weight: 1020
+    weight: 1030
     url: /plugins/dsh-univer-office/
   generated: true
 ---

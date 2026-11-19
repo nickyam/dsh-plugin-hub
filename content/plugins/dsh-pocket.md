@@ -8,7 +8,7 @@ tags: &id001
 - 远程
 - 扫码
 - 同屏
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: dsh-pocket
@@ -44,7 +44,7 @@ params:
       pushed_date: '2026-11-15'
     category_label: 移动端与远程
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/dsh-pocket/
   generated: true
 ---

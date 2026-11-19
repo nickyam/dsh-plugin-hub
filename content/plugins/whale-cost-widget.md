@@ -6,12 +6,13 @@ categories:
 tags: &id001
 - 桌宠
 - 成本可视化
-weight: 1030
+weight: 1040
 params:
   plugin:
     id: whale-cost-widget
     name: 小鲸鱼记账挂件
     aliases:
+    - dsh-whale-widget
     - Balance Whale Widget
     - DeepSeek-Balance-Whale-Widget
     - 鲸鱼余额挂件
@@ -43,7 +44,7 @@ params:
       pushed_date: '2026-10-11'
     category_label: 模型与计费
     status_label: 原文未说明
-    weight: 1030
+    weight: 1040
     url: /plugins/whale-cost-widget/
   generated: true
 ---
