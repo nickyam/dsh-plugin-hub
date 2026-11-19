@@ -23,7 +23,7 @@
     </div>
   </div>
   <div class="wrap footer-bottom">
-    <span>© {{ now.Year }} DSH 插件图谱，数据整理于 {{ hugo.Data.derived.generated_at }}</span>
+    <span>© {{ now.Year }} DSH 插件图谱，数据整理于 {{ hugo.Data.derived.generated_at }}{{ with hugo.Data.derived.stats.gh_synced_at }} ｜ GitHub 数据 {{ substr . 0 10 }} 同步{{ end }}</span>
     <span>{{ hugo.Data.derived.stats.plugins }} 个插件 ｜ {{ hugo.Data.derived.stats.categories }} 个分类</span>
   </div>
 </footer>

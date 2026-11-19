@@ -50,7 +50,9 @@ static/
 public/                  hugo 构建产物（不入库）
 ```
 
-⚠️ `content/plugins/`、`static/search.json`、`data/derived.json` **是产物但要一起提交进 git**——这样线上构建只要 Hugo，不用装 Python/PyYAML。改完 data 必须跑一次生成脚本再提交，否则线上还是旧数据。`build.sh` 带了 `--cleanDestinationDir`，删条目时 `public/` 里的旧页会一起清掉，不留幽灵页面。
+⚠️ `content/plugins/`、`static/search.json`、`data/derived.json`、`data/repo_stats.json` **是产物但要一起提交进 git**——这样线上构建只要 Hugo，不用装 Python/PyYAML。改完 data 必须跑一次生成脚本再提交，否则线上还是旧数据。`build.sh` 带了 `--cleanDestinationDir`，删条目时 `public/` 里的旧页会一起清掉，不留幽灵页面。
+
+GitHub 星标 / Fork 是快照，不是实时值。想刷新就跑 `python3 tools/fetch_repo_stats.py`（默认只补超过 7 天的，`--all` 全量重刷），再走一遍 `build_data.py && hugo`。有 `GITHUB_TOKEN` 的话几秒跑完；没 token 时匿名 60 次/小时的 core 额度先用，用完自动退到 10 次/分钟的 search 接口，全量约 20 分钟。**别在没网的环境跑构建**——构建只读 `data/repo_stats.json`，不联网。
 
 `static/search.json` 里的 `url` 是站点根相对路径（如 `/plugins/xxx/`）。将来若用 JS 拼链接，先读 `<html data-base>`（值形如 `/dsh/`）再拼，别直接拿它当完整 URL。
 
