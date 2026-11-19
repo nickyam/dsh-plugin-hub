@@ -7,7 +7,7 @@ tags: &id001
 - 清单
 - 目录站
 - 市场索引
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: awesome-dsh-plugin
@@ -41,7 +41,7 @@ params:
       pushed_date: '2026-11-18'
     category_label: 插件市场与发现
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/awesome-dsh-plugin/
   generated: true
 ---

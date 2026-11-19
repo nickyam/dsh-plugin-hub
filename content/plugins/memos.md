@@ -7,7 +7,7 @@ tags: &id001
 - 记忆操作系统
 - 混合检索
 - DSH
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: memos
@@ -40,7 +40,7 @@ params:
       pushed_date: '2026-11-18'
     category_label: 记忆与知识
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/memos/
   generated: true
 ---

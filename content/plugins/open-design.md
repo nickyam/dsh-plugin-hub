@@ -7,7 +7,7 @@ tags: &id001
 - 设计
 - 多模态
 - 演示文稿
-weight: 1020
+weight: 1030
 params:
   plugin:
     id: open-design
@@ -40,7 +40,7 @@ params:
       pushed_date: '2026-11-19'
     category_label: 视觉与设计
     status_label: 社区
-    weight: 1020
+    weight: 1030
     url: /plugins/open-design/
   generated: true
 ---

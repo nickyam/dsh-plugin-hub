@@ -7,7 +7,7 @@ tags: &id001
 - 架构图
 - 流程图
 - 可视化
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: archify
@@ -41,7 +41,7 @@ params:
       pushed_date: '2026-11-19'
     category_label: 视觉与设计
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/archify/
   generated: true
 ---

@@ -7,7 +7,7 @@ tags: &id001
 - 免费模型
 - 免Key
 - 备用通道
-weight: 1030
+weight: 1040
 params:
   plugin:
     id: dsh-our-free-model
@@ -41,7 +41,7 @@ params:
       pushed_date: '2026-11-18'
     category_label: 免费模型与接入
     status_label: 社区
-    weight: 1030
+    weight: 1040
     url: /plugins/dsh-our-free-model/
   generated: true
 ---

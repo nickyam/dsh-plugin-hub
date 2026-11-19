@@ -33,6 +33,7 @@
   - wx-xiaobai
   - wx-fenxiangmi
   - wx-mianbiren
+  - wx-aling
 - id: dsh-find-plugin
   name: dsh-find-plugin
   category: market
@@ -74,6 +75,7 @@
   notes: 本站按独立条目收录，不混进插件市场。列表本身无需安装，DSH 主机可直接把其 /index.json 作为市场来源读取。
   refs:
   - wx-quanjing
+  - wx-aling
 - id: dsh-web
   name: dsh-web（创意工坊）
   category: market
@@ -213,6 +215,7 @@
   - baike-dsh
   - tree-top10
   - wx-quanjing
+  - wx-aling
 - id: dsh-better-sidebar
   name: DSH Better Sidebar
   aliases:
@@ -524,6 +527,7 @@
   refs:
   - tree-top10
   - wx-quanjing
+  - wx-aling
 - id: modlens
   name: modlens
   category: visual
@@ -591,6 +595,7 @@
   notes: README 声明该 DSH 集成是 Community integration，无遥测，需 Node ^22.19.0 || >=24.0.0。移除命令：dsh plugin --profile web remove @tt-a1i/archify-dsh。
   refs:
   - wx-quanjing
+  - wx-aling
 - id: openpencil
   name: openpencil
   category: visual
@@ -943,6 +948,7 @@
   notes: 官方 DeepSeek Harness 集成插件维护在独立仓库 EverMind-AI/plugins（dsh 分支），本仓库为 EverOS 核心记忆运行时（pip 安装），DSH 插件不在本仓库根目录。
   refs:
   - wx-quanjing
+  - wx-aling
 - id: memos
   name: MemOS
   category: memory
@@ -963,6 +969,7 @@
   notes: DSH 支持本地（memos-local-plugin，curl 安装脚本）与云端（@memtensor/memos-cloud-dsh-plugin）两种插件；README 另注 token 节省等数字，本站不引用具体数值。
   refs:
   - wx-quanjing
+  - wx-aling
 - id: reme
   name: ReMe
   category: memory
@@ -1007,6 +1014,7 @@
   - wx-quanjing
   - wx-shixiang
   - wx-huxiaomo2
+  - wx-aling
 - id: dsh-plugin-subscriptions
   name: dsh-plugin-subscriptions
   category: model
@@ -2077,6 +2085,7 @@
   notes: 仓库 Rxiain/dsh-openviking，底层对接火山引擎开源的 OpenViking（github.com/volcengine/OpenViking），本插件是 DSH 侧对接层；GitHub 上另有 dsh-openviking-expand / dsh-memory-openviking 等近似项目，本条取 README 完整、★ 数最高的 Rxiain 主仓。文章把它描述为「用户画像」，README 里对应 user 空间记忆 + 自动召回，本站按 README 写。
   refs:
   - wx-huxiaomo2
+  - wx-aling
 - id: dsh-wechat-article
   name: dsh-wechat-article（公众号写作）
   aliases:

@@ -105,6 +105,27 @@
     "url": "/plugins/dsh-agent-teams/"
   },
   {
+    "id": "dsh-desktop",
+    "name": "DSH Desktop",
+    "aliases": [
+      "DeepSeek Harness Desktop",
+      "anywhere-labs"
+    ],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "把 DeepSeek Harness 的本地 Web UI、Host 服务与插件系统封装进原生桌面应用：提供窗口、系统托盘、终端、更新与工作配置，开箱即用、免命令行、无需装 Node.js。项目固定并原样运行特定上游版本，通过 Harness 的插件机制组合上游能力。",
+    "tags": [
+      "桌面端",
+      "免命令行"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 36356,
+    "stars_label": "36.4k",
+    "flag": "独立社区项目，与 DeepSeek 无隶属关系",
+    "url": "/plugins/dsh-desktop/"
+  },
+  {
     "id": "modlens",
     "name": "modlens",
     "aliases": [],
@@ -140,6 +161,25 @@
     "stars_label": "5921",
     "flag": "",
     "url": "/plugins/dsh-ops/"
+  },
+  {
+    "id": "dsh-our-free-model",
+    "name": "dsh-our-free-model",
+    "aliases": [],
+    "category": "model",
+    "category_label": "免费模型与接入",
+    "summary": "装上后模型列表里多出若干可直接用的免费选项，不用注册、不用填 API Key，用来零成本起步；免费车道来自 OpenCode Zen 网关、Kilo AI 公共网关等上游，直连不经第三方中转。",
+    "tags": [
+      "免费模型",
+      "免Key",
+      "备用通道"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 79831,
+    "stars_label": "79.8k",
+    "flag": "免费额度与可用性以仓库说明为准；npm 裸名 dsh-our-free-model 非本仓库发布，请装带 scope 的 @ebony-vinyl 包",
+    "url": "/plugins/dsh-our-free-model/"
   },
   {
     "id": "whale-cost-widget",
@@ -227,27 +267,6 @@
     "url": "/plugins/dsh-web-all/"
   },
   {
-    "id": "dsh-desktop",
-    "name": "DSH Desktop",
-    "aliases": [
-      "DeepSeek Harness Desktop",
-      "anywhere-labs"
-    ],
-    "category": "ui",
-    "category_label": "界面与体验",
-    "summary": "把 DeepSeek Harness 的本地 Web UI、Host 服务与插件系统封装进原生桌面应用：提供窗口、系统托盘、终端、更新与工作配置，开箱即用、免命令行、无需装 Node.js。项目固定并原样运行特定上游版本，通过 Harness 的插件机制组合上游能力。",
-    "tags": [
-      "桌面端",
-      "免命令行"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 36356,
-    "stars_label": "36.4k",
-    "flag": "独立社区项目，与 DeepSeek 无隶属关系",
-    "url": "/plugins/dsh-desktop/"
-  },
-  {
     "id": "dsh-genui",
     "name": "dsh-genui",
     "aliases": [],
@@ -288,6 +307,25 @@
     "url": "/plugins/modsearch/"
   },
   {
+    "id": "open-design",
+    "name": "open-design",
+    "aliases": [],
+    "category": "visual",
+    "category_label": "视觉与设计",
+    "summary": "首个协作式 AI 设计智能体工作区，本地优先、开源：用简要需求驱动 Agent 生成遵循设计系统的原型、演示稿、图表与视频。",
+    "tags": [
+      "设计",
+      "多模态",
+      "演示文稿"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 108341,
+    "stars_label": "108.3k",
+    "flag": "",
+    "url": "/plugins/open-design/"
+  },
+  {
     "id": "deepseek-bot",
     "name": "DS Bot",
     "aliases": [
@@ -309,25 +347,6 @@
     "stars_label": "8353",
     "flag": "",
     "url": "/plugins/deepseek-bot/"
-  },
-  {
-    "id": "dsh-our-free-model",
-    "name": "dsh-our-free-model",
-    "aliases": [],
-    "category": "model",
-    "category_label": "免费模型与接入",
-    "summary": "装上后模型列表里多出若干可直接用的免费选项，不用注册、不用填 API Key，用来零成本起步；免费车道来自 OpenCode Zen 网关、Kilo AI 公共网关等上游，直连不经第三方中转。",
-    "tags": [
-      "免费模型",
-      "免Key",
-      "备用通道"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 79831,
-    "stars_label": "79.8k",
-    "flag": "免费额度与可用性以仓库说明为准；npm 裸名 dsh-our-free-model 非本仓库发布，请装带 scope 的 @ebony-vinyl 包",
-    "url": "/plugins/dsh-our-free-model/"
   },
   {
     "id": "dsh-univer-office",
@@ -461,6 +480,25 @@
     "url": "/plugins/dsh-find-plugin/"
   },
   {
+    "id": "awesome-dsh-plugin",
+    "name": "awesome-dsh-plugin",
+    "aliases": [],
+    "category": "market",
+    "category_label": "插件市场与发现",
+    "summary": "DeepSeek Harness 插件精选列表（awesome list）：按功能分类收录社区插件，并编译成可被 DSH 主机读取的插件市场索引（/index.json），在官方「插件 → 发现」标签页与 plugin_market 工具中浏览。",
+    "tags": [
+      "清单",
+      "目录站",
+      "市场索引"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 25103,
+    "stars_label": "25.1k",
+    "flag": "清单类项目，不是插件",
+    "url": "/plugins/awesome-dsh-plugin/"
+  },
+  {
     "id": "dsh-at-file",
     "name": "dsh-at-file",
     "aliases": [],
@@ -479,23 +517,62 @@
     "url": "/plugins/dsh-at-file/"
   },
   {
-    "id": "open-design",
-    "name": "open-design",
+    "id": "archify",
+    "name": "archify",
     "aliases": [],
     "category": "visual",
     "category_label": "视觉与设计",
-    "summary": "首个协作式 AI 设计智能体工作区，本地优先、开源：用简要需求驱动 Agent 生成遵循设计系统的原型、演示稿、图表与视频。",
+    "summary": "把想法、计划或代码库变成交互式图表的 agent skill；针对 DSH 提供社区维护的插件集成（@tt-a1i/archify-dsh），可在 DSH 对话里调用 archify 技能生成架构图、流程图、系统拓扑图。",
     "tags": [
-      "设计",
-      "多模态",
-      "演示文稿"
+      "架构图",
+      "流程图",
+      "可视化"
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "stars": 108341,
-    "stars_label": "108.3k",
+    "stars": 97754,
+    "stars_label": "97.8k",
+    "flag": "社区集成，非 DeepSeek 官方产品；实际 DSH 包名 @tt-a1i/archify-dsh",
+    "url": "/plugins/archify/"
+  },
+  {
+    "id": "everos",
+    "name": "EverOS",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "EverOS 是面向 Agent 与开发者的本地优先、Markdown 原生长期记忆运行时，将对话、文件与 Agent 轨迹存为可读 Markdown，并同步本地 SQLite 与 LanceDB 索引以实现快速检索与跨应用自我演化；官方提供 DeepSeek Harness 集成插件。",
+    "tags": [
+      "长期记忆",
+      "本地优先",
+      "Markdown",
+      "DSH"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 13939,
+    "stars_label": "13.9k",
     "flag": "",
-    "url": "/plugins/open-design/"
+    "url": "/plugins/everos/"
+  },
+  {
+    "id": "memos",
+    "name": "MemOS",
+    "aliases": [],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "MemOS 是面向 LLM 与 AI Agent 的记忆操作系统，统一长期记忆的存储 / 检索 / 管理，原生支持 DeepSeek Harness 的本地与云端插件，提供自动召回、后台捕获、混合检索与本地记忆查看器。",
+    "tags": [
+      "记忆操作系统",
+      "混合检索",
+      "DSH"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 12444,
+    "stars_label": "12.4k",
+    "flag": "",
+    "url": "/plugins/memos/"
   },
   {
     "id": "dsh-deepseek-web-login",
@@ -698,6 +775,31 @@
     "url": "/plugins/dsh-pocket/"
   },
   {
+    "id": "dsh-openviking",
+    "name": "dsh-openviking（用户画像与记忆）",
+    "aliases": [
+      "OpenViking",
+      "dsh-openviking",
+      "用户画像",
+      "会话记忆"
+    ],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "把火山引擎开源的 OpenViking 接进 DSH：user + agent 双空间的检索、资源管理、自动召回与会话记忆，每轮执行前可先翻一遍你的画像（如「中文、简洁」），越用越懂你；需本地跑一个 OpenViking 服务（默认 http://localhost:1933）。",
+    "tags": [
+      "OpenViking",
+      "用户画像",
+      "会话记忆",
+      "自动召回"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 22,
+    "stars_label": "22",
+    "flag": "社区项目；依赖本地 OpenViking 服务（默认 localhost:1933），不是装了就能用；Node ^22.19.0 || >=24，DSH >=0.1.7-rc.2",
+    "url": "/plugins/dsh-openviking/"
+  },
+  {
     "id": "universal-plugin-hub",
     "name": "Universal Plugin Hub",
     "aliases": [
@@ -789,25 +891,6 @@
     "stars_label": "2075",
     "flag": "是拦截器不是沙箱，不隔离进程、不管网络出口",
     "url": "/plugins/cc-safety-net/"
-  },
-  {
-    "id": "awesome-dsh-plugin",
-    "name": "awesome-dsh-plugin",
-    "aliases": [],
-    "category": "market",
-    "category_label": "插件市场与发现",
-    "summary": "DeepSeek Harness 插件精选列表（awesome list）：按功能分类收录社区插件，并编译成可被 DSH 主机读取的插件市场索引（/index.json），在官方「插件 → 发现」标签页与 plugin_market 工具中浏览。",
-    "tags": [
-      "清单",
-      "目录站",
-      "市场索引"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 25103,
-    "stars_label": "25.1k",
-    "flag": "清单类项目，不是插件",
-    "url": "/plugins/awesome-dsh-plugin/"
   },
   {
     "id": "dsh-plugin-radar",
@@ -1076,25 +1159,6 @@
     "url": "/plugins/dsh-vision-toolkit/"
   },
   {
-    "id": "archify",
-    "name": "archify",
-    "aliases": [],
-    "category": "visual",
-    "category_label": "视觉与设计",
-    "summary": "把想法、计划或代码库变成交互式图表的 agent skill；针对 DSH 提供社区维护的插件集成（@tt-a1i/archify-dsh），可在 DSH 对话里调用 archify 技能生成架构图、流程图、系统拓扑图。",
-    "tags": [
-      "架构图",
-      "流程图",
-      "可视化"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 97754,
-    "stars_label": "97.8k",
-    "flag": "社区集成，非 DeepSeek 官方产品；实际 DSH 包名 @tt-a1i/archify-dsh",
-    "url": "/plugins/archify/"
-  },
-  {
     "id": "openpencil",
     "name": "openpencil",
     "aliases": [],
@@ -1308,45 +1372,6 @@
     "stars_label": "11",
     "flag": "",
     "url": "/plugins/dsh-basabase/"
-  },
-  {
-    "id": "everos",
-    "name": "EverOS",
-    "aliases": [],
-    "category": "memory",
-    "category_label": "记忆与知识",
-    "summary": "EverOS 是面向 Agent 与开发者的本地优先、Markdown 原生长期记忆运行时，将对话、文件与 Agent 轨迹存为可读 Markdown，并同步本地 SQLite 与 LanceDB 索引以实现快速检索与跨应用自我演化；官方提供 DeepSeek Harness 集成插件。",
-    "tags": [
-      "长期记忆",
-      "本地优先",
-      "Markdown",
-      "DSH"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 13939,
-    "stars_label": "13.9k",
-    "flag": "",
-    "url": "/plugins/everos/"
-  },
-  {
-    "id": "memos",
-    "name": "MemOS",
-    "aliases": [],
-    "category": "memory",
-    "category_label": "记忆与知识",
-    "summary": "MemOS 是面向 LLM 与 AI Agent 的记忆操作系统，统一长期记忆的存储 / 检索 / 管理，原生支持 DeepSeek Harness 的本地与云端插件，提供自动召回、后台捕获、混合检索与本地记忆查看器。",
-    "tags": [
-      "记忆操作系统",
-      "混合检索",
-      "DSH"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 12444,
-    "stars_label": "12.4k",
-    "flag": "",
-    "url": "/plugins/memos/"
   },
   {
     "id": "reme",
@@ -1923,31 +1948,6 @@
     "stars_label": "7450",
     "flag": "社区项目；纯外观，不影响模型能力；视频/场景壁纸可能占用一定渲染资源",
     "url": "/plugins/dsh-wallpaper-engine/"
-  },
-  {
-    "id": "dsh-openviking",
-    "name": "dsh-openviking（用户画像与记忆）",
-    "aliases": [
-      "OpenViking",
-      "dsh-openviking",
-      "用户画像",
-      "会话记忆"
-    ],
-    "category": "memory",
-    "category_label": "记忆与知识",
-    "summary": "把火山引擎开源的 OpenViking 接进 DSH：user + agent 双空间的检索、资源管理、自动召回与会话记忆，每轮执行前可先翻一遍你的画像（如「中文、简洁」），越用越懂你；需本地跑一个 OpenViking 服务（默认 http://localhost:1933）。",
-    "tags": [
-      "OpenViking",
-      "用户画像",
-      "会话记忆",
-      "自动召回"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 22,
-    "stars_label": "22",
-    "flag": "社区项目；依赖本地 OpenViking 服务（默认 localhost:1933），不是装了就能用；Node ^22.19.0 || >=24，DSH >=0.1.7-rc.2",
-    "url": "/plugins/dsh-openviking/"
   },
   {
     "id": "dsh-wechat-article",

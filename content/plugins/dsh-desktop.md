@@ -6,7 +6,7 @@ categories:
 tags: &id001
 - 桌面端
 - 免命令行
-weight: 1030
+weight: 1040
 params:
   plugin:
     id: dsh-desktop
@@ -42,7 +42,7 @@ params:
       pushed_date: '2026-11-18'
     category_label: 界面与体验
     status_label: 社区
-    weight: 1030
+    weight: 1040
     url: /plugins/dsh-desktop/
   generated: true
 ---

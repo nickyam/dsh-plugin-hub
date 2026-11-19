@@ -8,7 +8,7 @@ tags: &id001
 - 用户画像
 - 会话记忆
 - 自动召回
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: dsh-openviking
@@ -47,7 +47,7 @@ params:
       pushed_date: '2026-09-29'
     category_label: 记忆与知识
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/dsh-openviking/
   generated: true
 ---
