@@ -28,6 +28,18 @@ params:
     flag: 独立社区项目，与 DeepSeek 无隶属关系
     notes: 独立的社区开源项目，与 DeepSeek 不存在隶属、合作、授权或背书关系（README 明确声明）。另有 dataelement、Tauri 两个独立桌面构建，本站单独立项，不合并。
     repo_confirmed: true
+    gh:
+      stars: 36356
+      forks: 1652
+      issues: 399
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-18T18:48:02Z'
+      archived: false
+      slug: anywhere-labs/dsh-desktop
+      stars_label: 36.4k
+      forks_label: '1652'
+      pushed_date: '2026-11-18'
     category_label: 界面与体验
     status_label: 社区
     weight: 1030

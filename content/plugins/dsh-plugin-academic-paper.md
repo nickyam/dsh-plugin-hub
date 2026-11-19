@@ -32,6 +32,18 @@ params:
     flag: 社区项目；需 Node.js 22+ 的 DSH Web profile；检索走公开 API，注意网络可达性
     notes: 仓库 zhaoxuejie/dsh-plugin-academic-paper，npm 已发布 dsh-plugin-academic-paper（registry 200），README 推荐方式 A npm 安装 dsh plugin --profile web add dsh-plugin-academic-paper，本站 install 与其一致。文章称其「把查这件事从模型手里拿走」，与 README 的「插件负责检索与引用、模型负责解读综述」一致。
     repo_confirmed: true
+    gh:
+      stars: 3
+      forks: 0
+      issues: 2
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-09-08T16:03:30Z'
+      archived: false
+      slug: zhaoxuejie/dsh-plugin-academic-paper
+      stars_label: '3'
+      forks_label: '0'
+      pushed_date: '2026-09-08'
     category_label: 内容创作与办公
     status_label: 社区
     weight: 1010

@@ -26,6 +26,18 @@ params:
     tags: *id001
     notes: License 为 MIT 附加非商用条款；本地运行不等于完全离线（模型服务、插件安装、更新与桌宠预设素材仍可能联网）。
     repo_confirmed: true
+    gh:
+      stars: 3673
+      forks: 239
+      issues: 22
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-19T00:15:27Z'
+      archived: false
+      slug: dsh-tauri/deepseek-harness-desktop
+      stars_label: '3673'
+      forks_label: '239'
+      pushed_date: '2026-11-19'
     category_label: 界面与体验
     status_label: 社区
     weight: 1010

@@ -26,6 +26,18 @@ params:
     tags: *id001
     notes: 百科文章曾把它类比成《我的世界》的 Fabric Mod 加载器（社区把 DSH 生态比作 MC Mod 生态的注脚）；实际仓库是一个严肃的「运行时扩展」原语插件，并非游戏梗。本站按实际仓库 README 收录。
     repo_confirmed: true
+    gh:
+      stars: 2
+      forks: 0
+      issues: 0
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-09-29T23:43:28Z'
+      archived: false
+      slug: hellosky983/dsh-fabric
+      stars_label: '2'
+      forks_label: '0'
+      pushed_date: '2026-09-29'
     category_label: 工具与能力
     status_label: 社区
     weight: 1010

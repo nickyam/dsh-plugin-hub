@@ -25,6 +25,18 @@ params:
     tags: *id001
     notes: 默认 posture 为 allow（与 DSH 一致）；审计日志只记工具名/agent/工作区/决定/理由/结果，不含参数内容。计量或持久化失败不阻塞 agent。
     repo_confirmed: true
+    gh:
+      stars: 0
+      forks: 2
+      issues: 0
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-09-11T03:27:19Z'
+      archived: false
+      slug: 863683348/dsh-gov
+      stars_label: '0'
+      forks_label: '2'
+      pushed_date: '2026-09-11'
     category_label: 安全与治理
     status_label: 社区
     weight: 1010

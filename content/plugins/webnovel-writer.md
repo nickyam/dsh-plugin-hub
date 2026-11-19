@@ -26,6 +26,18 @@ params:
     tags: *id001
     notes: 本仓库 master 分支为 Claude Code 版（v6），其 README 给出的安装命令是 Claude Code 插件；DSH 版（v8 写作工作台）在 README 中被引用但未在此 README 给出安装命令，需前往其产品主页获取，故 install 留空。
     repo_confirmed: true
+    gh:
+      stars: 8012
+      forks: 1298
+      issues: 43
+      language: Python
+      license: GPL-3.0
+      pushed_at: '2026-11-14T14:31:07Z'
+      archived: false
+      slug: lingfengQAQ/webnovel-writer
+      stars_label: '8012'
+      forks_label: '1298'
+      pushed_date: '2026-11-14'
     category_label: 内容创作与办公
     status_label: 社区
     weight: 1010

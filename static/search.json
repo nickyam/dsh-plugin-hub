@@ -16,6 +16,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 12882,
+    "stars_label": "12.9k",
     "flag": "安装写法有多种，以仓库 README 为准",
     "url": "/plugins/dsh-market/"
   },
@@ -36,6 +38,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 5231,
+    "stars_label": "5231",
     "flag": "需按 DSH 版本选对应插件版本",
     "url": "/plugins/dsh-better-sidebar/"
   },
@@ -53,6 +57,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 5287,
+    "stars_label": "5287",
     "flag": "",
     "url": "/plugins/dsh-context/"
   },
@@ -70,6 +76,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 5028,
+    "stars_label": "5028",
     "flag": "与 dsh-vision-toolkit 是不同条目，本站不合并",
     "url": "/plugins/modlens/"
   },
@@ -86,8 +94,28 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 3022,
+    "stars_label": "3022",
     "flag": "与官网内置 Agent teams 名称相近，勿混",
     "url": "/plugins/dsh-agent-teams/"
+  },
+  {
+    "id": "dsh-ops",
+    "name": "dsh-ops",
+    "aliases": [],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "以提高 token 效率为目的的底层操作工具插件，提供 ops 系列工具并隐藏 / 替换部分官方工具，减少 Token 消耗与任务耗时，低改动面、低侵入性。",
+    "tags": [
+      "自动化",
+      "token优化"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 5921,
+    "stars_label": "5921",
+    "flag": "",
+    "url": "/plugins/dsh-ops/"
   },
   {
     "id": "dsh-web",
@@ -104,6 +132,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 10515,
+    "stars_label": "10.5k",
     "flag": "与 dsh-web-all 为同一官方聚合仓（zhu1090093659/dsh-web）；本卡按 README 整理，二者可合并",
     "url": "/plugins/dsh-web/"
   },
@@ -123,29 +153,19 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 36356,
+    "stars_label": "36.4k",
     "flag": "独立社区项目，与 DeepSeek 无隶属关系",
     "url": "/plugins/dsh-desktop/"
   },
   {
-    "id": "dsh-ops",
-    "name": "dsh-ops",
-    "aliases": [],
-    "category": "workflow",
-    "category_label": "协作与工作流",
-    "summary": "以提高 token 效率为目的的底层操作工具插件，提供 ops 系列工具并隐藏 / 替换部分官方工具，减少 Token 消耗与任务耗时，低改动面、低侵入性。",
-    "tags": [
-      "自动化",
-      "token优化"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "flag": "",
-    "url": "/plugins/dsh-ops/"
-  },
-  {
     "id": "deepseek-bot",
-    "name": "DeepSeek-Bot",
-    "aliases": [],
+    "name": "DS Bot",
+    "aliases": [
+      "DeepSeek-Bot",
+      "ds-bot",
+      "DSBot"
+    ],
     "category": "workflow",
     "category_label": "协作与工作流",
     "summary": "DS Bot 是 DeepSeek Harness（DSH）的 Bot 插件，把 DSH 变成可创建和协作的 Bot：支持主 Bot、Bot 间消息与群聊，并内置记忆、共享能力库（MCP / Skill）与按时间 / 模型维度的用量统计。",
@@ -156,6 +176,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 8353,
+    "stars_label": "8353",
     "flag": "",
     "url": "/plugins/deepseek-bot/"
   },
@@ -173,6 +195,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 79831,
+    "stars_label": "79.8k",
     "flag": "免费额度与可用性以仓库说明为准；npm 裸名 dsh-our-free-model 非本仓库发布，请装带 scope 的 @ebony-vinyl 包",
     "url": "/plugins/dsh-our-free-model/"
   },
@@ -193,6 +217,8 @@
     ],
     "status_label": "原文未说明",
     "repo_confirmed": true,
+    "stars": 7335,
+    "stars_label": "7335",
     "flag": "",
     "url": "/plugins/whale-cost-widget/"
   },
@@ -213,208 +239,10 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 582,
+    "stars_label": "582",
     "flag": "社区项目（Apache-2.0，非 DeepSeek 官方）",
     "url": "/plugins/dsh-skills-manager/"
-  },
-  {
-    "id": "dsh-find-plugin",
-    "name": "dsh-find-plugin",
-    "aliases": [],
-    "category": "market",
-    "category_label": "插件市场与发现",
-    "summary": "一个「找插件的插件」——让 Agent 在对话里搜索 GitHub 上的 DSH 插件生态，按星标排序返回结果，每条带一行简介和可直接执行的安装命令。",
-    "tags": [
-      "命令行",
-      "GitHub",
-      "发现"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "flag": "",
-    "url": "/plugins/dsh-find-plugin/"
-  },
-  {
-    "id": "dsh-web-all",
-    "name": "dsh-web-all（Web 全家桶）",
-    "aliases": [
-      "dsh-web-ui-all",
-      "@linxin666/dsh-web-all",
-      "dsh-web full suite"
-    ],
-    "category": "ui",
-    "category_label": "界面与体验",
-    "summary": "DSH Web 的官方聚合包，一条命令装齐家族全部功能插件：任务看板、Git 图谱、桌面宠物、移动端远程、SSH 运维、模型能力、用量统计、会话归档、皮肤中心、设置区与社区插件，外加右侧面板 dsh-better-sidebar。每项可在「设置 → 插件 → 插件管理」里单独开关。",
-    "tags": [
-      "全家桶",
-      "看板",
-      "远程",
-      "SSH"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "flag": "包名 @linxin666/dsh-web-all，仓库是 zhu1090093659/dsh-web 单体仓",
-    "url": "/plugins/dsh-web-all/"
-  },
-  {
-    "id": "dsh-genui",
-    "name": "dsh-genui",
-    "aliases": [],
-    "category": "ui",
-    "category_label": "界面与体验",
-    "summary": "面向 DSH 的生成式 UI 插件，将助手回复转化为安全、完全交互式的 UI 界面，在模型文本回复旁内联渲染图表、表单、测验、Mermaid 图与 3D 场景等组件。",
-    "tags": [
-      "GenUI",
-      "内联渲染",
-      "可视化"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "flag": "",
-    "url": "/plugins/dsh-genui/"
-  },
-  {
-    "id": "modsearch",
-    "name": "ModSearch",
-    "aliases": [
-      "modsearch"
-    ],
-    "category": "tool",
-    "category_label": "工具与能力",
-    "summary": "DSH 里最强的免费联网搜索插件：网页搜索、X（推特）搜索、单页抓取，默认走 Firecrawl Keyless（每月 1000 免费额度，免注册免 API Key），为多模型补上原生缺失的联网能力，返回结构化 JSON 证据。",
-    "tags": [
-      "搜索",
-      "免费",
-      "省成本"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "flag": "",
-    "url": "/plugins/modsearch/"
-  },
-  {
-    "id": "dsh-at-file",
-    "name": "dsh-at-file",
-    "aliases": [],
-    "category": "tool",
-    "category_label": "工具与能力",
-    "summary": "给 DSH Web 界面加 Codex 风格 @文件 引用：输入框打 @ 搜工作区文件 / 目录，插入工作区相对路径引用而不粘贴全文内容。",
-    "tags": [
-      "@文件",
-      "指令"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "flag": "",
-    "url": "/plugins/dsh-at-file/"
-  },
-  {
-    "id": "open-design",
-    "name": "open-design",
-    "aliases": [],
-    "category": "visual",
-    "category_label": "视觉与设计",
-    "summary": "首个协作式 AI 设计智能体工作区，本地优先、开源：用简要需求驱动 Agent 生成遵循设计系统的原型、演示稿、图表与视频。",
-    "tags": [
-      "设计",
-      "多模态",
-      "演示文稿"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "flag": "",
-    "url": "/plugins/open-design/"
-  },
-  {
-    "id": "dsh-deepseek-web-login",
-    "name": "dsh-deepseek-web-login",
-    "aliases": [],
-    "category": "model",
-    "category_label": "免费模型与接入",
-    "summary": "非官方的 DSH 插件：通过浏览器登录 chat.deepseek.com 捕获登录态凭证，把网页版模型作为 LLM 提供者驱动 agent 的工具调用、思考流与图片理解，不调用官方 API。",
-    "tags": [
-      "网页凭证",
-      "免API Key",
-      "非官方"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "flag": "涉及账号凭证与网页端私有接口，注意安全与条款；非 DeepSeek 官方客户端；一个账号同一时间只开一个聊天窗口，多开可能触发临时封禁",
-    "url": "/plugins/dsh-deepseek-web-login/"
-  },
-  {
-    "id": "dsh-plugin-gate",
-    "name": "dsh-plugin-gate",
-    "aliases": [],
-    "category": "security",
-    "category_label": "安全与治理",
-    "summary": "DSH 的安装安全门与数据保护守卫：在 dsh plugin add 之前用 60 条静态规则扫描插件源码（恶意脚本/凭证窃取/混淆/网络回连），并用 gate_guard 在执行 rm -rf 类危险命令前拦截或要求确认。",
-    "tags": [
-      "安装前扫描",
-      "安全"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "flag": "",
-    "url": "/plugins/dsh-plugin-gate/"
-  },
-  {
-    "id": "dsh-pet",
-    "name": "dsh-pet",
-    "aliases": [],
-    "category": "fun",
-    "category_label": "娱乐与彩蛋",
-    "summary": "一只住在 DeepSeek Harness 里的桌面宠物，100+ 段透明动画资产，可多开、拖拽甩抛、脱离浏览器独立运行，也能自定义宠物种类（pet pack）。",
-    "tags": [
-      "桌宠",
-      "DIY素材"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "flag": "",
-    "url": "/plugins/dsh-pet/"
-  },
-  {
-    "id": "agentero-dsh",
-    "name": "agentero-dsh",
-    "aliases": [
-      "Agentero",
-      "Agentero × DeepSeek Harness"
-    ],
-    "category": "memory",
-    "category_label": "记忆与知识",
-    "summary": "把本地优先的科研工作台 Agentero 接进 DSH，在对话旁开文献库与 PDF 阅读器，让 Agent 查论文、划词翻译、写笔记、整理结论，资料留在本机 Vault。",
-    "tags": [
-      "科研",
-      "文献",
-      "PDF",
-      "笔记",
-      "知识库"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "flag": "",
-    "url": "/plugins/agentero-dsh/"
-  },
-  {
-    "id": "dsh-cost-meter",
-    "name": "dsh-cost-meter（费用统计）",
-    "aliases": [
-      "费用统计",
-      "Cost Meter"
-    ],
-    "category": "billing",
-    "category_label": "模型与计费",
-    "summary": "DSH 的统一成本账本：按会话、模型、调用与轮次追踪费用和 Token，集中查看账户余额、订阅额度与预算，并把 API 按量费用与 Plan 折算分开统计，支持多厂商价目表与峰谷提醒。",
-    "tags": [
-      "成本",
-      "用量",
-      "多厂商",
-      "预算"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "flag": "社区项目（MIT，非 DeepSeek 官方）",
-    "url": "/plugins/dsh-cost-meter/"
   },
   {
     "id": "dsh-codex-ui",
@@ -435,6 +263,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 303,
+    "stars_label": "303",
     "flag": "社区项目（Apache-2.0，非 DeepSeek 官方）",
     "url": "/plugins/dsh-codex-ui/"
   },
@@ -457,8 +287,232 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 7861,
+    "stars_label": "7861",
     "flag": "通用代理型工具，非 DSH 专属；native 插件与 standalone 扩展不可同时启用，否则会重复压缩",
     "url": "/plugins/billion-context/"
+  },
+  {
+    "id": "dsh-find-plugin",
+    "name": "dsh-find-plugin",
+    "aliases": [],
+    "category": "market",
+    "category_label": "插件市场与发现",
+    "summary": "一个「找插件的插件」——让 Agent 在对话里搜索 GitHub 上的 DSH 插件生态，按星标排序返回结果，每条带一行简介和可直接执行的安装命令。",
+    "tags": [
+      "命令行",
+      "GitHub",
+      "发现"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 237,
+    "stars_label": "237",
+    "flag": "",
+    "url": "/plugins/dsh-find-plugin/"
+  },
+  {
+    "id": "dsh-web-all",
+    "name": "dsh-web-all（Web 全家桶）",
+    "aliases": [
+      "dsh-web-ui-all",
+      "@linxin666/dsh-web-all",
+      "dsh-web full suite"
+    ],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "DSH Web 的官方聚合包，一条命令装齐家族全部功能插件：任务看板、Git 图谱、桌面宠物、移动端远程、SSH 运维、模型能力、用量统计、会话归档、皮肤中心、设置区与社区插件，外加右侧面板 dsh-better-sidebar。每项可在「设置 → 插件 → 插件管理」里单独开关。",
+    "tags": [
+      "全家桶",
+      "看板",
+      "远程",
+      "SSH"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 10515,
+    "stars_label": "10.5k",
+    "flag": "包名 @linxin666/dsh-web-all，仓库是 zhu1090093659/dsh-web 单体仓",
+    "url": "/plugins/dsh-web-all/"
+  },
+  {
+    "id": "dsh-genui",
+    "name": "dsh-genui",
+    "aliases": [],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "面向 DSH 的生成式 UI 插件，将助手回复转化为安全、完全交互式的 UI 界面，在模型文本回复旁内联渲染图表、表单、测验、Mermaid 图与 3D 场景等组件。",
+    "tags": [
+      "GenUI",
+      "内联渲染",
+      "可视化"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 1024,
+    "stars_label": "1024",
+    "flag": "",
+    "url": "/plugins/dsh-genui/"
+  },
+  {
+    "id": "modsearch",
+    "name": "ModSearch",
+    "aliases": [
+      "modsearch"
+    ],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "DSH 里最强的免费联网搜索插件：网页搜索、X（推特）搜索、单页抓取，默认走 Firecrawl Keyless（每月 1000 免费额度，免注册免 API Key），为多模型补上原生缺失的联网能力，返回结构化 JSON 证据。",
+    "tags": [
+      "搜索",
+      "免费",
+      "省成本"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 1017,
+    "stars_label": "1017",
+    "flag": "",
+    "url": "/plugins/modsearch/"
+  },
+  {
+    "id": "dsh-at-file",
+    "name": "dsh-at-file",
+    "aliases": [],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "给 DSH Web 界面加 Codex 风格 @文件 引用：输入框打 @ 搜工作区文件 / 目录，插入工作区相对路径引用而不粘贴全文内容。",
+    "tags": [
+      "@文件",
+      "指令"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 570,
+    "stars_label": "570",
+    "flag": "",
+    "url": "/plugins/dsh-at-file/"
+  },
+  {
+    "id": "open-design",
+    "name": "open-design",
+    "aliases": [],
+    "category": "visual",
+    "category_label": "视觉与设计",
+    "summary": "首个协作式 AI 设计智能体工作区，本地优先、开源：用简要需求驱动 Agent 生成遵循设计系统的原型、演示稿、图表与视频。",
+    "tags": [
+      "设计",
+      "多模态",
+      "演示文稿"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 108341,
+    "stars_label": "108.3k",
+    "flag": "",
+    "url": "/plugins/open-design/"
+  },
+  {
+    "id": "dsh-deepseek-web-login",
+    "name": "dsh-deepseek-web-login",
+    "aliases": [],
+    "category": "model",
+    "category_label": "免费模型与接入",
+    "summary": "非官方的 DSH 插件：通过浏览器登录 chat.deepseek.com 捕获登录态凭证，把网页版模型作为 LLM 提供者驱动 agent 的工具调用、思考流与图片理解，不调用官方 API。",
+    "tags": [
+      "网页凭证",
+      "免API Key",
+      "非官方"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 382,
+    "stars_label": "382",
+    "flag": "涉及账号凭证与网页端私有接口，注意安全与条款；非 DeepSeek 官方客户端；一个账号同一时间只开一个聊天窗口，多开可能触发临时封禁",
+    "url": "/plugins/dsh-deepseek-web-login/"
+  },
+  {
+    "id": "dsh-plugin-gate",
+    "name": "dsh-plugin-gate",
+    "aliases": [],
+    "category": "security",
+    "category_label": "安全与治理",
+    "summary": "DSH 的安装安全门与数据保护守卫：在 dsh plugin add 之前用 60 条静态规则扫描插件源码（恶意脚本/凭证窃取/混淆/网络回连），并用 gate_guard 在执行 rm -rf 类危险命令前拦截或要求确认。",
+    "tags": [
+      "安装前扫描",
+      "安全"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 1,
+    "stars_label": "1",
+    "flag": "",
+    "url": "/plugins/dsh-plugin-gate/"
+  },
+  {
+    "id": "dsh-pet",
+    "name": "dsh-pet",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "一只住在 DeepSeek Harness 里的桌面宠物，100+ 段透明动画资产，可多开、拖拽甩抛、脱离浏览器独立运行，也能自定义宠物种类（pet pack）。",
+    "tags": [
+      "桌宠",
+      "DIY素材"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 6489,
+    "stars_label": "6489",
+    "flag": "",
+    "url": "/plugins/dsh-pet/"
+  },
+  {
+    "id": "agentero-dsh",
+    "name": "agentero-dsh",
+    "aliases": [
+      "Agentero",
+      "Agentero × DeepSeek Harness"
+    ],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "把本地优先的科研工作台 Agentero 接进 DSH，在对话旁开文献库与 PDF 阅读器，让 Agent 查论文、划词翻译、写笔记、整理结论，资料留在本机 Vault。",
+    "tags": [
+      "科研",
+      "文献",
+      "PDF",
+      "笔记",
+      "知识库"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 237,
+    "stars_label": "237",
+    "flag": "",
+    "url": "/plugins/agentero-dsh/"
+  },
+  {
+    "id": "dsh-cost-meter",
+    "name": "dsh-cost-meter（费用统计）",
+    "aliases": [
+      "费用统计",
+      "Cost Meter"
+    ],
+    "category": "billing",
+    "category_label": "模型与计费",
+    "summary": "DSH 的统一成本账本：按会话、模型、调用与轮次追踪费用和 Token，集中查看账户余额、订阅额度与预算，并把 API 按量费用与 Plan 折算分开统计，支持多厂商价目表与峰谷提醒。",
+    "tags": [
+      "成本",
+      "用量",
+      "多厂商",
+      "预算"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 721,
+    "stars_label": "721",
+    "flag": "社区项目（MIT，非 DeepSeek 官方）",
+    "url": "/plugins/dsh-cost-meter/"
   },
   {
     "id": "dsh-browser",
@@ -478,6 +532,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 5,
+    "stars_label": "5",
     "flag": "社区项目；模型可操作真实浏览器与登录态，涉及账号与付款操作时请留意",
     "url": "/plugins/dsh-browser/"
   },
@@ -495,6 +551,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 25103,
+    "stars_label": "25.1k",
     "flag": "清单类项目，不是插件",
     "url": "/plugins/awesome-dsh-plugin/"
   },
@@ -512,6 +570,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 1508,
+    "stars_label": "1508",
     "flag": "数据 / 目录类项目，非可安装插件",
     "url": "/plugins/dsh-plugin-radar/"
   },
@@ -529,6 +589,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 666,
+    "stars_label": "666",
     "flag": "与 dsh-market、dsh-plugin-radar 同类不同实现，本站不合并",
     "url": "/plugins/dsh-plugin-shop/"
   },
@@ -546,6 +608,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 1384,
+    "stars_label": "1384",
     "flag": "清单类项目，不是插件",
     "url": "/plugins/awesome-deepseek-harness/"
   },
@@ -562,6 +626,8 @@
     ],
     "status_label": "原文未说明",
     "repo_confirmed": true,
+    "stars": 6,
+    "stars_label": "6",
     "flag": "",
     "url": "/plugins/selection-toolbar/"
   },
@@ -578,6 +644,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 19838,
+    "stars_label": "19.8k",
     "flag": "与 anywhere-labs 版是两个项目",
     "url": "/plugins/dsh-desktop-dataelement/"
   },
@@ -595,6 +663,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 3673,
+    "stars_label": "3673",
     "flag": "",
     "url": "/plugins/dsh-desktop-tauri/"
   },
@@ -612,6 +682,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 7944,
+    "stars_label": "7944",
     "flag": "",
     "url": "/plugins/dsh-tui/"
   },
@@ -629,6 +701,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 730,
+    "stars_label": "730",
     "flag": "",
     "url": "/plugins/dsh-synapse/"
   },
@@ -646,6 +720,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 784,
+    "stars_label": "784",
     "flag": "社区项目，非官方",
     "url": "/plugins/dsh-x/"
   },
@@ -665,6 +741,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 10562,
+    "stars_label": "10.6k",
     "flag": "",
     "url": "/plugins/browserskill/"
   },
@@ -681,6 +759,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 8,
+    "stars_label": "8",
     "flag": "",
     "url": "/plugins/skill-report/"
   },
@@ -698,6 +778,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 3781,
+    "stars_label": "3781",
     "flag": "",
     "url": "/plugins/openbiliclaw/"
   },
@@ -715,6 +797,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 2,
+    "stars_label": "2",
     "flag": "",
     "url": "/plugins/dsh-fabric/"
   },
@@ -733,6 +817,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 946,
+    "stars_label": "946",
     "flag": "视觉能力打包自上游 agent-vision-toolkit",
     "url": "/plugins/dsh-vision-toolkit/"
   },
@@ -750,6 +836,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 97754,
+    "stars_label": "97.8k",
     "flag": "社区集成，非 DeepSeek 官方产品；实际 DSH 包名 @tt-a1i/archify-dsh",
     "url": "/plugins/archify/"
   },
@@ -767,6 +855,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 7283,
+    "stars_label": "7283",
     "flag": "DSH 接入形态为同仓子包 @zseven-w/dsh-openpencil；本体 OpenPencil 是独立 Rust 设计 App",
     "url": "/plugins/openpencil/"
   },
@@ -785,6 +875,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 1899,
+    "stars_label": "1899",
     "flag": "",
     "url": "/plugins/deepseek-design/"
   },
@@ -802,6 +894,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 16,
+    "stars_label": "16",
     "flag": "",
     "url": "/plugins/dsh-diff-approval/"
   },
@@ -819,6 +913,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 7029,
+    "stars_label": "7029",
     "flag": "",
     "url": "/plugins/dsh-routing-suite/"
   },
@@ -842,6 +938,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 1,
+    "stars_label": "1",
     "flag": "涉及生产服务器写操作，请先在测试环境验证",
     "url": "/plugins/dsh-devops/"
   },
@@ -859,6 +957,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 6531,
+    "stars_label": "6531",
     "flag": "",
     "url": "/plugins/answer-me-with-html/"
   },
@@ -875,6 +975,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 859,
+    "stars_label": "859",
     "flag": "",
     "url": "/plugins/dsh-memory-evolve/"
   },
@@ -891,6 +993,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 32,
+    "stars_label": "32",
     "flag": "",
     "url": "/plugins/dsh-project-memory/"
   },
@@ -908,13 +1012,17 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 75,
+    "stars_label": "75",
     "flag": "",
     "url": "/plugins/dsh-engram/"
   },
   {
     "id": "runtime36",
     "name": "runtime36",
-    "aliases": [],
+    "aliases": [
+      "KRouter"
+    ],
     "category": "memory",
     "category_label": "记忆与知识",
     "summary": "把 Obsidian / Markdown 笔记库作为 Agent 的持久知识库：每日封存与蒸馏，用简短名词精准定位经验页面，让 Agent 跨会话记住已做的决策与沉淀的方法。",
@@ -925,6 +1033,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 75,
+    "stars_label": "75",
     "flag": "",
     "url": "/plugins/runtime36/"
   },
@@ -941,6 +1051,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 11,
+    "stars_label": "11",
     "flag": "",
     "url": "/plugins/dsh-basabase/"
   },
@@ -959,6 +1071,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 13939,
+    "stars_label": "13.9k",
     "flag": "",
     "url": "/plugins/everos/"
   },
@@ -976,6 +1090,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 12444,
+    "stars_label": "12.4k",
     "flag": "",
     "url": "/plugins/memos/"
   },
@@ -994,6 +1110,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 3820,
+    "stars_label": "3820",
     "flag": "",
     "url": "/plugins/reme/"
   },
@@ -1011,6 +1129,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 622,
+    "stars_label": "622",
     "flag": "第三方接入，使用前先看清各服务条款",
     "url": "/plugins/dsh-plugin-subscriptions/"
   },
@@ -1028,6 +1148,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 23,
+    "stars_label": "23",
     "flag": "",
     "url": "/plugins/dsh-api-dashboard/"
   },
@@ -1044,6 +1166,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 0,
+    "stars_label": "0",
     "flag": "存在多个同名社区实现，本条目以 Muzi1015 版（npm 包 dsh-api-balance-plugin）为准",
     "url": "/plugins/dsh-api-balance/"
   },
@@ -1060,25 +1184,10 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 0,
+    "stars_label": "0",
     "flag": "",
     "url": "/plugins/dsh-gov/"
-  },
-  {
-    "id": "dsh-purge",
-    "name": "dsh-purge",
-    "aliases": [],
-    "category": "security",
-    "category_label": "安全与治理",
-    "summary": "dsh-purge 是针对本地官方 DeepSeek Harness 的开源红队插件（破限 / 越狱工具），通过注入可替换的加密提示词与运行时补丁，在本地授权环境下评估并绕过宿主与模型的默认安全限制；项目声明禁止用于未授权公网攻击。",
-    "tags": [
-      "破限",
-      "提示词",
-      "红队"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "flag": "涉及绕过模型安全策略，本站不评价",
-    "url": "/plugins/dsh-purge/"
   },
   {
     "id": "dsh-unrestricted",
@@ -1093,6 +1202,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 1267,
+    "stars_label": "1267",
     "flag": "涉及绕过模型安全策略，本站不评价",
     "url": "/plugins/dsh-unrestricted/"
   },
@@ -1110,6 +1221,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 518,
+    "stars_label": "518",
     "flag": "渗透测试须在授权范围内使用",
     "url": "/plugins/deepsec/"
   },
@@ -1127,6 +1240,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 8,
+    "stars_label": "8",
     "flag": "社区项目，非官方",
     "url": "/plugins/dsh-plugin-claude-bridge/"
   },
@@ -1143,6 +1258,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 33,
+    "stars_label": "33",
     "flag": "社区项目，非官方（PerryLink 维护，Apache-2.0）",
     "url": "/plugins/dsh-claude-move/"
   },
@@ -1161,6 +1278,8 @@
     ],
     "status_label": "官方",
     "repo_confirmed": true,
+    "stars": 283640,
+    "stars_label": "283.6k",
     "flag": "官方包，只桥接 Tools（resources / prompts 不支持）",
     "url": "/plugins/dsh-mcp-client/"
   },
@@ -1180,6 +1299,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 0,
+    "stars_label": "0",
     "flag": "",
     "url": "/plugins/dsh-wechat/"
   },
@@ -1197,6 +1318,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 3265,
+    "stars_label": "3265",
     "flag": "加密与中继方式以仓库说明为准",
     "url": "/plugins/ds-harness-remote/"
   },
@@ -1215,6 +1338,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 823,
+    "stars_label": "823",
     "flag": "",
     "url": "/plugins/dsh-mobile/"
   },
@@ -1232,6 +1357,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 473,
+    "stars_label": "473",
     "flag": "",
     "url": "/plugins/dsh-ios/"
   },
@@ -1249,6 +1376,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 8012,
+    "stars_label": "8012",
     "flag": "",
     "url": "/plugins/webnovel-writer/"
   },
@@ -1268,6 +1397,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 788,
+    "stars_label": "788",
     "flag": "",
     "url": "/plugins/oh-story-dsh/"
   },
@@ -1286,6 +1417,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 737,
+    "stars_label": "737",
     "flag": "",
     "url": "/plugins/dsh-univer-office/"
   },
@@ -1302,6 +1435,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 37,
+    "stars_label": "37",
     "flag": "社区项目，非官方；注意 DSH 版本→插件版本对应关系，装错会崩（如 useConversation is not a function）",
     "url": "/plugins/dsh-minigames/"
   },
@@ -1318,6 +1453,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 732,
+    "stars_label": "732",
     "flag": "社区整活项目，非官方；广告会延迟回答显示，正式工作场景慎用",
     "url": "/plugins/dsh-ads/"
   },
@@ -1334,6 +1471,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 10,
+    "stars_label": "10",
     "flag": "社区项目，非官方；仅针对 dsh-ads，需与 dsh-ads 配合才有意义",
     "url": "/plugins/dsh-anti-ads/"
   },
@@ -1350,6 +1489,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 32,
+    "stars_label": "32",
     "flag": "社区项目，非官方；当前适配 dsh 0.2.0-rc.2，需 Web profile，不再兼容 0.1.x 客户端运行时",
     "url": "/plugins/dsh-gomoku/"
   },
@@ -1366,6 +1507,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 32,
+    "stars_label": "32",
     "flag": "社区项目，非官方；npm 发行版仅含 token 换肤与全局皮肤表，登录窗/聊天窗等组件级效果需源码 monorepo 形态才完整",
     "url": "/plugins/dsh-qq2006/"
   },
@@ -1383,6 +1526,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 48,
+    "stars_label": "48",
     "flag": "社区项目，非官方；注意 DSH 版本→插件版本对应关系，装错会崩",
     "url": "/plugins/dsh-ui-whale/"
   },
@@ -1399,6 +1544,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 56,
+    "stars_label": "56",
     "flag": "社区项目，非官方",
     "url": "/plugins/dsh-emoji/"
   },
@@ -1416,6 +1563,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 4373,
+    "stars_label": "4373",
     "flag": "",
     "url": "/plugins/petdex/"
   },
@@ -1438,6 +1587,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 1532,
+    "stars_label": "1532",
     "flag": "",
     "url": "/plugins/dsh-media-desk/"
   },
@@ -1459,6 +1610,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 976,
+    "stars_label": "976",
     "flag": "",
     "url": "/plugins/dsh-guizang-design/"
   },
@@ -1480,6 +1633,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 10515,
+    "stars_label": "10.5k",
     "flag": "社区项目（BSD-3-Clause，非 DeepSeek 官方）；与 dsh-skills-manager 功能重叠",
     "url": "/plugins/dsh-client-ui-skill-explorer/"
   },
@@ -1501,6 +1656,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 6,
+    "stars_label": "6",
     "flag": "社区项目（AGPL-3.0，非 DeepSeek 官方）；远程访问把本机开放给手机，注意信任边界",
     "url": "/plugins/dsh-remote-bridge/"
   },
@@ -1522,6 +1679,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 1624,
+    "stars_label": "1624",
     "flag": "社区项目（Apache-2.0，非 DeepSeek 官方）；生图走第三方后端，注意各 Provider 的内容政策与费用",
     "url": "/plugins/dsh-image-gen/"
   },
@@ -1545,6 +1704,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 286,
+    "stars_label": "286",
     "flag": "社区项目；回退不可就地撤销，操作前确认目标消息；文件还原只在选「对话和文件」时写入工作区",
     "url": "/plugins/dsh-rewind/"
   },
@@ -1568,6 +1729,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 1286,
+    "stars_label": "1286",
     "flag": "社区项目；默认会把图片/裁剪图发给云端视觉模型（含匿名兜底），涉密或敏感素材请开 strict local-only；DSH >=0.2.1-rc.5 <0.3.0-0、Node.js >=24.9.0",
     "url": "/plugins/dsh-vision-router/"
   },
@@ -1590,6 +1753,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 2,
+    "stars_label": "2",
     "flag": "社区项目；需自建可达的 Nacos 3.2+ 实例并开启 AI Registry，且能力已在其中注册；非普通用户开箱即用",
     "url": "/plugins/dsh-nacos-bridge/"
   },
@@ -1612,6 +1777,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 3700,
+    "stars_label": "3700",
     "flag": "社区项目；接入机器人涉及各平台凭据，注意 Token 安全与平台条款",
     "url": "/plugins/dsh-im/"
   },
@@ -1634,6 +1801,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 3040,
+    "stars_label": "3040",
     "flag": "社区项目；公网访问意味着把 DSH 界面暴露到外网，请设置强口令并留意可访问范围",
     "url": "/plugins/dsh-pocket/"
   },
@@ -1656,6 +1825,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 7450,
+    "stars_label": "7450",
     "flag": "社区项目；纯外观，不影响模型能力；视频/场景壁纸可能占用一定渲染资源",
     "url": "/plugins/dsh-wallpaper-engine/"
   },
@@ -1679,6 +1850,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 22,
+    "stars_label": "22",
     "flag": "社区项目；依赖本地 OpenViking 服务（默认 localhost:1933），不是装了就能用；Node ^22.19.0 || >=24，DSH >=0.1.7-rc.2",
     "url": "/plugins/dsh-openviking/"
   },
@@ -1701,6 +1874,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 14,
+    "stars_label": "14",
     "flag": "社区项目；README 仅给出本地路径与 pnpm 开发安装示例，未提供已发布 npm 包名，本站 install 按官方仓库的 git 形式写",
     "url": "/plugins/dsh-wechat-article/"
   },
@@ -1722,6 +1897,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 7,
+    "stars_label": "7",
     "flag": "社区项目；数据存本地工作区，注意备份",
     "url": "/plugins/dsh-novel/"
   },
@@ -1743,6 +1920,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 15,
+    "stars_label": "15",
     "flag": "社区项目（MIT）；依赖使用者持续点选来积累偏好",
     "url": "/plugins/dsh-novel-craft/"
   },
@@ -1765,6 +1944,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 3,
+    "stars_label": "3",
     "flag": "社区项目；需 Node.js 22+ 的 DSH Web profile；检索走公开 API，注意网络可达性",
     "url": "/plugins/dsh-plugin-academic-paper/"
   },
@@ -1786,6 +1967,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 32,
+    "stars_label": "32",
     "flag": "社区项目；npm 未发布（@dsh-external/dsh-deep-research 查不到），须从 git 安装；研究能力依赖 web_search/web_fetch 工具",
     "url": "/plugins/dsh-deep-research/"
   },
@@ -1807,6 +1990,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 4,
+    "stars_label": "4",
     "flag": "社区项目；要求 DSH 0.2.2+、Windows 10/11；会在工作目录改文件跑命令，建议在空目录或独立项目目录使用",
     "url": "/plugins/dsh-dev-mode/"
   },
@@ -1829,6 +2014,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 796,
+    "stars_label": "796",
     "flag": "社区项目；仅 Windows；能真实操作桌面与键鼠，涉及账号/付款操作请全程留意并按需用 Esc 停止",
     "url": "/plugins/dsh-computer-use-win/"
   },
@@ -1850,6 +2037,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 0,
+    "stars_label": "0",
     "flag": "社区项目；npm 未发布（registry 404），按 git 安装；判定的是「是否真插件」，不是仓库质量",
     "url": "/plugins/dsh-topic-audit/"
   },
@@ -1872,6 +2061,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 0,
+    "stars_label": "0",
     "flag": "社区 skill（非 Cordis bundle）；走 skill 文件系统 provider 加载，不是 dsh plugin add；npm 全局安装后用附带链接器装到 ~/.dsh/skills/zh-distribute",
     "url": "/plugins/dsh-skill-zh-distribute/"
   },
@@ -1893,6 +2084,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 3,
+    "stars_label": "3",
     "flag": "社区项目；语音识别走浏览器自带服务（Edge→Azure / Chrome→Google），音频会发给对应浏览器语音服务；npm 安装免 allowBuilds",
     "url": "/plugins/dsh-mic-input/"
   },
@@ -1914,6 +2107,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 0,
+    "stars_label": "0",
     "flag": "社区项目；会在工作目录反复修改文件，务必在独立目录/有基线保护下使用；安装按 README 固定 v1.0.11 标签",
     "url": "/plugins/dsh-autoresearch/"
   },
@@ -1935,6 +2130,8 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 87,
+    "stars_label": "87",
     "flag": "社区项目；需 Web profile 与 pnpm；依赖 spillStore（标准部署自带，缺失时压缩默认关闭）；装后需重启 dsh",
     "url": "/plugins/dsh-plugin-save-token/"
   },
@@ -1956,7 +2153,77 @@
     ],
     "status_label": "社区",
     "repo_confirmed": true,
+    "stars": 212,
+    "stars_label": "212",
     "flag": "社区项目；仅适配 DeepSeek V4.1 Flash 与 DSH 0.2.1-rc.5~0.2.2 区间；三项运行时改动对整个 profile 生效（PTC 覆盖 / glob-grep 并发标记 / 旧 id 解析），需按需用环境变量关闭；装 0.3.1 别装 0.2.5",
     "url": "/plugins/dsh-flash-presets/"
+  },
+  {
+    "id": "dsh-git-graph",
+    "name": "dsh-git-graph",
+    "aliases": [
+      "Git 面板",
+      "git-graph",
+      "enoughpower"
+    ],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "在会话区加一个「Git」页签，把分支栏、提交图、变更文件与差异视图放在同一面板，绑定当前会话的工作目录；不只是看图，还能切分支、暂存、提交、推送与拉取。",
+    "tags": [
+      "Git",
+      "界面增强",
+      "开发工具"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 7,
+    "stars_label": "7",
+    "flag": "会真的改动仓库，不是只读看板",
+    "url": "/plugins/dsh-git-graph/"
+  },
+  {
+    "id": "dsh-git-graph-readonly",
+    "name": "dsh-git-graph（只读版）",
+    "aliases": [
+      "WhitePlusMS",
+      "只读 Git 图"
+    ],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "DSH Web 原生右侧栏里的只读 Git 可视化：浏览提交拓扑、分支、标签、文件改动与历史版本源码，不需要 API Key，也不往会话里塞消息。刻意只读——不 stage、不 commit、不 push。",
+    "tags": [
+      "Git",
+      "只读",
+      "界面增强"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 6,
+    "stars_label": "6",
+    "flag": "与 npm 上的 dsh-git-graph 是两个不同项目",
+    "url": "/plugins/dsh-git-graph-readonly/"
+  },
+  {
+    "id": "dsh-free-search",
+    "name": "dsh-free-search",
+    "aliases": [
+      "免费搜索",
+      "free-search",
+      "多引擎搜索"
+    ],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "给 DSH 接一批免 Key 的搜索 provider，替换默认那条要走 DeepSeek 官方 Key、用第三方模型也会隐形扣费的搜索通道；多引擎可切换、失败自动回退，还顺带接管网页抓取。",
+    "tags": [
+      "搜索",
+      "免费",
+      "多引擎"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 1404,
+    "stars_label": "1404",
+    "flag": "有 free 字样不代表每个后端都永久免费",
+    "url": "/plugins/dsh-free-search/"
   }
 ]

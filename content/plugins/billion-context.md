@@ -8,7 +8,7 @@ tags: &id001
 - 长会话
 - 省token
 - 跨客户端
-weight: 1020
+weight: 1030
 params:
   plugin:
     id: billion-context
@@ -32,9 +32,21 @@ params:
     flag: 通用代理型工具，非 DSH 专属；native 插件与 standalone 扩展不可同时启用，否则会重复压缩
     notes: 仓库 ranxianglei/billion-context（master 分支），npm 包 billion-context，README 标 v0.1.208 附近（文章写 0.1.208，npm 实时版本以 registry 为准）。它不是纯 DSH 插件：架在任意编程助手与模型 API 之间重写 Anthropic/OpenAI 流，DSH 只是其支持客户端之一，本站按「可在 DSH 安装使用」收录。全局 CLI 安装为 `npm install -g billion-context --prefix=~/.local`（bili 命令落在 ~/.local/bin）；DSH 专用安装见上。native 插件（bili plugin install）与 standalone 扩展（billion-context-pi 等）互斥，同时开会双重压缩，安装器会自动切换并备份原配置到 .bili-bak。文章（wx-huxiaomo）的「省 5 倍 token / 下载 175 万」为文章与安装界面口径，本站不采信为独立结论。
     repo_confirmed: true
+    gh:
+      stars: 7861
+      forks: 636
+      issues: 1331
+      language: TypeScript
+      license: NOASSERTION
+      pushed_at: '2026-11-19T01:34:43Z'
+      archived: false
+      slug: ranxianglei/billion-context
+      stars_label: '7861'
+      forks_label: '636'
+      pushed_date: '2026-11-19'
     category_label: 协作与工作流
     status_label: 社区
-    weight: 1020
+    weight: 1030
     url: /plugins/billion-context/
   generated: true
 ---

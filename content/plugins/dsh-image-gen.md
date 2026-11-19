@@ -31,6 +31,18 @@ params:
     flag: 社区项目（Apache-2.0，非 DeepSeek 官方）；生图走第三方后端，注意各 Provider 的内容政策与费用
     notes: 仓库 shanliuling/dsh-image-gen，npm 包 dsh-image-gen，README 标 v0.11.3（npm registry 实时版本，文章只写 @latest）。README 安装命令带 pnpm 前缀（pnpm dsh plugin ...），本站 install 用等价的无前缀写法；从源码装可用 `dsh plugin --profile web add git+https://github.com/shanliuling/dsh-image-gen.git`。生图为 BYOK 模式，支持订阅账号登录复用额度。文章（wx-shixiang）称「500+ Prompt 灵感库、多模型对比、订阅免 Key」，与 README 一致。
     repo_confirmed: true
+    gh:
+      stars: 1624
+      forks: 138
+      issues: 9
+      language: TypeScript
+      license: Apache-2.0
+      pushed_at: '2026-11-18T10:01:37Z'
+      archived: false
+      slug: shanliuling/dsh-image-gen
+      stars_label: '1624'
+      forks_label: '138'
+      pushed_date: '2026-11-18'
     category_label: 视觉与设计
     status_label: 社区
     weight: 1010

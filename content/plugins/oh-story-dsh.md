@@ -32,6 +32,18 @@ params:
     tags: *id001
     notes: README 示例安装固定 @oh-story/dsh@0.1.23 与 dsh@0.2.1-rc.5；社区插件，与 DeepSeek 无隶属关系。
     repo_confirmed: true
+    gh:
+      stars: 788
+      forks: 113
+      issues: 12
+      language: Python
+      license: MIT
+      pushed_at: '2026-11-17T18:56:42Z'
+      archived: false
+      slug: zenstory-ai/oh-story-dsh
+      stars_label: '788'
+      forks_label: '113'
+      pushed_date: '2026-11-17'
     category_label: 内容创作与办公
     status_label: 社区
     weight: 1010

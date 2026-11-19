@@ -26,6 +26,18 @@ params:
     flag: 社区项目，非官方；当前适配 dsh 0.2.0-rc.2，需 Web profile，不再兼容 0.1.x 客户端运行时
     notes: README 提示：需 Web profile（如内置 web profile），适配 dsh 0.2.0-rc.2；使用新版 dsh.client 声明与 dsh-client-ui-renderer 插槽，升级 dsh 后应重新做兼容性检查。
     repo_confirmed: true
+    gh:
+      stars: 32
+      forks: 2
+      issues: 4
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-10-03T15:03:59Z'
+      archived: false
+      slug: omdsh-dev/dsh-gomoku
+      stars_label: '32'
+      forks_label: '2'
+      pushed_date: '2026-10-03'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1010

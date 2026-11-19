@@ -26,6 +26,18 @@ params:
     flag: 社区项目，非官方（PerryLink 维护，Apache-2.0）
     notes: README 声明：社区插件，与 DeepSeek 官方无关；唯一仓库为 github.com/PerryLink/dsh-claude-move（Gitee 为镜像）。导入仅读取源目录、不改动 Claude 源数据。
     repo_confirmed: true
+    gh:
+      stars: 33
+      forks: 3
+      issues: 0
+      language: JavaScript
+      license: Apache-2.0
+      pushed_at: '2026-11-18T15:55:27Z'
+      archived: false
+      slug: PerryLink/dsh-claude-move
+      stars_label: '33'
+      forks_label: '3'
+      pushed_date: '2026-11-18'
     category_label: 集成与迁移
     status_label: 社区
     weight: 1010

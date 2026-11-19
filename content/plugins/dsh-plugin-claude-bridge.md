@@ -26,6 +26,18 @@ params:
     flag: 社区项目，非官方
     notes: 桥接只读取 Claude Code 文件、不回写；需先在 Claude Code 中生成过 memory/skills/CLAUDE.md 才能生效。仓库 README 注明 MIT 许可。
     repo_confirmed: true
+    gh:
+      stars: 8
+      forks: 3
+      issues: 3
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-08-14T07:48:33Z'
+      archived: false
+      slug: YYTbit/dsh-plugin-claude-bridge
+      stars_label: '8'
+      forks_label: '3'
+      pushed_date: '2026-08-14'
     category_label: 集成与迁移
     status_label: 社区
     weight: 1010

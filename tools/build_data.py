@@ -139,6 +139,35 @@ def main():
         sys.exit(1)
 
     # ── 派生字段 ────────────────────────────────────────────────
+    # GitHub 仓库数据（star / fork / 最后更新）：由 tools/fetch_repo_stats.py 抓取，
+    # 缓存进 data/repo_stats.json。没抓到就是 None，页面上按「暂无」处理，不编造。
+    repo_stats, repo_stats_at = {}, ""
+    stats_path = DATA / "repo_stats.json"
+    if stats_path.exists():
+        try:
+            _rs = json.loads(stats_path.read_text(encoding="utf-8"))
+            repo_stats = _rs.get("repos", {}) or {}
+            repo_stats_at = _rs.get("generated_at", "")
+        except Exception as exc:
+            print(f"⚠ data/repo_stats.json 解析失败，跳过 GitHub 数据：{exc}", file=sys.stderr)
+
+    GH_KEYS = ("stars", "forks", "issues", "language", "license", "pushed_at", "archived")
+
+    def human(n):
+        """星标 / Fork 缩写：上万才用 k（12.9k），一万以下给原数，比「1k」诚实。"""
+        if n is None:
+            return None
+        if n >= 10000:
+            return f"{n / 1000:.1f}k"
+        return str(n)
+
+    def _median(nums):
+        vals = sorted(nums)
+        if not vals:
+            return None
+        mid = len(vals) // 2
+        return vals[mid] if len(vals) % 2 else round((vals[mid - 1] + vals[mid]) / 2)
+
     total_refs = 0
     for p in plugins:
         # 参考来源（发现来源）：优先 refs，否则从旧 mentions 的 source 推导
@@ -160,6 +189,21 @@ def main():
 
         p["source_count"] = len(seen)
         p["repo_confirmed"] = bool(p.get("repo"))
+
+        # GitHub 公开数据：只留展示需要的字段，别把整包元数据塞进 HTML
+        slug = ""
+        repo = p.get("repo") or ""
+        if repo.startswith("https://github.com/"):
+            slug = "/".join(repo[len("https://github.com/"):].strip("/").split("/")[:2])
+        raw = repo_stats.get(slug) or {}
+        gh = {k: raw.get(k) for k in GH_KEYS if raw.get(k) is not None}
+        if gh:
+            gh["slug"] = slug
+            gh["stars_label"] = human(gh.get("stars"))
+            gh["forks_label"] = human(gh.get("forks"))
+            if gh.get("pushed_at"):
+                gh["pushed_date"] = gh["pushed_at"][:10]
+        p["gh"] = gh or None
         p["category_label"] = cat_map[p["category"]]
         p["status_label"] = STATUS_LABEL[p["status"]]
         # 已确认官方仓库的排前面，其次参考文章多的排前面
@@ -213,6 +257,8 @@ def main():
             "tags": p.get("tags") or [],
             "status_label": p["status_label"],
             "repo_confirmed": p["repo_confirmed"],
+            "stars": (p["gh"] or {}).get("stars"),
+            "stars_label": (p["gh"] or {}).get("stars_label"),
             "flag": p.get("flag", ""),
             "url": p["url"],
         }
@@ -231,6 +277,18 @@ def main():
             "plugins": len(plugins),
             "repos_confirmed": sum(1 for p in plugins if p["repo_confirmed"]),
             "categories": len(categories),
+            # 星标只做「中位数」不做合计：合计会被 DSH 本体仓库（28 万星）和几个大项目拉偏，
+            # 中位数才代表「典型插件大概多少星」，也不会误导成插件生态总量。
+            "stars_median": _median(
+                [p["gh"]["stars"] for p in plugins if p["gh"] and p["gh"].get("stars") is not None]
+            ),
+            "stars_median_label": human(
+                _median(
+                    [p["gh"]["stars"] for p in plugins if p["gh"] and p["gh"].get("stars") is not None]
+                )
+            ),
+            "gh_synced": sum(1 for p in plugins if p["gh"]),
+            "gh_synced_at": repo_stats_at,
         },
         "categories": [
             {

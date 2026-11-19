@@ -31,6 +31,18 @@ params:
     tags: *id001
     notes: 社区项目（MIT，非 DeepSeek 官方），作者为小红书博主「蜗牛的科技笔记」。需 DSH 0.2.x；包已发 npm（dsh-media-desk），也可从 Releases 下载 tgz 离线装。桌面版与网页版命令分别是 --profile desktop 与 web。文章（wx-feishu）称其「记灵感、写脚本、做封面、设计分镜、复盘」的工作台，与 README 一致。
     repo_confirmed: true
+    gh:
+      stars: 1532
+      forks: 179
+      issues: 6
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-18T14:29:36Z'
+      archived: false
+      slug: woniuniuniu/dsh-media-desk
+      stars_label: '1532'
+      forks_label: '179'
+      pushed_date: '2026-11-18'
     category_label: 内容创作与办公
     status_label: 社区
     weight: 1010

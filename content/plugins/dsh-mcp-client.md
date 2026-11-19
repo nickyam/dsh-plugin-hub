@@ -27,6 +27,18 @@ params:
     flag: 官方包，只桥接 Tools（resources / prompts 不支持）
     notes: 源码位于官方 deepseek-harness 单体仓的 packages/mcp/mcp-client；所有 MCP server 默认不启用，且启动命令是沙箱外的可执行代码，请只接可信服务器。MCP resources 与 prompts 当前不被桥接。
     repo_confirmed: true
+    gh:
+      stars: 283640
+      forks: 35193
+      issues: 0
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-18T12:48:10Z'
+      archived: false
+      slug: deepseek-ai/deepseek-harness
+      stars_label: 283.6k
+      forks_label: 35.2k
+      pushed_date: '2026-11-18'
     category_label: 集成与迁移
     status_label: 官方
     weight: 1010

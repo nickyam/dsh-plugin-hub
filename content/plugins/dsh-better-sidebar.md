@@ -7,7 +7,7 @@ tags: &id001
 - 侧边栏
 - Git
 - 效率
-weight: 1050
+weight: 1060
 params:
   plugin:
     id: dsh-better-sidebar
@@ -29,9 +29,21 @@ params:
     flag: 需按 DSH 版本选对应插件版本
     notes: 安装前硬刷新浏览器（Cmd/Ctrl+Shift+R）。注意版本匹配：DSH 0.2.2-rc.1+ 用 @0.30.1；0.2.1 线（含当前 latest）需钉 @0.28.2；更老的 host 见 README 版本对照表——装错版本会触发版本拒绝错误。
     repo_confirmed: true
+    gh:
+      stars: 5231
+      forks: 507
+      issues: 213
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-18T08:56:37Z'
+      archived: false
+      slug: omdsh-dev/DSH-better-sidebar
+      stars_label: '5231'
+      forks_label: '507'
+      pushed_date: '2026-11-18'
     category_label: 界面与体验
     status_label: 社区
-    weight: 1050
+    weight: 1060
     url: /plugins/dsh-better-sidebar/
   generated: true
 ---

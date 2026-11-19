@@ -9,7 +9,10 @@
       <span class="badge badge-ghost">仓库待确认</span>
     {{ end }}
   </div>
-  <h3><a href="{{ .RelPermalink }}">{{ $p.name }}</a></h3>
+  <div class="card-head">
+    <h3><a href="{{ .RelPermalink }}">{{ $p.name }}</a></h3>
+    {{ with $p.gh }}{{ with .stars_label }}<span class="card-gh" title="GitHub 仓库星标数"><span aria-hidden="true">★</span> {{ . }}</span>{{ end }}{{ end }}
+  </div>
   {{ with $p.aliases }}<p class="aliases">也叫 {{ delimit . "、" }}</p>{{ end }}
   <p class="card-summary">{{ $p.summary }}</p>
   <div class="card-foot">

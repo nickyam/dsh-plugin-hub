@@ -32,6 +32,18 @@ params:
     flag: 包名 @linxin666/dsh-web-all，仓库是 zhu1090093659/dsh-web 单体仓
     notes: 官方仓库是 zhu1090093659/dsh-web 单体仓，npm 包发布在 @linxin666 名下；安装后需重启 dsh web 才出现侧栏图标。也可直接 `dsh plugin --profile web add github:zhu1090093659/dsh-web` 从仓库装。子插件独立发包，只想用部分功能可单独安装对应 @linxin666/dsh-* 包。
     repo_confirmed: true
+    gh:
+      stars: 10515
+      forks: 640
+      issues: 0
+      language: TypeScript
+      license: Apache-2.0
+      pushed_at: '2026-11-18T13:49:58Z'
+      archived: false
+      slug: zhu1090093659/dsh-web
+      stars_label: 10.5k
+      forks_label: '640'
+      pushed_date: '2026-11-18'
     category_label: 界面与体验
     status_label: 社区
     weight: 1020

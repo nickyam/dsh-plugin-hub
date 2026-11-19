@@ -25,6 +25,18 @@ params:
     tags: *id001
     notes: 官方唯一的发现机制是 GitHub topic dsh-plugin，第三方目录站均非官方。
     repo_confirmed: true
+    gh:
+      stars: 237
+      forks: 14
+      issues: 34
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-09-25T14:58:33Z'
+      archived: false
+      slug: awesome-dsh-plugin/dsh-find-plugin
+      stars_label: '237'
+      forks_label: '14'
+      pushed_date: '2026-09-25'
     category_label: 插件市场与发现
     status_label: 社区
     weight: 1020

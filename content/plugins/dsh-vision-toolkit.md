@@ -28,6 +28,18 @@ params:
     flag: 视觉能力打包自上游 agent-vision-toolkit
     notes: README 注明其视觉能力来自打包固定的上游项目 agent-vision-toolkit，本仓库负责 DSH 原生集成。另提供 headless / desktop profile 的同形安装命令。
     repo_confirmed: true
+    gh:
+      stars: 946
+      forks: 49
+      issues: 6
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-13T12:53:31Z'
+      archived: false
+      slug: Anionex/dsh-vision-toolkit
+      stars_label: '946'
+      forks_label: '49'
+      pushed_date: '2026-11-13'
     category_label: 视觉与设计
     status_label: 社区
     weight: 1010

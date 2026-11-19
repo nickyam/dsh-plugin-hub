@@ -26,6 +26,18 @@ params:
     tags: *id001
     notes: 深度绑定 DSH 客户端与宿主 API，只能在 DSH 里运行；未开放余额接口的平台如实显示「未开放」，不伪造数字。安装或维护前建议先读仓库 AGENTS.md。
     repo_confirmed: true
+    gh:
+      stars: 23
+      forks: 4
+      issues: 3
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-11T14:45:03Z'
+      archived: false
+      slug: 133563825as-ai/dsh-api-dashboard
+      stars_label: '23'
+      forks_label: '4'
+      pushed_date: '2026-11-11'
     category_label: 模型与计费
     status_label: 社区
     weight: 1010

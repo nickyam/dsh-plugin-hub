@@ -164,3 +164,12 @@
   date_note: "2026-11-09 08:08（江苏）"
   note: "第十五篇公众号，是 10 月 18 日那版「DSH 十大神器」的榜单刷新：口径为 npmjs 官方源 + npmmirror 国内镜像的累计下载合计，截至 2026-11-03，数据来自 dsh.so 的跟踪集合。本站只当发现来源：文中的下载量（billion-context 393.4 万、dsh-market 314.8 万等）、「涨了/掉队」的名次判断，以及「十款里一半是皮肤桌宠、真正提效要看哪四个」的取舍结论，都是文章口径与它的统计切片，不采信、也不进插件卡。十个条目里九个此前已收录，本条只补发现线索。第 5 名 dsh-skins（原文称原名 dsh-client-ui-skin-center）未收：npm 上的裸包 dsh-skins 为 loong-feng 维护、只有一个 0.2.0 版本，元数据无 repository 字段、README 与安装步骤（手动复制文件到 profiles 目录 + 改 cordis.patch.yml）也没给任何 GitHub 地址；GitHub 上同名仓库分属不同作者（leo-aba/dsh-skins、Moeblack/dsh-skins、zhu1090093659/dsh-web-ui 的 packages/dsh-skins），内容与该包「ACG 主题族 + 3 套皮肤 + 字体页签」的描述并不对应，按「查不到可信仓库就不建条目」未收。掉出前十的五个（dsh-client-ui-task-board / dsh-remote-web-ui / dsh-client-ui-git-graph / dsh-client-ui-skill-explorer / dsh-ssh）本身是客户端 UI 与远程连接类官方包，文章自己也在提示「官方能力收敛、同类被整合」，本站不因此增删条目。"
   tags: [公众号, 榜单刷新, npm下载量]
+
+- id: wx-xiaocheng
+  title: "DSH 社区 7 个优选插件"
+  kind: wechat
+  publisher: "小成同学（公众号：小成同学的Ai日记）"
+  url: "https://mp.weixin.qq.com/s/1UeGrON_B_z00HVYSZUmxg"
+  date_note: "2026-10-26 13:28（广东）"
+  note: "第十六篇。这篇的特点是逐条复核官方 README 与安装口径，尽量不照抄宣传话术：明确区分 dsh-git-graph 的两个同名项目（npm 上的 enoughpower 版可写、WhitePlusMS 的 Release 版只读），指出 npm 包全名是 @michengai/dsh-codex-ui、漏掉作用域会装不上，也点出 dsh-better-sidebar 的宿主版本对表（v0.28.0 要 DSH 0.2.1-rc.1+，0.2.0-rc.2 用 0.26.1）。文中「7 个搜索引擎」「少用 5 倍 Token」「177 万下载」「搜索永不失败」等宣传口径均不采信；「7 个」与 dsh-free-search 当前 README 的 42 个引擎不符，按 README 写。文中 7 条里 5 条此前已收录，新增 3 条：enoughpower/dsh-git-graph、WhitePlusMS/dsh-git-graph、DDDMUC/dsh-free-search。"
+  tags: [公众号, 优选清单, 逐条复核]

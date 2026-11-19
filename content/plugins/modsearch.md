@@ -27,6 +27,18 @@ params:
     tags: *id001
     notes: 官方自带网页搜索属开箱即用能力，不在收录范围。桌面端在 Plugins → Add plugin 输入 @liustack/modsearch。Key 存于 ~/.modsearch/config.json（权限 0600，显示时脱敏）。
     repo_confirmed: true
+    gh:
+      stars: 1017
+      forks: 42
+      issues: 1
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-15T14:28:49Z'
+      archived: false
+      slug: liustack/modsearch
+      stars_label: '1017'
+      forks_label: '42'
+      pushed_date: '2026-11-15'
     category_label: 工具与能力
     status_label: 社区
     weight: 1020

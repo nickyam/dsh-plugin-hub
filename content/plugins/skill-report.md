@@ -25,6 +25,18 @@ params:
     tags: *id001
     notes: 本条目对应仓库 dsh-echocat-skill-panel（依 README 整理；原文章仅以「技能调用报告」中文名提及）。README 提醒装完需重启 DSH Desktop Beta——host 半端在 boot 时快照进内存。
     repo_confirmed: true
+    gh:
+      stars: 8
+      forks: 0
+      issues: 1
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-09-24T10:38:21Z'
+      archived: false
+      slug: VDERR/dsh-echocat-skill-panel
+      stars_label: '8'
+      forks_label: '0'
+      pushed_date: '2026-09-24'
     category_label: 工具与能力
     status_label: 社区
     weight: 1010

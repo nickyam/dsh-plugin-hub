@@ -27,6 +27,18 @@ params:
     flag: 数据 / 目录类项目，非可安装插件
     notes: 雷达站点数据在构建期打包；公开 JSON 暂时不可用通常不影响已部署的浏览。生产运行级测试引擎未开源。项目声明为社区项目，与 DeepSeek 官方无隶属关系。
     repo_confirmed: true
+    gh:
+      stars: 1508
+      forks: 201
+      issues: 41
+      language: Python
+      license: MIT
+      pushed_at: '2026-11-19T00:32:36Z'
+      archived: false
+      slug: AdamPlatin123/dsh-plugin-radar
+      stars_label: '1508'
+      forks_label: '201'
+      pushed_date: '2026-11-19'
     category_label: 插件市场与发现
     status_label: 社区
     weight: 1010

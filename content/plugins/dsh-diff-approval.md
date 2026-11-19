@@ -27,6 +27,18 @@ params:
     tags: *id001
     notes: 纯前端审查，不修改你的文件；待处理状态存于 <dshHome>/diff-approval/workspaces/ 并跨重启保留。从 GitHub 源码安装可能需按提示配置 allowBuilds 构建授权。
     repo_confirmed: true
+    gh:
+      stars: 16
+      forks: 3
+      issues: 4
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-12T16:36:43Z'
+      archived: false
+      slug: 9087/dsh-diff-approval
+      stars_label: '16'
+      forks_label: '3'
+      pushed_date: '2026-11-12'
     category_label: 协作与工作流
     status_label: 社区
     weight: 1010

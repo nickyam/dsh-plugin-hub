@@ -31,6 +31,18 @@ params:
     flag: 社区项目；仅适配 DeepSeek V4.1 Flash 与 DSH 0.2.1-rc.5~0.2.2 区间；三项运行时改动对整个 profile 生效（PTC 覆盖 / glob-grep 并发标记 / 旧 id 解析），需按需用环境变量关闭；装 0.3.1 别装 0.2.5
     notes: 仓库 LarryE135/dsh-flash-presets（GitHub 搜索「flash-presets deepseek」精确命中、★ 最高），npm 包 dsh-flash-presets（registry 200，README 载 latest=0.3.1）。README 说明仓库内版本 0.3.2（2026-11-16）尚未发 npm/Release，故 install 固定到已发布的 0.3.1，避免装到有问题的 0.2.5。文章（wx-jiaweisi）实测省 23%、把浏览器检查次数从 30 降到 17，属作者单次口径，本站不采信数字，只按其「管住停手」的机制描述写功能。
     repo_confirmed: true
+    gh:
+      stars: 212
+      forks: 14
+      issues: 1
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-18T14:22:04Z'
+      archived: false
+      slug: LarryE135/dsh-flash-presets
+      stars_label: '212'
+      forks_label: '14'
+      pushed_date: '2026-11-18'
     category_label: 模型与计费
     status_label: 社区
     weight: 1010

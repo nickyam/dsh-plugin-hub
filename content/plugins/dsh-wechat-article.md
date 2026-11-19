@@ -30,6 +30,18 @@ params:
     flag: 社区项目；README 仅给出本地路径与 pnpm 开发安装示例，未提供已发布 npm 包名，本站 install 按官方仓库的 git 形式写
     notes: 仓库 aiworkskills/dsh-wechat-article（README 标题写 aws-wechat-article），npm 上 dsh-wechat-article 与 aws-wechat-article 均查不到已发布包，README 安装的 "$HOME/code/aiworkskills/dsh-plugin" 是作者本地路径，故本站按 git 仓库形式写 install。GitHub 另有 alitrack/dsh-wechat-article 等同名项目，本条取 README 完整、★ 数最高的 aiworkskills 主仓。
     repo_confirmed: true
+    gh:
+      stars: 14
+      forks: 4
+      issues: 3
+      language: TypeScript
+      license: Apache-2.0
+      pushed_at: '2026-09-10T19:05:54Z'
+      archived: false
+      slug: aiworkskills/dsh-wechat-article
+      stars_label: '14'
+      forks_label: '4'
+      pushed_date: '2026-09-10'
     category_label: 内容创作与办公
     status_label: 社区
     weight: 1010

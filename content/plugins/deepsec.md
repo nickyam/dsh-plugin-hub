@@ -27,6 +27,18 @@ params:
     flag: 渗透测试须在授权范围内使用
     notes: README 同时提供 dsh-deepsec-shield 与 dsh-deepsec-spear 两个 DSH 插件封装（位于 dsh-plugins/，包装 DeepSec CLI 为 Agent 工具），但本 README 未给出对应的 dsh plugin add 命令，故 install 留空；核心安装为 pip install -e .，另有 Rust TUI 与 IDE 插件。Spear 渗透以授权白名单为闸门，私有 / 回环地址默认拒绝。
     repo_confirmed: true
+    gh:
+      stars: 518
+      forks: 35
+      issues: 9
+      language: Python
+      license: MIT
+      pushed_at: '2026-08-24T15:04:51Z'
+      archived: false
+      slug: Unclecheng-li/DeepSec
+      stars_label: '518'
+      forks_label: '35'
+      pushed_date: '2026-08-24'
     category_label: 安全与治理
     status_label: 社区
     weight: 1010

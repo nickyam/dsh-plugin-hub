@@ -25,6 +25,18 @@ params:
     flag: 社区项目，非官方；仅针对 dsh-ads，需与 dsh-ads 配合才有意义
     notes: README 提示：L4 广播的「本次关闭」是 dsh-ads 刻意做成不可撤销的，若已广播过，广告层要刷新页面才会回来；拦截器只清理 dsh-ads 自身设置的广告位。
     repo_confirmed: true
+    gh:
+      stars: 10
+      forks: 0
+      issues: 3
+      language: TypeScript
+      license: NOASSERTION
+      pushed_at: '2026-09-01T12:40:36Z'
+      archived: false
+      slug: HuanLinOTO/dsh-plugin-anti-ads
+      stars_label: '10'
+      forks_label: '0'
+      pushed_date: '2026-09-01'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1010

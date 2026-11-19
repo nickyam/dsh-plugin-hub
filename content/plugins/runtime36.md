@@ -12,9 +12,11 @@ params:
   plugin:
     id: runtime36
     name: runtime36
+    aliases:
+    - KRouter
     category: memory
     status: community
-    repo: https://github.com/398894496-arch/runtime36
+    repo: https://github.com/398894496-arch/KRouter
     install: dsh plugin --profile web add github:398894496-arch/runtime36
     summary: 把 Obsidian / Markdown 笔记库作为 Agent 的持久知识库：每日封存与蒸馏，用简短名词精准定位经验页面，让 Agent 跨会话记住已做的决策与沉淀的方法。
     features:
@@ -26,6 +28,18 @@ params:
     tags: *id001
     notes: 上游仓库现已将项目重命名为 KRouter，README 主推通过 bootstrap 脚本安装（而非 dsh plugin add），并强调面向 Claude Code / Codex / Cursor 的 MCP 记忆；核心仍是把 Obsidian/Markdown 笔记库作为 Agent 持久记忆。安装前请先读仓库 README 确认当前 DSH 安装方式。
     repo_confirmed: true
+    gh:
+      stars: 75
+      forks: 8
+      issues: 10
+      language: Python
+      license: MIT
+      pushed_at: '2026-11-16T22:04:50Z'
+      archived: false
+      slug: 398894496-arch/KRouter
+      stars_label: '75'
+      forks_label: '8'
+      pushed_date: '2026-11-16'
     category_label: 记忆与知识
     status_label: 社区
     weight: 1010

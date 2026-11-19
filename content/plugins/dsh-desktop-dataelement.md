@@ -25,6 +25,18 @@ params:
     tags: *id001
     flag: 与 anywhere-labs 版是两个项目
     repo_confirmed: true
+    gh:
+      stars: 19838
+      forks: 678
+      issues: 176
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-18T14:18:02Z'
+      archived: false
+      slug: dataelement/dsh-desktop
+      stars_label: 19.8k
+      forks_label: '678'
+      pushed_date: '2026-11-18'
     category_label: 界面与体验
     status_label: 社区
     weight: 1010

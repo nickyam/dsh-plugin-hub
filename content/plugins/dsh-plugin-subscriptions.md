@@ -27,6 +27,18 @@ params:
     flag: 第三方接入，使用前先看清各服务条款
     notes: 从 GitHub 源码安装写作 dsh plugin --profile web add github:V1ki/dsh-plugin-subscriptions。Claude 若本地有 Claude Code 会话可直接导入凭证，否则走浏览器 OAuth。
     repo_confirmed: true
+    gh:
+      stars: 622
+      forks: 113
+      issues: 31
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-17T09:04:09Z'
+      archived: false
+      slug: V1ki/dsh-plugin-subscriptions
+      stars_label: '622'
+      forks_label: '113'
+      pushed_date: '2026-11-17'
     category_label: 免费模型与接入
     status_label: 社区
     weight: 1010

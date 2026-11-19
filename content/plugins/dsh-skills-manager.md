@@ -31,6 +31,18 @@ params:
     flag: 社区项目（Apache-2.0，非 DeepSeek 官方）
     notes: 仓库 MichengAI/dsh-skills-manager（master 分支），npm 包 @michengai/dsh-skills-manager，README 版本 1.4.11（文章写 1.2.26，以仓库为准）。兼容 DSH 0.2.x 全系列（>=0.2.0-rc.1 <0.3.0-0）；仍用 0.1.x 的须改装 1.1.23，不要装 @latest。装后在「设置 → 技能」使用，需重启 DSH 并刷新页面。支持带路径前缀的反向代理部署（API 按 document.baseURI 相对解析）。与 dsh-client-ui-skill-explorer 功能有重叠，一般装一个即可。
     repo_confirmed: true
+    gh:
+      stars: 582
+      forks: 39
+      issues: 1
+      language: JavaScript
+      license: Apache-2.0
+      pushed_at: '2026-11-18T10:20:11Z'
+      archived: false
+      slug: MichengAI/dsh-skills-manager
+      stars_label: '582'
+      forks_label: '39'
+      pushed_date: '2026-11-18'
     category_label: 工具与能力
     status_label: 社区
     weight: 1030

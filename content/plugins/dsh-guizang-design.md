@@ -30,6 +30,18 @@ params:
     tags: *id001
     notes: 社区项目（作者 op7418，非 DeepSeek 官方）。需 DSH 0.2.1-rc.2 及以上、0.3.0 以下；包名即 dsh-guizang-design，也支持 github:op7418/dsh-guizang-design 指定版本。卡片出图依赖 Playwright Chromium，网页导出 PDF 与长图依赖本机 Chrome。文章（wx-feishu）称其「一篇文章变网页、图文卡片或封面」与此一致。
     repo_confirmed: true
+    gh:
+      stars: 976
+      forks: 54
+      issues: 5
+      language: HTML
+      license: AGPL-3.0
+      pushed_at: '2026-11-05T07:44:48Z'
+      archived: false
+      slug: op7418/dsh-guizang-design
+      stars_label: '976'
+      forks_label: '54'
+      pushed_date: '2026-11-05'
     category_label: 视觉与设计
     status_label: 社区
     weight: 1010

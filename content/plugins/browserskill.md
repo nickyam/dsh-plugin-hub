@@ -28,6 +28,18 @@ params:
     tags: *id001
     notes: 由腾讯维护的社区项目（与 DeepSeek 无隶属关系）；安装前需先装 bsk CLI 与浏览器扩展，并让 bsk 在 DSH 启用的 PATH 上可用。
     repo_confirmed: true
+    gh:
+      stars: 10562
+      forks: 763
+      issues: 93
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-18T13:20:28Z'
+      archived: false
+      slug: Tencent/BrowserSkill
+      stars_label: 10.6k
+      forks_label: '763'
+      pushed_date: '2026-11-18'
     category_label: 工具与能力
     status_label: 社区
     weight: 1010

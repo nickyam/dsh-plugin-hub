@@ -27,6 +27,18 @@ params:
     flag: 加密与中继方式以仓库说明为准
     notes: README 标注当前基线 dsh-v0.2.2-rc.1，Host 端无需公网 IP 或端口转发；Linux 一键安装需登录官网获取授权码。
     repo_confirmed: true
+    gh:
+      stars: 3265
+      forks: 244
+      issues: 60
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-19T01:18:39Z'
+      archived: false
+      slug: liguobao/ds-harness-remote
+      stars_label: '3265'
+      forks_label: '244'
+      pushed_date: '2026-11-19'
     category_label: 移动端与远程
     status_label: 社区
     weight: 1010

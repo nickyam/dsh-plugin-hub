@@ -27,6 +27,18 @@ params:
     flag: 社区项目，非官方
     notes: DSH-X 启动的是 DSH 官方原版 Web 页面，只做版本安装 / 启动 / 插件管理，不修改 DSH 网页界面；与 DSH Desktop（anywhere-labs / dataelement / Tauri 版）是不同项目，注意区分。安装包从 Releases 下载，非 dsh plugin add 路径。
     repo_confirmed: true
+    gh:
+      stars: 784
+      forks: 26
+      issues: 5
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-18T09:25:43Z'
+      archived: false
+      slug: yyh-001/DSH-X
+      stars_label: '784'
+      forks_label: '26'
+      pushed_date: '2026-11-18'
     category_label: 界面与体验
     status_label: 社区
     weight: 1010

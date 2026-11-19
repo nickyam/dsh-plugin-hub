@@ -25,6 +25,18 @@ params:
     tags: *id001
     notes: 本插件只经 git 分发，不发布到 npm；桌面端请在应用内「插件 → 添加插件」填同一地址。装完后刷新页面即可（仅改动 host 半端时才需重启 dsh web / 桌面应用）。
     repo_confirmed: true
+    gh:
+      stars: 6
+      forks: 0
+      issues: 0
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-13T14:18:15Z'
+      archived: false
+      slug: suiyideali/dsh-selection-toolbar
+      stars_label: '6'
+      forks_label: '0'
+      pushed_date: '2026-11-13'
     category_label: 界面与体验
     status_label: 原文未说明
     weight: 1010

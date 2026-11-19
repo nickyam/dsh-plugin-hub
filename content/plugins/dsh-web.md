@@ -28,6 +28,18 @@ params:
     flag: 与 dsh-web-all 为同一官方聚合仓（zhu1090093659/dsh-web）；本卡按 README 整理，二者可合并
     notes: 仓库即「Web 全家桶」单体仓，npm 聚合包发布在 @linxin666/dsh-web-all 名下；「创意工坊」(dsh-market.com) 是其组件之一。也可从仓库直接装：dsh plugin --profile web add github:zhu1090093659/dsh-web。
     repo_confirmed: true
+    gh:
+      stars: 10515
+      forks: 640
+      issues: 0
+      language: TypeScript
+      license: Apache-2.0
+      pushed_at: '2026-11-18T13:49:58Z'
+      archived: false
+      slug: zhu1090093659/dsh-web
+      stars_label: 10.5k
+      forks_label: '640'
+      pushed_date: '2026-11-18'
     category_label: 插件市场与发现
     status_label: 社区
     weight: 1030

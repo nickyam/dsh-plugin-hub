@@ -33,6 +33,18 @@ params:
     flag: 社区项目；依赖本地 OpenViking 服务（默认 localhost:1933），不是装了就能用；Node ^22.19.0 || >=24，DSH >=0.1.7-rc.2
     notes: 仓库 Rxiain/dsh-openviking，底层对接火山引擎开源的 OpenViking（github.com/volcengine/OpenViking），本插件是 DSH 侧对接层；GitHub 上另有 dsh-openviking-expand / dsh-memory-openviking 等近似项目，本条取 README 完整、★ 数最高的 Rxiain 主仓。文章把它描述为「用户画像」，README 里对应 user 空间记忆 + 自动召回，本站按 README 写。
     repo_confirmed: true
+    gh:
+      stars: 22
+      forks: 4
+      issues: 1
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-09-29T14:14:43Z'
+      archived: false
+      slug: Rxiain/dsh-openviking
+      stars_label: '22'
+      forks_label: '4'
+      pushed_date: '2026-09-29'
     category_label: 记忆与知识
     status_label: 社区
     weight: 1010

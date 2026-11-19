@@ -27,6 +27,18 @@ params:
     flag: 社区项目，非官方；注意 DSH 版本→插件版本对应关系，装错会崩
     notes: README 提示：DSH 版本决定装哪个插件版本（0.1.2-alpha.1 ~ 0.2.1-alpha.1 用新版）；pnpm 11 可能拦截 node-pty 等构建脚本，需在 ~/.dsh/profiles/web 下 pnpm approve-builds --all 后重装并硬刷新浏览器。
     repo_confirmed: true
+    gh:
+      stars: 48
+      forks: 1
+      issues: 1
+      language: TypeScript
+      license: BSD-3-Clause
+      pushed_at: '2026-11-18T15:48:51Z'
+      archived: false
+      slug: lhh010/dsh-ui-whale
+      stars_label: '48'
+      forks_label: '1'
+      pushed_date: '2026-11-18'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1010

@@ -31,6 +31,18 @@ params:
     flag: 社区项目（BSD-3-Clause，非 DeepSeek 官方）；与 dsh-skills-manager 功能重叠
     notes: 官方仓库是 zhu1090093659/dsh-web 单体仓 dev 分支下的 packages/dsh-skill-explorer 子包，npm 包发布在 @linxin666 名下（@linxin666/dsh-client-ui-skill-explorer），和 dsh-web-all 同源。README 标 DSH >=0.2.2-rc.3。注意 npm repository 字段只写了单体仓根地址，实际源码在 packages/dsh-skill-explorer。文章（wx-top10-30d）把它与第 6 名技能管理器并列并称「功能有重叠，装一个就够」，与 README 定位一致。
     repo_confirmed: true
+    gh:
+      stars: 10515
+      forks: 640
+      issues: 0
+      language: TypeScript
+      license: Apache-2.0
+      pushed_at: '2026-11-18T13:49:58Z'
+      archived: false
+      slug: zhu1090093659/dsh-web
+      stars_label: 10.5k
+      forks_label: '640'
+      pushed_date: '2026-11-18'
     category_label: 工具与能力
     status_label: 社区
     weight: 1010

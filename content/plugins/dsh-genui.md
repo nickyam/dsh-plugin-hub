@@ -25,6 +25,18 @@ params:
     tags: *id001
     notes: npm 包名现为 @changfenhuang/dsh-genui，旧包 @omdsh-dev/dsh-genui 已弃用，需先移除再重装新包。
     repo_confirmed: true
+    gh:
+      stars: 1024
+      forks: 101
+      issues: 10
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-18T10:45:24Z'
+      archived: false
+      slug: omdsh-dev/dsh-genui
+      stars_label: '1024'
+      forks_label: '101'
+      pushed_date: '2026-11-18'
     category_label: 界面与体验
     status_label: 社区
     weight: 1020

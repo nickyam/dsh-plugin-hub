@@ -28,6 +28,18 @@ params:
     tags: *id001
     notes: 走腾讯 iLink 机器人通道（ilinkai.weixin.qq.com），协议层基于 @tencent-weixin/openclaw-weixin（MIT）并改写为 DSH 原生。社区另有多个微信桥接实现（panqing0313/dsh-plugin-weixin、gnulife/dsh-plugin-wechat、zgat/dsh-wechat 等），本条目以 dAI-aigc/dsh-wechat 为准。装好后需重启 dsh web 生效。
     repo_confirmed: true
+    gh:
+      stars: 0
+      forks: 0
+      issues: 0
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-09-17T03:14:11Z'
+      archived: false
+      slug: dAI-aigc/dsh-wechat
+      stars_label: '0'
+      forks_label: '0'
+      pushed_date: '2026-09-17'
     category_label: 集成与迁移
     status_label: 社区
     weight: 1010

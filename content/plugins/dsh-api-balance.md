@@ -26,6 +26,18 @@ params:
     flag: 存在多个同名社区实现，本条目以 Muzi1015 版（npm 包 dsh-api-balance-plugin）为准
     notes: 另有 Kihara777/dsh-api-balance（仅 GitHub 源码安装、无 npm 包，作者说明因视力障碍暂未发布 npm）等同类轻量实现；本条目以 Muzi1015 版为准。
     repo_confirmed: true
+    gh:
+      stars: 0
+      forks: 0
+      issues: 0
+      language: JavaScript
+      license: Unlicense
+      pushed_at: '2026-10-22T01:19:20Z'
+      archived: false
+      slug: Muzi1015/dsh-api-balance
+      stars_label: '0'
+      forks_label: '0'
+      pushed_date: '2026-10-22'
     category_label: 模型与计费
     status_label: 社区
     weight: 1010

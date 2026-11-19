@@ -27,6 +27,18 @@ params:
     tags: *id001
     notes: DSH 插件包为 @agentscope-ai/reme-dsh-plugin；核心记忆服务通过 `pip install reme-ai` 安装后 `reme start` 启动（默认 127.0.0.1:2333）。
     repo_confirmed: true
+    gh:
+      stars: 3820
+      forks: 355
+      issues: 54
+      language: Python
+      license: Apache-2.0
+      pushed_at: '2026-11-18T17:46:48Z'
+      archived: false
+      slug: agentscope-ai/ReMe
+      stars_label: '3820'
+      forks_label: '355'
+      pushed_date: '2026-11-18'
     category_label: 记忆与知识
     status_label: 社区
     weight: 1010

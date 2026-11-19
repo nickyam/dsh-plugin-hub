@@ -31,6 +31,18 @@ params:
     flag: 社区 skill（非 Cordis bundle）；走 skill 文件系统 provider 加载，不是 dsh plugin add；npm 全局安装后用附带链接器装到 ~/.dsh/skills/zh-distribute
     notes: 仓库 zjukop/dsh-skill-zh-distribute（GitHub 精确命中唯一），npm 已发布 dsh-skill-zh-distribute（registry 200）。README 明确这是零代码 skill 而非代码插件，dsh plugin add 装的是 bundle、不适用；正确装法 npm i -g 后运行 dsh-skill-zh-distribute 链接器。文章把它列为创作组「一稿多发」，本站按其 skill 属性在 install 与 flag 里写清。
     repo_confirmed: true
+    gh:
+      stars: 0
+      forks: 0
+      issues: 0
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-10-04T07:12:55Z'
+      archived: false
+      slug: zjukop/dsh-skill-zh-distribute
+      stars_label: '0'
+      forks_label: '0'
+      pushed_date: '2026-10-04'
     category_label: 内容创作与办公
     status_label: 社区
     weight: 1010

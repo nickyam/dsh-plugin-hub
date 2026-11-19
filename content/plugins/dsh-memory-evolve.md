@@ -25,6 +25,18 @@ params:
     tags: *id001
     notes: 社区同名实现不止一个（另有 piaobo123/dsh-memory-evolve 等），本条目以 csyangwen 版为准；装后需在设置里按需开启各项能力。
     repo_confirmed: true
+    gh:
+      stars: 859
+      forks: 88
+      issues: 41
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-10-29T14:45:44Z'
+      archived: false
+      slug: csyangwen/dsh-memory-evolve
+      stars_label: '859'
+      forks_label: '88'
+      pushed_date: '2026-10-29'
     category_label: 记忆与知识
     status_label: 社区
     weight: 1010

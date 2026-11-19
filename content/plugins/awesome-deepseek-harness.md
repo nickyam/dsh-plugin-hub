@@ -27,6 +27,18 @@ params:
     flag: 清单类项目，不是插件
     notes: 本站按独立条目收录，不混进插件市场。列表本身无需安装。
     repo_confirmed: true
+    gh:
+      stars: 1384
+      forks: 538
+      issues: 66
+      language: Python
+      license: CC0-1.0
+      pushed_at: '2026-11-06T07:27:30Z'
+      archived: false
+      slug: 0xsline/awesome-deepseek-harness
+      stars_label: '1384'
+      forks_label: '538'
+      pushed_date: '2026-11-06'
     category_label: 插件市场与发现
     status_label: 社区
     weight: 1010

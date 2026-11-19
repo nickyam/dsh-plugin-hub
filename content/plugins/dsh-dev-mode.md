@@ -29,6 +29,18 @@ params:
     flag: 社区项目；要求 DSH 0.2.2+、Windows 10/11；会在工作目录改文件跑命令，建议在空目录或独立项目目录使用
     notes: 仓库 lingyingaojue/dsh-dev-mode——文章在装机章节明确给出 github:lingyingaojue/dsh-dev-mode，与 GitHub 搜索精确命中一致。README 标注 DSH 0.2.2+、平台 Windows 10/11（npm 未发布，按 git 安装）。GitHub 另有 OugeX/dsh-web-dev-mode 等不同项目，本条取文章点名仓库。
     repo_confirmed: true
+    gh:
+      stars: 4
+      forks: 0
+      issues: 0
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-14T15:01:52Z'
+      archived: false
+      slug: lingyingaojue/dsh-dev-mode
+      stars_label: '4'
+      forks_label: '0'
+      pushed_date: '2026-11-14'
     category_label: 协作与工作流
     status_label: 社区
     weight: 1010

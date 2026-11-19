@@ -26,6 +26,18 @@ params:
     flag: 社区整活项目，非官方；广告会延迟回答显示，正式工作场景慎用
     notes: README 声明：内容纯属虚构，与 DeepSeek 或任何真实公司无关；唯一网络请求是可选的「验证修复」点击后查询 GitHub Star（优先本地 gh/token，否则匿名 API）。
     repo_confirmed: true
+    gh:
+      stars: 732
+      forks: 7
+      issues: 0
+      language: TypeScript
+      license: BSD-3-Clause
+      pushed_at: '2026-11-15T23:07:58Z'
+      archived: false
+      slug: Nagi-ovo/dsh-ads
+      stars_label: '732'
+      forks_label: '7'
+      pushed_date: '2026-11-15'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1010

@@ -27,6 +27,18 @@ params:
     flag: 社区集成，非 DeepSeek 官方产品；实际 DSH 包名 @tt-a1i/archify-dsh
     notes: README 声明该 DSH 集成是 Community integration，无遥测，需 Node ^22.19.0 || >=24.0.0。移除命令：dsh plugin --profile web remove @tt-a1i/archify-dsh。
     repo_confirmed: true
+    gh:
+      stars: 97754
+      forks: 6676
+      issues: 369
+      language: JavaScript
+      license: Apache-2.0
+      pushed_at: '2026-11-19T00:44:55Z'
+      archived: false
+      slug: tt-a1i/archify
+      stars_label: 97.8k
+      forks_label: '6676'
+      pushed_date: '2026-11-19'
     category_label: 视觉与设计
     status_label: 社区
     weight: 1010

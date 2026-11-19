@@ -25,6 +25,18 @@ params:
     tags: *id001
     notes: 网关只读、绝不执行被扫代码、绝不写文件；它是启发式签名扫描，可能漏检新型恶意代码或误报无辜代码，BLOCK/WARN 需自行复核。仅作安装前与危险命令前的额外护栏。
     repo_confirmed: true
+    gh:
+      stars: 1
+      forks: 2
+      issues: 11
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-09-11T03:26:29Z'
+      archived: false
+      slug: 863683348/dsh-plugin-gate
+      stars_label: '1'
+      forks_label: '2'
+      pushed_date: '2026-09-11'
     category_label: 安全与治理
     status_label: 社区
     weight: 1020

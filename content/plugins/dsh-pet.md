@@ -23,6 +23,18 @@ params:
     - 交互与物理手感：点击回应、拖拽甩抛、双击弹弓、宠物互撞，同一套物理与 Q 弹挤压手感，参数可调
     tags: *id001
     repo_confirmed: true
+    gh:
+      stars: 6489
+      forks: 578
+      issues: 16
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-17T05:06:16Z'
+      archived: false
+      slug: PC2005-cloud/dsh-pet
+      stars_label: '6489'
+      forks_label: '578'
+      pushed_date: '2026-11-17'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1020

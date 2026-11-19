@@ -30,6 +30,18 @@ params:
     flag: 社区项目；语音识别走浏览器自带服务（Edge→Azure / Chrome→Google），音频会发给对应浏览器语音服务；npm 安装免 allowBuilds
     notes: 仓库 QT-Chen/dsh-mic-input（README 标题即 dsh-mic-input，与文章名字精确一致），npm 已发布 dsh-mic-input（registry 200），README 给 git 与 npm 两种方式，本站 install 用 npm 稳定版免构建授权。GitHub 另有 woodess/dsh-voice-input、hjcnx/dsh-web-voice-input 等近似项目，本条取文章点名且名字精确的 QT-Chen 仓库。
     repo_confirmed: true
+    gh:
+      stars: 3
+      forks: 2
+      issues: 2
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-08-16T14:56:34Z'
+      archived: false
+      slug: QT-Chen/dsh-mic-input
+      stars_label: '3'
+      forks_label: '2'
+      pushed_date: '2026-08-16'
     category_label: 界面与体验
     status_label: 社区
     weight: 1010

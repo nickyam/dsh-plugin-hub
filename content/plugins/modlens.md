@@ -27,6 +27,18 @@ params:
     flag: 与 dsh-vision-toolkit 是不同条目，本站不合并
     notes: README 注明 Web UI 里直接粘贴图片可能被宿主拒绝（DeepSeek 适配器硬编码 inputModalities 为 text），read_image 在 Web UI 已验证端到端可用。仓库另含兄弟插件 ModSearch（免费网页搜索）。
     repo_confirmed: true
+    gh:
+      stars: 5028
+      forks: 158
+      issues: 4
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-15T14:40:34Z'
+      archived: false
+      slug: liustack/modlens
+      stars_label: '5028'
+      forks_label: '158'
+      pushed_date: '2026-11-15'
     category_label: 视觉与设计
     status_label: 社区
     weight: 1040

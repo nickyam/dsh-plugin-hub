@@ -1,9 +1,13 @@
 {
-  "generated_at": "2026-11-18 11:16",
+  "generated_at": "2026-11-19 09:47",
   "stats": {
-    "plugins": 106,
-    "repos_confirmed": 106,
-    "categories": 13
+    "plugins": 108,
+    "repos_confirmed": 108,
+    "categories": 13,
+    "stars_median": 734,
+    "stars_median_label": "734",
+    "gh_synced": 108,
+    "gh_synced_at": "2026-11-19T01:40:42Z"
   },
   "categories": [
     {
@@ -22,7 +26,7 @@
       "id": "tool",
       "label": "工具与能力",
       "desc": "搜索、浏览器、视觉、文件引用",
-      "count": 10
+      "count": 13
     },
     {
       "id": "workflow",
@@ -46,7 +50,7 @@
       "id": "security",
       "label": "安全与治理",
       "desc": "安装前扫描、权限策略",
-      "count": 6
+      "count": 5
     },
     {
       "id": "integration",

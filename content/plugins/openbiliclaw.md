@@ -24,6 +24,18 @@ params:
     - 完全私有：SQLite、配置、画像与缓存都留在本机，数据不出本机
     tags: *id001
     repo_confirmed: true
+    gh:
+      stars: 3781
+      forks: 206
+      issues: 24
+      language: Python
+      license: MIT
+      pushed_at: '2026-11-17T17:17:07Z'
+      archived: false
+      slug: whiteguo233/OpenBiliClaw
+      stars_label: '3781'
+      forks_label: '206'
+      pushed_date: '2026-11-17'
     category_label: 工具与能力
     status_label: 社区
     weight: 1010

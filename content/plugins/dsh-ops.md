@@ -6,7 +6,7 @@ categories:
 tags: &id001
 - 自动化
 - token优化
-weight: 1030
+weight: 1040
 params:
   plugin:
     id: dsh-ops
@@ -25,9 +25,21 @@ params:
     tags: *id001
     notes: 需 DSH 0.2.2-rc.1 及以上（0.5 系列不再支持 0.2.0 / 0.2.1）；桌面端须用桌面应用自带 CLI。README 曾提示 0.5.0 存在缓存膨胀 bug，安装前请确认已修复到最新版。
     repo_confirmed: true
+    gh:
+      stars: 5921
+      forks: 210
+      issues: 116
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-15T10:39:45Z'
+      archived: false
+      slug: T-Auto/dsh-ops
+      stars_label: '5921'
+      forks_label: '210'
+      pushed_date: '2026-11-15'
     category_label: 协作与工作流
     status_label: 社区
-    weight: 1030
+    weight: 1040
     url: /plugins/dsh-ops/
   generated: true
 ---

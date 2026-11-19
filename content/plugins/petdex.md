@@ -26,6 +26,18 @@ params:
     tags: *id001
     notes: 宠物为社区提交的粉丝作品，版权归提交者所有；Petdex 不主张任何底层 IP。源码 MIT，宠物素材按提交者声明许可。
     repo_confirmed: true
+    gh:
+      stars: 4373
+      forks: 218
+      issues: 26
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-10-10T22:07:22Z'
+      archived: false
+      slug: crafter-station/petdex
+      stars_label: '4373'
+      forks_label: '218'
+      pushed_date: '2026-10-10'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1010

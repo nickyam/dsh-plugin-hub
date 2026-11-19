@@ -24,6 +24,18 @@ params:
     tags: *id001
     notes: README 提醒：官方 DSH 新版已内置 @file / @session 引用，新装建议优先用官方实现；本插件保留给已有环境，偶发维护。安装后重启 dsh web 使 Host 与客户端加载新版本。
     repo_confirmed: true
+    gh:
+      stars: 570
+      forks: 36
+      issues: 12
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-09-01T01:00:35Z'
+      archived: false
+      slug: omdsh-dev/dsh-at-file
+      stars_label: '570'
+      forks_label: '36'
+      pushed_date: '2026-09-01'
     category_label: 工具与能力
     status_label: 社区
     weight: 1020

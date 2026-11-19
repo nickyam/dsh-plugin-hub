@@ -24,6 +24,18 @@ params:
     tags: *id001
     notes: 原列表写作 @basabase/dsh-plugin，实际 npm 包 / 仓库为 busabase（busabase/busabase-dsh-plugin、@busabase/dsh-plugin），已按官方名称修正。Local 模式零配置默认，Cloud 模式走浏览器 OAuth。
     repo_confirmed: true
+    gh:
+      stars: 11
+      forks: 0
+      issues: 0
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-10-31T19:54:51Z'
+      archived: false
+      slug: busabase/busabase-dsh-plugin
+      stars_label: '11'
+      forks_label: '0'
+      pushed_date: '2026-10-31'
     category_label: 记忆与知识
     status_label: 社区
     weight: 1010

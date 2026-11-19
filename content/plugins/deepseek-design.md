@@ -27,6 +27,18 @@ params:
     tags: *id001
     notes: 实际以 deepseek-idesign、deepseek-ippt、deepseek-ivideo 三个包同时安装；若已装 dsh 命令，可将 npx @deepseek-ai/dsh 替换为 dsh。Web 界面默认 http://127.0.0.1:3080。
     repo_confirmed: true
+    gh:
+      stars: 1899
+      forks: 118
+      issues: 7
+      language: HTML
+      license: NOASSERTION
+      pushed_at: '2026-11-16T17:56:50Z'
+      archived: false
+      slug: Devin-AXIS/deepseek-design
+      stars_label: '1899'
+      forks_label: '118'
+      pushed_date: '2026-11-16'
     category_label: 视觉与设计
     status_label: 社区
     weight: 1010

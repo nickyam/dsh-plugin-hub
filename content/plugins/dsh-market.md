@@ -7,7 +7,7 @@ tags: &id001
 - 必装
 - 一键安装
 - 入口
-weight: 1070
+weight: 1080
 params:
   plugin:
     id: dsh-market
@@ -29,9 +29,21 @@ params:
     flag: 安装写法有多种，以仓库 README 为准
     notes: dsh 0.2.1+ 市场是「插件」页的一个标签页；旧版在「设置 → 插件市场」打开，需 dsh web 0.1.0-rc.6+。注意：在装了 DSH Desktop 的机器上用命令行 add 可能装进 profiles/web 而非 Desktop 实际使用的 profile，桌面端请在应用内 Settings → Plugins 安装。
     repo_confirmed: true
+    gh:
+      stars: 12882
+      forks: 491
+      issues: 117
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-18T20:53:09Z'
+      archived: false
+      slug: dsh-market/dsh-market
+      stars_label: 12.9k
+      forks_label: '491'
+      pushed_date: '2026-11-18'
     category_label: 插件市场与发现
     status_label: 社区
-    weight: 1070
+    weight: 1080
     url: /plugins/dsh-market/
   generated: true
 ---

@@ -30,6 +30,18 @@ params:
     tags: *id001
     notes: README 标注适配 DSH Web 0.2.2-rc.1 与 Desktop 0.2.1-rc.5；需宿主端启用移动网关或模拟器 / 真机环境。
     repo_confirmed: true
+    gh:
+      stars: 473
+      forks: 43
+      issues: 0
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-10T15:45:43Z'
+      archived: false
+      slug: ZSeven-W/dsh-ios
+      stars_label: '473'
+      forks_label: '43'
+      pushed_date: '2026-11-10'
     category_label: 移动端与远程
     status_label: 社区
     weight: 1010

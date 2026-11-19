@@ -25,6 +25,18 @@ params:
     flag: 社区项目，非官方
     notes: 社区插件，MIT 许可；仅影响回复展示层，不改模型逻辑。安装前请核对仓库与许可证。
     repo_confirmed: true
+    gh:
+      stars: 56
+      forks: 1
+      issues: 0
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-10-22T10:26:09Z'
+      archived: false
+      slug: hellodigua/dsh-emoji
+      stars_label: '56'
+      forks_label: '1'
+      pushed_date: '2026-10-22'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1010

@@ -27,6 +27,18 @@ params:
     flag: 与 dsh-market、dsh-plugin-radar 同类不同实现，本站不合并
     notes: README 标注当前版本 0.9.2，安装命令钉该版本；若用 npx 前置则写作 npx -y @deepseek-ai/dsh plugin --profile web add dsh-plugin-shop@0.9.2。安装后需重启 dsh 以加载插件。
     repo_confirmed: true
+    gh:
+      stars: 666
+      forks: 3
+      issues: 1
+      language: TypeScript
+      license: Apache-2.0
+      pushed_at: '2026-11-17T10:32:21Z'
+      archived: false
+      slug: LivXue/dsh-plugin-shop
+      stars_label: '666'
+      forks_label: '3'
+      pushed_date: '2026-11-17'
     category_label: 插件市场与发现
     status_label: 社区
     weight: 1010

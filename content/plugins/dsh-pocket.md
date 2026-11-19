@@ -30,6 +30,18 @@ params:
     flag: 社区项目；公网访问意味着把 DSH 界面暴露到外网，请设置强口令并留意可访问范围
     notes: 仓库 shaobeichen/dsh-pocket（GitHub 有多个同名 dsh-pocket / dsh-pocket-plus，本条取 README 完整、★ 数最高的 shaobeichen 主仓），npm 包 dsh-pocket。README 徽章里 License 标注有 MIT/GPL 混排，本站不据此下结论。
     repo_confirmed: true
+    gh:
+      stars: 3040
+      forks: 133
+      issues: 4
+      language: JavaScript
+      license: GPL-2.0
+      pushed_at: '2026-11-15T04:10:21Z'
+      archived: false
+      slug: shaobeichen/dsh-pocket
+      stars_label: '3040'
+      forks_label: '133'
+      pushed_date: '2026-11-15'
     category_label: 移动端与远程
     status_label: 社区
     weight: 1010

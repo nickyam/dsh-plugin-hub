@@ -30,6 +30,18 @@ params:
     flag: 社区项目；npm 未发布（registry 404），按 git 安装；判定的是「是否真插件」，不是仓库质量
     notes: 仓库 ciceroyang/dsh-topic-audit（npm registry 返回 404，故 install 用 github 形式）。README 自述它更像生态审计工具（companion 类），但文章把它列为「地基」插件之一用于查真伪，本站按社区条目收录并在简介里说明它是审计工具。GitHub 有 yunhuantian/dsh-plugin-hub、863683348/dsh-plugin-audit 等近似项目，本条取名字精确命中的 ciceroyang 仓库。
     repo_confirmed: true
+    gh:
+      stars: 0
+      forks: 0
+      issues: 1
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-09-17T12:43:52Z'
+      archived: false
+      slug: ciceroyang/dsh-topic-audit
+      stars_label: '0'
+      forks_label: '0'
+      pushed_date: '2026-09-17'
     category_label: 安全与治理
     status_label: 社区
     weight: 1010

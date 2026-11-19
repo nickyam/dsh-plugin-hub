@@ -30,6 +30,18 @@ params:
     flag: 社区项目（AGPL-3.0，非 DeepSeek 官方）；远程访问把本机开放给手机，注意信任边界
     notes: 仓库 westanke/dsh-remote-bridge（main 分支），npm 包 dsh-remote-bridge，README 版本 v2.11.1。由 dsh-workspace 在 2.0.4 改名而来；REST 前缀 /dsh-workspace-api 与状态目录 dsh-workspace 为兼容旧 App 刻意保留，属预期行为。务必用 >= v2.0.4。环境要求 DSH 内核 >=0.2.2-rc.1 <0.3.0、Node.js ^22.19.0 或 >=24、默认端口 3090 可用。它是文章（wx-top10-30d）第 9 名已弃用的 dsh-remote-web-ui（@linxin666）的接替者；本站只收接替者，不收弃用包。
     repo_confirmed: true
+    gh:
+      stars: 6
+      forks: 0
+      issues: 3
+      language: TypeScript
+      license: AGPL-3.0
+      pushed_at: '2026-11-18T22:06:27Z'
+      archived: false
+      slug: westanke/dsh-remote-bridge
+      stars_label: '6'
+      forks_label: '0'
+      pushed_date: '2026-11-18'
     category_label: 移动端与远程
     status_label: 社区
     weight: 1010

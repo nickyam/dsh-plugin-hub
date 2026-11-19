@@ -25,6 +25,18 @@ params:
     - 自动修正错误：草稿出错时 CLI 返回行号、组件名与正确示例，代理通常一次修复
     tags: *id001
     repo_confirmed: true
+    gh:
+      stars: 6531
+      forks: 442
+      issues: 15
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-18T19:55:16Z'
+      archived: false
+      slug: QingYunA/answer-me-with-html
+      stars_label: '6531'
+      forks_label: '442'
+      pushed_date: '2026-11-18'
     category_label: 协作与工作流
     status_label: 社区
     weight: 1010

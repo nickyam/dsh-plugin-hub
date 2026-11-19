@@ -31,6 +31,18 @@ params:
     flag: 社区项目；需 Web profile 与 pnpm；依赖 spillStore（标准部署自带，缺失时压缩默认关闭）；装后需重启 dsh
     notes: 仓库 vibe-any/dsh-plugin-save-token（GitHub 搜索「save-token deepseek harness」精确命中、★ 最高），npm 已发布 dsh-plugin-save-token（registry 200），README 给 npm / github / 本地三种安装，本站 install 用 npm 稳定版。文章（wx-jiaweisi）实测它省 7.6%，属作者单次口径，本站不采信数字；README 自述「长任务省两成左右、完成率未受影响」也是作者口径，同样只作功能描述不作结论。
     repo_confirmed: true
+    gh:
+      stars: 87
+      forks: 5
+      issues: 3
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-10-24T01:16:16Z'
+      archived: false
+      slug: vibe-any/dsh-plugin-save-token
+      stars_label: '87'
+      forks_label: '5'
+      pushed_date: '2026-10-24'
     category_label: 模型与计费
     status_label: 社区
     weight: 1010

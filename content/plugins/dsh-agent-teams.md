@@ -26,6 +26,18 @@ params:
     flag: 与官网内置 Agent teams 名称相近，勿混
     notes: 官网界面另有标为 Experimental 的 Agent teams，属开箱即用能力，本站不收录；这里只记需要单独安装的社区插件。需在兼容宿主（README 提供确切版本与兼容矩阵）上运行。
     repo_confirmed: true
+    gh:
+      stars: 3022
+      forks: 247
+      issues: 80
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-18T17:49:56Z'
+      archived: false
+      slug: NanmiCoder/dsh-agent-teams
+      stars_label: '3022'
+      forks_label: '247'
+      pushed_date: '2026-11-18'
     category_label: 协作与工作流
     status_label: 社区
     weight: 1040

@@ -31,6 +31,18 @@ params:
     flag: 社区项目；接入机器人涉及各平台凭据，注意 Token 安全与平台条款
     notes: 仓库 xmanrui/dsh-im，npm 包名是 scoped 的 @xmanrui/dsh-im——README 明确「安装请认准完整包名」，GitHub 上另有 MichengAI/dsh-im-connect、SoledadAki/dsh-im-qq-wechat 等近似项目，本站取名字精确、功能覆盖最广的 xmanrui 主仓。文章说的「二维码接 9 个渠道」与 README 渠道列表一致（实际列了 10 个）。安装带 -w 参数（写 profile），Web 与 Desktop 命令分别为 --profile web / --profile desktop，装完重启。
     repo_confirmed: true
+    gh:
+      stars: 3700
+      forks: 391
+      issues: 162
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-07T05:03:35Z'
+      archived: false
+      slug: xmanrui/dsh-im
+      stars_label: '3700'
+      forks_label: '391'
+      pushed_date: '2026-11-07'
     category_label: 集成与迁移
     status_label: 社区
     weight: 1010

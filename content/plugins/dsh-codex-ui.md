@@ -8,7 +8,7 @@ tags: &id001
 - 主题
 - 侧栏
 - Codex
-weight: 1020
+weight: 1030
 params:
   plugin:
     id: dsh-codex-ui
@@ -33,9 +33,21 @@ params:
     flag: 社区项目（Apache-2.0，非 DeepSeek 官方）
     notes: 仓库 MichengAI/dsh-codex-ui（main 分支），npm 包 @michengai/dsh-codex-ui，README 版本 v2.0（文章写 2.0.9，npm 仓库实时版本以 registry 为准）。环境要求 Node.js 22+。2.0 彻底重写：放弃 1.x 直接改宿主 DOM、高权重 CSS 覆盖的做法，改用官方 Slots 插槽与 @deepseek-ai/dsh-client-ui-primitives 原语，升级 DSH 更不易崩。文章（wx-top10-30d）称「1.x 暴力覆盖、2.0 推倒重写」，与 README 的技术决策一节一致。
     repo_confirmed: true
+    gh:
+      stars: 303
+      forks: 26
+      issues: 0
+      language: TypeScript
+      license: Apache-2.0
+      pushed_at: '2026-11-17T09:59:08Z'
+      archived: false
+      slug: MichengAI/dsh-codex-ui
+      stars_label: '303'
+      forks_label: '26'
+      pushed_date: '2026-11-17'
     category_label: 界面与体验
     status_label: 社区
-    weight: 1020
+    weight: 1030
     url: /plugins/dsh-codex-ui/
   generated: true
 ---

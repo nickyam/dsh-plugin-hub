@@ -26,6 +26,18 @@ params:
     flag: 社区项目，非官方；npm 发行版仅含 token 换肤与全局皮肤表，登录窗/聊天窗等组件级效果需源码 monorepo 形态才完整
     notes: README 说明：npm 发行版经插件机制无法注入组件级皮肤（改的是宿主 UI 包源码），完整效果需 fork 的 skin/qq2006 分支或 git apply 补丁；素材来自 mengkunsoft/QQ2006，仅供学习交流、请勿商用。
     repo_confirmed: true
+    gh:
+      stars: 32
+      forks: 1
+      issues: 0
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-08-27T17:59:55Z'
+      archived: false
+      slug: LaplaceYoung/dsh-qq2006
+      stars_label: '32'
+      forks_label: '1'
+      pushed_date: '2026-08-27'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1010

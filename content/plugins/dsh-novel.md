@@ -29,6 +29,18 @@ params:
     flag: 社区项目；数据存本地工作区，注意备份
     notes: 仓库 ddedook/dsh-novel，npm 已发布 dsh-novel（registry 200），README 同时给 dsh plugin add github:ddedook/dsh-novel 与 dsh plugin add dsh-novel 两种方式，本站 install 用 npm 稳定版。文章把小说拆成 dsh-novel（标准化）与 dsh-novel-craft（偏好学习）两条，本站按两个独立仓库分别建条目。GitHub 另有 huangziyuan-general/dsh-novel-forge 等不同实现，本条取文章点名的 dsh-novel 名字精确主仓。
     repo_confirmed: true
+    gh:
+      stars: 7
+      forks: 0
+      issues: 0
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-10-24T13:22:24Z'
+      archived: false
+      slug: ddedook/dsh-novel
+      stars_label: '7'
+      forks_label: '0'
+      pushed_date: '2026-10-24'
     category_label: 内容创作与办公
     status_label: 社区
     weight: 1010

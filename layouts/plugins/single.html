@@ -36,7 +36,19 @@
         <dl class="kv">
           <div><dt>分类</dt><dd><a href="{{ "categories/" | relURL }}{{ $p.category }}/">{{ $p.category_label }}</a></dd></div>
           <div><dt>性质</dt><dd>{{ $p.status_label }}{{ if eq $p.status "unknown" }}（原文没写是谁做的）{{ end }}</dd></div>
-          <div><dt>仓库</dt><dd>{{ with $p.repo }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>{{ else }}<span class="muted">暂未找到官方仓库</span>{{ end }}</dd></div>
+          <div><dt>仓库</dt><dd>
+            {{ with $p.repo }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>{{ else }}<span class="muted">暂未找到官方仓库</span>{{ end }}
+            {{ with $p.gh }}
+            <div class="gh-stats">
+              <span class="gh-star"><span aria-hidden="true">★</span> <strong>{{ .stars_label }}</strong></span>
+              {{ with .forks_label }}<span><strong>{{ . }}</strong> Fork</span>{{ end }}
+              {{ with .issues }}<span><strong>{{ . }}</strong> Issue</span>{{ end }}
+              {{ with .language }}<span>{{ . }}</span>{{ end }}
+              {{ with .license }}<span>{{ . }}</span>{{ end }}
+              {{ with .pushed_date }}<span class="gh-when">最近提交 {{ . }}</span>{{ end }}
+            </div>
+            {{ end }}
+          </dd></div>
           <div><dt>安装</dt><dd>{{ with $p.install }}<code class="code-block">{{ . }}</code>{{ else }}<span class="muted">README 未给出安装命令；请到上述仓库查看</span>{{ end }}</dd></div>
           <div><dt>标签</dt><dd>{{ range $p.tags }}<a class="tag" href="{{ "tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>{{ else }}<span class="muted">—</span>{{ end }}</dd></div>
         </dl>

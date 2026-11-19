@@ -25,6 +25,18 @@ params:
     tags: *id001
     notes: 无原生构建、无向量数据库；79MB 本地嵌入表（leanvec）默认安装运行，缺失时回退纯词法召回。装后需重启 dsh web。
     repo_confirmed: true
+    gh:
+      stars: 32
+      forks: 3
+      issues: 0
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-18T15:54:58Z'
+      archived: false
+      slug: 00080000/dsh-project-memory
+      stars_label: '32'
+      forks_label: '3'
+      pushed_date: '2026-11-18'
     category_label: 记忆与知识
     status_label: 社区
     weight: 1010

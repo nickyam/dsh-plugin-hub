@@ -30,6 +30,18 @@ params:
     flag: 社区项目；纯外观，不影响模型能力；视频/场景壁纸可能占用一定渲染资源
     notes: 仓库 elysia395/dsh-wallpaper-engine，npm 包名是 dsh-plugin-wallpaper-engine（比仓库名多 plugin- 前缀，别填错）。GitHub 上有多个二次开发分支，本条取 README 完整、标注为正式主仓且 ★ 数最高的 elysia395 仓库。
     repo_confirmed: true
+    gh:
+      stars: 7450
+      forks: 121
+      issues: 20
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-18T11:42:00Z'
+      archived: false
+      slug: elysia395/dsh-wallpaper-engine
+      stars_label: '7450'
+      forks_label: '121'
+      pushed_date: '2026-11-18'
     category_label: 界面与体验
     status_label: 社区
     weight: 1010

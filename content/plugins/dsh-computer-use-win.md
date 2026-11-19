@@ -32,6 +32,18 @@ params:
     flag: 社区项目；仅 Windows；能真实操作桌面与键鼠，涉及账号/付款操作请全程留意并按需用 Esc 停止
     notes: 文章写的是「dsh-computer-use，目前只有 Windows 版」，据此取 Yu-tao-Li/dsh-computer-use-win（README 明确 Windows 专属、npm 包 dsh-computer-use-win，registry 200）。GitHub 上另有一个 Anionex/dsh-computer-use 是 macOS 版（描述为 Native macOS control），与文章「只有 Windows 版」不符，未收。文章把它当作 dsh-computer-use 介绍，本站以实际 Windows 仓库名建条目并留别名。
     repo_confirmed: true
+    gh:
+      stars: 796
+      forks: 23
+      issues: 1
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-18T16:04:56Z'
+      archived: false
+      slug: Yu-tao-Li/dsh-computer-use-win
+      stars_label: '796'
+      forks_label: '23'
+      pushed_date: '2026-11-18'
     category_label: 工具与能力
     status_label: 社区
     weight: 1010

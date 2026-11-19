@@ -33,6 +33,18 @@ params:
     flag: 社区项目；回退不可就地撤销，操作前确认目标消息；文件还原只在选「对话和文件」时写入工作区
     notes: 仓库 SiriLee/dsh-rewind，npm 包名是 dsh-rewind-plugin——README 明确警告 npm 上的 dsh-rewind 属于另一位作者，装错包会出事，本站 install 按官方写法。文章只说「粘贴仓库链接安装」，未给 npm 名，本站以 README 为准。Node.js >=24.9.0；兼容 DSH 版本见 package.json engines.dsh。回退内容并非删除，仍在会话日志与 Trajectory 面板里；要把回退前的内容带到新会话，先禁用插件让它显示，再在回退点前一条消息上「Branch into a new conversation」。快照默认保存最近 100 个检查点，不替代 Git。
     repo_confirmed: true
+    gh:
+      stars: 286
+      forks: 22
+      issues: 1
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-18T14:44:57Z'
+      archived: false
+      slug: SiriLee/dsh-rewind
+      stars_label: '286'
+      forks_label: '22'
+      pushed_date: '2026-11-18'
     category_label: 协作与工作流
     status_label: 社区
     weight: 1010

@@ -27,6 +27,18 @@ params:
     flag: 清单类项目，不是插件
     notes: 本站按独立条目收录，不混进插件市场。列表本身无需安装，DSH 主机可直接把其 /index.json 作为市场来源读取。
     repo_confirmed: true
+    gh:
+      stars: 25103
+      forks: 8959
+      issues: 358
+      language: JavaScript
+      license: CC0-1.0
+      pushed_at: '2026-11-18T23:20:19Z'
+      archived: false
+      slug: awesome-dsh-plugin/awesome-dsh-plugin
+      stars_label: 25.1k
+      forks_label: '8959'
+      pushed_date: '2026-11-18'
     category_label: 插件市场与发现
     status_label: 社区
     weight: 1010

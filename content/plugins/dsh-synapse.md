@@ -26,6 +26,18 @@ params:
     tags: *id001
     notes: 需 DeepSeek Harness >= 0.1.7-rc.2 与 Node.js >= 22.19.0；桌面 App 装完需重启，装到另一套 profile 时顶部看不到「会话地图」开关（把 --profile 换成另一套再装）。
     repo_confirmed: true
+    gh:
+      stars: 730
+      forks: 72
+      issues: 38
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-04T06:48:36Z'
+      archived: false
+      slug: liangmianya/dsh-synapse
+      stars_label: '730'
+      forks_label: '72'
+      pushed_date: '2026-11-04'
     category_label: 界面与体验
     status_label: 社区
     weight: 1010

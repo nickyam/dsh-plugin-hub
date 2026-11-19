@@ -32,6 +32,18 @@ params:
     flag: 社区项目；模型可操作真实浏览器与登录态，涉及账号与付款操作时请留意
     notes: 仓库 CJYLZS/dsh-browser（main/master 同指一份 README），npm 包为 scoped 名 @cjylzs/dsh-browser，README 最新 v0.3.x（文章写 github tag v0.2.3，为旧版）。旧的无 scope 名 dsh-browser 在 npm 上属于另一个项目，若 profile 里还留着旧键须先 `dsh plugin --profile web remove dsh-browser` 再装。按 DSH 版本选版本：>=0.1.7-rc.1 用 v0.3.x；0.1.5-rc.2 只能用 v0.1.0（tag 安装）。需本机已装 Chrome 或 Edge，playwright-core 不自带浏览器。装完重启宿主。桌面端要用其自带 CLI 的 --profile desktop 安装。
     repo_confirmed: true
+    gh:
+      stars: 5
+      forks: 2
+      issues: 0
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-06T12:03:08Z'
+      archived: false
+      slug: CJYLZS/dsh-browser
+      stars_label: '5'
+      forks_label: '2'
+      pushed_date: '2026-11-06'
     category_label: 工具与能力
     status_label: 社区
     weight: 1020

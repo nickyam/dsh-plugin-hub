@@ -33,6 +33,18 @@ params:
     flag: 社区项目；默认会把图片/裁剪图发给云端视觉模型（含匿名兜底），涉密或敏感素材请开 strict local-only；DSH >=0.2.1-rc.5 <0.3.0-0、Node.js >=24.9.0
     notes: 仓库 ysr666/dsh-vision-router（GitHub 搜索同名项目很多，本条取 README 详实、带 dsh-recommend 认证与 DeepGuard 审计标记、★ 数遥遥领先的 ysr666 主仓）。文章把它在视频里的叫法写作 deepstare，插件包名是 dsh-vision-router。README 有专门的「Data flow and strict local-only use」小节说明数据外发。
     repo_confirmed: true
+    gh:
+      stars: 1286
+      forks: 63
+      issues: 4
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-19T01:27:38Z'
+      archived: false
+      slug: ysr666/dsh-vision-router
+      stars_label: '1286'
+      forks_label: '63'
+      pushed_date: '2026-11-19'
     category_label: 视觉与设计
     status_label: 社区
     weight: 1010

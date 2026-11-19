@@ -29,6 +29,18 @@ params:
     tags: *id001
     notes: 基础记账功能无需配置令牌即可用；泡泡/音效/交互均可自定义。npm 包名为 dsh-whale-widget，也可从桌面端 plugin_manager 安装。
     repo_confirmed: true
+    gh:
+      stars: 7335
+      forks: 242
+      issues: 172
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-10-11T12:25:55Z'
+      archived: false
+      slug: MeteorNOX/DeepSeek-Balance-Whale-Widget
+      stars_label: '7335'
+      forks_label: '242'
+      pushed_date: '2026-10-11'
     category_label: 模型与计费
     status_label: 原文未说明
     weight: 1030

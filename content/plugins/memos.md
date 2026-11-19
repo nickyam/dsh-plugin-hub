@@ -26,6 +26,18 @@ params:
     tags: *id001
     notes: DSH 支持本地（memos-local-plugin，curl 安装脚本）与云端（@memtensor/memos-cloud-dsh-plugin）两种插件；README 另注 token 节省等数字，本站不引用具体数值。
     repo_confirmed: true
+    gh:
+      stars: 12444
+      forks: 1129
+      issues: 150
+      language: TypeScript
+      license: Apache-2.0
+      pushed_at: '2026-11-18T12:09:12Z'
+      archived: false
+      slug: MemTensor/MemOS
+      stars_label: 12.4k
+      forks_label: '1129'
+      pushed_date: '2026-11-18'
     category_label: 记忆与知识
     status_label: 社区
     weight: 1010

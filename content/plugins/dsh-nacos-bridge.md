@@ -31,6 +31,18 @@ params:
     flag: 社区项目；需自建可达的 Nacos 3.2+ 实例并开启 AI Registry，且能力已在其中注册；非普通用户开箱即用
     notes: 仓库 MalcolmFeng/dsh-nacos-bridge-plugin（GitHub 搜 dsh-nacos-bridge 唯一精确命中）。README 未给一行式 dsh plugin add 命令，而是通过 pnpm 把 plugins/dsh-nacos-bridge 以 link 方式装进 profile、再用 dsh web --profile web --patch runtime/cordis.yml 启动；本站 install 按插件包名写通用形式，实际按 README 的 pnpm link 流程操作。前置：Nacos 3.2+ 开启 AI Registry，配置 DEEPSEEK_API_KEY。
     repo_confirmed: true
+    gh:
+      stars: 2
+      forks: 0
+      issues: 0
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-09-04T07:26:04Z'
+      archived: false
+      slug: MalcolmFeng/dsh-nacos-bridge-plugin
+      stars_label: '2'
+      forks_label: '0'
+      pushed_date: '2026-09-04'
     category_label: 集成与迁移
     status_label: 社区
     weight: 1010

@@ -27,6 +27,18 @@ params:
     flag: DSH 接入形态为同仓子包 @zseven-w/dsh-openpencil；本体 OpenPencil 是独立 Rust 设计 App
     notes: 仓库 ZSeven-W/openpencil 是 OpenPencil 设计工具本体（Rust 实现，非 DSH 插件）；其 DSH 插件以 @zseven-w/dsh-openpencil 包发布、与本体同仓。安装前以该 npm 包最新版本为准。README 另描述 DSH OpenPencil 作为「对话内 .op 预览 / 画布 / 管理编辑器」的能力。
     repo_confirmed: true
+    gh:
+      stars: 7283
+      forks: 639
+      issues: 35
+      language: Rust
+      license: MIT
+      pushed_at: '2026-11-18T13:00:08Z'
+      archived: false
+      slug: ZSeven-W/openpencil
+      stars_label: '7283'
+      forks_label: '639'
+      pushed_date: '2026-11-18'
     category_label: 视觉与设计
     status_label: 社区
     weight: 1010

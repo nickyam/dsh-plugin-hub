@@ -25,6 +25,18 @@ params:
     tags: *id001
     notes: 安装即启用，卸载不留补丁；README 提及其正从挂载插件演进为带独立入口的 app，需匹配当前验证线版本的 DSH。
     repo_confirmed: true
+    gh:
+      stars: 7944
+      forks: 377
+      issues: 157
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-19T01:16:10Z'
+      archived: false
+      slug: ccch1mneyyy/dsh-TUI
+      stars_label: '7944'
+      forks_label: '377'
+      pushed_date: '2026-11-19'
     category_label: 界面与体验
     status_label: 社区
     weight: 1010

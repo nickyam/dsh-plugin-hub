@@ -31,6 +31,18 @@ params:
     tags: *id001
     notes: Dream Num 出品的 Univer 办公套件 DSH 插件；支持 Sheets / Docs / Slides / Bases / Boards 统一于 .univer 文件。
     repo_confirmed: true
+    gh:
+      stars: 737
+      forks: 60
+      issues: 21
+      language: TypeScript
+      license: Apache-2.0
+      pushed_at: '2026-11-18T07:06:41Z'
+      archived: false
+      slug: dream-num/dsh-univer-office
+      stars_label: '737'
+      forks_label: '60'
+      pushed_date: '2026-11-18'
     category_label: 内容创作与办公
     status_label: 社区
     weight: 1010

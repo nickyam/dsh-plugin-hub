@@ -32,6 +32,18 @@ params:
     flag: 社区项目（MIT，非 DeepSeek 官方）
     notes: 仓库 Han-1413141/dsh-cost-meter（master 分支），npm 包 dsh-cost-meter，README 版本 1.9.70（文章写 1.9.47，以仓库为准）。环境要求 Node.js >= 20、DSH 0.2.0+ 且宿主可用 pnpm；装完需重启 dsh web。桌面端用其内置 CLI 与 desktop profile。文章（wx-top10-30d）称其「内置 170+ 模型价目表、可查十二家 Coding Plan 额度」，README 印证支持多厂商 Plan 与自定义余额源，具体家数以仓库为准。
     repo_confirmed: true
+    gh:
+      stars: 721
+      forks: 63
+      issues: 7
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-18T16:25:30Z'
+      archived: false
+      slug: Han-1413141/dsh-cost-meter
+      stars_label: '721'
+      forks_label: '63'
+      pushed_date: '2026-11-18'
     category_label: 模型与计费
     status_label: 社区
     weight: 1020

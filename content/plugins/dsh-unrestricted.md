@@ -26,6 +26,18 @@ params:
     flag: 涉及绕过模型安全策略，本站不评价
     notes: README 标注兼容 DSH Web 0.2.2-rc.1 与 Desktop 0.2.1-rc.5；开关状态存于当前 profile 的 cordis.patch.yml，不改写 DSH 文件沙箱与命令审批机制。
     repo_confirmed: true
+    gh:
+      stars: 1267
+      forks: 192
+      issues: 8
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-18T11:39:08Z'
+      archived: false
+      slug: yexi-by/dsh-unrestricted
+      stars_label: '1267'
+      forks_label: '192'
+      pushed_date: '2026-11-18'
     category_label: 安全与治理
     status_label: 社区
     weight: 1010

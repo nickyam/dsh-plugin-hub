@@ -26,6 +26,18 @@ params:
     tags: *id001
     notes: 需 @deepseek-ai/dsh 0.2.0-rc.2 及以上（各版本支持见 docs/compatibility.md）；数值采用 dsh 自身 Token 计量投影，与内置计量器一致。UI 支持简中 / 英 / 日等多语言（切换需 dsh 0.2.2+）。
     repo_confirmed: true
+    gh:
+      stars: 5287
+      forks: 233
+      issues: 0
+      language: TypeScript
+      license: Apache-2.0
+      pushed_at: '2026-11-18T17:15:31Z'
+      archived: false
+      slug: bowenliang123/dsh-context
+      stars_label: '5287'
+      forks_label: '233'
+      pushed_date: '2026-11-18'
     category_label: 协作与工作流
     status_label: 社区
     weight: 1050

@@ -29,6 +29,18 @@ params:
     flag: 社区项目（MIT）；依赖使用者持续点选来积累偏好
     notes: 仓库 shiyan688/dsh-novel-craft，npm 已发布 dsh-novel-craft（registry 200），README 给 npm 与 git 两种安装，本站 install 用 npm 稳定版；README 明确英文文档只放仓库、不进 npm 包。文章称它「只让你点赞点踩，模型自己总结你的文风」，与 README 一致。
     repo_confirmed: true
+    gh:
+      stars: 15
+      forks: 1
+      issues: 1
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-08T04:21:35Z'
+      archived: false
+      slug: shiyan688/dsh-novel-craft
+      stars_label: '15'
+      forks_label: '1'
+      pushed_date: '2026-11-08'
     category_label: 内容创作与办公
     status_label: 社区
     weight: 1010

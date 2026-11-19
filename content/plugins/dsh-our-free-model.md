@@ -27,6 +27,18 @@ params:
     flag: 免费额度与可用性以仓库说明为准；npm 裸名 dsh-our-free-model 非本仓库发布，请装带 scope 的 @ebony-vinyl 包
     notes: README 警告不要装 npm 上裸名的 dsh-our-free-model（非本仓库发布）；本仓库发布的是带 scope 的 @ebony-vinyl/dsh-our-free-model。免费车道高峰期可能按会话限流返回 429；部分上游声明提示词可能被记录，勿发敏感内容。上游额度政策随时可能变更。
     repo_confirmed: true
+    gh:
+      stars: 79831
+      forks: 2249
+      issues: 205
+      language: JavaScript
+      license: NOASSERTION
+      pushed_at: '2026-11-18T02:24:22Z'
+      archived: false
+      slug: Ebony-Vinyl/dsh-our-free-model
+      stars_label: 79.8k
+      forks_label: '2249'
+      pushed_date: '2026-11-18'
     category_label: 免费模型与接入
     status_label: 社区
     weight: 1030

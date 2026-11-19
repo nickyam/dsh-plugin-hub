@@ -26,6 +26,18 @@ params:
     tags: *id001
     notes: DSH Target：>=0.1.0-rc.6 <0.2.0（已跟进 rc.8 / 0.1.1-rc.2 等）。
     repo_confirmed: true
+    gh:
+      stars: 7029
+      forks: 198
+      issues: 182
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-09-18T23:10:58Z'
+      archived: false
+      slug: yjh051108/dsh-routing-suite
+      stars_label: '7029'
+      forks_label: '198'
+      pushed_date: '2026-09-18'
     category_label: 协作与工作流
     status_label: 社区
     weight: 1010

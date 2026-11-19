@@ -26,6 +26,18 @@ params:
     tags: *id001
     notes: 嵌入模型离线推理，失败时自动降级纯关键词检索并显式标记；零外部服务、零 API Key、零 Docker。
     repo_confirmed: true
+    gh:
+      stars: 75
+      forks: 9
+      issues: 5
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-17T15:06:24Z'
+      archived: false
+      slug: kenz1117/dsh-engram
+      stars_label: '75'
+      forks_label: '9'
+      pushed_date: '2026-11-17'
     category_label: 记忆与知识
     status_label: 社区
     weight: 1010

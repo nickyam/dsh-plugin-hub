@@ -27,6 +27,18 @@ params:
     tags: *id001
     notes: 官方 DeepSeek Harness 集成插件维护在独立仓库 EverMind-AI/plugins（dsh 分支），本仓库为 EverOS 核心记忆运行时（pip 安装），DSH 插件不在本仓库根目录。
     repo_confirmed: true
+    gh:
+      stars: 13939
+      forks: 978
+      issues: 53
+      language: Python
+      license: Apache-2.0
+      pushed_at: '2026-11-18T16:33:22Z'
+      archived: false
+      slug: EverMind-AI/EverOS
+      stars_label: 13.9k
+      forks_label: '978'
+      pushed_date: '2026-11-18'
     category_label: 记忆与知识
     status_label: 社区
     weight: 1010
