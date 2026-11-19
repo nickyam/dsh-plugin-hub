@@ -7,7 +7,7 @@ tags: &id001
 - 微信
 - 远程
 - 桥接
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: dsh-wechat
@@ -42,7 +42,7 @@ params:
       pushed_date: '2026-09-17'
     category_label: 集成与迁移
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/dsh-wechat/
   generated: true
 ---

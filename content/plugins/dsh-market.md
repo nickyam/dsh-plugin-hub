@@ -7,7 +7,7 @@ tags: &id001
 - 必装
 - 一键安装
 - 入口
-weight: 1080
+weight: 1100
 params:
   plugin:
     id: dsh-market
@@ -43,7 +43,7 @@ params:
       pushed_date: '2026-11-18'
     category_label: 插件市场与发现
     status_label: 社区
-    weight: 1080
+    weight: 1100
     url: /plugins/dsh-market/
   generated: true
 ---

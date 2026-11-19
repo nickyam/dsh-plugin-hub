@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-11-19 09:47",
+  "generated_at": "2026-11-19 10:10",
   "stats": {
-    "plugins": 108,
-    "repos_confirmed": 108,
+    "plugins": 125,
+    "repos_confirmed": 125,
     "categories": 13,
-    "stars_median": 734,
-    "stars_median_label": "734",
-    "gh_synced": 108,
-    "gh_synced_at": "2026-11-19T01:40:42Z"
+    "stars_median": 622,
+    "stars_median_label": "622",
+    "gh_synced": 125,
+    "gh_synced_at": "2026-11-19T02:10:02Z"
   },
   "categories": [
     {
       "id": "market",
       "label": "插件市场与发现",
       "desc": "找插件、装插件、管版本",
-      "count": 7
+      "count": 8
     },
     {
       "id": "ui",
       "label": "界面与体验",
       "desc": "侧边栏、主题、桌面端、交互挂件",
-      "count": 13
+      "count": 14
     },
     {
       "id": "tool",
       "label": "工具与能力",
       "desc": "搜索、浏览器、视觉、文件引用",
-      "count": 13
+      "count": 15
     },
     {
       "id": "workflow",
@@ -38,7 +38,7 @@
       "id": "memory",
       "label": "记忆与知识",
       "desc": "跨会话记忆、项目上下文、知识库",
-      "count": 10
+      "count": 13
     },
     {
       "id": "billing",
@@ -50,19 +50,19 @@
       "id": "security",
       "label": "安全与治理",
       "desc": "安装前扫描、权限策略",
-      "count": 5
+      "count": 7
     },
     {
       "id": "integration",
       "label": "集成与迁移",
       "desc": "微信、其他 Agent、MCP 桥接",
-      "count": 6
+      "count": 9
     },
     {
       "id": "fun",
       "label": "娱乐与彩蛋",
       "desc": "皮肤、桌宠、小游戏",
-      "count": 9
+      "count": 11
     },
     {
       "id": "model",
@@ -80,13 +80,13 @@
       "id": "content",
       "label": "内容创作与办公",
       "desc": "长文写作、PPT、表格与文档",
-      "count": 9
+      "count": 10
     },
     {
       "id": "remote",
       "label": "移动端与远程",
       "desc": "手机客户端、远程接管、iOS 调试",
-      "count": 5
+      "count": 7
     }
   ],
   "category_map": {

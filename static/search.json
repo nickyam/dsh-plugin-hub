@@ -118,6 +118,30 @@
     "url": "/plugins/dsh-ops/"
   },
   {
+    "id": "billion-context",
+    "name": "billion-context（上下文压缩）",
+    "aliases": [
+      "bili",
+      "十亿上下文",
+      "上下文压缩代理"
+    ],
+    "category": "workflow",
+    "category_label": "协作与工作流",
+    "summary": "架在编程助手与模型 API 之间的上下文压缩代理：由模型自己决定何时压缩、压缩什么，把已消耗的对话增量压缩成分层摘要且可逆、对前缀缓存友好，让小上下文窗口也能跑月级长会话；DSH 只是它支持的 20 多个客户端之一。",
+    "tags": [
+      "上下文压缩",
+      "长会话",
+      "省token",
+      "跨客户端"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 7861,
+    "stars_label": "7861",
+    "flag": "通用代理型工具，非 DSH 专属；native 插件与 standalone 扩展不可同时启用，否则会重复压缩",
+    "url": "/plugins/billion-context/"
+  },
+  {
     "id": "dsh-web",
     "name": "dsh-web（创意工坊）",
     "aliases": [],
@@ -157,6 +181,25 @@
     "stars_label": "36.4k",
     "flag": "独立社区项目，与 DeepSeek 无隶属关系",
     "url": "/plugins/dsh-desktop/"
+  },
+  {
+    "id": "dsh-genui",
+    "name": "dsh-genui",
+    "aliases": [],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "面向 DSH 的生成式 UI 插件，将助手回复转化为安全、完全交互式的 UI 界面，在模型文本回复旁内联渲染图表、表单、测验、Mermaid 图与 3D 场景等组件。",
+    "tags": [
+      "GenUI",
+      "内联渲染",
+      "可视化"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 1024,
+    "stars_label": "1024",
+    "flag": "",
+    "url": "/plugins/dsh-genui/"
   },
   {
     "id": "deepseek-bot",
@@ -223,6 +266,24 @@
     "url": "/plugins/whale-cost-widget/"
   },
   {
+    "id": "dsh-pet",
+    "name": "dsh-pet",
+    "aliases": [],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "一只住在 DeepSeek Harness 里的桌面宠物，100+ 段透明动画资产，可多开、拖拽甩抛、脱离浏览器独立运行，也能自定义宠物种类（pet pack）。",
+    "tags": [
+      "桌宠",
+      "DIY素材"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 6489,
+    "stars_label": "6489",
+    "flag": "",
+    "url": "/plugins/dsh-pet/"
+  },
+  {
     "id": "dsh-skills-manager",
     "name": "DSH Skills Manager",
     "aliases": [
@@ -243,6 +304,29 @@
     "stars_label": "582",
     "flag": "社区项目（Apache-2.0，非 DeepSeek 官方）",
     "url": "/plugins/dsh-skills-manager/"
+  },
+  {
+    "id": "dsh-cost-meter",
+    "name": "dsh-cost-meter（费用统计）",
+    "aliases": [
+      "费用统计",
+      "Cost Meter"
+    ],
+    "category": "billing",
+    "category_label": "模型与计费",
+    "summary": "DSH 的统一成本账本：按会话、模型、调用与轮次追踪费用和 Token，集中查看账户余额、订阅额度与预算，并把 API 按量费用与 Plan 折算分开统计，支持多厂商价目表与峰谷提醒。",
+    "tags": [
+      "成本",
+      "用量",
+      "多厂商",
+      "预算"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 721,
+    "stars_label": "721",
+    "flag": "社区项目（MIT，非 DeepSeek 官方）",
+    "url": "/plugins/dsh-cost-meter/"
   },
   {
     "id": "dsh-codex-ui",
@@ -269,28 +353,27 @@
     "url": "/plugins/dsh-codex-ui/"
   },
   {
-    "id": "billion-context",
-    "name": "billion-context（上下文压缩）",
+    "id": "dsh-browser",
+    "name": "dsh-browser（真实浏览器）",
     "aliases": [
-      "bili",
-      "十亿上下文",
-      "上下文压缩代理"
+      "@cjylzs/dsh-browser",
+      "会话浏览器"
     ],
-    "category": "workflow",
-    "category_label": "协作与工作流",
-    "summary": "架在编程助手与模型 API 之间的上下文压缩代理：由模型自己决定何时压缩、压缩什么，把已消耗的对话增量压缩成分层摘要且可逆、对前缀缓存友好，让小上下文窗口也能跑月级长会话；DSH 只是它支持的 20 多个客户端之一。",
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "给每个会话配一个真实的 Chrome / Edge 进程并在右侧栏实时镜像，模型用一组工具点网页、填表单、翻页，用户可随时在镜像里接管；会话之间标签页、登录态与 CDP 端口完全隔离，Web 与桌面端都能用。",
     "tags": [
-      "上下文压缩",
-      "长会话",
-      "省token",
-      "跨客户端"
+      "浏览器",
+      "自动化",
+      "CDP",
+      "会话隔离"
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "stars": 7861,
-    "stars_label": "7861",
-    "flag": "通用代理型工具，非 DSH 专属；native 插件与 standalone 扩展不可同时启用，否则会重复压缩",
-    "url": "/plugins/billion-context/"
+    "stars": 5,
+    "stars_label": "5",
+    "flag": "社区项目；模型可操作真实浏览器与登录态，涉及账号与付款操作时请留意",
+    "url": "/plugins/dsh-browser/"
   },
   {
     "id": "dsh-find-plugin",
@@ -334,25 +417,6 @@
     "stars_label": "10.5k",
     "flag": "包名 @linxin666/dsh-web-all，仓库是 zhu1090093659/dsh-web 单体仓",
     "url": "/plugins/dsh-web-all/"
-  },
-  {
-    "id": "dsh-genui",
-    "name": "dsh-genui",
-    "aliases": [],
-    "category": "ui",
-    "category_label": "界面与体验",
-    "summary": "面向 DSH 的生成式 UI 插件，将助手回复转化为安全、完全交互式的 UI 界面，在模型文本回复旁内联渲染图表、表单、测验、Mermaid 图与 3D 场景等组件。",
-    "tags": [
-      "GenUI",
-      "内联渲染",
-      "可视化"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 1024,
-    "stars_label": "1024",
-    "flag": "",
-    "url": "/plugins/dsh-genui/"
   },
   {
     "id": "modsearch",
@@ -450,22 +514,66 @@
     "url": "/plugins/dsh-plugin-gate/"
   },
   {
-    "id": "dsh-pet",
-    "name": "dsh-pet",
-    "aliases": [],
-    "category": "fun",
-    "category_label": "娱乐与彩蛋",
-    "summary": "一只住在 DeepSeek Harness 里的桌面宠物，100+ 段透明动画资产，可多开、拖拽甩抛、脱离浏览器独立运行，也能自定义宠物种类（pet pack）。",
+    "id": "dsh-wechat",
+    "name": "dsh-wechat",
+    "aliases": [
+      "微信桥接"
+    ],
+    "category": "integration",
+    "category_label": "集成与迁移",
+    "summary": "把微信联系人接到 DeepSeek Harness 会话的桥接插件：每个微信发送者对应一个独立的 DSH 会话（wechat-），各自保留上下文；扫码绑定一次后，在微信里发消息即可驱动 Agent，电脑息屏时也能值守。",
     "tags": [
-      "桌宠",
-      "DIY素材"
+      "微信",
+      "远程",
+      "桥接"
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "stars": 6489,
-    "stars_label": "6489",
+    "stars": 0,
+    "stars_label": "0",
     "flag": "",
-    "url": "/plugins/dsh-pet/"
+    "url": "/plugins/dsh-wechat/"
+  },
+  {
+    "id": "oh-story-dsh",
+    "name": "oh-story-dsh",
+    "aliases": [],
+    "category": "content",
+    "category_label": "内容创作与办公",
+    "summary": "oh-story-dsh 是 DeepSeek Harness（DSH）的社区插件，把小说、短剧、互动游戏与视频解说四大创作工作台打包集成进 DSH Web，为本地作品目录提供专业的故事创作、改编与生产工具（与 DeepSeek 无隶属关系）。",
+    "tags": [
+      "小说",
+      "短剧",
+      "游戏脚本",
+      "视频解说",
+      "工作流"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 788,
+    "stars_label": "788",
+    "flag": "",
+    "url": "/plugins/oh-story-dsh/"
+  },
+  {
+    "id": "dsh-univer-office",
+    "name": "dsh-univer-office",
+    "aliases": [],
+    "category": "content",
+    "category_label": "内容创作与办公",
+    "summary": "dsh-univer-office 是 DeepSeek Harness（DSH）的 Univer 办公插件，把电子表格、文档、幻灯片、关系表与画布集成进统一运行时，让 AI 代理用自然语言创建 / 编辑 / 验证办公文件，并通过隔离工作树实现安全检查。",
+    "tags": [
+      "表格",
+      "文档",
+      "幻灯片",
+      "画布"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 737,
+    "stars_label": "737",
+    "flag": "",
+    "url": "/plugins/dsh-univer-office/"
   },
   {
     "id": "agentero-dsh",
@@ -492,50 +600,51 @@
     "url": "/plugins/agentero-dsh/"
   },
   {
-    "id": "dsh-cost-meter",
-    "name": "dsh-cost-meter（费用统计）",
+    "id": "universal-plugin-hub",
+    "name": "Universal Plugin Hub",
     "aliases": [
-      "费用统计",
-      "Cost Meter"
+      "统一插件中枢",
+      "plugin-hub",
+      "跨生态插件"
     ],
-    "category": "billing",
-    "category_label": "模型与计费",
-    "summary": "DSH 的统一成本账本：按会话、模型、调用与轮次追踪费用和 Token，集中查看账户余额、订阅额度与预算，并把 API 按量费用与 Plan 折算分开统计，支持多厂商价目表与峰谷提醒。",
+    "category": "market",
+    "category_label": "插件市场与发现",
+    "summary": "把 Claude Code 与 Codex 的插件生态接进 DSH：浏览官方 Claude 目录、添加 Claude / Codex 市场或任意 Git 仓库当插件源，再把插件、Skills 与 MCP 服务放在同一个界面里管。",
     "tags": [
-      "成本",
-      "用量",
-      "多厂商",
-      "预算"
+      "插件市场",
+      "跨生态",
+      "MCP",
+      "技能管理"
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "stars": 721,
-    "stars_label": "721",
-    "flag": "社区项目（MIT，非 DeepSeek 官方）",
-    "url": "/plugins/dsh-cost-meter/"
+    "stars": 12,
+    "stars_label": "12",
+    "flag": "装 Claude / Codex 插件前先看清它声明了什么权限",
+    "url": "/plugins/universal-plugin-hub/"
   },
   {
-    "id": "dsh-browser",
-    "name": "dsh-browser（真实浏览器）",
+    "id": "dsh-bili-scroll",
+    "name": "dsh-bili-scroll（刷 B 站）",
     "aliases": [
-      "@cjylzs/dsh-browser",
-      "会话浏览器"
+      "B站日报",
+      "bili scroll",
+      "每天刷B站"
     ],
-    "category": "tool",
-    "category_label": "工具与能力",
-    "summary": "给每个会话配一个真实的 Chrome / Edge 进程并在右侧栏实时镜像，模型用一组工具点网页、填表单、翻页，用户可随时在镜像里接管；会话之间标签页、登录态与 CDP 端口完全隔离，Web 与桌面端都能用。",
+    "category": "content",
+    "category_label": "内容创作与办公",
+    "summary": "每天替你刷一轮 B 站：按关键词搜近几天的视频，逐条读字幕原文（不看摘要）判断值不值得看，写一份 Markdown 报告到 out/<日期>.md，特别值得的留一条评论 @ 你。",
     "tags": [
-      "浏览器",
-      "自动化",
-      "CDP",
-      "会话隔离"
+      "B站",
+      "日报",
+      "内容筛选"
     ],
     "status_label": "社区",
     "repo_confirmed": true,
-    "stars": 5,
-    "stars_label": "5",
-    "flag": "社区项目；模型可操作真实浏览器与登录态，涉及账号与付款操作时请留意",
-    "url": "/plugins/dsh-browser/"
+    "stars": 1445,
+    "stars_label": "1445",
+    "flag": "npm 上是旧版，别用 add dsh-bili-scroll 装",
+    "url": "/plugins/dsh-bili-scroll/"
   },
   {
     "id": "awesome-dsh-plugin",
@@ -1284,27 +1393,6 @@
     "url": "/plugins/dsh-mcp-client/"
   },
   {
-    "id": "dsh-wechat",
-    "name": "dsh-wechat",
-    "aliases": [
-      "微信桥接"
-    ],
-    "category": "integration",
-    "category_label": "集成与迁移",
-    "summary": "把微信联系人接到 DeepSeek Harness 会话的桥接插件：每个微信发送者对应一个独立的 DSH 会话（wechat-），各自保留上下文；扫码绑定一次后，在微信里发消息即可驱动 Agent，电脑息屏时也能值守。",
-    "tags": [
-      "微信",
-      "远程",
-      "桥接"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 0,
-    "stars_label": "0",
-    "flag": "",
-    "url": "/plugins/dsh-wechat/"
-  },
-  {
     "id": "ds-harness-remote",
     "name": "ds-harness-remote",
     "aliases": [],
@@ -1380,47 +1468,6 @@
     "stars_label": "8012",
     "flag": "",
     "url": "/plugins/webnovel-writer/"
-  },
-  {
-    "id": "oh-story-dsh",
-    "name": "oh-story-dsh",
-    "aliases": [],
-    "category": "content",
-    "category_label": "内容创作与办公",
-    "summary": "oh-story-dsh 是 DeepSeek Harness（DSH）的社区插件，把小说、短剧、互动游戏与视频解说四大创作工作台打包集成进 DSH Web，为本地作品目录提供专业的故事创作、改编与生产工具（与 DeepSeek 无隶属关系）。",
-    "tags": [
-      "小说",
-      "短剧",
-      "游戏脚本",
-      "视频解说",
-      "工作流"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 788,
-    "stars_label": "788",
-    "flag": "",
-    "url": "/plugins/oh-story-dsh/"
-  },
-  {
-    "id": "dsh-univer-office",
-    "name": "dsh-univer-office",
-    "aliases": [],
-    "category": "content",
-    "category_label": "内容创作与办公",
-    "summary": "dsh-univer-office 是 DeepSeek Harness（DSH）的 Univer 办公插件，把电子表格、文档、幻灯片、关系表与画布集成进统一运行时，让 AI 代理用自然语言创建 / 编辑 / 验证办公文件，并通过隔离工作树实现安全检查。",
-    "tags": [
-      "表格",
-      "文档",
-      "幻灯片",
-      "画布"
-    ],
-    "status_label": "社区",
-    "repo_confirmed": true,
-    "stars": 737,
-    "stars_label": "737",
-    "flag": "",
-    "url": "/plugins/dsh-univer-office/"
   },
   {
     "id": "dsh-minigames",
@@ -2225,5 +2272,352 @@
     "stars_label": "1404",
     "flag": "有 free 字样不代表每个后端都永久免费",
     "url": "/plugins/dsh-free-search/"
+  },
+  {
+    "id": "dsh-go",
+    "name": "DSH Go（Android 客户端）",
+    "aliases": [
+      "dsh-Go",
+      "安卓客户端",
+      "手机 DSH"
+    ],
+    "category": "remote",
+    "category_label": "移动端与远程",
+    "summary": "把 DSH 搬到 Android 手机上的第三方客户端：App 内装好 PRoot 版 Ubuntu + Node.js + DSH 引擎，手机本地就能跑；也能通过 SSH 或 DSHarness Remote 接管电脑、服务器上的 DSH，两种主机在同一个聊天界面里切换。",
+    "tags": [
+      "Android",
+      "移动端",
+      "远程接管"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 27263,
+    "stars_label": "27.3k",
+    "flag": "是客户端不是插件，安装走 APK 侧载",
+    "url": "/plugins/dsh-go/"
+  },
+  {
+    "id": "dsh-qqbot",
+    "name": "dsh-qqbot（QQ 通道）",
+    "aliases": [
+      "QQ 机器人",
+      "qqbot",
+      "腾讯 QQ"
+    ],
+    "category": "integration",
+    "category_label": "集成与迁移",
+    "summary": "腾讯 QQ 开放平台团队（tencent-connect）维护的 QQ 通道插件：在 QQ 私聊与群里直接和 DSH 的 agent 对话，也能在手机给本机 Agent 派活。凭据走扫码绑定，绑过一次不用再扫。",
+    "tags": [
+      "QQ",
+      "消息通道",
+      "手机派活"
+    ],
+    "status_label": "官方",
+    "repo_confirmed": true,
+    "stars": 611,
+    "stars_label": "611",
+    "flag": "腾讯官方出品，不是 DeepSeek 官方；装到 qqbot profile",
+    "url": "/plugins/dsh-qqbot/"
+  },
+  {
+    "id": "dsh-reasoning-only-guard",
+    "name": "dsh-reasoning-only-guard",
+    "aliases": [
+      "空回复守卫",
+      "reasoning guard",
+      "防会话卡死"
+    ],
+    "category": "security",
+    "category_label": "安全与治理",
+    "summary": "挡住「模型只在推理通道里答完、正文一个字没有」的那种轮次——它会在会话日志里存下一条空的 assistant 消息，而网关会以「content or tool_calls must be set」拒掉之后每一轮，整个会话从此报废。插件在落盘前补一小段文字，让这条消息永远不为空。",
+    "tags": [
+      "稳定性",
+      "防护",
+      "会话救火"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 7,
+    "stars_label": "7",
+    "flag": "只能预防，修不好已经写坏的会话",
+    "url": "/plugins/dsh-reasoning-only-guard/"
+  },
+  {
+    "id": "dsh-memory-palace",
+    "name": "dsh-memory-palace（记忆宫殿）",
+    "aliases": [
+      "记忆宫殿",
+      "memory palace",
+      "文件式记忆"
+    ],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "把 WorkBuddy 那套「记忆就是一个你能直接编辑的 Markdown 文件」搬进 DSH：用户级偏好与项目级约定分层存、跨会话常驻注入，AI 每轮自己整理今日日志，你随时能打开文件改它。",
+    "tags": [
+      "跨会话记忆",
+      "Markdown",
+      "WorkBuddy 同构"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 29,
+    "stars_label": "29",
+    "flag": "写的是你自己的文件，改之前先备份",
+    "url": "/plugins/dsh-memory-palace/"
+  },
+  {
+    "id": "dsh-easyrewrite",
+    "name": "DSH-EasyRewrite（撤回与气泡编辑）",
+    "aliases": [
+      "撤回",
+      "气泡编辑",
+      "消息重编辑",
+      "easyrewrite"
+    ],
+    "category": "ui",
+    "category_label": "界面与体验",
+    "summary": "给 DSH Web 补上「发出去了也能改」：点自己的消息气泡原位重编辑，点复制键旁的撤回键把这条及其后全部截掉。关键是惰性提交——在你真正按「确定」或「发送」之前，对话、模型上下文、会话日志一点没动。",
+    "tags": [
+      "撤回",
+      "消息编辑",
+      "界面增强"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 133,
+    "stars_label": "133",
+    "flag": "靠归档 + 同名新会话实现，会话列表会多出归档项",
+    "url": "/plugins/dsh-easyrewrite/"
+  },
+  {
+    "id": "dsh-ego-browser",
+    "name": "ego-browser（看得见的 Agent 浏览器）",
+    "aliases": [
+      "ego",
+      "可观察浏览器",
+      "接管浏览器"
+    ],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "把 ego-lite（给 AI Agent 用的 Chromium）接进 DSH，并在右侧边栏开一扇实时的窗：agent 在点哪里、滚到哪、卡在哪个验证码上都看得见，你也能直接在画面上点一下把它接管过来。",
+    "tags": [
+      "浏览器",
+      "可观察",
+      "人机接管"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 548,
+    "stars_label": "548",
+    "flag": "与 Da1dr1em/dsh-ego-browser 是两个仓库，别混",
+    "url": "/plugins/dsh-ego-browser/"
+  },
+  {
+    "id": "dsh-bili-humanism",
+    "name": "dsh-bili-humanism（B 站内容学习）",
+    "aliases": [
+      "人格积累",
+      "humanism",
+      "信笺反思"
+    ],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "和 bili-scroll 配套的另一半：一个负责看，一个负责收。它读 B 站的稿与画面、写每日信笺，把「认识的修正」按天选一句存进 human-world.md，让人格慢慢受影响；点赞、投币、收藏、历史四个写入开关各自独立且默认关闭，评论入口不开放。",
+    "tags": [
+      "B站",
+      "人格积累",
+      "写入开关"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 276,
+    "stars_label": "276",
+    "flag": "带真实写账号的能力，开之前先读授权说明",
+    "url": "/plugins/dsh-bili-humanism/"
+  },
+  {
+    "id": "dsh-nekowhale-stickers",
+    "name": "dsh-nekowhale-stickers（大肥鱼表情包）",
+    "aliases": [
+      "表情包",
+      "大肥鱼",
+      "nekowhale",
+      "GPT娘"
+    ],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "给 DSH 一个能查的表情包知识库：322 张大肥鱼 / GPT娘 表情逐张标好场景、动作、梗和双人表情的对象方向，按情绪检索，还能在本地拼文字表情包。它解决的问题是「AI 只有一个语气」。",
+    "tags": [
+      "表情包",
+      "人格化",
+      "桌宠"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 202,
+    "stars_label": "202",
+    "flag": "素材是 CC BY-NC 4.0，商用要另谈",
+    "url": "/plugins/dsh-nekowhale-stickers/"
+  },
+  {
+    "id": "dsh-windows-mcp",
+    "name": "dsh-windows-mcp（Windows 桌面自动化）",
+    "aliases": [
+      "windows-mcp",
+      "电脑操作",
+      "桌面自动化"
+    ],
+    "category": "tool",
+    "category_label": "工具与能力",
+    "summary": "把 CursorTouch/Windows-MCP 挂到 DSH 自带的 MCP 客户端桥上，让 agent 能截屏、读界面元素、点按输入、读写剪贴板与注册表——那些只有图形界面、没有命令行入口的老软件，也能被它操作。",
+    "tags": [
+      "Windows",
+      "桌面自动化",
+      "MCP"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 1736,
+    "stars_label": "1736",
+    "flag": "只支持 Windows 10/11，且要 DSH Desktop 0.2.0-rc.2+",
+    "url": "/plugins/dsh-windows-mcp/"
+  },
+  {
+    "id": "dsh-knowledge",
+    "name": "dsh-knowledge（知识库）",
+    "aliases": [
+      "知识库",
+      "RAG",
+      "本地向量检索"
+    ],
+    "category": "memory",
+    "category_label": "记忆与知识",
+    "summary": "一套能装进 DSH 的完整知识库：把文件、目录、网页和笔记导入，切块、向量化、混合检索，再让模型带着出处回答——可以零向量配置跑，也可以全本地模型跑，不需要另起一个知识库服务。",
+    "tags": [
+      "知识库",
+      "混合检索",
+      "本地模型"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 107,
+    "stars_label": "107",
+    "flag": "装之前要改 pnpm 构建白名单，否则 add 会中途退出",
+    "url": "/plugins/dsh-knowledge/"
+  },
+  {
+    "id": "cc-safety-net",
+    "name": "cc-safety-net（执行前防护）",
+    "aliases": [
+      "安全网",
+      "命令防护",
+      "safety net"
+    ],
+    "category": "security",
+    "category_label": "安全与治理",
+    "summary": "在工具调用真正执行之前先看一眼命令要干什么：git reset --hard、git push --force、危险目标的 rm -rf、find -delete、PowerShell Remove-Item 一律拦下，读取 SSH 私钥、.env、~/.aws、CLI 凭据的动作也拦。它解析命令本身做什么，套一层 bash -c 或 python -c、换个参数顺序都藏不住。",
+    "tags": [
+      "安全",
+      "命令拦截",
+      "凭据保护"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 2075,
+    "stars_label": "2075",
+    "flag": "是拦截器不是沙箱，不隔离进程、不管网络出口",
+    "url": "/plugins/cc-safety-net/"
+  },
+  {
+    "id": "dsh-overall-mcp",
+    "name": "dsh-overall-mcp（全局 MCP 与 Skill）",
+    "aliases": [
+      "全局 MCP",
+      "overall mcp",
+      "MCP 面板"
+    ],
+    "category": "integration",
+    "category_label": "集成与迁移",
+    "summary": "在 DSH 侧栏挂一块「全局 MCP & Skill」：把散落在 Claude Desktop、Claude Code、Cursor、Codex CLI 里的 MCP 配置一次扫出来登记，再从六个上游目录装新的，最后用调用记录回答那个老问题——明明配了，为什么它没用。",
+    "tags": [
+      "MCP",
+      "统一管理",
+      "调用记录"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 25,
+    "stars_label": "25",
+    "flag": "本机扫到的 Skill 不等于当前会话已加载",
+    "url": "/plugins/dsh-overall-mcp/"
+  },
+  {
+    "id": "dsh-notifier",
+    "name": "dsh-notifier（通知与远程应答）",
+    "aliases": [
+      "通知",
+      "远程审批",
+      "notifier"
+    ],
+    "category": "integration",
+    "category_label": "集成与迁移",
+    "summary": "人不在电脑前，也能知道 agent 在干什么、并且在它等你的时候回一句。28 个出站通道、6 个入站通道，任务完成 / 出错 / 等审批 / 长任务状态都能推出来，也能从手机批准、回答 ask_user、接着对话或切会话。",
+    "tags": [
+      "通知",
+      "手机应答",
+      "远程审批"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 65,
+    "stars_label": "65",
+    "flag": "通道凭证与回传白名单要先配好再开",
+    "url": "/plugins/dsh-notifier/"
+  },
+  {
+    "id": "dsh-remote-control",
+    "name": "dsh-remote-control（远程接手另一台 DSH）",
+    "aliases": [
+      "远程控制",
+      "远程接手",
+      "remote control"
+    ],
+    "category": "remote",
+    "category_label": "移动端与远程",
+    "summary": "在当前窗口用原生 DSH 界面操作另一台电脑上的 DSH——不套远程桌面，也不做一个简化面板，对端还是同一套界面、控件和操作方式，审批与 AI 提问由远程端回答。",
+    "tags": [
+      "远程",
+      "双机接力",
+      "原生界面"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 2,
+    "stars_label": "2",
+    "flag": "明文 ws:// 加 token，必须套加密隧道",
+    "url": "/plugins/dsh-remote-control/"
+  },
+  {
+    "id": "dsh-bigfish",
+    "name": "dsh-bigfish（大肥鱼桌宠）",
+    "aliases": [
+      "大肥鱼桌宠",
+      "bigfish",
+      "桌宠"
+    ],
+    "category": "fun",
+    "category_label": "娱乐与彩蛋",
+    "summary": "蹲在 DSH Web 右下角的一只可拖动大肥鱼，会跟着任务状态换动作：你交任务它就收工准备，它读文件搜索执行工具时气泡里能看到工具状态，等你确认时举牌，任务结束开心收工。角色能换，台词能改，动作能自己加。",
+    "tags": [
+      "桌宠",
+      "状态可视化",
+      "角色包"
+    ],
+    "status_label": "社区",
+    "repo_confirmed": true,
+    "stars": 29,
+    "stars_label": "29",
+    "flag": "与 dsh-pet 是两个项目，别装重了",
+    "url": "/plugins/dsh-bigfish/"
   }
 ]

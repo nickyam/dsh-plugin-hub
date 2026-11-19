@@ -20,6 +20,9 @@
   flag: 安装写法有多种，以仓库 README 为准
   notes: dsh 0.2.1+ 市场是「插件」页的一个标签页；旧版在「设置 → 插件市场」打开，需 dsh web 0.1.0-rc.6+。注意：在装了 DSH Desktop 的机器上用命令行 add 可能装进 profiles/web 而非 Desktop 实际使用的 profile，桌面端请在应用内 Settings → Plugins 安装。
   refs:
+  - wx-aisketchlab
+  - wx-aisketchlab
+  - wx-yuanma
   - wx-xiaocheng
   - wx-shuzishanshui
   - wx-dabaihua
@@ -229,6 +232,8 @@
   flag: 需按 DSH 版本选对应插件版本
   notes: 安装前硬刷新浏览器（Cmd/Ctrl+Shift+R）。注意版本匹配：DSH 0.2.2-rc.1+ 用 @0.30.1；0.2.1 线（含当前 latest）需钉 @0.28.2；更老的 host 见 README 版本对照表——装错版本会触发版本拒绝错误。
   refs:
+  - wx-aisketchlab
+  - wx-aisketchlab
   - wx-xiaocheng
   - wx-shuzishanshui
   - baike-dsh
@@ -330,6 +335,7 @@
   - 可视化
   notes: npm 包名现为 @changfenhuang/dsh-genui，旧包 @omdsh-dev/dsh-genui 已弃用，需先移除再重装新包。
   refs:
+  - wx-yuanma
   - wx-quanjing
   - wx-shixiang
 - id: dsh-synapse
@@ -686,6 +692,9 @@
   - 诊断
   notes: 需 @deepseek-ai/dsh 0.2.0-rc.2 及以上（各版本支持见 docs/compatibility.md）；数值采用 dsh 自身 Token 计量投影，与内置计量器一致。UI 支持简中 / 英 / 日等多语言（切换需 dsh 0.2.2+）。
   refs:
+  - wx-aisketchlab
+  - wx-aisketchlab
+  - wx-yuanma
   - wx-shuzishanshui
   - wx-quanjing
   - wx-feishu
@@ -1263,6 +1272,7 @@
   - 桥接
   notes: 走腾讯 iLink 机器人通道（ilinkai.weixin.qq.com），协议层基于 @tencent-weixin/openclaw-weixin（MIT）并改写为 DSH 原生。社区另有多个微信桥接实现（panqing0313/dsh-plugin-weixin、gnulife/dsh-plugin-wechat、zgat/dsh-wechat 等），本条目以 dAI-aigc/dsh-wechat 为准。装好后需重启 dsh web 生效。
   refs:
+  - wx-yuanma
   - wx-dabaihua
 - id: ds-harness-remote
   name: ds-harness-remote
@@ -1375,6 +1385,7 @@
   - 工作流
   notes: README 示例安装固定 @oh-story/dsh@0.1.23 与 dsh@0.2.1-rc.5；社区插件，与 DeepSeek 无隶属关系。
   refs:
+  - wx-yuanma
   - wx-quanjing
 - id: dsh-univer-office
   name: dsh-univer-office
@@ -1400,6 +1411,7 @@
   - 画布
   notes: Dream Num 出品的 Univer 办公套件 DSH 插件；支持 Sheets / Docs / Slides / Bases / Boards 统一于 .univer 文件。
   refs:
+  - wx-yuanma
   - wx-quanjing
 - id: dsh-minigames
   name: dsh-minigames
@@ -1556,6 +1568,7 @@
   - 桌宠
   - DIY素材
   refs:
+  - wx-yuanma
   - wx-shuzishanshui
   - wx-quanjing
 - id: petdex
@@ -1730,6 +1743,7 @@
   flag: 社区项目（MIT，非 DeepSeek 官方）
   notes: 仓库 Han-1413141/dsh-cost-meter（master 分支），npm 包 dsh-cost-meter，README 版本 1.9.70（文章写 1.9.47，以仓库为准）。环境要求 Node.js >= 20、DSH 0.2.0+ 且宿主可用 pnpm；装完需重启 dsh web。桌面端用其内置 CLI 与 desktop profile。文章（wx-top10-30d）称其「内置 170+ 模型价目表、可查十二家 Coding Plan 额度」，README 印证支持多厂商 Plan 与自定义余额源，具体家数以仓库为准。
   refs:
+  - wx-yuanma
   - wx-shuzishanshui
   - wx-top10-30d
 - id: dsh-codex-ui
@@ -1810,6 +1824,8 @@
   flag: 通用代理型工具，非 DSH 专属；native 插件与 standalone 扩展不可同时启用，否则会重复压缩
   notes: 仓库 ranxianglei/billion-context（master 分支），npm 包 billion-context，README 标 v0.1.208 附近（文章写 0.1.208，npm 实时版本以 registry 为准）。它不是纯 DSH 插件：架在任意编程助手与模型 API 之间重写 Anthropic/OpenAI 流，DSH 只是其支持客户端之一，本站按「可在 DSH 安装使用」收录。全局 CLI 安装为 `npm install -g billion-context --prefix=~/.local`（bili 命令落在 ~/.local/bin）；DSH 专用安装见上。native 插件（bili plugin install）与 standalone 扩展（billion-context-pi 等）互斥，同时开会双重压缩，安装器会自动切换并备份原配置到 .bili-bak。文章（wx-huxiaomo）的「省 5 倍 token / 下载 175 万」为文章与安装界面口径，本站不采信为独立结论。
   refs:
+  - wx-aisketchlab
+  - wx-aisketchlab
   - wx-xiaocheng
   - wx-shuzishanshui
   - wx-huxiaomo
@@ -1838,6 +1854,8 @@
   flag: 社区项目；模型可操作真实浏览器与登录态，涉及账号与付款操作时请留意
   notes: 仓库 CJYLZS/dsh-browser（main/master 同指一份 README），npm 包为 scoped 名 @cjylzs/dsh-browser，README 最新 v0.3.x（文章写 github tag v0.2.3，为旧版）。旧的无 scope 名 dsh-browser 在 npm 上属于另一个项目，若 profile 里还留着旧键须先 `dsh plugin --profile web remove dsh-browser` 再装。按 DSH 版本选版本：>=0.1.7-rc.1 用 v0.3.x；0.1.5-rc.2 只能用 v0.1.0（tag 安装）。需本机已装 Chrome 或 Edge，playwright-core 不自带浏览器。装完重启宿主。桌面端要用其自带 CLI 的 --profile desktop 安装。
   refs:
+  - wx-aisketchlab
+  - wx-aisketchlab
   - wx-shixiang
   - wx-xiaobai
 - id: dsh-image-gen
@@ -2441,3 +2459,459 @@
   notes: 装的是宿主版本区间不是「越新越好」——engines.dsh 写死 >=0.2.1-rc.2 <0.4.0-0，0.1.x 与 0.4+ 会被插件管理器拒绝。README 只给 git clone 的本地路径装法（npm 上也有 dsh-free-search，现 0.9.70，作者 dddmuc）。它会自动接管 web.searchProvider 与 web.fetchProvider，可能把 provider 选择写进 profile，停用或卸载前要按文档把搜索与抓取配置恢复，否则配置仍指向已不存在的 provider。同时装多个搜索 / 抓取插件会互斥，设置页诊断会给警告。
   refs:
   - wx-xiaocheng
+- id: universal-plugin-hub
+  name: Universal Plugin Hub
+  aliases:
+  - 统一插件中枢
+  - plugin-hub
+  - 跨生态插件
+  category: market
+  status: community
+  repo: https://github.com/Ultmebius/universal-plugin-hub
+  install: dsh plugin add universal-plugin-hub
+  summary: 把 Claude Code 与 Codex 的插件生态接进 DSH：浏览官方 Claude 目录、添加 Claude / Codex 市场或任意 Git 仓库当插件源，再把插件、Skills 与 MCP 服务放在同一个界面里管。
+  features:
+  - 能力转换：插件的 Skills 同步进 DSH 原生技能目录（输入框 / 菜单可用），Commands 转成 DSH skill，Agents 定义变成可调用的子代理入口，Hooks 走 DSH 的 hooks 桥
+  - MCP 统一管理：插件声明的连接器与你自己的 MCP 服务并列，可配地址、鉴权、请求头与环境变量，逐个工具开关
+  - 插件源：内置 anthropics/claude-plugins-official 官方目录，可加遵循 Claude / Codex 市场规范的仓库（.claude-plugin/marketplace.json、.agents/plugins/marketplace.json）或含独立插件的 Git 仓库
+  - 上传与导入：zip / tgz / tar.gz / 单个 SKILL.md，或本地目录与 Git URL，单次上限 22 MB
+  - 本地技能扫描：默认读 ~/.agents/skills，不递归子目录，可逐个启用 / 停用（停用会从 / 菜单消失、文件原样保留）
+  - "输入框打 @ 选启用中的插件：这一轮只装载真正要用的技能、子命令与 MCP 工具，而不是全量加载"
+  - LSP：插件声明的语言服务器在可执行文件存在时注册，缺失会明确报出而不是静默跳过
+  tags:
+  - 插件市场
+  - 跨生态
+  - MCP
+  - 技能管理
+  flag: 装 Claude / Codex 插件前先看清它声明了什么权限
+  notes: 支持 DSH Desktop 与 CLI web profile；桌面端在 Settings → Plugins → Add plugin 里填包名或仓库 URL。同一插件同时带 Claude 与 Codex 描述符时以 Claude 为准。数据落在 ~/.dsh/agent-skills/universal-plugin-hub/（installed/ 装好的插件、market/ 源缓存、state.json 源登记），运行时补丁走 profiles/<profile>/cordis.patch.yml；卸载插件时它带进来的技能、MCP、Hooks、LSP 注册会一并移除。星标只有十几个，不能当「用的人多」的证据，但功能边界写得很清楚。
+  refs:
+  - wx-aisketchlab
+  - wx-aisketchlab
+  - wx-yuanma
+- id: dsh-go
+  name: DSH Go（Android 客户端）
+  aliases:
+  - dsh-Go
+  - 安卓客户端
+  - 手机 DSH
+  category: remote
+  status: community
+  repo: https://github.com/ccch1mneyyy/dsh-Go
+  install: 从 GitHub Releases 或 go.dshtui.com/download 下载对应架构的 APK 侧载（没有 npm 包，也不是 dsh plugin add）
+  summary: 把 DSH 搬到 Android 手机上的第三方客户端：App 内装好 PRoot 版 Ubuntu + Node.js + DSH 引擎，手机本地就能跑；也能通过 SSH 或 DSHarness Remote 接管电脑、服务器上的 DSH，两种主机在同一个聊天界面里切换。
+  features:
+  - 本机运行：PRoot 兼容启动，免 Root、免 Termux，占约 1 GB；只连远程主机的话不必装本机环境
+  - 远程接管：SSH 或 DSHarness Remote 连电脑 / 服务器，聊天页能直接跳到那台机器接着同一个会话
+  - 生成中插话：模型回复时排队新消息，可选「立即发送」打断或「插入」进当前轮
+  - 插件界面：原生 Flutter 工具卡、表单与面板，仓库带 SDK、教程与示例（sdk/plugin-kit 未发 npm，得先 clone）
+  - 手机操控：无障碍 / Shizuku / 自连 ADB 读屏点按输入，敏感动作三级确认，支付、银行、券商类默认拦截
+  - 分享与回放：单条回复生成分享卡，整段会话生成端到端加密的回放链接，密钥只在链接里、服务端读不到
+  - 外观：Deepy 与鲸娘桌宠、六种主题色、四种图标，横屏与平板切常驻侧栏
+  tags:
+  - Android
+  - 移动端
+  - 远程接管
+  flag: 是客户端不是插件，安装走 APK 侧载
+  notes: Android 8.0（API 26）以上，发布包只有 arm64-v8a 与 x86_64，没有 32 位 ARM；包名 io.github.ccch1mneyyy.dsh_app，targetSdk 28，以侧载为目标、不是 Google Play 配置。远程通道有明确缺口：只支持图片附件、App 内打不开网页版、插件管理只能开关、不支持 DS Bot 与对话记录导出。手机操控只对正常模式下的本机引擎开放，不打扰模式要 Android 14+ 加 Shizuku 或自连 ADB，熄屏会停任务、闲置 3 分钟自动结束。默认开启匿名使用统计，可在「设置 → 隐私与分享」关。iOS 版还在开发与真机测试，没有公开安装包。项目自己声明与 DeepSeek 无隶属关系，AGPL-3.0。
+  refs:
+  - wx-yuanma
+- id: dsh-qqbot
+  name: dsh-qqbot（QQ 通道）
+  aliases:
+  - QQ 机器人
+  - qqbot
+  - 腾讯 QQ
+  category: integration
+  status: official
+  repo: https://github.com/tencent-connect/dsh-qqbot
+  install: dsh plugin --profile qqbot add @tencent-connect/dsh-qqbot
+  summary: 腾讯 QQ 开放平台团队（tencent-connect）维护的 QQ 通道插件：在 QQ 私聊与群里直接和 DSH 的 agent 对话，也能在手机给本机 Agent 派活。凭据走扫码绑定，绑过一次不用再扫。
+  features:
+  - 扫码绑定：首次启动检测到没有凭据就进扫码引导，终端出二维码、手机 QQ 扫一下把凭据存进 profile
+  - 私聊与群聊：QQ WebSocket 收消息 → ctx.agents → DSH agent loop，回复用 sendMarkdown 发回
+  - 独立 profile：官方装法是单开 qqbot profile，不与 web 混在一起
+  - 降级通道：没有端内绑定页的纯 CLI 环境可设 QQBOT_BIND_OPEN_BROWSER=1 拉起系统浏览器扫码页
+  - 桌面端零命令行：「插件 → 添加插件」填 @tencent-connect/dsh-qqbot@latest，左下角头像 → 设置 → QQ 机器人扫码
+  tags:
+  - QQ
+  - 消息通道
+  - 手机派活
+  flag: 腾讯官方出品，不是 DeepSeek 官方；装到 qqbot profile
+  notes: npm 包全名是 @tencent-connect/dsh-qqbot，漏掉作用域装不上。README 建议升到 0.4.0 以上再扫码——更早版本的终端二维码可能渲染错位。手动装要自备 QQBOT_APPID 与 QQBOT_SECRET。别和其他同名的社区 dsh-qqbot（zaofan-make、Oblivious0214、wang-22-code 等都叫这个名字）搞混，认 tencent-connect 这个组织。
+  refs:
+  - wx-yuanma
+- id: dsh-reasoning-only-guard
+  name: dsh-reasoning-only-guard
+  aliases:
+  - 空回复守卫
+  - reasoning guard
+  - 防会话卡死
+  category: security
+  status: community
+  repo: https://github.com/apex-mochen/dsh-reasoning-only-guard
+  install: dsh plugin --profile web add github:apex-mochen/dsh-reasoning-only-guard
+  summary: 挡住「模型只在推理通道里答完、正文一个字没有」的那种轮次——它会在会话日志里存下一条空的 assistant 消息，而网关会以「content or tool_calls must be set」拒掉之后每一轮，整个会话从此报废。插件在落盘前补一小段文字，让这条消息永远不为空。
+  features:
+  - 只补空轮：本轮既没有可见文字也没有工具调用时才注入；带内容的轮次原样透传，不删不改
+  - 补什么可配：placeholder 自定义占位文字，includeFailedTurns 决定 error / aborted 的轮次要不要一并兜住，enabled 可以先关掉但留着安装
+  - 位置正确：包一层 llm/stream 的 AsyncIterable，在终止 chunk finish 之前插入 block-start / text-delta / block-end，赶在累加器记录之前
+  - 零依赖：lib/index.js 一百多行，没有 import、不起子进程、不读文件、不发网络请求、不设定时器
+  tags:
+  - 稳定性
+  - 防护
+  - 会话救火
+  flag: 只能预防，修不好已经写坏的会话
+  notes: '是预防不是修复——已经落进 session.v3.jsonl.zstd 的空消息它管不了，那种只能手工解包改内容再打包（DSH discussion #6520 记了这个唯一的绕法）。作者自己写得很坦白：对着「按规则报错的桩」跑通了端到端，但真实 DeepSeek 网关是否也把 content: "" 当未设置拒掉，目前仍只是社区反馈。根因其实在 llm-deepseek 的 serialize.ts，DSH 目前不收外部 PR，插件只能算一个够得着的补丁位。要求 DSH 0.1.x（peer @deepseek-ai/cordis ^4.0.1）、Node 20+，装完重启 profile，验证命令 dsh --profile web --dump-config | grep reasoning-only-guard。'
+  refs:
+  - wx-yuanma
+- id: dsh-memory-palace
+  name: dsh-memory-palace（记忆宫殿）
+  aliases:
+  - 记忆宫殿
+  - memory palace
+  - 文件式记忆
+  category: memory
+  status: community
+  repo: https://github.com/lovezi0/dsh-memory-palace
+  install: dsh plugin --profile web add github:lovezi0/dsh-memory-palace
+  summary: 把 WorkBuddy 那套「记忆就是一个你能直接编辑的 Markdown 文件」搬进 DSH：用户级偏好与项目级约定分层存、跨会话常驻注入，AI 每轮自己整理今日日志，你随时能打开文件改它。
+  features:
+  - 双层记忆：用户级 ~/.deepseek-harness/MEMORY.md 管跨项目偏好，项目级管项目约定，互不干扰
+  - 桥接 WorkBuddy / CodeBuddy：项目里已有 .workbuddy/memory 或 .codebuddy/memory 就直接读写那一套，不用维护两份
+  - 记忆工具：memory_note / memory_note_user 章节化写入并去重、memory_read 按 scope 读、memory_delete 两阶段确认后删、memory_update_section 整节精确替换防 stale
+  - 会话命令 /memory_reorganize（中文可打 /记忆重整）：全量重整项目记忆，双门禁（超注入预算 + 过冷却期）加原生确认，原文件自动整档备份
+  - 注入策略：长期记忆与今日日志按「会话起始快照」注入，按文件身份各只注入一次，不破前缀缓存、压缩后自动重注最新版
+  - 写入分工：记忆子代理每轮整理今日日志（章节化、标删），长期 MEMORY.md 留给主 AI 主动维护
+  - 设置页集成：全部配置在 DSH 设置面板里按板块折叠调整，不必改配置文件
+  - 自定义指令：不适合写进记忆的放 profile 里的 .memory-palace/user-commands.md，经系统提示词注入
+  tags:
+  - 跨会话记忆
+  - Markdown
+  - WorkBuddy 同构
+  flag: 写的是你自己的文件，改之前先备份
+  notes: 'CLI 推荐直接 github: 装（lib/ 构建产物随仓库分发，装即用）；锁版本加 #v1.8.6 这类 tag，改源码则 clone 后 npm run build 再本地 add。日志由子代理维护、永不过期不删，当证据层留着。兼容 DSH 0.2.2-rc.1 与桌面版。如果你本来就在用 WorkBuddy 的记忆目录，它会优先写那一份——等于两边共享同一套 MEMORY.md。'
+  refs:
+  - wx-yuanma
+- id: dsh-easyrewrite
+  name: DSH-EasyRewrite（撤回与气泡编辑）
+  aliases:
+  - 撤回
+  - 气泡编辑
+  - 消息重编辑
+  - easyrewrite
+  category: ui
+  status: community
+  repo: https://github.com/Renzic-Stone/DSH-EasyRewrite
+  install: dsh plugin --profile web add dsh-easyrewrite
+  summary: 给 DSH Web 补上「发出去了也能改」：点自己的消息气泡原位重编辑，点复制键旁的撤回键把这条及其后全部截掉。关键是惰性提交——在你真正按「确定」或「发送」之前，对话、模型上下文、会话日志一点没动。
+  features:
+  - 气泡原位编辑：单击自己的消息进编辑态，保留原始 Markdown，Esc 取消 / Ctrl+Enter 确定
+  - 撤回：每条用户消息的复制键旁一个撤回键，弹灰色的「撤回这条消息及其后 x 条提问？」确认胶囊
+  - 惰性提交：确认撤回只回填输入框，真正的截断发生在按发送时；中途关掉 DSH，会话零改动
+  - 无痕替换：原会话归档 → 同名新会话顶到目标消息之前 → 修改后的文本自动发出，感知上就是原对话被编辑过
+  - 版本翻页器：最终回复的动作条上渲染 ‹1/2›，点击或方向键切换版本，其余归档，只留一份活跃
+  - 三档编辑宽度：紧凑（气泡原宽起，上限 360px）/ 标准 360px / 扩展顶满 / 自定义
+  - 带图编辑：确认后图片随文本一起发出，编辑中可删可粘可拖入新图，刷新后进度能恢复
+  - 草稿持久化：按会话存，切标签页或刷新不丢；超过 10 秒未处理的待定草稿自动备份到本地
+  - 三语界面与官方风格设置卡：中文 / English / 日本語，改完即时生效
+  tags:
+  - 撤回
+  - 消息编辑
+  - 界面增强
+  flag: 靠归档 + 同名新会话实现，会话列表会多出归档项
+  notes: '只用官方扩展点（keyed 槽覆盖、官方 fork RPC、官方组件与设计令牌），不改 DSH 源码，卸载即还原、不留配置残留。一条硬限制来自宿主：DSH 只能在已闭合的轮次边界上 fork，正在流式输出的那一轮里的消息要等回复结束才能撤回。npm 包名 dsh-easyrewrite，也可 github: 装。v3.1.0 起适配 dsh 0.2.x 与 0.1.7 系列；0.1.1-rc.2 及更早宿主请停在 2.3.1（那条线的最终版，功能完整、不再加新功能）。'
+  refs:
+  - wx-yuanma
+- id: dsh-ego-browser
+  name: ego-browser（看得见的 Agent 浏览器）
+  aliases:
+  - ego
+  - 可观察浏览器
+  - 接管浏览器
+  category: tool
+  status: community
+  repo: https://github.com/Fisfzy/dsh-ego-browser
+  install: dsh plugin --profile desktop add dsh-ego-browser
+  summary: 把 ego-lite（给 AI Agent 用的 Chromium）接进 DSH，并在右侧边栏开一扇实时的窗：agent 在点哪里、滚到哪、卡在哪个验证码上都看得见，你也能直接在画面上点一下把它接管过来。
+  features:
+  - 实时观察窗：SSE 推流 + 标签条 + 历史抽屉，画面后端可选 CDP JPEG 或 FFmpeg H.264
+  - 看得见也控得住：监控窗里点击、拖拽、滚动会回传到真实浏览器，需要时亲手接管，不必打断 agent 重来
+  - 35 个 ego_* 结构化工具：任务空间、语义树快照、标签管理、导航与等待、点击填写悬停拖拽、截图下载上传、原始 CDP 与多步脚本
+  - 登录态导入：ego_login_import 把日常 Chrome / Edge / Brave 的 cookie 按域名搬进来，优先走扩展桥接（Chrome 127+ 的 ABE 也能用），cookie 值不进日志
+  - 人机验证与等人：ego_captcha 探测，ego_wait_for_human 在 CAPTCHA / 登录 / 2FA 上停下来等你
+  - 健壮性：冷启动只重试 CDP 瞬态错误、worker 单实例守卫 + 崩溃自愈、卸载不阻塞宿主退出
+  - 轨迹与回放：按会话写 JSONL 到 ~/.dsh/plugin-data/ego-browser/trajectories，ego_replay 可重放；默认对填写的文本脱敏
+  - 平台自足：Linux / Windows / macOS 自动探测 Chrome，内置 --no-sandbox wrapper，root / 容器 / 无显示器免配置
+  tags:
+  - 浏览器
+  - 可观察
+  - 人机接管
+  flag: 与 Da1dr1em/dsh-ego-browser 是两个仓库，别混
+  notes: 需要 DSH ≥ 0.1.2-rc.1、Node ≥ 22。侧栏优先注册进 DSH 0.2.1 起的原生右侧边栏；宿主没有原生侧栏时回退到 dsh-better-sidebar（≥ 0.12.2，推荐 ≥ 0.17.1），两个都没有就只留工具、不显示面板。Windows 上 Chrome / Edge ≥ 127 的 profile 复制路径会读到 0 条 cookie（ABE 绑定原始路径），必须走扩展桥接。README 徽章写 MIT，但 GitHub 识别的许可证是 NOASSERTION（自定义条款），要商用或再分发先自己读一眼 LICENSE。
+  refs:
+  - wx-yuanma
+- id: dsh-bili-scroll
+  name: dsh-bili-scroll（刷 B 站）
+  aliases:
+  - B站日报
+  - bili scroll
+  - 每天刷B站
+  category: content
+  status: community
+  repo: https://github.com/c1overzz/dsh-bili-scroll
+  install: dsh plugin --profile web add https://github.com/c1overzz/dsh-bili-scroll/releases/download/v2.0.2/dsh-bili-scroll-2.0.2.tgz
+  summary: 每天替你刷一轮 B 站：按关键词搜近几天的视频，逐条读字幕原文（不看摘要）判断值不值得看，写一份 Markdown 报告到 out/<日期>.md，特别值得的留一条评论 @ 你。
+  features:
+  - 按关键词搜（留空用内置几组），逐条读字幕原文再判断；没字幕的演示类视频先从故事板抽几帧看画面
+  - 日报落盘：每条含「为什么值得」与它自己的一句话，段首固定写成 ### BV号，插件数今天挑了几条就数这些标题行
+  - 自动评论：开着时每轮发一条评论 @ 你，默认每轮 1 条，设置页最多可到 20 条
+  - 峰谷时段自动跑：挑 DeepSeek 优惠时段，省 token
+  - 本地转写：可选装 Whisper 等本地转写，读不到字幕的视频也能处理（模型 538 MB 起，可在设置里换小的）
+  tags:
+  - B站
+  - 日报
+  - 内容筛选
+  flag: npm 上是旧版，别用 add dsh-bili-scroll 装
+  notes: 这条最容易踩坑——npm 上的包还停在 0.1.7（作者说发布账号在申诉，2026-10-17 之后的新版只能从 Release 装），照 npm 装会拿到缺参数的旧版，建 Python 环境时依赖装不上、二维码也画不出来。用 README 给的 Release tgz 直链，连不上 GitHub 可在前面加 gh-proxy.com。要求 dsh ≥ 0.1.7-rc.1，版本不够内核会静默跳过这个插件，装了跟没装一样还不报错。装完必须重启一次 dsh。空间：不装本地转写约 84 MB，装了约 1 GB。机器上最好有 Python 3.10+ 或 uv（都没有也行，插件会自己下一份 uv 并核对 sha256）。桌面版 0.1.3 及更早装不起来，0.1.4 起已修；桌面版上自动跑那一轮若卡住，先用设置页的「现在跑一轮」。
+  refs:
+  - wx-aisketchlab
+  - wx-aisketchlab
+  - wx-yuanma
+- id: dsh-bili-humanism
+  name: dsh-bili-humanism（B 站内容学习）
+  aliases:
+  - 人格积累
+  - humanism
+  - 信笺反思
+  category: memory
+  status: community
+  repo: https://github.com/InariNGT-Ofiicial/dsh-bili-humanism
+  install: 从 GitHub Releases 下同版本 .tgz 与 SHA256SUMS.txt 并核对，再 dsh plugin --profile web add ./dsh-bili-humanism-<版本>.tgz
+  summary: 和 bili-scroll 配套的另一半：一个负责看，一个负责收。它读 B 站的稿与画面、写每日信笺，把「认识的修正」按天选一句存进 human-world.md，让人格慢慢受影响；点赞、投币、收藏、历史四个写入开关各自独立且默认关闭，评论入口不开放。
+  features:
+  - 每日信笺：取稿 → 本地收件箱 → 每天从「认识的修正」或「下一次如何回应」里最多选一句写进 human-world.md，允许当天没有新认识、不必凑
+  - 四个写入开关默认全关：enableHistoryWrites / enableFavoriteWrites / enableLikeWrites / enableCoinWrites，各自绑账号、范围、期限与额度，还要配本地授权文件，缺一不可
+  - 写入前核验：账号核对、范围授权、额度、重复检查、回读状态，结果不明就暂停；每账号至少间隔 60 秒，单项授权最多 100 次
+  - 不讲评：评论等文字表达暂不开放，私信、动态、关注、投稿都没做
+  - 画面与字幕：字幕走带 WBI 签名的 /x/player/wbi/v2，取不到字幕轨可选本地 ASR 与抽帧（480p 上限），受下载大小、处理时间、请求数与帧数预算约束
+  - 离线质检：probe / audio-profile 只读本地账本与媒体，报字数与分段覆盖、字/分钟、专名形态分布，只报信号、不断言对错
+  - 兼容维护：支持 DSH 0.2.1-rc.2 / rc.3，保留旧版用法与设置；卸载会关账本与调度器
+  tags:
+  - B站
+  - 人格积累
+  - 写入开关
+  flag: 带真实写账号的能力，开之前先读授权说明
+  notes: '还没进推荐插件市场的精选目录，市场里搜或粘仓库 URL 可能装不上，按 README 用 Release 包更稳（发布包是现成的 JS、没有安装构建脚本）。作者写得相当克制：离线接口测试与真实安装验收不等于真实 B 站写入实测，这一版没对真实账号发过写请求；人格那部分只是上下文与记忆累积，没做参数微调，也不宣称长期效果已通过。1.8.0 起每日取稿默认关闭，要显式设 enableDailyFetching: true 才会在北京时间 21:30 起跑、22:00 截止，最多存 2 份新稿，且宿主得一直开着。'
+  refs:
+  - wx-yuanma
+- id: dsh-nekowhale-stickers
+  name: dsh-nekowhale-stickers（大肥鱼表情包）
+  aliases:
+  - 表情包
+  - 大肥鱼
+  - nekowhale
+  - GPT娘
+  category: fun
+  status: community
+  repo: https://github.com/Loping151/dsh-nekowhale-stickers
+  install: dsh plugin --profile web add dsh-nekowhale-stickers
+  summary: 给 DSH 一个能查的表情包知识库：322 张大肥鱼 / GPT娘 表情逐张标好场景、动作、梗和双人表情的对象方向，按情绪检索，还能在本地拼文字表情包。它解决的问题是「AI 只有一个语气」。
+  features:
+  - 表情知识库：逐张标注场景标签、动作描述、关联梗，双人表情记方向，不依赖模型自己看图；常驻上下文约 60 token
+  - 情绪检索：按情绪与场景词打分，支持中文部分匹配，随机去重
+  - 本地模板：想 / 举牌 / 葱卷 / 上联 / 下联 / 抱，六套模板自己拼文字表情包
+  - 增量同步：资源更新后自动拉最新，默认懒下载
+  - 自选：agent 可以自己浏览、开关，或只用挑中的一小撮；用户配的黑 / 白名单永远优先
+  - 通用接口：cordis 服务 stickers、[sticker:名字] 回复标记、MCP server、CLI 与公开 JSON，不绑框架
+  - 网页桌宠：右下角一只大肥鱼，跑在独立跨域 iframe 里不碰会话；双击能查 DeepSeek 余额（只用本机已登录的账号或 API Key，凭据不外发），pet / petBalance 可关
+  tags:
+  - 表情包
+  - 人格化
+  - 桌宠
+  flag: 素材是 CC BY-NC 4.0，商用要另谈
+  notes: 表情作者是 B 站「可以叫我云大人/雾雪」（kiriyuki.com），代码 Apache-2.0、素材 CC BY-NC 4.0——非商用可以，商用得另谈授权。322 张是仓库徽章上的数，会随资源更新变。它同时提供 MCP server 形态，所以不用 DSH 也能接到别的地方。dsh 0.2 也可以在网页侧栏「插件 → 添加插件」里填包名安装。
+  refs:
+  - wx-yuanma
+- id: dsh-windows-mcp
+  name: dsh-windows-mcp（Windows 桌面自动化）
+  aliases:
+  - windows-mcp
+  - 电脑操作
+  - 桌面自动化
+  category: tool
+  status: community
+  repo: https://github.com/helloHub1212/dsh-windows-mcp
+  install: dsh plugin --profile add github:helloHub1212/dsh-windows-mcp
+  summary: 把 CursorTouch/Windows-MCP 挂到 DSH 自带的 MCP 客户端桥上，让 agent 能截屏、读界面元素、点按输入、读写剪贴板与注册表——那些只有图形界面、没有命令行入口的老软件，也能被它操作。
+  features:
+  - 18 个桌面工具：屏幕截图、UI 树快照、鼠标键盘输入、剪贴板、进程与注册表，注册成 mcp__windows__* 供模型调用
+  - 挂官方桥，不重写协议：插件本身只是一个 carrier bundle（只有补丁、没有自己的服务），能力全来自宿主自带的 @deepseek-ai/dsh-mcp-client
+  - Computer Use 默认关闭：出厂是禁用状态，要自己到插件面板里打开，避免装完就给它操作屏幕的权限
+  - 依赖在应用内装：设置 → 桌面控制的 Dependency 卡片会显示 installed / 未安装 / 找不到 uv 三种状态，点一下装 Windows-MCP，桥接行写进 cordis.patch.yml（写前带时间戳备份、放在幂等标记里）
+  - 版本可控：同页能查上游版本、一键升级与回滚，每个版本装在自己的工具根目录，切换只改桥接行、不用重装
+  - 诊断工具：windows_mcp_doctor 走一遍环境与桥接检查
+  tags:
+  - Windows
+  - 桌面自动化
+  - MCP
+  flag: 只支持 Windows 10/11，且要 DSH Desktop 0.2.0-rc.2+
+  notes: 三个硬前提：Windows 10/11、带内置 @deepseek-ai/dsh-mcp-client 桥的 DSH Desktop 0.2.0-rc.2 或更新、PATH 里能找到 uv（找不到时它还会去 %USERPROFILE%\.local\bin 捞一次；仅装依赖用得上，DSH 本身启动不依赖）。想让 agent 真的「看见」截图，得用支持图片输入的模型。Electron 版独占 desktop 配置，命令行会对它拒绝所有命令（包括只读的），桌面端只能从图形界面装。作者在 Windows 11 + DSH Desktop 0.2.0-rc.2 上验过：桥接对外公布 18 个工具（上游 21 个减去排除的 3 个），启动约 1.5 秒就绪。
+  refs:
+  - wx-aisketchlab
+- id: dsh-knowledge
+  name: dsh-knowledge（知识库）
+  aliases:
+  - 知识库
+  - RAG
+  - 本地向量检索
+  category: memory
+  status: community
+  repo: https://github.com/Soren-ABT/dsh-knowledge
+  install: 先给目标 profile 的 pnpm-workspace.yaml 补 allowBuilds（esbuild / onnxruntime-node / protobufjs），再 dsh plugin --profile web add dsh-knowledge
+  summary: 一套能装进 DSH 的完整知识库：把文件、目录、网页和笔记导入，切块、向量化、混合检索，再让模型带着出处回答——可以零向量配置跑，也可以全本地模型跑，不需要另起一个知识库服务。
+  features:
+  - 文档来源：文件、目录、网页、文本笔记；本地路径能持续重扫与重新索引
+  - 混合检索：FTS5 BM25 + 向量召回 + RRF 融合 + MMR 去重，重排可选
+  - 证据上下文：按文档顺序动态生成 ContextWindow，命中之后能围绕原位继续往下读，不是只给一段碎片
+  - 全本地也能跑：本地 embedding、本地 rerank、本地 OCR 都支持；也能接 OpenAI 兼容接口或 Ollama
+  - 文档处理：常见办公格式与扫描 PDF，PaddleOCR 优先、Tesseract 兜底，MinerU 可选
+  - 管理面板：知识库分组、批量导入、预览、召回测试、模型管理、索引重建
+  tags:
+  - 知识库
+  - 混合检索
+  - 本地模型
+  flag: 装之前要改 pnpm 构建白名单，否则 add 会中途退出
+  notes: '安装有个前置动作最容易漏——esbuild、onnxruntime-node、protobufjs 这几个依赖要在安装期构建，pnpm 10 默认拒绝执行，dsh plugin add 会在登记 bundle 之前就退出。要先把 allowBuilds 合进该 profile 已有的 pnpm-workspace.yaml（别重复加第二个 allowBuilds: 键，YAML 会坏），再重跑一次 add，第二次会接着把 bundle 登记完。Node 要求 ^22.19.0 || >=24.0.0。默认本地 embedding 模型是 onnx-community/Qwen3-Embedding-0.6B-ONNX，约 585 MB、1024 维，跑在带版本 IPC 的独立子进程里，崩溃或超时只重建子进程、不用重启 DSH。OCR 推理也在单独子进程里，挂了只会让这份文档导入失败、不会带走 DSH。同类同名包不少（lemoncat7、XZX888、slder 等的 dsh-knowledge / dsh-knowledge-base / local-knowledge-base），认 Soren-ABT 这一份。'
+  refs:
+  - wx-aisketchlab
+- id: cc-safety-net
+  name: cc-safety-net（执行前防护）
+  aliases:
+  - 安全网
+  - 命令防护
+  - safety net
+  category: security
+  status: community
+  repo: https://github.com/kenryu42/cc-safety-net
+  install: npx -y cc-safety-net@latest install --deepseek-harness
+  summary: 在工具调用真正执行之前先看一眼命令要干什么：git reset --hard、git push --force、危险目标的 rm -rf、find -delete、PowerShell Remove-Item 一律拦下，读取 SSH 私钥、.env、~/.aws、CLI 凭据的动作也拦。它解析命令本身做什么，套一层 bash -c 或 python -c、换个参数顺序都藏不住。
+  features:
+  - 拦破坏性命令：不只认字面，藏在 bash -c / python -c 里的也认得；PowerShell 脚本文件会读盘判内容
+  - 拦凭据访问：SSH 私钥、.env、~/.aws、各家编码 CLI 的凭据目录，shell 与 agent 的文件工具两条路都管
+  - 三档预设 + 逐条开关：Standard / Strict / Paranoid，配本地网页 GUI，不用手写配置
+  - 规则书：官方提供 Terraform、AWS、gcloud、Azure 规则包，也能写自己的 JSON；规则书只能加限制、不能删内置规则
+  - 团队策略共享：把策略目录提交进 git，别人 clone 或云端会话继承同一套规则
+  - 可嵌入：Node.js 里直接调 checkCommand，不装 hook 也能复用同一套判定
+  - 配置坏了不会失守：策略文件解析失败时回落到安全默认值，而不是静默放行
+  tags:
+  - 安全
+  - 命令拦截
+  - 凭据保护
+  flag: 是拦截器不是沙箱，不隔离进程、不管网络出口
+  notes: 定位要说清——它 deny 调用，但不设置文件权限、不监控网络出口、不把进程关进容器，真正的沙箱还得靠宿主。路径匹配基本按 POSIX 来，PowerShell 覆盖有限。Node 18 以上，Windows / macOS / Linux 都能跑。装完先用 doctor 自检、status 看状态，怀疑没生效时先确认策略文件能不能正常解析（解析失败是有意回落，不是坏了）。README 把 DSH 的安装细节放在官网文档页（ccsafetynet.com/docs/installation/deepseek-harness），命令走 --deepseek-harness 这个开关。它同时支持 Claude Code、Codex、Cursor、Copilot CLI、Gemini CLI 等十几个 CLI，DSH 只是其中一个接入点。
+  refs:
+  - wx-aisketchlab
+- id: dsh-overall-mcp
+  name: dsh-overall-mcp（全局 MCP 与 Skill）
+  aliases:
+  - 全局 MCP
+  - overall mcp
+  - MCP 面板
+  category: integration
+  status: community
+  repo: https://github.com/YunzhouLi-hub/dsh-overall-mcp
+  install: dsh plugin --profile web add github:YunzhouLi-hub/dsh-overall-mcp
+  summary: 在 DSH 侧栏挂一块「全局 MCP & Skill」：把散落在 Claude Desktop、Claude Code、Cursor、Codex CLI 里的 MCP 配置一次扫出来登记，再从六个上游目录装新的，最后用调用记录回答那个老问题——明明配了，为什么它没用。
+  features:
+  - MCP · 已注册：扫宿主机 MCP 配置，看连接状态，启用 / 停用 / 配置 / 检查 / 移除，可按来源筛选与批量操作
+  - MCP · 市场：聚合官方 Registry、Smithery、Docker MCP、GitHub MCP、Awesome 远程与 Awesome 清单，去重后搜索、分类、收藏、安装
+  - Skill · 已注册：扫 $DSH_HOME/skills、~/.agents/skills、~/.claude/skills、~/.codex/skills，看说明、来源、文件与目录
+  - Skill · 市场：ClawHub、Anthropic 官方技能、腾讯 SkillHub 官方、SkillHub、GitHub，带本地索引、分类、来源筛选与热门排序
+  - 调用记录：MCP 看工具请求、响应、结果、耗时与连接失败；Skill 看工具装载与斜杠命令引用，时间窗可选 1 小时 / 24 小时 / 7 天
+  - 注册条目按 20 / 50 / 100 分页，Skill 还能按使用次数或最近使用排序
+  tags:
+  - MCP
+  - 统一管理
+  - 调用记录
+  flag: 本机扫到的 Skill 不等于当前会话已加载
+  notes: 两件事得分清：本机发现的 Skill 只是「存在」，不等于这个会话加载了它；接 MCP 之前要看它的启动命令和权限，因为插件以当前 DSH 进程的权限运行，安装动作会真的去跑 npx / uvx / docker。从 GitHub 装要过 pnpm 的构建白名单，会提示 allowBuilds，按打印出的键名补进 profile 的 pnpm-workspace.yaml 再重试，最好锁 commit。市场页会访问外部服务、受各源配额限制，没配 GitHub token 时预算较低；填进面板的 token 只对 GitHub 主机生效。星标很少，属于「功能写得很全但还没被广泛用」的那类，装前看源码。
+  refs:
+  - wx-aisketchlab
+- id: dsh-notifier
+  name: dsh-notifier（通知与远程应答）
+  aliases:
+  - 通知
+  - 远程审批
+  - notifier
+  category: integration
+  status: community
+  repo: https://github.com/THEWOLFWALKER/dsh-notifier
+  install: dsh plugin add dsh-notifier@latest --profile <profile-name>
+  summary: 人不在电脑前，也能知道 agent 在干什么、并且在它等你的时候回一句。28 个出站通道、6 个入站通道，任务完成 / 出错 / 等审批 / 长任务状态都能推出来，也能从手机批准、回答 ask_user、接着对话或切会话。
+  features:
+  - 推出去：任务完成、需要审批、报错、长任务状态，以及模型主动发起的通知
+  - 答得回：手机上批准或拒绝、回答 ask_user、继续对话、给正在跑的回合加指令、切任务与会话
+  - 面板就是操作台：DSH 里原生的「Notify & Control」，另留一个本地回环的 Advanced Console 用来救场与深管
+  - 失败不外溢：不认识或不安全的入站动作直接失败关闭；单个出站通道挂掉不会带崩整个通知器
+  - 会话事件触发：监听 turn/end、approval/asked、agent/error 这类事件；也支持白名单式回传，未知用户的来消息直接丢弃
+  tags:
+  - 通知
+  - 手机应答
+  - 远程审批
+  flag: 通道凭证与回传白名单要先配好再开
+  notes: 作者在 README 顶上挂了「正在进行大规模重构，近期更新可能推迟」。装法是 dsh plugin add dsh-notifier@latest --profile <名>，装完重启一次 DSH 让 Host 插件与 client.js 加载。它和几个近名包不是一回事：xzk-abao/dsh-notify-im 是钉钉 / 企微 / 飞书 webhook 的三事件通知，YanYunCY/dsh-gateway-notify 是移植自 magpie 的多通道推送，c-ling/dsh-plugin-notify 又是另一套；要「推 + 回」这个组合，认 THEWOLFWALKER 这份。
+  refs:
+  - wx-aisketchlab
+- id: dsh-remote-control
+  name: dsh-remote-control（远程接手另一台 DSH）
+  aliases:
+  - 远程控制
+  - 远程接手
+  - remote control
+  category: remote
+  status: community
+  repo: https://github.com/stjq12/dsh-remote-control
+  install: 两台电脑都装 github:stjq12/dsh-remote-control
+  summary: 在当前窗口用原生 DSH 界面操作另一台电脑上的 DSH——不套远程桌面，也不做一个简化面板，对端还是同一套界面、控件和操作方式，审批与 AI 提问由远程端回答。
+  features:
+  - 原生界面而不是远程桌面：对端仍跑自己的 DSH，只是把当前窗口的流量接到那边
+  - 本机页 / 远程页：本机页开放带凭据的 /bridge，远程页填地址与 token 接过去
+  - 审批与提问跟着走：有远程控制端时，审批和 ask_user 由远程端回答
+  - 下载限定目录：可以只授权某个目录作为下载落点
+  - 令牌有时长：5 分钟到 24 小时的有限时长优先，用完关开关；永久选项也会在 DSH 退出时结束
+  tags:
+  - 远程
+  - 双机接力
+  - 原生界面
+  flag: 明文 ws:// 加 token，必须套加密隧道
+  notes: README 把安全话说在前头：bridge 用明文 ws:// 加 bearer token，只该跑在 Tailscale、SSH 端口转发、WireGuard 这类加密隧道里；token 等价于被控端 Harness 的完整控制权，别分享别截图，怀疑泄露立刻轮换。限制也写明了：只支持 ws://、没有 WSS/TLS，不支持远程上传文件，字节 RPC 结果 64 MB 上限、普通下载走 256 KB 分块。下载权限只管下载，预览仍可能通过 RPC 读到别的文件，所以只授权最窄的目录。Host 侧代码只在 DSH 启动时加载，换插件必须完全退出再启动。另有一个同名实现 icrefin/dsh-remote-control 走 relay 中转、配对令牌一次性，思路不同，装之前先认清是哪一个。
+  refs:
+  - wx-aisketchlab
+- id: dsh-bigfish
+  name: dsh-bigfish（大肥鱼桌宠）
+  aliases:
+  - 大肥鱼桌宠
+  - bigfish
+  - 桌宠
+  category: fun
+  status: community
+  repo: https://github.com/gosomea/dsh-bigfish
+  install: dsh plugin --profile web add dsh-bigfish
+  summary: 蹲在 DSH Web 右下角的一只可拖动大肥鱼，会跟着任务状态换动作：你交任务它就收工准备，它读文件搜索执行工具时气泡里能看到工具状态，等你确认时举牌，任务结束开心收工。角色能换，台词能改，动作能自己加。
+  features:
+  - 101 类动作：原有 29 类加新增 72 段，配 13 种举牌小剧场、共 432 个新绘制姿态
+  - 跟着真实状态走：交任务、读文件、跑工具、等确认、结束各有对应演出，气泡里显示工具状态与可自定义台词
+  - 多会话不打架：同时跑几个会话时只跟随你当前打开的那个，后台完成不会抢前台状态，刷新历史不重播庆祝
+  - 角色包可换：导入 .dshpet 或兼容 ZIP，自带「完整设置 → 角色库」预览所有动作
+  - 自己做角色：附带 dsh-bigfish-pet-maker Skill，npx --yes dsh-bigfish install-skill 之后让 agent 生成新角色
+  - 节奏可调：持续活动或 1–600 秒休息间隔，举牌可选多举 / 均衡 / 不举，展示时长 5–30 秒
+  - 兼容性退让：遇到不认识的 DSH 会话接口就停在空闲状态，在气泡和设置里说明检测到的东西与升级建议，不猜任务状态
+  tags:
+  - 桌宠
+  - 状态可视化
+  - 角色包
+  flag: 与 dsh-pet 是两个项目，别装重了
+  notes: 和本站已收的 dsh-pet（PC2005-cloud）不是一回事：dsh-pet 明确说「不轮询、不插桩、不感知任何东西」，只负责陪；dsh-bigfish 主打跟着任务状态演出，两只要一起装就得接受右下角有俩。Node 要 ^22.19.0 || >=24.0.0，只用 Web 界面。稳定版 0.6.0，另有 0.7 Web 预览版（散步与回家、互动玩具、三套小窝）。发布首日装到旧版是 pnpm 11 的 24 小时发布冷却，不是装错。作者在 macOS Apple Silicon + Node 24.19.0 上跑过 151 项单测、34 项 Chromium 回归与 DSH 0.2.0-rc.2 的 15 组隔离原生流程。
+  refs:
+  - wx-aisketchlab

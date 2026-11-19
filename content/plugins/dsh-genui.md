@@ -7,7 +7,7 @@ tags: &id001
 - GenUI
 - 内联渲染
 - 可视化
-weight: 1020
+weight: 1030
 params:
   plugin:
     id: dsh-genui
@@ -39,7 +39,7 @@ params:
       pushed_date: '2026-11-18'
     category_label: 界面与体验
     status_label: 社区
-    weight: 1020
+    weight: 1030
     url: /plugins/dsh-genui/
   generated: true
 ---

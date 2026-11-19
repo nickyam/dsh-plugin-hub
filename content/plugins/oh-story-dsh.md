@@ -9,7 +9,7 @@ tags: &id001
 - 游戏脚本
 - 视频解说
 - 工作流
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: oh-story-dsh
@@ -46,7 +46,7 @@ params:
       pushed_date: '2026-11-17'
     category_label: 内容创作与办公
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/oh-story-dsh/
   generated: true
 ---

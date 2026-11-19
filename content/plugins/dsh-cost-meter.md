@@ -8,7 +8,7 @@ tags: &id001
 - 用量
 - 多厂商
 - 预算
-weight: 1020
+weight: 1030
 params:
   plugin:
     id: dsh-cost-meter
@@ -46,7 +46,7 @@ params:
       pushed_date: '2026-11-18'
     category_label: 模型与计费
     status_label: 社区
-    weight: 1020
+    weight: 1030
     url: /plugins/dsh-cost-meter/
   generated: true
 ---

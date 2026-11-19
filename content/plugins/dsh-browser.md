@@ -8,7 +8,7 @@ tags: &id001
 - 自动化
 - CDP
 - 会话隔离
-weight: 1020
+weight: 1030
 params:
   plugin:
     id: dsh-browser
@@ -46,7 +46,7 @@ params:
       pushed_date: '2026-11-06'
     category_label: 工具与能力
     status_label: 社区
-    weight: 1020
+    weight: 1030
     url: /plugins/dsh-browser/
   generated: true
 ---

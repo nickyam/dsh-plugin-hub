@@ -173,3 +173,21 @@
   date_note: "2026-10-26 13:28（广东）"
   note: "第十六篇。这篇的特点是逐条复核官方 README 与安装口径，尽量不照抄宣传话术：明确区分 dsh-git-graph 的两个同名项目（npm 上的 enoughpower 版可写、WhitePlusMS 的 Release 版只读），指出 npm 包全名是 @michengai/dsh-codex-ui、漏掉作用域会装不上，也点出 dsh-better-sidebar 的宿主版本对表（v0.28.0 要 DSH 0.2.1-rc.1+，0.2.0-rc.2 用 0.26.1）。文中「7 个搜索引擎」「少用 5 倍 Token」「177 万下载」「搜索永不失败」等宣传口径均不采信；「7 个」与 dsh-free-search 当前 README 的 42 个引擎不符，按 README 写。文中 7 条里 5 条此前已收录，新增 3 条：enoughpower/dsh-git-graph、WhitePlusMS/dsh-git-graph、DDDMUC/dsh-free-search。"
   tags: [公众号, 优选清单, 逐条复核]
+
+- id: wx-yuanma
+  title: "这 18 个 DSH 插件，装完就不用再翻 GitHub 了"
+  kind: wechat
+  publisher: "猿码（公众号：猿码）"
+  url: "https://mp.weixin.qq.com/s/90H7Xmt8uaZGMm3AlbXEvA"
+  date_note: "2026-11-16 13:47（江苏）"
+  note: "第十七篇。这篇的价值不在名单本身，而在开头那三条筛选标准——能不能看出它还在维护（最近提交、issue 有没有人回、版本号走不走）、权限边界清不清楚、有没有「确认后落盘」这一环；本站的收录口径与它基本同向。18 条里 8 条此前已收录（dsh-market、dsh-wechat、dsh-context、dsh-cost-meter、dsh-univer-office、dsh-genui、oh-story-dsh、dsh-pet），新增 10 条：universal-plugin-hub、dsh-Go、dsh-qqbot、dsh-reasoning-only-guard、dsh-memory-palace、DSH-EasyRewrite、dsh-ego-browser、dsh-bili-scroll、dsh-bili-humanism、dsh-nekowhale-stickers。三处按 README 纠正或注明：① dsh-Go 是 Android 客户端不是插件，收进「移动端与远程」并在安装栏写清走 APK 侧载；② dsh-bili-scroll 的 npm 包停在 0.1.7，作者说发布账号在申诉、新版只能从 Release 装，照 `add dsh-bili-scroll` 会拿到缺参数的旧版，安装栏按 README 写 Release tgz 直链；③ dsh-qqbot 是 tencent-connect 组织的官方包、装到 qqbot profile，与社区几个同名 dsh-qqbot 不是一个东西。文中「投了约 32 万 Token 整理表情包」属作者口径，不采信也不进卡片。"
+  tags: [公众号, 清单, 筛选标准]
+
+- id: wx-aisketchlab
+  title: "DSH 打造成超好用的个人工作台，必装的 15 个插件"
+  kind: wechat
+  publisher: "AisketchLab（公众号：AisketchLab）"
+  url: "https://mp.weixin.qq.com/s/FZYprtr54CDZirabOA9S5g"
+  date_note: "2026-11-14 15:21（浙江）"
+  note: "第十八篇。按一个人日常干活的顺序分成四组（打开就有文件与浏览器 / 资料查得到长任务能接着干 / 离开电脑也知道进度 / 情报和桌宠），文末自己声明「清单依据项目公开文档整理，未逐个安装实测」，这一点本站采信。15 条里 7 条此前已收录（dsh-market、dsh-better-sidebar、dsh-context、dsh-browser、billion-context、universal-plugin-hub、dsh-bili-scroll），新增 7 条：helloHub1212/dsh-windows-mcp、Soren-ABT/dsh-knowledge、kenryu42/cc-safety-net、YunzhouLi-hub/dsh-overall-mcp、THEWOLFWALKER/dsh-notifier、stjq12/dsh-remote-control、gosomea/dsh-bigfish。dsh-automation 维持不收：此前已判定为停维、且 DSH 有官方定时能力，本轮复查没有改变这个结论。三处同名歧义按 README 特征认定：dsh-knowledge 有 lemoncat7、XZX888、slder 等多个同名或近名包，按文中「关键词和向量检索 + 本地向量模型、重排和 OCR 需相应配置」锁定 Soren-ABT 那一份（FTS5 BM25 + 向量 + RRF/MMR + 本地 rerank/OCR）；dsh-remote-control 另有 icrefin 的同名实现走 relay 通道，按文中「README 明说桥接用明文 WebSocket、令牌相当于控制权限」锁定 stjq12（bridge 用明文 ws:// + bearer token）；dsh-notifier 与 xzk-abao/dsh-notify-im、YanYunCY/dsh-gateway-notify、c-ling/dsh-plugin-notify 属同类近名包，按包名与 8 通道适配器锁定 THEWOLFWALKER。文中的场景分组与「第一次只挑三个」的建议属编辑口径，不进插件卡。"
+  tags: [公众号, 场景分组, 未实测]

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T01:40:42Z",
+ "generated_at": "2026-11-19T02:10:02Z",
  "source": "GitHub REST API（匿名）",
  "repos": {
   "00080000/dsh-project-memory": {
@@ -242,6 +242,21 @@
    "html_url": "https://github.com/Fei2411/DS-Bot",
    "fetched_at": "2026-11-19T01:40:30Z"
   },
+  "Fisfzy/dsh-ego-browser": {
+   "full_name": "Fisfzy/dsh-ego-browser",
+   "stars": 548,
+   "forks": 58,
+   "issues": 10,
+   "watchers": null,
+   "language": "TypeScript",
+   "license": "NOASSERTION",
+   "pushed_at": "2026-11-16T14:48:12Z",
+   "created_at": "2026-08-07T08:13:54Z",
+   "archived": false,
+   "description": "DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS——13 个结构化 ego_* 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chrome 开箱即用，无需克隆官方仓库或手动构建。",
+   "html_url": "https://github.com/Fisfzy/dsh-ego-browser",
+   "fetched_at": "2026-11-19T02:03:28Z"
+  },
   "Han-1413141/dsh-cost-meter": {
    "full_name": "Han-1413141/dsh-cost-meter",
    "stars": 721,
@@ -271,6 +286,21 @@
    "description": "DSH Web 广告拦截器，四层独立防御拦截 dsh-ads 插件的所有广告位 | DSH Web ad blocker with four independent defense layers targeting the dsh-ads plugin",
    "html_url": "https://github.com/HuanLinOTO/dsh-plugin-anti-ads",
    "fetched_at": "2026-11-19T01:33:09Z"
+  },
+  "InariNGT-Ofiicial/dsh-bili-humanism": {
+   "full_name": "InariNGT-Ofiicial/dsh-bili-humanism",
+   "stars": 276,
+   "forks": 17,
+   "issues": 19,
+   "watchers": null,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-11-17T13:34:55Z",
+   "created_at": "2026-10-20T13:32:36Z",
+   "archived": false,
+   "description": "用多彩的人类世界，训练 DSH 的人格：默认积累信笺反思于专用 human-world.md；允许通过 DSH 与外部插件接驳。历史、收藏、点赞与投币独立默认关闭；本项目不提供评论接口。",
+   "html_url": "https://github.com/InariNGT-Ofiicial/dsh-bili-humanism",
+   "fetched_at": "2026-11-19T02:03:44Z"
   },
   "LaplaceYoung/dsh-qq2006": {
    "full_name": "LaplaceYoung/dsh-qq2006",
@@ -316,6 +346,21 @@
    "description": "The most comprehensive DeepSeek Harness plugin market — refreshed daily, sourced across the Internet, reviewed before publishing.",
    "html_url": "https://github.com/LivXue/dsh-plugin-shop",
    "fetched_at": "2026-11-19T01:17:24Z"
+  },
+  "Loping151/dsh-nekowhale-stickers": {
+   "full_name": "Loping151/dsh-nekowhale-stickers",
+   "stars": 202,
+   "forks": 3,
+   "issues": 0,
+   "watchers": null,
+   "language": "TypeScript",
+   "license": "Apache-2.0",
+   "pushed_at": "2026-11-08T14:55:26Z",
+   "created_at": "2026-10-22T21:08:41Z",
+   "archived": false,
+   "description": "大肥鱼 / GPT娘 sticker knowledge kit for DeepSeek Harness (dsh), MCP and any chat bot · 大肥鱼表情包知识库",
+   "html_url": "https://github.com/Loping151/dsh-nekowhale-stickers",
+   "fetched_at": "2026-11-19T02:05:06Z"
   },
   "MalcolmFeng/dsh-nacos-bridge-plugin": {
    "full_name": "MalcolmFeng/dsh-nacos-bridge-plugin",
@@ -497,6 +542,21 @@
    "html_url": "https://github.com/QingYunA/answer-me-with-html",
    "fetched_at": "2026-11-19T01:20:33Z"
   },
+  "Renzic-Stone/DSH-EasyRewrite": {
+   "full_name": "Renzic-Stone/DSH-EasyRewrite",
+   "stars": 133,
+   "forks": 16,
+   "issues": 3,
+   "watchers": null,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-11-12T12:51:49Z",
+   "created_at": "2026-08-18T13:52:50Z",
+   "archived": false,
+   "description": "DSH Web内目前最无感的消息撤回、重编辑插件，原版体验，兼容性强，功能简单可开关，设置丰富，现代化轻量ui框架。The most seamless message recall & re-edit plugin for DSH Web — native experience, strong compatibility, simple toggles, rich settings, modern lightweight UI. DSH Web で最もシームレスなメッセージ撤回・再編集プラグイン——ネイティブ体験、高い互換性、シンプルなトグル、充実した設定、モダンで軽量な UI。",
+   "html_url": "https://github.com/Renzic-Stone/DSH-EasyRewrite",
+   "fetched_at": "2026-11-19T02:03:21Z"
+  },
   "Rxiain/dsh-openviking": {
    "full_name": "Rxiain/dsh-openviking",
    "stars": 22,
@@ -527,6 +587,21 @@
    "html_url": "https://github.com/SiriLee/dsh-rewind",
    "fetched_at": "2026-11-19T01:35:17Z"
   },
+  "Soren-ABT/dsh-knowledge": {
+   "full_name": "Soren-ABT/dsh-knowledge",
+   "stars": 107,
+   "forks": 14,
+   "issues": 4,
+   "watchers": null,
+   "language": "TypeScript",
+   "license": "AGPL-3.0",
+   "pushed_at": "2026-11-15T04:35:38Z",
+   "created_at": "2026-08-15T16:47:22Z",
+   "archived": false,
+   "description": "Knowledge base & RAG plugin for DeepSeek Harness (DSH): chunking, local embeddings, hybrid search, management panel",
+   "html_url": "https://github.com/Soren-ABT/dsh-knowledge",
+   "fetched_at": "2026-11-19T02:09:18Z"
+  },
   "T-Auto/dsh-ops": {
    "full_name": "T-Auto/dsh-ops",
    "stars": 5921,
@@ -542,6 +617,21 @@
    "html_url": "https://github.com/T-Auto/dsh-ops",
    "fetched_at": "2026-11-19T01:18:17Z"
   },
+  "THEWOLFWALKER/dsh-notifier": {
+   "full_name": "THEWOLFWALKER/dsh-notifier",
+   "stars": 65,
+   "forks": 16,
+   "issues": 7,
+   "watchers": null,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-10-31T10:10:16Z",
+   "created_at": "2026-08-14T23:41:50Z",
+   "archived": false,
+   "description": "DSH notification & remote-control plane: 28 outbound channels, 6 inbound controls, Native Notify & Control UI, live hot-apply, zero runtime deps.",
+   "html_url": "https://github.com/THEWOLFWALKER/dsh-notifier",
+   "fetched_at": "2026-11-19T02:09:41Z"
+  },
   "Tencent/BrowserSkill": {
    "full_name": "Tencent/BrowserSkill",
    "stars": 10562,
@@ -556,6 +646,21 @@
    "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
    "html_url": "https://github.com/Tencent/BrowserSkill",
    "fetched_at": "2026-11-19T01:17:41Z"
+  },
+  "Ultmebius/universal-plugin-hub": {
+   "full_name": "Ultmebius/universal-plugin-hub",
+   "stars": 12,
+   "forks": 1,
+   "issues": 0,
+   "watchers": null,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-11-16T15:37:34Z",
+   "created_at": "2026-08-26T16:15:18Z",
+   "archived": false,
+   "description": "在 DSH 中使用 Claude Code、Codex 等软件生态的插件，一站式管理插件、Skills 与 MCP。支持添加 Git 插件源和 marketplace、上传插件和 Skills、添加 MCP 服务器，自动扫描并开关本地 Skills，接入插件提供的子代理、MCP、Hooks 与 LSP。",
+   "html_url": "https://github.com/Ultmebius/universal-plugin-hub",
+   "fetched_at": "2026-11-19T02:01:42Z"
   },
   "Unclecheng-li/DeepSec": {
    "full_name": "Unclecheng-li/DeepSec",
@@ -647,6 +752,21 @@
    "html_url": "https://github.com/Yu-tao-Li/dsh-computer-use-win",
    "fetched_at": "2026-11-19T01:37:55Z"
   },
+  "YunzhouLi-hub/dsh-overall-mcp": {
+   "full_name": "YunzhouLi-hub/dsh-overall-mcp",
+   "stars": 25,
+   "forks": 3,
+   "issues": 2,
+   "watchers": null,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-11-16T04:11:56Z",
+   "created_at": "2026-10-16T11:57:28Z",
+   "archived": false,
+   "description": "DeepSeek Harness 面板「全局 MCP & Skill」：宿主机 MCP 配置扫描与自动接入、六个 MCP 目录 + 四个 skill 市场、本机收录索引、调用记录",
+   "html_url": "https://github.com/YunzhouLi-hub/dsh-overall-mcp",
+   "fetched_at": "2026-11-19T02:09:33Z"
+  },
   "ZSeven-W/dsh-ios": {
    "full_name": "ZSeven-W/dsh-ios",
    "stars": 473,
@@ -737,6 +857,21 @@
    "html_url": "https://github.com/anywhere-labs/dsh-desktop",
    "fetched_at": "2026-11-19T01:17:27Z"
   },
+  "apex-mochen/dsh-reasoning-only-guard": {
+   "full_name": "apex-mochen/dsh-reasoning-only-guard",
+   "stars": 7,
+   "forks": 0,
+   "issues": 0,
+   "watchers": null,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-09-15T08:53:33Z",
+   "created_at": "2026-09-15T08:01:31Z",
+   "archived": false,
+   "description": "Stops a reasoning-only turn from bricking a DSH session. · 防止「只有推理、没有正文」的一轮把整个会话毒死。",
+   "html_url": "https://github.com/apex-mochen/dsh-reasoning-only-guard",
+   "fetched_at": "2026-11-19T02:03:05Z"
+  },
   "awesome-dsh-plugin/awesome-dsh-plugin": {
    "full_name": "awesome-dsh-plugin/awesome-dsh-plugin",
    "stars": 25103,
@@ -811,6 +946,36 @@
    "description": "Deepseek Harness Plugin for Busabase",
    "html_url": "https://github.com/busabase/busabase-dsh-plugin",
    "fetched_at": "2026-11-19T01:23:20Z"
+  },
+  "c1overzz/dsh-bili-scroll": {
+   "full_name": "c1overzz/dsh-bili-scroll",
+   "stars": 1445,
+   "forks": 133,
+   "issues": 135,
+   "watchers": null,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-11-12T16:21:04Z",
+   "created_at": "2026-10-14T09:03:43Z",
+   "archived": false,
+   "description": "DSH 插件：每天替你刷一轮 B站，读字幕挑出值得的、写一份日报，值得的 @ 你",
+   "html_url": "https://github.com/c1overzz/dsh-bili-scroll",
+   "fetched_at": "2026-11-19T02:03:36Z"
+  },
+  "ccch1mneyyy/dsh-Go": {
+   "full_name": "ccch1mneyyy/dsh-Go",
+   "stars": 27263,
+   "forks": 1310,
+   "issues": 738,
+   "watchers": null,
+   "language": "Dart",
+   "license": "AGPL-3.0",
+   "pushed_at": "2026-11-18T09:20:06Z",
+   "created_at": "2026-10-25T08:09:52Z",
+   "archived": false,
+   "description": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。",
+   "html_url": "https://github.com/ccch1mneyyy/dsh-Go",
+   "fetched_at": "2026-11-19T02:01:50Z"
   },
   "ccch1mneyyy/dsh-TUI": {
    "full_name": "ccch1mneyyy/dsh-TUI",
@@ -1022,6 +1187,36 @@
    "html_url": "https://github.com/enoughpower/dsh-git-graph",
    "fetched_at": "2026-11-19T01:40:39Z"
   },
+  "gosomea/dsh-bigfish": {
+   "full_name": "gosomea/dsh-bigfish",
+   "stars": 29,
+   "forks": 3,
+   "issues": 0,
+   "watchers": null,
+   "language": "TypeScript",
+   "license": "NOASSERTION",
+   "pushed_at": "2026-11-12T02:55:24Z",
+   "created_at": "2026-09-17T08:44:58Z",
+   "archived": false,
+   "description": "🐋 DeepSeek Harness Web 宠物插件：动画陪伴、自适应输出节奏、可替换角色包与角色制作 Skill。",
+   "html_url": "https://github.com/gosomea/dsh-bigfish",
+   "fetched_at": "2026-11-19T02:09:56Z"
+  },
+  "helloHub1212/dsh-windows-mcp": {
+   "full_name": "helloHub1212/dsh-windows-mcp",
+   "stars": 1736,
+   "forks": 8,
+   "issues": 0,
+   "watchers": null,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-11-15T12:12:09Z",
+   "created_at": "2026-10-11T02:20:53Z",
+   "archived": false,
+   "description": "Windows desktop automation for DeepSeek Harness: the in-box MCP client bridge mounted against CursorTouch/Windows-MCP, with an off-by-default Computer Use switch and an in-app dependency installer.",
+   "html_url": "https://github.com/helloHub1212/dsh-windows-mcp",
+   "fetched_at": "2026-11-19T02:09:11Z"
+  },
   "hellodigua/dsh-emoji": {
    "full_name": "hellodigua/dsh-emoji",
    "stars": 56,
@@ -1051,6 +1246,21 @@
    "description": "Fabric — the everything-is-a-plugin primitive for DeepSeek Harness (dsh): unify every extensibility seam behind one declarative DSL.",
    "html_url": "https://github.com/hellosky983/dsh-fabric",
    "fetched_at": "2026-11-19T01:17:48Z"
+  },
+  "kenryu42/cc-safety-net": {
+   "full_name": "kenryu42/cc-safety-net",
+   "stars": 2075,
+   "forks": 98,
+   "issues": 5,
+   "watchers": null,
+   "language": "TypeScript",
+   "license": "MIT",
+   "pushed_at": "2026-11-18T17:47:46Z",
+   "created_at": "2025-12-25T17:52:57Z",
+   "archived": false,
+   "description": "A pre-execution guard for AI coding agents. It blocks destructive Git and file system commands, plus common attempts to access sensitive files, before a tool call runs. Supports Amp Code, Antigravity CLI, Claude Code, Codex, Cursor, DeepSeek Harness, Devin CLI, GitHub Copilot CLI, Grok Build, Hermes Agent, Kimi Code, OpenClaw, OpenCode, and Pi.",
+   "html_url": "https://github.com/kenryu42/cc-safety-net",
+   "fetched_at": "2026-11-19T02:09:26Z"
   },
   "kenz1117/dsh-engram": {
    "full_name": "kenz1117/dsh-engram",
@@ -1186,6 +1396,21 @@
    "description": "🥇 The strongest free web search plugin for DeepSeek Harness, and the search bridge for every model without native web access. Free, no signup, no API key. Ask the web or X, get structured JSON evidence. | 🥇 全网最强的 DeepSeek Harness 免费联网搜索插件，免费免注册免 API key。为不能联网的模型补上搜索，问网页或 X，拿回结构化 JSON 证据（搜索、抓取、引用）。",
    "html_url": "https://github.com/liustack/modsearch",
    "fetched_at": "2026-11-19T01:17:40Z"
+  },
+  "lovezi0/dsh-memory-palace": {
+   "full_name": "lovezi0/dsh-memory-palace",
+   "stars": 29,
+   "forks": 3,
+   "issues": 0,
+   "watchers": null,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-11-17T14:18:38Z",
+   "created_at": "2026-08-16T07:09:16Z",
+   "archived": false,
+   "description": "把 WorkBuddy 的文件式记忆系统移植进 [DeepSeek Harness](https://www.deepseek.com/harness/) —— 为 Harness 提供**跨会话持久化、人类可直接编辑的 Markdown 记忆**。",
+   "html_url": "https://github.com/lovezi0/dsh-memory-palace",
+   "fetched_at": "2026-11-19T02:03:13Z"
   },
   "nexu-io/open-design": {
    "full_name": "nexu-io/open-design",
@@ -1367,6 +1592,21 @@
    "html_url": "https://github.com/shiyan688/dsh-novel-craft",
    "fetched_at": "2026-11-19T01:37:25Z"
   },
+  "stjq12/dsh-remote-control": {
+   "full_name": "stjq12/dsh-remote-control",
+   "stars": 2,
+   "forks": 0,
+   "issues": 0,
+   "watchers": null,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-11-09T05:09:29Z",
+   "created_at": "2026-11-08T13:22:41Z",
+   "archived": false,
+   "description": "在原生界面中，使用另一台电脑的DeepSeek Harness实例，控件和功能保留完整。",
+   "html_url": "https://github.com/stjq12/dsh-remote-control",
+   "fetched_at": "2026-11-19T02:09:48Z"
+  },
   "suiyideali/dsh-selection-toolbar": {
    "full_name": "suiyideali/dsh-selection-toolbar",
    "stars": 6,
@@ -1381,6 +1621,21 @@
    "description": "在 DeepSeek Harness 会话里划选文本，选区上方浮现一个小工具栏： 复制 · 引用 · 询问 · 解释 · 翻译 · 总结 · 自定义。  所有 AI 动作都复用当前会话——选中文本作为普通用户消息注入当前对话， 模型带着完整上下文作答。",
    "html_url": "https://github.com/suiyideali/dsh-selection-toolbar",
    "fetched_at": "2026-11-19T01:17:31Z"
+  },
+  "tencent-connect/dsh-qqbot": {
+   "full_name": "tencent-connect/dsh-qqbot",
+   "stars": 611,
+   "forks": 74,
+   "issues": 49,
+   "watchers": null,
+   "language": "TypeScript",
+   "license": "MIT",
+   "pushed_at": "2026-11-17T14:42:44Z",
+   "created_at": "2026-08-14T13:57:23Z",
+   "archived": false,
+   "description": "让 QQ Bot 接入 DeepSeek Harness（dsh）的官方插件",
+   "html_url": "https://github.com/tencent-connect/dsh-qqbot",
+   "fetched_at": "2026-11-19T02:02:58Z"
   },
   "tt-a1i/archify": {
    "full_name": "tt-a1i/archify",
