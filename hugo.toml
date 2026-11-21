@@ -28,13 +28,15 @@ enableGitInfo = true
   term = ["HTML"]
   page = ["HTML"]
 
-# 谷歌广告：沿用你账号里已有的发布商 ID。
-# 用的是 Auto Ads（全站自动插位），不需要单独建广告单元。
-# 🔴 ads.txt 要放到 https://ai.limzero.com/ads.txt（主站根目录），本仓库 static/ads.txt 只是副本。
-# 上线前确认 AdSense 后台的站点列表已覆盖 ai.limzero.com。
-# 本地预览时脚本可能被网络拦住，属正常现象；想彻底关掉把 enabled 改成 false 即可。
+# 谷歌广告：2026-11-21 用户决定本站关闭 Auto Ads，enabled 改为 false。
+# 关闭后 baseof.html 不再注入 adsbygoogle.js，页面完全无广告脚本。
+# 这是本站独立开关，与 WordPress 总站 limzero.com 无关——改这里不影响主站广告。
+# 若日后要恢复：把 enabled 改回 true 并重新 ./build.sh + deploy 即可。
+# 🔴 广告是 AdSense 站点级（按 limzero.com 一个 site 管理）：若主站仍投 Auto Ads、
+#    且只想豁免 /dsh/，应在 AdSense 后台「Auto Ads → 页面排除」加 limzero.com/dsh/*。
+# ads.txt 要放到 https://ai.limzero.com/ads.txt（主站根目录），本仓库 static/ads.txt 只是副本。
 [params.adsense]
-  enabled = true
+  enabled = false
   client = "ca-pub-7114121088728794"
 
 [markup]

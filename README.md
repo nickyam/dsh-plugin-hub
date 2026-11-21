@@ -135,7 +135,8 @@ GitHub 星标 / Fork 是快照，不是实时值。想刷新就跑 `python3 tool
 
 ## 谷歌广告
 
-- `hugo.toml` 里 `[params.adsense]` 用了你现有账号的 `ca-pub-7114121088728794`，方式是 **Auto Ads**（全站自动插位），不用单独建广告单元、不用填假的 `data-ad-slot`。想本地彻底关掉把 `enabled` 改 `false`。
+- 🔴 **2026-11-21 用户决定本站关闭广告**：`hugo.toml → [params.adsense] enabled = false`，页面不再注入 `adsbygoogle.js`，dsh 站完全无广告。这是本站独立开关，不影响 WordPress 总站 limzero.com 的广告。要恢复改回 `true` 再构建部署。`client` 仍保留 `ca-pub-7114121088728794` 备查。若主站仍投 Auto Ads 而只想豁免 /dsh/，走 AdSense 后台「页面排除」加 `limzero.com/dsh/*`。
+- （历史说明）原先是 **Auto Ads**（全站自动插位），不用单独建广告单元、不用填假的 `data-ad-slot`。
 - 🔴 **`ads.txt` 只有在域名根目录才有效**：AdSense 会读 `https://ai.limzero.com/ads.txt`，**不会**读 `https://ai.limzero.com/dsh/ads.txt`。`static/ads.txt` 是本仓库留的副本，内容必须同步到主站根目录（主站目前还没有这个文件）。上线后用 `curl https://ai.limzero.com/ads.txt` 确认返回那一行 `google.com, pub-7114121088728794, DIRECT, f08c47fec0942fa0`，AdSense 重新抓取可能要几天。
 - AdSense 后台按域名管理站点，`ai.limzero.com` 若已在站点列表且审核通过，`/dsh` 通常不用重复添加；以后台实际显示为准。
 - 页面里那些虚线框只是广告位示意，实际广告由 Google 自动插入。

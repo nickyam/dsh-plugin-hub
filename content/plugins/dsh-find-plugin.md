@@ -38,7 +38,7 @@ params:
       forks_label: '14'
       pushed_date: '2026-09-25'
       updated_label: 1 个月前有提交
-      updated_days: 56
+      updated_days: 57
       stale: false
     entry_updated: '2026-11-06'
     category_label: 插件市场与发现
