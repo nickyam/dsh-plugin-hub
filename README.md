@@ -172,7 +172,7 @@ bash deploy/deploy.sh --sync-only  # 产物已构建，只同步
 
 ## 目前的数据
 
-133 个插件 / 26 条来源，**全部已确认官方仓库**；13 个分类均有条目。
+136 个插件 / 27 条来源，**全部已确认官方仓库**；13 个分类均有条目。
 
 已录入两篇公众号清单文作为「发现来源」：第 1 篇偏入门与自用清单，第 2 篇（智宇AI说，14 大类）带来 46 条插件引用——其中 7 条并入已有插件的参考来源（如 `modsearch`、`dsh-market`、小鲸鱼挂件），39 条是全新条目。该文的仓库地址抽查 24 个（23 个 200 / 1 个 301），Stars 数字与标题「36 款」按纪律不采信。每个插件的内容都以对应官方仓库 README 为准，公众号文章只作发现来源与对照。后续又录入第 3 篇（运维网工，单插件 dsh-devops 深度文）、第 4 篇（飞叔，官方点名的 4 个插件盘点）、第 5 篇（近 30 天下载 TOP10 榜）、第 6 篇（狐小墨，7 款推荐清单）、第 7 篇（老马 PaperToday，agentero-dsh 实测）、第 8 篇（繁星，deepseek-bot 介绍）、第 9 篇（世相智能体，10 款亲测清单）、第 10 篇（维客笔记，dsh-rewind 菜单回退）与第 11 篇（有料黑科技，dsh-deepseek-web-login 实操踩坑）、第 12 篇（狐小墨进阶篇，再添 10 件新装备）、第 13 篇（晓白AI纪元，17 插件四路盘点）、第 14 篇（甲维斯机，5 款省 Token 插件实测）、第 15 篇（数字山水间，十大插件榜单刷新）、第 16 篇（小成同学，DSH 社区 7 个优选插件）、第 17 篇（猿码，18 个插件四组清单）、第 18 篇（AisketchLab，按干活顺序的 15 个），均只作发现来源。
 
@@ -201,6 +201,8 @@ bash deploy/deploy.sh --sync-only  # 产物已构建，只同步
 第 17 篇（猿码，2026-11-16）是四组分类的 18 款清单，价值主要在开头那三条筛选标准（看得出还在维护、权限边界清楚、有「确认后落盘」这一环），与本站收录口径基本同向。18 条里 8 条已收录（`dsh-market`、`dsh-wechat`、`dsh-context`、`dsh-cost-meter`、`dsh-univer-office`、`dsh-genui`、`oh-story-dsh`、`dsh-pet`），新增 10 条：`universal-plugin-hub`、`dsh-go`、`dsh-qqbot`、`dsh-reasoning-only-guard`、`dsh-memory-palace`、`dsh-easyrewrite`、`dsh-ego-browser`、`dsh-bili-scroll`、`dsh-bili-humanism`、`dsh-nekowhale-stickers`。三处按 README 修正或注明：`dsh-Go` 是 Android 客户端不是插件，收进「移动端与远程」并把安装栏写成 APK 侧载；`dsh-bili-scroll` 的 npm 包停在 0.1.7（作者称发布账号在申诉，新版只从 Release 发），照 `add dsh-bili-scroll` 会拿到缺参数的旧版，安装栏改写成 Release tgz 直链；`dsh-qqbot` 是 tencent-connect 组织的官方包、装到 `qqbot` profile，与社区几个同名 dsh-qqbot 不是一回事。文中「投了约 32 万 Token 整理表情包」属作者口径，不采信。
 
 第 18 篇（AisketchLab，2026-11-14）是 15 款清单，按「打开就有文件与浏览器 → 资料查得到、长任务能接着干 → 离开电脑也知道进度 → 情报和桌宠」四组排，文末自己声明「清单依据项目公开文档整理，未逐个安装实测」。7 条此前已收录（`dsh-market`、`dsh-better-sidebar`、`dsh-context`、`dsh-browser`、`billion-context`、`universal-plugin-hub`、`dsh-bili-scroll`），新增 7 条：`dsh-windows-mcp`、`dsh-knowledge`、`cc-safety-net`、`dsh-overall-mcp`、`dsh-notifier`、`dsh-remote-control`、`dsh-bigfish`。`dsh-automation` 维持不收（早前已判定停维、且 DSH 有官方定时能力）。三处同名歧义按 README 特征认定：`dsh-knowledge` 有 lemoncat7、XZX888、slder 等多个近名包，按文中「关键词 + 向量检索、本地向量模型 / 重排 / OCR」锁定 Soren-ABT 那份；`dsh-remote-control` 另有 icrefin 的同名实现走 relay，按「明文 ws:// + 令牌即控制权」锁定 stjq12；`dsh-notifier` 与 dsh-notify-im、dsh-gateway-notify、dsh-plugin-notify 属同类近名包，按包名与 8 通道适配器锁定 THEWOLFWALKER。
+
+第 24 篇（挖挖说AI，2026-11-20「装上这 10 个插件」）是 10 款入门清单，只给包名 / 安装界面关键词，无仓库地址。7 款已收录只补线索（Dream Skin / DSH-IM / DSH Market / GenUI / Balance Whale 小鲸鱼 / Agent Teams / Better Sidebar）；新增 3 条：`dsh-dream-skin`（包名 dsh-dream-skin，官方仓库已从封禁的 GitHub 迁至 gitcode.com/LLLAAAAA/dsh-dream-skin，8 套 Mirage 主题 + 壁纸 + 强调色，与文章描述吻合）、`dsh-connect-workbuddy`（dingminhua，本机 WorkBuddy 登录态接进 DSH 模型选择器）、`dsh-imagegen`（文章称 VisioWork，包名 dsh-imagegen 对应 dickpy/dsh-imagegen，文生图 / 图生图 + 提示词反推 + 可配渠道模型）。三处同名歧义按仓库特征认定：Dream Skin 另有独立桌面软件 xxloocee/Dream-Skin 与另一同名 GitHub 插件，前者非 DSH 插件、后者无主题包系统，均不收，只取 GitCode 那份；`dsh-imagegen` 与已收录的 `dsh-image-gen`（shanliuling，对话生图）是不同插件，按「选图生提示词 + 无限画布」锁定 dickpy 版、未合并。「语音输入」文章自述是 DSH 自带插件，按内置能力不建条目。文章评价性口吻与手机 ClawBot 演示不采信。
 
 官方开箱即用的 9 个内置能力条目与「官方内置能力」分类已整体移除；原先误挂在内置条目上的一条 `dsh-agent-teams` 引文已迁回社区插件主档。
 
