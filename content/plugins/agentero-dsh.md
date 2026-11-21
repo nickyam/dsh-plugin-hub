@@ -45,6 +45,7 @@ params:
       updated_label: 9 天前有提交
       updated_days: 9
       stale: false
+    entry_updated: '2026-11-09'
     category_label: 记忆与知识
     status_label: 社区
     weight: 1020

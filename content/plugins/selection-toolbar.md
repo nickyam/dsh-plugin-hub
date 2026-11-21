@@ -40,6 +40,7 @@ params:
       updated_label: 7 天前有提交
       updated_days: 7
       stale: false
+    entry_updated: '2026-11-06'
     category_label: 界面与体验
     status_label: 原文未说明
     weight: 1010

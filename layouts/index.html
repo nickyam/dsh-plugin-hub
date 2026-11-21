@@ -22,9 +22,10 @@
   <div class="wrap">
     <div class="stats">
       <div class="stat"><strong>{{ $stats.plugins }}</strong><span>插件条目</span></div>
-      <div class="stat"><strong>★ {{ $stats.stars_median_label }}</strong><span>仓库星标中位数</span></div>
+      <div class="stat" title="把已确认官方仓库的插件各自星标从小到大排，取中间那个数；比「总和」更能代表典型体量"><strong>★ {{ $stats.stars_median_label }}</strong><span>仓库星标中位数 <abbr class="stat-q" title="中位数不是平均数：一半插件比它高、一半比它低，个别超大仓库拉不动它">?</abbr></span></div>
       <div class="stat"><strong>{{ $stats.categories }}</strong><span>个分类</span></div>
     </div>
+    <p class="stats-note">星标中位数：把已确认仓库的 {{ $stats.gh_synced }} 个插件按星标排序，取正中间那个数。不用总和，是因为总和会被 DSH 本体这类超大仓库一次性拉高，看不出「典型插件有多大」。</p>
   </div>
 </section>
 

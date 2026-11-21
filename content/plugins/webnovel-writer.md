@@ -41,6 +41,7 @@ params:
       updated_label: 6 天前有提交
       updated_days: 6
       stale: false
+    entry_updated: '2026-11-06'
     category_label: 内容创作与办公
     status_label: 社区
     weight: 1010

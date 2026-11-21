@@ -43,6 +43,7 @@ params:
       updated_label: 2 个月前有提交
       updated_days: 65
       stale: false
+    entry_updated: '2026-11-06'
     category_label: 集成与迁移
     status_label: 社区
     weight: 1020

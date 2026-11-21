@@ -45,6 +45,7 @@ params:
       updated_label: 1 个月前有提交
       updated_days: 40
       stale: false
+    entry_updated: '2026-11-19'
     category_label: 模型与计费
     status_label: 原文未说明
     weight: 1040

@@ -40,6 +40,7 @@ params:
       updated_label: 1 个月前有提交
       updated_days: 56
       stale: false
+    entry_updated: '2026-11-06'
     category_label: 插件市场与发现
     status_label: 社区
     weight: 1020

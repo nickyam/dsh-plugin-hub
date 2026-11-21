@@ -151,6 +151,18 @@ def main():
         except Exception as exc:
             print(f"⚠ data/repo_stats.json 解析失败，跳过 GitHub 数据：{exc}", file=sys.stderr)
 
+    # 条目最后更新时间：由 tools/entry_updated.py 从 git 历史推导（改了这条才记这天），
+    # 构建只读产物，不跑 git。用来替代原来的「本站整理于 <构建时间>」——那个每次部署都变。
+    entry_updated, entry_updated_at = {}, ""
+    eu_path = DATA / "entry_updated.json"
+    if eu_path.exists():
+        try:
+            _eu = json.loads(eu_path.read_text(encoding="utf-8"))
+            entry_updated = _eu.get("entries", {}) or {}
+            entry_updated_at = _eu.get("generated", "")
+        except Exception as exc:
+            print(f"⚠ data/entry_updated.json 解析失败，跳过条目更新时间：{exc}", file=sys.stderr)
+
     GH_KEYS = ("stars", "forks", "issues", "language", "license", "pushed_at", "archived")
 
     def human(n):
@@ -238,6 +250,8 @@ def main():
                     gh["updated_days"] = days
                     gh["stale"] = days > 180
         p["gh"] = gh or None
+        # 条目本身最近一次被改动是哪天（不含 refs 这类内部台账）
+        p["entry_updated"] = entry_updated.get(p["id"])
         p["category_label"] = cat_map[p["category"]]
         p["status_label"] = STATUS_LABEL[p["status"]]
         # 已确认官方仓库的排前面，其次参考文章多的排前面

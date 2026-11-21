@@ -43,9 +43,10 @@ params:
       stars_label: '3700'
       forks_label: '391'
       pushed_date: '2026-11-07'
-      updated_label: 13 天前有提交
-      updated_days: 13
+      updated_label: 14 天前有提交
+      updated_days: 14
       stale: false
+    entry_updated: '2026-11-17'
     category_label: 集成与迁移
     status_label: 社区
     weight: 1020

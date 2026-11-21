@@ -46,6 +46,7 @@ params:
       updated_label: 3 个月前有提交
       updated_days: 100
       stale: false
+    entry_updated: '2026-11-19'
     category_label: 协作与工作流
     status_label: 社区
     weight: 1010

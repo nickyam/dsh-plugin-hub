@@ -48,6 +48,7 @@ params:
       updated_label: 3 天前有提交
       updated_days: 3
       stale: false
+    entry_updated: '2026-11-17'
     category_label: 界面与体验
     status_label: 社区
     weight: 1030

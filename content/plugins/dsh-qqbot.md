@@ -46,6 +46,7 @@ params:
       updated_label: 3 天前有提交
       updated_days: 3
       stale: false
+    entry_updated: '2026-11-19'
     category_label: 集成与迁移
     status_label: 官方
     weight: 1010

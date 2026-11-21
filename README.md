@@ -36,8 +36,10 @@ data/
   categories.yaml       分类表
   derived.json          【脚本生成】统计 + 各种映射
   repo_stats.json       【脚本生成】GitHub 星标 / Fork / 最近提交快照（fetch_repo_stats.py 写入）
+  entry_updated.json    【脚本生成】每个条目最后更新日期（entry_updated.py 从 git 历史推导）
 tools/build_data.py     校验 / 去重 / 算仓库确认数 / 生成页面与索引
 tools/fetch_repo_stats.py  GitHub API 抓取仓库数据 → repo_stats.json（增量、带缓存）
+tools/entry_updated.py   git 历史 → entry_updated.json（详情页「条目更新于」的数据源）
 deploy/deploy.sh        部署到 ECS 的 index/dsh/
 content/
   plugins/*.md          【脚本生成】133 个插件详情页
@@ -54,7 +56,9 @@ static/
 public/                  hugo 构建产物（不入库）
 ```
 
-⚠️ `content/plugins/`、`static/search.json`、`data/derived.json`、`data/repo_stats.json` **是产物但要一起提交进 git**——这样线上构建只要 Hugo，不用装 Python/PyYAML。改完 data 必须跑一次生成脚本再提交，否则线上还是旧数据。`build.sh` 带了 `--cleanDestinationDir`，删条目时 `public/` 里的旧页会一起清掉，不留幽灵页面。
+⚠️ `content/plugins/`、`static/search.json`、`data/derived.json`、`data/repo_stats.json`、`data/entry_updated.json` **是产物但要一起提交进 git**——这样线上构建只要 Hugo，不用装 Python/PyYAML。改完 data 必须跑一次生成脚本再提交，否则线上还是旧数据。`build.sh` 带了 `--cleanDestinationDir`，删条目时 `public/` 里的旧页会一起清掉，不留幽灵页面。
+
+**「条目更新于」的口径**：详情页那行日期来自 `data/entry_updated.json`，由 `tools/entry_updated.py` 遍历 `data/plugins.yaml` 的 git 历史算出——只在那一条的可见字段被改动时刷新，`refs`（内部去重台账）改动不算。它表达的是「本站这条记录最后修订于」，不是插件发布日期，也不是构建时间；没动过的条目不会跟着部署变日期。`build.sh` 在有完整 git 历史时会自动重跑该脚本，浅克隆/无 `.git` 时沿用已有产物。
 
 GitHub 星标 / Fork 是快照，不是实时值。想刷新就跑 `python3 tools/fetch_repo_stats.py`（默认只补超过 7 天的，`--all` 全量重刷），再走一遍 `build_data.py && hugo`。有 `GITHUB_TOKEN` 的话几秒跑完；没 token 时匿名 60 次/小时的 core 额度先用，用完自动退到 10 次/分钟的 search 接口，全量约 20 分钟。**别在没网的环境跑构建**——构建只读 `data/repo_stats.json`，不联网。
 

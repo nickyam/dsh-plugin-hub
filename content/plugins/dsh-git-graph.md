@@ -48,6 +48,7 @@ params:
       updated_label: 24 天前有提交
       updated_days: 24
       stale: false
+    entry_updated: '2026-11-19'
     category_label: 工具与能力
     status_label: 社区
     weight: 1010

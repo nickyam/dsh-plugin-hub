@@ -45,6 +45,7 @@ params:
       updated_label: 15 天前有提交
       updated_days: 15
       stale: false
+    entry_updated: '2026-11-09'
     category_label: 视觉与设计
     status_label: 社区
     weight: 1010
