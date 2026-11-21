@@ -56,6 +56,8 @@ static/
 public/                  hugo 构建产物（不入库）
 ```
 
+顶层还有 `AGENTS.md`：给 AI 协作者（和隔了几个月回来的自己）的**执行层**说明——文件边界、已踩过的坑、收工自检。产品与内容规则以本文为准，`AGENTS.md` 不重复。
+
 ⚠️ `content/plugins/`、`static/search.json`、`data/derived.json`、`data/repo_stats.json`、`data/entry_updated.json` **是产物但要一起提交进 git**——这样线上构建只要 Hugo，不用装 Python/PyYAML。改完 data 必须跑一次生成脚本再提交，否则线上还是旧数据。`build.sh` 带了 `--cleanDestinationDir`，删条目时 `public/` 里的旧页会一起清掉，不留幽灵页面。
 
 **「条目更新于」的口径**：详情页那行日期来自 `data/entry_updated.json`，由 `tools/entry_updated.py` 遍历 `data/plugins.yaml` 的 git 历史算出——只在那一条的可见字段被改动时刷新，`refs`（内部去重台账）改动不算。它表达的是「本站这条记录最后修订于」，不是插件发布日期，也不是构建时间；没动过的条目不会跟着部署变日期。`build.sh` 在有完整 git 历史时会自动重跑该脚本，浅克隆/无 `.git` 时沿用已有产物。
