@@ -39,6 +39,9 @@ params:
       stars_label: 79.8k
       forks_label: '2249'
       pushed_date: '2026-11-18'
+      updated_label: 3 天前有提交
+      updated_days: 3
+      stale: false
     category_label: 免费模型与接入
     status_label: 社区
     weight: 1040

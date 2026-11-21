@@ -46,6 +46,9 @@ params:
       stars_label: '12'
       forks_label: '1'
       pushed_date: '2026-11-16'
+      updated_label: 4 天前有提交
+      updated_days: 4
+      stale: false
     category_label: 插件市场与发现
     status_label: 社区
     weight: 1020

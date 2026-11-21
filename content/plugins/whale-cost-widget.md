@@ -42,6 +42,9 @@ params:
       stars_label: '7335'
       forks_label: '242'
       pushed_date: '2026-10-11'
+      updated_label: 1 个月前有提交
+      updated_days: 40
+      stale: false
     category_label: 模型与计费
     status_label: 原文未说明
     weight: 1040

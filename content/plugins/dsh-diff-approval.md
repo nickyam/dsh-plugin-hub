@@ -39,6 +39,9 @@ params:
       stars_label: '16'
       forks_label: '3'
       pushed_date: '2026-11-12'
+      updated_label: 8 天前有提交
+      updated_days: 8
+      stale: false
     category_label: 协作与工作流
     status_label: 社区
     weight: 1010

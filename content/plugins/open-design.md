@@ -38,6 +38,9 @@ params:
       stars_label: 108.3k
       forks_label: 12.3k
       pushed_date: '2026-11-19'
+      updated_label: 2 天前有提交
+      updated_days: 2
+      stale: false
     category_label: 视觉与设计
     status_label: 社区
     weight: 1030

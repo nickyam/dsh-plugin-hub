@@ -8,11 +8,14 @@
     <nav class="nav" aria-label="主导航">
       <a href="{{ "plugins/" | relURL }}" {{ if eq .Section "plugins" }}class="is-current"{{ end }}>插件库</a>
       <a href="{{ "categories/" | relURL }}" {{ if eq .Type "categories" }}class="is-current"{{ end }}>分类</a>
+      <a href="{{ "guide/" | relURL }}" {{ if eq $base "guide" }}class="is-current"{{ end }}>怎么装</a>
       <a href="{{ "about/" | relURL }}" {{ if eq $base "about" }}class="is-current"{{ end }}>关于</a>
     </nav>
-    <a class="header-search" href="{{ site.Home.RelPermalink }}#catalog" title="去搜索插件">
+    {{/* 全站搜索：以前只是个跳回首页 #catalog 的链接，详情页/分类页根本搜不了。现在唤起浮层。 */}}
+    <button class="header-search" type="button" data-search-open aria-haspopup="dialog" title="搜索插件（快捷键 / 或 ⌘K）">
       <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       <span>搜插件</span>
-    </a>
+      <kbd>/</kbd>
+    </button>
   </div>
 </header>

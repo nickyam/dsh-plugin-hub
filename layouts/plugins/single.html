@@ -1,9 +1,24 @@
 {{ define "main" }}
 {{ $p := .Params.plugin }}
-{{ $related := slice }}
+{{/* 相关条目：先按共享标签打分，不足 3 条再用同分类补齐 —— 比只看分类更准（桌宠/记忆/MCP 这类标签比分类细） */}}
+{{ $scored := slice }}
 {{ range where site.RegularPages "Section" "plugins" }}
-  {{ if and (eq .Params.plugin.category $p.category) (ne .Params.plugin.id $p.id) }}
-    {{ $related = $related | append . }}
+  {{ if ne .Params.plugin.id $p.id }}
+    {{ $shared := 0 }}
+    {{ range .Params.plugin.tags | default (slice) }}{{ if in ($p.tags | default (slice)) . }}{{ $shared = add $shared 1 }}{{ end }}{{ end }}
+    {{ if gt $shared 0 }}{{ $scored = $scored | append (dict "page" . "n" $shared) }}{{ end }}
+  {{ end }}
+{{ end }}
+{{ $related := slice }}
+{{ range first 6 (sort $scored "n" "desc") }}{{ $related = $related | append .page }}{{ end }}
+{{ if lt (len $related) 3 }}
+  {{ $ids := slice }}
+  {{ range $related }}{{ $ids = $ids | append .Params.plugin.id }}{{ end }}
+  {{ range where site.RegularPages "Section" "plugins" }}
+    {{ if and (eq .Params.plugin.category $p.category) (ne .Params.plugin.id $p.id) (lt (len $related) 6) (not (in $ids .Params.plugin.id)) }}
+      {{ $related = $related | append . }}
+      {{ $ids = $ids | append .Params.plugin.id }}
+    {{ end }}
   {{ end }}
 {{ end }}
 <div class="wrap detail-page">
@@ -21,10 +36,16 @@
           <span class="cat-badge">{{ $p.category_label }}</span>
           <span class="badge badge-ghost">{{ $p.status_label }}</span>
           {{ if $p.repo_confirmed }}<span class="badge badge-green">官方仓库已确认</span>{{ else }}<span class="badge badge-ghost">仓库待确认</span>{{ end }}
+          {{ with $p.gh }}{{ if .stale }}<span class="badge badge-ghost">久未更新</span>{{ end }}{{ end }}
         </div>
         <h1>{{ $p.name }}</h1>
         {{ with $p.aliases }}<p class="aliases aliases-lg">也叫 {{ delimit . "、" }}</p>{{ end }}
         <div class="lead">{{ .Content }}</div>
+        <div class="detail-cta">
+          {{ with $p.repo }}<a class="btn btn-repo" href="{{ . }}" target="_blank" rel="noopener noreferrer">去 GitHub 仓库 →</a>{{ end }}
+          <a class="btn" href="{{ "guide/" | relURL }}">怎么装这类插件</a>
+        </div>
+        <p class="detail-meta">本站整理于 {{ hugo.Data.derived.generated_at }}{{ with $p.gh }}{{ with .pushed_date }} ｜ 仓库最近提交 {{ . }}{{ end }}{{ end }}</p>
       </header>
 
       {{ with $p.flag }}
@@ -45,12 +66,24 @@
               {{ with .issues }}<span><strong>{{ . }}</strong> Issue</span>{{ end }}
               {{ with .language }}<span>{{ . }}</span>{{ end }}
               {{ with .license }}<span>{{ . }}</span>{{ end }}
-              {{ with .pushed_date }}<span class="gh-when">最近提交 {{ . }}</span>{{ end }}
+              {{ with .updated_label }}<span class="gh-when">{{ . }}</span>{{ end }}
             </div>
             {{ end }}
           </dd></div>
-          <div><dt>安装</dt><dd>{{ with $p.install }}<code class="code-block">{{ . }}</code>{{ else }}<span class="muted">README 未给出安装命令；请到上述仓库查看</span>{{ end }}</dd></div>
-          <div><dt>标签</dt><dd>{{ range $p.tags }}<a class="tag" href="{{ "tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>{{ else }}<span class="muted">—</span>{{ end }}</dd></div>
+          <div><dt>安装</dt><dd>
+            {{ with $p.install }}
+            <span class="install-row">
+              <code class="code-block">{{ . }}</code>
+              <button class="copy-btn" type="button" data-copy="{{ . }}">复制命令</button>
+            </span>
+            {{ else }}<span class="muted">README 未给安装命令（清单 / 市场类条目常见）；到仓库看它的用法说明。</span>{{ end }}
+          </dd></div>
+          <div><dt>标签</dt><dd>
+            {{ range $p.tags }}
+              {{ $n := 0 }}{{ with index site.Taxonomies.tags . }}{{ $n = len . }}{{ end }}
+              {{ if ge $n 3 }}<a class="tag" href="{{ "tags/" | relURL }}{{ . | urlize }}/">{{ . }}</a>{{ else }}<span class="tag" title="站内只有 {{ $n }} 个条目挂这个标签">{{ . }}</span>{{ end }}
+            {{ else }}<span class="muted">—</span>{{ end }}
+          </dd></div>
         </dl>
       </section>
 
@@ -75,13 +108,14 @@
 
     <aside class="detail-side">
       <section class="side-box">
-        <h2>同分类还有</h2>
+        <h2>相关条目</h2>
         <ul class="side-list">
-          {{ range first 6 $related }}
-          <li><a href="{{ .RelPermalink }}">{{ .Params.plugin.name }}</a><span class="mini-tag">{{ if .Params.plugin.repo_confirmed }}已确认仓库{{ else }}待确认{{ end }}</span></li>
+          {{ range $related }}
+          <li><a href="{{ .RelPermalink }}">{{ .Params.plugin.name }}</a><span class="mini-tag">{{ with .Params.plugin.gh }}{{ with .stars_label }}★ {{ . }}{{ else }}—{{ end }}{{ else }}—{{ end }}</span></li>
           {{ end }}
-          {{ if not $related }}<li class="muted">这个分类暂时只有它一个。</li>{{ end }}
+          {{ if not $related }}<li class="muted">暂时没有同类条目。</li>{{ end }}
         </ul>
+        <p class="related-tags"><a href="{{ "categories/" | relURL }}{{ $p.category }}/">看这个分类的全部条目 →</a></p>
       </section>
       <section class="side-box side-box-plain">
         <p class="muted">发现官方仓库有更新，或者觉得哪条写得不准？按<a href="{{ "about/" | relURL }}">收录方法</a>改 <code>data/plugins.yaml</code> 就行。</p>

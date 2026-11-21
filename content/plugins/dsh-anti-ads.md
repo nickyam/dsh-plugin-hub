@@ -37,6 +37,9 @@ params:
       stars_label: '10'
       forks_label: '0'
       pushed_date: '2026-09-01'
+      updated_label: 2 个月前有提交
+      updated_days: 80
+      stale: false
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1010

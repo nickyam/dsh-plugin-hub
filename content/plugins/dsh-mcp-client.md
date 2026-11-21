@@ -39,6 +39,9 @@ params:
       stars_label: 283.6k
       forks_label: 35.2k
       pushed_date: '2026-11-18'
+      updated_label: 2 天前有提交
+      updated_days: 2
+      stale: false
     category_label: 集成与迁移
     status_label: 官方
     weight: 1010

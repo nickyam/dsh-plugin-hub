@@ -16,7 +16,7 @@ content/plugins/*.md、content/sources/*.md、static/search.json、data/derived.
 """
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 try:
@@ -168,11 +168,33 @@ def main():
         mid = len(vals) // 2
         return vals[mid] if len(vals) % 2 else round((vals[mid - 1] + vals[mid]) / 2)
 
+    def updated_label(pushed_at):
+        """把 pushed_at 换成「N 天前更新」。只描述仓库最近提交，不冒充本站核对时间。"""
+        if not pushed_at:
+            return None, None
+        try:
+            ts = datetime.strptime(pushed_at[:19], "%Y-%m-%dT%H:%M:%S")
+        except ValueError:
+            return None, None
+        days = max((datetime.now(timezone.utc).replace(tzinfo=None) - ts).days, 0)
+        if days == 0:
+            label = "今天有提交"
+        elif days == 1:
+            label = "昨天有提交"
+        elif days < 30:
+            label = f"{days} 天前有提交"
+        elif days < 365:
+            label = f"{days // 30} 个月前有提交"
+        else:
+            label = f"{days // 365} 年前有提交"
+        return label, days
+
     total_refs = 0
     for p in plugins:
         # 参考来源（发现来源）：优先 refs，否则从旧 mentions 的 source 推导
+        raw_refs = p.get("refs") or [m.get("source") for m in p.get("mentions") or []]
         seen, refs = set(), []
-        for r in (p.get("refs") or [m.get("source") for m in p.get("mentions") or []]):
+        for r in raw_refs:
             if r and r not in seen:
                 seen.add(r)
                 refs.append(
@@ -186,6 +208,12 @@ def main():
                 )
         p["refs"] = refs
         total_refs += len(refs)
+
+        # refs 去重后如果比原文短，说明 yaml 里有重复行（不影响产物，但台账会虚高）
+        if len(raw_refs) != len(seen):
+            warnings.append(
+                f"插件 {p.get('id')} 的 refs 有 {len(raw_refs) - len(seen)} 条重复，已自动去重"
+            )
 
         p["source_count"] = len(seen)
         p["repo_confirmed"] = bool(p.get("repo"))
@@ -203,6 +231,12 @@ def main():
             gh["forks_label"] = human(gh.get("forks"))
             if gh.get("pushed_at"):
                 gh["pushed_date"] = gh["pushed_at"][:10]
+                label, days = updated_label(gh["pushed_at"])
+                if label:
+                    # 卡片上替代「社区 / 官方」这类恒定徽章：更新活跃度才是真信号
+                    gh["updated_label"] = label
+                    gh["updated_days"] = days
+                    gh["stale"] = days > 180
         p["gh"] = gh or None
         p["category_label"] = cat_map[p["category"]]
         p["status_label"] = STATUS_LABEL[p["status"]]
@@ -246,6 +280,9 @@ def main():
         write_front_matter(pdir / f"{p['id']}.md", front, p["summary"])
 
     # ── 搜索索引 ────────────────────────────────────────────────
+    # 2026-11-21：这份索引过去生成了却没人读（首页搜索走 DOM 的 data-hay）。
+    # 现在给 baseof 的搜索浮层用，字段要覆盖「用户可能怎么描述它」：
+    # 名字 / 别名 / 简介 / 标签 / 功能亮点 / 备注 / 安装命令。
     index = [
         {
             "id": p["id"],
@@ -255,17 +292,21 @@ def main():
             "category_label": p["category_label"],
             "summary": p["summary"],
             "tags": p.get("tags") or [],
+            "features": p.get("features") or [],
+            # notes 通常一两百字，进搜索只为覆盖「剪贴板 / WebDAV」这类只在备注里出现的词，截断够用
+            "notes": (p.get("notes") or "")[:160],
+            "install": p.get("install") or "",
             "status_label": p["status_label"],
             "repo_confirmed": p["repo_confirmed"],
             "stars": (p["gh"] or {}).get("stars"),
             "stars_label": (p["gh"] or {}).get("stars_label"),
-            "flag": p.get("flag", ""),
+            "updated_label": (p["gh"] or {}).get("updated_label"),
             "url": p["url"],
         }
         for p in sorted(plugins, key=lambda x: -x["weight"])
     ]
     (STATIC / "search.json").write_text(
-        json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8"
+        json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
     )
 
     # ── 派生统计 ────────────────────────────────────────────────
@@ -273,6 +314,7 @@ def main():
     # derived.json 会随站点发布，所以这里绝不能带任何来源标题 / 链接 / 计数。
     derived = {
         "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "generated_date": datetime.now().strftime("%Y-%m-%d"),
         "stats": {
             "plugins": len(plugins),
             "repos_confirmed": sum(1 for p in plugins if p["repo_confirmed"]),

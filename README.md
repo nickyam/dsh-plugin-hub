@@ -41,11 +41,15 @@ tools/fetch_repo_stats.py  GitHub API 抓取仓库数据 → repo_stats.json（�
 deploy/deploy.sh        部署到 ECS 的 index/dsh/
 content/
   plugins/*.md          【脚本生成】133 个插件详情页
-  about.md privacy.md _index.md   手写页面
+  about.md privacy.md guide.md _index.md   手写页面
 layouts/                 自建零依赖主题（不拉 submodule）
+  sitemap.xml           自写：剔除「挂不满 3 个插件」的标签页 + 输出 lastmod
+assets/
+  css/main.css js/site.js js/search.js   【Hugo 资源】构建时压缩 + 内容指纹，URL 带 hash
 static/
-  css/main.css js/site.js favicon.svg
-  search.json           【脚本生成】前端本地搜索索引
+  fonts/*.woff2         自托管 latin 子集（Hanken / Newsreader / Plex Mono），替代 Google Fonts
+  favicon.svg og-cover.png apple-touch-icon.png
+  search.json           【脚本生成】全站搜索浮层的数据源（含 features / notes / install）
   ads.txt               AdSense 发布商声明（副本，要放到主站根目录才有效）
 public/                  hugo 构建产物（不入库）
 ```
@@ -54,7 +58,23 @@ public/                  hugo 构建产物（不入库）
 
 GitHub 星标 / Fork 是快照，不是实时值。想刷新就跑 `python3 tools/fetch_repo_stats.py`（默认只补超过 7 天的，`--all` 全量重刷），再走一遍 `build_data.py && hugo`。有 `GITHUB_TOKEN` 的话几秒跑完；没 token 时匿名 60 次/小时的 core 额度先用，用完自动退到 10 次/分钟的 search 接口，全量约 20 分钟。**别在没网的环境跑构建**——构建只读 `data/repo_stats.json`，不联网。
 
-`static/search.json` 里的 `url` 是站点根相对路径（如 `/plugins/xxx/`）。将来若用 JS 拼链接，先读 `<html data-base>`（值形如 `/dsh/`）再拼，别直接拿它当完整 URL。
+`static/search.json` 里的 `url` 是站点根相对路径（如 `/plugins/xxx/`）。用 JS 拼链接时先读 `<html data-base>`（值形如 `/dsh/`）再拼，`assets/js/search.js` 就是这么干的。
+
+## 2026-11-21 全站优化（改之前先看这段，别改回去）
+
+| 改动 | 为什么 |
+| --- | --- |
+| 卡片里的 `flag` 允许换行 + 最多两行 | 原来 `.mini-tag{white-space:nowrap}`，一句长提示把卡片顶到 500~670px，390px 视口整页横向溢出，`overflow-x:clip` 直接把右侧裁掉 |
+| 字体自托管到 `static/fonts`，删掉 Google Fonts 外链 | 那条 `<link>` 是渲染阻塞的，大陆被墙；且正文衬线（Newsreader）在国内从来没生效过。只下载 latin 子集，中文走系统栈 |
+| `assets/` 资源走 `fingerprint` 指纹 | 版本戳每次构建都变，等于每次部署全量失效缓存；改成内容指纹，没改就不换 URL |
+| 全站搜索浮层（`/` 与 `⌘K`），数据读 `search.json` | 以前 `search.json` 生成了没人读，详情页/分类页也没有搜索入口 |
+| 首页筛选/搜索/页码写回 `?c=&q=&p=` | 以前刷新即丢，也没法把「桌宠这一类」分享出去 |
+| 首页第 24 张之后的卡片直接输出 `hidden` | 以前 133 张全画出来再被 JS 收起，首帧会闪一下 |
+| `/plugins/` 改 Hugo 真分页（36/页），`tags` 只给 count≥3 的建索引 | 标签 307 个里 247 个只挂 1 个插件；sitemap 从 458 条降到 175 条 |
+| 卡片徽章换掉「官方仓库已确认 / 社区」 | 133/133 都是已确认、129/133 都是社区，零信息量；换成「N 天前有提交 / 久未更新」 |
+| 详情页加复制安装命令、GitHub 按钮、相关条目（按共享标签）、整理时间 | 最有用的动作原来都埋在表格里 |
+
+广告：AdSense 的 Anchor / Vignette / In-Form 格式**只能在 AdSense 后台关**（代码关不掉）。窄屏实测顶部锚定广告会盖住 sticky header，建议后台只留一种页内格式，本站不再做代码层补救。
 
 ## 收录范围（硬规则）
 

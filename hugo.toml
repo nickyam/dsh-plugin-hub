@@ -7,7 +7,9 @@ baseURL = "https://ai.limzero.com/dsh/"
 locale = "zh-CN"
 title = "DSH 插件图谱"
 enableRobotsTXT = true
-enableGitInfo = false
+# sitemap 的 lastmod 用 git 提交日期：比在 front matter 里写构建时间准确，
+# 也不会让每次构建都改一遍 133 个 content/plugins/*.md（diff 噪音）。
+enableGitInfo = true
 
 [params]
   description = "顺着名字找到 DeepSeek Harness 插件的官方 GitHub 仓库，读 README 把简介、安装与功能亮点整理成能查的卡片。"
@@ -16,6 +18,15 @@ enableGitInfo = false
 [taxonomies]
   category = "categories"
   tag = "tags"
+
+# RSS 只留首页：分类/标签/插件列表的 index.xml 没人订阅，纯属产物噪音
+# （之前 tags/index.xml 76KB、plugins/index.xml 68KB）。
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+  page = ["HTML"]
 
 # 谷歌广告：沿用你账号里已有的发布商 ID。
 # 用的是 Auto Ads（全站自动插位），不需要单独建广告单元。
@@ -30,3 +41,9 @@ enableGitInfo = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  # 代码高亮：默认会把 monokai 的深色内联样式写进 <pre>，和浅色纸面对冲（guide 页第一版就是这么翻车的）。
+  # 改成输出 class，配色由 assets/css/main.css 里那几行 .chroma 规则控制。
+  [markup.highlight]
+    noClasses = false
+    style = "friendly"
+    tabWidth = 2

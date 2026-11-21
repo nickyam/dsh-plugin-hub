@@ -3,26 +3,72 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ if .IsHome }}{{ site.Title }} ｜ 非官方中文插件资料库{{ else }}{{ .Title }} ｜ {{ site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+  {{- $title := printf "%s ｜ %s" .Title site.Title -}}
+  {{- if .IsHome }}{{ $title = printf "%s ｜ DeepSeek Harness（DSH）插件中文索引" site.Title }}{{ end -}}
+  <title>{{ $title }}</title>
+  {{/* 描述：分类页用 categories.yaml 里写好的 desc，标签页按条目数拼，其余退回页面自己的 description。 */}}
+  {{- $desc := site.Params.description -}}
+  {{- with .Description }}{{ $desc = . }}{{ end -}}
+  {{- if eq .Type "categories" -}}
+    {{- $term := .Data.Term -}}
+    {{- range hugo.Data.derived.categories -}}
+      {{- if eq .id $term }}{{ $desc = printf "%s：%s。收录 %d 个 DSH 插件，均已确认官方仓库并按 README 整理。" .label .desc (int .count) }}{{ end -}}
+    {{- end -}}
+  {{- else if eq .Type "tags" -}}
+    {{- $desc = printf "标签「%s」下的 %d 个 DSH 插件，简介、安装命令与功能亮点均依据官方 GitHub 仓库 README 整理。" .Title (len .Pages) -}}
+  {{- end -}}
+  <meta name="description" content="{{ $desc }}">
   <meta name="color-scheme" content="light">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <meta name="theme-color" content="#EBEEF3">
   <link rel="canonical" href="{{ .Permalink }}">
+
+  {{/* 标签索引页与「只挂一两个插件」的标签页一律 noindex：307 个标签里 247 个只挂 1 条，属于薄内容重复页。
+       页面本身照常可访问（读者从详情页点进去仍能看），只是不进搜索索引。 */}}
+  {{- if eq .Type "tags" -}}
+    {{- if or (eq .Kind "taxonomy") (lt (len .Pages) 3) -}}<meta name="robots" content="noindex,follow">{{- end -}}
+  {{- end -}}
+
+  {{/* Open Graph / Twitter：以前一个都没有，分享出去是无图纯文字卡片 */}}
+  <meta property="og:type" content="{{ if eq .Type "plugins" }}article{{ else }}website{{ end }}">
+  <meta property="og:site_name" content="{{ site.Title }}">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ $desc }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:image" content="{{ "og-cover.png" | absURL }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ $desc }}">
+  <meta name="twitter:image" content="{{ "og-cover.png" | absURL }}">
+
   <link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
-  {{/* 版本戳：ECS 对静态资源设 immutable 长缓存，URL 不变会导致改样式后用户拿到旧 CSS/JS。每次构建换查询串强制刷新。 */}}
-  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?v={{ now.Unix }}">
-  {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .Permalink }}">{{ end }}
+  <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ "index.xml" | absURL }}">
+
+  {{/* 字体自托管（同源 woff2）。只 preload 首屏标题要用的那一个；正文衬线让 swap 兜底，不抢带宽。 */}}
+  <link rel="preload" as="font" type="font/woff2" href="{{ "fonts/hanken-grotesk-latin.woff2" | relURL }}" crossorigin>
+
+  {{/* 版本戳：ECS 对静态资源设 immutable 长缓存。改用内容指纹，样式没变就不换 URL，改了才换。 */}}
+  {{- $css := resources.Get "css/main.css" | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+
   {{ if site.Params.adsense.enabled }}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.Params.adsense.client }}" crossorigin="anonymous"></script>
   <script>(adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "{{ site.Params.adsense.client }}", enable_page_level_ads: true });</script>
   {{ end }}
+  {{ partial "schema.html" . }}
 </head>
 <body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
   {{ partial "header.html" . }}
   <main id="main">{{ block "main" . }}{{ end }}</main>
   {{ partial "footer.html" . }}
-  <script src="{{ "js/site.js" | relURL }}?v={{ now.Unix }}" defer></script>
+  {{ partial "search-dialog.html" . }}
+  {{- $js := resources.Get "js/site.js" | minify | fingerprint -}}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+  {{- $sjs := resources.Get "js/search.js" | minify | fingerprint -}}
+  <script src="{{ $sjs.RelPermalink }}" integrity="{{ $sjs.Data.Integrity }}" defer></script>
 </body>
 </html>

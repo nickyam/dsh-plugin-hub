@@ -39,6 +39,9 @@ params:
       stars_label: '518'
       forks_label: '35'
       pushed_date: '2026-08-24'
+      updated_label: 2 个月前有提交
+      updated_days: 88
+      stale: false
     category_label: 安全与治理
     status_label: 社区
     weight: 1010

@@ -40,6 +40,9 @@ params:
       stars_label: 10.6k
       forks_label: '763'
       pushed_date: '2026-11-18'
+      updated_label: 2 天前有提交
+      updated_days: 2
+      stale: false
     category_label: 工具与能力
     status_label: 社区
     weight: 1010

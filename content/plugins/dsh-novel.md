@@ -41,6 +41,9 @@ params:
       stars_label: '7'
       forks_label: '0'
       pushed_date: '2026-10-24'
+      updated_label: 27 天前有提交
+      updated_days: 27
+      stale: false
     category_label: 内容创作与办公
     status_label: 社区
     weight: 1010

@@ -37,6 +37,9 @@ params:
       stars_label: '859'
       forks_label: '88'
       pushed_date: '2026-10-29'
+      updated_label: 22 天前有提交
+      updated_days: 22
+      stale: false
     category_label: 记忆与知识
     status_label: 社区
     weight: 1010

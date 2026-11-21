@@ -40,6 +40,7 @@
       <input id="q" type="search" placeholder="搜插件名、别名、功能，例如 微信 / 记忆 / dsh-market" autocomplete="off" aria-label="搜索插件">
       <kbd>/</kbd>
     </div>
+    <p class="toolbar-hint">这里的搜索只筛卡片（名字 / 别名 / 简介 / 标签）。想连<strong>功能亮点和安装命令</strong>一起搜，按 <kbd>⌘K</kbd>。</p>
   </div>
 
   <div class="filters-wrap">
@@ -56,10 +57,12 @@
 
   <div class="columns">
     <div class="col-main">
+      <h2 class="visually-hidden">插件列表</h2>
       <div class="result-bar"><span id="result-count">{{ $stats.plugins }} 个插件</span><span class="muted">全部已确认官方仓库</span></div>
       <div class="cards" id="cards">
-        {{ range sort (where site.RegularPages "Section" "plugins") "Weight" "desc" }}
-          {{ partial "card.html" . }}
+        {{/* 第 24 张之后先输出成 hidden：首帧只画一页，不再先铺满 133 张再收起来 */}}
+        {{ range $i, $e := sort (where site.RegularPages "Section" "plugins") "Weight" "desc" }}
+          {{ partial "card.html" (dict "page" $e "hide" (ge $i 24)) }}
         {{ end }}
       </div>
       <p class="no-result" id="no-result" hidden>没找到匹配的插件。试试别名，或者换个说法（例如「全家桶」「桌宠」「记账」）。</p>
@@ -72,11 +75,13 @@
 
     <aside class="col-side">
       <section class="side-box">
-        <h2>卡片上的徽章</h2>
+        <h2>卡片上的标记</h2>
         <ul class="legend">
-          <li><span class="badge badge-green">官方仓库已确认</span> 已链到 GitHub 仓库</li>
-          <li><span class="mini-tag">社区 / 官方</span> 插件发布方性质</li>
-          <li><span class="mini-tag mini-tag-warn">提示</span> 名称 / ID / 兼容性待核</li>
+          <li><span class="card-gh"><span aria-hidden="true">★</span> 622</span> 仓库星标数（抓取快照）</li>
+          <li><span class="mini-tag">3 天前有提交</span> 仓库最近一次提交</li>
+          <li><span class="badge badge-ghost">久未更新</span> 半年以上没提交了</li>
+          <li><span class="badge badge-green">官方发布</span> 官方团队维护</li>
+          <li><span class="mini-tag mini-tag-warn">提示</span> 名称 / 版本 / 兼容性需留意</li>
         </ul>
       </section>
       <section class="side-box">
@@ -87,7 +92,7 @@
         <h2>怎么用</h2>
         <ul class="legend">
           <li>按分类筛一轮，先挑你要解决的事</li>
-          <li>搜别名最快，比如「全家桶」「桌宠」</li>
+          <li>搜别名最快，比如「全家桶」「桌宠」；<kbd>/</kbd> 或 <kbd>⌘K</kbd> 随时唤起搜索</li>
           <li>点进卡片看安装命令，装前回仓库核一遍</li>
         </ul>
       </section>

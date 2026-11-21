@@ -1,0 +1,22 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{ range .Pages }}
+    {{- /* 薄标签页（挂不满 3 个插件）不进 sitemap：307 个标签里 247 个只挂 1 条，属于重复页。
+           /tags/ 标签总览页同样不进，避免一堆单条标签页被发现。 */ -}}
+    {{- $skip := false -}}
+    {{- if eq .Type "tags" -}}
+      {{- if eq .Kind "taxonomy" -}}{{ $skip = true }}{{- else if lt (len .Pages) 3 -}}{{ $skip = true }}{{- end -}}
+    {{- end -}}
+    {{- if and (not $skip) .Permalink }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{- if not .Lastmod.IsZero }}
+    <lastmod>{{ safeHTML (.Lastmod.Format "2006-01-02T15:04:05-07:00") }}</lastmod>
+    {{- end }}
+    {{- with .Sitemap.ChangeFreq }}
+    <changefreq>{{ . }}</changefreq>
+    {{- end }}
+  </url>
+    {{- end }}
+  {{ end }}
+</urlset>

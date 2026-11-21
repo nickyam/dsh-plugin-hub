@@ -1,22 +1,28 @@
-{{ $p := .Params.plugin }}
+{{/* 参数：dict (page=插件页对象, hide=布尔) —— 首页把第 24 张之后的卡片直接输出成 hidden，
+   避免「先铺满 133 张再被 JS 收起」的首帧闪烁。也兼容直接传 Page 的调用。 */}}
+{{ $page := . }}
+{{ $hide := false }}
+{{ if reflect.IsMap . }}{{ $page = .page }}{{ $hide = .hide | default false }}{{ end }}
+{{ $p := $page.Params.plugin }}
+{{/* data-hay = 首页行内搜索的匹配源。这里刻意不放 features：133 张卡各塞 5 条功能亮点，
+   压缩后要多背 40KB，而功能词搜索由 ⌘K 浮层（search.json）覆盖。 */}}
 {{ $hay := printf "%s %s %s %s %s" $p.name (delimit ($p.aliases | default (slice)) " ") $p.summary (delimit ($p.tags | default (slice)) " ") $p.category_label | lower }}
-<article class="card" data-category="{{ $p.category }}" data-hay="{{ $hay }}" data-repo="{{ if $p.repo_confirmed }}1{{ else }}0{{ end }}">
+<article class="card" data-category="{{ $p.category }}" data-hay="{{ $hay }}" data-repo="{{ if $p.repo_confirmed }}1{{ else }}0{{ end }}"{{ if $hide }} hidden{{ end }}>
   <div class="card-top">
     <a class="cat-badge" href="{{ "categories/" | relURL }}{{ $p.category }}/">{{ $p.category_label }}</a>
-    {{ if $p.repo_confirmed }}
-      <span class="badge badge-green">官方仓库已确认</span>
-    {{ else }}
-      <span class="badge badge-ghost">仓库待确认</span>
-    {{ end }}
+    {{/* 2026-11-21：全站 133/133 都是「官方仓库已确认」，这个徽章原先 100% 出现、零信息量。
+       换成有区分度的信号：官方发布、仓库久未更新。 */}}
+    {{ if eq $p.status "official" }}<span class="badge badge-green">官方发布</span>{{ end }}
+    {{ with $p.gh }}{{ if .stale }}<span class="badge badge-ghost">久未更新</span>{{ end }}{{ end }}
   </div>
   <div class="card-head">
-    <h3><a href="{{ .RelPermalink }}">{{ $p.name }}</a></h3>
-    {{ with $p.gh }}{{ with .stars_label }}<span class="card-gh" title="GitHub 仓库星标数"><span aria-hidden="true">★</span> {{ . }}</span>{{ end }}{{ end }}
+    <h3><a href="{{ $page.RelPermalink }}">{{ $p.name }}</a></h3>
+    {{ with $p.gh }}{{ with .stars_label }}<span class="card-gh" title="GitHub 仓库星标数，抓取快照"><span aria-hidden="true">★</span> {{ . }}</span>{{ end }}{{ end }}
   </div>
   {{ with $p.aliases }}<p class="aliases">也叫 {{ delimit . "、" }}</p>{{ end }}
   <p class="card-summary">{{ $p.summary }}</p>
   <div class="card-foot">
-    <span class="mini-tag">{{ $p.status_label }}</span>
-    {{ with $p.flag }}<span class="mini-tag mini-tag-warn">{{ . }}</span>{{ end }}
+    {{ with $p.gh }}{{ with .updated_label }}<span class="mini-tag">{{ . }}</span>{{ end }}{{ else }}<span class="mini-tag">未取到仓库数据</span>{{ end }}
+    {{ with $p.flag }}<span class="mini-tag mini-tag-warn" title="{{ . }}">{{ . }}</span>{{ end }}
   </div>
 </article>

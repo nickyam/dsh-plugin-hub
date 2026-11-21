@@ -37,6 +37,9 @@ params:
       stars_label: '6'
       forks_label: '0'
       pushed_date: '2026-11-13'
+      updated_label: 7 天前有提交
+      updated_days: 7
+      stale: false
     category_label: 界面与体验
     status_label: 原文未说明
     weight: 1010

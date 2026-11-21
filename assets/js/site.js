@@ -1,7 +1,40 @@
-/* 首页筛选与本地搜索，零依赖 */
+/* 首页筛选 / 本地搜索 / 分类吸顶 / 复制命令，零依赖 */
 (function () {
+  /* ── 详情页：复制安装命令（所有页面都跑，和首页搜索无关） ── */
+  function bindCopy() {
+    document.querySelectorAll('[data-copy]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var text = btn.getAttribute('data-copy') || '';
+        var done = function () {
+          var old = btn.textContent;
+          btn.textContent = '已复制';
+          btn.classList.add('is-done');
+          setTimeout(function () { btn.textContent = old; btn.classList.remove('is-done'); }, 1600);
+        };
+        var fallback = function () {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
+          try { document.execCommand('copy'); done(); } catch (e) {}
+          document.body.removeChild(ta);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, fallback);
+        } else {
+          fallback();
+        }
+      });
+    });
+  }
+  bindCopy();
+
   var input = document.getElementById('q');
   if (!input) return;
+
   var cards = Array.prototype.slice.call(document.querySelectorAll('#cards .card'));
   var filters = Array.prototype.slice.call(document.querySelectorAll('.filter'));
   var count = document.getElementById('result-count');
@@ -15,6 +48,19 @@
   function headerH() { return headerEl ? headerEl.offsetHeight : 64; }
   var page = 1;
   var visible = []; // 当前筛选下命中的卡片（按页面顺序）
+
+  /* 筛选 / 搜索 / 页码写回地址栏：以前刷新即丢，也没法把「桌宠这一类」发出去 */
+  function syncUrl() {
+    if (!window.history || !history.replaceState) return;
+    var params = new URLSearchParams(location.search);
+    if (active === 'all') params.delete('c'); else params.set('c', active);
+    var q = input.value.trim();
+    if (q) params.set('q', q); else params.delete('q');
+    if (page > 1) params.set('p', String(page)); else params.delete('p');
+    var qs = params.toString();
+    var url = location.pathname + (qs ? '?' + qs : '') + location.hash;
+    history.replaceState(null, '', url);
+  }
 
   function renderPager(totalPages) {
     if (!pager || !pagerPages) return;
@@ -71,6 +117,7 @@
     if (count) count.textContent = visible.length + ' 个插件' + (totalPages > 1 ? '（第 ' + page + '/' + totalPages + ' 页）' : '');
     if (noResult) noResult.hidden = visible.length !== 0;
     renderPager(totalPages);
+    syncUrl();
   }
 
   // 翻页后回到卡片区顶部，并让开头避开吸顶的 header + 分类栏
@@ -98,11 +145,19 @@
     });
   }
 
+  function setActive(id) {
+    active = id;
+    filters.forEach(function (b) {
+      var on = b.getAttribute('data-filter') === id;
+      b.classList.toggle('is-active', on);
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  }
+
   filters.forEach(function (btn) {
+    btn.setAttribute('aria-pressed', btn.classList.contains('is-active') ? 'true' : 'false');
     btn.addEventListener('click', function () {
-      filters.forEach(function (b) { b.classList.remove('is-active'); });
-      btn.classList.add('is-active');
-      active = btn.getAttribute('data-filter');
+      setActive(btn.getAttribute('data-filter'));
       apply(true);
     });
   });
@@ -163,12 +218,15 @@
     }
   });
 
-  // 从其它页带 #catalog 回来时，把光标直接放进搜索框
-  if (location.hash === '#catalog' || /[?&]q=/.test(location.search)) {
-    var m = location.search.match(/[?&]q=([^&]+)/);
-    if (m) { input.value = decodeURIComponent(m[1].replace(/\+/g, ' ')); apply(true); }
+  // 初始状态：优先按地址栏里的 ?c= / ?q= / ?p= 还原（刷新、分享都能落回同一个视图）
+  var params = new URLSearchParams(location.search);
+  var initQ = params.get('q') || '';
+  var initC = params.get('c') || 'all';
+  var initP = parseInt(params.get('p') || '1', 10);
+  if (initQ) input.value = initQ;
+  if (initC !== 'all' && filters.some(function (b) { return b.getAttribute('data-filter') === initC; })) {
+    setActive(initC);
   }
-
-  // 初始渲染：HTML 里卡片默认全显示，这里收窄到第一页（幂等，URL 带 q 时已调用过也无妨）
-  apply(true);
+  page = initP > 0 ? initP : 1;
+  apply(false);
 })();

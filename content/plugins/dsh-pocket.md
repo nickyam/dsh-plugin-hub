@@ -42,6 +42,9 @@ params:
       stars_label: '3040'
       forks_label: '133'
       pushed_date: '2026-11-15'
+      updated_label: 6 天前有提交
+      updated_days: 6
+      stale: false
     category_label: 移动端与远程
     status_label: 社区
     weight: 1020

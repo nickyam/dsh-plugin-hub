@@ -38,6 +38,9 @@ params:
       stars_label: '0'
       forks_label: '0'
       pushed_date: '2026-10-22'
+      updated_label: 1 个月前有提交
+      updated_days: 30
+      stale: false
     category_label: 模型与计费
     status_label: 社区
     weight: 1010

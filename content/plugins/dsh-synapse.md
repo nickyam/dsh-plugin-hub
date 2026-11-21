@@ -38,6 +38,9 @@ params:
       stars_label: '730'
       forks_label: '72'
       pushed_date: '2026-11-04'
+      updated_label: 16 天前有提交
+      updated_days: 16
+      stale: false
     category_label: 界面与体验
     status_label: 社区
     weight: 1010

@@ -1,16 +1,25 @@
 {{ define "main" }}
-{{ $label := .Title }}{{ with index hugo.Data.derived.category_map .Title }}{{ $label = . }}{{ end }}
+{{ $isCat := eq .Data.Plural "categories" }}
+{{/* 用 .Data.Term 取原始词（tool），不要用 .Title —— Hugo 会把 tool 首字母大写成 "Tool"，查分类表就落空 */}}
+{{ $term := .Data.Term }}
+{{ $label := $term }}{{ with index hugo.Data.derived.category_map $term }}{{ $label = . }}{{ end }}
+{{ $desc := "" }}
+{{ if $isCat }}{{ range hugo.Data.derived.categories }}{{ if eq .id $term }}{{ $desc = .desc }}{{ end }}{{ end }}{{ end }}
 <div class="wrap list-page">
   <nav class="breadcrumb" aria-label="面包屑">
     <a href="{{ site.Home.RelPermalink }}">首页</a><span>/</span>
-    <a href="{{ "categories/" | relURL }}">分类</a><span>/</span><span>{{ $label }}</span>
+    <a href="{{ if $isCat }}{{ "categories/" | relURL }}{{ else }}{{ "tags/" | relURL }}{{ end }}">{{ if $isCat }}分类{{ else }}标签{{ end }}</a><span>/</span><span>{{ $label }}</span>
   </nav>
   <header class="page-head">
     <h1>{{ $label }}</h1>
-    <p>{{ len .Pages }} 个插件，已确认官方仓库的排前面</p>
+    <p>{{ len .Pages }} 个插件{{ if $isCat }}{{ with $desc }} ｜ {{ . }}{{ end }}{{ end }}</p>
   </header>
+  {{ if $isCat }}{{ with $desc }}<p class="tax-lead">{{ . }}。这个分类是本站在整理时自己划的，不是 DSH 官方分类；同一个插件可能同时适合两三个分类，按你要解决的事挑就行。</p>{{ end }}{{ end }}
+  {{ if and (not $isCat) (lt (len .Pages) 3) }}
+  <p class="tax-lead">这个标签目前只挂着 {{ len .Pages }} 个条目，单独看价值不大 —— 用<a href="{{ "plugins/" | relURL }}">插件库</a>或站内搜索找同类会更准。</p>
+  {{ end }}
   <div class="cards">
-    {{ range sort .Pages "Weight" "desc" }}{{ partial "card.html" . }}{{ end }}
+    {{ range sort .Pages "Weight" "desc" }}{{ partial "card.html" (dict "page" .) }}{{ end }}
   </div>
   <p class="back-link"><a href="{{ "plugins/" | relURL }}">回到全部插件</a></p>
 </div>

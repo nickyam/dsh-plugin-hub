@@ -54,7 +54,8 @@ fi
 
 [ -f "${PUBLIC_DIR}/index.html" ] || die "构建产物缺失：${PUBLIC_DIR}/index.html"
 # 子路径部署最容易出的错：baseURL 没带 /dsh，产物里全是根路径链接
-grep -q "/${SUBDIR}/css/main.css" "${PUBLIC_DIR}/index.html" \
+# 注意：css/js 现在走 Hugo 内容指纹（main.<hash>.css），所以只校验前缀，不校验完整文件名。
+grep -q "/${SUBDIR}/css/main\." "${PUBLIC_DIR}/index.html" \
   || die "产物里没有 /${SUBDIR}/ 前缀的资源链接，baseURL 可能不对"
 log "构建完成：$(find "${PUBLIC_DIR}" -name '*.html' | wc -l | tr -d ' ') 个 HTML"
 
