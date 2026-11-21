@@ -56,7 +56,11 @@ static/
 public/                  hugo 构建产物（不入库）
 ```
 
-顶层还有 `AGENTS.md`：给 AI 协作者（和隔了几个月回来的自己）的**执行层**说明——文件边界、已踩过的坑、收工自检。产品与内容规则以本文为准，`AGENTS.md` 不重复。
+顶层还有 `AGENTS.md`：给 AI 协作者（和隔了几个月回来的自己）的**执行层**说明——文件边界、已踩过的坑、收工自检。
+
+`docs/2026-11-21-optimization-retro.md`：**本轮全站优化的实测复盘**——改前改后数字、390px 溢出探针、无头 Chrome 屏蔽广告截图、内链扫描脚本、AdSense 站点级口径，以及未做完项的判断。做同类体检或想改回去之前先看它。
+
+产品与内容规则以本文为准，那两份文档不重复。
 
 ⚠️ `content/plugins/`、`static/search.json`、`data/derived.json`、`data/repo_stats.json`、`data/entry_updated.json` **是产物但要一起提交进 git**——这样线上构建只要 Hugo，不用装 Python/PyYAML。改完 data 必须跑一次生成脚本再提交，否则线上还是旧数据。`build.sh` 带了 `--cleanDestinationDir`，删条目时 `public/` 里的旧页会一起清掉，不留幽灵页面。
 

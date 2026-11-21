@@ -1,4 +1,4 @@
-/* 全站搜索浮层：数据来自 static/search.json（首次打开才下载，约 40KB gzip） */
+/* 全站搜索浮层：数据来自 static/search.json（首次打开才下载，当前约 76KB gzip） */
 (function () {
   var dlg = document.getElementById('site-search');
   if (!dlg || typeof dlg.showModal !== 'function') return;

@@ -39,8 +39,8 @@ params:
       stars_label: '1384'
       forks_label: '538'
       pushed_date: '2026-11-06'
-      updated_label: 14 天前有提交
-      updated_days: 14
+      updated_label: 15 天前有提交
+      updated_days: 15
       stale: false
     entry_updated: '2026-11-06'
     category_label: 插件市场与发现
