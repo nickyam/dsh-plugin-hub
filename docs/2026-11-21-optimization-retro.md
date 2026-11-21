@@ -154,7 +154,7 @@ AdSense 那三个格式**代码关不掉**，不要再在模板里找地方插 `
 | 项 | 状态 | 判断 |
 | --- | --- | --- |
 | ~~AdSense 自动格式盖 header~~ | ✅ 2026-11-21 已解决 | 先全关（commit 1371b9d），同日改为**固定位手动广告**：`adsense.enabled=false`（不开 Auto Ads，锚定/插页格式不会下发）+ `[params.adsense.fixed] enabled=true`，只在文档流里放 4 类响应式固定单元（首页侧栏 / 详情页正文+侧栏 / 列表页上方），不 sticky、不悬浮，窄屏盖 header 的问题从根上消失。见下方「广告方案调整」。 |
-| 广告方案调整（关 Auto Ads → 固定位） | ✅ 2026-11-21 已上线 | 用户随后要求「在合适位置加几个固定广告」。设计：Auto Ads 仍关，新增 `partials/ad.html` 统一渲染手动单元，落点 4 类（薄标签页与 about/privacy 不投）；slot 沿用主站三个真实 ID，模板与 client 不变。脚本加载保留、逐单元 push，`enable_page_level_ads` 全站为 0。 |
+| 广告方案调整（关 Auto Ads → 固定位） | ✅ 2026-11-21 已上线 | 用户随后要求「在合适位置加几个固定广告」。设计：Auto Ads 仍关，新增 `partials/ad.html` 统一渲染手动单元，落点 4 类（薄标签页与 about/privacy 不投）；slot 初版沿用主站 ID，2026-11-22 已换成 dsh 自建的三个响应式单元（9256261574/9200421256/5536508411），模板与 client 不变。脚本加载保留、逐单元 push，`enable_page_level_ads` 全站为 0。 |
 | 「最近收录」入口 | 未做 | 缺 `added_at` 字段；可从 git 历史推导（同 `entry_updated.py` 的做法），回访用户才能看出站还在更新 |
 | 易混条目 / 替代关系 | 未做 | 缺 `confusable` 字段，要人工判定关系；「名字对不上」是首页开篇痛点，属于内容活不是代码活 |
 | HTML 显式 `Cache-Control` | 未做 | 线上只有 `ETag` / `Last-Modified`；要改 1Panel 里 vhost 并 reload OpenResty，动服务器配置需用户确认 |

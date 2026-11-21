@@ -137,7 +137,7 @@ GitHub 星标 / Fork 是快照，不是实时值。想刷新就跑 `python3 tool
 
 - 🔴 **2026-11-21 现行方案：固定位手动广告，不开 Auto Ads**。`hugo.toml → [params.adsense] enabled = false`（Auto Ads 全站自动插位保持关闭，从根上避开窄屏锚定广告盖 sticky header）；`[params.adsense.fixed] enabled = true` 启用少量固定广告位。这是本站独立配置，不影响 WordPress 总站 limzero.com 的广告。
 - **广告位（共 4 类落点，全部在文档流里、响应式，不 sticky/悬浮）**：首页侧栏 1 个；插件详情页正文「速览」后 + 侧栏各 1 个；插件库/分类/有内容的标签页卡片流上方 1 个；普通文章页（about/guide/privacy）与薄标签页（<3 条、noindex）不投。统一由 `layouts/partials/ad.html` 渲染，落点在各 `layouts/**/*.html` 里搜 `partial "ad.html"`。
-- **slot ID**：默认沿用主站已在用的三个真实单元 `slot_content=8230120360`（正文）/`slot_side=1431284433`（侧栏）/`slot_list=9351630343`（列表），client 同为 `ca-pub-7114121088728794`、同属 limzero.com 一个 site。要为 dsh 单独统计收益：去 AdSense 后台新建展示广告单元，把 ID 换到 `hugo.toml` 对应 slot，模板不用动。
+- **slot ID（2026-11-22 已换为 dsh 自建单元，不复用主站）**：`slot_content=9256261574`（DSH插件-正文内）/`slot_side=9200421256`（DSH插件-侧栏）/`slot_list=5536508411`（DSH插件-列表页），client 同为 `ca-pub-7114121088728794`、同属 limzero.com 一个 site。三个单元在 AdSense 后台按「展示广告 + 响应式尺寸」新建，生成代码的 `data-ad-format=auto` + `data-full-width-responsive=true` 与本模板一致。换单元只改 `hugo.toml` 三个 slot ID，模板不用动。
 - **开关**：关掉全部固定广告 → `fixed.enabled = false`；恢复 Auto Ads → 上面 `enabled = true`。两者都关则 `baseof.html` 也不再加载 `adsbygoogle.js`。
 - （历史说明）2026-11-21 曾一度改成完全无广告；同日改为上述固定位方案。Auto Ads 的 `enable_page_level_ads` 全站为 0，只有固定单元各自 push。
 - 🔴 **`ads.txt` 只有在域名根目录才有效**：AdSense 会读 `https://ai.limzero.com/ads.txt`，**不会**读 `https://ai.limzero.com/dsh/ads.txt`。`static/ads.txt` 是本仓库留的副本，内容必须同步到主站根目录（主站目前还没有这个文件）。上线后用 `curl https://ai.limzero.com/ads.txt` 确认返回那一行 `google.com, pub-7114121088728794, DIRECT, f08c47fec0942fa0`，AdSense 重新抓取可能要几天。
