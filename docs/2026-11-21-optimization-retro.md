@@ -153,7 +153,7 @@ AdSense 那三个格式**代码关不掉**，不要再在模板里找地方插 `
 
 | 项 | 状态 | 判断 |
 | --- | --- | --- |
-| AdSense 自动格式 | 归主站会话处理 | 站点级开关；窄屏锚定广告会盖住 sticky header，这一项没解决前移动端体验仍有缺口 |
+| ~~AdSense 自动格式~~ | ✅ 2026-11-21 已解决 | 用户决定本站直接关广告：`hugo.toml → adsense.enabled=false`，dsh 站无广告脚本，窄屏锚定盖 header 的问题随之消失（commit 1371b9d）。若只想在 AdSense 后台豁免 /dsh/ 而保留主站广告，走「页面排除」加 `limzero.com/dsh/*` |
 | 「最近收录」入口 | 未做 | 缺 `added_at` 字段；可从 git 历史推导（同 `entry_updated.py` 的做法），回访用户才能看出站还在更新 |
 | 易混条目 / 替代关系 | 未做 | 缺 `confusable` 字段，要人工判定关系；「名字对不上」是首页开篇痛点，属于内容活不是代码活 |
 | HTML 显式 `Cache-Control` | 未做 | 线上只有 `ETag` / `Last-Modified`；要改 1Panel 里 vhost 并 reload OpenResty，动服务器配置需用户确认 |
