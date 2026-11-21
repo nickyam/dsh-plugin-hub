@@ -235,3 +235,11 @@
   date_note: "2026-11-15 13:50（上海）"
   note: "第二十三篇。单插件深度介绍，作者即插件作者，给了明确仓库 github.com/topmindspace/dsh-super-kanban 与安装命令，逐条与官方 README 核对后新建 dsh-super-kanban 条目。文章安装写 @0.10.1，README 与 npm latest 均为 0.10.5，按 README 用 0.10.5 并在卡片 notes 注明文章版本已旧。文章功能描述（AI 自动整理任务、待处理列表、待验收卡片条、三种形态、项目日程时间线、带上下文续做、内置快聊、数据本机无遥测）与 README 一致。作者自述体验与封面示意图不采信为独立结论。"
   tags: [公众号, 单插件, 任务看板, 作者自述]
+- id: wx-wawa
+  title: "DeepSeek Harness 装上这10个插件，有点舒服了！"
+  kind: wechat
+  publisher: "挖挖说AI（原文署名：挖挖）"
+  url: "https://mp.weixin.qq.com/s/E1Ltcb2cvWmmSi0qpxf1lA"
+  date_note: "2026-11-20 20:10（陕西）"
+  note: "第二十四篇。10 个入门插件清单，无仓库地址、安装命令只给包名或安装界面关键词。逐条按包名/功能核对后：7 个已收录只补发现线索（Dream Skin / DSH-IM / DSH Market / GenUI / Balance Whale 小鲸鱼 / Agent Teams / Better Sidebar）；新建 3 条——dsh-dream-skin（npm 包名 dsh-dream-skin，官方仓库已迁至 gitcode.com/LLLAAAAA/dsh-dream-skin，8 套 Mirage 主题+壁纸+强调色，文章描述与之吻合；与独立桌面软件 xxloocee/Dream-Skin 及另一同名 dsh-dream-skin 区分）、dsh-connect-workbuddy（github.com/dingminhua/dsh-connect-workbuddy，把本机 WorkBuddy 登录态接入 DSH 模型选择器）、dsh-imagegen（文章称 VisioWork，包名 dsh-imagegen 对应 github.com/dickpy/dsh-imagegen，文生图/图生图+提示词反推+可配渠道模型；与已收录 dsh-image-gen即shanliuling 是不同插件，注意区分）。语音输入一条文章自述「来自 DSH 自带的插件」，按本站内置能力不建条目规则跳过。文章的手机 ClawBot 演示、「界面像毛坯房」等口语评价与封面截图不采信为独立结论。"
+  tags: [公众号, 插件清单, 入门10款]

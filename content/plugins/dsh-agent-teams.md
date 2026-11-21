@@ -6,7 +6,7 @@ categories:
 tags: &id001
 - 多智能体
 - 协作
-weight: 1050
+weight: 1060
 params:
   plugin:
     id: dsh-agent-teams
@@ -44,7 +44,7 @@ params:
     entry_updated: '2026-11-06'
     category_label: 协作与工作流
     status_label: 社区
-    weight: 1050
+    weight: 1060
     url: /plugins/dsh-agent-teams/
   generated: true
 ---

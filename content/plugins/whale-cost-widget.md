@@ -6,7 +6,7 @@ categories:
 tags: &id001
 - 桌宠
 - 成本可视化
-weight: 1040
+weight: 1050
 params:
   plugin:
     id: whale-cost-widget
@@ -48,7 +48,7 @@ params:
     entry_updated: '2026-11-19'
     category_label: 模型与计费
     status_label: 原文未说明
-    weight: 1040
+    weight: 1050
     url: /plugins/whale-cost-widget/
   generated: true
 ---

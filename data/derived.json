@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-21 22:14",
+  "generated_at": "2026-11-21 22:25",
   "generated_date": "2026-11-21",
   "stats": {
-    "plugins": 133,
-    "repos_confirmed": 133,
+    "plugins": 136,
+    "repos_confirmed": 136,
     "categories": 13,
     "stars_median": 622,
     "stars_median_label": "622",
@@ -63,19 +63,19 @@
       "id": "fun",
       "label": "娱乐与彩蛋",
       "desc": "皮肤、桌宠、小游戏",
-      "count": 15
+      "count": 16
     },
     {
       "id": "model",
       "label": "免费模型与接入",
       "desc": "免 API Key、订阅复用、网页凭证",
-      "count": 3
+      "count": 4
     },
     {
       "id": "visual",
       "label": "视觉与设计",
       "desc": "看图、UI 还原、图表与设计资产",
-      "count": 9
+      "count": 10
     },
     {
       "id": "content",

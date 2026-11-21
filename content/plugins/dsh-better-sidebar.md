@@ -7,7 +7,7 @@ tags: &id001
 - 侧边栏
 - Git
 - 效率
-weight: 1070
+weight: 1080
 params:
   plugin:
     id: dsh-better-sidebar
@@ -47,7 +47,7 @@ params:
     entry_updated: '2026-11-06'
     category_label: 界面与体验
     status_label: 社区
-    weight: 1070
+    weight: 1080
     url: /plugins/dsh-better-sidebar/
   generated: true
 ---

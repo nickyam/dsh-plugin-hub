@@ -33,6 +33,7 @@
   - wx-fenxiangmi
   - wx-mianbiren
   - wx-aling
+  - wx-wawa
 - id: dsh-find-plugin
   name: dsh-find-plugin
   category: market
@@ -244,6 +245,7 @@
   - wx-quanjing
   - wx-huxiaomo
   - wx-xiaobai
+  - wx-wawa
 - id: selection-toolbar
   name: 划词工具条
   category: ui
@@ -342,6 +344,7 @@
   - wx-yuanma
   - wx-quanjing
   - wx-shixiang
+  - wx-wawa
 - id: dsh-synapse
   name: dsh-synapse
   category: ui
@@ -660,6 +663,7 @@
   - wx-quanjing
   - wx-xiaobai
   - wx-mianbiren
+  - wx-wawa
 - id: dsh-diff-approval
   name: dsh-diff-approval
   category: workflow
@@ -1123,6 +1127,7 @@
   - wx-quanjing
   - wx-huxiaomo
   - wx-mianbiren
+  - wx-wawa
 - id: dsh-plugin-gate
   name: dsh-plugin-gate
   category: security
@@ -2005,6 +2010,7 @@
   refs:
   - wx-huxiaomo2
   - wx-mianbiren
+  - wx-wawa
 - id: dsh-pocket
   name: dsh-pocket（手机同屏）
   aliases:
@@ -3111,3 +3117,82 @@
   notes: 官方仓库 topmindspace/dsh-super-kanban，npm 包 dsh-super-kanban（latest 0.10.5，MIT）。安装三途：插件市场加索引源 https://topmindspace.github.io/dsh-super-kanban/index.json、插件页输包名、或 Git/本地目录；命令行安装前需完全退出 DSH，桌面端用 --profile desktop。装后启用插件并刷新 DSH。文章给的 0.10.1 是旧版，README 当前示例 0.10.5，按 README 取新。默认扫描最近 30 天活动会话，需要更久要自己调活跃周期或手动翻历史。封面图是功能示意、非实际界面。
   refs:
   - wx-jimao
+- id: dsh-dream-skin
+  name: dsh-dream-skin（Dream Skin 换肤）
+  aliases:
+  - Dream Skin
+  - 梦幻皮肤
+  - 个性化皮肤
+  category: fun
+  status: community
+  repo: https://gitcode.com/LLLAAAAA/dsh-dream-skin
+  install: dsh plugin --profile web add dsh-dream-skin
+  summary: 给 DSH Web 换肤的原生插件：8 套原创 Mirage 主题在「设置 → 个性化皮肤」一键切换，支持自定义壁纸（本地图 / 图片 URL / 渐变 / 必应每日 / 轮播）、叠加强调色、毛玻璃 / 液态玻璃材质与主题包导入导出分享。纯走 ctx.theme 官方扩展点，不改安装包、不注入。
+  features:
+  - 8 套原创主题（Mirage 幻梦系列）深浅兼顾，每套自带专属弥散光背景，一键切换不动用户调过的参数
+  - 壁纸 2.0：本地图 / 图片 URL / 渐变预设 / 必应每日，可调透明度、模糊、填充方式与取景偏移；支持图片链接或本地文件夹轮播
+  - 每用户强调色 Accent：12 个色块 + 选色盘 + 随机，以 overrideTokens 叠加层改色、不动皮肤本身
+  - 主题包导入 / 导出 / 分享：一个 *.dsh-theme.json = manifest + 全套 tokens，可复制分享链接（编码进 URL hash），本地主题包库支持收藏与随机换肤
+  - 玻璃材质（毛玻璃 / 液态玻璃）与低功耗模式：一键关掉全部 backdrop-filter 与壁纸模糊，三态自动跟随系统「减少透明度」
+  - 三层持久化（localStorage + 宿主侧 dream-skin.json），桌面版换端口、重启不丢皮肤与壁纸
+  tags:
+  - 换肤
+  - 主题
+  - 壁纸
+  - 强调色
+  flag: 官方仓库已从 GitHub 迁至 gitcode（原 GitHub 账号封禁），npm 包 dsh-dream-skin 已正式发布；与独立桌面软件 xxloocee/Dream-Skin 不是同一项目
+  notes: 官方仓库 gitcode.com/LLLAAAAA/dsh-dream-skin（npm 包 dsh-dream-skin，latest 11.16.0）。仓库在 GitCode 而非 GitHub，本站 repo 字段如实填 GitCode 地址；GitHub 数据抓取只覆盖 github.com 仓库，此条无星标数据属正常。安装官方唯一命令 dsh plugin --profile web add dsh-dream-skin，报错补 -w；刚发版 24h 内 README 建议写死版本号。文章只给包名「dsh-dream-skin」与「多套主题 + 强调色 + 壁纸 + 上传自己图片做壁纸」描述，与仓库 README 吻合，据此收录；文章未给仓库地址，仓库由包名检索核实。注意区分：xxloocee/Dream-Skin 是需下载 dmg/exe 的独立桌面换肤软件、非 DSH 插件，DamonYanglong/dsh-dream-skin 虽同名但无 8 套主题与主题包系统，二者均未收。
+  refs:
+  - wx-wawa
+- id: dsh-connect-workbuddy
+  name: dsh-connect-workbuddy（WorkBuddy 模型接入）
+  aliases:
+  - WorkBuddy 模型接入
+  - dsh-connect-workbuddy
+  - WB 接入
+  category: model
+  status: community
+  repo: https://github.com/dingminhua/dsh-connect-workbuddy
+  install: dsh plugin --profile web add dsh-connect-workbuddy
+  summary: 把本机已登录的 WorkBuddy 账号（国内版 / 国际版）接入 DSH 模型选择器：模型目录带上游积分倍率、逐模型开关图片输入与思考、多账号池自动换号、每日签到与只读积分概览。仅复用本机登录态，不提供账号、不共享凭据。
+  features:
+  - 国内版（workbuddy）与国际版（workbuddy-global）两个供应商可并行，设置页分 tab 管理，有账号的区域模型才出现在选择器
+  - 模型管理：从上游刷新完整目录，逐项勾选启用、设默认推理档、关思考开关；倍率由上游给出、插件不写死，活动时段显示折后价
+  - 只读积分：卡片与输入框胶囊显示积分读数，按当前会话选中模型自动切国内 / 国际版；排队、限流、恢复时间按上游原文如实显示
+  - 账号池：勾选多账号签到与按模型测试，启用后失败自动换号；每日自动签到默认关闭
+  - 可选能力默认关闭：模型自主生图 / 生视频工具、侧边栏整页入口、上游用量页身份对齐
+  tags:
+  - WorkBuddy
+  - 模型接入
+  - 积分倍率
+  - 多账号
+  flag: 依赖 WorkBuddy 客户端接口（非官方开放 API），上游收紧时可能失效，README 明确提示账号风险
+  notes: 官方仓库 github.com/dingminhua/dsh-connect-workbuddy（npm 包 dsh-connect-workbuddy，MIT）。文章只给包名「dsh-connect-workbuddy」与「把已登录 WorkBuddy 的模型放进 DSH 模型选择器」一句描述，与 README 核心定位吻合，据此收录；仓库由包名检索核实。功能细节（双供应商、倍率、账号池、生图/生视频工具等）均按官方 README 整理，不照抄文章。README 反复声明只复用本机登录态、不共享凭据、不绕过计费，且提醒上游可能限制非官方客户端；倍率、模型名、价格均为上游实时给出，本站不写死具体数字。另有 jojoman2024/dsh-workbuddy-connect、sixzjd/dsh-workbuddy-connect 等多个同类插件，功能相近但非同一仓库，未混收。
+  refs:
+  - wx-wawa
+- id: dsh-imagegen
+  name: dsh-imagegen（VisioWork 生图）
+  aliases:
+  - VisioWork
+  - 生图工作台
+  - VisioWork 生图
+  category: visual
+  status: community
+  repo: https://github.com/dickpy/dsh-imagegen
+  install: dsh plugin --profile web add @dickpy/dsh-imagegen
+  summary: DSH Web GUI 的生图工作台：文生图 / 图生图、提示词反推、无限画布与画廊，可自行添加生图渠道与模型（gpt-image-2、Grok Imagine、Nano Banana、Seedream 等 OpenAI 兼容端点），并支持电商套图与对话内生图。
+  features:
+  - 文生图 / 图生图：配置生图提供方、API 地址与密钥、检测并选择模型，生成 / 编辑 / 比较图片
+  - 提示词反推：上传或选一张图，反推出可直接生图的提示词，一键填回生图框
+  - 无限画布：把提示词、参考图与生成节点连成可迭代创作流程，从历史或画廊加入素材继续生成
+  - 电商套图与海报编辑：从商品参考图生成主图 / 卖点图 / 场景图，画布内叠加可编辑文字、Logo 与价格
+  - 画廊与历史：管理创作结果、模板与标签，跨设备接续创作；对话中也能调用生图并把结果带回会话
+  tags:
+  - 生图
+  - 文生图
+  - 图生图
+  - 无限画布
+  flag: 文章称 VisioWork、包名 dsh-imagegen；npm 包 @dickpy/dsh-imagegen，与已收录的 dsh-image-gen（shanliuling，对话生图）是不同插件
+  notes: 官方仓库 github.com/dickpy/dsh-imagegen（npm 包 @dickpy/dsh-imagegen，Apache-2.0）。文章称「VisioWork」、只给包名 dsh-imagegen 与「文生图 / 图生图 + 选图生提示词 + 自行添加生图渠道和模型」的描述；GitHub 搜不到 VisioWork 同名仓库，按包名 dsh-imagegen 与功能（提示词反推 + 可配渠道模型）对应到 dickpy/dsh-imagegen，据此收录。注意区分：站内已有 dsh-image-gen（shanliuling/dsh-image-gen，别名「生图插件 / 图像创作」）仓库与功能均不同，系另一插件，未合并；say007go/dsh-imagegen 同样是 OpenAI 风格生图插件但没有无限画布与提示词反推描述，文章所述「选图生提示词 + 画布」更贴合 dickpy 版，故取此仓库。安装需 Node.js 20+，装后重启 dsh web，到「设置 → 生图配置」添加提供方与密钥；生图 API 费用自付。
+  refs:
+  - wx-wawa

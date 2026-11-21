@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21 22:13",
+  "generated": "2026-11-21 22:25",
   "entries": {
     "agentero-dsh": "2026-11-09",
     "answer-me-with-html": "2026-11-06",
@@ -31,6 +31,7 @@
     "dsh-client-ui-skill-explorer": "2026-11-17",
     "dsh-codex-ui": "2026-11-17",
     "dsh-computer-use-win": "2026-11-17",
+    "dsh-connect-workbuddy": "2026-11-21",
     "dsh-context": "2026-11-06",
     "dsh-cost-meter": "2026-11-17",
     "dsh-deep-research": "2026-11-19",
@@ -41,6 +42,7 @@
     "dsh-dev-mode": "2026-11-17",
     "dsh-devops": "2026-11-08",
     "dsh-diff-approval": "2026-11-06",
+    "dsh-dream-skin": "2026-11-21",
     "dsh-easyrewrite": "2026-11-19",
     "dsh-ego-browser": "2026-11-19",
     "dsh-emoji": "2026-11-06",
@@ -58,6 +60,7 @@
     "dsh-guizang-design": "2026-11-09",
     "dsh-im": "2026-11-17",
     "dsh-image-gen": "2026-11-17",
+    "dsh-imagegen": "2026-11-21",
     "dsh-ios": "2026-11-06",
     "dsh-knowledge": "2026-11-19",
     "dsh-market": "2026-11-06",
