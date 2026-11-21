@@ -75,6 +75,7 @@
     </div>
 
     <aside class="col-side">
+      {{ partial "ad.html" (dict "slot" site.Params.adsense.fixed.slot_side "class" "ad-side" "label" "侧栏广告") }}
       <section class="side-box">
         <h2>卡片上的标记</h2>
         <ul class="legend">

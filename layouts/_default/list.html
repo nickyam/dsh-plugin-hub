@@ -7,6 +7,9 @@
   </header>
 
   {{ if eq .Section "plugins" }}
+    {{/* 固定广告位：卡片流上方响应式横幅，列表页统一落点。 */}}
+    {{ partial "ad.html" (dict "slot" site.Params.adsense.fixed.slot_list "class" "ad-list" "label" "列表广告") }}
+
     {{/* 2026-11-21：原来是 133 张卡一次性输出（164KB、无分页），改成 Hugo 真分页，每页 36 条。 */}}
     {{ $pag := .Paginate (sort .Pages "Weight" "desc") 36 }}
     <div class="cards">

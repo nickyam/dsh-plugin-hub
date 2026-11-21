@@ -520,3 +520,15 @@ button, input, select, textarea { font: inherit; }
   .search-dialog-body { max-height: calc(100dvh - 56px); }
   .detail-cta .btn { flex: 1 1 auto; justify-content: center; }
 }
+
+/* ── 固定广告位（手动版位，非 Auto Ads）─────────────────────
+   全部落在文档流里，绝不 sticky / fixed / 悬浮：窄屏锚定广告盖住
+   sticky header 是 2026-11-21 复盘里的坑，手动位不该重蹈覆辙。
+   data-full-width-responsive=true 让 Google 按容器自适应，这里只管
+   留白与不溢出；不设 min-height，广告被拦截/未填充时不留白块。 */
+.ad-slot { width: 100%; max-width: 100%; overflow: hidden; }
+.ad-slot ins { max-width: 100% !important; }
+.ad-slot.ad-inline { margin: var(--space-xl) 0; }
+.ad-slot.ad-list { margin: 0 0 var(--space-xl); }
+.ad-slot.ad-side { margin: 0 0 var(--space-lg); }
+/* 侧栏 ≤1000px 变两列、≤700px 单列，广告随容器自适应，无需固定 px 宽 */

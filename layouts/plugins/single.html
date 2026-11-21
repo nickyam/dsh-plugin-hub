@@ -87,6 +87,9 @@
         </dl>
       </section>
 
+      {{/* 固定广告位：正文「速览」之后、功能亮点之前，响应式横幅。 */}}
+      {{ partial "ad.html" (dict "slot" site.Params.adsense.fixed.slot_content "class" "ad-inline" "label" "正文广告") }}
+
       {{ with $p.features }}
       <section class="panel">
         <h2>功能亮点 <small>依据官方 README 整理</small></h2>
@@ -107,6 +110,7 @@
     </div>
 
     <aside class="detail-side">
+      {{ partial "ad.html" (dict "slot" site.Params.adsense.fixed.slot_side "class" "ad-side" "label" "侧栏广告") }}
       <section class="side-box">
         <h2>相关条目</h2>
         <ul class="side-list">

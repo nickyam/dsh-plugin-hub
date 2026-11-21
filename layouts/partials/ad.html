@@ -1,0 +1,27 @@
+{{/*
+  固定广告单元（手动版位，非 Auto Ads）。
+
+  设计约束：
+  - 只在 site.Params.adsense.fixed.enabled 为真、且传入 slot 时才输出，换单元/关广告都只改一处配置。
+  - 用 data-ad-format="auto" + data-full-width-responsive="true"，让 Google 按容器宽度自适应；
+    绝不设固定 px 宽，也不做 sticky/fixed/悬浮，避免窄屏盖住 sticky header（见 2026-11-21 优化复盘）。
+  - 每个单元各自 push 一次；adsbygoogle.js 脚本由 baseof.html 统一加载。
+
+  用法：{{ partial "ad.html" (dict "slot" site.Params.adsense.fixed.slot_sidebar "class" "ad-side" "label" "侧栏") }}
+*/}}
+{{- $cfg := site.Params.adsense.fixed -}}
+{{- $slot := .slot -}}
+{{- $class := .class | default "" -}}
+{{- $label := .label | default "广告" -}}
+{{- $format := .format | default "auto" -}}
+{{ if and $cfg $cfg.enabled $slot }}
+<div class="ad-slot {{ $class }}" aria-label="{{ $label }}">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="{{ site.Params.adsense.client }}"
+       data-ad-slot="{{ $slot }}"
+       data-ad-format="{{ $format }}"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+{{ end }}

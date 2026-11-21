@@ -18,6 +18,10 @@
   {{ if and (not $isCat) (lt (len .Pages) 3) }}
   <p class="tax-lead">这个标签目前只挂着 {{ len .Pages }} 个条目，单独看价值不大 —— 用<a href="{{ "plugins/" | relURL }}">插件库</a>或站内搜索找同类会更准。</p>
   {{ end }}
+  {{/* 固定广告位：卡片流上方响应式横幅。薄标签页（<3 条、noindex）不投，避免低质页堆广告。 */}}
+  {{ if or $isCat (ge (len .Pages) 3) }}
+  {{ partial "ad.html" (dict "slot" site.Params.adsense.fixed.slot_list "class" "ad-list" "label" "列表广告") }}
+  {{ end }}
   <div class="cards">
     {{ range sort .Pages "Weight" "desc" }}{{ partial "card.html" (dict "page" .) }}{{ end }}
   </div>

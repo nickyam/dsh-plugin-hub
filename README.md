@@ -84,7 +84,7 @@ GitHub 星标 / Fork 是快照，不是实时值。想刷新就跑 `python3 tool
 | 卡片徽章换掉「官方仓库已确认 / 社区」 | 133/133 都是已确认、129/133 都是社区，零信息量；换成「N 天前有提交 / 久未更新」 |
 | 详情页加复制安装命令、GitHub 按钮、相关条目（按共享标签）、整理时间 | 最有用的动作原来都埋在表格里 |
 
-广告：AdSense 的 Anchor / Vignette / In-Form 格式**只能在 AdSense 后台关**（代码关不掉）。窄屏实测顶部锚定广告会盖住 sticky header，建议后台只留一种页内格式，本站不再做代码层补救。
+广告（关掉 Auto Ads 的依据，保留备查）：AdSense 的 Anchor / Vignette / In-Form 格式**只能在 AdSense 后台关**（代码关不掉），窄屏实测顶部锚定广告会盖住 sticky header。所以本站代码层不开 Auto Ads，改用可控的固定位手动广告（见下方「谷歌广告」）。若主站仍开着这些格式，需在后台页内格式设置里处理。
 
 ## 收录范围（硬规则）
 
@@ -135,11 +135,14 @@ GitHub 星标 / Fork 是快照，不是实时值。想刷新就跑 `python3 tool
 
 ## 谷歌广告
 
-- 🔴 **2026-11-21 用户决定本站关闭广告**：`hugo.toml → [params.adsense] enabled = false`，页面不再注入 `adsbygoogle.js`，dsh 站完全无广告。这是本站独立开关，不影响 WordPress 总站 limzero.com 的广告。要恢复改回 `true` 再构建部署。`client` 仍保留 `ca-pub-7114121088728794` 备查。若主站仍投 Auto Ads 而只想豁免 /dsh/，走 AdSense 后台「页面排除」加 `limzero.com/dsh/*`。
-- （历史说明）原先是 **Auto Ads**（全站自动插位），不用单独建广告单元、不用填假的 `data-ad-slot`。
+- 🔴 **2026-11-21 现行方案：固定位手动广告，不开 Auto Ads**。`hugo.toml → [params.adsense] enabled = false`（Auto Ads 全站自动插位保持关闭，从根上避开窄屏锚定广告盖 sticky header）；`[params.adsense.fixed] enabled = true` 启用少量固定广告位。这是本站独立配置，不影响 WordPress 总站 limzero.com 的广告。
+- **广告位（共 4 类落点，全部在文档流里、响应式，不 sticky/悬浮）**：首页侧栏 1 个；插件详情页正文「速览」后 + 侧栏各 1 个；插件库/分类/有内容的标签页卡片流上方 1 个；普通文章页（about/guide/privacy）与薄标签页（<3 条、noindex）不投。统一由 `layouts/partials/ad.html` 渲染，落点在各 `layouts/**/*.html` 里搜 `partial "ad.html"`。
+- **slot ID**：默认沿用主站已在用的三个真实单元 `slot_content=8230120360`（正文）/`slot_side=1431284433`（侧栏）/`slot_list=9351630343`（列表），client 同为 `ca-pub-7114121088728794`、同属 limzero.com 一个 site。要为 dsh 单独统计收益：去 AdSense 后台新建展示广告单元，把 ID 换到 `hugo.toml` 对应 slot，模板不用动。
+- **开关**：关掉全部固定广告 → `fixed.enabled = false`；恢复 Auto Ads → 上面 `enabled = true`。两者都关则 `baseof.html` 也不再加载 `adsbygoogle.js`。
+- （历史说明）2026-11-21 曾一度改成完全无广告；同日改为上述固定位方案。Auto Ads 的 `enable_page_level_ads` 全站为 0，只有固定单元各自 push。
 - 🔴 **`ads.txt` 只有在域名根目录才有效**：AdSense 会读 `https://ai.limzero.com/ads.txt`，**不会**读 `https://ai.limzero.com/dsh/ads.txt`。`static/ads.txt` 是本仓库留的副本，内容必须同步到主站根目录（主站目前还没有这个文件）。上线后用 `curl https://ai.limzero.com/ads.txt` 确认返回那一行 `google.com, pub-7114121088728794, DIRECT, f08c47fec0942fa0`，AdSense 重新抓取可能要几天。
 - AdSense 后台按域名管理站点，`ai.limzero.com` 若已在站点列表且审核通过，`/dsh` 通常不用重复添加；以后台实际显示为准。
-- 页面里那些虚线框只是广告位示意，实际广告由 Google 自动插入。
+- 广告单元用 `data-ad-format="auto"` + `data-full-width-responsive="true"`，由 Google 按容器宽度自适应；容器 `overflow:hidden`、不设 min-height，窄屏不溢出、广告被拦截时不留白块。CSS 见 `assets/css/main.css` 末尾「固定广告位」段。
 
 ## 部署
 

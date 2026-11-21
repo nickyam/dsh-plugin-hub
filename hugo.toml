@@ -28,16 +28,28 @@ enableGitInfo = true
   term = ["HTML"]
   page = ["HTML"]
 
-# 谷歌广告：2026-11-21 用户决定本站关闭 Auto Ads，enabled 改为 false。
-# 关闭后 baseof.html 不再注入 adsbygoogle.js，页面完全无广告脚本。
-# 这是本站独立开关，与 WordPress 总站 limzero.com 无关——改这里不影响主站广告。
-# 若日后要恢复：把 enabled 改回 true 并重新 ./build.sh + deploy 即可。
-# 🔴 广告是 AdSense 站点级（按 limzero.com 一个 site 管理）：若主站仍投 Auto Ads、
-#    且只想豁免 /dsh/，应在 AdSense 后台「Auto Ads → 页面排除」加 limzero.com/dsh/*。
-# ads.txt 要放到 https://ai.limzero.com/ads.txt（主站根目录），本仓库 static/ads.txt 只是副本。
+# 谷歌广告：2026-11-21 从「Auto Ads 自动插位」改为「固定位手动广告」。
+# [params.adsense.enabled] 是 Auto Ads 总开关，保持 false——不做全站自动插位、不启用
+# enable_page_level_ads，从根上避开窄屏锚定广告盖住 sticky header 的问题（见优化复盘）。
+# [params.adsense.fixed] 才是本站现在实际投放的固定广告位：只在模板指定位置放少量手动单元，
+# 全部响应式、落在文档流里。这是本站独立配置，与 WordPress 总站 limzero.com 无关。
+# 🔴 slot 默认沿用主站已在用的三个真实广告单元 ID（client 相同、同属 limzero.com 一个 site）。
+#    若要为 dsh 单独统计收益：去 AdSense 后台新建展示广告单元，把 ID 换到对应 slot 即可，模板不用动。
+# 🔴 关掉全部固定广告：把 fixed.enabled 改 false；恢复 Auto Ads：把上面的 enabled 改 true。
+# 🔴 广告是 AdSense 站点级（按 limzero.com 一个 site 管理）；ads.txt 要放到
+#    https://ai.limzero.com/ads.txt（主站根目录），本仓库 static/ads.txt 只是副本。
 [params.adsense]
   enabled = false
   client = "ca-pub-7114121088728794"
+
+  [params.adsense.fixed]
+    enabled = true
+    # 正文单元：插件详情页「速览」之后，响应式横幅
+    slot_content = "8230120360"
+    # 侧栏单元：首页 / 详情页侧栏，自适应矩形
+    slot_side = "1431284433"
+    # 列表单元：插件库 / 分类 / 标签页卡片流上方，响应式横幅
+    slot_list = "9351630343"
 
 [markup]
   [markup.goldmark]

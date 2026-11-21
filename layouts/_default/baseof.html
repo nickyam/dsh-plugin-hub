@@ -54,9 +54,14 @@
   {{- $css := resources.Get "css/main.css" | minify | fingerprint -}}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 
-  {{ if site.Params.adsense.enabled }}
+  {{/* 广告脚本：Auto Ads 与固定广告共用 adsbygoogle.js，任一开启即加载。
+       但 enable_page_level_ads 只在 Auto Ads 开启时下发——本站只投固定位，
+       所以脚本在、page-level 关，Google 不会自动往正文/页脚乱插单元。 */}}
+  {{ if or site.Params.adsense.enabled site.Params.adsense.fixed.enabled }}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.Params.adsense.client }}" crossorigin="anonymous"></script>
+  {{ if site.Params.adsense.enabled }}
   <script>(adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "{{ site.Params.adsense.client }}", enable_page_level_ads: true });</script>
+  {{ end }}
   {{ end }}
   {{ partial "schema.html" . }}
 </head>
