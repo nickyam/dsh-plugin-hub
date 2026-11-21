@@ -33,8 +33,9 @@ enableGitInfo = true
 # enable_page_level_ads，从根上避开窄屏锚定广告盖住 sticky header 的问题（见优化复盘）。
 # [params.adsense.fixed] 才是本站现在实际投放的固定广告位：只在模板指定位置放少量手动单元，
 # 全部响应式、落在文档流里。这是本站独立配置，与 WordPress 总站 limzero.com 无关。
-# 🔴 slot 默认沿用主站已在用的三个真实广告单元 ID（client 相同、同属 limzero.com 一个 site）。
-#    若要为 dsh 单独统计收益：去 AdSense 后台新建展示广告单元，把 ID 换到对应 slot 即可，模板不用动。
+# 🔴 slot 用本站自己在 AdSense 后台新建的展示广告单元（响应式尺寸），不复用主站单元。
+#    换单元只改这里三个 slot 的 ID，模板不用动。新建单元务必选「响应式」，
+#    生成的代码里 data-ad-format=auto + data-full-width-responsive=true 与本模板一致。
 # 🔴 关掉全部固定广告：把 fixed.enabled 改 false；恢复 Auto Ads：把上面的 enabled 改 true。
 # 🔴 广告是 AdSense 站点级（按 limzero.com 一个 site 管理）；ads.txt 要放到
 #    https://ai.limzero.com/ads.txt（主站根目录），本仓库 static/ads.txt 只是副本。
@@ -44,12 +45,12 @@ enableGitInfo = true
 
   [params.adsense.fixed]
     enabled = true
-    # 正文单元：插件详情页「速览」之后，响应式横幅
-    slot_content = "8230120360"
-    # 侧栏单元：首页 / 详情页侧栏，自适应矩形
-    slot_side = "1431284433"
-    # 列表单元：插件库 / 分类 / 标签页卡片流上方，响应式横幅
-    slot_list = "9351630343"
+    # 正文单元「DSH插件-正文内」：插件详情页「速览」之后，响应式横幅
+    slot_content = "9256261574"
+    # 侧栏单元「DSH插件-侧栏」：首页 / 详情页侧栏，自适应矩形
+    slot_side = "9200421256"
+    # 列表单元「DSH插件-列表页」：插件库 / 分类 / 标签页卡片流上方，响应式横幅
+    slot_list = "5536508411"
 
 [markup]
   [markup.goldmark]
