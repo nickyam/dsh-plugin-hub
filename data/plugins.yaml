@@ -365,6 +365,7 @@
   notes: 需 DeepSeek Harness >= 0.1.7-rc.2 与 Node.js >= 22.19.0；桌面 App 装完需重启，装到另一套 profile 时顶部看不到「会话地图」开关（把 --profile 换成另一套再装）。
   refs:
   - wx-quanjing
+  - wx-xingyun
 - id: dsh-x
   name: DSH-X
   category: ui
@@ -580,7 +581,7 @@
   category: visual
   status: community
   repo: https://github.com/tt-a1i/archify
-  install: dsh plugin --profile web add @tt-a1i/archify-dsh@1.0.0
+  install: dsh plugin --profile web add @tt-a1i/archify-dsh@1.2.0
   summary: 把想法、计划或代码库变成交互式图表的 agent skill；针对 DSH 提供社区维护的插件集成（@tt-a1i/archify-dsh），可在 DSH 对话里调用 archify 技能生成架构图、流程图、系统拓扑图。
   features:
   - 多种交互式图表：支持架构图、工作流、序列图、数据流、ERD、类图等 10 种，从文字描述或真实代码库生成可探索的独立 HTML
@@ -593,10 +594,11 @@
   - 流程图
   - 可视化
   flag: 社区集成，非 DeepSeek 官方产品；实际 DSH 包名 @tt-a1i/archify-dsh
-  notes: README 声明该 DSH 集成是 Community integration，无遥测，需 Node ^22.19.0 || >=24.0.0。移除命令：dsh plugin --profile web remove @tt-a1i/archify-dsh。
+  notes: README 声明该 DSH 集成是 Community integration，无遥测，需 Node ^22.19.0 || >=24.0.0。移除命令：dsh plugin --profile web remove @tt-a1i/archify-dsh。安装命令按官方 README 精确锁定版本：2026-11-23 核查时 wx-xingyun 文章写 1.1.0（绑定 Archify Skill 3.2.0、宿主 0.2.1-rc.2），但 npm latest 与官方集成 README 已升到 1.2.0（绑定 Archify Skill 3.3.0、精确宿主 0.2.2-rc.5），按本站『安装命令以 README 为准』更新为 1.2.0。每个用到 Archify 的 profile 都要单独跑这条精确版本命令；升级宿主或主仓库不会自动更新已装插件。旧版本 1.0.0（2026-10-04，宿主 0.1.2-rc.1）、1.1.0 仍留在各自 release tag 供旧宿主使用。
   refs:
   - wx-quanjing
   - wx-aling
+  - wx-xingyun
 - id: openpencil
   name: openpencil
   category: visual
@@ -1128,6 +1130,7 @@
   - wx-huxiaomo
   - wx-mianbiren
   - wx-wawa
+  - wx-xingyun
 - id: dsh-plugin-gate
   name: dsh-plugin-gate
   category: security
@@ -1591,6 +1594,7 @@
   - wx-shuzishanshui
   - wx-quanjing
   - wx-mianbiren
+  - wx-xingyun
 - id: petdex
   name: petdex
   category: fun
@@ -1767,6 +1771,7 @@
   - wx-yuanma
   - wx-shuzishanshui
   - wx-top10-30d
+  - wx-xingyun
 - id: dsh-codex-ui
   name: DSH Codex UI
   aliases:
@@ -1851,6 +1856,7 @@
   - wx-huxiaomo
   - wx-fenxiangmi
   - wx-mianbiren
+  - wx-xingyun
 - id: dsh-browser
   name: dsh-browser（真实浏览器）
   aliases:
@@ -1959,6 +1965,7 @@
   refs:
   - wx-huxiaomo2
   - wx-fenxiangmi
+  - wx-xingyun
 - id: dsh-nacos-bridge
   name: dsh-nacos-bridge（Nacos 接口桥）
   aliases:
@@ -2838,6 +2845,7 @@
   refs:
   - wx-aisketchlab
   - wx-mianbiren
+  - wx-xingyun
 - id: dsh-overall-mcp
   name: dsh-overall-mcp（全局 MCP 与 Skill）
   aliases:
@@ -3196,3 +3204,106 @@
   notes: 官方仓库 github.com/dickpy/dsh-imagegen（npm 包 @dickpy/dsh-imagegen，Apache-2.0）。文章称「VisioWork」、只给包名 dsh-imagegen 与「文生图 / 图生图 + 选图生提示词 + 自行添加生图渠道和模型」的描述；GitHub 搜不到 VisioWork 同名仓库，按包名 dsh-imagegen 与功能（提示词反推 + 可配渠道模型）对应到 dickpy/dsh-imagegen，据此收录。注意区分：站内已有 dsh-image-gen（shanliuling/dsh-image-gen，别名「生图插件 / 图像创作」）仓库与功能均不同，系另一插件，未合并；say007go/dsh-imagegen 同样是 OpenAI 风格生图插件但没有无限画布与提示词反推描述，文章所述「选图生提示词 + 画布」更贴合 dickpy 版，故取此仓库。安装需 Node.js 20+，装后重启 dsh web，到「设置 → 生图配置」添加提供方与密钥；生图 API 费用自付。
   refs:
   - wx-wawa
+
+- id: dsh-ppt
+  name: dsh-ppt（演示文稿引擎）
+  aliases:
+  - 演示文稿引擎
+  - PPT 工作台
+  - dsh-ppt
+  category: content
+  status: community
+  repo: https://github.com/STARDUSTLC666/dsh-ppt
+  install: dsh plugin --profile desktop add dsh-ppt
+  summary: DSH 的大师级演示文稿引擎与实体胶片灯箱工作台，从文档/表格/流程图/旧 PPTX 出发，一键产出离线 HTML 放映稿与 100% 原生可编辑 PPTX；内置三层「首席艺术总监」导演词与 41 种双端同构图谱，支持三模路由、企业品牌宪章锁与逆向 Office 导出。
+  features:
+  - 三模路由：有资料直出 / 零资料 8 域权威深研 / Mode C 本地多源融合加外源对标；零新增依赖直吞 pdf/docx/xlsx/csv/pptx/图片
+  - 41 种原生可编辑图谱：HTML/SVG 与 PPTX OOXML 双端同构，含 MECE 议题树、Treemap、OKR 子弹仪、报价矩阵、2.5D 等轴测、魔力象限、雷达与 Mermaid
+  - 设计体系与自检：13 个注册工具、24 套主题（16 浅 8 深）、20 套标杆范本、61 枚矢量图标；落盘前 SLOP-01..15 零额外模型开销自检修复
+  - 16:9 灯箱工作台：总览拖拽调序 + 单页精修画布，双屏提词台 P、激光笔 L、R 键离线批注回流、Q&A 倒计时、Ctrl/Cmd+K 速搜
+  - 逆向导出与多受众改编：导出 xlsx/docx/质询预案/备忘录/社媒长图/无损双语翻译包；remixPreset 一键压成高管 5 分钟/董事会/客户路演副本
+  tags:
+  - PPT
+  - 演示文稿
+  - HTML放映
+  - 可编辑PPTX
+  flag: 宿主要求 DSH >=0.2.2-rc.3，不能沿用早期教程的旧兼容范围；MIT 许可
+  notes: 官方仓库 github.com/STARDUSTLC666/dsh-ppt（默认分支 master，npm 包 dsh-ppt，MIT）。文章只给包名 dsh-ppt 与「HTML 放映 + 可编辑 PPTX + 材料导入 + 工作台编辑导出」，与 README 核心定位吻合，据此收录；仓库由包名检索核实，README 在 master 分支。官方安装命令桌面版用 --profile desktop，网页版把 desktop 改为 web，装后重启对应宿主；本站 install 取桌面版命令。README 强调宿主要求已从旧版升级到 >=0.2.2-rc.3，文章也特别提醒别沿用早期教程的旧兼容范围。README 里 0.36.0 等版本号、性能与效果描述均为作者自述，本站只记功能定位，不写成实机结论。注意与站内 dsh-univer-office（办公套件）、deepseek-design / dsh-guizang-design（视觉设计）区分。
+  refs:
+  - wx-xingyun
+- id: dsh-pua
+  name: dsh-pua（任务推进与验收）
+  aliases:
+  - DSH PUA
+  - PUA 任务推进
+  - 验收循环
+  category: workflow
+  status: community
+  repo: https://github.com/MichengAI/dsh-pua
+  install: dsh plugin --profile web add @michengai/dsh-pua@latest --registry=https://registry.npmjs.org/
+  summary: 把原版 PUA 带到 DSH：在 Agent 反复失败、过早放弃或草率宣告完成时，提醒换方法、查原因、拿证据；支持 15 种大厂风味与角色模式、会话级开关、按验收结果继续的 Loop 循环与防作弊门。
+  features:
+  - 遇到困难换方法、完成前核对证据，减少「说完成了却没验证」；效果随模型与任务而定，不保证每次解决
+  - 15 种大厂风味 + P7/P9/P10/夸夸/妈妈等角色模式，侧边栏全局配置，聊天入口可单独调当前会话
+  - 验收 Loop：填任务、验收命令与轮次上限，Agent 持续修正直到验收通过/达上限/取消；GFM 管道表输出状态表与 KPI 卡
+  - 防作弊门：拦截读取隐藏基准答案（含联网搜索），变更测试/评分/CI 资产时向模型注入提醒
+  tags:
+  - PUA
+  - 任务推进
+  - 验收循环
+  - 防作弊
+  flag: 全局开关控制入口可用，当前会话默认关闭需单独打开；宿主 0.2.2+（>=0.2.2-rc.1 <0.3.0-0），Node 22.19+；Apache-2.0
+  notes: 官方仓库 github.com/MichengAI/dsh-pua（npm 包 @michengai/dsh-pua，Apache-2.0）。文章只给包名 @michengai/dsh-pua 与「重复失败/过早放弃/缺少验证时提醒换方法、查原因、提交证据」，与 README 核心定位吻合，据此收录；仓库由包名检索核实。安装命令按官方 README 的精确形式（带 @latest 与 --registry）。版本门槛复杂：0.2.2-rc.1 之前宿主装插件 1.0.12、0.1.x 装 0.3.28；README 自动支持后续 0.2.x RC，0.3.0 由版本门拦截。文章强调「全局允许不等于会话已启用」「Loop 要设验收方式与轮次上限」，与 README 一致。它与站内 dsh-agent-teams（多 Agent 小队）定位不同，未合并。
+  refs:
+  - wx-xingyun
+- id: dsh-meme
+  name: dsh-meme（表情包发图）
+  aliases:
+  - 表情包发图
+  - 斗图插件
+  - dsh-meme
+  category: fun
+  status: community
+  repo: https://github.com/yyh-001/dsh-meme
+  install: dsh plugin --profile web add dsh-meme
+  summary: DSH 的表情包插件：输入框旁一键发图，按图库/情绪筛选与搜索，AI 按聊天气氛主动斗图，内置大肥鱼图库；图库可上传入库、扫描新增、ZIP 导入导出，或从市场一键安装，也可经 dsh-im 把表情以原生图片消息发到 QQ/微信/飞书。
+  features:
+  - 一键发图：输入框点 😊 搜图/筛选，默认把原图作为附件发给 AI（可在设置关闭），关掉「点图直接发送」后只插光标处随文字发
+  - 主动斗图：AI 按聊天情绪自己找图接梗，分关闭/看气氛/活跃/每轮都发四档，提示词可改
+  - IM/手机斗图：经 dsh-im 接入 QQ/微信/飞书后以原生图片消息发出，手机经局域网 IP 打开 DSH Web 收发（默认关）
+  - 学会新图与整理图库：上传说「把这张图入库」自动识别分类描述，meme_list/meme_update 让 AI 列清单查重改分类，删除留面板防误删
+  - 开箱即用：内置大肥鱼图库 24 张，零第三方运行依赖，Node 内置 SQLite；MIT
+  tags:
+  - 表情包
+  - 斗图
+  - 图库
+  - 发图
+  flag: Node.js >=22.13.0；默认把原图作为附件发给 AI（可关）；与站内 dsh-emoji（行内表情）、dsh-nekowhale-stickers（带标注的表情知识库）是不同插件
+  notes: 官方仓库 github.com/yyh-001/dsh-meme（npm 包 dsh-meme，MIT，默认分支 main）。文章只给包名 dsh-meme 与「输入框附近选表情包 + 搜索分类导入导出 + 默认把原图作附件发给 AI（可关）」，与 README 逐条吻合，据此收录；仓库由包名检索核实。文章示例安装命令 dsh plugin --profile web add dsh-meme 与 README 一致。文章提醒「默认发原图给 AI 的行为可在设置关闭，需结合实际模型链路判断数据流向」，这点在 README 也有明确说明，作为 notes 保留。它主打输入框发图/图库管理，与站内 dsh-emoji（hellodigua，给 AI 回复加行内表情）和 dsh-nekowhale-stickers（Loping151，322 张标注场景的表情知识库）功能侧重不同，未合并；别名「表情包」已被 dsh-nekowhale-stickers 占用，故本条别名用「表情包发图」。
+  refs:
+  - wx-xingyun
+- id: dsh-claude-style
+  name: dsh-claude-style（Claude 风格主题）
+  aliases:
+  - Claude 风格主题
+  - Claude Desktop 风格
+  - dsh-claude-style
+  category: fun
+  status: community
+  repo: https://github.com/Nwflower/dsh-claude-style
+  install: dsh plugin --profile web add dsh-claude-style
+  summary: 为 DSH Web GUI 复刻 Claude Code Desktop 风格与交互的主题插件：Claude/DeepSeek 品牌切换、六套配色预设、亮暗跟随系统，并含消息回退与版本历史等交互增强，同时只启用一个主题。
+  features:
+  - 外观：Claude/DeepSeek 品牌切换、亮暗跟随系统，Claude/DeepSeek/羊皮纸/森林/暮色/蔷薇六套配色预设，可编辑/新建/复制/重命名/删除
+  - 交互增强：消息回退与版本历史，依赖 DSH 自带浏览器组件模块 @deepseek-ai/dsh-client-ui-primitives，无需额外装组件包
+  - 同一时刻只启用一个主题；宿主 dsh >=0.2.2-rc.3，装好后重启 DSH
+  - 安装双路：npm 包 dsh-claude-style（推荐）或 GitHub 发布分支 Nwflower/dsh-claude-style#dist
+  tags:
+  - 主题
+  - Claude风格
+  - 换肤
+  - 交互增强
+  flag: 只是外观/交互，底层模型不变、不给 Claude 账号或额度；宿主 dsh >=0.2.2-rc.3；多数 MIT，钠渲染引擎 PolyForm Shield 1.0.0、Clawd 角色帧图非 MIT
+  notes: 官方仓库 github.com/Nwflower/dsh-claude-style（npm 包 dsh-claude-style，默认分支 master，npm latest 0.22.1）。文章只给包名 dsh-claude-style 与「Claude Code Desktop 风格主题 + 配色 + 消息回退 + 版本历史 + 宿主>=0.2.2-rc.3 + 建议只启一个主题」，与 README 逐条吻合，据此收录；仓库由包名检索核实，README 在 master 分支。文章特别提醒「界面像 Claude 不代表底层模型变成 Claude，也不会获得 Claude 账号或额度」，README 定位一致，作为 flag 保留。消息/文件回退的检查点范围有限（Git 提交、外部服务修改、其他命令副作用不会自动全撤销）。许可需注意：仓库多数 MIT，但钠渲染引擎为 PolyForm Shield 1.0.0、Clawd 角色帧图不在 MIT 范围内。与站内 dsh-dream-skin（LLLAAAAA，8 套 Mirage 主题+壁纸+强调色）定位不同，未合并。
+  refs:
+  - wx-xingyun

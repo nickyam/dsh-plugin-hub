@@ -43,8 +43,8 @@ params:
       stars_label: '87'
       forks_label: '5'
       pushed_date: '2026-10-24'
-      updated_label: 28 天前有提交
-      updated_days: 28
+      updated_label: 1 个月前有提交
+      updated_days: 31
       stale: false
     entry_updated: '2026-11-17'
     category_label: 模型与计费

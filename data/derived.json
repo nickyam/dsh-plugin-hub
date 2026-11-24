@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-22 00:08",
-  "generated_date": "2026-11-22",
+  "generated_at": "2026-11-24 22:48",
+  "generated_date": "2026-11-24",
   "stats": {
-    "plugins": 136,
-    "repos_confirmed": 136,
+    "plugins": 140,
+    "repos_confirmed": 140,
     "categories": 13,
     "stars_median": 622,
     "stars_median_label": "622",
@@ -33,7 +33,7 @@
       "id": "workflow",
       "label": "协作与工作流",
       "desc": "多智能体、任务编排、代码审阅",
-      "count": 14
+      "count": 15
     },
     {
       "id": "memory",
@@ -63,7 +63,7 @@
       "id": "fun",
       "label": "娱乐与彩蛋",
       "desc": "皮肤、桌宠、小游戏",
-      "count": 16
+      "count": 18
     },
     {
       "id": "model",
@@ -81,7 +81,7 @@
       "id": "content",
       "label": "内容创作与办公",
       "desc": "长文写作、PPT、表格与文档",
-      "count": 10
+      "count": 11
     },
     {
       "id": "remote",

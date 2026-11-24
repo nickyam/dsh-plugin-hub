@@ -8,7 +8,7 @@ tags: &id001
 - 免Key
 - 像素工具
 - 看图
-weight: 1020
+weight: 1030
 params:
   plugin:
     id: dsh-vision-router
@@ -45,13 +45,13 @@ params:
       stars_label: '1286'
       forks_label: '63'
       pushed_date: '2026-11-19'
-      updated_label: 2 天前有提交
-      updated_days: 2
+      updated_label: 5 天前有提交
+      updated_days: 5
       stale: false
     entry_updated: '2026-11-17'
     category_label: 视觉与设计
     status_label: 社区
-    weight: 1020
+    weight: 1030
     url: /plugins/dsh-vision-router/
   generated: true
 ---

@@ -46,8 +46,8 @@ params:
       stars_label: '12'
       forks_label: '1'
       pushed_date: '2026-11-16'
-      updated_label: 5 天前有提交
-      updated_days: 5
+      updated_label: 7 天前有提交
+      updated_days: 7
       stale: false
     entry_updated: '2026-11-19'
     category_label: 插件市场与发现

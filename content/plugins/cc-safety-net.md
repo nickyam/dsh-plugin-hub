@@ -7,7 +7,7 @@ tags: &id001
 - 安全
 - 命令拦截
 - 凭据保护
-weight: 1020
+weight: 1030
 params:
   plugin:
     id: cc-safety-net
@@ -45,13 +45,13 @@ params:
       stars_label: '2075'
       forks_label: '98'
       pushed_date: '2026-11-18'
-      updated_label: 2 天前有提交
-      updated_days: 2
+      updated_label: 5 天前有提交
+      updated_days: 5
       stale: false
     entry_updated: '2026-11-19'
     category_label: 安全与治理
     status_label: 社区
-    weight: 1020
+    weight: 1030
     url: /plugins/cc-safety-net/
   generated: true
 ---

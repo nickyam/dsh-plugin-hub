@@ -41,8 +41,8 @@ params:
       stars_label: '4'
       forks_label: '0'
       pushed_date: '2026-11-14'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      updated_label: 9 天前有提交
+      updated_days: 9
       stale: false
     entry_updated: '2026-11-17'
     category_label: 协作与工作流

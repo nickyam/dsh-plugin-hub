@@ -44,7 +44,7 @@ params:
       forks_label: '9'
       pushed_date: '2026-08-12'
       updated_label: 3 个月前有提交
-      updated_days: 101
+      updated_days: 104
       stale: false
     entry_updated: '2026-11-19'
     category_label: 协作与工作流

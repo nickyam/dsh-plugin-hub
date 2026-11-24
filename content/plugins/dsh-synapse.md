@@ -7,7 +7,7 @@ tags: &id001
 - 画布
 - 分支
 - 非线性
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: dsh-synapse
@@ -38,13 +38,13 @@ params:
       stars_label: '730'
       forks_label: '72'
       pushed_date: '2026-11-04'
-      updated_label: 17 天前有提交
-      updated_days: 17
+      updated_label: 20 天前有提交
+      updated_days: 20
       stale: false
     entry_updated: '2026-11-06'
     category_label: 界面与体验
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/dsh-synapse/
   generated: true
 ---

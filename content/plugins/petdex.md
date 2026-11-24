@@ -39,7 +39,7 @@ params:
       forks_label: '218'
       pushed_date: '2026-10-10'
       updated_label: 1 个月前有提交
-      updated_days: 41
+      updated_days: 44
       stale: false
     entry_updated: '2026-11-06'
     category_label: 娱乐与彩蛋

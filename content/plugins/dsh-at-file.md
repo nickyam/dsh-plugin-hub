@@ -37,7 +37,7 @@ params:
       forks_label: '36'
       pushed_date: '2026-09-01'
       updated_label: 2 个月前有提交
-      updated_days: 81
+      updated_days: 84
       stale: false
     entry_updated: '2026-11-06'
     category_label: 工具与能力

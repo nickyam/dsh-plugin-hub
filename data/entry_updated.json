@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22 00:08",
+  "generated": "2026-11-24 22:48",
   "entries": {
     "agentero-dsh": "2026-11-09",
     "answer-me-with-html": "2026-11-06",
@@ -28,6 +28,7 @@
     "dsh-browser": "2026-11-17",
     "dsh-browser-bridge": "2026-11-19",
     "dsh-claude-move": "2026-11-06",
+    "dsh-claude-style": "2026-11-21",
     "dsh-client-ui-skill-explorer": "2026-11-17",
     "dsh-codex-ui": "2026-11-17",
     "dsh-computer-use-win": "2026-11-17",
@@ -66,6 +67,7 @@
     "dsh-market": "2026-11-06",
     "dsh-mcp-client": "2026-11-06",
     "dsh-media-desk": "2026-11-09",
+    "dsh-meme": "2026-11-21",
     "dsh-memory-evolve": "2026-11-06",
     "dsh-memory-palace": "2026-11-19",
     "dsh-memsearch": "2026-11-19",
@@ -90,7 +92,9 @@
     "dsh-plugin-shop": "2026-11-06",
     "dsh-plugin-subscriptions": "2026-11-06",
     "dsh-pocket": "2026-11-17",
+    "dsh-ppt": "2026-11-21",
     "dsh-project-memory": "2026-11-06",
+    "dsh-pua": "2026-11-21",
     "dsh-qq2006": "2026-11-06",
     "dsh-qqbot": "2026-11-19",
     "dsh-reasoning-only-guard": "2026-11-19",

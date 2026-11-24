@@ -39,8 +39,8 @@ params:
       stars_label: '622'
       forks_label: '113'
       pushed_date: '2026-11-17'
-      updated_label: 4 天前有提交
-      updated_days: 4
+      updated_label: 7 天前有提交
+      updated_days: 7
       stale: false
     entry_updated: '2026-11-06'
     category_label: 免费模型与接入

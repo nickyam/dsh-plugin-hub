@@ -6,7 +6,7 @@ categories:
 tags: &id001
 - 桌宠
 - DIY素材
-weight: 1040
+weight: 1050
 params:
   plugin:
     id: dsh-pet
@@ -35,13 +35,13 @@ params:
       stars_label: '6489'
       forks_label: '578'
       pushed_date: '2026-11-17'
-      updated_label: 4 天前有提交
-      updated_days: 4
+      updated_label: 7 天前有提交
+      updated_days: 7
       stale: false
     entry_updated: '2026-11-06'
     category_label: 娱乐与彩蛋
     status_label: 社区
-    weight: 1040
+    weight: 1050
     url: /plugins/dsh-pet/
   generated: true
 ---

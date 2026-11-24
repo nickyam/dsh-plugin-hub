@@ -243,3 +243,11 @@
   date_note: "2026-11-20 20:10（陕西）"
   note: "第二十四篇。10 个入门插件清单，无仓库地址、安装命令只给包名或安装界面关键词。逐条按包名/功能核对后：7 个已收录只补发现线索（Dream Skin / DSH-IM / DSH Market / GenUI / Balance Whale 小鲸鱼 / Agent Teams / Better Sidebar）；新建 3 条——dsh-dream-skin（npm 包名 dsh-dream-skin，官方仓库已迁至 gitcode.com/LLLAAAAA/dsh-dream-skin，8 套 Mirage 主题+壁纸+强调色，文章描述与之吻合；与独立桌面软件 xxloocee/Dream-Skin 及另一同名 dsh-dream-skin 区分）、dsh-connect-workbuddy（github.com/dingminhua/dsh-connect-workbuddy，把本机 WorkBuddy 登录态接入 DSH 模型选择器）、dsh-imagegen（文章称 VisioWork，包名 dsh-imagegen 对应 github.com/dickpy/dsh-imagegen，文生图/图生图+提示词反推+可配渠道模型；与已收录 dsh-image-gen即shanliuling 是不同插件，注意区分）。语音输入一条文章自述「来自 DSH 自带的插件」，按本站内置能力不建条目规则跳过。文章的手机 ClawBot 演示、「界面像毛坯房」等口语评价与封面截图不采信为独立结论。"
   tags: [公众号, 插件清单, 入门10款]
+- id: wx-xingyun
+  title: "DSH别乱装！12个插件按场景选：功能、安装与避坑一次讲清"
+  kind: wechat
+  publisher: "星云_byto"
+  url: "https://mp.weixin.qq.com/s/X2U8VoQAxlVUVIFLF1mIPA"
+  date_note: "2026-11-23 17:16（湖南）"
+  note: "第二十五篇。12 个插件按『长对话与用量管理 / 工作与学习 / 个性化体验』三场景组织，给出了包名与宿主版本要求（比一般清单严谨），但仓库地址以『GitHub』文字链接给出、未直接显示 URL，逐条按包名到 npm/GitHub 核实。核对结果：8 个已收录仅补发现线索（billion-context / dsh-cost-meter / cc-safety-net / dsh-vision-router / archify / dsh-synapse / dsh-pet / 鲸鱼挂件 whale-cost-widget）；新建 4 条——dsh-ppt（github.com/STARDUSTLC666/dsh-ppt，宿主>=0.2.2-rc.3，HTML 放映+可编辑 PPTX）、dsh-pua（npm @michengai/dsh-pua，github.com/MichengAI/dsh-pua，任务推进+验收循环，与已收录的 Agent Teams 是不同插件）、dsh-meme（github.com/yyh-001/dsh-meme，输入框发图+图库管理；与已收录 dsh-emoji 行内表情、dsh-nekowhale-stickers 表情知识库是不同插件）、dsh-claude-style（github.com/Nwflower/dsh-claude-style，Claude Desktop 风格主题，宿主>=0.2.2-rc.3；与 dsh-dream-skin 换肤是不同插件）。Archify 适配包按官方 README 从库里写死的 1.0.0 更新到 1.2.0（文章写 1.1.0，官方 README/npm latest 已是 1.2.0，按『安装命令以 README 为准』处理并在 notes 注明）。文章反复强调的『发现页不等于官方认证』『装进一个 profile 不代表其他 profile 受保护』『免费云端不是本地离线』等避坑提醒有参考价值，作为 notes 的方法论要点吸收，但不写成实机结论。"
+  tags: [公众号, 插件清单, 场景选型12款]
