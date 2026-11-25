@@ -44,7 +44,7 @@ params:
       forks_label: '0'
       pushed_date: '2026-09-04'
       updated_label: 2 个月前有提交
-      updated_days: 81
+      updated_days: 82
       stale: false
     entry_updated: '2026-11-17'
     category_label: 集成与迁移

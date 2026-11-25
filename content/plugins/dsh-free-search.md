@@ -46,8 +46,8 @@ params:
       stars_label: '1404'
       forks_label: '74'
       pushed_date: '2026-11-18'
-      updated_label: 5 天前有提交
-      updated_days: 5
+      updated_label: 6 天前有提交
+      updated_days: 6
       stale: false
     entry_updated: '2026-11-19'
     category_label: 工具与能力

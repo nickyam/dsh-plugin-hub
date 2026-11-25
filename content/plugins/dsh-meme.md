@@ -33,7 +33,7 @@ params:
     notes: 官方仓库 github.com/yyh-001/dsh-meme（npm 包 dsh-meme，MIT，默认分支 main）。文章只给包名 dsh-meme 与「输入框附近选表情包 + 搜索分类导入导出 + 默认把原图作附件发给 AI（可关）」，与 README 逐条吻合，据此收录；仓库由包名检索核实。文章示例安装命令 dsh plugin --profile web add dsh-meme 与 README 一致。文章提醒「默认发原图给 AI 的行为可在设置关闭，需结合实际模型链路判断数据流向」，这点在 README 也有明确说明，作为 notes 保留。它主打输入框发图/图库管理，与站内 dsh-emoji（hellodigua，给 AI 回复加行内表情）和 dsh-nekowhale-stickers（Loping151，322 张标注场景的表情知识库）功能侧重不同，未合并；别名「表情包」已被 dsh-nekowhale-stickers 占用，故本条别名用「表情包发图」。
     repo_confirmed: true
     gh: null
-    entry_updated: '2026-11-21'
+    entry_updated: '2026-11-24'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1010

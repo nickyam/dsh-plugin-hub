@@ -38,8 +38,8 @@ params:
       stars_label: '730'
       forks_label: '72'
       pushed_date: '2026-11-04'
-      updated_label: 20 天前有提交
-      updated_days: 20
+      updated_label: 21 天前有提交
+      updated_days: 21
       stale: false
     entry_updated: '2026-11-06'
     category_label: 界面与体验

@@ -40,7 +40,7 @@ params:
       forks_label: '35'
       pushed_date: '2026-08-24'
       updated_label: 3 个月前有提交
-      updated_days: 91
+      updated_days: 93
       stale: false
     entry_updated: '2026-11-06'
     category_label: 安全与治理

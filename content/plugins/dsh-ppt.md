@@ -33,7 +33,7 @@ params:
     notes: 官方仓库 github.com/STARDUSTLC666/dsh-ppt（默认分支 master，npm 包 dsh-ppt，MIT）。文章只给包名 dsh-ppt 与「HTML 放映 + 可编辑 PPTX + 材料导入 + 工作台编辑导出」，与 README 核心定位吻合，据此收录；仓库由包名检索核实，README 在 master 分支。官方安装命令桌面版用 --profile desktop，网页版把 desktop 改为 web，装后重启对应宿主；本站 install 取桌面版命令。README 强调宿主要求已从旧版升级到 >=0.2.2-rc.3，文章也特别提醒别沿用早期教程的旧兼容范围。README 里 0.36.0 等版本号、性能与效果描述均为作者自述，本站只记功能定位，不写成实机结论。注意与站内 dsh-univer-office（办公套件）、deepseek-design / dsh-guizang-design（视觉设计）区分。
     repo_confirmed: true
     gh: null
-    entry_updated: '2026-11-21'
+    entry_updated: '2026-11-24'
     category_label: 内容创作与办公
     status_label: 社区
     weight: 1010

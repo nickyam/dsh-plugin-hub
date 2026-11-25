@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-24 22:51",
-  "generated_date": "2026-11-24",
+  "generated_at": "2026-11-25 23:57",
+  "generated_date": "2026-11-25",
   "stats": {
-    "plugins": 140,
-    "repos_confirmed": 140,
+    "plugins": 141,
+    "repos_confirmed": 141,
     "categories": 13,
     "stars_median": 622,
     "stars_median_label": "622",
@@ -57,7 +57,7 @@
       "id": "integration",
       "label": "集成与迁移",
       "desc": "微信、其他 Agent、MCP 桥接",
-      "count": 9
+      "count": 10
     },
     {
       "id": "fun",

@@ -32,7 +32,7 @@ params:
     notes: 官方仓库 github.com/MichengAI/dsh-pua（npm 包 @michengai/dsh-pua，Apache-2.0）。文章只给包名 @michengai/dsh-pua 与「重复失败/过早放弃/缺少验证时提醒换方法、查原因、提交证据」，与 README 核心定位吻合，据此收录；仓库由包名检索核实。安装命令按官方 README 的精确形式（带 @latest 与 --registry）。版本门槛复杂：0.2.2-rc.1 之前宿主装插件 1.0.12、0.1.x 装 0.3.28；README 自动支持后续 0.2.x RC，0.3.0 由版本门拦截。文章强调「全局允许不等于会话已启用」「Loop 要设验收方式与轮次上限」，与 README 一致。它与站内 dsh-agent-teams（多 Agent 小队）定位不同，未合并。
     repo_confirmed: true
     gh: null
-    entry_updated: '2026-11-21'
+    entry_updated: '2026-11-24'
     category_label: 协作与工作流
     status_label: 社区
     weight: 1010

@@ -38,8 +38,8 @@ params:
       stars_label: '732'
       forks_label: '7'
       pushed_date: '2026-11-15'
-      updated_label: 8 天前有提交
-      updated_days: 8
+      updated_label: 9 天前有提交
+      updated_days: 9
       stale: false
     entry_updated: '2026-11-06'
     category_label: 娱乐与彩蛋
