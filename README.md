@@ -42,7 +42,7 @@ tools/fetch_repo_stats.py  GitHub API 抓取仓库数据 → repo_stats.json（�
 tools/entry_updated.py   git 历史 → entry_updated.json（详情页「条目更新于」的数据源）
 deploy/deploy.sh        部署到 ECS 的 index/dsh/
 content/
-  plugins/*.md          【脚本生成】133 个插件详情页
+  plugins/*.md          【脚本生成】140 个插件详情页
   about.md privacy.md guide.md _index.md   手写页面
 layouts/                 自建零依赖主题（不拉 submodule）
   sitemap.xml           自写：剔除「挂不满 3 个插件」的标签页 + 输出 lastmod
@@ -140,7 +140,7 @@ GitHub 星标 / Fork 是快照，不是实时值。想刷新就跑 `python3 tool
 - **slot ID（2026-11-22 已换为 dsh 自建单元，不复用主站）**：`slot_content=9256261574`（DSH插件-正文内）/`slot_side=9200421256`（DSH插件-侧栏）/`slot_list=5536508411`（DSH插件-列表页），client 同为 `ca-pub-7114121088728794`、同属 limzero.com 一个 site。三个单元在 AdSense 后台按「展示广告 + 响应式尺寸」新建，生成代码的 `data-ad-format=auto` + `data-full-width-responsive=true` 与本模板一致。换单元只改 `hugo.toml` 三个 slot ID，模板不用动。
 - **开关**：关掉全部固定广告 → `fixed.enabled = false`；恢复 Auto Ads → 上面 `enabled = true`。两者都关则 `baseof.html` 也不再加载 `adsbygoogle.js`。
 - （历史说明）2026-11-21 曾一度改成完全无广告；同日改为上述固定位方案。Auto Ads 的 `enable_page_level_ads` 全站为 0，只有固定单元各自 push。
-- 🔴 **`ads.txt` 只有在域名根目录才有效**：AdSense 会读 `https://ai.limzero.com/ads.txt`，**不会**读 `https://ai.limzero.com/dsh/ads.txt`。`static/ads.txt` 是本仓库留的副本，内容必须同步到主站根目录（主站目前还没有这个文件）。上线后用 `curl https://ai.limzero.com/ads.txt` 确认返回那一行 `google.com, pub-7114121088728794, DIRECT, f08c47fec0942fa0`，AdSense 重新抓取可能要几天。
+- 🔴 **`ads.txt` 只有在域名根目录才有效**：AdSense 会读 `https://ai.limzero.com/ads.txt`，**不会**读 `https://ai.limzero.com/dsh/ads.txt`。本仓库的 `static/ads.txt` 只是留底副本，正式那份在 `ai-limzero-hub/static/ads.txt`（**2026-11-25 复核：`https://ai.limzero.com/ads.txt` 返回 200，内容即该行**）。任何一侧改动后都用 `curl https://ai.limzero.com/ads.txt` 确认返回 `google.com, pub-7114121088728794, DIRECT, f08c47fec0942fa0`，AdSense 重新抓取可能要几天。
 - AdSense 后台按域名管理站点，`ai.limzero.com` 若已在站点列表且审核通过，`/dsh` 通常不用重复添加；以后台实际显示为准。
 - 广告单元用 `data-ad-format="auto"` + `data-full-width-responsive="true"`，由 Google 按容器宽度自适应；容器 `overflow:hidden`、不设 min-height，窄屏不溢出、广告被拦截时不留白块。CSS 见 `assets/css/main.css` 末尾「固定广告位」段。
 
@@ -162,7 +162,9 @@ bash deploy/deploy.sh --sync-only  # 产物已构建，只同步
 
 脚本只同步 `index/dsh/` 一个子目录，`--delete` 的作用范围仅限它，不会碰主站文件；还会检查产物里的资源链接是否带 `/dsh/` 前缀，防止 `baseURL` 写错把整站链接发到主站根。vhost 需要有 `try_files $uri $uri/index.html $uri/ =404`，`/dsh/plugins/xxx/` 才能落到 `index.html`。
 
-### 🔴 上线前必做（都在主站侧，需改 `ai-limzero-hub` 仓库）
+### ✅ 上线前置条件（都在主站侧，需改 `ai-limzero-hub` 仓库）
+
+> 三项已于 2026-11-25 复核全部完成（主站 `deploy.sh` 有 `--filter='P dsh/'`、`static/ads.txt` 在、`robots.txt` 已声明本站 sitemap）。保留作回归清单：主站重新部署或换脚本后逐项复查。
 
 1. **主站部署脚本加保护规则**：`ai-limzero-hub/deploy/deploy.sh` 的 rsync 带 `--delete --delete-excluded`，会把不在主站 `public/` 里的 `dsh/` 整个删掉。在它的 filter 参数最前面加 `--filter='P dsh/'`（保护规则），主站再部署才不会清掉本站。
 2. **主站根目录放 `ads.txt`**：把 `static/ads.txt` 那一行加到 `ai-limzero-hub/static/ads.txt`。
