@@ -1,11 +1,11 @@
 # 任务进度
 
-## 接力进度块（WorkBuddy 2026-11-25 完成）
+## 接力进度块（WorkBuddy 2026-11-26 完成）
 
-- **做了什么**：① 接手时发现 Forge 写入的 `data/plugins.yaml` / `data/sources.yaml` 有结构性损坏——bridge 条目错插在 `- id: dsh-claude-style` 与其字段之间、末尾多一个 YAML 文档分隔符（`---`，致 `yaml.safe_load` 直接报错），新来源 `- id:` 粘连在前一条 `tags:` 行尾且末尾缺换行；已全部修复。② 按官方 README（github.com/Totoro-qaq/dsh-plugin-bridge，MIT/main/0.5.2）把 bridge 条目从英文草稿改写为中文，修正兼容范围口径（原把 bridge 版本 0.5.2 误写成 DSH 版本）与 flag/note 的自相矛盾。③ 数据校验通过：141 插件 / 29 来源、无重复 id、字段完整、refs 0 悬空。④ `entry_updated.py` + `./build.sh` 无 ERROR，sitemap 186、新页面已生成、内链 0 死链、广告位未受影响（首页 1/详情 2/page_level_ads 0）、390px `scrollWidth===innerWidth===390`。⑤ README 统计与第 26 篇记录已回写。
-- **现在到哪一步**：全部完成——验收全过，`git add` + `commit`（不 push）已做，`deploy/deploy.sh` 已上线；线上核验通过（首页/bridge 页/claude 页均 200、bridge 安装名正确、claude 页未被拆散、广告位首页 1/详情 2、Auto Ads 0）。工作区干净。
-- **下一步**：仅剩用户自行在 GitHub Desktop push 本地 2 个 commit（6d8d4fc 主变更 / b8d26fc 时间戳）。任务已闭环，无需其他动作。
-- **谁做的**：WorkBuddy（数据修复 / 校正 / 校验 / 构建 / 验收 / commit），前序数据写入由 Forge 完成。
+- **做了什么**：① 接手时发现 Forge 写入的 `data/plugins.yaml` / `data/sources.yaml` 有结构性损坏——bridge 条目错插在 `- id: dsh-claude-style` 与其字段之间、末尾多一个 YAML 文档分隔符（`---`，致 `yaml.safe_load` 直接报错），新来源 `- id:` 粘连在前一条 `tags:` 行尾且末尾缺换行；已全部修复。② 按官方 README（github.com/Totoro-qaq/dsh-plugin-bridge，MIT/main/0.5.2）把 bridge 条目从英文草稿改写为中文，修正兼容范围口径（原把 bridge 版本 0.5.2 误写成 DSH 版本）与 flag/note 的自相矛盾。③ 数据校验通过：141 插件 / 29 来源、无重复 id、字段完整、refs 0 悬空。④ `entry_updated.py` + `./build.sh` 无 ERROR，sitemap 186、新页面已生成、内链 0 死链、广告位未受影响（首页 1/详情 2/page_level_ads 0）、390px `scrollWidth===innerWidth===390`。⑤ README 统计与第 26 篇记录已回写。⑥ 用户明确指令后执行 `git push origin main`，本地 3 个 commit（6d8d4fc / b8d26fc / 420e2ba）已全部推到 `origin/main`。
+- **现在到哪一步**：全链路闭环——验收全过、构建部署上线、线上核验通过（首页/bridge 页/claude 页均 200、bridge 安装名正确、claude 页未被拆散、广告位首页 1/详情 2、Auto Ads 0）、远端已同步（`d1b5fbc..420e2ba  main -> main`）。工作区干净，本地与 origin/main 一致（0 ahead / 0 behind）。
+- **下一步**：无。任务完全闭环，无需其他动作。
+- **谁做的**：WorkBuddy（数据修复 / 校正 / 校验 / 构建 / 验收 / commit / push），前序数据写入由 Forge 完成。
 
 ## 本次工作内容
 - 提取公众号文章链接：`https://mp.weixin.qq.com/s/lYkpYW-qCL6w2uGYEsAMcg`
