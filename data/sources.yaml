@@ -292,3 +292,11 @@
   date_note: "2026-11-26（上海）"
   note: "第三十篇。按三条技术路线介绍同步/备份插件：配置迁移（DSH Config Manager）、记忆层加密归档（DSH-Sync-Backup）、双向增量同步（weibaohui/dsh-sync、dpskk2/dsh-chatsync），另加 dsh-backup 做救急快照。按包名检索到官方仓库与 npm，据此新建 dsh-backup（github:xiaoyuyu6420/dsh-backup）、dsh-config-manager（npm dsh-config-manager）、dsh-sync-backup（github:weibaohui/dsh-sync）三个条目，内容以官方 README 为准；weibaohui/dsh-sync 与 dpskk2/dsh-chatsync 属同一双向同步路线、不另建条目。文中的 star 数、下载数属特定时间切片，不采信进插件卡。"
   tags: [公众号, 插件清单, 备份, 同步]
+- id: wx-xiaolai-2026-11-16
+  title: "挖到了 9 款DeepSeek Harness宝藏插件！有点东西，直接把AI工作台全面升级"
+  kind: wechat
+  publisher: "晓来在进化"
+  url: "https://mp.weixin.qq.com/s/7-ufrbTWwqrjPus0D75OAw"
+  date_note: "2026-11-16 20:24（上海）"
+  note: "第三十一篇。作者自述从 18 款社区插件里挑 9 个：dsh-market（包名 dshmarket）、dsh-our-free-model、dsh-ego-browser、dsh-vision-router、OpenViking Memory（包名 dsh-memory-plugin，实为 scoped 的 @openviking/dsh-memory-plugin）、dsh-better-sidebar、dsh-context、dsh-media-desk、dsh-im。前八条本站此前均已收录（第 26 篇之前各期），本次只补发现线索；第九条 OpenViking Memory 按包名核对到 volcengine/OpenViking 发布的 @openviking/dsh-memory-plugin，与既有 dsh-openviking（Rxiain/dsh-openviking）不是同一项目，据此新建 dsh-memory-plugin 条目。文章只给包名与一句功能描述、没有仓库与版本，条目内容以官方 README 为准；文中「不需要 Key 开箱即用」只适用于 dsh-vision-router，OpenViking 必须自备服务端，不采信为通用结论。"
+  tags: [公众号, 插件清单]

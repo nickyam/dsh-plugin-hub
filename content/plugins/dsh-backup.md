@@ -7,7 +7,7 @@ tags: &id001
 - 备份
 - 恢复
 - 同步
-weight: 1000
+weight: 1010
 params:
   plugin:
     id: dsh-backup
@@ -28,7 +28,7 @@ params:
     entry_updated: '2026-11-26'
     category_label: 工具与能力
     status_label: 社区
-    weight: 1000
+    weight: 1010
     url: /plugins/dsh-backup/
   generated: true
 ---

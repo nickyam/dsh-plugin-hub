@@ -9,7 +9,7 @@ tags: &id001
 - 封面
 - 分镜
 - 灵感
-weight: 1020
+weight: 1030
 params:
   plugin:
     id: dsh-media-desk
@@ -49,7 +49,7 @@ params:
     entry_updated: '2026-11-09'
     category_label: 内容创作与办公
     status_label: 社区
-    weight: 1020
+    weight: 1030
     url: /plugins/dsh-media-desk/
   generated: true
 ---

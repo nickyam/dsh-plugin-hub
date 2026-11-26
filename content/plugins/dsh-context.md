@@ -7,7 +7,7 @@ tags: &id001
 - 上下文
 - 可观测
 - 诊断
-weight: 1080
+weight: 1090
 params:
   plugin:
     id: dsh-context
@@ -44,7 +44,7 @@ params:
     entry_updated: '2026-11-06'
     category_label: 协作与工作流
     status_label: 社区
-    weight: 1080
+    weight: 1090
     url: /plugins/dsh-context/
   generated: true
 ---

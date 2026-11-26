@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-26 16:19",
+  "generated_at": "2026-11-26 17:03",
   "generated_date": "2026-11-26",
   "stats": {
-    "plugins": 145,
-    "repos_confirmed": 145,
+    "plugins": 146,
+    "repos_confirmed": 146,
     "categories": 13,
     "stars_median": 622,
     "stars_median_label": "622",
@@ -39,7 +39,7 @@
       "id": "memory",
       "label": "记忆与知识",
       "desc": "跨会话记忆、项目上下文、知识库",
-      "count": 14
+      "count": 15
     },
     {
       "id": "billing",
