@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-26 09:53",
+  "generated_at": "2026-11-26 10:22",
   "generated_date": "2026-11-26",
   "stats": {
-    "plugins": 141,
-    "repos_confirmed": 141,
+    "plugins": 142,
+    "repos_confirmed": 142,
     "categories": 13,
     "stars_median": 622,
     "stars_median_label": "622",
@@ -27,7 +27,7 @@
       "id": "tool",
       "label": "工具与能力",
       "desc": "搜索、浏览器、视觉、文件引用",
-      "count": 17
+      "count": 18
     },
     {
       "id": "workflow",

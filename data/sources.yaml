@@ -259,6 +259,14 @@
   date_note: "2026-11-23 20:00（上海）"
   note: "第二十六篇。介绍 dsh-plugin-bridge 插件，实现会话状态的跨预设迁移，五段固定交接结构。按包名检索到官方仓库 github.com/Totoro-qaq/dsh-plugin-bridge 并读到官方 README，据此新建 dsh-plugin-bridge 条目；内容以 README 为准、已中文化并修正版本口径。"
   tags: [公众号]
+- id: wx-projects-2026-11-23
+  title: "DeepSeek 生态又添神器：给 DeepSeek Harness 请一个项目经理"
+  kind: wechat
+  publisher: "DevOps运维民工"
+  url: "https://mp.weixin.qq.com/s/JhvG9p2UDeil9Ijpq1tSqw"
+  date_note: "2026-11-23 18:56（上海）"
+  note: "第二十八篇。介绍 DSH-projects 插件，实现任务与项目上下文管理，个人助理拆分任务、记背景、做看板、等验收。npm 包 deepseek-harness-projects-plugin@preview，MIT，仓库 github.com/hovocope135-tech/DSH-projects，engines.dsh >=0.2.0 <0.3.0。按包名检索到官方仓库并读到官方 README，据此新建 dsh-projects 条目；内容以 README 为准、已提取核心功能（任务拆分/上下文记录/看板验收）并作中文摘要。"
+  tags: [公众号]
 - id: wx-wuya-computer-use
   title: "DSH插件测评：电脑操控 Windows，鼠标不动"
   kind: wechat
