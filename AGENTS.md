@@ -57,7 +57,7 @@ python3 tools/fetch_repo_stats.py [--all]   # 刷 GitHub 快照，需联网
 
 ```bash
 ./build.sh 2>&1 | grep -E "ERROR|校验通过|条目 "          # 构建无 Error、条目数对得上
-grep -o "<loc>" public/sitemap.xml | wc -l               # 当前 193（146 plugins + 13 categories + 29 tags + 静态页）；暴涨=薄标签页又进索引
+grep -o "<loc>" public/sitemap.xml | wc -l               # 当前 195（146 plugins + 13 categories + 31 tags + 静态页）；暴涨=薄标签页又进索引
 grep -o 'css/main\.min\.[a-f0-9]*\.css' public/index.html | head -1   # 指纹文件名（每次构建只变 hash 不变格式）
 ```
 
