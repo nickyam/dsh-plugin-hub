@@ -283,3 +283,15 @@
   date_note: "2026-11-19 12:00（上海）"
   note: "第二十九篇。按『省钱 / 回消息 / 操作电脑 / 画图』四路各选一个插件：dsh-ops（T-Auto/dsh-ops，省 token）、dsh-im（xmanrui/dsh-im，IM 接入）、dsh-windows-mcp（helloHub1212/dsh-windows-mcp，桌面自动化）、dsh-image-gen（shanliuling/dsh-image-gen，对话生图）。四条本站此前均已收录（分别来自第十四、十二、十八、九篇），本次只补发现线索、未新建条目；逐条核对仓库与 npm 包名与既有条目一致，无需改口径。文中 dsh-ops 官方 benchmark 六个任务总 token 111.9 万→74.3 万（降 33.6%）、工具调用 221→122 次、通过率 6/6、read 113→12 次 / pwd 19→0 次属作者引用官方 benchmark 的单次口径，以及四个插件的 star 数（5921 / 3701 / 1736 / 1625）属特定时间切片，均不采信进插件卡。"
   tags: [公众号, 插件清单, 省token]
+
+- id: wx-backup-2026-11-26
+  title: 这 3 个插件，让 DSH 更好用——dsh-backup/dsh-config-manager/dsh-sync-backup
+  author: 乌鸦君疯狂学AI
+  date: 2026-11-26
+  category: tool
+  tags:
+  - dsh-backup
+  - dsh-config-manager
+  - dsh-sync-backup
+  notes: 3 个插件均为 community 状态，仅作发现来源，不新建条目
+  refs:

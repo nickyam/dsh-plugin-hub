@@ -3364,3 +3364,61 @@
   notes: npm 包 latest 1.0.0-preview.1（对应图中旧界面），preview.3 对应文中所示新界面。安装需要 npm install -g @deepseek-ai/dsh，Node 24 以上和模型 API key。首次打开跟着「捏一个你的助理」选样子和性格、起名字、定呼出快捷键，默认叫 Tacit。电脑活动记录需要在「助理设置」的「活动与设备」里开启，开启后可问「用一张图展现我今天做了什么」。不替你拍板、不替你验收，也不以你名义发消息，飞书只读。插件是在你电脑上跑的第三方代码，装之前可翻翻源码，或让 AI 帮你审一遍。安装命令：dsh plugin --profile web add deepseek-harness-projects-plugin@preview；启动后在浏览器打开它给的地址。回滚用的旧版本号、发版说明里每页条数、导出上限这些数字还未写死，需要逐条确认。
   refs:
   - wx-projects-2026-11-23
+
+- id: dsh-backup
+  name: dsh-backup（数据备份）
+  category: tool
+  status: community
+  repo: https://github.com/xiaoyuyu6420/dsh-backup
+  install: dsh plugin --profile web add github:xiaoyuyu6420/dsh-backup
+  summary: 备份 DSH 用户数据（~/.dsh）：会话、配置、技能、凭据、插件配置等。从 git 装，无需构建步骤（产物已提交）。作者提到 npm 包在路上。
+  features:
+  - 备份 ~/.dsh 全量用户数据：会话、配置、技能、凭据、插件配置
+  - 支持定时备份与手动备份
+  - 支持通过 GitHub 仓库进行版本化存储
+  tags:
+  - 备份
+  - 恢复
+  - 同步
+  flag: npm 包在路上；GitHub 仓库 xiaoyuyu6420/dsh-backup；优先使用 Git 仓库 spec  install；pnpm minimumReleaseAge 策略备注
+  refs:
+
+- id: dsh-config-manager
+  name: dsh-config-manager（配置管理器）
+  category: tool
+  status: community
+  repo: npm package
+  install: dsh plugin --profile web add dsh-config-manager@latest
+  summary: DSH配置管理器，管设置、模型与 Provider 配置、已安装插件及插件配置、MCP Servers、Skills、Agent Presets、工作区与 AGENTS.md。装完重启 DSH，设置页会出现「备份与迁移」入口。导出 ZIP 后可上传至 GitHub/网盘做跨机迁移。
+  features:
+  - 管设置、模型与 Provider 配置
+  - 已安装插件及插件配置
+  - MCP Servers、Skills、Agent Presets
+  - 工作区与 AGENTS.md
+  - ZIP 导出 + 加密备份
+  tags:
+  - 配置
+  - 迁移
+  - 备份
+  flag: npm install -g dsh-config-manager@latest --omit=peer；pnpm minimumReleaseAge 策略；@latest 可能装到旧版；profile 本身不随备份迁移
+  refs:
+
+- id: dsh-sync-backup
+  name: dsh-sync-backup（加密备份同步）
+  category: tool
+  status: community
+  repo: https://github.com/weibaohui/dsh-sync
+  install: dsh plugin --profile web add github:weibaohui/dsh-sync
+  summary: 加密备份 + 双通道 + 默认零外传。管配置、技能清单、会话记录。定时跑默认只本地打包；要自动上传必须同时满足 uploadOnSchedule: true 和 dryRun: false。非本机 http 一律拒绝，只有 loopback 放行。凭据只进 DSH 凭据库，绝不回读。
+  features:
+  - 加密归档 + 双通道（Git + WebDAV/对象存储）
+  - 默认零外传，仅在显式配置时上传
+  - 配置、技能清单、会话记录全管
+  - 定时备份 + 保留策略（近 N 份 + 每月 1 份 + 每年 1 份）
+  - 恶意冲突明确决策（无法继续必须手动决策）
+  tags:
+  - 加密
+  - 同步
+  - 备份
+  flag: uploadOnSchedule + dryRun 必须同时开才上传；GIT_ASKPASS 凭据注入；Basic 口令明文 HTTP 等于交出去；非本机 http 拒绝；只能 loopback 127.0.0.1/[::1]
+  refs:
