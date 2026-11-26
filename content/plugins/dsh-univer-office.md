@@ -32,19 +32,19 @@ params:
     notes: Dream Num 出品的 Univer 办公套件 DSH 插件；支持 Sheets / Docs / Slides / Bases / Boards 统一于 .univer 文件。
     repo_confirmed: true
     gh:
-      stars: 737
-      forks: 60
-      issues: 21
+      stars: 762
+      forks: 64
+      issues: 9
       language: TypeScript
       license: Apache-2.0
-      pushed_at: '2026-11-18T07:06:41Z'
+      pushed_at: '2026-11-26T13:41:56Z'
       archived: false
       slug: dream-num/dsh-univer-office
-      stars_label: '737'
-      forks_label: '60'
-      pushed_date: '2026-11-18'
-      updated_label: 8 天前有提交
-      updated_days: 8
+      stars_label: '762'
+      forks_label: '64'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 内容创作与办公
@@ -52,6 +52,7 @@ params:
     weight: 1030
     url: /plugins/dsh-univer-office/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 dsh-univer-office 是 DeepSeek Harness（DSH）的 Univer 办公插件，把电子表格、文档、幻灯片、关系表与画布集成进统一运行时，让 AI 代理用自然语言创建 / 编辑 / 验证办公文件，并通过隔离工作树实现安全检查。

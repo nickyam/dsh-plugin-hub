@@ -28,19 +28,19 @@ params:
     notes: README 声明该 DSH 集成是 Community integration，无遥测，需 Node ^22.19.0 || >=24.0.0。移除命令：dsh plugin --profile web remove @tt-a1i/archify-dsh。安装命令按官方 README 精确锁定版本：2026-11-23 核查时 wx-xingyun 文章写 1.1.0（绑定 Archify Skill 3.2.0、宿主 0.2.1-rc.2），但 npm latest 与官方集成 README 已升到 1.2.0（绑定 Archify Skill 3.3.0、精确宿主 0.2.2-rc.5），按本站『安装命令以 README 为准』更新为 1.2.0。每个用到 Archify 的 profile 都要单独跑这条精确版本命令；升级宿主或主仓库不会自动更新已装插件。旧版本 1.0.0（2026-10-04，宿主 0.1.2-rc.1）、1.1.0 仍留在各自 release tag 供旧宿主使用。
     repo_confirmed: true
     gh:
-      stars: 97754
-      forks: 6676
-      issues: 369
+      stars: 100539
+      forks: 6882
+      issues: 365
       language: JavaScript
       license: Apache-2.0
-      pushed_at: '2026-11-19T00:44:55Z'
+      pushed_at: '2026-11-26T01:45:04Z'
       archived: false
       slug: tt-a1i/archify
-      stars_label: 97.8k
-      forks_label: '6676'
-      pushed_date: '2026-11-19'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: 100.5k
+      forks_label: '6882'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-24'
     category_label: 视觉与设计
@@ -48,6 +48,7 @@ params:
     weight: 1030
     url: /plugins/archify/
   generated: true
+lastmod: '2026-11-24'
 ---
 
 把想法、计划或代码库变成交互式图表的 agent skill；针对 DSH 提供社区维护的插件集成（@tt-a1i/archify-dsh），可在 DSH 对话里调用 archify 技能生成架构图、流程图、系统拓扑图。

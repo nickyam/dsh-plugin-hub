@@ -35,19 +35,19 @@ params:
     notes: 装的是宿主版本区间不是「越新越好」——engines.dsh 写死 >=0.2.1-rc.2 <0.4.0-0，0.1.x 与 0.4+ 会被插件管理器拒绝。README 只给 git clone 的本地路径装法（npm 上也有 dsh-free-search，现 0.9.70，作者 dddmuc）。它会自动接管 web.searchProvider 与 web.fetchProvider，可能把 provider 选择写进 profile，停用或卸载前要按文档把搜索与抓取配置恢复，否则配置仍指向已不存在的 provider。同时装多个搜索 / 抓取插件会互斥，设置页诊断会给警告。
     repo_confirmed: true
     gh:
-      stars: 1404
-      forks: 74
+      stars: 1734
+      forks: 79
       issues: 9
       language: JavaScript
       license: MIT
-      pushed_at: '2026-11-18T16:42:55Z'
+      pushed_at: '2026-11-26T15:56:34Z'
       archived: false
       slug: DDDMUC/dsh-free-search
-      stars_label: '1404'
-      forks_label: '74'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '1734'
+      forks_label: '79'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-19'
     category_label: 工具与能力
@@ -55,6 +55,7 @@ params:
     weight: 1010
     url: /plugins/dsh-free-search/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 给 DSH 接一批免 Key 的搜索 provider，替换默认那条要走 DeepSeek 官方 Key、用第三方模型也会隐形扣费的搜索通道；多引擎可切换、失败自动回退，还顺带接管网页抓取。

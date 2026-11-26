@@ -26,19 +26,19 @@ params:
     tags: *id001
     repo_confirmed: true
     gh:
-      stars: 6531
-      forks: 442
-      issues: 15
+      stars: 6689
+      forks: 459
+      issues: 16
       language: JavaScript
       license: MIT
-      pushed_at: '2026-11-18T19:55:16Z'
+      pushed_at: '2026-11-25T19:55:01Z'
       archived: false
       slug: QingYunA/answer-me-with-html
-      stars_label: '6531'
-      forks_label: '442'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '6689'
+      forks_label: '459'
+      pushed_date: '2026-11-25'
+      updated_label: 昨天有提交
+      updated_days: 1
       stale: false
     entry_updated: '2026-11-06'
     category_label: 协作与工作流
@@ -46,6 +46,7 @@ params:
     weight: 1010
     url: /plugins/answer-me-with-html/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 一个 agent skill，用一页可交互的单文件 HTML 回答复杂问题：内含流程图、对比表格、交互图表，离线可打开、便于分享。

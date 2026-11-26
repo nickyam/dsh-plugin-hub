@@ -27,19 +27,19 @@ params:
     notes: 深度绑定 DSH 客户端与宿主 API，只能在 DSH 里运行；未开放余额接口的平台如实显示「未开放」，不伪造数字。安装或维护前建议先读仓库 AGENTS.md。
     repo_confirmed: true
     gh:
-      stars: 23
+      stars: 27
       forks: 4
-      issues: 3
+      issues: 4
       language: JavaScript
       license: MIT
       pushed_at: '2026-11-11T14:45:03Z'
       archived: false
       slug: 133563825as-ai/dsh-api-dashboard
-      stars_label: '23'
+      stars_label: '27'
       forks_label: '4'
       pushed_date: '2026-11-11'
-      updated_label: 14 天前有提交
-      updated_days: 14
+      updated_label: 15 天前有提交
+      updated_days: 15
       stale: false
     entry_updated: '2026-11-06'
     category_label: 模型与计费
@@ -47,6 +47,7 @@ params:
     weight: 1010
     url: /plugins/dsh-api-dashboard/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 在 Web GUI 输入框下方实时显示各平台 API 余额与本会话/子代理的 token 消耗估算，覆盖多家国内外平台；未开放余额接口的如实显示「未开放」、不伪造数字。

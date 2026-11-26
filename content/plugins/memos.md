@@ -27,19 +27,19 @@ params:
     notes: DSH 支持本地（memos-local-plugin，curl 安装脚本）与云端（@memtensor/memos-cloud-dsh-plugin）两种插件；README 另注 token 节省等数字，本站不引用具体数值。
     repo_confirmed: true
     gh:
-      stars: 12444
-      forks: 1129
-      issues: 150
+      stars: 12520
+      forks: 1132
+      issues: 132
       language: TypeScript
       license: Apache-2.0
-      pushed_at: '2026-11-18T12:09:12Z'
+      pushed_at: '2026-11-26T07:00:30Z'
       archived: false
       slug: MemTensor/MemOS
-      stars_label: 12.4k
-      forks_label: '1129'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: 12.5k
+      forks_label: '1132'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 记忆与知识
@@ -47,6 +47,7 @@ params:
     weight: 1020
     url: /plugins/memos/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 MemOS 是面向 LLM 与 AI Agent 的记忆操作系统，统一长期记忆的存储 / 检索 / 管理，原生支持 DeepSeek Harness 的本地与云端插件，提供自动召回、后台捕获、混合检索与本地记忆查看器。

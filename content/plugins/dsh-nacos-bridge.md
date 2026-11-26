@@ -52,6 +52,7 @@ params:
     weight: 1010
     url: /plugins/dsh-nacos-bridge/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 一个很薄的桥接插件：从 Nacos 3.2+ AI 注册中心读取已登记的 MCP 服务器与 A2A Agent Card，挂载成 DSH 里能直接调用的工具；新能力只要注册到 Nacos，无需改代码。

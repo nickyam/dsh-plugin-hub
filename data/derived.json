@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-26 17:28",
-  "generated_date": "2026-11-26",
+  "generated_at": "2026-11-27 06:43",
+  "generated_date": "2026-11-27",
   "stats": {
     "plugins": 146,
     "repos_confirmed": 146,
     "categories": 13,
-    "stars_median": 622,
-    "stars_median_label": "622",
-    "gh_synced": 133,
-    "gh_synced_at": "2026-11-19T08:48:10Z"
+    "stars_median": 608,
+    "stars_median_label": "608",
+    "gh_synced": 145,
+    "gh_synced_at": "2026-11-26T22:42:56Z"
   },
   "categories": [
     {

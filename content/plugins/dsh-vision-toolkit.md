@@ -29,19 +29,19 @@ params:
     notes: README 注明其视觉能力来自打包固定的上游项目 agent-vision-toolkit，本仓库负责 DSH 原生集成。另提供 headless / desktop profile 的同形安装命令。
     repo_confirmed: true
     gh:
-      stars: 946
+      stars: 951
       forks: 49
-      issues: 6
+      issues: 2
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-13T12:53:31Z'
+      pushed_at: '2026-11-21T10:08:49Z'
       archived: false
       slug: Anionex/dsh-vision-toolkit
-      stars_label: '946'
+      stars_label: '951'
       forks_label: '49'
-      pushed_date: '2026-11-13'
-      updated_label: 12 天前有提交
-      updated_days: 12
+      pushed_date: '2026-11-21'
+      updated_label: 5 天前有提交
+      updated_days: 5
       stale: false
     entry_updated: '2026-11-08'
     category_label: 视觉与设计
@@ -49,6 +49,7 @@ params:
     weight: 1010
     url: /plugins/dsh-vision-toolkit/
   generated: true
+lastmod: '2026-11-08'
 ---
 
 DSH 原生视觉工具包：为纯文本模型赋予图像问答、长截图 OCR、UI 还原与 GUI 视觉任务能力，把视觉工具与 Skill 无缝嵌入 Profile、会话、设置、Artifacts 与 Web UI。

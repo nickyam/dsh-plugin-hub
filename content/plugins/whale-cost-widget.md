@@ -31,19 +31,19 @@ params:
     notes: 基础记账功能无需配置令牌即可用；泡泡/音效/交互均可自定义。npm 包名为 dsh-whale-widget，也可从桌面端 plugin_manager 安装。
     repo_confirmed: true
     gh:
-      stars: 7335
-      forks: 242
-      issues: 172
+      stars: 7480
+      forks: 250
+      issues: 182
       language: JavaScript
       license: MIT
       pushed_at: '2026-10-11T12:25:55Z'
       archived: false
       slug: MeteorNOX/DeepSeek-Balance-Whale-Widget
-      stars_label: '7335'
-      forks_label: '242'
+      stars_label: '7480'
+      forks_label: '250'
       pushed_date: '2026-10-11'
       updated_label: 1 个月前有提交
-      updated_days: 45
+      updated_days: 46
       stale: false
     entry_updated: '2026-11-19'
     category_label: 模型与计费
@@ -51,6 +51,7 @@ params:
     weight: 1060
     url: /plugins/whale-cost-widget/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 在 DSH Web/桌面端右下角常驻一只可拖拽吸附的小鲸鱼挂件，监控 DeepSeek 账户余额、今日已用与每轮对话消耗；泡泡、音效与交互可完全自定义，基础记账无需配置令牌。

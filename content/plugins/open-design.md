@@ -27,19 +27,19 @@ params:
     notes: 接入 DSH 原生运行时：先装官方 dsh CLI，再运行 `od agent setup deepseek-harness` 安装 / 修复 OD 连接组件；也可用 `od mcp install deepseek-harness` 一键装 MCP。macOS 桌面版因系统 od 命令冲突，建议从 App 内 Settings → MCP server 复制路径。
     repo_confirmed: true
     gh:
-      stars: 108341
-      forks: 12296
-      issues: 1427
+      stars: 109668
+      forks: 12378
+      issues: 1463
       language: TypeScript
       license: Apache-2.0
-      pushed_at: '2026-11-19T01:09:09Z'
+      pushed_at: '2026-11-26T18:05:14Z'
       archived: false
       slug: nexu-io/open-design
-      stars_label: 108.3k
-      forks_label: 12.3k
-      pushed_date: '2026-11-19'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: 109.7k
+      forks_label: 12.4k
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 视觉与设计
@@ -47,6 +47,7 @@ params:
     weight: 1030
     url: /plugins/open-design/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 首个协作式 AI 设计智能体工作区，本地优先、开源：用简要需求驱动 Agent 生成遵循设计系统的原型、演示稿、图表与视频。

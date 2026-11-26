@@ -7,6 +7,8 @@
   var list = document.getElementById('site-search-results');
   var empty = document.getElementById('site-search-empty');
   var hint = document.getElementById('site-search-hint');
+  var more = document.getElementById('site-search-more');
+  var moreLink = document.getElementById('site-search-more-link');
   var base = (document.documentElement.getAttribute('data-base') || '/');
   var data = null;
   var loading = false;
@@ -77,17 +79,17 @@
     if (!list) return;
     list.textContent = '';
     cursor = -1;
+    if (more) more.hidden = true;
     if (!q) {
       if (hint) hint.textContent = '按名字、别名、标签、功能亮点搜；↑↓ 选择，回车打开。';
       if (empty) empty.hidden = true;
       return;
     }
-    results = (data || [])
+    var matched = (data || [])
       .map(function (item) { return { item: item, s: score(item, q) }; })
       .filter(function (x) { return x.s > 0; })
-      .sort(function (a, b) { return b.s - a.s; })
-      .slice(0, 12)
-      .map(function (x) { return x.item; });
+      .sort(function (a, b) { return b.s - a.s; });
+    results = matched.slice(0, 12).map(function (x) { return x.item; });
 
     if (!results.length) {
       if (hint) hint.textContent = '没有命中。';
@@ -98,7 +100,20 @@
       return;
     }
     if (empty) empty.hidden = true;
-    if (hint) hint.textContent = '找到 ' + results.length + ' 条，↑↓ 选择，回车打开。';
+    if (hint) {
+      hint.textContent = matched.length > results.length
+        ? '共 ' + matched.length + ' 条，这里先给前 ' + results.length + ' 条。'
+        : '找到 ' + results.length + ' 条，↑↓ 选择，回车打开。';
+    }
+    // 结果被 12 条上限截断时，给一个通往插件库的出口（那边按 ?q= 接着筛）
+    if (more && moreLink) {
+      if (matched.length > results.length) {
+        moreLink.href = base + '?q=' + encodeURIComponent((input && input.value.trim()) || q);
+        more.hidden = false;
+      } else {
+        more.hidden = true;
+      }
+    }
 
     results.forEach(function (item, idx) {
       var li = document.createElement('li');

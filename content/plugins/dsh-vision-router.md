@@ -34,19 +34,19 @@ params:
     notes: 仓库 ysr666/dsh-vision-router（GitHub 搜索同名项目很多，本条取 README 详实、带 dsh-recommend 认证与 DeepGuard 审计标记、★ 数遥遥领先的 ysr666 主仓）。文章把它在视频里的叫法写作 deepstare，插件包名是 dsh-vision-router。README 有专门的「Data flow and strict local-only use」小节说明数据外发。
     repo_confirmed: true
     gh:
-      stars: 1286
-      forks: 63
-      issues: 4
+      stars: 1305
+      forks: 64
+      issues: 8
       language: JavaScript
       license: MIT
-      pushed_at: '2026-11-19T01:27:38Z'
+      pushed_at: '2026-11-26T16:20:58Z'
       archived: false
       slug: ysr666/dsh-vision-router
-      stars_label: '1286'
-      forks_label: '63'
-      pushed_date: '2026-11-19'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '1305'
+      forks_label: '64'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-17'
     category_label: 视觉与设计
@@ -54,6 +54,7 @@ params:
     weight: 1040
     url: /plugins/dsh-vision-router/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 给纯文本 DSH 模型装上「眼睛」：内置免 Key 视觉链与十多个像素级视觉工具，看图问答、目标定位、裁剪取色、抠图、截图等都能当普通工具调用来做；需要时点输入框旁的 👁 Vision 开关，图进入会话日志、可溯源可复现。

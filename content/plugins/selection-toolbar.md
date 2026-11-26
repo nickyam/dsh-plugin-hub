@@ -37,8 +37,8 @@ params:
       stars_label: '6'
       forks_label: '0'
       pushed_date: '2026-11-13'
-      updated_label: 12 天前有提交
-      updated_days: 12
+      updated_label: 13 天前有提交
+      updated_days: 13
       stale: false
     entry_updated: '2026-11-06'
     category_label: 界面与体验
@@ -46,6 +46,7 @@ params:
     weight: 1010
     url: /plugins/selection-toolbar/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 在 DSH 会话里划选文本，选区上方浮现浮动工具栏（复制 / 引用 / 询问 / 解释 / 翻译 / 总结 //btw）；AI 动作默认就地弹窗，可一键「转到主线」把回答发进当前对话。

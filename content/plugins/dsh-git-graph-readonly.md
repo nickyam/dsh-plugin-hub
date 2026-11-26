@@ -33,7 +33,7 @@ params:
     notes: 安装走 GitHub Release 的 tgz，不走 npm——npm 上那个 dsh-git-graph 属于另一位作者（enoughpower），是可写版本。要求 DSH 0.2.2-rc.1、Node.js 24.9+、宿主装 git 与 pnpm；0.6.1 起还对表过 0.2.1-rc.5 + Cordis 4.0.5，版本跨度大，装前先看 release 说明。默认搜索有 2000 提交的预算，超出会在界面上标注。
     repo_confirmed: true
     gh:
-      stars: 6
+      stars: 7
       forks: 0
       issues: 0
       language: TypeScript
@@ -41,11 +41,11 @@ params:
       pushed_at: '2026-11-15T12:08:52Z'
       archived: false
       slug: WhitePlusMS/dsh-git-graph
-      stars_label: '6'
+      stars_label: '7'
       forks_label: '0'
       pushed_date: '2026-11-15'
-      updated_label: 10 天前有提交
-      updated_days: 10
+      updated_label: 11 天前有提交
+      updated_days: 11
       stale: false
     entry_updated: '2026-11-19'
     category_label: 工具与能力
@@ -53,6 +53,7 @@ params:
     weight: 1010
     url: /plugins/dsh-git-graph-readonly/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 DSH Web 原生右侧栏里的只读 Git 可视化：浏览提交拓扑、分支、标签、文件改动与历史版本源码，不需要 API Key，也不往会话里塞消息。刻意只读——不 stage、不 commit、不 push。

@@ -33,19 +33,19 @@ params:
     notes: README 示例安装固定 @oh-story/dsh@0.1.23 与 dsh@0.2.1-rc.5；社区插件，与 DeepSeek 无隶属关系。
     repo_confirmed: true
     gh:
-      stars: 788
-      forks: 113
-      issues: 12
-      language: Python
+      stars: 837
+      forks: 119
+      issues: 27
+      language: JavaScript
       license: MIT
-      pushed_at: '2026-11-17T18:56:42Z'
+      pushed_at: '2026-11-24T18:16:30Z'
       archived: false
       slug: zenstory-ai/oh-story-dsh
-      stars_label: '788'
-      forks_label: '113'
-      pushed_date: '2026-11-17'
-      updated_label: 8 天前有提交
-      updated_days: 8
+      stars_label: '837'
+      forks_label: '119'
+      pushed_date: '2026-11-24'
+      updated_label: 2 天前有提交
+      updated_days: 2
       stale: false
     entry_updated: '2026-11-06'
     category_label: 内容创作与办公
@@ -53,6 +53,7 @@ params:
     weight: 1020
     url: /plugins/oh-story-dsh/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 oh-story-dsh 是 DeepSeek Harness（DSH）的社区插件，把小说、短剧、互动游戏与视频解说四大创作工作台打包集成进 DSH Web，为本地作品目录提供专业的故事创作、改编与生产工具（与 DeepSeek 无隶属关系）。

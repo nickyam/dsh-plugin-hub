@@ -28,19 +28,19 @@ params:
     notes: 移动端 App 需配合宿主端的 dsh-plugin-mobile-gateway（0.11.2+）使用；iOS 走 TestFlight、Android 走 GitHub Releases APK（独立的第三方客户端，与 DeepSeek 无隶属关系）。
     repo_confirmed: true
     gh:
-      stars: 823
-      forks: 89
-      issues: 11
+      stars: 845
+      forks: 92
+      issues: 10
       language: Kotlin
       license: MIT
-      pushed_at: '2026-11-18T12:52:49Z'
+      pushed_at: '2026-11-25T15:13:08Z'
       archived: false
       slug: Clarklevis1995/dsh-mobile
-      stars_label: '823'
-      forks_label: '89'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '845'
+      forks_label: '92'
+      pushed_date: '2026-11-25'
+      updated_label: 昨天有提交
+      updated_days: 1
       stale: false
     entry_updated: '2026-11-06'
     category_label: 移动端与远程
@@ -48,6 +48,7 @@ params:
     weight: 1010
     url: /plugins/dsh-mobile/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 Whaleness（dsh-mobile）是 DeepSeek Harness 的第三方原生移动客户端，Android 与 iOS 通过 Kotlin Multiplatform 共享核心逻辑，经宿主端的 dsh-plugin-mobile-gateway 以 WebSocket 把工作区、会话、实时回复与 Agent 轨迹带到手机。

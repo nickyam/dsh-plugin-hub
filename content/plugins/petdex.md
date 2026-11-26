@@ -27,19 +27,19 @@ params:
     notes: 宠物为社区提交的粉丝作品，版权归提交者所有；Petdex 不主张任何底层 IP。源码 MIT，宠物素材按提交者声明许可。
     repo_confirmed: true
     gh:
-      stars: 4373
-      forks: 218
-      issues: 26
+      stars: 4380
+      forks: 217
+      issues: 6
       language: TypeScript
       license: MIT
-      pushed_at: '2026-10-10T22:07:22Z'
+      pushed_at: '2026-11-22T04:19:23Z'
       archived: false
       slug: crafter-station/petdex
-      stars_label: '4373'
-      forks_label: '218'
-      pushed_date: '2026-10-10'
-      updated_label: 1 个月前有提交
-      updated_days: 46
+      stars_label: '4380'
+      forks_label: '217'
+      pushed_date: '2026-11-22'
+      updated_label: 4 天前有提交
+      updated_days: 4
       stale: false
     entry_updated: '2026-11-06'
     category_label: 娱乐与彩蛋
@@ -47,6 +47,7 @@ params:
     weight: 1010
     url: /plugins/petdex/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 面向 Codex、Claude Code、DSH、Hermes、OpenCode、Gemini 等多平台的动画宠物公共画廊，一个命令安装宠物，桌面应用让宠物悬浮并随 Agent 活动实时反应。

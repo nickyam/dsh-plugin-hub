@@ -35,7 +35,7 @@ params:
     notes: 表情作者是 B 站「可以叫我云大人/雾雪」（kiriyuki.com），代码 Apache-2.0、素材 CC BY-NC 4.0——非商用可以，商用得另谈授权。322 张是仓库徽章上的数，会随资源更新变。它同时提供 MCP server 形态，所以不用 DSH 也能接到别的地方。dsh 0.2 也可以在网页侧栏「插件 → 添加插件」里填包名安装。
     repo_confirmed: true
     gh:
-      stars: 202
+      stars: 211
       forks: 3
       issues: 0
       language: TypeScript
@@ -43,11 +43,11 @@ params:
       pushed_at: '2026-11-08T14:55:26Z'
       archived: false
       slug: Loping151/dsh-nekowhale-stickers
-      stars_label: '202'
+      stars_label: '211'
       forks_label: '3'
       pushed_date: '2026-11-08'
-      updated_label: 17 天前有提交
-      updated_days: 17
+      updated_label: 18 天前有提交
+      updated_days: 18
       stale: false
     entry_updated: '2026-11-19'
     category_label: 娱乐与彩蛋
@@ -55,6 +55,7 @@ params:
     weight: 1010
     url: /plugins/dsh-nekowhale-stickers/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 给 DSH 一个能查的表情包知识库：322 张大肥鱼 / GPT娘 表情逐张标好场景、动作、梗和双人表情的对象方向，按情绪检索，还能在本地拼文字表情包。它解决的问题是「AI 只有一个语气」。

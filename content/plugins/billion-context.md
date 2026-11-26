@@ -33,19 +33,19 @@ params:
     notes: 仓库 ranxianglei/billion-context（master 分支），npm 包 billion-context，README 标 v0.1.208 附近（文章写 0.1.208，npm 实时版本以 registry 为准）。它不是纯 DSH 插件：架在任意编程助手与模型 API 之间重写 Anthropic/OpenAI 流，DSH 只是其支持客户端之一，本站按「可在 DSH 安装使用」收录。全局 CLI 安装为 `npm install -g billion-context --prefix=~/.local`（bili 命令落在 ~/.local/bin）；DSH 专用安装见上。native 插件（bili plugin install）与 standalone 扩展（billion-context-pi 等）互斥，同时开会双重压缩，安装器会自动切换并备份原配置到 .bili-bak。文章（wx-huxiaomo）的「省 5 倍 token / 下载 175 万」为文章与安装界面口径，本站不采信为独立结论。
     repo_confirmed: true
     gh:
-      stars: 7861
-      forks: 636
-      issues: 1331
+      stars: 8521
+      forks: 692
+      issues: 1531
       language: TypeScript
       license: NOASSERTION
-      pushed_at: '2026-11-19T01:34:43Z'
+      pushed_at: '2026-11-26T21:28:13Z'
       archived: false
       slug: ranxianglei/billion-context
-      stars_label: '7861'
-      forks_label: '636'
-      pushed_date: '2026-11-19'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '8521'
+      forks_label: '692'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-17'
     category_label: 协作与工作流
@@ -53,6 +53,7 @@ params:
     weight: 1070
     url: /plugins/billion-context/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 架在编程助手与模型 API 之间的上下文压缩代理：由模型自己决定何时压缩、压缩什么，把已消耗的对话增量压缩成分层摘要且可逆、对前缀缓存友好，让小上下文窗口也能跑月级长会话；DSH 只是它支持的 20 多个客户端之一。

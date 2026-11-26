@@ -16,6 +16,7 @@ params:
     repo: https://github.com/863683348/dsh-gov
     install: dsh plugin --profile web add dsh-gov
     summary: Agent 治理套件（企业配套）：基于策略的工具门控（允许/拒绝/询问）、只追加的结构化 JSONL 审计日志，以及按 agent 的 token 配额与周期预算，状态持久化在 $DSH_HOME/gov/。
+    flag: 与 DSH Go（Android 客户端）名字只差一个字母，是两个完全不同的项目；本条是服务端的治理/审计插件
     features:
     - 策略门禁：按工具/agent/工作区配置 allow / deny / ask 规则，支持通配符与优先级，平局 fail-closed（deny > ask > allow）
     - 结构化审计日志：每次工具调用的决定与结果写入只追加的 JSONL（audit.jsonl），可查询可导出，刻意不记参数
@@ -46,6 +47,7 @@ params:
     weight: 1010
     url: /plugins/dsh-gov/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 Agent 治理套件（企业配套）：基于策略的工具门控（允许/拒绝/询问）、只追加的结构化 JSONL 审计日志，以及按 agent 的 token 配额与周期预算，状态持久化在 $DSH_HOME/gov/。

@@ -27,19 +27,19 @@ params:
     notes: 本仓库 master 分支为 Claude Code 版（v6），其 README 给出的安装命令是 Claude Code 插件；DSH 版（v8 写作工作台）在 README 中被引用但未在此 README 给出安装命令，需前往其产品主页获取，故 install 留空。
     repo_confirmed: true
     gh:
-      stars: 8012
-      forks: 1298
+      stars: 8087
+      forks: 1303
       issues: 43
       language: Python
       license: GPL-3.0
-      pushed_at: '2026-11-14T14:31:07Z'
+      pushed_at: '2026-11-19T13:44:13Z'
       archived: false
       slug: lingfengQAQ/webnovel-writer
-      stars_label: '8012'
-      forks_label: '1298'
-      pushed_date: '2026-11-14'
-      updated_label: 11 天前有提交
-      updated_days: 11
+      stars_label: '8087'
+      forks_label: '1303'
+      pushed_date: '2026-11-19'
+      updated_label: 7 天前有提交
+      updated_days: 7
       stale: false
     entry_updated: '2026-11-06'
     category_label: 内容创作与办公
@@ -47,6 +47,7 @@ params:
     weight: 1010
     url: /plugins/webnovel-writer/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 Webnovel Writer 是一套面向长篇连载的网文辅助创作系统，用结构化的章节管理、角色 / 设定记忆与一致性审查，缓解 AI 写作中的遗忘与前后矛盾，支持 200 万字量级连载。

@@ -28,19 +28,19 @@ params:
     notes: 源码位于官方 deepseek-harness 单体仓的 packages/mcp/mcp-client；所有 MCP server 默认不启用，且启动命令是沙箱外的可执行代码，请只接可信服务器。MCP resources 与 prompts 当前不被桥接。
     repo_confirmed: true
     gh:
-      stars: 283640
-      forks: 35193
+      stars: 287592
+      forks: 35908
       issues: 0
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-18T12:48:10Z'
+      pushed_at: '2026-11-22T11:00:05Z'
       archived: false
       slug: deepseek-ai/deepseek-harness
-      stars_label: 283.6k
-      forks_label: 35.2k
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: 287.6k
+      forks_label: 35.9k
+      pushed_date: '2026-11-22'
+      updated_label: 4 天前有提交
+      updated_days: 4
       stale: false
     entry_updated: '2026-11-06'
     category_label: 集成与迁移
@@ -48,6 +48,7 @@ params:
     weight: 1010
     url: /plugins/dsh-mcp-client/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 官方 MCP 客户端桥接插件：连接外部 Model Context Protocol 服务器，把它们的工具注册到 ctx.tools，供模型像原生工具一样调用（工具名形如 mcp__github__create_issue）。支持 stdio 与 streamable-http 两种传输，自带断线自动重连。

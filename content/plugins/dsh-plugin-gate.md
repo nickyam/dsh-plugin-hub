@@ -46,6 +46,7 @@ params:
     weight: 1020
     url: /plugins/dsh-plugin-gate/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 DSH 的安装安全门与数据保护守卫：在 dsh plugin add 之前用 60 条静态规则扫描插件源码（恶意脚本/凭证窃取/混淆/网络回连），并用 gate_guard 在执行 rm -rf 类危险命令前拦截或要求确认。

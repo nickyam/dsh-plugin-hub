@@ -26,19 +26,19 @@ params:
     flag: 与 anywhere-labs 版是两个项目
     repo_confirmed: true
     gh:
-      stars: 19838
-      forks: 678
-      issues: 176
+      stars: 20061
+      forks: 696
+      issues: 180
       language: JavaScript
       license: MIT
-      pushed_at: '2026-11-18T14:18:02Z'
+      pushed_at: '2026-11-26T10:15:30Z'
       archived: false
       slug: dataelement/dsh-desktop
-      stars_label: 19.8k
-      forks_label: '678'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: 20.1k
+      forks_label: '696'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 界面与体验
@@ -46,6 +46,7 @@ params:
     weight: 1010
     url: /plugins/dsh-desktop-dataelement/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 DSH Desktop by Dataelem（DSH 客户端）是 Dataelem 团队基于 DeepSeek Harness 框架打造的桌面 Agent 应用，增强主流模型适配、Office 模板、启动恢复与工作台，提供开箱即用的桌面体验。

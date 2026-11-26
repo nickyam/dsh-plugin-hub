@@ -28,19 +28,19 @@ params:
     notes: README 标注当前版本 0.9.2，安装命令钉该版本；若用 npx 前置则写作 npx -y @deepseek-ai/dsh plugin --profile web add dsh-plugin-shop@0.9.2。安装后需重启 dsh 以加载插件。
     repo_confirmed: true
     gh:
-      stars: 666
-      forks: 3
-      issues: 1
+      stars: 665
+      forks: 4
+      issues: 2
       language: TypeScript
       license: Apache-2.0
-      pushed_at: '2026-11-17T10:32:21Z'
+      pushed_at: '2026-11-26T11:08:15Z'
       archived: false
       slug: LivXue/dsh-plugin-shop
-      stars_label: '666'
-      forks_label: '3'
-      pushed_date: '2026-11-17'
-      updated_label: 8 天前有提交
-      updated_days: 8
+      stars_label: '665'
+      forks_label: '4'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 插件市场与发现
@@ -48,6 +48,7 @@ params:
     weight: 1010
     url: /plugins/dsh-plugin-shop/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 DeepSeek Harness 的插件商店：在 DSH 内提供浏览、安装、启用、禁用与更新插件的市场 UI，每次目录变更都提交进 Git 可追溯。

@@ -49,6 +49,7 @@ params:
     weight: 1020
     url: /plugins/dsh-wechat/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 把微信联系人接到 DeepSeek Harness 会话的桥接插件：每个微信发送者对应一个独立的 DSH 会话（wechat-），各自保留上下文；扫码绑定一次后，在微信里发消息即可驱动 Agent，电脑息屏时也能值守。

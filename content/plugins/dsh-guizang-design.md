@@ -31,16 +31,16 @@ params:
     notes: 社区项目（作者 op7418，非 DeepSeek 官方）。需 DSH 0.2.1-rc.2 及以上、0.3.0 以下；包名即 dsh-guizang-design，也支持 github:op7418/dsh-guizang-design 指定版本。卡片出图依赖 Playwright Chromium，网页导出 PDF 与长图依赖本机 Chrome。文章（wx-feishu）称其「一篇文章变网页、图文卡片或封面」与此一致。
     repo_confirmed: true
     gh:
-      stars: 976
-      forks: 54
-      issues: 5
+      stars: 1071
+      forks: 60
+      issues: 8
       language: HTML
       license: AGPL-3.0
       pushed_at: '2026-11-05T07:44:48Z'
       archived: false
       slug: op7418/dsh-guizang-design
-      stars_label: '976'
-      forks_label: '54'
+      stars_label: '1071'
+      forks_label: '60'
       pushed_date: '2026-11-05'
       updated_label: 21 天前有提交
       updated_days: 21
@@ -51,6 +51,7 @@ params:
     weight: 1010
     url: /plugins/dsh-guizang-design/
   generated: true
+lastmod: '2026-11-09'
 ---
 
 把「歸藏」的内容生产 skill 装进 DSH，提供网页 PPT、图文卡片、网页排版、去 AI 味，外加学你写作语气的语气档案，共用一套设计系统。

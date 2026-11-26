@@ -35,14 +35,14 @@ params:
       issues: 0
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-03T08:40:20Z'
+      pushed_at: '2026-11-25T07:51:45Z'
       archived: false
       slug: aa2246740/dsh-autoresearch
       stars_label: '0'
       forks_label: '0'
-      pushed_date: '2026-11-03'
-      updated_label: 23 天前有提交
-      updated_days: 23
+      pushed_date: '2026-11-25'
+      updated_label: 昨天有提交
+      updated_days: 1
       stale: false
     entry_updated: '2026-11-17'
     category_label: 协作与工作流
@@ -50,6 +50,7 @@ params:
     weight: 1010
     url: /plugins/dsh-autoresearch/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 给 DSH 加一个持久化的自动研究/实验循环：创建一个目标后 Agent 连续修改、测量、保留或回滚，会话顶部面板显示结果；开工前先建本地保护，能用 Git 就存基线、否则打私有快照，翻车自动恢复受保护文件。

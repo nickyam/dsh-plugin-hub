@@ -28,19 +28,19 @@ params:
     notes: 本站按独立条目收录，不混进插件市场。列表本身无需安装，DSH 主机可直接把其 /index.json 作为市场来源读取。
     repo_confirmed: true
     gh:
-      stars: 25103
-      forks: 8959
-      issues: 358
+      stars: 25703
+      forks: 9865
+      issues: 440
       language: JavaScript
       license: CC0-1.0
-      pushed_at: '2026-11-18T23:20:19Z'
+      pushed_at: '2026-11-26T19:54:41Z'
       archived: false
       slug: awesome-dsh-plugin/awesome-dsh-plugin
-      stars_label: 25.1k
-      forks_label: '8959'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: 25.7k
+      forks_label: '9865'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 插件市场与发现
@@ -48,6 +48,7 @@ params:
     weight: 1020
     url: /plugins/awesome-dsh-plugin/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 DeepSeek Harness 插件精选列表（awesome list）：按功能分类收录社区插件，并编译成可被 DSH 主机读取的插件市场索引（/index.json），在官方「插件 → 发现」标签页与 plugin_market 工具中浏览。

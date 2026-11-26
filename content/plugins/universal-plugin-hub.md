@@ -35,19 +35,19 @@ params:
     notes: 支持 DSH Desktop 与 CLI web profile；桌面端在 Settings → Plugins → Add plugin 里填包名或仓库 URL。同一插件同时带 Claude 与 Codex 描述符时以 Claude 为准。数据落在 ~/.dsh/agent-skills/universal-plugin-hub/（installed/ 装好的插件、market/ 源缓存、state.json 源登记），运行时补丁走 profiles/<profile>/cordis.patch.yml；卸载插件时它带进来的技能、MCP、Hooks、LSP 注册会一并移除。星标只有十几个，不能当「用的人多」的证据，但功能边界写得很清楚。
     repo_confirmed: true
     gh:
-      stars: 12
+      stars: 15
       forks: 1
       issues: 0
       language: JavaScript
       license: MIT
-      pushed_at: '2026-11-16T15:37:34Z'
+      pushed_at: '2026-11-22T06:29:52Z'
       archived: false
       slug: Ultmebius/universal-plugin-hub
-      stars_label: '12'
+      stars_label: '15'
       forks_label: '1'
-      pushed_date: '2026-11-16'
-      updated_label: 9 天前有提交
-      updated_days: 9
+      pushed_date: '2026-11-22'
+      updated_label: 4 天前有提交
+      updated_days: 4
       stale: false
     entry_updated: '2026-11-19'
     category_label: 插件市场与发现
@@ -55,6 +55,7 @@ params:
     weight: 1020
     url: /plugins/universal-plugin-hub/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 把 Claude Code 与 Codex 的插件生态接进 DSH：浏览官方 Claude 目录、添加 Claude / Codex 市场或任意 Git 仓库当插件源，再把插件、Skills 与 MCP 服务放在同一个界面里管。

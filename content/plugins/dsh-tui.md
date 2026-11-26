@@ -26,19 +26,19 @@ params:
     notes: 安装即启用，卸载不留补丁；README 提及其正从挂载插件演进为带独立入口的 app，需匹配当前验证线版本的 DSH。
     repo_confirmed: true
     gh:
-      stars: 7944
-      forks: 377
-      issues: 157
+      stars: 8314
+      forks: 392
+      issues: 161
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-19T01:16:10Z'
+      pushed_at: '2026-11-26T22:28:51Z'
       archived: false
       slug: ccch1mneyyy/dsh-TUI
-      stars_label: '7944'
-      forks_label: '377'
-      pushed_date: '2026-11-19'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '8314'
+      forks_label: '392'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 界面与体验
@@ -46,6 +46,7 @@ params:
     weight: 1010
     url: /plugins/dsh-tui/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 DSH 的交互式终端 UI，内置像素鲸鱼头部、实时工作状态、流式思考、双击 Esc 时间回溯、上下文进度条与 TPS 仪表盘；零核心改动，仅消费 DSH 公共导出。

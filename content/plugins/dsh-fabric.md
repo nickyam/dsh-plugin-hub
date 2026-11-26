@@ -47,6 +47,7 @@ params:
     weight: 1010
     url: /plugins/dsh-fabric/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 DSH 的「万物皆插件」运行时原语：用一套声明式 DSL 把所有可扩展接缝（工具、技能、提示段、事件监听、LLM 适配器、子代理、Web 路由等）收敛成可编程、可查询、可撤销的扩展能力，让「插件扩展插件」成为可能。

@@ -28,19 +28,19 @@ params:
     notes: 官方自带网页搜索属开箱即用能力，不在收录范围。桌面端在 Plugins → Add plugin 输入 @liustack/modsearch。Key 存于 ~/.modsearch/config.json（权限 0600，显示时脱敏）。
     repo_confirmed: true
     gh:
-      stars: 1017
-      forks: 42
+      stars: 1047
+      forks: 44
       issues: 1
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-15T14:28:49Z'
+      pushed_at: '2026-11-25T19:12:24Z'
       archived: false
       slug: liustack/modsearch
-      stars_label: '1017'
-      forks_label: '42'
-      pushed_date: '2026-11-15'
-      updated_label: 10 天前有提交
-      updated_days: 10
+      stars_label: '1047'
+      forks_label: '44'
+      pushed_date: '2026-11-25'
+      updated_label: 昨天有提交
+      updated_days: 1
       stale: false
     entry_updated: '2026-11-08'
     category_label: 工具与能力
@@ -48,6 +48,7 @@ params:
     weight: 1030
     url: /plugins/modsearch/
   generated: true
+lastmod: '2026-11-08'
 ---
 
 DSH 里最强的免费联网搜索插件：网页搜索、X（推特）搜索、单页抓取，默认走 Firecrawl Keyless（每月 1000 免费额度，免注册免 API Key），为多模型补上原生缺失的联网能力，返回结构化 JSON 证据。

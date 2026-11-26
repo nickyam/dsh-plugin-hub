@@ -27,19 +27,19 @@ params:
     notes: 需 @deepseek-ai/dsh 0.2.0-rc.2 及以上（各版本支持见 docs/compatibility.md）；数值采用 dsh 自身 Token 计量投影，与内置计量器一致。UI 支持简中 / 英 / 日等多语言（切换需 dsh 0.2.2+）。
     repo_confirmed: true
     gh:
-      stars: 5287
-      forks: 233
-      issues: 0
+      stars: 5536
+      forks: 250
+      issues: 3
       language: TypeScript
       license: Apache-2.0
-      pushed_at: '2026-11-18T17:15:31Z'
+      pushed_at: '2026-11-26T09:48:04Z'
       archived: false
       slug: bowenliang123/dsh-context
-      stars_label: '5287'
-      forks_label: '233'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '5536'
+      forks_label: '250'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 协作与工作流
@@ -47,6 +47,7 @@ params:
     weight: 1090
     url: /plugins/dsh-context/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 一站式 DeepSeek Harness 上下文可视化插件，提供 Context 面板、浏览器、侧栏与命令，透视上下文的组成、演进、压缩与多 Agent 协作。

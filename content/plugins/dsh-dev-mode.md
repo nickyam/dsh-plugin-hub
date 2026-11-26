@@ -41,8 +41,8 @@ params:
       stars_label: '4'
       forks_label: '0'
       pushed_date: '2026-11-14'
-      updated_label: 11 天前有提交
-      updated_days: 11
+      updated_label: 12 天前有提交
+      updated_days: 12
       stale: false
     entry_updated: '2026-11-17'
     category_label: 协作与工作流
@@ -50,6 +50,7 @@ params:
     weight: 1010
     url: /plugins/dsh-dev-mode/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 给 DSH 装上开发模式：几句大白话讲需求，它走开工体检 → 写计划 → 独立评审 → 后台实现与自测 → 独立测试 → 修复 → 复测 → 交付的多阶段流水线；你说不清要什么时先给三个具体示例让你选，全程最多问一轮。

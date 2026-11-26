@@ -34,7 +34,7 @@ params:
     notes: '还没进推荐插件市场的精选目录，市场里搜或粘仓库 URL 可能装不上，按 README 用 Release 包更稳（发布包是现成的 JS、没有安装构建脚本）。作者写得相当克制：离线接口测试与真实安装验收不等于真实 B 站写入实测，这一版没对真实账号发过写请求；人格那部分只是上下文与记忆累积，没做参数微调，也不宣称长期效果已通过。1.8.0 起每日取稿默认关闭，要显式设 enableDailyFetching: true 才会在北京时间 21:30 起跑、22:00 截止，最多存 2 份新稿，且宿主得一直开着。'
     repo_confirmed: true
     gh:
-      stars: 276
+      stars: 282
       forks: 17
       issues: 19
       language: JavaScript
@@ -42,11 +42,11 @@ params:
       pushed_at: '2026-11-17T13:34:55Z'
       archived: false
       slug: InariNGT-Ofiicial/dsh-bili-humanism
-      stars_label: '276'
+      stars_label: '282'
       forks_label: '17'
       pushed_date: '2026-11-17'
-      updated_label: 8 天前有提交
-      updated_days: 8
+      updated_label: 9 天前有提交
+      updated_days: 9
       stale: false
     entry_updated: '2026-11-19'
     category_label: 记忆与知识
@@ -54,6 +54,7 @@ params:
     weight: 1010
     url: /plugins/dsh-bili-humanism/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 和 bili-scroll 配套的另一半：一个负责看，一个负责收。它读 B 站的稿与画面、写每日信笺，把「认识的修正」按天选一句存进 human-world.md，让人格慢慢受影响；点赞、投币、收藏、历史四个写入开关各自独立且默认关闭，评论入口不开放。

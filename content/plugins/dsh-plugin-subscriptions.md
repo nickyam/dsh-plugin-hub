@@ -28,19 +28,19 @@ params:
     notes: 从 GitHub 源码安装写作 dsh plugin --profile web add github:V1ki/dsh-plugin-subscriptions。Claude 若本地有 Claude Code 会话可直接导入凭证，否则走浏览器 OAuth。
     repo_confirmed: true
     gh:
-      stars: 622
-      forks: 113
-      issues: 31
+      stars: 642
+      forks: 118
+      issues: 21
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-17T09:04:09Z'
+      pushed_at: '2026-11-25T08:10:34Z'
       archived: false
       slug: V1ki/dsh-plugin-subscriptions
-      stars_label: '622'
-      forks_label: '113'
-      pushed_date: '2026-11-17'
-      updated_label: 9 天前有提交
-      updated_days: 9
+      stars_label: '642'
+      forks_label: '118'
+      pushed_date: '2026-11-25'
+      updated_label: 昨天有提交
+      updated_days: 1
       stale: false
     entry_updated: '2026-11-06'
     category_label: 免费模型与接入
@@ -48,6 +48,7 @@ params:
     weight: 1010
     url: /plugins/dsh-plugin-subscriptions/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 把已有的 ChatGPT (Codex)、Claude、Grok (X Premium)、GitHub Copilot、Google Antigravity 订阅通过 OAuth 接进 DSH，复用同一批模型，无需申请或填写 API Key。

@@ -34,18 +34,18 @@ params:
     repo_confirmed: true
     gh:
       stars: 3
-      forks: 0
-      issues: 2
+      forks: 1
+      issues: 3
       language: TypeScript
       license: MIT
       pushed_at: '2026-09-08T16:03:30Z'
       archived: false
       slug: zhaoxuejie/dsh-plugin-academic-paper
       stars_label: '3'
-      forks_label: '0'
+      forks_label: '1'
       pushed_date: '2026-09-08'
       updated_label: 2 个月前有提交
-      updated_days: 78
+      updated_days: 79
       stale: false
     entry_updated: '2026-11-17'
     category_label: 内容创作与办公
@@ -53,6 +53,7 @@ params:
     weight: 1010
     url: /plugins/dsh-plugin-academic-paper/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 学术文献插件：检索交给插件、综述交给模型——从 arXiv 与 Semantic Scholar 真实数据源检索并生成 GB/T 7714 / APA / BibTeX 引用，引用格式本地确定性生成，从机制上杜绝模型编造论文、作者与 DOI。

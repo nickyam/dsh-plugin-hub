@@ -43,7 +43,7 @@ params:
       forks_label: '2'
       pushed_date: '2026-08-16'
       updated_label: 3 个月前有提交
-      updated_days: 101
+      updated_days: 102
       stale: false
     entry_updated: '2026-11-17'
     category_label: 界面与体验
@@ -51,6 +51,7 @@ params:
     weight: 1010
     url: /plugins/dsh-mic-input/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 给 DSH Web 输入框加一个麦克风按钮，点一下开始口述、识别结果实时落进输入框；全部在浏览器里用内置 Web Speech API 完成，无服务端、无 API Key、无需下载模型，音频只发给浏览器自带的语音服务。

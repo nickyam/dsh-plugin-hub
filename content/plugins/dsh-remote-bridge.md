@@ -42,8 +42,8 @@ params:
       stars_label: '6'
       forks_label: '0'
       pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      updated_label: 8 天前有提交
+      updated_days: 8
       stale: false
     entry_updated: '2026-11-17'
     category_label: 移动端与远程
@@ -51,6 +51,7 @@ params:
     weight: 1010
     url: /plugins/dsh-remote-bridge/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 把 DSH 内核的私有 remote 协议翻译成版本化 REST，让 dsh-companion 等受信手机客户端在离开电脑后仍能用同一套聊天、会话、文件与设备能力；桌面端在设置里提供「手机设置」面板，远程访问默认关闭、不启用时只监听回环地址。

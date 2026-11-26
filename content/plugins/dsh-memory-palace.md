@@ -35,7 +35,7 @@ params:
     notes: 'CLI 推荐直接 github: 装（lib/ 构建产物随仓库分发，装即用）；锁版本加 #v1.8.6 这类 tag，改源码则 clone 后 npm run build 再本地 add。日志由子代理维护、永不过期不删，当证据层留着。兼容 DSH 0.2.2-rc.1 与桌面版。如果你本来就在用 WorkBuddy 的记忆目录，它会优先写那一份——等于两边共享同一套 MEMORY.md。'
     repo_confirmed: true
     gh:
-      stars: 29
+      stars: 31
       forks: 3
       issues: 0
       language: JavaScript
@@ -43,11 +43,11 @@ params:
       pushed_at: '2026-11-17T14:18:38Z'
       archived: false
       slug: lovezi0/dsh-memory-palace
-      stars_label: '29'
+      stars_label: '31'
       forks_label: '3'
       pushed_date: '2026-11-17'
-      updated_label: 8 天前有提交
-      updated_days: 8
+      updated_label: 9 天前有提交
+      updated_days: 9
       stale: false
     entry_updated: '2026-11-19'
     category_label: 记忆与知识
@@ -55,6 +55,7 @@ params:
     weight: 1010
     url: /plugins/dsh-memory-palace/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 把 WorkBuddy 那套「记忆就是一个你能直接编辑的 Markdown 文件」搬进 DSH：用户级偏好与项目级约定分层存、跨会话常驻注入，AI 每轮自己整理今日日志，你随时能打开文件改它。

@@ -28,19 +28,19 @@ params:
     notes: README 注明 Web UI 里直接粘贴图片可能被宿主拒绝（DeepSeek 适配器硬编码 inputModalities 为 text），read_image 在 Web UI 已验证端到端可用。仓库另含兄弟插件 ModSearch（免费网页搜索）。
     repo_confirmed: true
     gh:
-      stars: 5028
-      forks: 158
-      issues: 4
+      stars: 5093
+      forks: 157
+      issues: 3
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-15T14:40:34Z'
+      pushed_at: '2026-11-25T19:14:12Z'
       archived: false
       slug: liustack/modlens
-      stars_label: '5028'
-      forks_label: '158'
-      pushed_date: '2026-11-15'
-      updated_label: 10 天前有提交
-      updated_days: 10
+      stars_label: '5093'
+      forks_label: '157'
+      pushed_date: '2026-11-25'
+      updated_label: 昨天有提交
+      updated_days: 1
       stale: false
     entry_updated: '2026-11-08'
     category_label: 视觉与设计
@@ -48,6 +48,7 @@ params:
     weight: 1040
     url: /plugins/modlens/
   generated: true
+lastmod: '2026-11-08'
 ---
 
 DSH 上能力最强的视觉插件（作者自称）：给 DeepSeek、GLM 等纯文本模型外挂视觉能力，粘贴图片即得结构化 JSON 证据（OCR、版面、语义），无需先存文件再传路径。

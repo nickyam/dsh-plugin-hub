@@ -47,6 +47,7 @@ params:
     weight: 1010
     url: /plugins/dsh-api-balance/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 轻量的 DeepSeek 原生 API 余额与用量插件：在输入框下方常驻余额胶囊，提供详情弹窗、/balance 命令与 api_balance 工具，只依赖 DeepSeek 官方余额接口。

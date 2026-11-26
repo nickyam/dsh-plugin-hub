@@ -7,7 +7,7 @@ description: "DSH（DeepSeek Harness）插件的安装方式：命令行 add、p
 
 ## 先分清你用的是哪一套
 
-同一个插件，装进哪套运行配置是由 `profile` 决定的。本站 126 条安装命令里，112 条带 `--profile`，出现过三种取值：`web`、`desktop`、`dsh-tui`。
+同一个插件，装进哪套运行配置是由 `profile` 决定的。本站绝大多数安装命令都带 `--profile`，最常见的是 `web`，另外也会见到 `desktop`、`dsh-tui` 和个别插件作者自己起的名字。
 
 | 你的用法 | 通常对应的 profile | 说明 |
 | --- | --- | --- |

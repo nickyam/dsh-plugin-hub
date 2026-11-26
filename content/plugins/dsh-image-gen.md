@@ -32,19 +32,19 @@ params:
     notes: 仓库 shanliuling/dsh-image-gen，npm 包 dsh-image-gen，README 标 v0.11.3（npm registry 实时版本，文章只写 @latest）。README 安装命令带 pnpm 前缀（pnpm dsh plugin ...），本站 install 用等价的无前缀写法；从源码装可用 `dsh plugin --profile web add git+https://github.com/shanliuling/dsh-image-gen.git`。生图为 BYOK 模式，支持订阅账号登录复用额度。文章（wx-shixiang）称「500+ Prompt 灵感库、多模型对比、订阅免 Key」，与 README 一致。
     repo_confirmed: true
     gh:
-      stars: 1624
-      forks: 138
-      issues: 9
+      stars: 1772
+      forks: 146
+      issues: 7
       language: TypeScript
       license: Apache-2.0
-      pushed_at: '2026-11-18T10:01:37Z'
+      pushed_at: '2026-11-24T15:37:31Z'
       archived: false
       slug: shanliuling/dsh-image-gen
-      stars_label: '1624'
-      forks_label: '138'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '1772'
+      forks_label: '146'
+      pushed_date: '2026-11-24'
+      updated_label: 2 天前有提交
+      updated_days: 2
       stale: false
     entry_updated: '2026-11-17'
     category_label: 视觉与设计
@@ -52,6 +52,7 @@ params:
     weight: 1020
     url: /plugins/dsh-image-gen/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 让 Agent 本身学会画图的原生图像创作插件：一句话批量生成整组图，看得懂画布上的涂鸦与圈选，自动从 500+ 灵感库套用风格模板，另有 Studio 工作台、多模型横向对比与图库；已有 ChatGPT / Grok / Google 订阅可免额外 API Key 生图。

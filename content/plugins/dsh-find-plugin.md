@@ -26,7 +26,7 @@ params:
     notes: 官方唯一的发现机制是 GitHub topic dsh-plugin，第三方目录站均非官方。
     repo_confirmed: true
     gh:
-      stars: 237
+      stars: 241
       forks: 14
       issues: 34
       language: JavaScript
@@ -34,11 +34,11 @@ params:
       pushed_at: '2026-09-25T14:58:33Z'
       archived: false
       slug: awesome-dsh-plugin/dsh-find-plugin
-      stars_label: '237'
+      stars_label: '241'
       forks_label: '14'
       pushed_date: '2026-09-25'
       updated_label: 2 个月前有提交
-      updated_days: 61
+      updated_days: 62
       stale: false
     entry_updated: '2026-11-06'
     category_label: 插件市场与发现
@@ -46,6 +46,7 @@ params:
     weight: 1020
     url: /plugins/dsh-find-plugin/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 一个「找插件的插件」——让 Agent 在对话里搜索 GitHub 上的 DSH 插件生态，按星标排序返回结果，每条带一行简介和可直接执行的安装命令。

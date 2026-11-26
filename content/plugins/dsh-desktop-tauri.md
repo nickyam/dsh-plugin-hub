@@ -27,19 +27,19 @@ params:
     notes: License 为 MIT 附加非商用条款；本地运行不等于完全离线（模型服务、插件安装、更新与桌宠预设素材仍可能联网）。
     repo_confirmed: true
     gh:
-      stars: 3673
-      forks: 239
-      issues: 22
+      stars: 3752
+      forks: 244
+      issues: 25
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-19T00:15:27Z'
+      pushed_at: '2026-11-25T02:16:07Z'
       archived: false
       slug: dsh-tauri/deepseek-harness-desktop
-      stars_label: '3673'
-      forks_label: '239'
-      pushed_date: '2026-11-19'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '3752'
+      forks_label: '244'
+      pushed_date: '2026-11-25'
+      updated_label: 昨天有提交
+      updated_days: 1
       stale: false
     entry_updated: '2026-11-06'
     category_label: 界面与体验
@@ -47,6 +47,7 @@ params:
     weight: 1010
     url: /plugins/dsh-desktop-tauri/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 基于 Tauri 2 的轻量桌面版，在桌面上运行 DeepSeek Harness，无需手动安装 Node.js / pnpm / Docker，零环境配置，预置插件。

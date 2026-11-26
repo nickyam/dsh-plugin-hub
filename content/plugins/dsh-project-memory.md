@@ -26,19 +26,19 @@ params:
     notes: 无原生构建、无向量数据库；79MB 本地嵌入表（leanvec）默认安装运行，缺失时回退纯词法召回。装后需重启 dsh web。
     repo_confirmed: true
     gh:
-      stars: 32
-      forks: 3
+      stars: 35
+      forks: 4
       issues: 0
       language: JavaScript
       license: MIT
-      pushed_at: '2026-11-18T15:54:58Z'
+      pushed_at: '2026-11-24T12:17:06Z'
       archived: false
       slug: 00080000/dsh-project-memory
-      stars_label: '32'
-      forks_label: '3'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '35'
+      forks_label: '4'
+      pushed_date: '2026-11-24'
+      updated_label: 2 天前有提交
+      updated_days: 2
       stale: false
     entry_updated: '2026-11-06'
     category_label: 记忆与知识
@@ -46,6 +46,7 @@ params:
     weight: 1010
     url: /plugins/dsh-project-memory/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 为 DSH agent 建一份能活过单次会话的项目记忆：自动持久化任务清单与读过的文件/文档/代码符号，会话被压缩或切换后仍可检索，并带 path:line 引用以便溯源。

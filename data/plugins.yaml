@@ -1163,6 +1163,7 @@
   repo: https://github.com/863683348/dsh-gov
   install: dsh plugin --profile web add dsh-gov
   summary: Agent 治理套件（企业配套）：基于策略的工具门控（允许/拒绝/询问）、只追加的结构化 JSONL 审计日志，以及按 agent 的 token 配额与周期预算，状态持久化在 $DSH_HOME/gov/。
+  flag: 与 DSH Go（Android 客户端）名字只差一个字母，是两个完全不同的项目；本条是服务端的治理/审计插件
   features:
   - 策略门禁：按工具/agent/工作区配置 allow / deny / ask 规则，支持通配符与优先级，平局 fail-closed（deny > ask > allow）
   - 结构化审计日志：每次工具调用的决定与结果写入只追加的 JSONL（audit.jsonl），可查询可导出，刻意不记参数
@@ -1221,7 +1222,7 @@
   category: integration
   status: community
   repo: https://github.com/YYTbit/dsh-plugin-claude-bridge
-  install: dsh plugin --profile your-profile add dsh-plugin-claude-bridge
+  install: dsh plugin --profile web add dsh-plugin-claude-bridge
   summary: 把 Claude Code 的记忆、技能与全局配置桥接进 DeepSeek Harness——零迁移、完全兼容：直接读取 Claude Code 标准文件位置，无需迁移脚本、文件拷贝或软链接。
   features:
   - 读取 ~/.claude/projects//memory/*.md，将记忆按优先级（feedback > project > reference > user）排序后注入为动态 system-prompt 上下文，新记忆即时生效
@@ -1504,7 +1505,7 @@
   category: fun
   status: community
   repo: https://github.com/omdsh-dev/dsh-gomoku
-  install: dsh plugin --profile demo add github:omdsh-dev/dsh-gomoku
+  install: dsh plugin --profile web add github:omdsh-dev/dsh-gomoku
   summary: 在 DSH 里和 AI 下五子棋，也可以让两个 AI 对局看谁棋力更强；15×15 棋盘嵌在侧边栏，每步落子来自 LLM 纯推理判断，黑/白提示词可编辑、推理过程可见。
   features:
   - 人机与双 AI 对弈：执黑/执白/双 AI 三种模式，15×15 无禁手规则
@@ -1584,7 +1585,7 @@
   category: fun
   status: community
   repo: https://github.com/PC2005-cloud/dsh-pet
-  install: dsh plugin --profile <profile> add dsh-pet
+  install: dsh plugin --profile web add dsh-pet
   summary: 一只住在 DeepSeek Harness 里的桌面宠物，100+ 段透明动画资产，可多开、拖拽甩抛、脱离浏览器独立运行，也能自定义宠物种类（pet pack）。
   features:
   - 100+ 段动画资产：待机、走动漫游、玩耍、工作、对话等由视频动画驱动，可换成自己的素材
@@ -1718,7 +1719,7 @@
   - 技能管理
   - 多Agent
   - 技能市场
-  flag: 社区项目（Apache-2.0，非 DeepSeek 官方）
+  flag: 社区项目（Apache-2.0，非 DeepSeek 官方）；管的是 skills，与 dsh-skin-manager（管皮肤）名字相近但毫无关系
   notes: 仓库 MichengAI/dsh-skills-manager（master 分支），npm 包 @michengai/dsh-skills-manager，README 版本 1.4.11（文章写 1.2.26，以仓库为准）。兼容 DSH 0.2.x 全系列（>=0.2.0-rc.1 <0.3.0-0）；仍用 0.1.x 的须改装 1.1.23，不要装 @latest。装后在「设置 → 技能」使用，需重启 DSH 并刷新页面。支持带路径前缀的反向代理部署（API 按 document.baseURI 相对解析）。与 dsh-client-ui-skill-explorer 功能有重叠，一般装一个即可。
   refs:
   - wx-shuzishanshui
@@ -2586,7 +2587,7 @@
   - Android
   - 移动端
   - 远程接管
-  flag: 是客户端不是插件，安装走 APK 侧载
+  flag: 是客户端不是插件，安装走 APK 侧载；与 dsh-gov（治理/审计插件）名字只差一个字母，别搜错
   notes: Android 8.0（API 26）以上，发布包只有 arm64-v8a 与 x86_64，没有 32 位 ARM；包名 io.github.ccch1mneyyy.dsh_app，targetSdk 28，以侧载为目标、不是 Google Play 配置。远程通道有明确缺口：只支持图片附件、App 内打不开网页版、插件管理只能开关、不支持 DS Bot 与对话记录导出。手机操控只对正常模式下的本机引擎开放，不打扰模式要 Android 14+ 加 Shizuku 或自连 ADB，熄屏会停任务、闲置 3 分钟自动结束。默认开启匿名使用统计，可在「设置 → 隐私与分享」关。iOS 版还在开发与真机测试，没有公开安装包。项目自己声明与 DeepSeek 无隶属关系，AGPL-3.0。
   refs:
   - wx-yuanma
@@ -2611,7 +2612,7 @@
   - QQ
   - 消息通道
   - 手机派活
-  flag: 腾讯官方出品，不是 DeepSeek 官方；装到 qqbot profile
+  flag: 腾讯官方出品，不是 DeepSeek 官方；示例里装到独立的 qqbot profile（换成你自己已有的 profile 名即可，别和日常 web 环境混装）
   notes: npm 包全名是 @tencent-connect/dsh-qqbot，漏掉作用域装不上。README 建议升到 0.4.0 以上再扫码——更早版本的终端二维码可能渲染错位。手动装要自备 QQBOT_APPID 与 QQBOT_SECRET。别和其他同名的社区 dsh-qqbot（zaofan-make、Oblivious0214、wang-22-code 等都叫这个名字）搞混，认 tencent-connect 这个组织。
   refs:
   - wx-yuanma
@@ -2817,7 +2818,7 @@
   category: tool
   status: community
   repo: https://github.com/helloHub1212/dsh-windows-mcp
-  install: dsh plugin --profile add github:helloHub1212/dsh-windows-mcp
+  install: dsh plugin --profile web add github:helloHub1212/dsh-windows-mcp
   summary: 把 CursorTouch/Windows-MCP 挂到 DSH 自带的 MCP 客户端桥上，让 agent 能截屏、读界面元素、点按输入、读写剪贴板与注册表——那些只有图形界面、没有命令行入口的老软件，也能被它操作。
   features:
   - 18 个桌面工具：屏幕截图、UI 树快照、鼠标键盘输入、剪贴板、进程与注册表，注册成 mcp__windows__* 供模型调用
@@ -2925,7 +2926,7 @@
   category: integration
   status: community
   repo: https://github.com/THEWOLFWALKER/dsh-notifier
-  install: dsh plugin add dsh-notifier@latest --profile <profile-name>
+  install: dsh plugin --profile web add dsh-notifier@latest
   summary: 人不在电脑前，也能知道 agent 在干什么、并且在它等你的时候回一句。28 个出站通道、6 个入站通道，任务完成 / 出错 / 等审批 / 长任务状态都能推出来，也能从手机批准、回答 ask_user、接着对话或切会话。
   features:
   - 推出去：任务完成、需要审批、报错、长任务状态，以及模型主动发起的通知
@@ -3011,6 +3012,10 @@
   - 标签页管理：列出/跟随/关闭/新开/前进后退刷新；截图需受控标签页在前台且窗口聚焦
   - 划选即引用：页面里划选的文字连同来源与不可信内容边界一起进下一条消息；失败可点「继续生成」
   - 侧栏内发图：宿主声明图片能力时可发 PNG/JPEG/WebP/GIF；受保护页面与扩展商店只读元数据，不碰 DOM
+  tags:
+  - 浏览器
+  - 桥接
+  - 扩展
   flag: 安装脚本来自 Lum1104 旧仓（GitHub 已 301 到 omdsh-dev），与已收的 CJYLZS/dsh-browser 不是同一个项目，别装重了
   notes: 仓库 github.com/Lum1104/dsh-browser 在 GitHub API 里 full_name 已返回 omdsh-dev/dsh-browser（重定向），README 的安装脚本仍写 Lum1104 路径，故 install 按 README 原文保留。npm 上无 scope 的 dsh-browser 属另一个项目（即本站已收的 @cjylzs/dsh-browser），本仓库没发 npm 包，只能走安装器。前置 Node.js>=24.9.0、Corepack/pnpm、Chrome 125+ 或 Firefox 140+；工作区固定 DSH 0.2.2-rc.2，其他版本未声明支持。安装器打开 chrome://extensions 后需手动加载或重新加载扩展，dsh 正在运行要重启。README 附 2026-08-18 的 60 次配对评测（扩展 30/30 成功、平均 5.32s，对比 Playwright 6.67s）属作者口径，本站不采信为独立结论。
   refs:
@@ -3032,6 +3037,10 @@
   - Q 版侧栏角色、视口装饰与 favicon 三表情随机；安装为 Web App 固定托腮图
   - 加载失败时默认用双女仆立绘装饰原生错误报告，窄屏重排
   - 素材随包同源路由分发，激活不依赖任何远程 URL
+  tags:
+  - 皮肤
+  - 主题
+  - 界面增强
   flag: 美术资源 CC BY-NC-SA 4.0 禁止商业使用；与 dsh-web-all 自带皮肤中心的适配版不能叠装
   notes: 官方仓库 Small-tailqwq/dsh-deep-whale 的 maid-atelier 子目录，npm 包 @smalltailqwq/dsh-client-ui-skin-maid-atelier（另两套皮肤 orca-link 与管理器 skin-manager 分开建条目）。README 明确：已装 @linxin666/dsh-web-all 的用户请在 dsh-web 自带皮肤中心装适配版，standalone 版与皮肤中心版样式契约不同，不能同 profile 叠装。同时装多套皮肤必须装并保持 skin-manager 启用，否则界面错乱；首次装完重启一次 DSH 再切。素材署名链为一创上善（鲸鱼娘原作）、二创 ZipZipPipe（DeepSeek 元素女仆鲸鱼娘）、三创作者本人，代码 MIT、美术禁商用。文中「3.1k 星」属文章口径，本站以 GitHub API 为准。
   refs:
@@ -3054,6 +3063,10 @@
   - 侧栏顶部十状态角色（待机/同步/工作/授权/输入/审阅/完成/失败/离线/就绪）多帧动作
   - 峰谷定价红绿灯按北京时间显色，工作日高峰前 20 分钟黄灯预警，展开侧栏可看详情卡
   - 对第三方插件侧栏入口有注入格式要求（data-dsh-part 或 data-plugin-entry），形态不符的按钮会被当宿主原生控件处理
+  tags:
+  - 皮肤
+  - 主题
+  - 界面增强
   flag: 美术资源 CC BY-NC-SA 4.0 禁止商业使用；与 dsh-web-all 自带皮肤中心的适配版不能叠装
   notes: 官方仓库 Small-tailqwq/dsh-deep-whale 的 orca-link 子目录，npm 包 @smalltailqwq/dsh-client-ui-skin-orca-link（另见 maid-atelier 与 skin-manager 条目）。README 明确：已装 @linxin666/dsh-web-all 的用户请在 dsh-web 自带皮肤中心装适配版，不能与 standalone 版同 profile 叠装。同时装多套皮肤必须装并保持 skin-manager 启用。侧栏入口注入要求详见子包 README，装了第三方插件发现入口消失时先查这一条。代码 MIT、美术 CC BY-NC-SA 4.0 禁商用。
   refs:
@@ -3076,6 +3089,10 @@
   - DSH 0.1.7+ 自动停用不支持当前版本的皮肤，点「切换」确认后按皮肤版本+DSH 版本精确放行
   - 管理页可把官方预设插件图标切成当前皮肤提供的图形，默认关闭
   - 窄屏下再点一次已打开的全局面板入口即可回到对话
+  tags:
+  - 皮肤
+  - 主题
+  - 换肤
   flag: 本身不是皮肤；只装一套皮肤时可选，同时装多套皮肤则必须装并一直保持启用
   notes: 官方仓库 Small-tailqwq/dsh-deep-whale 的 skin-manager 子目录，npm 包 @smalltailqwq/dsh-client-ui-skin-deep-whale-manager。README 明确：已装 @linxin666/dsh-web-all 的用户请用 dsh-web 自带皮肤中心及其适配皮肤，不要装本管理器，两套发行不能同 profile 叠装。与皮肤一起装、首次装完重启一次 DSH；两套皮肤都装时首次重启会显示官方默认，这是管理器把它们都关掉等用户去选，属预期行为。管理器自身 MIT 许可，皮肤美术资源另有 CC BY-NC-SA 4.0 禁商用条款（见各皮肤条目）。
   refs:
@@ -3096,6 +3113,10 @@
   - 发声打断：说话即停止当前朗读，once 打断续说，切会话停朗读
   - 自动发送与打断行为可在设置中调整；设置存放位置按 DSH 版本区分（0.1.6 用官方设置存储，0.1.7+ 用插件自有文件）
   - v0.7.39 补丁版跟进到 dsh 0.2.2-rc.5 的锚点、类型与隔离运行时复核（仓库自述，非真实麦克风/全平台验收）
+  tags:
+  - 语音
+  - 语音输入
+  - 朗读
   flag: 同类同名项目很多（Hericaneeeeee、wuhe888、bin-r00t 等），本站取 npm 正式包 dsh-voice-mode 对应的 qishuilalala 主仓
   notes: 官方仓库 qishuilalala/dsh-voice-mode，npm 包 dsh-voice-mode，安装后按实际部署方式重启宿主。GitHub 上另有 dsh-voice-mode-custom、dsh-voice-mode-plus、dsh-voice-mode-headless、dsh-voice-mode-desktop 等多个非官方分支或同名实现，包名与 README 特征（流式识别入草稿 + 按句朗读 + 开口打断 + 本地识别免 Key）锁定 qishuilalala 主仓。朗读效果取决于模型、设备、回声消除与网络，README 不承诺全平台可用。文章只强调语音输入省时间，实际插件功能远不止输入。
   refs:
@@ -3116,6 +3137,10 @@
   - 开机动画：一段有声短片，片尾交叉溶解进 DSH 界面，点击画面随时跳过
   - 零依赖；npm 预编译包 dsh-video-skin@0.1.6，也可从 github:Something11235/dsh-video-skin#main 装源码
   - 桌面版（Electron）索引注入表只在宿主启动时收集一次，装完必须完全退出并重新打开 DSH，刷新页面不够
+  tags:
+  - 皮肤
+  - 主题
+  - 视频
   flag: 文章描述的「大肥鱼说欢迎回家、界面里走动工作休息」README 未证实，本站按 README 只记视频背景+有声开机动画
   notes: 官方仓库 Something11235/dsh-video-skin，npm 包 dsh-video-skin（latest 0.1.6），安装栏按 README 钉 0.1.6（不带版本号则跟随 latest）。卸载用 `dsh plugin --profile <profile> remove dsh-video-skin` 或仓库的 scripts/uninstall.ps1。文中把开机动画内容具象成「大肥鱼说欢迎回家」及界面内走动/工作/休息的桌宠动画，README 并无此描述，属文章口径不采信。
   refs:
@@ -3137,6 +3162,10 @@
   - 检索沿用官方设计：不自动塞上下文，由 agent 按需通过 memsearch 官方 memory-recall skill 检索
   - 可配置 memoryDir、collection、injectSessionStatus、capture、captureMinPromptLength（默认 10，短问候不捕获）、maxCaptureChars（默认 8000）、summarizePlugin、indexAfterCapture
   - 记忆日志默认落 ~/.memsearch/memory/，设 MEMSEARCH_DIR 时落 $MEMSEARCH_DIR/memory/；配置需要在 cordis.patch.yml 用 insert 列表追加插件实例
+  tags:
+  - 记忆
+  - 向量检索
+  - 自动召回
   flag: npm 包名是 dsh-memsearch，文章写的 MemSearch-dsh 返回 404；跨平台记忆是 memsearch 生态能力，本插件只负责 DSH 侧的写与召回
   notes: 官方仓库 clouwer/dsh-memsearch，npm 包 dsh-memsearch；文章包名 MemSearch-dsh 在 npm 查无此包（404），按 README 用 dsh-memsearch。文中「记忆在 Claude Code、Codex、DSH、OpenClaw、OpenCode 之间自由流动、同一台机器同一项目文件夹下通用」描述的是 memsearch 本体生态，本插件 README 只声明「对齐官方 Codex/Claude Code memsearch 插件的自动写入与召回」，不承诺跨平台，卡片按 README 写。安装后还需在 cordis.patch.yml 用 insert 列表追加配置才能启用自动捕获，不是装完即生效。
   refs:

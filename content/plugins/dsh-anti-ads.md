@@ -38,7 +38,7 @@ params:
       forks_label: '0'
       pushed_date: '2026-09-01'
       updated_label: 2 个月前有提交
-      updated_days: 85
+      updated_days: 86
       stale: false
     entry_updated: '2026-11-06'
     category_label: 娱乐与彩蛋
@@ -46,6 +46,7 @@ params:
     weight: 1010
     url: /plugins/dsh-anti-ads/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 DSH Web 广告拦截器，用四层独立防御拦截 dsh-ads 插件的所有广告位；只针对 dsh-ads，右下角小徽章记录拦掉的弹层数。

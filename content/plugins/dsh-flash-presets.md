@@ -32,19 +32,19 @@ params:
     notes: 仓库 LarryE135/dsh-flash-presets（GitHub 搜索「flash-presets deepseek」精确命中、★ 最高），npm 包 dsh-flash-presets（registry 200，README 载 latest=0.3.1）。README 说明仓库内版本 0.3.2（2026-11-16）尚未发 npm/Release，故 install 固定到已发布的 0.3.1，避免装到有问题的 0.2.5。文章（wx-jiaweisi）实测省 23%、把浏览器检查次数从 30 降到 17，属作者单次口径，本站不采信数字，只按其「管住停手」的机制描述写功能。
     repo_confirmed: true
     gh:
-      stars: 212
+      stars: 233
       forks: 14
-      issues: 1
+      issues: 0
       language: JavaScript
       license: MIT
-      pushed_at: '2026-11-18T14:22:04Z'
+      pushed_at: '2026-11-26T17:09:37Z'
       archived: false
       slug: LarryE135/dsh-flash-presets
-      stars_label: '212'
+      stars_label: '233'
       forks_label: '14'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-17'
     category_label: 模型与计费
@@ -52,6 +52,7 @@ params:
     weight: 1010
     url: /plugins/dsh-flash-presets/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 专为 DeepSeek V4.1 Flash 调校的 DSH agent 预设包：更短上下文窗口 + 工具裁切 + 低频工具优化 + run_code 合并调用，并内置一份「干活规矩」（如 20 轮内完成、长结果只看末尾、检查通过就交付），在不改变模型能力上限的前提下用更低预算完成能力范围内的任务。

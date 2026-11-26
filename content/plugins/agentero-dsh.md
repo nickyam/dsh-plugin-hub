@@ -32,18 +32,18 @@ params:
     notes: 社区项目（组织 poco-ai，非 DeepSeek 官方；原文署名作者 Phil-Fan 为贡献者，主项目仓库在 poco-ai/Agentero）。npm 包名为 agentero-dsh，对应仓库名是 agentero-dsh-plugin（两者不一致，以此仓库为准）。需 DSH 0.2.x、Node.js 24.9+、一个 Agentero Vault 与 Agentero CLI；装完在侧栏打开 agentero-dsh 并配置 CLI 与知识库目录。文章（wx-feishu）称其「读论文、高亮、翻译、记笔记在一个窗口完成」，与 README 一致。
     repo_confirmed: true
     gh:
-      stars: 237
-      forks: 11
-      issues: 4
+      stars: 260
+      forks: 16
+      issues: 7
       language: TypeScript
-      pushed_at: '2026-11-12T02:59:24Z'
+      pushed_at: '2026-11-24T09:51:18Z'
       archived: false
       slug: poco-ai/agentero-dsh-plugin
-      stars_label: '237'
-      forks_label: '11'
-      pushed_date: '2026-11-12'
-      updated_label: 14 天前有提交
-      updated_days: 14
+      stars_label: '260'
+      forks_label: '16'
+      pushed_date: '2026-11-24'
+      updated_label: 2 天前有提交
+      updated_days: 2
       stale: false
     entry_updated: '2026-11-09'
     category_label: 记忆与知识
@@ -51,6 +51,7 @@ params:
     weight: 1020
     url: /plugins/agentero-dsh/
   generated: true
+lastmod: '2026-11-09'
 ---
 
 把本地优先的科研工作台 Agentero 接进 DSH，在对话旁开文献库与 PDF 阅读器，让 Agent 查论文、划词翻译、写笔记、整理结论，资料留在本机 Vault。

@@ -26,19 +26,19 @@ params:
     notes: 社区同名实现不止一个（另有 piaobo123/dsh-memory-evolve 等），本条目以 csyangwen 版为准；装后需在设置里按需开启各项能力。
     repo_confirmed: true
     gh:
-      stars: 859
-      forks: 88
-      issues: 41
+      stars: 908
+      forks: 92
+      issues: 43
       language: JavaScript
       license: MIT
       pushed_at: '2026-10-29T14:45:44Z'
       archived: false
       slug: csyangwen/dsh-memory-evolve
-      stars_label: '859'
-      forks_label: '88'
+      stars_label: '908'
+      forks_label: '92'
       pushed_date: '2026-10-29'
-      updated_label: 27 天前有提交
-      updated_days: 27
+      updated_label: 28 天前有提交
+      updated_days: 28
       stale: false
     entry_updated: '2026-11-06'
     category_label: 记忆与知识
@@ -46,6 +46,7 @@ params:
     weight: 1010
     url: /plugins/dsh-memory-evolve/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 给 DSH 补上跨会话长期记忆与后台自我进化：五轨分层记忆、四轨待办、内部会话团队、外部 AI 派单与记忆同步，多数能力默认关闭、按需开启。

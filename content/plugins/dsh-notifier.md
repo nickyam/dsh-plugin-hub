@@ -19,7 +19,7 @@ params:
     category: integration
     status: community
     repo: https://github.com/THEWOLFWALKER/dsh-notifier
-    install: dsh plugin add dsh-notifier@latest --profile <profile-name>
+    install: dsh plugin --profile web add dsh-notifier@latest
     summary: 人不在电脑前，也能知道 agent 在干什么、并且在它等你的时候回一句。28 个出站通道、6 个入站通道，任务完成 / 出错 / 等审批 / 长任务状态都能推出来，也能从手机批准、回答 ask_user、接着对话或切会话。
     features:
     - 推出去：任务完成、需要审批、报错、长任务状态，以及模型主动发起的通知
@@ -32,19 +32,19 @@ params:
     notes: 作者在 README 顶上挂了「正在进行大规模重构，近期更新可能推迟」。装法是 dsh plugin add dsh-notifier@latest --profile <名>，装完重启一次 DSH 让 Host 插件与 client.js 加载。它和几个近名包不是一回事：xzk-abao/dsh-notify-im 是钉钉 / 企微 / 飞书 webhook 的三事件通知，YanYunCY/dsh-gateway-notify 是移植自 magpie 的多通道推送，c-ling/dsh-plugin-notify 又是另一套；要「推 + 回」这个组合，认 THEWOLFWALKER 这份。
     repo_confirmed: true
     gh:
-      stars: 65
-      forks: 16
-      issues: 7
+      stars: 64
+      forks: 15
+      issues: 8
       language: JavaScript
       license: MIT
       pushed_at: '2026-10-31T10:10:16Z'
       archived: false
       slug: THEWOLFWALKER/dsh-notifier
-      stars_label: '65'
-      forks_label: '16'
+      stars_label: '64'
+      forks_label: '15'
       pushed_date: '2026-10-31'
-      updated_label: 25 天前有提交
-      updated_days: 25
+      updated_label: 26 天前有提交
+      updated_days: 26
       stale: false
     entry_updated: '2026-11-19'
     category_label: 集成与迁移
@@ -52,6 +52,7 @@ params:
     weight: 1010
     url: /plugins/dsh-notifier/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 人不在电脑前，也能知道 agent 在干什么、并且在它等你的时候回一句。28 个出站通道、6 个入站通道，任务完成 / 出错 / 等审批 / 长任务状态都能推出来，也能从手机批准、回答 ask_user、接着对话或切会话。

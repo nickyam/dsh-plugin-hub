@@ -291,6 +291,11 @@ def main():
             "weight": p["weight"],
             "params": {"plugin": payload, "generated": True},
         }
+        # sitemap 的 lastmod 用「这一条内容最后被改动的日期」，而不是构建时间或提交时间：
+        # 每次部署都会重写全部 md，若交给 git 时间，整站 190 多个 URL 的 lastmod 会一起跳到今天，
+        # 爬虫那边就等于每次都说「全站刚更新」，信号彻底失真。
+        if p.get("entry_updated"):
+            front["lastmod"] = p["entry_updated"]
         write_front_matter(pdir / f"{p['id']}.md", front, p["summary"])
 
     # ── 搜索索引 ────────────────────────────────────────────────

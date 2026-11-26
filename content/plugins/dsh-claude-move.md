@@ -27,19 +27,19 @@ params:
     notes: README 声明：社区插件，与 DeepSeek 官方无关；唯一仓库为 github.com/PerryLink/dsh-claude-move（Gitee 为镜像）。导入仅读取源目录、不改动 Claude 源数据。
     repo_confirmed: true
     gh:
-      stars: 33
+      stars: 36
       forks: 3
       issues: 0
       language: JavaScript
       license: Apache-2.0
-      pushed_at: '2026-11-18T15:55:27Z'
+      pushed_at: '2026-11-24T10:50:37Z'
       archived: false
       slug: PerryLink/dsh-claude-move
-      stars_label: '33'
+      stars_label: '36'
       forks_label: '3'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      pushed_date: '2026-11-24'
+      updated_label: 2 天前有提交
+      updated_days: 2
       stale: false
     entry_updated: '2026-11-06'
     category_label: 集成与迁移
@@ -47,6 +47,7 @@ params:
     weight: 1010
     url: /plugins/dsh-claude-move/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 把 Claude Code、Codex、OpenCode 和 Hermes 的历史迁进 DeepSeek Harness——会话可续聊、记忆自动带上、技能与命令照常可用；四来源迁移向导加会话导入器，只复制、不移动、不删除源文件，写入前先过审批。

@@ -33,19 +33,19 @@ params:
     notes: '安装有个前置动作最容易漏——esbuild、onnxruntime-node、protobufjs 这几个依赖要在安装期构建，pnpm 10 默认拒绝执行，dsh plugin add 会在登记 bundle 之前就退出。要先把 allowBuilds 合进该 profile 已有的 pnpm-workspace.yaml（别重复加第二个 allowBuilds: 键，YAML 会坏），再重跑一次 add，第二次会接着把 bundle 登记完。Node 要求 ^22.19.0 || >=24.0.0。默认本地 embedding 模型是 onnx-community/Qwen3-Embedding-0.6B-ONNX，约 585 MB、1024 维，跑在带版本 IPC 的独立子进程里，崩溃或超时只重建子进程、不用重启 DSH。OCR 推理也在单独子进程里，挂了只会让这份文档导入失败、不会带走 DSH。同类同名包不少（lemoncat7、XZX888、slder 等的 dsh-knowledge / dsh-knowledge-base / local-knowledge-base），认 Soren-ABT 这一份。'
     repo_confirmed: true
     gh:
-      stars: 107
-      forks: 14
-      issues: 4
+      stars: 115
+      forks: 18
+      issues: 2
       language: TypeScript
       license: AGPL-3.0
-      pushed_at: '2026-11-15T04:35:38Z'
+      pushed_at: '2026-11-24T16:46:26Z'
       archived: false
       slug: Soren-ABT/dsh-knowledge
-      stars_label: '107'
-      forks_label: '14'
-      pushed_date: '2026-11-15'
-      updated_label: 11 天前有提交
-      updated_days: 11
+      stars_label: '115'
+      forks_label: '18'
+      pushed_date: '2026-11-24'
+      updated_label: 2 天前有提交
+      updated_days: 2
       stale: false
     entry_updated: '2026-11-19'
     category_label: 记忆与知识
@@ -53,6 +53,7 @@ params:
     weight: 1010
     url: /plugins/dsh-knowledge/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 一套能装进 DSH 的完整知识库：把文件、目录、网页和笔记导入，切块、向量化、混合检索，再让模型带着出处回答——可以零向量配置跑，也可以全本地模型跑，不需要另起一个知识库服务。

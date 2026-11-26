@@ -29,16 +29,16 @@ params:
     notes: README 提供三种安装方式（Release tgz / git 装配 / npm），主推桌面端：dsh plugin --profile desktop add github:cv-superding/dsh-deepseek-web-login；npm 装写作 dsh plugin --profile desktop add dsh-deepseek-web-login。这是网页端私有接口的非官方客户端，非反向代理或 DOM 自动化。文章（wx-you-liao）只给 git 来源并称更新失败无法回滚，README 说明市场条目当前将该包标为 npm 为 null（未发布）、仅支持 git 来源，故更新需从 GitHub 拉取；该文强调的 40 万字符 / 并发 2 次等风控阀门属文章实测口径，本站不采信为结论。
     repo_confirmed: true
     gh:
-      stars: 382
-      forks: 47
+      stars: 385
+      forks: 48
       issues: 18
       language: JavaScript
       license: Apache-2.0
       pushed_at: '2026-11-15T09:05:07Z'
       archived: false
       slug: cv-superding/dsh-deepseek-web-login
-      stars_label: '382'
-      forks_label: '47'
+      stars_label: '385'
+      forks_label: '48'
       pushed_date: '2026-11-15'
       updated_label: 11 天前有提交
       updated_days: 11
@@ -49,6 +49,7 @@ params:
     weight: 1020
     url: /plugins/dsh-deepseek-web-login/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 非官方的 DSH 插件：通过浏览器登录 chat.deepseek.com 捕获登录态凭证，把网页版模型作为 LLM 提供者驱动 agent 的工具调用、思考流与图片理解，不调用官方 API。

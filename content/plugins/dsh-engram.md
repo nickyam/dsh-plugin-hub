@@ -27,19 +27,19 @@ params:
     notes: 嵌入模型离线推理，失败时自动降级纯关键词检索并显式标记；零外部服务、零 API Key、零 Docker。
     repo_confirmed: true
     gh:
-      stars: 75
-      forks: 9
-      issues: 5
+      stars: 78
+      forks: 10
+      issues: 4
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-17T15:06:24Z'
+      pushed_at: '2026-11-24T08:54:09Z'
       archived: false
       slug: kenz1117/dsh-engram
-      stars_label: '75'
-      forks_label: '9'
-      pushed_date: '2026-11-17'
-      updated_label: 8 天前有提交
-      updated_days: 8
+      stars_label: '78'
+      forks_label: '10'
+      pushed_date: '2026-11-24'
+      updated_label: 2 天前有提交
+      updated_days: 2
       stale: false
     entry_updated: '2026-11-06'
     category_label: 记忆与知识
@@ -47,6 +47,7 @@ params:
     weight: 1010
     url: /plugins/dsh-engram/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 纯本地 SQLite 的跨会话长期记忆：零外部服务、零 API Key、零 Docker，混合检索（FTS5 全文 + 本地向量 RRF），带证据门与全链路审计，把「记忆」做成装完即用的本地库。

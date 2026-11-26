@@ -46,7 +46,7 @@ params:
       forks_label: '4'
       pushed_date: '2026-09-29'
       updated_label: 1 个月前有提交
-      updated_days: 57
+      updated_days: 58
       stale: false
     entry_updated: '2026-11-17'
     category_label: 记忆与知识
@@ -54,6 +54,7 @@ params:
     weight: 1020
     url: /plugins/dsh-openviking/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 把火山引擎开源的 OpenViking 接进 DSH：user + agent 双空间的检索、资源管理、自动召回与会话记忆，每轮执行前可先翻一遍你的画像（如「中文、简洁」），越用越懂你；需本地跑一个 OpenViking 服务（默认 http://localhost:1933）。

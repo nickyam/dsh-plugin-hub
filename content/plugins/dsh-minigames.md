@@ -27,19 +27,19 @@ params:
     notes: README 提示：DSH 版本决定装哪个插件版本（0.1.2-alpha.1 ~ 0.2.1-alpha.1 用新版）；pnpm 11 可能拦截 node-pty 构建脚本，需在 ~/.dsh/profiles/web 下 pnpm approve-builds --all 后重装，并硬刷新浏览器。
     repo_confirmed: true
     gh:
-      stars: 37
+      stars: 38
       forks: 2
       issues: 4
       language: TypeScript
       license: BSD-3-Clause
-      pushed_at: '2026-11-18T17:29:40Z'
+      pushed_at: '2026-11-26T10:36:12Z'
       archived: false
       slug: lhh010/dsh-minigames
-      stars_label: '37'
+      stars_label: '38'
       forks_label: '2'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 娱乐与彩蛋
@@ -47,6 +47,7 @@ params:
     weight: 1010
     url: /plugins/dsh-minigames/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 DSH Web UI 浮动小游戏窗口：等待模型回复或修 bug 时的摸鱼神器；折叠态留下可拖动浮动 🎮 按钮，展开态为可拖拽吸附的面板，内置多款离线小游戏。

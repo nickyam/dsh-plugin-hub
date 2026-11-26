@@ -27,19 +27,19 @@ params:
     notes: 需 DeepSeek Harness >= 0.1.7-rc.2 与 Node.js >= 22.19.0；桌面 App 装完需重启，装到另一套 profile 时顶部看不到「会话地图」开关（把 --profile 换成另一套再装）。
     repo_confirmed: true
     gh:
-      stars: 730
-      forks: 72
-      issues: 38
+      stars: 756
+      forks: 74
+      issues: 39
       language: JavaScript
       license: MIT
-      pushed_at: '2026-11-04T06:48:36Z'
+      pushed_at: '2026-11-24T08:45:25Z'
       archived: false
       slug: liangmianya/dsh-synapse
-      stars_label: '730'
-      forks_label: '72'
-      pushed_date: '2026-11-04'
-      updated_label: 22 天前有提交
-      updated_days: 22
+      stars_label: '756'
+      forks_label: '74'
+      pushed_date: '2026-11-24'
+      updated_label: 2 天前有提交
+      updated_days: 2
       stale: false
     entry_updated: '2026-11-06'
     category_label: 界面与体验
@@ -47,6 +47,7 @@ params:
     weight: 1020
     url: /plugins/dsh-synapse/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 DSH 的可视化对话工作台，把同一工作区中的会话、追问和分支组织成一张可浏览、可拖拽、可缩放的地图，保留 DSH 原生会话作为唯一事实来源。

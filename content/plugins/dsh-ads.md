@@ -27,7 +27,7 @@ params:
     notes: README 声明：内容纯属虚构，与 DeepSeek 或任何真实公司无关；唯一网络请求是可选的「验证修复」点击后查询 GitHub Star（优先本地 gh/token，否则匿名 API）。
     repo_confirmed: true
     gh:
-      stars: 732
+      stars: 736
       forks: 7
       issues: 0
       language: TypeScript
@@ -35,7 +35,7 @@ params:
       pushed_at: '2026-11-15T23:07:58Z'
       archived: false
       slug: Nagi-ovo/dsh-ads
-      stars_label: '732'
+      stars_label: '736'
       forks_label: '7'
       pushed_date: '2026-11-15'
       updated_label: 10 天前有提交
@@ -47,6 +47,7 @@ params:
     weight: 1010
     url: /plugins/dsh-ads/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 把 DeepSeek Harness 的 Web UI 变成 2005 年门户网站风格的恶搞广告插件：侧栏广告、对话内信息流、推理中途弹窗与抽奖转盘等一整套虚构广告 UI，纯娱乐。

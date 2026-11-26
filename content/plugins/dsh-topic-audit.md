@@ -43,7 +43,7 @@ params:
       forks_label: '0'
       pushed_date: '2026-09-17'
       updated_label: 2 个月前有提交
-      updated_days: 69
+      updated_days: 70
       stale: false
     entry_updated: '2026-11-17'
     category_label: 安全与治理
@@ -51,6 +51,7 @@ params:
     weight: 1010
     url: /plugins/dsh-topic-audit/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 审计 GitHub 的 dsh-plugin 话题、把真插件与蹭话题的无关仓库分开的工具：按仓库根目录是否带 cordis bundle 清单、README 是否提到 DSH，判成 plugin / companion / not-a-plugin 三类，可作为 GitHub Action 每晚复跑。

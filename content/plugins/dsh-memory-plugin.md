@@ -35,13 +35,28 @@ params:
     flag: 由火山引擎 OpenViking 项目发布（非 DeepSeek 官方）；没配好 OpenViking 服务端等于装了不能用，README 要求服务端支持 viking://~ 家目录别名
     notes: npm 包是 scoped 的 @openviking/dsh-memory-plugin（0.5.42，Apache-2.0；仓库 volcengine/OpenViking 整体 AGPL-3.0）。npm 上另有同名裸包 dsh-memory-plugin（Culeot/dsh-memory，MIT，走 ctx.storage 的本地记忆域），跟本包不是一个东西，装错就完全不是这个功能。凭据解析顺序 OPENVIKING_* 环境变量 → ~/.openviking/ovcli.conf → ~/.openviking/ov.conf；桌面版从插件页装时不会问凭据，要先自己写好 ovcli.conf。peerDependencies 是 @deepseek-ai/dsh-llm / dsh-mcp-client / dsh-skill-filesystem（>=0.1.0-rc.6 <1.0.0-0），Node ^22.19.0 || >=24（DSH 0.2.1-rc.2+ 实际要 Node >=24.9）。mcpEnabled=false 只关 MCP 工具与 skills，召回/采集/提交照旧；skipSubagentSessions 默认 false；forget 是永久删除。本站另有 dsh-openviking（Rxiain/dsh-openviking，社区侧对接层），两者不是同一项目。内容依据官方 README 与 npm 元数据整理。
     repo_confirmed: true
-    gh: null
+    gh:
+      stars: 42874
+      forks: 3580
+      issues: 1731
+      language: Python
+      license: AGPL-3.0
+      pushed_at: '2026-11-26T17:43:31Z'
+      archived: false
+      slug: volcengine/OpenViking
+      stars_label: 42.9k
+      forks_label: '3580'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
+      stale: false
     entry_updated: '2026-11-26'
     category_label: 记忆与知识
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-memory-plugin/
   generated: true
+lastmod: '2026-11-26'
 ---
 
 火山引擎 OpenViking 官方出的 DSH 接入包：每轮按你自己说的话自动召回记忆与画像，会话过程自动采集、到阈值自动提交，并把 OpenViking 服务端的 MCP 工具与 skills 挂进 DSH；前提是有一个连得通的 OpenViking 服务。

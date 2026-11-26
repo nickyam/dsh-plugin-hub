@@ -39,8 +39,8 @@ params:
       stars_label: '48'
       forks_label: '1'
       pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      updated_label: 8 天前有提交
+      updated_days: 8
       stale: false
     entry_updated: '2026-11-06'
     category_label: 娱乐与彩蛋
@@ -48,6 +48,7 @@ params:
     weight: 1010
     url: /plugins/dsh-ui-whale/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 DSH Web UI 的常驻像素鲸鱼伙伴插件：在会话标题栏常驻一只手绘像素小鲸鱼，随会话快照实时反应——空闲眨眼、偶尔摆尾、思考时持续动、回合完成喷水、点击冒爱心、空闲久了睡觉，零核心改动。

@@ -27,19 +27,19 @@ params:
     notes: 官网界面另有标为 Experimental 的 Agent teams，属开箱即用能力，本站不收录；这里只记需要单独安装的社区插件。需在兼容宿主（README 提供确切版本与兼容矩阵）上运行。
     repo_confirmed: true
     gh:
-      stars: 3022
-      forks: 247
-      issues: 80
+      stars: 3109
+      forks: 253
+      issues: 84
       language: JavaScript
       license: MIT
       pushed_at: '2026-11-18T17:49:56Z'
       archived: false
       slug: NanmiCoder/dsh-agent-teams
-      stars_label: '3022'
-      forks_label: '247'
+      stars_label: '3109'
+      forks_label: '253'
       pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      updated_label: 8 天前有提交
+      updated_days: 8
       stale: false
     entry_updated: '2026-11-06'
     category_label: 协作与工作流
@@ -47,6 +47,7 @@ params:
     weight: 1060
     url: /plugins/dsh-agent-teams/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 把当前 DSH 会话变成队长，可组装持久化的子智能体、把目标拆成依赖感知的任务，并通过直接消息协调工作；提供团队协议、14 个协调工具、持久状态、自动共享任务调度器与实时 Web UI，无需额外工作流引擎。

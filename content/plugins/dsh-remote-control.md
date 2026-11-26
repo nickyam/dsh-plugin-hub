@@ -52,6 +52,7 @@ params:
     weight: 1010
     url: /plugins/dsh-remote-control/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 在当前窗口用原生 DSH 界面操作另一台电脑上的 DSH——不套远程桌面，也不做一个简化面板，对端还是同一套界面、控件和操作方式，审批与 AI 提问由远程端回答。

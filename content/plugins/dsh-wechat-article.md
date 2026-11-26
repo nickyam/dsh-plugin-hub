@@ -32,7 +32,7 @@ params:
     repo_confirmed: true
     gh:
       stars: 14
-      forks: 4
+      forks: 5
       issues: 3
       language: TypeScript
       license: Apache-2.0
@@ -40,10 +40,10 @@ params:
       archived: false
       slug: aiworkskills/dsh-wechat-article
       stars_label: '14'
-      forks_label: '4'
+      forks_label: '5'
       pushed_date: '2026-09-10'
       updated_label: 2 个月前有提交
-      updated_days: 76
+      updated_days: 77
       stale: false
     entry_updated: '2026-11-17'
     category_label: 内容创作与办公
@@ -51,6 +51,7 @@ params:
     weight: 1010
     url: /plugins/dsh-wechat-article/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 在对话里把一篇公众号文章从选题一路写到微信草稿箱：给一句话需求，它依次完成选题、写稿、审稿、排版、配图、发布，把定稿、HTML 和图片留在你自己的项目目录，需要你拍板的地方停下来问。

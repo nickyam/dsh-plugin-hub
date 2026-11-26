@@ -33,19 +33,19 @@ params:
     notes: 仓库 CJYLZS/dsh-browser（main/master 同指一份 README），npm 包为 scoped 名 @cjylzs/dsh-browser，README 最新 v0.3.x（文章写 github tag v0.2.3，为旧版）。旧的无 scope 名 dsh-browser 在 npm 上属于另一个项目，若 profile 里还留着旧键须先 `dsh plugin --profile web remove dsh-browser` 再装。按 DSH 版本选版本：>=0.1.7-rc.1 用 v0.3.x；0.1.5-rc.2 只能用 v0.1.0（tag 安装）。需本机已装 Chrome 或 Edge，playwright-core 不自带浏览器。装完重启宿主。桌面端要用其自带 CLI 的 --profile desktop 安装。
     repo_confirmed: true
     gh:
-      stars: 5
-      forks: 2
+      stars: 6
+      forks: 1
       issues: 0
       language: TypeScript
       license: MIT
       pushed_at: '2026-11-06T12:03:08Z'
       archived: false
       slug: CJYLZS/dsh-browser
-      stars_label: '5'
-      forks_label: '2'
+      stars_label: '6'
+      forks_label: '1'
       pushed_date: '2026-11-06'
-      updated_label: 19 天前有提交
-      updated_days: 19
+      updated_label: 20 天前有提交
+      updated_days: 20
       stale: false
     entry_updated: '2026-11-17'
     category_label: 工具与能力
@@ -53,6 +53,7 @@ params:
     weight: 1030
     url: /plugins/dsh-browser/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 给每个会话配一个真实的 Chrome / Edge 进程并在右侧栏实时镜像，模型用一组工具点网页、填表单、翻页，用户可随时在镜像里接管；会话之间标签页、登录态与 CDP 端口完全隔离，Web 与桌面端都能用。

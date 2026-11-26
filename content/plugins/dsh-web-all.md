@@ -33,19 +33,19 @@ params:
     notes: 官方仓库是 zhu1090093659/dsh-web 单体仓，npm 包发布在 @linxin666 名下；安装后需重启 dsh web 才出现侧栏图标。也可直接 `dsh plugin --profile web add github:zhu1090093659/dsh-web` 从仓库装。子插件独立发包，只想用部分功能可单独安装对应 @linxin666/dsh-* 包。
     repo_confirmed: true
     gh:
-      stars: 10515
-      forks: 640
+      stars: 10656
+      forks: 657
       issues: 0
       language: TypeScript
       license: Apache-2.0
-      pushed_at: '2026-11-18T13:49:58Z'
+      pushed_at: '2026-11-26T17:09:24Z'
       archived: false
       slug: zhu1090093659/dsh-web
-      stars_label: 10.5k
-      forks_label: '640'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: 10.7k
+      forks_label: '657'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 界面与体验
@@ -53,6 +53,7 @@ params:
     weight: 1030
     url: /plugins/dsh-web-all/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 DSH Web 的官方聚合包，一条命令装齐家族全部功能插件：任务看板、Git 图谱、桌面宠物、移动端远程、SSH 运维、模型能力、用量统计、会话归档、皮肤中心、设置区与社区插件，外加右侧面板 dsh-better-sidebar。每项可在「设置 → 插件 → 插件管理」里单独开关。

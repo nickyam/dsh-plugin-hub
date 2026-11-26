@@ -32,13 +32,28 @@ params:
     flag: 文章称 VisioWork、包名 dsh-imagegen；npm 包 @dickpy/dsh-imagegen，与已收录的 dsh-image-gen（shanliuling，对话生图）是不同插件
     notes: 官方仓库 github.com/dickpy/dsh-imagegen（npm 包 @dickpy/dsh-imagegen，Apache-2.0）。文章称「VisioWork」、只给包名 dsh-imagegen 与「文生图 / 图生图 + 选图生提示词 + 自行添加生图渠道和模型」的描述；GitHub 搜不到 VisioWork 同名仓库，按包名 dsh-imagegen 与功能（提示词反推 + 可配渠道模型）对应到 dickpy/dsh-imagegen，据此收录。注意区分：站内已有 dsh-image-gen（shanliuling/dsh-image-gen，别名「生图插件 / 图像创作」）仓库与功能均不同，系另一插件，未合并；say007go/dsh-imagegen 同样是 OpenAI 风格生图插件但没有无限画布与提示词反推描述，文章所述「选图生提示词 + 画布」更贴合 dickpy 版，故取此仓库。安装需 Node.js 20+，装后重启 dsh web，到「设置 → 生图配置」添加提供方与密钥；生图 API 费用自付。
     repo_confirmed: true
-    gh: null
+    gh:
+      stars: 209
+      forks: 24
+      issues: 6
+      language: TypeScript
+      license: Apache-2.0
+      pushed_at: '2026-11-26T12:26:51Z'
+      archived: false
+      slug: dickpy/dsh-imagegen
+      stars_label: '209'
+      forks_label: '24'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
+      stale: false
     entry_updated: '2026-11-21'
     category_label: 视觉与设计
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-imagegen/
   generated: true
+lastmod: '2026-11-21'
 ---
 
 DSH Web GUI 的生图工作台：文生图 / 图生图、提示词反推、无限画布与画廊，可自行添加生图渠道与模型（gpt-image-2、Grok Imagine、Nano Banana、Seedream 等 OpenAI 兼容端点），并支持电商套图与对话内生图。

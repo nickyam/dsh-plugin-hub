@@ -52,6 +52,7 @@ params:
     weight: 1010
     url: /plugins/dsh-skill-zh-distribute/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 零代码 DSH skill：把一份「母本」内容改写成掘金、公众号、X、小红书、B站五个平台各自的原生格式，并给出错开发布的防垃圾时间表；诚实说明多数中文平台没有免费发文 API，实际模式是 AI 生成各平台文案、人工五分钟粘贴。

@@ -31,7 +31,7 @@ params:
     notes: README 标注适配 DSH Web 0.2.2-rc.1 与 Desktop 0.2.1-rc.5；需宿主端启用移动网关或模拟器 / 真机环境。
     repo_confirmed: true
     gh:
-      stars: 473
+      stars: 485
       forks: 43
       issues: 0
       language: TypeScript
@@ -39,11 +39,11 @@ params:
       pushed_at: '2026-11-10T15:45:43Z'
       archived: false
       slug: ZSeven-W/dsh-ios
-      stars_label: '473'
+      stars_label: '485'
       forks_label: '43'
       pushed_date: '2026-11-10'
-      updated_label: 15 天前有提交
-      updated_days: 15
+      updated_label: 16 天前有提交
+      updated_days: 16
       stale: false
     entry_updated: '2026-11-06'
     category_label: 移动端与远程
@@ -51,6 +51,7 @@ params:
     weight: 1010
     url: /plugins/dsh-ios/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 dsh-ios 是 DeepSeek Harness 的 iOS 模拟器插件，在对话中提供实时模拟器画面与通过 USB 连接的真实 iPhone 画面，并赋予 AI 代理 22 个工具来启动设备、构建运行应用、驱动 UI 与调试检查。

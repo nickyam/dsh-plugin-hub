@@ -34,19 +34,19 @@ params:
     notes: 仓库 MichengAI/dsh-codex-ui（main 分支），npm 包 @michengai/dsh-codex-ui，README 版本 v2.0（文章写 2.0.9，npm 仓库实时版本以 registry 为准）。环境要求 Node.js 22+。2.0 彻底重写：放弃 1.x 直接改宿主 DOM、高权重 CSS 覆盖的做法，改用官方 Slots 插槽与 @deepseek-ai/dsh-client-ui-primitives 原语，升级 DSH 更不易崩。文章（wx-top10-30d）称「1.x 暴力覆盖、2.0 推倒重写」，与 README 的技术决策一节一致。
     repo_confirmed: true
     gh:
-      stars: 303
-      forks: 26
+      stars: 314
+      forks: 27
       issues: 0
       language: TypeScript
       license: Apache-2.0
-      pushed_at: '2026-11-17T09:59:08Z'
+      pushed_at: '2026-11-25T14:59:54Z'
       archived: false
       slug: MichengAI/dsh-codex-ui
-      stars_label: '303'
-      forks_label: '26'
-      pushed_date: '2026-11-17'
-      updated_label: 8 天前有提交
-      updated_days: 8
+      stars_label: '314'
+      forks_label: '27'
+      pushed_date: '2026-11-25'
+      updated_label: 昨天有提交
+      updated_days: 1
       stale: false
     entry_updated: '2026-11-17'
     category_label: 界面与体验
@@ -54,6 +54,7 @@ params:
     weight: 1030
     url: /plugins/dsh-codex-ui/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 一套 Codex 风格的 DSH 界面增强，由六个可独立启停的子插件组成：输入历史召回、全屏双岛设置、物理毛玻璃换肤、模块化侧栏、智能会话标题与桌面窗口菜单；2.0 起全面改用官方插槽与原语，降低宿主升级带来的破坏风险。

@@ -34,19 +34,19 @@ params:
     notes: 定位要说清——它 deny 调用，但不设置文件权限、不监控网络出口、不把进程关进容器，真正的沙箱还得靠宿主。路径匹配基本按 POSIX 来，PowerShell 覆盖有限。Node 18 以上，Windows / macOS / Linux 都能跑。装完先用 doctor 自检、status 看状态，怀疑没生效时先确认策略文件能不能正常解析（解析失败是有意回落，不是坏了）。README 把 DSH 的安装细节放在官网文档页（ccsafetynet.com/docs/installation/deepseek-harness），命令走 --deepseek-harness 这个开关。它同时支持 Claude Code、Codex、Cursor、Copilot CLI、Gemini CLI 等十几个 CLI，DSH 只是其中一个接入点。
     repo_confirmed: true
     gh:
-      stars: 2075
-      forks: 98
+      stars: 2107
+      forks: 102
       issues: 5
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-18T17:47:46Z'
+      pushed_at: '2026-11-26T17:53:55Z'
       archived: false
       slug: kenryu42/cc-safety-net
-      stars_label: '2075'
-      forks_label: '98'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '2107'
+      forks_label: '102'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-19'
     category_label: 安全与治理
@@ -54,6 +54,7 @@ params:
     weight: 1030
     url: /plugins/cc-safety-net/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 在工具调用真正执行之前先看一眼命令要干什么：git reset --hard、git push --force、危险目标的 rm -rf、find -delete、PowerShell Remove-Item 一律拦下，读取 SSH 私钥、.env、~/.aws、CLI 凭据的动作也拦。它解析命令本身做什么，套一层 bash -c 或 python -c、换个参数顺序都藏不住。

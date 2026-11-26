@@ -32,13 +32,28 @@ params:
     flag: 宿主要求 DSH >=0.2.2-rc.3，不能沿用早期教程的旧兼容范围；MIT 许可
     notes: 官方仓库 github.com/STARDUSTLC666/dsh-ppt（默认分支 master，npm 包 dsh-ppt，MIT）。文章只给包名 dsh-ppt 与「HTML 放映 + 可编辑 PPTX + 材料导入 + 工作台编辑导出」，与 README 核心定位吻合，据此收录；仓库由包名检索核实，README 在 master 分支。官方安装命令桌面版用 --profile desktop，网页版把 desktop 改为 web，装后重启对应宿主；本站 install 取桌面版命令。README 强调宿主要求已从旧版升级到 >=0.2.2-rc.3，文章也特别提醒别沿用早期教程的旧兼容范围。README 里 0.36.0 等版本号、性能与效果描述均为作者自述，本站只记功能定位，不写成实机结论。注意与站内 dsh-univer-office（办公套件）、deepseek-design / dsh-guizang-design（视觉设计）区分。
     repo_confirmed: true
-    gh: null
+    gh:
+      stars: 51
+      forks: 5
+      issues: 0
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-26T18:49:23Z'
+      archived: false
+      slug: STARDUSTLC666/dsh-ppt
+      stars_label: '51'
+      forks_label: '5'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
+      stale: false
     entry_updated: '2026-11-24'
     category_label: 内容创作与办公
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-ppt/
   generated: true
+lastmod: '2026-11-24'
 ---
 
 DSH 的大师级演示文稿引擎与实体胶片灯箱工作台，从文档/表格/流程图/旧 PPTX 出发，一键产出离线 HTML 放映稿与 100% 原生可编辑 PPTX；内置三层「首席艺术总监」导演词与 41 种双端同构图谱，支持三模路由、企业品牌宪章锁与逆向 Office 导出。

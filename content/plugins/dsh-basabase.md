@@ -36,8 +36,8 @@ params:
       stars_label: '11'
       forks_label: '0'
       pushed_date: '2026-10-31'
-      updated_label: 25 天前有提交
-      updated_days: 25
+      updated_label: 26 天前有提交
+      updated_days: 26
       stale: false
     entry_updated: '2026-11-06'
     category_label: 记忆与知识
@@ -45,6 +45,7 @@ params:
     weight: 1010
     url: /plugins/dsh-basabase/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 把 DSH 连接到 Busabase，让 Agent 读取可信知识、处理结构化数据，并把每次提议的写入提交人工审查（changeRequest），在不静默改写真源的同时赋予持久上下文。

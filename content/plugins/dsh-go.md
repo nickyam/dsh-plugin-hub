@@ -30,23 +30,23 @@ params:
     - 分享与回放：单条回复生成分享卡，整段会话生成端到端加密的回放链接，密钥只在链接里、服务端读不到
     - 外观：Deepy 与鲸娘桌宠、六种主题色、四种图标，横屏与平板切常驻侧栏
     tags: *id001
-    flag: 是客户端不是插件，安装走 APK 侧载
+    flag: 是客户端不是插件，安装走 APK 侧载；与 dsh-gov（治理/审计插件）名字只差一个字母，别搜错
     notes: Android 8.0（API 26）以上，发布包只有 arm64-v8a 与 x86_64，没有 32 位 ARM；包名 io.github.ccch1mneyyy.dsh_app，targetSdk 28，以侧载为目标、不是 Google Play 配置。远程通道有明确缺口：只支持图片附件、App 内打不开网页版、插件管理只能开关、不支持 DS Bot 与对话记录导出。手机操控只对正常模式下的本机引擎开放，不打扰模式要 Android 14+ 加 Shizuku 或自连 ADB，熄屏会停任务、闲置 3 分钟自动结束。默认开启匿名使用统计，可在「设置 → 隐私与分享」关。iOS 版还在开发与真机测试，没有公开安装包。项目自己声明与 DeepSeek 无隶属关系，AGPL-3.0。
     repo_confirmed: true
     gh:
-      stars: 27263
-      forks: 1310
-      issues: 738
+      stars: 32648
+      forks: 1573
+      issues: 1009
       language: Dart
       license: AGPL-3.0
-      pushed_at: '2026-11-18T09:20:06Z'
+      pushed_at: '2026-11-26T18:56:46Z'
       archived: false
       slug: ccch1mneyyy/dsh-Go
-      stars_label: 27.3k
-      forks_label: '1310'
-      pushed_date: '2026-11-18'
-      updated_label: 8 天前有提交
-      updated_days: 8
+      stars_label: 32.6k
+      forks_label: '1573'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-19'
     category_label: 移动端与远程
@@ -54,6 +54,7 @@ params:
     weight: 1010
     url: /plugins/dsh-go/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 把 DSH 搬到 Android 手机上的第三方客户端：App 内装好 PRoot 版 Ubuntu + Node.js + DSH 引擎，手机本地就能跑；也能通过 SSH 或 DSHarness Remote 接管电脑、服务器上的 DSH，两种主机在同一个聊天界面里切换。

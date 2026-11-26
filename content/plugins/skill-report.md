@@ -38,7 +38,7 @@ params:
       forks_label: '0'
       pushed_date: '2026-09-24'
       updated_label: 2 个月前有提交
-      updated_days: 62
+      updated_days: 63
       stale: false
     entry_updated: '2026-11-06'
     category_label: 工具与能力
@@ -46,6 +46,7 @@ params:
     weight: 1010
     url: /plugins/skill-report/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 DSH 面板插件：统计每轮对话实际用到了哪些 skill，并让你在应用内直接安装、更新、停用、删除 skill。

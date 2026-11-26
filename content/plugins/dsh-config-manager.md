@@ -26,13 +26,28 @@ params:
     tags: *id001
     flag: npm install -g dsh-config-manager@latest --omit=peer；pnpm minimumReleaseAge 策略；@latest 可能装到旧版；profile 本身不随备份迁移
     repo_confirmed: true
-    gh: null
+    gh:
+      stars: 387
+      forks: 21
+      issues: 10
+      language: TypeScript
+      license: MIT
+      pushed_at: '2026-11-26T12:22:26Z'
+      archived: false
+      slug: xiajiajun516/dsh-config-manager
+      stars_label: '387'
+      forks_label: '21'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
+      stale: false
     entry_updated: '2026-11-26'
     category_label: 工具与能力
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-config-manager/
   generated: true
+lastmod: '2026-11-26'
 ---
 
 DSH配置管理器，管设置、模型与 Provider 配置、已安装插件及插件配置、MCP Servers、Skills、Agent Presets、工作区与 AGENTS.md。装完重启 DSH，设置页会出现「备份与迁移」入口。导出 ZIP 后可上传至 GitHub/网盘做跨机迁移。

@@ -14,7 +14,7 @@ params:
     category: fun
     status: community
     repo: https://github.com/PC2005-cloud/dsh-pet
-    install: dsh plugin --profile <profile> add dsh-pet
+    install: dsh plugin --profile web add dsh-pet
     summary: 一只住在 DeepSeek Harness 里的桌面宠物，100+ 段透明动画资产，可多开、拖拽甩抛、脱离浏览器独立运行，也能自定义宠物种类（pet pack）。
     features:
     - 100+ 段动画资产：待机、走动漫游、玩耍、工作、对话等由视频动画驱动，可换成自己的素材
@@ -24,16 +24,16 @@ params:
     tags: *id001
     repo_confirmed: true
     gh:
-      stars: 6489
-      forks: 578
-      issues: 16
+      stars: 6758
+      forks: 620
+      issues: 48
       language: TypeScript
       license: MIT
       pushed_at: '2026-11-17T05:06:16Z'
       archived: false
       slug: PC2005-cloud/dsh-pet
-      stars_label: '6489'
-      forks_label: '578'
+      stars_label: '6758'
+      forks_label: '620'
       pushed_date: '2026-11-17'
       updated_label: 9 天前有提交
       updated_days: 9
@@ -44,6 +44,7 @@ params:
     weight: 1050
     url: /plugins/dsh-pet/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 一只住在 DeepSeek Harness 里的桌面宠物，100+ 段透明动画资产，可多开、拖拽甩抛、脱离浏览器独立运行，也能自定义宠物种类（pet pack）。

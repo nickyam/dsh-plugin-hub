@@ -19,7 +19,7 @@ params:
     category: tool
     status: community
     repo: https://github.com/helloHub1212/dsh-windows-mcp
-    install: dsh plugin --profile add github:helloHub1212/dsh-windows-mcp
+    install: dsh plugin --profile web add github:helloHub1212/dsh-windows-mcp
     summary: 把 CursorTouch/Windows-MCP 挂到 DSH 自带的 MCP 客户端桥上，让 agent 能截屏、读界面元素、点按输入、读写剪贴板与注册表——那些只有图形界面、没有命令行入口的老软件，也能被它操作。
     features:
     - 18 个桌面工具：屏幕截图、UI 树快照、鼠标键盘输入、剪贴板、进程与注册表，注册成 mcp__windows__* 供模型调用
@@ -33,19 +33,19 @@ params:
     notes: 三个硬前提：Windows 10/11、带内置 @deepseek-ai/dsh-mcp-client 桥的 DSH Desktop 0.2.0-rc.2 或更新、PATH 里能找到 uv（找不到时它还会去 %USERPROFILE%\.local\bin 捞一次；仅装依赖用得上，DSH 本身启动不依赖）。想让 agent 真的「看见」截图，得用支持图片输入的模型。Electron 版独占 desktop 配置，命令行会对它拒绝所有命令（包括只读的），桌面端只能从图形界面装。作者在 Windows 11 + DSH Desktop 0.2.0-rc.2 上验过：桥接对外公布 18 个工具（上游 21 个减去排除的 3 个），启动约 1.5 秒就绪。
     repo_confirmed: true
     gh:
-      stars: 1736
-      forks: 8
+      stars: 2634
+      forks: 12
       issues: 0
       language: JavaScript
       license: MIT
-      pushed_at: '2026-11-15T12:12:09Z'
+      pushed_at: '2026-11-26T12:34:09Z'
       archived: false
       slug: helloHub1212/dsh-windows-mcp
-      stars_label: '1736'
-      forks_label: '8'
-      pushed_date: '2026-11-15'
-      updated_label: 10 天前有提交
-      updated_days: 10
+      stars_label: '2634'
+      forks_label: '12'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-19'
     category_label: 工具与能力
@@ -53,6 +53,7 @@ params:
     weight: 1020
     url: /plugins/dsh-windows-mcp/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 把 CursorTouch/Windows-MCP 挂到 DSH 自带的 MCP 客户端桥上，让 agent 能截屏、读界面元素、点按输入、读写剪贴板与注册表——那些只有图形界面、没有命令行入口的老软件，也能被它操作。

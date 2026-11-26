@@ -35,19 +35,19 @@ params:
     notes: 官方仓库 topmindspace/dsh-super-kanban，npm 包 dsh-super-kanban（latest 0.10.5，MIT）。安装三途：插件市场加索引源 https://topmindspace.github.io/dsh-super-kanban/index.json、插件页输包名、或 Git/本地目录；命令行安装前需完全退出 DSH，桌面端用 --profile desktop。装后启用插件并刷新 DSH。文章给的 0.10.1 是旧版，README 当前示例 0.10.5，按 README 取新。默认扫描最近 30 天活动会话，需要更久要自己调活跃周期或手动翻历史。封面图是功能示意、非实际界面。
     repo_confirmed: true
     gh:
-      stars: 132
-      forks: 13
+      stars: 142
+      forks: 14
       issues: 0
       language: JavaScript
       license: MIT
-      pushed_at: '2026-11-19T05:08:42Z'
+      pushed_at: '2026-11-26T05:09:11Z'
       archived: false
       slug: topmindspace/dsh-super-kanban
-      stars_label: '132'
-      forks_label: '13'
-      pushed_date: '2026-11-19'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '142'
+      forks_label: '14'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-19'
     category_label: 协作与工作流
@@ -55,6 +55,7 @@ params:
     weight: 1010
     url: /plugins/dsh-super-kanban/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 从 DSH 多条会话里用 AI 自动提炼并维护任务看板：进展、阻塞、交付物随会话更新，待处理/待验收集中一处点一下跳回会话；支持全局/右侧/悬浮三种形态，可自建项目、时间线日程、带上下文续做和内置快聊，数据存本机无遥测。

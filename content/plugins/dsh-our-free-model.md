@@ -28,19 +28,19 @@ params:
     notes: README 警告不要装 npm 上裸名的 dsh-our-free-model（非本仓库发布）；本仓库发布的是带 scope 的 @ebony-vinyl/dsh-our-free-model。免费车道高峰期可能按会话限流返回 429；部分上游声明提示词可能被记录，勿发敏感内容。上游额度政策随时可能变更。
     repo_confirmed: true
     gh:
-      stars: 79831
-      forks: 2249
-      issues: 205
+      stars: 88140
+      forks: 2495
+      issues: 239
       language: JavaScript
       license: NOASSERTION
-      pushed_at: '2026-11-18T02:24:22Z'
+      pushed_at: '2026-11-26T07:34:12Z'
       archived: false
       slug: Ebony-Vinyl/dsh-our-free-model
-      stars_label: 79.8k
-      forks_label: '2249'
-      pushed_date: '2026-11-18'
-      updated_label: 8 天前有提交
-      updated_days: 8
+      stars_label: 88.1k
+      forks_label: '2495'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 免费模型与接入
@@ -48,6 +48,7 @@ params:
     weight: 1050
     url: /plugins/dsh-our-free-model/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 装上后模型列表里多出若干可直接用的免费选项，不用注册、不用填 API Key，用来零成本起步；免费车道来自 OpenCode Zen 网关、Kilo AI 公共网关等上游，直连不经第三方中转。

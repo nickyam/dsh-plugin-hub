@@ -28,19 +28,19 @@ params:
     notes: 纯前端审查，不修改你的文件；待处理状态存于 <dshHome>/diff-approval/workspaces/ 并跨重启保留。从 GitHub 源码安装可能需按提示配置 allowBuilds 构建授权。
     repo_confirmed: true
     gh:
-      stars: 16
+      stars: 17
       forks: 3
-      issues: 4
+      issues: 7
       language: TypeScript
       license: MIT
       pushed_at: '2026-11-12T16:36:43Z'
       archived: false
       slug: 9087/dsh-diff-approval
-      stars_label: '16'
+      stars_label: '17'
       forks_label: '3'
       pushed_date: '2026-11-12'
-      updated_label: 13 天前有提交
-      updated_days: 13
+      updated_label: 14 天前有提交
+      updated_days: 14
       stale: false
     entry_updated: '2026-11-06'
     category_label: 协作与工作流
@@ -48,6 +48,7 @@ params:
     weight: 1010
     url: /plugins/dsh-diff-approval/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 待处理改动审查插件：自动跟踪每次成功的 edit / write / str_replace_editor 改动，在侧边栏汇成待处理列表，可逐块、逐文件保留或回退，支持撤销/重做，并一键导入工作区版本控制的本地改动。

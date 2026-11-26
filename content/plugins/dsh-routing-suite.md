@@ -29,7 +29,7 @@ params:
     gh:
       stars: 7029
       forks: 198
-      issues: 182
+      issues: 181
       language: JavaScript
       license: MIT
       pushed_at: '2026-09-18T23:10:58Z'
@@ -47,6 +47,7 @@ params:
     weight: 1010
     url: /plugins/dsh-routing-suite/
   generated: true
+lastmod: '2026-11-08'
 ---
 
 注入器 × 思维模式路由 × 分级模式的套装：含运行时注入器、任务感知推理模式路由预设与分级任务协议（含红队门与审计端点）。

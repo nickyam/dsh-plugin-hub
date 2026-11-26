@@ -29,19 +29,19 @@ params:
     notes: 仓库即「Web 全家桶」单体仓，npm 聚合包发布在 @linxin666/dsh-web-all 名下；「创意工坊」(dsh-market.com) 是其组件之一。也可从仓库直接装：dsh plugin --profile web add github:zhu1090093659/dsh-web。
     repo_confirmed: true
     gh:
-      stars: 10515
-      forks: 640
+      stars: 10656
+      forks: 657
       issues: 0
       language: TypeScript
       license: Apache-2.0
-      pushed_at: '2026-11-18T13:49:58Z'
+      pushed_at: '2026-11-26T17:09:24Z'
       archived: false
       slug: zhu1090093659/dsh-web
-      stars_label: 10.5k
-      forks_label: '640'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: 10.7k
+      forks_label: '657'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 插件市场与发现
@@ -49,6 +49,7 @@ params:
     weight: 1030
     url: /plugins/dsh-web/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 面向 DSH Web GUI 的模块化插件聚合生态与 AI 智能体开发工作台：一键装齐全家桶功能（任务看板、Git 图谱、桌面宠物、移动端远程、SSH 运维、模型能力、用量统计、会话归档、皮肤中心、社区插件），并通过「创意工坊」（dsh-market.com）分发皮肤、宠物与插件。

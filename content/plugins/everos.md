@@ -28,19 +28,19 @@ params:
     notes: 官方 DeepSeek Harness 集成插件维护在独立仓库 EverMind-AI/plugins（dsh 分支），本仓库为 EverOS 核心记忆运行时（pip 安装），DSH 插件不在本仓库根目录。
     repo_confirmed: true
     gh:
-      stars: 13939
-      forks: 978
-      issues: 53
+      stars: 14012
+      forks: 984
+      issues: 52
       language: Python
       license: Apache-2.0
-      pushed_at: '2026-11-18T16:33:22Z'
+      pushed_at: '2026-11-25T11:58:53Z'
       archived: false
       slug: EverMind-AI/EverOS
-      stars_label: 13.9k
-      forks_label: '978'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: 14.0k
+      forks_label: '984'
+      pushed_date: '2026-11-25'
+      updated_label: 昨天有提交
+      updated_days: 1
       stale: false
     entry_updated: '2026-11-06'
     category_label: 记忆与知识
@@ -48,6 +48,7 @@ params:
     weight: 1020
     url: /plugins/everos/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 EverOS 是面向 Agent 与开发者的本地优先、Markdown 原生长期记忆运行时，将对话、文件与 Agent 轨迹存为可读 Markdown，并同步本地 SQLite 与 LanceDB 索引以实现快速检索与跨应用自我演化；官方提供 DeepSeek Harness 集成插件。

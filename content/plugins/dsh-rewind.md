@@ -34,19 +34,19 @@ params:
     notes: 仓库 SiriLee/dsh-rewind，npm 包名是 dsh-rewind-plugin——README 明确警告 npm 上的 dsh-rewind 属于另一位作者，装错包会出事，本站 install 按官方写法。文章只说「粘贴仓库链接安装」，未给 npm 名，本站以 README 为准。Node.js >=24.9.0；兼容 DSH 版本见 package.json engines.dsh。回退内容并非删除，仍在会话日志与 Trajectory 面板里；要把回退前的内容带到新会话，先禁用插件让它显示，再在回退点前一条消息上「Branch into a new conversation」。快照默认保存最近 100 个检查点，不替代 Git。
     repo_confirmed: true
     gh:
-      stars: 286
-      forks: 22
-      issues: 1
+      stars: 305
+      forks: 24
+      issues: 0
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-18T14:44:57Z'
+      pushed_at: '2026-11-24T09:49:00Z'
       archived: false
       slug: SiriLee/dsh-rewind
-      stars_label: '286'
-      forks_label: '22'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '305'
+      forks_label: '24'
+      pushed_date: '2026-11-24'
+      updated_label: 2 天前有提交
+      updated_days: 2
       stale: false
     entry_updated: '2026-11-17'
     category_label: 协作与工作流
@@ -54,6 +54,7 @@ params:
     weight: 1010
     url: /plugins/dsh-rewind/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 在原会话内一键回退到任意更早的用户消息，把目标消息及其之后的内容同时从模型上下文与界面撤回，原提示词自动回填输入框；可选连同写类工具改过的文件一起还原，对齐 Claude Code 的 /rewind 语义，不新建分支、不换窗口。

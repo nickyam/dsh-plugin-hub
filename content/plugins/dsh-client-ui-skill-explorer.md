@@ -32,19 +32,19 @@ params:
     notes: 官方仓库是 zhu1090093659/dsh-web 单体仓 dev 分支下的 packages/dsh-skill-explorer 子包，npm 包发布在 @linxin666 名下（@linxin666/dsh-client-ui-skill-explorer），和 dsh-web-all 同源。README 标 DSH >=0.2.2-rc.3。注意 npm repository 字段只写了单体仓根地址，实际源码在 packages/dsh-skill-explorer。文章（wx-top10-30d）把它与第 6 名技能管理器并列并称「功能有重叠，装一个就够」，与 README 定位一致。
     repo_confirmed: true
     gh:
-      stars: 10515
-      forks: 640
+      stars: 10656
+      forks: 657
       issues: 0
       language: TypeScript
       license: Apache-2.0
-      pushed_at: '2026-11-18T13:49:58Z'
+      pushed_at: '2026-11-26T17:09:24Z'
       archived: false
       slug: zhu1090093659/dsh-web
-      stars_label: 10.5k
-      forks_label: '640'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: 10.7k
+      forks_label: '657'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-17'
     category_label: 工具与能力
@@ -52,6 +52,7 @@ params:
     weight: 1010
     url: /plugins/dsh-client-ui-skill-explorer/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 在 DSH 侧栏加一行「Skill Center」，按来源分层浏览当前加载的技能，用每行开关决定某个技能给不给模型调用（改 SKILL.md 头部的 disable-model-invocation），并提供可视化编辑、导入与安全回收站。

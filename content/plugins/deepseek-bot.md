@@ -35,19 +35,19 @@ params:
     notes: 仓库已由 DeepSeek-Bot 更名为 DS Bot（Fei2411/DS-Bot），本仓库地址仍可访问并指向同一项目；DSH 插件包名为 ds-bot。与 dsh-agent-teams 是同类不同定位：后者偏任务分工，前者偏 Bot 的持久性与社交性（群聊）。
     repo_confirmed: true
     gh:
-      stars: 8353
-      forks: 830
-      issues: 441
+      stars: 9007
+      forks: 913
+      issues: 391
       language: JavaScript
       license: Apache-2.0
-      pushed_at: '2026-11-18T18:37:33Z'
+      pushed_at: '2026-11-26T18:50:45Z'
       archived: false
       slug: Fei2411/DS-Bot
-      stars_label: '8353'
-      forks_label: '830'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '9007'
+      forks_label: '913'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-19'
     category_label: 协作与工作流
@@ -55,6 +55,7 @@ params:
     weight: 1030
     url: /plugins/deepseek-bot/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 DS Bot 是 DeepSeek Harness（DSH）的 Bot 插件，把 DSH 变成可创建和协作的 Bot：支持主 Bot、Bot 间消息与群聊，并内置记忆、共享能力库（MCP / Skill）与按时间 / 模型维度的用量统计。

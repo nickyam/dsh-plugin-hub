@@ -32,16 +32,16 @@ params:
     notes: 仓库 vibe-any/dsh-plugin-save-token（GitHub 搜索「save-token deepseek harness」精确命中、★ 最高），npm 已发布 dsh-plugin-save-token（registry 200），README 给 npm / github / 本地三种安装，本站 install 用 npm 稳定版。文章（wx-jiaweisi）实测它省 7.6%，属作者单次口径，本站不采信数字；README 自述「长任务省两成左右、完成率未受影响」也是作者口径，同样只作功能描述不作结论。
     repo_confirmed: true
     gh:
-      stars: 87
-      forks: 5
+      stars: 93
+      forks: 7
       issues: 3
       language: JavaScript
       license: MIT
       pushed_at: '2026-10-24T01:16:16Z'
       archived: false
       slug: vibe-any/dsh-plugin-save-token
-      stars_label: '87'
-      forks_label: '5'
+      stars_label: '93'
+      forks_label: '7'
       pushed_date: '2026-10-24'
       updated_label: 1 个月前有提交
       updated_days: 33
@@ -52,6 +52,7 @@ params:
     weight: 1010
     url: /plugins/dsh-plugin-save-token/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 在每次模型请求入口对超长工具输出做可逆、结构感知的压缩：原始全文存盘，模型只看到带检索路径的浓缩版；每条替换都要求一步可还原、且压缩后 token 数严格变小，目标是只降 token 成本不降智能水平。

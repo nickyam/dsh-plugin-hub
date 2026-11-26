@@ -264,6 +264,7 @@ button, input, select, textarea { font: inherit; }
 .card-gh { flex-shrink: 0; display: inline-flex; align-items: baseline; gap: 3px; font-family: var(--font-outlier); font-size: 12px; color: var(--color-ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .card-gh [aria-hidden] { color: var(--color-accent-text); font-size: 12px; }
 .no-result { background: var(--color-sheet); border: var(--rule-hair) solid var(--color-rule); padding: var(--space-2xl); text-align: center; color: var(--color-ink-2); }
+.noscript-hint { margin: var(--space-md) 0 0; padding: var(--space-md); background: var(--color-sheet); border: var(--rule-hair) solid var(--color-rule); color: var(--color-ink-2); font-size: var(--text-sm); line-height: 1.7; }
 
 /* ── Sidebar ────────────────────────────────────────── */
 .col-main, .col-side { min-width: 0; }
@@ -426,6 +427,24 @@ button, input, select, textarea { font: inherit; }
   .prose { padding: var(--space-xl); }
   .footer-grid { grid-template-columns: 1fr; gap: var(--space-xl); }
   .panel { padding: var(--space-md); }
+
+  /* 移动端首屏：示例文件只留「插件名 + 仓库」两行，其余收起。
+     实测（真 390×844）它原来把分类栏挤到 1514px、第一张卡挤到 1652px，约两屏；
+     收起后目录能进首屏。桌面端不动，那块材料感是这版设计的门面。 */
+  .hero-file .file-row ~ .file-row,
+  .hero-file .quote,
+  .hero-file .file-foot { display: none; }
+  /* 首屏副文案长句在小屏收 4 行，完整意思仍可从「看收录方法」进 about 读 */
+  .hero-sub { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; }
+
+  /* 触控目标：窄屏把可点元素的命中区补到 ≥24px（WCAG 2.2 SC 2.5.8）。
+     实测 .tag 只有 14px 高、面包屑 22px、.cat-badge 21px，手指基本点不中；
+     行内元素加纵向 padding 只扩命中区、不改行高，不会引起排版位移。 */
+  .cat-badge, .breadcrumb a { padding-block: 4px; }
+  .tag { padding-block: 5px; }
+  .mini-tag { padding-block: 4px; }
+  /* 页脚链接是 display:block，行高只有 22px，补 2px 上下内边距到 24px 以上 */
+  .footer-grid a { padding-block: 2px; }
 }
 
 /* ── 2026-11-21 新增：跳转链接 / 全站搜索 / 详情页动作 ── */
@@ -484,6 +503,9 @@ button, input, select, textarea { font: inherit; }
 .search-item-sum { margin: 3px 0 0; font-size: var(--text-sm); color: var(--color-ink-2); line-height: 1.5; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
 .search-item mark, .search-mark { background: var(--color-accent-wash); color: var(--color-accent-text); padding: 0 2px; }
 .search-empty { padding: var(--space-2xl) var(--space-lg); text-align: center; color: var(--color-ink-2); font-size: var(--text-sm); }
+/* 结果被 12 条上限截断时的出口：通往插件库，带上 ?q= */
+.search-more { margin: 0; padding: var(--space-md); text-align: center; font-size: var(--text-sm); border-top: var(--rule-hair) solid var(--color-rule); }
+.search-more a { display: inline-block; padding: 6px 10px; color: var(--color-accent-text); }
 .search-empty b { color: var(--color-ink); }
 
 /* 详情页：安装命令可复制 + 仓库 CTA */

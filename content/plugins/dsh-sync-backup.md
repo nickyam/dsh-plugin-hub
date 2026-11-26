@@ -26,13 +26,28 @@ params:
     tags: *id001
     flag: uploadOnSchedule + dryRun 必须同时开才上传；GIT_ASKPASS 凭据注入；Basic 口令明文 HTTP 等于交出去；非本机 http 拒绝；只能 loopback 127.0.0.1/[::1]
     repo_confirmed: true
-    gh: null
+    gh:
+      stars: 19
+      forks: 3
+      issues: 0
+      language: JavaScript
+      license: MIT
+      pushed_at: '2026-11-18T03:38:24Z'
+      archived: false
+      slug: weibaohui/dsh-sync
+      stars_label: '19'
+      forks_label: '3'
+      pushed_date: '2026-11-18'
+      updated_label: 8 天前有提交
+      updated_days: 8
+      stale: false
     entry_updated: '2026-11-26'
     category_label: 工具与能力
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-sync-backup/
   generated: true
+lastmod: '2026-11-26'
 ---
 
 加密备份插件，双通道模式，默认本地打包，非本机 http 拒绝。须通过 DSH 设置页配置自动上传通道。凭据存于 DSH 凭据库。

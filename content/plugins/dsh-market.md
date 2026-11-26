@@ -30,19 +30,19 @@ params:
     notes: dsh 0.2.1+ 市场是「插件」页的一个标签页；旧版在「设置 → 插件市场」打开，需 dsh web 0.1.0-rc.6+。注意：在装了 DSH Desktop 的机器上用命令行 add 可能装进 profiles/web 而非 Desktop 实际使用的 profile，桌面端请在应用内 Settings → Plugins 安装。
     repo_confirmed: true
     gh:
-      stars: 12882
-      forks: 491
-      issues: 117
+      stars: 13579
+      forks: 520
+      issues: 18
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-18T20:53:09Z'
+      pushed_at: '2026-11-26T16:50:51Z'
       archived: false
       slug: dsh-market/dsh-market
-      stars_label: 12.9k
-      forks_label: '491'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: 13.6k
+      forks_label: '520'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 插件市场与发现
@@ -50,6 +50,7 @@ params:
     weight: 1150
     url: /plugins/dsh-market/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 DSH 内置的插件市场应用：在「插件」页提供一个「市场」标签页，浏览、搜索、筛选、一键安装与切换版本。列表来自官方维护的 awesome-dsh-plugin 精选 Registry（4200+ 插件），支持评论、收藏、分组、备份恢复与更新。

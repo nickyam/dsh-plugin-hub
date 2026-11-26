@@ -7,9 +7,14 @@ baseURL = "https://ai.limzero.com/dsh/"
 locale = "zh-CN"
 title = "DSH 插件图谱"
 enableRobotsTXT = true
-# sitemap 的 lastmod 用 git 提交日期：比在 front matter 里写构建时间准确，
-# 也不会让每次构建都改一遍 133 个 content/plugins/*.md（diff 噪音）。
+# sitemap 的 lastmod：优先用 front matter 里的 lastmod（= 这一条内容最后被改动的日期，
+# 由 build_data.py 从 data/entry_updated.json 写入），没有才退回 git 提交时间。
+# 2026-11-26 之前只靠 enableGitInfo：每次部署都会重写全部 content/plugins/*.md，
+# 于是 190 多个 URL 的 lastmod 一起变成构建日，等于每次都在告诉爬虫「全站刚更新」。
 enableGitInfo = true
+
+[frontmatter]
+  lastmod = ["lastmod", ":git", "date"]
 
 [params]
   description = "顺着名字找到 DeepSeek Harness 插件的官方 GitHub 仓库，读 README 把简介、安装与功能亮点整理成能查的卡片。"

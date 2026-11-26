@@ -38,7 +38,7 @@ params:
       forks_label: '1'
       pushed_date: '2026-10-22'
       updated_label: 1 个月前有提交
-      updated_days: 34
+      updated_days: 35
       stale: false
     entry_updated: '2026-11-06'
     category_label: 娱乐与彩蛋
@@ -46,6 +46,7 @@ params:
     weight: 1010
     url: /plugins/dsh-emoji/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 给 DeepSeek Harness 的 AI 回复加入可切换、自定义的行内表情与独立表情包；支持 B 站、小红书、贴吧、知乎等多平台表情包，也可自定义，让冷冰冰的回复多点 human 味。

@@ -31,19 +31,19 @@ params:
     notes: 仓库 elysia395/dsh-wallpaper-engine，npm 包名是 dsh-plugin-wallpaper-engine（比仓库名多 plugin- 前缀，别填错）。GitHub 上有多个二次开发分支，本条取 README 完整、标注为正式主仓且 ★ 数最高的 elysia395 仓库。
     repo_confirmed: true
     gh:
-      stars: 7450
-      forks: 121
-      issues: 20
+      stars: 8239
+      forks: 130
+      issues: 18
       language: JavaScript
       license: MIT
-      pushed_at: '2026-11-18T11:42:00Z'
+      pushed_at: '2026-11-26T15:43:11Z'
       archived: false
       slug: elysia395/dsh-wallpaper-engine
-      stars_label: '7450'
-      forks_label: '121'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '8239'
+      forks_label: '130'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-17'
     category_label: 界面与体验
@@ -51,6 +51,7 @@ params:
     weight: 1010
     url: /plugins/dsh-wallpaper-engine/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 把本机 Wallpaper Engine 的 Scene、Web 与视频壁纸搬进 DSH 对话界面，再配液态玻璃、字体、吉祥物与可分享的外观预设；纯外观插件，不向 agent 注册工具、不注入提示词、不增加 token 开销。

@@ -40,6 +40,7 @@ params:
     weight: 1010
     url: /plugins/dsh-dream-skin/
   generated: true
+lastmod: '2026-11-21'
 ---
 
 给 DSH Web 换肤的原生插件：8 套原创 Mirage 主题在「设置 → 个性化皮肤」一键切换，支持自定义壁纸（本地图 / 图片 URL / 渐变 / 必应每日 / 轮播）、叠加强调色、毛玻璃 / 液态玻璃材质与主题包导入导出分享。纯走 ctx.theme 官方扩展点，不改安装包、不注入。

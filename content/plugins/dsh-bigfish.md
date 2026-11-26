@@ -34,7 +34,7 @@ params:
     notes: 和本站已收的 dsh-pet（PC2005-cloud）不是一回事：dsh-pet 明确说「不轮询、不插桩、不感知任何东西」，只负责陪；dsh-bigfish 主打跟着任务状态演出，两只要一起装就得接受右下角有俩。Node 要 ^22.19.0 || >=24.0.0，只用 Web 界面。稳定版 0.6.0，另有 0.7 Web 预览版（散步与回家、互动玩具、三套小窝）。发布首日装到旧版是 pnpm 11 的 24 小时发布冷却，不是装错。作者在 macOS Apple Silicon + Node 24.19.0 上跑过 151 项单测、34 项 Chromium 回归与 DSH 0.2.0-rc.2 的 15 组隔离原生流程。
     repo_confirmed: true
     gh:
-      stars: 29
+      stars: 31
       forks: 3
       issues: 0
       language: TypeScript
@@ -42,7 +42,7 @@ params:
       pushed_at: '2026-11-12T02:55:24Z'
       archived: false
       slug: gosomea/dsh-bigfish
-      stars_label: '29'
+      stars_label: '31'
       forks_label: '3'
       pushed_date: '2026-11-12'
       updated_label: 14 天前有提交
@@ -54,6 +54,7 @@ params:
     weight: 1010
     url: /plugins/dsh-bigfish/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 蹲在 DSH Web 右下角的一只可拖动大肥鱼，会跟着任务状态换动作：你交任务它就收工准备，它读文件搜索执行工具时气泡里能看到工具状态，等你确认时举牌，任务结束开心收工。角色能换，台词能改，动作能自己加。

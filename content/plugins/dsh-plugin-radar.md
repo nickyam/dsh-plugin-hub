@@ -28,19 +28,19 @@ params:
     notes: 雷达站点数据在构建期打包；公开 JSON 暂时不可用通常不影响已部署的浏览。生产运行级测试引擎未开源。项目声明为社区项目，与 DeepSeek 官方无隶属关系。
     repo_confirmed: true
     gh:
-      stars: 1508
-      forks: 201
-      issues: 41
+      stars: 1509
+      forks: 208
+      issues: 51
       language: Python
       license: MIT
-      pushed_at: '2026-11-19T00:32:36Z'
+      pushed_at: '2026-11-26T21:43:08Z'
       archived: false
       slug: AdamPlatin123/dsh-plugin-radar
-      stars_label: '1508'
-      forks_label: '201'
-      pushed_date: '2026-11-19'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '1509'
+      forks_label: '208'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 插件市场与发现
@@ -48,6 +48,7 @@ params:
     weight: 1010
     url: /plugins/dsh-plugin-radar/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 DSH 开源生态雷达：持续收集插件候选、归并兼容性记录，并发布可浏览的目录与机器可读数据，帮助使用者按兼容性筛选插件、把生态数据接入自己的工具。

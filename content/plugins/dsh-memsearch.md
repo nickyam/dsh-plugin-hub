@@ -3,7 +3,10 @@ title: dsh-memsearch（自动语义记忆）
 description: 让 DSH 像 Codex / Claude Code 的 memsearch 插件一样默认自动写入与按需召回记忆：会话开始后台跑一次索引并注入状态提示，每轮结束把用户问题与最终回复追加进本地记忆日志并增量重索引；纯本地，默认不调用任何 LLM。
 categories:
 - memory
-tags: []
+tags: &id001
+- 记忆
+- 向量检索
+- 自动召回
 weight: 1010
 params:
   plugin:
@@ -24,6 +27,7 @@ params:
     - 检索沿用官方设计：不自动塞上下文，由 agent 按需通过 memsearch 官方 memory-recall skill 检索
     - 可配置 memoryDir、collection、injectSessionStatus、capture、captureMinPromptLength（默认 10，短问候不捕获）、maxCaptureChars（默认 8000）、summarizePlugin、indexAfterCapture
     - 记忆日志默认落 ~/.memsearch/memory/，设 MEMSEARCH_DIR 时落 $MEMSEARCH_DIR/memory/；配置需要在 cordis.patch.yml 用 insert 列表追加插件实例
+    tags: *id001
     flag: npm 包名是 dsh-memsearch，文章写的 MemSearch-dsh 返回 404；跨平台记忆是 memsearch 生态能力，本插件只负责 DSH 侧的写与召回
     notes: 官方仓库 clouwer/dsh-memsearch，npm 包 dsh-memsearch；文章包名 MemSearch-dsh 在 npm 查无此包（404），按 README 用 dsh-memsearch。文中「记忆在 Claude Code、Codex、DSH、OpenClaw、OpenCode 之间自由流动、同一台机器同一项目文件夹下通用」描述的是 memsearch 本体生态，本插件 README 只声明「对齐官方 Codex/Claude Code memsearch 插件的自动写入与召回」，不承诺跨平台，卡片按 README 写。安装后还需在 cordis.patch.yml 用 insert 列表追加配置才能启用自动捕获，不是装完即生效。
     repo_confirmed: true
@@ -48,6 +52,7 @@ params:
     weight: 1010
     url: /plugins/dsh-memsearch/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 让 DSH 像 Codex / Claude Code 的 memsearch 插件一样默认自动写入与按需召回记忆：会话开始后台跑一次索引并注入状态提示，每轮结束把用户问题与最终回复追加进本地记忆日志并增量重索引；纯本地，默认不调用任何 LLM。

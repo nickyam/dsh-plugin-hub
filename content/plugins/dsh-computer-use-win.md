@@ -35,19 +35,19 @@ params:
     notes: 文章写的是「dsh-computer-use，目前只有 Windows 版」，据此取 Yu-tao-Li/dsh-computer-use-win（README 明确 Windows 专属、npm 包 dsh-computer-use-win，registry 200）。GitHub 上另有一个 Anionex/dsh-computer-use 是 macOS 版（描述为 Native macOS control），与文章「只有 Windows 版」不符，未收。文章把它当作 dsh-computer-use 介绍，本站以实际 Windows 仓库名建条目并留别名。第二十七篇（乌鸦君疯狂学AI，2026-11-25）是同一插件的单篇深评，只补发现线索；文中版本 0.6.3 已旧于 npm latest 0.6.4（安装命令不带版本号，卡片无需改）。文中三个坑与 README 一致：只关窗口不算重启、须托盘图标「退出」再开 DSH Desktop；Chromium / Electron / 部分 WinUI 忽略后台输入，要先 focus 或切前台，结果里 deliveredTo 说明按键落到哪个窗口；launch_app 不能让 cmd / PowerShell 带参数启动，命令交给 DSH 自己的命令行工具。文章的下载量与星标数不采信。
     repo_confirmed: true
     gh:
-      stars: 796
-      forks: 23
-      issues: 1
+      stars: 911
+      forks: 26
+      issues: 3
       language: JavaScript
       license: MIT
-      pushed_at: '2026-11-18T16:04:56Z'
+      pushed_at: '2026-11-25T15:04:54Z'
       archived: false
       slug: Yu-tao-Li/dsh-computer-use-win
-      stars_label: '796'
-      forks_label: '23'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '911'
+      forks_label: '26'
+      pushed_date: '2026-11-25'
+      updated_label: 昨天有提交
+      updated_days: 1
       stale: false
     entry_updated: '2026-11-26'
     category_label: 工具与能力
@@ -55,6 +55,7 @@ params:
     weight: 1020
     url: /plugins/dsh-computer-use-win/
   generated: true
+lastmod: '2026-11-26'
 ---
 
 让 DSH 看懂并操作真实的 Windows 桌面：找到按钮与输入框、读出屏幕文字、点击打字、切换管理窗口；网页默认在 DSH 自己的浏览器后台完成、不动你的鼠标，用到鼠标键盘时有明显提示、按 Esc 随时停止。

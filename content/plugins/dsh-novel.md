@@ -42,7 +42,7 @@ params:
       forks_label: '0'
       pushed_date: '2026-10-24'
       updated_label: 1 个月前有提交
-      updated_days: 32
+      updated_days: 33
       stale: false
     entry_updated: '2026-11-17'
     category_label: 内容创作与办公
@@ -50,6 +50,7 @@ params:
     weight: 1010
     url: /plugins/dsh-novel/
   generated: true
+lastmod: '2026-11-17'
 ---
 
 标准化小说创作插件：一个工作区目录就是一本书，人物、世界观、大纲和章节落在同一份 canon（设定正典）里，Agent 通过工具读写、你在 Web UI「内容」页侧栏核对，避免长篇写到后面设定崩、看不见前文。

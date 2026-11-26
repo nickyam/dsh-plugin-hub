@@ -33,19 +33,19 @@ params:
     notes: 两件事得分清：本机发现的 Skill 只是「存在」，不等于这个会话加载了它；接 MCP 之前要看它的启动命令和权限，因为插件以当前 DSH 进程的权限运行，安装动作会真的去跑 npx / uvx / docker。从 GitHub 装要过 pnpm 的构建白名单，会提示 allowBuilds，按打印出的键名补进 profile 的 pnpm-workspace.yaml 再重试，最好锁 commit。市场页会访问外部服务、受各源配额限制，没配 GitHub token 时预算较低；填进面板的 token 只对 GitHub 主机生效。星标很少，属于「功能写得很全但还没被广泛用」的那类，装前看源码。
     repo_confirmed: true
     gh:
-      stars: 25
+      stars: 28
       forks: 3
-      issues: 2
+      issues: 0
       language: JavaScript
       license: MIT
-      pushed_at: '2026-11-16T04:11:56Z'
+      pushed_at: '2026-11-23T07:53:55Z'
       archived: false
       slug: YunzhouLi-hub/dsh-overall-mcp
-      stars_label: '25'
+      stars_label: '28'
       forks_label: '3'
-      pushed_date: '2026-11-16'
-      updated_label: 10 天前有提交
-      updated_days: 10
+      pushed_date: '2026-11-23'
+      updated_label: 3 天前有提交
+      updated_days: 3
       stale: false
     entry_updated: '2026-11-19'
     category_label: 集成与迁移
@@ -53,6 +53,7 @@ params:
     weight: 1010
     url: /plugins/dsh-overall-mcp/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 在 DSH 侧栏挂一块「全局 MCP & Skill」：把散落在 Claude Desktop、Claude Code、Cursor、Codex CLI 里的 MCP 配置一次扫出来登记，再从六个上游目录装新的，最后用调用记录回答那个老问题——明明配了，为什么它没用。

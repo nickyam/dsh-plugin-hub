@@ -28,19 +28,19 @@ params:
     notes: README 标注当前基线 dsh-v0.2.2-rc.1，Host 端无需公网 IP 或端口转发；Linux 一键安装需登录官网获取授权码。
     repo_confirmed: true
     gh:
-      stars: 3265
-      forks: 244
-      issues: 60
+      stars: 3827
+      forks: 271
+      issues: 48
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-19T01:18:39Z'
+      pushed_at: '2026-11-26T18:30:47Z'
       archived: false
       slug: liguobao/ds-harness-remote
-      stars_label: '3265'
-      forks_label: '244'
-      pushed_date: '2026-11-19'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '3827'
+      forks_label: '271'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 移动端与远程
@@ -48,6 +48,7 @@ params:
     weight: 1010
     url: /plugins/ds-harness-remote/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 ds-harness-remote 是基于 DeepSeek Harness 插件机制的远程访问方案，通过低延迟、端到端加密的 P2P / 中继网络，让你用手机、电脑或浏览器随时连回本地 DSH 工作区，无需公网端口。

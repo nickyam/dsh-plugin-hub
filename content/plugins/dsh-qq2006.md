@@ -39,7 +39,7 @@ params:
       forks_label: '1'
       pushed_date: '2026-08-27'
       updated_label: 3 个月前有提交
-      updated_days: 90
+      updated_days: 91
       stale: false
     entry_updated: '2026-11-06'
     category_label: 娱乐与彩蛋
@@ -47,6 +47,7 @@ params:
     weight: 1010
     url: /plugins/dsh-qq2006/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 把 DeepSeek Harness 的 WebUI 一键变回 2006 年的 QQ 客户端：注册珊瑚蓝主题、镜像 body[data-ds-skin]、全局皮肤表 + 完整组件级补丁，从登录窗到聊天窗口全链路还原那个蓝色小企鹅。可切换、可持久化、默认皮肤零污染。

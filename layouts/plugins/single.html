@@ -56,7 +56,7 @@
         <h2>速览</h2>
         <dl class="kv">
           <div><dt>分类</dt><dd><a href="{{ "categories/" | relURL }}{{ $p.category }}/">{{ $p.category_label }}</a></dd></div>
-          <div><dt>性质</dt><dd>{{ $p.status_label }}{{ if eq $p.status "unknown" }}（原文没写是谁做的）{{ end }}</dd></div>
+          <div><dt>性质</dt><dd>{{ $p.status_label }}{{ if eq $p.status "unknown" }}（维护方未明）{{ end }}</dd></div>
           <div><dt>仓库</dt><dd>
             {{ with $p.repo }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>{{ else }}<span class="muted">暂未找到官方仓库</span>{{ end }}
             {{ with $p.gh }}

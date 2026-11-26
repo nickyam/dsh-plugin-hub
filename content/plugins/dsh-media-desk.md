@@ -32,19 +32,19 @@ params:
     notes: 社区项目（MIT，非 DeepSeek 官方），作者为小红书博主「蜗牛的科技笔记」。需 DSH 0.2.x；包已发 npm（dsh-media-desk），也可从 Releases 下载 tgz 离线装。桌面版与网页版命令分别是 --profile desktop 与 web。文章（wx-feishu）称其「记灵感、写脚本、做封面、设计分镜、复盘」的工作台，与 README 一致。
     repo_confirmed: true
     gh:
-      stars: 1532
-      forks: 179
-      issues: 6
+      stars: 1745
+      forks: 202
+      issues: 14
       language: JavaScript
       license: MIT
       pushed_at: '2026-11-18T14:29:36Z'
       archived: false
       slug: woniuniuniu/dsh-media-desk
-      stars_label: '1532'
-      forks_label: '179'
+      stars_label: '1745'
+      forks_label: '202'
       pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      updated_label: 8 天前有提交
+      updated_days: 8
       stale: false
     entry_updated: '2026-11-09'
     category_label: 内容创作与办公
@@ -52,6 +52,7 @@ params:
     weight: 1030
     url: /plugins/dsh-media-desk/
   generated: true
+lastmod: '2026-11-09'
 ---
 
 装在 DSH 侧栏的自媒体创作工作台，一句话记灵感，一键生成口播脚本、标题、视频封面、配图和分镜，并支持排期与发布复盘。

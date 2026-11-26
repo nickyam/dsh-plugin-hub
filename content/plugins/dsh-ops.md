@@ -26,19 +26,19 @@ params:
     notes: 需 DSH 0.2.2-rc.1 及以上（0.5 系列不再支持 0.2.0 / 0.2.1）；桌面端须用桌面应用自带 CLI。README 曾提示 0.5.0 存在缓存膨胀 bug，安装前请确认已修复到最新版。
     repo_confirmed: true
     gh:
-      stars: 5921
-      forks: 210
-      issues: 116
+      stars: 6027
+      forks: 218
+      issues: 44
       language: JavaScript
       license: MIT
-      pushed_at: '2026-11-15T10:39:45Z'
+      pushed_at: '2026-11-26T18:11:50Z'
       archived: false
       slug: T-Auto/dsh-ops
-      stars_label: '5921'
-      forks_label: '210'
-      pushed_date: '2026-11-15'
-      updated_label: 10 天前有提交
-      updated_days: 10
+      stars_label: '6027'
+      forks_label: '218'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 协作与工作流
@@ -46,6 +46,7 @@ params:
     weight: 1050
     url: /plugins/dsh-ops/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 以提高 token 效率为目的的底层操作工具插件，提供 ops 系列工具并隐藏 / 替换部分官方工具，减少 Token 消耗与任务耗时，低改动面、低侵入性。

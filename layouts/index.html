@@ -67,6 +67,7 @@
         {{ end }}
       </div>
       <p class="no-result" id="no-result" hidden>没找到匹配的插件。试试别名，或者换个说法（例如「全家桶」「桌宠」「记账」）。</p>
+      <noscript><p class="noscript-hint">没开 JavaScript 时，这里只显示前 24 条，分类筛选和翻页也用不了——<a href="{{ "plugins/" | relURL }}">去插件库</a>看全部 {{ $stats.plugins }} 条。</p></noscript>
       <nav class="pager" id="pager" aria-label="插件分页" hidden>
         <button class="pager-btn" type="button" data-page="prev" aria-label="上一页">‹</button>
         <span class="pager-pages" id="pager-pages"></span>

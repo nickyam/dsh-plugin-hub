@@ -29,19 +29,19 @@ params:
     notes: 独立的社区开源项目，与 DeepSeek 不存在隶属、合作、授权或背书关系（README 明确声明）。另有 dataelement、Tauri 两个独立桌面构建，本站单独立项，不合并。
     repo_confirmed: true
     gh:
-      stars: 36356
-      forks: 1652
-      issues: 399
+      stars: 36907
+      forks: 1667
+      issues: 411
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-18T18:48:02Z'
+      pushed_at: '2026-11-26T09:25:50Z'
       archived: false
       slug: anywhere-labs/dsh-desktop
-      stars_label: 36.4k
-      forks_label: '1652'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: 36.9k
+      forks_label: '1667'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 界面与体验
@@ -49,6 +49,7 @@ params:
     weight: 1040
     url: /plugins/dsh-desktop/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 把 DeepSeek Harness 的本地 Web UI、Host 服务与插件系统封装进原生桌面应用：提供窗口、系统托盘、终端、更新与工作配置，开箱即用、免命令行、无需装 Node.js。项目固定并原样运行特定上游版本，通过 Harness 的插件机制组合上游能力。

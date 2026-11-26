@@ -28,19 +28,19 @@ params:
     notes: DSH 插件包为 @agentscope-ai/reme-dsh-plugin；核心记忆服务通过 `pip install reme-ai` 安装后 `reme start` 启动（默认 127.0.0.1:2333）。
     repo_confirmed: true
     gh:
-      stars: 3820
-      forks: 355
-      issues: 54
+      stars: 3849
+      forks: 358
+      issues: 55
       language: Python
       license: Apache-2.0
-      pushed_at: '2026-11-18T17:46:48Z'
+      pushed_at: '2026-11-26T08:31:56Z'
       archived: false
       slug: agentscope-ai/ReMe
-      stars_label: '3820'
-      forks_label: '355'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '3849'
+      forks_label: '358'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 记忆与知识
@@ -48,6 +48,7 @@ params:
     weight: 1010
     url: /plugins/reme/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 ReMe 是本地优先、自我演化的个人知识库（记忆管理工具包），把对话与资源转成可读、可编辑、可检索、互联的 Markdown 记忆，供 DeepSeek Harness 等 Agent 共享同一工作区进行检索、维护与演化。

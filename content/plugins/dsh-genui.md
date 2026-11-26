@@ -26,19 +26,19 @@ params:
     notes: npm 包名现为 @changfenhuang/dsh-genui，旧包 @omdsh-dev/dsh-genui 已弃用，需先移除再重装新包。
     repo_confirmed: true
     gh:
-      stars: 1024
-      forks: 101
-      issues: 10
+      stars: 1067
+      forks: 108
+      issues: 6
       language: TypeScript
       license: MIT
-      pushed_at: '2026-11-18T10:45:24Z'
+      pushed_at: '2026-11-25T10:36:19Z'
       archived: false
       slug: omdsh-dev/dsh-genui
-      stars_label: '1024'
-      forks_label: '101'
-      pushed_date: '2026-11-18'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      stars_label: '1067'
+      forks_label: '108'
+      pushed_date: '2026-11-25'
+      updated_label: 昨天有提交
+      updated_days: 1
       stale: false
     entry_updated: '2026-11-06'
     category_label: 界面与体验
@@ -46,6 +46,7 @@ params:
     weight: 1040
     url: /plugins/dsh-genui/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 面向 DSH 的生成式 UI 插件，将助手回复转化为安全、完全交互式的 UI 界面，在模型文本回复旁内联渲染图表、表单、测验、Mermaid 图与 3D 场景等组件。

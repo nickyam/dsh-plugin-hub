@@ -45,8 +45,8 @@ params:
       stars_label: '7'
       forks_label: '3'
       pushed_date: '2026-10-27'
-      updated_label: 29 天前有提交
-      updated_days: 29
+      updated_label: 1 个月前有提交
+      updated_days: 30
       stale: false
     entry_updated: '2026-11-19'
     category_label: 工具与能力
@@ -54,6 +54,7 @@ params:
     weight: 1010
     url: /plugins/dsh-git-graph/
   generated: true
+lastmod: '2026-11-19'
 ---
 
 在会话区加一个「Git」页签，把分支栏、提交图、变更文件与差异视图放在同一面板，绑定当前会话的工作目录；不只是看图，还能切分支、暂存、提交、推送与拉取。

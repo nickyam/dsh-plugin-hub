@@ -25,19 +25,19 @@ params:
     tags: *id001
     repo_confirmed: true
     gh:
-      stars: 3781
-      forks: 206
-      issues: 24
+      stars: 3814
+      forks: 210
+      issues: 23
       language: Python
       license: MIT
-      pushed_at: '2026-11-17T17:17:07Z'
+      pushed_at: '2026-11-26T09:21:56Z'
       archived: false
       slug: whiteguo233/OpenBiliClaw
-      stars_label: '3781'
-      forks_label: '206'
-      pushed_date: '2026-11-17'
-      updated_label: 8 天前有提交
-      updated_days: 8
+      stars_label: '3814'
+      forks_label: '210'
+      pushed_date: '2026-11-26'
+      updated_label: 今天有提交
+      updated_days: 0
       stale: false
     entry_updated: '2026-11-06'
     category_label: 工具与能力
@@ -45,6 +45,7 @@ params:
     weight: 1010
     url: /plugins/openbiliclaw/
   generated: true
+lastmod: '2026-11-06'
 ---
 
 通用个性化内容推荐 Agent——本地运行、跨平台理解你、只为你一个人构建。
