@@ -220,3 +220,5 @@ bash deploy/deploy.sh --sync-only  # 产物已构建，只同步
 
 第 27 篇（乌鸦君疯狂学AI，2026-11-25「DSH插件测评：电脑操控 Windows，鼠标不动」）是同一插件的单篇深度测评，已在 data/sources.yaml / data/plugins.yaml 补充记录（只补发现线索，未新建条目）。文中版本 0.6.3 已旧于 npm latest 0.6.4，三个坑按 README 一致（只关窗口不算重启、须托盘图标「退出」再开 DSH Desktop、后台输入被忽略需 focus、launch_app 不能带参数）。作者的场景叙事与文末号召不采信为独立结论。
 
+
+第 28 篇（DevOps运维民工，2026-11-23「DeepSeek 生态又添神器：给 DeepSeek Harness 请一个项目经理」）是个人助理管理任务与项目，已在 data/sources.yaml / data/plugins.yaml 补充记录（新建条目 dsh-projects）。`install: dsh plugin --profile web add deepseek-harness-projects-plugin@preview`，npm 包 `deepseek-harness-projects-plugin`，MIT 协议，仓库 `github.com/hovocope135-tech/DSH-projects`。`engines.dsh >=0.2.0 <0.3.0`，Node 24+、screenpipe 依赖。文章口径：个人助理管理任务与项目的三要素（拆分任务、记上下文、看板验收），以下不采信：任务自动完成的程度、团队规模对比、个人工作风格差异。
