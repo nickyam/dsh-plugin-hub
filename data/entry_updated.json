@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-25 23:57",
+  "generated": "2026-11-26 09:49",
   "entries": {
     "agentero-dsh": "2026-11-09",
     "answer-me-with-html": "2026-11-06",
@@ -31,7 +31,7 @@
     "dsh-claude-style": "2026-11-24",
     "dsh-client-ui-skill-explorer": "2026-11-17",
     "dsh-codex-ui": "2026-11-17",
-    "dsh-computer-use-win": "2026-11-17",
+    "dsh-computer-use-win": "2026-11-26",
     "dsh-connect-workbuddy": "2026-11-21",
     "dsh-context": "2026-11-06",
     "dsh-cost-meter": "2026-11-17",
@@ -85,7 +85,7 @@
     "dsh-overall-mcp": "2026-11-19",
     "dsh-pet": "2026-11-06",
     "dsh-plugin-academic-paper": "2026-11-17",
-    "dsh-plugin-bridge": "2026-11-24",
+    "dsh-plugin-bridge": "2026-11-25",
     "dsh-plugin-claude-bridge": "2026-11-06",
     "dsh-plugin-gate": "2026-11-06",
     "dsh-plugin-radar": "2026-11-06",

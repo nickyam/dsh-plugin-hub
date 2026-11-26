@@ -8,7 +8,7 @@ tags: &id001
 - Windows
 - 电脑控制
 - 工具
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: dsh-computer-use-win
@@ -28,9 +28,11 @@ params:
     - 看得见的控制：浮窗按步骤显示思考与操作，用到键鼠时屏幕边缘发亮并给提示条
     - 随时叫停：按 Esc 立即停止当前一轮操作
     - 25 个操作工具 + 1 个管理入口，中英文设置界面
+    - 成串执行：batch 一次顺序跑 1–20 个已规划动作，遇出错、跳转、弹窗即停，最后一步引起的跳转仍算整批完成并写在 afterLastStep
+    - 档位可调：工作方式分「少打扰（默认）/ 前台操作 / 虚拟机」，工具加载分「全部 26 / 精简 12 / 懒启动（默认先只加载 1 个管理入口）/ 自定义」
     tags: *id001
     flag: 社区项目；仅 Windows；能真实操作桌面与键鼠，涉及账号/付款操作请全程留意并按需用 Esc 停止
-    notes: 文章写的是「dsh-computer-use，目前只有 Windows 版」，据此取 Yu-tao-Li/dsh-computer-use-win（README 明确 Windows 专属、npm 包 dsh-computer-use-win，registry 200）。GitHub 上另有一个 Anionex/dsh-computer-use 是 macOS 版（描述为 Native macOS control），与文章「只有 Windows 版」不符，未收。文章把它当作 dsh-computer-use 介绍，本站以实际 Windows 仓库名建条目并留别名。
+    notes: 文章写的是「dsh-computer-use，目前只有 Windows 版」，据此取 Yu-tao-Li/dsh-computer-use-win（README 明确 Windows 专属、npm 包 dsh-computer-use-win，registry 200）。GitHub 上另有一个 Anionex/dsh-computer-use 是 macOS 版（描述为 Native macOS control），与文章「只有 Windows 版」不符，未收。文章把它当作 dsh-computer-use 介绍，本站以实际 Windows 仓库名建条目并留别名。第二十七篇（乌鸦君疯狂学AI，2026-11-25）是同一插件的单篇深评，只补发现线索；文中版本 0.6.3 已旧于 npm latest 0.6.4（安装命令不带版本号，卡片无需改）。文中三个坑与 README 一致：只关窗口不算重启、须托盘图标「退出」再开 DSH Desktop；Chromium / Electron / 部分 WinUI 忽略后台输入，要先 focus 或切前台，结果里 deliveredTo 说明按键落到哪个窗口；launch_app 不能让 cmd / PowerShell 带参数启动，命令交给 DSH 自己的命令行工具。文章的下载量与星标数不采信。
     repo_confirmed: true
     gh:
       stars: 796
@@ -44,13 +46,13 @@ params:
       stars_label: '796'
       forks_label: '23'
       pushed_date: '2026-11-18'
-      updated_label: 6 天前有提交
-      updated_days: 6
+      updated_label: 7 天前有提交
+      updated_days: 7
       stale: false
-    entry_updated: '2026-11-17'
+    entry_updated: '2026-11-26'
     category_label: 工具与能力
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/dsh-computer-use-win/
   generated: true
 ---

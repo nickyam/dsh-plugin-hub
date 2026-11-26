@@ -45,7 +45,7 @@ params:
       forks_label: '0'
       pushed_date: '2026-09-08'
       updated_label: 2 个月前有提交
-      updated_days: 77
+      updated_days: 78
       stale: false
     entry_updated: '2026-11-17'
     category_label: 内容创作与办公

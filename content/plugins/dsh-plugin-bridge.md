@@ -33,7 +33,7 @@ params:
     notes: 官方仓库 github.com/Totoro-qaq/dsh-plugin-bridge（默认分支 main，npm 包 dsh-plugin-bridge，MIT，Node >=22，latest 0.5.2）。文章《dsh-plugin-bridge：会话换工具组，状态不丢》只给包名与「会话换工具组、状态不丢、五段固定交接」，与 README 核心定位吻合，据此收录；仓库与 README 按包名检索核实。安装命令按 README 用 dsh plugin --profile web add dsh-plugin-bridge。兼容范围按 README 校正：Bridge 0.5.2 的安装准入区间覆盖已发布的 DSH 0.2.2 线（含 0.2.2-rc.1），0.5.0 候选在隔离的 DSH 0.2.1-rc.2 Web 与原生 macOS Desktop 上做过验收；这是准入区间不是逐版本实测承诺，README 明确 admission 不等于 acceptance。前序草稿把 0.5.2 误写成 DSH 版本号、并用英文描述，本站按官方 README 改为中文并修正。常用命令：/bridge 列目标预设、/bridge code 预览、/bridge code --go 迁移后等待、--go --continue 确认下一步继续；卸载 dsh plugin --profile web remove dsh-plugin-bridge 后重启 dsh web。作者自建的第三方 Discover 索引源（Totoro-qaq/dsh-plugin-index）不是官方认证，要在每个 profile 单独添加。与站内 dsh-context（上下文可视化）、dsh-synapse（会话地图）定位不同：本条做的是跨预设状态迁移，未合并。
     repo_confirmed: true
     gh: null
-    entry_updated: '2026-11-24'
+    entry_updated: '2026-11-25'
     category_label: 集成与迁移
     status_label: 社区
     weight: 1010
