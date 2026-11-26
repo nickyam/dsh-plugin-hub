@@ -52,6 +52,8 @@ python3 tools/fetch_repo_stats.py [--all]   # 刷 GitHub 快照，需联网
 | 主站部署时 `/dsh/` 整个消失 | 主站 `deploy.sh` 的 rsync 带 `--delete --delete-excluded`，必须给 `--filter='P dsh/'` |
 | 薄标签页进 sitemap 拖累收录 | `layouts/sitemap.xml` 是自写的：`count<3` 的标签不建索引、页面 `noindex,follow`，别改回 Hugo 默认 |
 | 390px 下整页右侧被裁掉、还滚不动 | `html,body{overflow-x:clip}` 只兜底不治病：卡片里 `flag` 之类长文案必须允许换行 |
+| 嘴上「390px 通过」，一量发现 `innerWidth=500` | macOS 的 Chrome `--headless --window-size=390,844` 会被钳到 500；真 390 只能走 CDP `Emulation.setDeviceMetricsOverride(390×844, mobile)`，否则测的是 500 宽布局 |
+| 改了 CSS 但测出来样式没变 | `ln -sfn 目标 已存在的目录` 会在这个目录里再建一层同名链接，预览服务指到旧 `public/`；换干净目录名再挂 |
 
 ## 收工前
 
