@@ -756,6 +756,7 @@
   - wx-quanjing
   - wx-huxiaomo
   - wx-jiaweisi
+  - wx-tingtong-2026-11-19
 - id: dsh-devops
   name: dsh-devops
   aliases:
@@ -1910,6 +1911,7 @@
   notes: 仓库 shanliuling/dsh-image-gen，npm 包 dsh-image-gen，README 标 v0.11.3（npm registry 实时版本，文章只写 @latest）。README 安装命令带 pnpm 前缀（pnpm dsh plugin ...），本站 install 用等价的无前缀写法；从源码装可用 `dsh plugin --profile web add git+https://github.com/shanliuling/dsh-image-gen.git`。生图为 BYOK 模式，支持订阅账号登录复用额度。文章（wx-shixiang）称「500+ Prompt 灵感库、多模型对比、订阅免 Key」，与 README 一致。
   refs:
   - wx-shixiang
+  - wx-tingtong-2026-11-19
 - id: dsh-rewind
   name: dsh-rewind（对话回退）
   aliases:
@@ -2018,6 +2020,7 @@
   - wx-huxiaomo2
   - wx-mianbiren
   - wx-wawa
+  - wx-tingtong-2026-11-19
 - id: dsh-pocket
   name: dsh-pocket（手机同屏）
   aliases:
@@ -2794,6 +2797,7 @@
   notes: 三个硬前提：Windows 10/11、带内置 @deepseek-ai/dsh-mcp-client 桥的 DSH Desktop 0.2.0-rc.2 或更新、PATH 里能找到 uv（找不到时它还会去 %USERPROFILE%\.local\bin 捞一次；仅装依赖用得上，DSH 本身启动不依赖）。想让 agent 真的「看见」截图，得用支持图片输入的模型。Electron 版独占 desktop 配置，命令行会对它拒绝所有命令（包括只读的），桌面端只能从图形界面装。作者在 Windows 11 + DSH Desktop 0.2.0-rc.2 上验过：桥接对外公布 18 个工具（上游 21 个减去排除的 3 个），启动约 1.5 秒就绪。
   refs:
   - wx-aisketchlab
+  - wx-tingtong-2026-11-19
 - id: dsh-knowledge
   name: dsh-knowledge（知识库）
   aliases:

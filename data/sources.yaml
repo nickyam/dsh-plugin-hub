@@ -275,3 +275,11 @@
   date_note: "2026-11-25 07:30（上海）"
   note: "第二十七篇。单插件深度测评 dsh-computer-use-win（文章自述 2026-11-25 抓取 npm 30 天下载 44,399、近一周 11,210、874 星、版本 0.6.3——属于特定时间切片的数字，不采信）。该插件此前已按第十三篇收录，本条只补发现线索、未新建条目。文中五类能力（读界面 / 后台点 / 后台读网页 / batch 成串 / 留证据）、26 个工具、batch 1–20、带 browserTab 或元素 ID 走 CDP、工作方式三档、工具加载四档、停止快捷键可改、三个坑，逐条与官方 README 一致；版本 0.6.3 已旧于 npm latest 0.6.4。文中的场景叙事与文末号召不采信为独立结论。"
   tags: [公众号, 单插件, 电脑操控, 深度测评]
+- id: wx-tingtong-2026-11-19
+  title: "这 4 个插件，让 DSH 少花三成 token"
+  kind: wechat
+  publisher: "婷瞳"
+  url: "https://mp.weixin.qq.com/s/mt5Lfst_E-PjoOldOAtARw"
+  date_note: "2026-11-19 12:00（上海）"
+  note: "第二十九篇。按『省钱 / 回消息 / 操作电脑 / 画图』四路各选一个插件：dsh-ops（T-Auto/dsh-ops，省 token）、dsh-im（xmanrui/dsh-im，IM 接入）、dsh-windows-mcp（helloHub1212/dsh-windows-mcp，桌面自动化）、dsh-image-gen（shanliuling/dsh-image-gen，对话生图）。四条本站此前均已收录（分别来自第十四、十二、十八、九篇），本次只补发现线索、未新建条目；逐条核对仓库与 npm 包名与既有条目一致，无需改口径。文中 dsh-ops 官方 benchmark 六个任务总 token 111.9 万→74.3 万（降 33.6%）、工具调用 221→122 次、通过率 6/6、read 113→12 次 / pwd 19→0 次属作者引用官方 benchmark 的单次口径，以及四个插件的 star 数（5921 / 3701 / 1736 / 1625）属特定时间切片，均不采信进插件卡。"
+  tags: [公众号, 插件清单, 省token]
