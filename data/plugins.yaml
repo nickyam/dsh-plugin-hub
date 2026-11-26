@@ -3409,7 +3409,7 @@
   status: community
   repo: https://github.com/weibaohui/dsh-sync
   install: dsh plugin --profile web add github:weibaohui/dsh-sync
-  summary: 加密备份 + 双通道 + 默认零外传。管配置、技能清单、会话记录。定时跑默认只本地打包；要自动上传必须同时满足 uploadOnSchedule: true 和 dryRun: false。非本机 http 一律拒绝，只有 loopback 放行。凭据只进 DSH 凭据库，绝不回读。
+  summary: 加密备份插件，双通道模式，默认本地打包，非本机 http 拒绝。须通过 DSH 设置页配置自动上传通道。凭据存于 DSH 凭据库。
   features:
   - 加密归档 + 双通道（Git + WebDAV/对象存储）
   - 默认零外传，仅在显式配置时上传
