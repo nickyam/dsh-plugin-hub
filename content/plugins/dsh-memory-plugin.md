@@ -33,7 +33,7 @@ params:
     - 诊断：scripts/ov-memory-doctor.mjs 一次查安装、凭据配置与服务连通性（--json / --offline / --timeout / --no-color）
     tags: *id001
     flag: 由火山引擎 OpenViking 项目发布（非 DeepSeek 官方）；没配好 OpenViking 服务端等于装了不能用，README 要求服务端支持 viking://~ 家目录别名
-    notes: npm 包是 scoped 的 @openviking/dsh-memory-plugin（0.5.42，Apache-2.0；仓库 volcengine/OpenViking 整体 AGPL-3.0）。npm 上另有同名裸包 dsh-memory-plugin（Culeot/dsh-memory，MIT，走 ctx.storage 的本地记忆域），跟本包不是一个东西，装错就完全不是这个功能。凭据解析顺序 OPENVIKING_* 环境变量 → ~/.openviking/ovcli.conf → ~/.openviking/ov.conf；桌面版从插件页装时不会问凭据，要先自己写好 ovcli.conf。peerDependencies 是 @deepseek-ai/dsh-llm / dsh-mcp-client / dsh-skill-filesystem（>=0.1.0-rc.6 <1.0.0-0），Node ^22.19.0 || >=24（DSH 0.2.1-rc.2+ 实际要 Node >=24.9）。mcpEnabled=false 只关 MCP 工具与 skills，召回/采集/提交照旧；skipSubagentSessions 默认 false；forget 是永久删除。本站另有 dsh-openviking（Rxiain/dsh-openviking，社区侧对接层），两者不是同一项目。本条未实机安装（缺可连通的 OpenViking 服务端），内容全部依据官方 README 与 npm 元数据。
+    notes: npm 包是 scoped 的 @openviking/dsh-memory-plugin（0.5.42，Apache-2.0；仓库 volcengine/OpenViking 整体 AGPL-3.0）。npm 上另有同名裸包 dsh-memory-plugin（Culeot/dsh-memory，MIT，走 ctx.storage 的本地记忆域），跟本包不是一个东西，装错就完全不是这个功能。凭据解析顺序 OPENVIKING_* 环境变量 → ~/.openviking/ovcli.conf → ~/.openviking/ov.conf；桌面版从插件页装时不会问凭据，要先自己写好 ovcli.conf。peerDependencies 是 @deepseek-ai/dsh-llm / dsh-mcp-client / dsh-skill-filesystem（>=0.1.0-rc.6 <1.0.0-0），Node ^22.19.0 || >=24（DSH 0.2.1-rc.2+ 实际要 Node >=24.9）。mcpEnabled=false 只关 MCP 工具与 skills，召回/采集/提交照旧；skipSubagentSessions 默认 false；forget 是永久删除。本站另有 dsh-openviking（Rxiain/dsh-openviking，社区侧对接层），两者不是同一项目。内容依据官方 README 与 npm 元数据整理。
     repo_confirmed: true
     gh: null
     entry_updated: '2026-11-26'

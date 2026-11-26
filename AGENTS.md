@@ -39,7 +39,7 @@ python3 tools/fetch_repo_stats.py [--all]   # 刷 GitHub 快照，需联网
 3. 归类、改名、改简介 → 只改 `data/*.yaml`，永远不碰产物。
 4. 主色 `#3C5DFF`（DeepSeek 鲸鱼蓝），别改回更早的紫色。
 5. **来源信息已整体下线**（2026-11-18）：`derived.json`、`search.json`、任何页面都不许出现来源标题 / 链接 / 篇数。`refs` 只作内部去重台账。
-6. 收录两条硬规则（见 README）：要自己装一次、要能读到官方仓库 README。**找不到仓库就不建条目**，不留占位卡。
+6. 收录两条硬规则（见 README）：要能读到官方仓库 README、要能核实包名与安装命令。**找不到仓库就不建条目**，不留占位卡。**不要求本机实装**（2026-11-26 用户明确：这是插件图谱，不是实测站）。
 
 ## 已踩过的坑
 
@@ -57,7 +57,7 @@ python3 tools/fetch_repo_stats.py [--all]   # 刷 GitHub 快照，需联网
 
 ```bash
 ./build.sh 2>&1 | grep -E "ERROR|校验通过|条目 "          # 构建无 Error、条目数对得上
-grep -o "<loc>" public/sitemap.xml | wc -l               # 当前 185（141 plugins + 26 tags + 14 categories + 4 静态页）；暴涨=薄标签页又进索引
+grep -o "<loc>" public/sitemap.xml | wc -l               # 当前 193（146 plugins + 13 categories + 29 tags + 静态页）；暴涨=薄标签页又进索引
 grep -o 'css/main\.min\.[a-f0-9]*\.css' public/index.html | head -1   # 指纹文件名（每次构建只变 hash 不变格式）
 ```
 
