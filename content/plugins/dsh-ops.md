@@ -6,7 +6,7 @@ categories:
 tags: &id001
 - 自动化
 - token优化
-weight: 1040
+weight: 1050
 params:
   plugin:
     id: dsh-ops
@@ -43,7 +43,7 @@ params:
     entry_updated: '2026-11-06'
     category_label: 协作与工作流
     status_label: 社区
-    weight: 1040
+    weight: 1050
     url: /plugins/dsh-ops/
   generated: true
 ---

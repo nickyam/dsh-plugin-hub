@@ -7,7 +7,7 @@ tags: &id001
 - Windows
 - 桌面自动化
 - MCP
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: dsh-windows-mcp
@@ -50,7 +50,7 @@ params:
     entry_updated: '2026-11-19'
     category_label: 工具与能力
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/dsh-windows-mcp/
   generated: true
 ---

@@ -285,13 +285,10 @@
   tags: [公众号, 插件清单, 省token]
 
 - id: wx-backup-2026-11-26
-  title: 这 3 个插件，让 DSH 更好用——dsh-backup/dsh-config-manager/dsh-sync-backup
-  author: 乌鸦君疯狂学AI
-  date: 2026-11-26
-  category: tool
-  tags:
-  - dsh-backup
-  - dsh-config-manager
-  - dsh-sync-backup
-  notes: 3 个插件均为 community 状态，仅作发现来源，不新建条目
-  refs:
+  title: "5 个 DSH 同步插件实测：换台电脑接着干，升级不发怵"
+  kind: wechat
+  publisher: "乌鸦君疯狂学AI"
+  url: "https://mp.weixin.qq.com/s/rMEx20H-YIBw2ythIu0cZg"
+  date_note: "2026-11-26（上海）"
+  note: "第三十篇。按三条技术路线介绍同步/备份插件：配置迁移（DSH Config Manager）、记忆层加密归档（DSH-Sync-Backup）、双向增量同步（weibaohui/dsh-sync、dpskk2/dsh-chatsync），另加 dsh-backup 做救急快照。按包名检索到官方仓库与 npm，据此新建 dsh-backup（github:xiaoyuyu6420/dsh-backup）、dsh-config-manager（npm dsh-config-manager）、dsh-sync-backup（github:weibaohui/dsh-sync）三个条目，内容以官方 README 为准；weibaohui/dsh-sync 与 dpskk2/dsh-chatsync 属同一双向同步路线、不另建条目。文中的 star 数、下载数属特定时间切片，不采信进插件卡。"
+  tags: [公众号, 插件清单, 备份, 同步]

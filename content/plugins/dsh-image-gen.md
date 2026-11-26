@@ -8,7 +8,7 @@ tags: &id001
 - 画布
 - 多模型
 - BYOK
-weight: 1010
+weight: 1020
 params:
   plugin:
     id: dsh-image-gen
@@ -49,7 +49,7 @@ params:
     entry_updated: '2026-11-17'
     category_label: 视觉与设计
     status_label: 社区
-    weight: 1010
+    weight: 1020
     url: /plugins/dsh-image-gen/
   generated: true
 ---
