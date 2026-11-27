@@ -18,7 +18,7 @@ params:
     - DSBot
     category: workflow
     status: community
-    repo: https://github.com/Fei2411/DS-Bot
+    repo: https://github.com/Fei-Craft/DS-Bot
     install: 'npx @deepseek-ai/dsh@0.2.1-rc.5 plugin --profile web add ds-bot
 
       npx @deepseek-ai/dsh@0.2.1-rc.5 web
@@ -32,18 +32,18 @@ params:
     - 共享能力库（Capabilities）：在设置里为 Bot 挂载 MCP server、Skill 与 pack
     - 办公文件处理：创建 / 编辑 .docx / .pptx / .xlsx，检查缺陷、做定向编辑与幻灯片重排
     tags: *id001
-    notes: 仓库已由 DeepSeek-Bot 更名为 DS Bot（Fei2411/DS-Bot），本仓库地址仍可访问并指向同一项目；DSH 插件包名为 ds-bot。与 dsh-agent-teams 是同类不同定位：后者偏任务分工，前者偏 Bot 的持久性与社交性（群聊）。
+    notes: 仓库已由 DeepSeek-Bot 更名为 DS Bot，作者账号也从 Fei2411 迁到 Fei-Craft（当前地址 Fei-Craft/DS-Bot），旧地址靠 301 仍能跳到同一项目；DSH 插件包名为 ds-bot。与 dsh-agent-teams 是同类不同定位：后者偏任务分工，前者偏 Bot 的持久性与社交性（群聊）。
     repo_confirmed: true
     gh:
-      stars: 9007
+      stars: 9009
       forks: 913
-      issues: 391
+      issues: 392
       language: JavaScript
       license: Apache-2.0
       pushed_at: '2026-11-26T18:50:45Z'
       archived: false
-      slug: Fei2411/DS-Bot
-      stars_label: '9007'
+      slug: Fei-Craft/DS-Bot
+      stars_label: '9009'
       forks_label: '913'
       pushed_date: '2026-11-26'
       updated_label: 今天有提交

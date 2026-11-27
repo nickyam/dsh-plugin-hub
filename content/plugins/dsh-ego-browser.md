@@ -18,7 +18,7 @@ params:
     - 接管浏览器
     category: tool
     status: community
-    repo: https://github.com/Fisfzy/dsh-ego-browser
+    repo: https://github.com/omdsh-dev/dsh-ego-browser
     install: dsh plugin --profile desktop add dsh-ego-browser
     summary: 把 ego-lite（给 AI Agent 用的 Chromium）接进 DSH，并在右侧边栏开一扇实时的窗：agent 在点哪里、滚到哪、卡在哪个验证码上都看得见，你也能直接在画面上点一下把它接管过来。
     features:
@@ -35,19 +35,19 @@ params:
     notes: 需要 DSH ≥ 0.1.2-rc.1、Node ≥ 22。侧栏优先注册进 DSH 0.2.1 起的原生右侧边栏；宿主没有原生侧栏时回退到 dsh-better-sidebar（≥ 0.12.2，推荐 ≥ 0.17.1），两个都没有就只留工具、不显示面板。Windows 上 Chrome / Edge ≥ 127 的 profile 复制路径会读到 0 条 cookie（ABE 绑定原始路径），必须走扩展桥接。README 徽章写 MIT，但 GitHub 识别的许可证是 NOASSERTION（自定义条款），要商用或再分发先自己读一眼 LICENSE。
     repo_confirmed: true
     gh:
-      stars: 548
-      forks: 58
-      issues: 10
+      stars: 586
+      forks: 59
+      issues: 0
       language: TypeScript
-      license: NOASSERTION
-      pushed_at: '2026-11-16T14:48:12Z'
+      license: GPL-3.0
+      pushed_at: '2026-11-23T11:43:36Z'
       archived: false
-      slug: Fisfzy/dsh-ego-browser
-      stars_label: '548'
-      forks_label: '58'
-      pushed_date: '2026-11-16'
-      updated_label: 10 天前有提交
-      updated_days: 10
+      slug: omdsh-dev/dsh-ego-browser
+      stars_label: '586'
+      forks_label: '59'
+      pushed_date: '2026-11-23'
+      updated_label: 3 天前有提交
+      updated_days: 3
       stale: false
     entry_updated: '2026-11-19'
     category_label: 工具与能力

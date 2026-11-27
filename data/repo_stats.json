@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-26T22:42:56Z",
+ "generated_at": "2026-11-27T00:28:41Z",
  "source": "GitHub REST API（匿名）",
  "repos": {
   "00080000/dsh-project-memory": {
@@ -227,11 +227,26 @@
    "html_url": "https://github.com/EverMind-AI/EverOS",
    "fetched_at": "2026-11-26T22:29:31Z"
   },
-  "Fei2411/DS-Bot": {
+  "FSMargoo/dsh-at-file": {
+   "full_name": "FSMargoo/dsh-at-file",
+   "stars": 575,
+   "forks": 37,
+   "issues": 14,
+   "watchers": 0,
+   "language": "JavaScript",
+   "license": "MIT",
+   "pushed_at": "2026-09-01T01:00:35Z",
+   "created_at": "2026-08-13T12:00:09Z",
+   "archived": false,
+   "description": "Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their path to prompts.",
+   "html_url": "https://github.com/FSMargoo/dsh-at-file",
+   "fetched_at": "2026-11-27T00:28:41Z"
+  },
+  "Fei-Craft/DS-Bot": {
    "full_name": "Fei-Craft/DS-Bot",
-   "stars": 9007,
+   "stars": 9009,
    "forks": 913,
-   "issues": 391,
+   "issues": 392,
    "watchers": 18,
    "language": "JavaScript",
    "license": "Apache-2.0",
@@ -240,22 +255,7 @@
    "archived": false,
    "description": "A team of long-lived bots for DeepSeek Harness, with main bots, bot-to-bot messages and group chats.",
    "html_url": "https://github.com/Fei-Craft/DS-Bot",
-   "fetched_at": "2026-11-26T22:29:24Z"
-  },
-  "Fisfzy/dsh-ego-browser": {
-   "full_name": "Fisfzy/dsh-ego-browser",
-   "stars": 548,
-   "forks": 58,
-   "issues": 10,
-   "watchers": null,
-   "language": "TypeScript",
-   "license": "NOASSERTION",
-   "pushed_at": "2026-11-16T14:48:12Z",
-   "created_at": "2026-08-07T08:13:54Z",
-   "archived": false,
-   "description": "DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS——13 个结构化 ego_* 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chrome 开箱即用，无需克隆官方仓库或手动构建。",
-   "html_url": "https://github.com/Fisfzy/dsh-ego-browser",
-   "fetched_at": "2026-11-19T02:03:28Z"
+   "fetched_at": "2026-11-27T00:28:36Z"
   },
   "Han-1413141/dsh-cost-meter": {
    "full_name": "Han-1413141/dsh-cost-meter",
@@ -1592,21 +1592,6 @@
    "html_url": "https://github.com/omdsh-dev/DSH-better-sidebar",
    "fetched_at": "2026-11-26T22:28:51Z"
   },
-  "omdsh-dev/dsh-at-file": {
-   "full_name": "FSMargoo/dsh-at-file",
-   "stars": 575,
-   "forks": 37,
-   "issues": 14,
-   "watchers": 0,
-   "language": "JavaScript",
-   "license": "MIT",
-   "pushed_at": "2026-09-01T01:00:35Z",
-   "created_at": "2026-08-13T12:00:09Z",
-   "archived": false,
-   "description": "Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their path to prompts.",
-   "html_url": "https://github.com/FSMargoo/dsh-at-file",
-   "fetched_at": "2026-11-26T22:29:04Z"
-  },
   "omdsh-dev/dsh-browser": {
    "full_name": "omdsh-dev/dsh-browser",
    "stars": 1147,
@@ -1636,6 +1621,21 @@
    "description": "Adaptive deep-research orchestrator plugin for DeepSeek Harness (official workflow engine, cybernetics/information-theory design)",
    "html_url": "https://github.com/omdsh-dev/dsh-deep-research",
    "fetched_at": "2026-11-26T22:36:18Z"
+  },
+  "omdsh-dev/dsh-ego-browser": {
+   "full_name": "omdsh-dev/dsh-ego-browser",
+   "stars": 586,
+   "forks": 59,
+   "issues": 0,
+   "watchers": 0,
+   "language": "TypeScript",
+   "license": "GPL-3.0",
+   "pushed_at": "2026-11-23T11:43:36Z",
+   "created_at": "2026-08-07T08:13:54Z",
+   "archived": false,
+   "description": "DSH（DeepSeek Harness）插件：把 ego-lite 浏览器（给 AI Agent 用的 Chromium）接入 HARNESS——13 个结构化 ego_* 工具（文本语义快照、语义定位点击、表单填充、截图、CDP 控制、任务空间隔离），内置 ego 运行时，Linux + Chrome 开箱即用，无需克隆官方仓库或手动构建。",
+   "html_url": "https://github.com/omdsh-dev/dsh-ego-browser",
+   "fetched_at": "2026-11-27T00:28:39Z"
   },
   "omdsh-dev/dsh-genui": {
    "full_name": "omdsh-dev/dsh-genui",

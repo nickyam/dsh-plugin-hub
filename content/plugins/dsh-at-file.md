@@ -13,8 +13,8 @@ params:
     name: dsh-at-file
     category: tool
     status: community
-    repo: https://github.com/omdsh-dev/dsh-at-file
-    install: dsh plugin --profile web add https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.7.0.tar.gz
+    repo: https://github.com/FSMargoo/dsh-at-file
+    install: dsh plugin --profile web add https://github.com/FSMargoo/dsh-at-file/archive/refs/tags/v0.7.0.tar.gz
     summary: 给 DSH Web 界面加 Codex 风格 @文件 引用：输入框打 @ 搜工作区文件 / 目录，插入工作区相对路径引用而不粘贴全文内容。
     features:
     - 输入框打 @ 打开工作区路径选择器，模糊搜索并插入文件 / 目录引用
@@ -32,7 +32,7 @@ params:
       license: MIT
       pushed_at: '2026-09-01T01:00:35Z'
       archived: false
-      slug: omdsh-dev/dsh-at-file
+      slug: FSMargoo/dsh-at-file
       stars_label: '575'
       forks_label: '37'
       pushed_date: '2026-09-01'

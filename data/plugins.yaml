@@ -438,8 +438,8 @@
   name: dsh-at-file
   category: tool
   status: community
-  repo: https://github.com/omdsh-dev/dsh-at-file
-  install: dsh plugin --profile web add https://github.com/omdsh-dev/dsh-at-file/archive/refs/tags/v0.7.0.tar.gz
+  repo: https://github.com/FSMargoo/dsh-at-file
+  install: dsh plugin --profile web add https://github.com/FSMargoo/dsh-at-file/archive/refs/tags/v0.7.0.tar.gz
   summary: 给 DSH Web 界面加 Codex 风格 @文件 引用：输入框打 @ 搜工作区文件 / 目录，插入工作区相对路径引用而不粘贴全文内容。
   features:
   - 输入框打 @ 打开工作区路径选择器，模糊搜索并插入文件 / 目录引用
@@ -814,7 +814,7 @@
   - DSBot
   category: workflow
   status: community
-  repo: https://github.com/Fei2411/DS-Bot
+  repo: https://github.com/Fei-Craft/DS-Bot
   install: 'npx @deepseek-ai/dsh@0.2.1-rc.5 plugin --profile web add ds-bot
 
     npx @deepseek-ai/dsh@0.2.1-rc.5 web
@@ -831,7 +831,7 @@
   - 多智能体
   - Bot
   - 长生命周期
-  notes: 仓库已由 DeepSeek-Bot 更名为 DS Bot（Fei2411/DS-Bot），本仓库地址仍可访问并指向同一项目；DSH 插件包名为 ds-bot。与 dsh-agent-teams 是同类不同定位：后者偏任务分工，前者偏 Bot 的持久性与社交性（群聊）。
+  notes: 仓库已由 DeepSeek-Bot 更名为 DS Bot，作者账号也从 Fei2411 迁到 Fei-Craft（当前地址 Fei-Craft/DS-Bot），旧地址靠 301 仍能跳到同一项目；DSH 插件包名为 ds-bot。与 dsh-agent-teams 是同类不同定位：后者偏任务分工，前者偏 Bot 的持久性与社交性（群聊）。
   refs:
   - wx-quanjing
   - wx-fanxing
@@ -2706,7 +2706,7 @@
   - 接管浏览器
   category: tool
   status: community
-  repo: https://github.com/Fisfzy/dsh-ego-browser
+  repo: https://github.com/omdsh-dev/dsh-ego-browser
   install: dsh plugin --profile desktop add dsh-ego-browser
   summary: 把 ego-lite（给 AI Agent 用的 Chromium）接进 DSH，并在右侧边栏开一扇实时的窗：agent 在点哪里、滚到哪、卡在哪个验证码上都看得见，你也能直接在画面上点一下把它接管过来。
   features:

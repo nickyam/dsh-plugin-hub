@@ -19,6 +19,7 @@
 bash deploy/deploy.sh                       # 构建 + rsync + 线上校验（本机唯一上线路径）
 bash deploy/deploy.sh --sync-only           # 产物已构建，只同步
 python3 tools/fetch_repo_stats.py [--all]   # 刷 GitHub 快照，需联网
+python3 tools/check_repos.py                # 巡检仓库是否改名/删除，不耗 API 额度
 ```
 
 本地预览见 README「快速开始」（`baseURL "/"` + 子目录挂载，别直接开 `public/index.html`）。
