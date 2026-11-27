@@ -44,13 +44,13 @@ params:
       forks_label: '15'
       pushed_date: '2026-10-31'
       stale: false
-    entry_updated: '2026-11-19'
+    entry_updated: '2026-11-27'
     category_label: 集成与迁移
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-notifier/
   generated: true
-lastmod: '2026-11-19'
+lastmod: '2026-11-27'
 ---
 
 人不在电脑前，也能知道 agent 在干什么、并且在它等你的时候回一句。28 个出站通道、6 个入站通道，任务完成 / 出错 / 等审批 / 长任务状态都能推出来，也能从手机批准、回答 ask_user、接着对话或切会话。

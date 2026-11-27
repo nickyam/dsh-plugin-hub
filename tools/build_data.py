@@ -281,8 +281,14 @@ def main():
 
     pdir = CONTENT / "plugins"
     pdir.mkdir(parents=True, exist_ok=True)
+    # 2026-11-27 修：以前这里把 147 个 md 全部 unlink() 再重建，于是 write_if_changed()
+    # 里的 path.exists() 恒为 False —— 比对形同虚设，每个 md 的 inode/mtime 每次都换。
+    # 现在只删「已经没有对应条目」的孤儿 md，其余交给 write_if_changed：
+    # 内容没变就不落盘，mtime 保持不变，rsync 不用 --checksum 也能跳过。
+    keep_md = {"_index.md"} | {f"{p['id']}.md" for p in plugins}
     for old in pdir.glob("*.md"):
-        old.unlink()
+        if old.name not in keep_md:
+            old.unlink()
 
     write_front_matter(
         pdir / "_index.md",

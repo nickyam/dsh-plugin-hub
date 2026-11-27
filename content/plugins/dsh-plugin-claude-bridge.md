@@ -39,13 +39,13 @@ params:
       forks_label: '3'
       pushed_date: '2026-08-14'
       stale: false
-    entry_updated: '2026-11-06'
+    entry_updated: '2026-11-27'
     category_label: 集成与迁移
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-plugin-claude-bridge/
   generated: true
-lastmod: '2026-11-06'
+lastmod: '2026-11-27'
 ---
 
 把 Claude Code 的记忆、技能与全局配置桥接进 DeepSeek Harness——零迁移、完全兼容：直接读取 Claude Code 标准文件位置，无需迁移脚本、文件拷贝或软链接。

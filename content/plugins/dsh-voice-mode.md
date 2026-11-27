@@ -43,13 +43,13 @@ params:
       forks_label: '12'
       pushed_date: '2026-11-26'
       stale: false
-    entry_updated: '2026-11-19'
+    entry_updated: '2026-11-27'
     category_label: 工具与能力
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-voice-mode/
   generated: true
-lastmod: '2026-11-19'
+lastmod: '2026-11-27'
 ---
 
 给 DSH 会话加全双工语音：边说边出字、按句朗读、发声打断，可开关流式识别、字幕与 TTS；识别在宿主端推理（默认免 API Key），朗读默认走 Edge 在线服务、可选本地 VITS/Kokoro 或 OpenAI 兼容远程引擎。

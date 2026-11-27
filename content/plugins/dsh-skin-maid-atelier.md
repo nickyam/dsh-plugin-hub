@@ -44,13 +44,13 @@ params:
       forks_label: '103'
       pushed_date: '2026-11-26'
       stale: false
-    entry_updated: '2026-11-19'
+    entry_updated: '2026-11-27'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-skin-maid-atelier/
   generated: true
-lastmod: '2026-11-19'
+lastmod: '2026-11-27'
 ---
 
 DSH Web UI 的鲸鱼娘主题皮肤之一：两位鲸鱼娘女仆配深海蓝蕾丝与 Q 版侧栏，把界面布置成女仆工坊；纯展示层插件，不注入服务、不改模型请求，亮暗主题自动切换。

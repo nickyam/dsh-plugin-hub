@@ -44,13 +44,13 @@ params:
       forks_label: '43'
       pushed_date: '2026-11-24'
       stale: false
-    entry_updated: '2026-11-17'
+    entry_updated: '2026-11-27'
     category_label: 工具与能力
     status_label: 社区
     weight: 1030
     url: /plugins/dsh-skills-manager/
   generated: true
-lastmod: '2026-11-17'
+lastmod: '2026-11-27'
 ---
 
 把散落在本机与项目里的 Agent 技能收拢到 DSH 统一管理：全局 / 项目 / 发现 / 回收站四视图，跨 20 多种工具与 CLI 环境读取，并从技能市场与公开仓库浏览、订阅、增量更新与备份回退。

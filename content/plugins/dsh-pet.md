@@ -36,13 +36,13 @@ params:
       forks_label: '620'
       pushed_date: '2026-11-17'
       stale: false
-    entry_updated: '2026-11-06'
+    entry_updated: '2026-11-27'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1050
     url: /plugins/dsh-pet/
   generated: true
-lastmod: '2026-11-06'
+lastmod: '2026-11-27'
 ---
 
 一只住在 DeepSeek Harness 里的桌面宠物，100+ 段透明动画资产，可多开、拖拽甩抛、脱离浏览器独立运行，也能自定义宠物种类（pet pack）。

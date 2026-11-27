@@ -98,15 +98,31 @@ def main() -> None:
             updated[pid] = fallback
 
     kept = {pid: updated[pid] for pid in current}
-    payload = {
-        "generated": datetime.now().astimezone().strftime("%Y-%m-%d %H:%M"),
-        "entries": dict(sorted(kept.items())),
-    }
-    OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # 2026-11-27：generated 原来每次都刷新，一份时间戳就让 entry_updated.json 每次构建
+    # 都变脏（进而被提交、被部署、被重传）。现在只有 entries 真变时才更新时间，
+    # 内容没变就不落盘 —— 和 build_data.py 的 write_if_changed 是同一个思路。
+    text_entries = dict(sorted(kept.items()))
+    prev = {}
+    try:
+        prev = json.loads(OUT.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        prev = {}
+    if prev.get("entries") == text_entries and prev.get("generated"):
+        generated = prev["generated"]
+    else:
+        generated = datetime.now().astimezone().strftime("%Y-%m-%d %H:%M")
+    payload = {"generated": generated, "entries": text_entries}
+    text = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+    try:
+        unchanged = OUT.read_text(encoding="utf-8") == text
+    except OSError:
+        unchanged = False
+    if not unchanged:
+        OUT.write_text(text, encoding="utf-8")
 
     dates = sorted(kept.values())
     print(f"条目 {len(kept)} 个（当前站点 {len(current)} 条），时间跨度 {dates[0]} ~ {dates[-1]}")
-    print(f"写入 {OUT.relative_to(ROOT)}")
+    print(f"{'写入' if not unchanged else '未变，跳过写入'} {OUT.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

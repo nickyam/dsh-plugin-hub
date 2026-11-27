@@ -39,13 +39,13 @@ params:
       forks_label: '2'
       pushed_date: '2026-10-03'
       stale: false
-    entry_updated: '2026-11-06'
+    entry_updated: '2026-11-27'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-gomoku/
   generated: true
-lastmod: '2026-11-06'
+lastmod: '2026-11-27'
 ---
 
 在 DSH 里和 AI 下五子棋，也可以让两个 AI 对局看谁棋力更强；15×15 棋盘嵌在侧边栏，每步落子来自 LLM 纯推理判断，黑/白提示词可编辑、推理过程可见。

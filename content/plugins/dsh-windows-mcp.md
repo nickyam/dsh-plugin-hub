@@ -45,13 +45,13 @@ params:
       forks_label: '12'
       pushed_date: '2026-11-26'
       stale: false
-    entry_updated: '2026-11-19'
+    entry_updated: '2026-11-27'
     category_label: 工具与能力
     status_label: 社区
     weight: 1020
     url: /plugins/dsh-windows-mcp/
   generated: true
-lastmod: '2026-11-19'
+lastmod: '2026-11-27'
 ---
 
 把 CursorTouch/Windows-MCP 挂到 DSH 自带的 MCP 客户端桥上，让 agent 能截屏、读界面元素、点按输入、读写剪贴板与注册表——那些只有图形界面、没有命令行入口的老软件，也能被它操作。

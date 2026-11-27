@@ -39,13 +39,13 @@ params:
       forks_label: '2'
       pushed_date: '2026-09-11'
       stale: false
-    entry_updated: '2026-11-06'
+    entry_updated: '2026-11-27'
     category_label: 安全与治理
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-gov/
   generated: true
-lastmod: '2026-11-06'
+lastmod: '2026-11-27'
 ---
 
 Agent 治理套件（企业配套）：基于策略的工具门控（允许/拒绝/询问）、只追加的结构化 JSONL 审计日志，以及按 agent 的 token 配额与周期预算，状态持久化在 $DSH_HOME/gov/。

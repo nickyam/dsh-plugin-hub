@@ -43,13 +43,13 @@ params:
       forks_label: '12'
       pushed_date: '2026-11-03'
       stale: false
-    entry_updated: '2026-11-19'
+    entry_updated: '2026-11-27'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-video-skin/
   generated: true
-lastmod: '2026-11-19'
+lastmod: '2026-11-27'
 ---
 
 给 DSH 加一段视频皮肤：一段短片无声循环铺成聊天背景，另一段做有声开机动画并在片尾交叉溶解进界面；右下角半透明小圆钮调透明度，开机动画点一下即可跳过，零依赖。

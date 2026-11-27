@@ -46,13 +46,13 @@ params:
       forks_label: '1573'
       pushed_date: '2026-11-26'
       stale: false
-    entry_updated: '2026-11-19'
+    entry_updated: '2026-11-27'
     category_label: 移动端与远程
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-go/
   generated: true
-lastmod: '2026-11-19'
+lastmod: '2026-11-27'
 ---
 
 把 DSH 搬到 Android 手机上的第三方客户端：App 内装好 PRoot 版 Ubuntu + Node.js + DSH 引擎，手机本地就能跑；也能通过 SSH 或 DSHarness Remote 接管电脑、服务器上的 DSH，两种主机在同一个聊天界面里切换。

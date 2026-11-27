@@ -44,13 +44,13 @@ params:
       forks_label: '0'
       pushed_date: '2026-08-14'
       stale: false
-    entry_updated: '2026-11-19'
+    entry_updated: '2026-11-27'
     category_label: 记忆与知识
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-memsearch/
   generated: true
-lastmod: '2026-11-19'
+lastmod: '2026-11-27'
 ---
 
 让 DSH 像 Codex / Claude Code 的 memsearch 插件一样默认自动写入与按需召回记忆：会话开始后台跑一次索引并注入状态提示，每轮结束把用户问题与最终回复追加进本地记忆日志并增量重索引；纯本地，默认不调用任何 LLM。

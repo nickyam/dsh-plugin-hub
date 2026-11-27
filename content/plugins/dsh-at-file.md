@@ -37,13 +37,13 @@ params:
       forks_label: '37'
       pushed_date: '2026-09-01'
       stale: false
-    entry_updated: '2026-11-06'
+    entry_updated: '2026-11-27'
     category_label: 工具与能力
     status_label: 社区
     weight: 1020
     url: /plugins/dsh-at-file/
   generated: true
-lastmod: '2026-11-06'
+lastmod: '2026-11-27'
 ---
 
 给 DSH Web 界面加 Codex 风格 @文件 引用：输入框打 @ 搜工作区文件 / 目录，插入工作区相对路径引用而不粘贴全文内容。

@@ -45,7 +45,7 @@
           {{ with $p.repo }}<a class="btn btn-repo" href="{{ . }}" target="_blank" rel="noopener noreferrer">去 GitHub 仓库 →</a>{{ end }}
           <a class="btn" href="{{ "guide/" | relURL }}">怎么装这类插件</a>
         </div>
-        <p class="detail-meta"><span class="meta-hint" title="本站这条记录的最近一次修订日期。不是插件发布日期，也不是站点构建时间——没改过的条目不会跟着部署变动。">条目更新于 {{ with $p.entry_updated }}<time datetime="{{ . }}">{{ . }}</time>{{ else }}{{ hugo.Data.derived.generated_at }}{{ end }}</span>{{ with $p.gh }}{{ with .pushed_date }} ｜ <span class="meta-hint" title="官方仓库最近一次 push 的日期，来自 GitHub 接口缓存，可能滞后一天">仓库最近提交 {{ . }}</span>{{ end }}{{ end }}</p>
+        <p class="detail-meta"><span class="meta-hint" title="本站这条记录的最近一次修订日期。不是插件发布日期，也不是站点构建时间——没改过的条目不会跟着部署变动。">条目更新于 {{ with $p.entry_updated }}<time datetime="{{ . }}">{{ . }}</time>{{ else }}新收录{{ end }}</span>{{ with $p.gh }}{{ with .pushed_date }} ｜ <span class="meta-hint" title="官方仓库最近一次 push 的日期，来自 GitHub 接口缓存，可能滞后一天">仓库最近提交 {{ . }}</span>{{ end }}{{ end }}</p>
       </header>
 
       {{ with $p.flag }}

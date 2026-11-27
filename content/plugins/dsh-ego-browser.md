@@ -47,13 +47,13 @@ params:
       forks_label: '59'
       pushed_date: '2026-11-23'
       stale: false
-    entry_updated: '2026-11-19'
+    entry_updated: '2026-11-27'
     category_label: 工具与能力
     status_label: 社区
     weight: 1030
     url: /plugins/dsh-ego-browser/
   generated: true
-lastmod: '2026-11-19'
+lastmod: '2026-11-27'
 ---
 
 把 ego-lite（给 AI Agent 用的 Chromium）接进 DSH，并在右侧边栏开一扇实时的窗：agent 在点哪里、滚到哪、卡在哪个验证码上都看得见，你也能直接在画面上点一下把它接管过来。

@@ -45,13 +45,13 @@ params:
       forks_label: '92'
       pushed_date: '2026-11-22'
       stale: false
-    entry_updated: '2026-11-19'
+    entry_updated: '2026-11-27'
     category_label: 工具与能力
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-browser-bridge/
   generated: true
-lastmod: '2026-11-19'
+lastmod: '2026-11-27'
 ---
 
 把 DSH 接到你正在用的 Chrome / Firefox 标签页上的桥插件加 MV3 扩展：模型直接读取当前页面、点按输入、导航和管理标签页，复用已有登录态与 Cookie，侧栏即可对话；无需视觉能力即可操作浏览器。与本站已收的 dsh-browser（CJYLZS，每会话起一个隔离 Chrome 进程）是两套不同实现。

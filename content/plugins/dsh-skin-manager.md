@@ -45,13 +45,13 @@ params:
       forks_label: '103'
       pushed_date: '2026-11-26'
       stale: false
-    entry_updated: '2026-11-19'
+    entry_updated: '2026-11-27'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-skin-manager/
   generated: true
-lastmod: '2026-11-19'
+lastmod: '2026-11-27'
 ---
 
 鲸鱼娘皮肤系列配套的常驻皮肤管理模块：在 DSH 设置页注册「皮肤管理」，发现并互斥切换官方默认与已安装皮肤，渲染各皮肤自带的开关、下拉、滑杆与可见时段配置；同时装多套皮肤时必须启用它。

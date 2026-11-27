@@ -47,13 +47,13 @@ params:
       forks_label: '913'
       pushed_date: '2026-11-26'
       stale: false
-    entry_updated: '2026-11-19'
+    entry_updated: '2026-11-27'
     category_label: 协作与工作流
     status_label: 社区
     weight: 1030
     url: /plugins/deepseek-bot/
   generated: true
-lastmod: '2026-11-19'
+lastmod: '2026-11-27'
 ---
 
 DS Bot 是 DeepSeek Harness（DSH）的 Bot 插件，把 DSH 变成可创建和协作的 Bot：支持主 Bot、Bot 间消息与群聊，并内置记忆、共享能力库（MCP / Skill）与按时间 / 模型维度的用量统计。

@@ -45,13 +45,13 @@ params:
       forks_label: '103'
       pushed_date: '2026-11-26'
       stale: false
-    entry_updated: '2026-11-19'
+    entry_updated: '2026-11-27'
     category_label: 娱乐与彩蛋
     status_label: 社区
     weight: 1010
     url: /plugins/dsh-skin-orca-link/
   generated: true
-lastmod: '2026-11-19'
+lastmod: '2026-11-27'
 ---
 
 鲸鱼娘皮肤系列的第二套：小黑鲸操作员配全直角界面与直线重绘图标，亮色白色机械舱、暗色夜间书房各含空态与工作态场景；纯展示层插件，不碰模型请求。

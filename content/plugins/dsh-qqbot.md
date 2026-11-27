@@ -44,13 +44,13 @@ params:
       forks_label: '78'
       pushed_date: '2026-11-24'
       stale: false
-    entry_updated: '2026-11-19'
+    entry_updated: '2026-11-27'
     category_label: 集成与迁移
     status_label: 官方
     weight: 1010
     url: /plugins/dsh-qqbot/
   generated: true
-lastmod: '2026-11-19'
+lastmod: '2026-11-27'
 ---
 
 腾讯 QQ 开放平台团队（tencent-connect）维护的 QQ 通道插件：在 QQ 私聊与群里直接和 DSH 的 agent 对话，也能在手机给本机 Agent 派活。凭据走扫码绑定，绑过一次不用再扫。

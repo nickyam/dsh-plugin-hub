@@ -46,12 +46,13 @@ params:
       forks_label: '0'
       pushed_date: '2026-11-19'
       stale: false
-    entry_updated: null
+    entry_updated: '2026-11-27'
     category_label: 工具与能力
     status_label: 社区
     weight: 1010
     url: /plugins/voice-call/
   generated: true
+lastmod: '2026-11-27'
 ---
 
 在当前会话里直接开口说话：一句说完停顿就自动转成文字发出，Agent 回复按句朗读，播报中开口即可打断；语音识别与合成可分别选 DeepSeek 或豆包，凭据用你自己的。
