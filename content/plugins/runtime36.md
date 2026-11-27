@@ -40,8 +40,8 @@ params:
       stars_label: '78'
       forks_label: '12'
       pushed_date: '2026-11-19'
-      updated_label: 7 天前有提交
-      updated_days: 7
+      updated_label: 8 天前有提交
+      updated_days: 8
       stale: false
     entry_updated: '2026-11-19'
     category_label: 记忆与知识

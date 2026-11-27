@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-27 08:39",
+  "generated_at": "2026-11-27 15:33",
   "generated_date": "2026-11-27",
   "stats": {
-    "plugins": 146,
-    "repos_confirmed": 146,
+    "plugins": 147,
+    "repos_confirmed": 147,
     "categories": 13,
-    "stars_median": 608,
-    "stars_median_label": "608",
-    "gh_synced": 145,
-    "gh_synced_at": "2026-11-27T00:28:41Z"
+    "stars_median": 597,
+    "stars_median_label": "597",
+    "gh_synced": 146,
+    "gh_synced_at": "2026-11-27T07:33:09Z"
   },
   "categories": [
     {
@@ -27,7 +27,7 @@
       "id": "tool",
       "label": "工具与能力",
       "desc": "搜索、浏览器、视觉、文件引用",
-      "count": 21
+      "count": 22
     },
     {
       "id": "workflow",

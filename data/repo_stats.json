@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27T00:28:41Z",
+ "generated_at": "2026-11-27T07:33:09Z",
  "source": "GitHub REST API（匿名）",
  "repos": {
   "00080000/dsh-project-memory": {
@@ -1126,6 +1126,21 @@
    "description": "A public gallery of animated pets for Codex, Claude Code, DeepSeek Harness, Hermes, OpenCode, Gemini CLI, and more.",
    "html_url": "https://github.com/crafter-station/petdex",
    "fetched_at": "2026-11-26T22:32:28Z"
+  },
+  "crease123/voice-call": {
+   "full_name": "crease123/voice-call",
+   "stars": 4,
+   "forks": 0,
+   "issues": 0,
+   "watchers": null,
+   "language": "TypeScript",
+   "license": "MIT",
+   "pushed_at": "2026-11-19T12:15:38Z",
+   "created_at": "2026-11-09T04:48:56Z",
+   "archived": false,
+   "description": null,
+   "html_url": "https://github.com/crease123/voice-call",
+   "fetched_at": "2026-11-27T07:33:03Z"
   },
   "csyangwen/dsh-memory-evolve": {
    "full_name": "csyangwen/dsh-memory-evolve",

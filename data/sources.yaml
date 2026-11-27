@@ -300,3 +300,12 @@
   date_note: "2026-11-16 20:24（上海）"
   note: "第三十一篇。作者自述从 18 款社区插件里挑 9 个：dsh-market（包名 dshmarket）、dsh-our-free-model、dsh-ego-browser、dsh-vision-router、OpenViking Memory（包名 dsh-memory-plugin，实为 scoped 的 @openviking/dsh-memory-plugin）、dsh-better-sidebar、dsh-context、dsh-media-desk、dsh-im。前八条本站此前均已收录（第 26 篇之前各期），本次只补发现线索；第九条 OpenViking Memory 按包名核对到 volcengine/OpenViking 发布的 @openviking/dsh-memory-plugin，与既有 dsh-openviking（Rxiain/dsh-openviking）不是同一项目，据此新建 dsh-memory-plugin 条目。文章只给包名与一句功能描述、没有仓库与版本，条目内容以官方 README 为准；文中「不需要 Key 开箱即用」只适用于 dsh-vision-router，OpenViking 必须自备服务端，不采信为通用结论。"
   tags: [公众号, 插件清单]
+
+- id: wx-voicecall-2026-11-23
+  title: "像打豆包电话一样用 DSH"
+  kind: wechat
+  publisher: "Ai实用talk（文末署名 Patrick）"
+  url: "https://mp.weixin.qq.com/s/9lrbureoeGAcNFcwD6dOTQ"
+  date_note: "2026-11-23 14:17（上海）"
+  note: "第三十二篇。单插件深度体验，主角 voice-call（npm 包 voice-call，仓库 crease123/voice-call），据官方 README 新建条目。文章三条判断与 README 一致、已写进条目：停顿即发送自动提交、开口打断能取消请求但不回滚已执行的外部操作、挂断只关语音连接不停 Agent 回合；另外两条也对得上——识别按整句上传（不做逐字实时字幕）、浏览器端要 https 或 localhost 安全上下文。文章自述「DSH 已经到 0.3.x 的，装了也用不了」与包元数据 engines.dsh >=0.2.2-rc.1 <0.3.0-0 吻合。作者与豆包打电话的类比叙事、个人手感描述、结尾三连号召不采信为独立结论。文章提醒生态里 voice-call / dsh-voice-call / dsh-voice 至少六个同名项目，本站已按包名与仓库 crease123/voice-call 锁定。"
+  tags: [公众号, 单插件, 语音]

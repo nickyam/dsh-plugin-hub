@@ -39,8 +39,8 @@ params:
       stars_label: 100.5k
       forks_label: '6882'
       pushed_date: '2026-11-26'
-      updated_label: 今天有提交
-      updated_days: 0
+      updated_label: 昨天有提交
+      updated_days: 1
       stale: false
     entry_updated: '2026-11-24'
     category_label: 视觉与设计
