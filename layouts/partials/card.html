@@ -22,7 +22,7 @@
   {{ with $p.aliases }}<p class="aliases">也叫 {{ delimit . "、" }}</p>{{ end }}
   <p class="card-summary">{{ $p.summary }}</p>
   <div class="card-foot">
-    {{ with $p.gh }}{{ with .updated_label }}<span class="mini-tag">{{ . }}</span>{{ end }}{{ else }}<span class="mini-tag">未取到仓库数据</span>{{ end }}
+    {{ with $p.gh }}{{ with .pushed_date }}<span class="mini-tag" data-pushed="{{ . }}">{{ . }}</span>{{ else }}<span class="mini-tag">未取到仓库数据</span>{{ end }}{{ else }}<span class="mini-tag">未取到仓库数据</span>{{ end }}
     {{ with $p.flag }}<span class="mini-tag mini-tag-warn" title="{{ . }}">{{ . }}</span>{{ end }}
   </div>
 </article>

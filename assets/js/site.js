@@ -32,6 +32,31 @@
   }
   bindCopy();
 
+  /* ── 仓库最近提交：把绝对日期换成「N 天前有提交」（所有页面都跑） ──
+     2026-11-27：这句话以前由构建脚本写死进 HTML，参照物是构建那一刻的时钟，
+     于是只要某个仓库的提交时刻一过，标签就从「昨天」翻成「2 天前」，
+     每天都有上百个页面无意义地变脏、被重传。改成产物只带 data-pushed 绝对日期、
+     由浏览器现算：HTML 稳定了，标签在任何时候看都是准的（含无缓存的老页面）。 */
+  function relativeDays(pushed) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(pushed || '');
+    if (!m) return '';
+    var then = Date.UTC(+m[1], +m[2] - 1, +m[3]);
+    var now = new Date();
+    var today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+    var days = Math.round((today - then) / 86400000);
+    if (days <= 0) return '今天有提交';
+    if (days === 1) return '昨天有提交';
+    if (days < 30) return days + ' 天前有提交';
+    if (days < 365) return Math.floor(days / 30) + ' 个月前有提交';
+    return Math.floor(days / 365) + ' 年前有提交';
+  }
+  document.querySelectorAll('[data-pushed]').forEach(function (el) {
+    var label = relativeDays(el.getAttribute('data-pushed'));
+    if (!label) return;
+    el.setAttribute('title', '仓库最近提交：' + el.getAttribute('data-pushed'));
+    el.textContent = label;
+  });
+
   var input = document.getElementById('q');
   if (!input) return;
 

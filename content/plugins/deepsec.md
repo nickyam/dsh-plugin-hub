@@ -39,8 +39,6 @@ params:
       stars_label: '520'
       forks_label: '35'
       pushed_date: '2026-08-24'
-      updated_label: 3 个月前有提交
-      updated_days: 94
       stale: false
     entry_updated: '2026-11-06'
     category_label: 安全与治理

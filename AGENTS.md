@@ -55,13 +55,16 @@ python3 tools/check_repos.py                # 巡检仓库是否改名/删除，
 | 390px 下整页右侧被裁掉、还滚不动 | `html,body{overflow-x:clip}` 只兜底不治病：卡片里 `flag` 之类长文案必须允许换行 |
 | 嘴上「390px 通过」，一量发现 `innerWidth=500` | macOS 的 Chrome `--headless --window-size=390,844` 会被钳到 500；真 390 只能走 CDP `Emulation.setDeviceMetricsOverride(390×844, mobile)`，否则测的是 500 宽布局 |
 | 改了 CSS 但测出来样式没变 | `ln -sfn 目标 已存在的目录` 会在这个目录里再建一层同名链接，预览服务指到旧 `public/`；换干净目录名再挂 |
+| 每次构建 git 里都有几十个 md「改了」，其实一个字没动 | 产物里曾经写入「今天 / 2 天前有提交」这种**相对当前时钟**的文案，只要某个仓库的提交时刻一过，标签就翻页。2026-11-27 已改成：产物只存绝对 `pushed_date`，相对天数由 `assets/js/site.js` 按 `data-pushed` 现算。新加任何随「现在」变的字段前先想清楚这一点 |
+| 每次部署把 7.5MB 全站重传一遍 | Hugo 每次都会重写全部 HTML，mtime 全变；rsync 默认按「大小 + mtime」判，于是内容没改也重传（实测 523/531）。`deploy.sh` 已加 `--checksum`，只传内容真变了的几页 |
 
 ## 收工前
 
 ```bash
 ./build.sh 2>&1 | grep -E "ERROR|校验通过|条目 "          # 构建无 Error、条目数对得上
-grep -o "<loc>" public/sitemap.xml | wc -l               # 当前 195（146 plugins + 13 categories + 31 tags + 静态页）；暴涨=薄标签页又进索引
+grep -o "<loc>" public/sitemap.xml | wc -l               # 当前 196（147 plugins + 13 categories + 31 tags + 静态页）；暴涨=薄标签页又进索引
 grep -o 'css/main\.min\.[a-f0-9]*\.css' public/index.html | head -1   # 指纹文件名（每次构建只变 hash 不变格式）
+git status --short                                      # 未改数据时重复构建应当「零新增改动」，有漂移说明产物带了随「现在」变的东西
 ```
 
 > `sitemap.xml` 与 HTML 都是压缩成单行的，`grep -c` 只会返回 1，必须用 `grep -o … | wc -l`。

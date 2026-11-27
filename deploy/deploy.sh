@@ -63,7 +63,10 @@ log "构建完成：$(find "${PUBLIC_DIR}" -name '*.html' | wc -l | tr -d ' ') �
 log "同步到 ${REMOTE_HOST}:${DEPLOY_DIR}"
 ssh -i "${SSH_KEY}" -o StrictHostKeyChecking=no "${REMOTE_HOST}" "mkdir -p '${DEPLOY_DIR}'"
 
-"${RSYNC_BIN}" -az --delete --delete-excluded \
+# --checksum：Hugo 每次构建都会重写全部 500 多个文件，mtime 全变；不加这个参数
+# rsync 按「大小 + mtime」判定，会把内容一字未改的页面全部重传（实测 523/531 个）。
+# 加了它按内容校验，一次只传真正改过的几页；7.5MB 全量算哈希本地约 0.1s，很划算。
+"${RSYNC_BIN}" -az --checksum --delete --delete-excluded \
   -e "ssh -i ${SSH_KEY} -o StrictHostKeyChecking=no" \
   --exclude '.DS_Store' \
   --exclude '*.log' \

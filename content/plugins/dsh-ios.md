@@ -42,8 +42,6 @@ params:
       stars_label: '485'
       forks_label: '43'
       pushed_date: '2026-11-10'
-      updated_label: 16 天前有提交
-      updated_days: 16
       stale: false
     entry_updated: '2026-11-06'
     category_label: 移动端与远程

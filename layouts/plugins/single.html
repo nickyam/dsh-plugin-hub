@@ -66,7 +66,7 @@
               {{ with .issues }}<span><strong>{{ . }}</strong> Issue</span>{{ end }}
               {{ with .language }}<span>{{ . }}</span>{{ end }}
               {{ with .license }}<span>{{ . }}</span>{{ end }}
-              {{ with .updated_label }}<span class="gh-when">{{ . }}</span>{{ end }}
+              {{ with .pushed_date }}<span class="gh-when" data-pushed="{{ . }}">{{ . }}</span>{{ end }}
             </div>
             {{ end }}
           </dd></div>

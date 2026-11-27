@@ -66,9 +66,24 @@ def dump_yaml(obj):
     )
 
 
-def write_front_matter(path, front, body):
-    text = "---\n" + dump_yaml(front) + "---\n\n" + body.strip() + "\n"
+def write_if_changed(path, text):
+    """内容没变就不写。
+
+    2026-11-27：以前每次构建都无条件重写全部产物，于是「内容一模一样、只是 mtime 变了」
+    的文件也会被 git 看到、被 rsync 重传、被 Hugo 重渲染。写入前比对一次，
+    没变就一个字节都不落盘，后面的链路自然全部跳过。
+    """
+    try:
+        if path.exists() and path.read_text(encoding="utf-8") == text:
+            return False
+    except OSError:
+        pass
     path.write_text(text, encoding="utf-8")
+    return True
+
+
+def write_front_matter(path, front, body):
+    write_if_changed(path, "---\n" + dump_yaml(front) + "---\n\n" + body.strip() + "\n")
 
 
 def main():
@@ -180,26 +195,22 @@ def main():
         mid = len(vals) // 2
         return vals[mid] if len(vals) % 2 else round((vals[mid - 1] + vals[mid]) / 2)
 
-    def updated_label(pushed_at):
-        """把 pushed_at 换成「N 天前更新」。只描述仓库最近提交，不冒充本站核对时间。"""
+    def pushed_days(pushed_at):
+        """仓库最近提交距今多少天，只用来判断「久未更新」。
+
+        2026-11-27：这里原来直接把「N 天前有提交」写进产物，而参照物是当前时钟——
+        只要某个仓库的 pushed_at 时刻一过，它的标签就从「昨天」翻成「2 天前」，
+        于是每天都有上百个 md 无意义地变脏（git 脏、rsync 重传、Hugo 重渲染）。
+        现在产物里只留绝对日期 pushed_date + stale 布尔，相对天数交给前端按需现算。
+        """
         if not pushed_at:
-            return None, None
+            return None
         try:
             ts = datetime.strptime(pushed_at[:19], "%Y-%m-%dT%H:%M:%S")
         except ValueError:
-            return None, None
-        days = max((datetime.now(timezone.utc).replace(tzinfo=None) - ts).days, 0)
-        if days == 0:
-            label = "今天有提交"
-        elif days == 1:
-            label = "昨天有提交"
-        elif days < 30:
-            label = f"{days} 天前有提交"
-        elif days < 365:
-            label = f"{days // 30} 个月前有提交"
-        else:
-            label = f"{days // 365} 年前有提交"
-        return label, days
+            return None
+        today = datetime.now(timezone.utc).replace(tzinfo=None).date()
+        return max((today - ts.date()).days, 0)
 
     total_refs = 0
     for p in plugins:
@@ -243,11 +254,9 @@ def main():
             gh["forks_label"] = human(gh.get("forks"))
             if gh.get("pushed_at"):
                 gh["pushed_date"] = gh["pushed_at"][:10]
-                label, days = updated_label(gh["pushed_at"])
-                if label:
-                    # 卡片上替代「社区 / 官方」这类恒定徽章：更新活跃度才是真信号
-                    gh["updated_label"] = label
-                    gh["updated_days"] = days
+                days = pushed_days(gh["pushed_at"])
+                if days is not None:
+                    # 只留一个几乎不翻的布尔；相对天数由前端按 data-pushed 现算
                     gh["stale"] = days > 180
         p["gh"] = gh or None
         # 条目本身最近一次被改动是哪天（不含 refs 这类内部台账）
@@ -319,21 +328,22 @@ def main():
             "repo_confirmed": p["repo_confirmed"],
             "stars": (p["gh"] or {}).get("stars"),
             "stars_label": (p["gh"] or {}).get("stars_label"),
-            "updated_label": (p["gh"] or {}).get("updated_label"),
+            "pushed_date": (p["gh"] or {}).get("pushed_date"),
             "url": p["url"],
         }
         for p in sorted(plugins, key=lambda x: -x["weight"])
     ]
-    (STATIC / "search.json").write_text(
-        json.dumps(index, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
+    write_if_changed(
+        STATIC / "search.json",
+        json.dumps(index, ensure_ascii=False, separators=(",", ":")),
     )
 
     # ── 派生统计 ────────────────────────────────────────────────
     # 🔴 2026-11-18 用户决定：站点不再有「来源」板块。
     # derived.json 会随站点发布，所以这里绝不能带任何来源标题 / 链接 / 计数。
     derived = {
-        "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
-        "generated_date": datetime.now().strftime("%Y-%m-%d"),
+        "generated_at": None,
+        "generated_date": None,
         "stats": {
             "plugins": len(plugins),
             "repos_confirmed": sum(1 for p in plugins if p["repo_confirmed"]),
@@ -363,9 +373,24 @@ def main():
         "category_map": cat_map,
         "status_label": STATUS_LABEL,
     }
-    (DATA / "derived.json").write_text(
-        json.dumps(derived, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    # 时间戳只在「别的内容真的变了」时才更新，否则每次构建 derived.json 都会变脏，
+    # 而它又是随站点发布的产物 —— 一个 generated_at 就足以让每次部署都重传。
+    derived_path = DATA / "derived.json"
+    prev = {}
+    try:
+        prev = json.loads(derived_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        prev = {}
+    body = {k: v for k, v in derived.items() if k not in ("generated_at", "generated_date")}
+    prev_body = {k: v for k, v in prev.items() if k not in ("generated_at", "generated_date")}
+    if body == prev_body and prev.get("generated_at"):
+        derived["generated_at"] = prev["generated_at"]
+        derived["generated_date"] = prev.get("generated_date")
+    else:
+        now = datetime.now()
+        derived["generated_at"] = now.strftime("%Y-%m-%d %H:%M")
+        derived["generated_date"] = now.strftime("%Y-%m-%d")
+    write_if_changed(derived_path, json.dumps(derived, ensure_ascii=False, indent=2))
 
     print(f"✓ 校验通过：{len(plugins)} 个插件 / {len(categories)} 个分类")
     print(f"  已确认官方仓库 {derived['stats']['repos_confirmed']}")

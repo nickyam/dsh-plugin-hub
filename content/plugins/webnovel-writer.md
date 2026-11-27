@@ -38,8 +38,6 @@ params:
       stars_label: '8087'
       forks_label: '1303'
       pushed_date: '2026-11-19'
-      updated_label: 7 天前有提交
-      updated_days: 7
       stale: false
     entry_updated: '2026-11-06'
     category_label: 内容创作与办公

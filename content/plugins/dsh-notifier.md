@@ -43,8 +43,6 @@ params:
       stars_label: '64'
       forks_label: '15'
       pushed_date: '2026-10-31'
-      updated_label: 26 天前有提交
-      updated_days: 26
       stale: false
     entry_updated: '2026-11-19'
     category_label: 集成与迁移
